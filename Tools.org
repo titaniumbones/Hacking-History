@@ -1,0 +1,10 @@
+* Tools for Hacking History
+** Firefox
+** FTP and/or SSH clients
+FireFTP, FireSSH or command-line equivalents
+** Zotero
+** Delicious
+** Twitter
+** Text Editor
+** Dropbox or alternative.  Check into Sparkleshare, rubydrop(no windows), qtdsync (not right, doesn't automate sync), lipsync (linux only, but cool for me maybe)
+** etc.
