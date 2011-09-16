@@ -1,0 +1,38 @@
+#+TITLE:     Second Project Proposal
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt.price@utoronto.ca
+#+DATE:      2011-01-13 Thu
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT: 
+#+PARENT: 
+* Second (proper) Project Proposal
+** Due Jan. 5 (24 hours before class, Jan 6)
+
+This assignment is a detailed project proposal that outlines the nature of your collaboration, the structure of your proposed website, and the scope of your research plans.  You should also say a few words about the potential audience of the website, and include a brief bibliography.  Please add your sources to the Zotero group bib -- this is much easier to do now, since U of T has added Zotero support to the catalogue! yay.  Formatting the bibliography online may feel like a fair amount of work; this one time, you are welcome to submit your work as an attachment to the blog post.  Length excluding bibliography should probably be on the order of 1000 words.  
+
+In detail:
+*Summary & Content:* Introduce your project's general scope and aims.  Describe in some detail the kind of material you expect to present in the site.
+
+*Methods:* Describe your research methods in as much detail as you can.
+
+*Structure & Presentation:* Describe the layout and structure of your website as well as you can.  Feel free to e.g. sketch a design in pencil, take a picture with your cell phone, and attach the image (though I have no objection to more sophisticated mockups!).  In your description, say *why* you chose this particular organizational structure -- why are these the most important navigational axes for your site?
+
+*Challenges:* Describe /as specifically as you can/ the difficulties you expect to face, and how you hope to overcome them.  If you are missing skills that you need, again, /be as specific as yo ucan/ about what you need to know and how you might address this need.  
+
+*Bibliography:* Include as many on-and off-line sources as you can. Remember to add them to the Zotero group,  
+
+
+The proposal counts towards your project grade, not towards your blog participation grade.  See 'Project Grade Breakdown' for more info.  
+** Presentation
+You need to hand this in a day before class so that your fellow students can take a look at them all before class starts Thursday.  In class next week I want to do presentations or anyway a sort of 'crit' of all the ideas -- 2 hours in which we all work hard to improve each other's project proposals.  You should feel free to start the process early by responding directly in the class blog.
+
+

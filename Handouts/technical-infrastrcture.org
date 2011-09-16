@@ -1,0 +1,34 @@
+#+POSTID: 71
+#+DATE: [2010-09-15 Wed 22:02]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: handouts 
+#+TAGS: handouts, administrivia
+#+DESCRIPTION: What you need to know about the tols we're using.  
+#+TITLE: Technical Infrastructure for HIS 495
+
+Unlike most humanities courses, this one will ask you to become familiar with the tools that underpin the very acts of communication that take place in the course -- in essence, to participate in the formation of what [[http://kelty.org][Chris Kelty]] (and now others) call a [[http://p2pfoundation.net/Recursive_Public][recursive public]]. Here are some of the tools you should become familiar with right away -- and if you already use them, you should tune your use to make them more pertinent and helpful to the class.
+
+** Wordpress
+[[http://www.wordpress.org][Wordpress]] is one of a number of Free and non-Free web publishing platforms that make it relatively easy to create websites of nearly-arbitrary complexity.  Wordpress is written in [[http://www.php.net/][PHP]], perhaps the most widely-used [[http://en.wikipedia.org/wiki/Server-side_scripting][server-side scripting language]]. Partly for this reason it has an enormous and well-organized community of developers and user-hackers; while the basic installation has somewhat limited features, the repositories list over 11,000 plugins and 1,200 themes, all of which can themselves be modified further by users if they wish.  
+
+The course uses a very lightly-modified Wordpress 3.0.  I currently have about 15 plugins enabled, and I use a version of the default twentyten theme that I've hacked just a little bit:
+- I reduced the size of the header, to get a little more text to show before you start to scroll down;
+- I changed the default font sizes, again to get a little mroe text showing;
+- I wrote a quick and very dirty PHP function to extend the delicious plugin, so that I could show a modified delicious feed at the bottom of each page (more on that later.
+- Finally, I added that function to the page templates, so you get to see the feed at the bottom of the relevant posts (check out the [[../syllabus][Syllabus]] for an example, and see [[delicious][delicious]] below for more detail).  
+
+It's very likely that you will use either Wordpress or the similar-feeling but much more academic [[http://omeka.org/][Omeka]] platform for your final project, so you should familiarize yourself with the software in these ways:
+- [[http://www.hackinghistory.ca/wp-login.php?action=register][Register]] for the course website.  You need to do this anyway, to fulfil most of your class assignments.
+- Think about setting up your own blog, just for fun -- you can do it at [[http://wordpress.com/][wordpress.com]], or on the class server (if you take the former route, bear in mind that your experimental blog will never ever go away).  At some point you wil lbe doing this for real, so pay attention.
+- If you want a real administrative experience, there are other options, and perhaps you have already taken them.
+** Social Networking
+You need accounts on the following networks, and they need to be linked back to mine or the course's.  We won't necessarily use all of them very much, but a couple of them are really central to our collective project.  
+# <<delicious>>
+*** delicious
+[[http://www.delicious.com][delicious]] is a social bookmarking service, which we will use to share links with each other. You need to belong to the [[http://www.delicious.com/help/faq#network][network]] of the course account.  If you don't have an account yet, create one [[http://www.delicious.com/][here]] (there's an irritating yahoo.com registration process), and [[mailto:matt.price@utoronto.ca][let me know about it]]. Links relevant to the course should be tagged with "hackinghistory" and other relevant terms; they will then show up in the [[http://www.delicious.com/network/hackinghistory/hackinghistory][course delicious feed]]([[http://feeds.delicious.com/v2/rss/network/hackinghistory/hackinghistory?count=15][rss]])  which you can check out on the website or with a feedreader.  
+*** Zotero
+Zotero shares some features with delicious, but has much more robust functionality for academics.  We will use it for bibliographical purposes.  Again, [[https://www.zotero.org/user/register][register]] and then join the [[https://www.zotero.org/groups/hacking_history][course group]].  
+*** Facebook
+You all know what facebook is, and you all have accounts on it (don't pretend you don't).  I'm not a big fan of [[http://en.wikipedia.org/wiki/Walled_garden_%28technology%29][walled gardens]], but I have a new profile for professional contacts, [[http://www.facebook.com/mattprice68][here]].  Friend me. Not sure how much we'll be using this but probably some.  
+*** Twitter
+finally, sigh, twitter.  I'm reluctant to use it but I have an [[http://twitter.com/mattpriceuoft][account]] for professional purposes.  Follow me, I'll  follow you back.  In the past I've used [[http://identi.ca][identi.ca]] to originate twitter messages; I still prefer this but let's track connections for this account on twitter.  

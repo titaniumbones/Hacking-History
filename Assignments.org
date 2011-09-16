@@ -1,0 +1,12 @@
+#+POSTID: 196
+#+DATE: [2010-09-27 Mon 13:20]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: assignments
+#+TAGS: 
+#+DESCRIPTION: 
+#+TITLE: Assignments
+
+* Assignments for His 495: Hacking History
+Assignments for HIS495 are linked here as I put them up on the site.  This mostly means lab assignments, as the writing assignments are straightforward reading responses (this is described in the [[./syllabus/][Syllabus]]).  
+** [[./assignments/lab-01-understanding-html/][Lab 01: HTML]]
+

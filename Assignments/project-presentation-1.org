@@ -1,0 +1,23 @@
+#+POSTID: 506
+#+DATE: [2010-10-21 Thu 09:30]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: assignments, 
+#+TAGS: 
+#+DESCRIPTION: 
+#+PARENT: Assignments, 
+#+TITLE: Project Presentation 1
+
+Newxt week we will have preliminary presentations of your projects.  This is in preparation for a more substantial proposal which you will present more formally at the end of the term.  The purpose of next week's class is to ensure that you have something moving along -- most of you are on your way but a couple of you will really have to hustle.  
+
+** Next Week's Blog
+Your blog posting next week should have the following components:  
+
+1) Brief description of the project (title, subject matter, goals)
+2) Short introduction to your community partner (name of the organization, description of their mandate, explanation of how this project fits in with their goals)
+3) Research Methods (oral histories, archival research, web surveys, datamining in the CBC archives...)
+4) Technical infrastructure for the site (how much interactivity do you need? how will source materials and analysis be integrated?  etc.)
+5) Challenges you anticipate (what you're most worried about)
+** Presentation
+This posting will serve as the basis for your presentation the following week.  You'll have about 20 minutes to discuss the topic -- everyone should have your proposal in front of them so they will be an informed, alert, helpful audience.  Consider drawing pictures or charts to describe how site elements will link to each other, or to express relations between structural or logical elements of the project -- these may help you (and us) unhderstnad the issues better.  Think hard about how to engage the community whose attention you want to draw to the site.  
+
+I look forward to seeing your work.  

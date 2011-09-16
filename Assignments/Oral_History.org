@@ -1,0 +1,57 @@
+#+POSTID: 616
+#+DATE: [2010-11-11 Thu 11:54]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: assignments, 
+#+TAGS: oral-history, handouts, 
+#+DESCRIPTION: 
+#+PARENT: 
+#+TITLE: Lab: Oral History Assignment
+
+This is a crowdsourced assignment!  Composed in class, 11-111-2010
+
+In this assignment we will imagine a hypothetical group project on the history of the G20 protests in Toronto.  As part of the research for the project, each of you will conduct an interview with a friend, family member or associate about their experience of the event.  After the interview you will write a short reflection on the experience in light of the readings we have already done on oral history techniques. Post your reflection to the blog as per normal but please be sure to restrict access to the Student group, and take special care not to compromise the anonymity of your source (as we are not conducting the full ethics review that would otherwise be necessary).  Bring your recordings to class with you and we will discuss the process in lab.  
+
+Be sure your subject KNOWS IN ADVANCE what your plans for the interview are (i.e.:  that you will be writing about it, but not fundamentally about the CONTENT of the interview; that your response will be shared with your colleagues; that the interview will NOT be made public).
+
+1.  Preparing for the Interview
+You should know the following going into the interview: 
+-Name of interviewee
+-What do you already know about their experience
+-Dates and times of events in question- when did it occur, when were you there.
+-Think about how to create rapport or trust- make it clear why are we doing this interview, what are they consenting to, a contract; 
+During the interview, ask set questions, broad questions first, then follow up on answers in order to show you're listening, to obtain details and to clarify and build rapport, then return to  your questions.  Here is a skeletal structure for the interview, TO WHICH YOU ARE NOT BOUND.  
+1) Why were you there?
+2) What was your inital reaction, and feeling
+3) Tell me what happened when you were there, in your own words.
+4) What was the pivotal turning point or event for you?
+5) Is there anything else you'd like to tell me about that day?
+6) Did it change the way you view your city at that moment? 
+7) Did it change your view of your city since the event?
+
+2. Interview length and format
+Be careful not to let the interview go on too long, as you'll need to listen to it later!  30 minutes will be more than enough; 10 minutes is probably a minimum length to get something interesting out of the interview.  
+
+Remember that your questions are just a guide -- be attuned to moments of engagement on the part of our subject, and follow them up when they occur.  
+Re-read Anderson and Jack, "Learning to Listen." 
+If you have time, also read [[http://www.transom.org/guests/review/200804_elizabeth_arnold/][Elizabeth Arnold's Interviewing Manifesto]] and any other great guide you can find on the excellent on [[http://www.transom.org][Transom]].  
+
+3. Post-Interview Reflection (this is the most important part).
+
+Please answer the following questions with no more than 250 words each.  
+
+Choose one of the following:
+1.    What was the most negative aspect of your interview?
+2.    What did you do wrong (Stefano)?
+3.    Is there something you should have extrapolated upon in the interview?
+4.    Were you too rigid in adhering to your questions?
+5.    Misc.
+
+Choose one of the following:
+1.    Were you surprised by anything?
+2.    What was the most interesting part of the interview?
+3.    Was your interviewee engaged in the process?
+4.    Was there a friction between the lens through which you tried to ask the questions versus the lens through which the interviewee was portraying their story?
+
+You have to answer this one, it's the law:
+1.    In creating an oral history did you find it useful as a medium? What are the limitations and challenges? Benefits?
+

@@ -1,0 +1,78 @@
+#+POSTID: 151
+#+PARENT: 
+#+DATE: [2010-09-23 Thu 07:48]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: assignm
+#+TAGS: 
+#+DESCRIPTION: 
+#+TITLE: Lab 01: Understanding HTML
+
+One of the goals of this week is to help you think of the Web as a protocol-driven infrastructure.  The language in which that infrastructure operates is called [[http://en.wikipedia.org/wiki/HTML][HTML]]. Like a traveller in a foreign country, you may not need to be fluent in this language, but if you know just a little bit then you'll be much more comfortable.  In this exercise we will use a cool little tool called "[[http://www.w3schools.com/html/tryit.asp?filename=tryhtml_style][TryIt]]" from w3schools.  I encourage you to work your way through their tutorial system, but we will only cover a few basics right now:  
+
+** Tags
+An HTML Document is composed of [[http://en.wikipedia.org/wiki/HTML_element][elements]] marked off by [[http://www.w3schools.com/tags/default.asp][tags]].  The elements look like this:  
+#+BEGIN_SRC html
+<p>This is a paragraph</p>
+#+END_SRC
+Note the opening and closing tags, which surround the text you want to have marked up.
+
+*** Important tags
+Here are a few examples of important tags, though there are many, many more in current versions of HTML.  
+**** Document Structure
+- <html></html>
+- <head></head>
+- <body></body>
+**** Text Attributes
+- <B></B>
+- <I></I>
+- <U></U>
+**** Linking
+- <a></<a>
+- <img>
+Figure out what these mean by browsing on w3schools. Work especially hard at the <a> tag.  Hint:  the standard syntax is <a href="link">Text</a> and there are plenty of instances in the code below.
+*** Exercise
+Let's quickly compare the text of my recent posting:
+
+#+BEGIN_EXAMPLE
+The WWW as Public Sphere
+Posted on September 21, 2010 by admin
+
+Just a few quick words about the readings this week, which concern the idea of the “Public Sphere“. This phrase is rooted in ideas about enlightenment that stretch at least back to Immanuel Kant. The analyses of Jürgen Habermas (SEP entry), in particular, developed the idea of a sort of virtual space of critical discussion...
+#+END_EXAMPLE
+
+with the HTML code that generates what you see on your screen when you go to the website: 
+
+#+BEGIN_SRC html
+div id="post-77" class="post-77 post type-post hentry category-notes-for-class tag-publicsphere">
+					<h1 class="entry-title">The WWW as Public Sphere</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://www.hackinghistory.ca/2010/09/21/the-www-as-public-sphere/" title="11:03 am" rel="bookmark"><span class="entry-date">September 21, 2010</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://www.hackinghistory.ca/author/admin/" title="View all posts by admin">admin</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+								<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;rft.title=The WWW as Public Sphere&amp;rft.aulast=Price&amp;rft.aufirst=Matt&amp;rft.subject=Pre-class notes&amp;rft.source=Hacking History (His495)&amp;rft.date=2010-09-21&amp;rft.type=&amp;rft.format=text&amp;rft.identifier=http://www.hackinghistory.ca/2010/09/21/the-www-as-public-sphere/&amp;rft.language=English"></span>
+
+<div class="sticky_post"><p> Just a few quick words about the readings this week, which concern the idea of the  &#8220;<a href="http://en.wikipedia.org/wiki/Public_sphere">Public Sphere</a>&#8220;.  This phrase is rooted in ideas about <a href="http://plato.stanford.edu/entries/enlightenment/">enlightenment</a> that stretch at least back to <a href="http://en.wikipedia.org/wiki/Immanuel_Kant">Immanuel Kant</a>.  The analyses of <a href="http://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas">Jürgen Habermas</a> (<a href="http://plato.stanford.edu/entries/habermas/">SEP entry</a>), in particular, developed the idea of a sort of virtual space of critical discussion  </p>
+
+</div>
+											</div><!-- .entry-content -->
+#+END_SRC
+
+                                                                                        They look pretty different, right?  Now, paste the text-only version into the textbox at [[http://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro][w3schools]]. Figure out how to accomplish the following tasks:
+1. Make the title :The WWW and the Public Sphere" into a header.
+2. Add a link to "http://www.hackinghistory.ca/author/admin/" to the word "admin" in the second line.
+3. Italicize the date line.
+
+These are all pretty easy, you can figure them out either by inspecting the marked-up version I reproduced here, or following the w3schools HTML tutorial.  
+ 
+** Styles
+Styles in HTML are pretty complex, see the [[http://www.w3schools.com/html/html_styles.asp][first]] and [[http://www.w3schools.com/html/html_css.asp][second]] HTML style tutorials on w3schools.  Check out their very quick description of [[http://www.w3schools.com/css/css_intro.asp][css]].  
+*** Exercise
+Go back to your TryIt experiment at w3schools.  Can you make the text render in the same styles that are used by the website?  There's a clue in the <head> element of any page from the site.  Hint: search for "css" in the sourcecode...
+** Scripts
+Though HTML is the language of the web, modern HTML (HTML 4, HTML 5) have "translators" of a sort that allow other languages to run inside the web page.  this is actually incredibly powerful, and allows amazing things that were unheard of in the early days of the web, like dynamically-generated lists, moving images, the embedding of video and so forth.  You don't have to know how to script (I can't really use javascript, for instance) but you should understand that scripting is what makes a lot of today's web work the way it does.  
+*** Exercise
+Inspect the source code of three complex pages on the web and find every instance of a script tag.  Note anything you think is interesting about it.  
+** Templates
+Finally, just a note on how pages are generated in wordpress out of templates.  Quickly read [[http://codex.wordpress.org/Stepping_Into_Templates][this page]] on the wordpress website.  Can you tell where the template divisions are in a page from our site?  Try inspecting the sourcecode.
+

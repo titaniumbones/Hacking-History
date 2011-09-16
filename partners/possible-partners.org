@@ -1,0 +1,67 @@
+#+POSTID: 389
+#+DATE: [2010-10-07 Thu 09:56]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: 
+#+TAGS: partners
+#+DESCRIPTION: 
+#+PARENT: Partners,  
+#+TITLE: Possible Partners
+
+Listed below are some ideas for possible projects, suggested by community organizations.  
+
+** [[http://www.thestop.org/][The Stop]]
+Contact: [[mailto:liz@thestop.org][Liz Curran]]
+
+The Stop Community Food Centre envisions a society where access to healthy food is a fundamental human right.  We run a wide range of innovative programs across our site sites at 1884 Davenport Rd and in the newly opened Green Barn, at 601 Christie. 
+
+The Stop’s origins are as a food bank, but over the years we have expanded and developed other ways to help increase our community member’s access to healthy food.  Our programs include a drop-in, perinatal program, civic engagement, bake ovens and markets, community cooking, community advocacy, sustainable food systems education, community gardens, after school program, compost demonstration, and backyard sharing.
+
+This year The Stop launched the Global Roots Garden, working in partnership with CultureLink Settlement Services.  The Global Roots Garden brings together seniors and youth from 7 different cultural communities in Toronto – Chinese, South Asian, Somali, Italian, Latin American, Polish, and Filipino,  highlighting  these diverse food growing traditions.  These gardeners meet to tend the gardens and share their knowledge with each other. 
+
+An innovative project for the Hacking History course could be working with Global Roots participants to capture some of their stories,  creating audio clips that could be used as part of a murmur-style digital tour in the space and / or embedded in The Stop’s website.  Working with this diverse group of gardeners would be a unique and enriching experience for the students involved.
+
+ 
+The Stop Community Food Centre is a non-profit organization that strives to
+increase access to healthy food in a manner that maintains dignity, builds
+community and challenges inequality.  The Stop has two locations: at our
+main office at 1884 Davenport Road we provide frontline services to our
+community, including a drop-in, food bank, perinatal program, civic
+engagement, bake ovens and markets, community cooking, community advocacy,
+sustainable food systems education and urban agriculture. The Stop's Green
+Barn, located at 601 Christie Street, is a sustainable food production and
+education centre which houses a greenhouse, food systems education programs,
+a sheltered garden, community bake oven and compost demonstration centre. 
+This year The Stop launched the Global Roots Garden, working in partnership
+with CultureLink Settlement Services.  The Global Roots Garden brings
+together seniors and youth from 7 different cultural communities in Toronto
+- Chinese, South Asian, Somali, Italian, Latin American, Polish, and
+Filipino,  highlighting  these diverse food growing traditions.  These
+gardeners meet to tend the gardens and share their knowledge with each
+other.  An innovative project for the Hacking History course could be
+working with Global Roots participants to capture some of their stories,
+creating audio clips that could be used as part of a murmur-style digital
+tour in the space and / or embedded in The Stop's website.
+** [[http://www.mhso.ca/][Multicultural History Society of Ontario]]
+Contact:  [[mailto:britt.braaten@mhso.ca][Britt Braaten]] 
+
+The MHSO is putting its Oral History Museum online, and we hope that this project will be a significant part of making that happen. 
+Working under the supervision of the MHSO, students will use the Center for History and New Media's digital publishing program Omeka (http://omeka.org), to design and create the OHM home page portal, 1 exhibit, and a collections archive. In the future, new exhibits and collections entries will be added to this framework as the museum grows. Thus, the work that the students create will be an important part of the MHSO's public face for the foreseeable future.
+Students will work directly with our digitized collection to develop and create an online exhibit that highlights our collection in a manner that is consistent with the vision and purpose of the MHSO. Our volunteers will be working in Fall 2010 to digitize collection items for the Hacking History students to work with -- if there is a particular issue or ethnocultural group that interests the Hacking History students for there exhibit, there is an opportunity for them to direct these digitization efforts (or even volunteer with the MHSO first term to help digitize these items). Students will also begin to populate the online collection archive with the collection items from the exhibit.
+** [[http://www.janeswalk.net/][Jane's Walk]]
+Contact: [[mailto:emmy@janeswalk.net][Emmy Pantin]]
+
+We'd love to see a website devoted to the history of Jane Jacobs in Toronto.
+
+We already have an audio walking tour, which we would love to see integrated into a site: 
+http://janeswalk.net/walks/view/jane_jacobs_annex/ 
+
+It would be great to archive documents, footage, resources and information about Jane
+Jacobs.
+
+Here are links to the already existing Jane Jacobs section of our website:
+http://www.janeswalk.net/about/jane_jacobs
+http://janeswalk.net/about/jane_jacobs/primers/
+http://janeswalk.net/about/jane_jacobs/articles/
+
+** [[http://murmurtoronto.ca/][murmur]]
+[murmur] has expressed interest in working with us, but we have no concrete plans yet.  

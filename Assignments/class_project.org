@@ -1,0 +1,33 @@
+#+TITLE:     class project
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt.price@utoronto.ca
+#+DATE:      2010-10-06 Wed
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT: 
+
+The class project, which will occupy most of the class's second semester, is a substantial collaboration with a community organization on a project of mutual interest.  In most cases the project will be a website of some kind, though other kinds of outcomes -- for instance, exhibits or ambient installations -- are also possible.  The intention is to create something of lasting value to yourself, the organization, and the community it serves, so that your work endures beyond the temporal scope of the class.  The project is worth 50% of your final mark, but this percentage is itself [[grading][distributed]] between various parts of the project.  A high premium will be placed on timely, regular progress made towards intermediate goals, to help make sure that these complex and difficult projects come to fruition.  Some of you have already been thinking about projects; this is great and /you should continue to do so/.  You can work alone or in small groups of 2-4; in a class of this size it may be difficult to find a partner but there are substantial benefits to working together, especially when charting unknown territory, so I encourage you to consider this option.
+** Project Parameters
+The finished product should be a polished website or other digital artifact which is directly of use to the partnering organization; it should also be an intellectually honest endeavour which takes seriously the historian's responsibility to tell truths about the past. Your work will, then, be held to a relatively high standard -- I'm asking a lot of you.  You should therefore take pains /not to bite off more than you can chew/.  Your project should be of a manageable scope, and if it's more than you can do on your own, you should be absolutely sure that your partnering organization has resources to devote to the project either while you work on it, or after the class has finished.  Here are some things you should /not/ attempt to do:
+- design your own web framework.  You should use [[http://www.wordpress.org][Wordpress]], [[http://www.omeka.org][omeka]], or the partnering organization's existing web technologies.  If you have a prior expertise in some other framework or in web design, you should discuss this with me immediately.
+- attempt to tell the story of a major event or historical figure.  Do not attempt to create a digital archive of the Holocaust, or a definitive documentary history of the War of 1812, or an oral history archive of the immigrant experience in Toronto.  These are /areas of interest/, not /topics for a project/.  Narrow your subject as much as you possibly can; then talk about it with me and we will narrow it down further.  
+- strike out entirely on your own.  You will need some support from someone -- that is one of the main reasons to have a community partner
+- put /anything/ off till the last minute.  In a complex project like this you will be surprised at the number of tasks there are to accomplish.  
+** Human Subjects Ethics Review
+If your project involves oral history interviews that _you_ will be conducting, you will need to complete a Human Subjects Ethics Review as outlined in [[http://www.research.utoronto.ca/wp-content/uploads/2009/09/ERO_Guidelines_Manual-2007.pdf][this document]].  The procedure is not terribly onerous but it does take some time so be very serious about this.  
+** Grading
+#<<grading>>
+The final project will be evaluated based on its success in meeting the goals outlined in the proposal, on the integrity of historical analysis, on the aesthetics of the presentation, and on the satisfaction of the community partners with your work.  
+| Final Product   | Apr. 2  | 60% |
+| Proposal        | Oct. 30 | 10% |
+| Journal Entries | _____   | 20% |
+| Interim Report  | Feb. 20 | 10% |
+

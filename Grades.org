@@ -1,0 +1,123 @@
+* Hacking History Project Grades          :history:hacking:teaching:computer:
+** Project
+*** Site Structure
+*** Style
+*** Usability
+*** Content
+*** Overall
+** Danforth Diaspora (Natasia)
+*** Site Structure
+sigh.  I hate Omeka's underlying exhibits/collections/items hierarchy, but you do a pretty good job with what you're given.  I'm not convinced the platform is worth improving, though.
+*** Style
+- some navigational confusion, e.g. in [[http://natasia-omeka.hackinghistory.ca/exhibits/show/rural-to-1939/notable-figures][Rural Beginnings]]. I think it's because the subcategories display below the main table of contents instead of within.  Some CSS changes to offset the colour and position of the sub-category links might help this. Also, when browsing collections, next/previous item doesn't keep you within the collection -- terrible!! instead you just get whatever the next entered item was.  Not sure you can fix this.
+- in browse item view, there are lots of empty spaces.  Not immediately apparent why, would be nice to fix it somehow.  
+- Consider rewriting the main menu, putting Browse Exhibits just behind Home. Also can you get contact Us to display on the same line as the rest of the menu? I fixed it by changing padding: to 0 0 0 60px in screen.css ~line 64, or you could try changing margin-left to 0px in the following line. Try the same in .branding-footer on line 164.
+- watch typos, e.g. compromised --> comprised on [[http://natasia-omeka.hackinghistory.ca/exhibits/show/rural-to-1939/playter-estates-development/early-development][Early Development]].  also minor style issues, e.g. drop 'it is logical'  and similar phrases wherever you find them. 
+*** Usability
+It remains somewhat difficult and counter-intuitive to browse through the exhibits in the project, despite substantial progress overcoming the built-in limitations of Omeka.  It would make sense for the MHSO to consider building its own omeka-based platform, with bundled plugins and a base theme with sensible elements, like more prominent next/previous navigation.  Still, after a little fumbling I was able to access everything in the site, I think.  
+- all that wasted space in the sidebars is just asking for a navigation column!! Especially given the lousy navigational tools you're saddled with.  
+*** Content
+Lots of interesting stuff here.  In no particular order:
+- Strange to have an [[http://natasia-omeka.hackinghistory.ca/exhibits/show/rural-to-1939/east-danforth][East Danforth]] page without a West Danforth one; can you emphasize the 'westness' of your other pages more in the intro (I know you discuss it in  -- am I to take it that the rest of this section is about West Danforth?
+- It'd be nice to have more explicit transitioning & cross-referencing between pages, esp. since navigation is so second-rate in Omeka.
+- [[http://natasia-omeka.hackinghistory.ca/exhibits/show/1939-to-2000/danforth-tech/danforth-tech--evolution-of-a-][Evolution of a Student Body]] shows student photos through 2000 but discusses trends only till 1957. Can you expand this at all?
+- first two sentences of [[http://natasia-omeka.hackinghistory.ca/exhibits/show/1939-to-2000/greektown][Greektown]] confusing. Can you end this section with a reference to some context re: the crowning of this area as 'greektown'? That is, when do people start calling it that, do you have a sense of what the highest percentage was of greek-descended people in the neighbourhood, etc...
+- [[http://natasia-omeka.hackinghistory.ca/exhibits/show/1939-to-2000/greektown/mhso][greektown MHSO]] page could use some text?
+- people of the postwar danforth collection is sorted more or less randomly, making it hard to navigate.
+- Could you add some introductory text to the 'modern imaginings' section, to tell a more general narrative (about increasing diversity, etc.)?  
+*** Overall
+Well, it's pretty darned good, Natasia, and a very impressive effort from one person.  I wish I could find a way to entice you to keep working on it till it gets just a little bit better, along the lines of my above suggestions, because I think it's a valuable contribution.  Overall grade of A- that could definitely go up if you give it another push.  
+
+Matt
+
+** South Indian Migration (Mahavish)
+*** Site Structure
+A little lopsided to the one section that really got written, as you know.  
+*** Style
+In general pretty good. Most of my comments from before still stand, though. 
+*** Usability
+The underlying awkwardness of the Omeka structure has been difficult to overcome.  It imposes too much hierarchy and some unhelpful links.  But you've made big strides towards improving on what they provide.
+*** Content
+- sources: It'd be nice if you linked out to the sources, or provided full citations for non-web sources.
+- I think the technical difficulties ended up distracting you from the content a bit.  The laws/government section is pretty good, but could still use more sustained discussion of the very complex issues it raises.  So there's room for improvement there.  The demographics section is quite spartan, and while the graphs are intrinsically interesting they really need some explanatory text. The text in the religion section is really too general; it almost would have been better to restrict the project more tightly.  This is perhaps in large part an issue that would have been solved with better oversight by me or the MHSO.   
+
+*** Overall 
+You did a lot of great work here, Despite my caveats, and you also made great strides on the technical issues with which I know you were quite uncomfortable when we started.  Nice work, and good luck going forward!  Grade:  B+
+
+Matt
+
+** Notman Society (David)
+*** Site Structure
+- Works quite well, is eminently navigable, and we'll see what exactly happens when people start posting images.  If it was a high-traffic site the current solution would be pretty hard to manage, but given the relatively small community it serves your email-based solution could work!
+- You should be able to make the TOC entries in the Notman biography page into live links using 'anchor' links (sometimes called jump links).  There are wordpress plugins for this, but in wordpress.com you have to do this manually, see [[http://en.support.wordpress.com/splitting-content/page-jumps/#jump][here]].
+*** Style
+- nice work on the bio, see above re: TOC.  I like the black.
+- still some room for formatting improvements in the main page -- photos could be wrapped, etc.  But much nicer with the wider column.
+- nice work fixing tone.
+*** Usability
+No complaints, though again a little worried about the interactive elements.
+*** Content
+- Much improved front page!  Nice.
+- The Biog page is in good shape.  Some interesting questions I would love to see addressed some day -- e.g., what about that picture of sitting Bull and Buffalo Bill? What's it meant to signify?  Did they come to Montreal to be photographed? etc.  Some sections are too heavy on citations -- they start to look like quotes merely strung together, very 1990's.  There's something odd about numbered footnotes that don't ascend neatly.  Do you mean to use a social science format, e.g. \[2\]? Also I would really love for those notes to be anchor links like the TOC, and for some more consistency in format.  Beware minor typos, e.g. his for him & a couple of others. 
+- I actually love the photo analyses and would like to see them made a little more prominent. Now that you have them in 2 sections, the others seem a bit flat by comparison.   In all of these sections (industrial, scenic, portraits, etc) I think you can integrate LH's text into your own -- I appreciate you separating it for me for purposes of evaluation but in the final version that's not necessary.  I would also like to think about composites not as realistic but perhaps as [[http://www.egs.edu/faculty/jean-baudrillard/articles/simulacra-and-simulations/][simulacra]].
+- nice bibliography, but how many of those sources did you actually use?  Probably better to restrict it to those you at least flipped through.  
+*** Overall
+A substantial improvement, and overall I'm very impressed by how far you came in the last few weeks.  Good work, David!  Grade: A-.  
+
+Matt
+
+** 50 Years (Jason and Julia)
+*** Site Structure
+Still good.  
+*** Style
+- Yay! Banner looks better.  Still looking forward to promised new template next weekish.
+- Can you put captions on photos?  If they take up an awkward amount of space you could make them show up on mouseover.  It'd help e.g. in 4 Ideas.
+- It'd be nice to have prettier icons in the Radical Timeline, also to have the text boxes track better with the timeline events.  Can you do anything about either of those?  Also note italics are not displayed, instead you get those I-don't-recognie-this-character-code boxes.  
+
+*** Usability
+getting there!  fix the template though.  otherwise great.
+*** Content
+**** new home page
+really great.  perfect tone for the partnering organization, too.
+**** Birth of a Book
+Yay! Nice to see it.  Overall very good, still some traces of Julia's tendency to rmable just a touch -- when you have time go over that prose very carefully, maybe together if Jason can manage it.  "Publication" trails off a bit at the end.  Reaction is much impoved though I still think it could be longer and more detailed -- a project for another time, perhaps.  I'd at least like to hear how it becomes POPULAR -- we know there why people didn't like it, and we see in '4 Ideas' what her contribution is, but we don't hear how she comes to be lauded over the course of the last 50 years.  
+**** 4 Ideas
+Very nice Introduction.  I feel you could make all of these sections a little longer -- tease out some further implications.  In particular I can imagine some of what I feel to be missing from [[http://janeswalk.net/history/Reaction][Reaciton]] could work here instead. E.g., "JJ's insistence on Mixed Use found a particularly receptive audience in ...., but also substantial resistance from..."  
+- great, I wish all the video had made it in, I love the guy in the kilt in SLM.  The comparison is perhaps a bit unfair as SLM is BUSIEST on Saturday around noon...  Still la great touch.  
+**** Radical Timeline
+much improved by the small touches you added over the weekend.  There's room for an infinite amount of material here, and it would be great if people could sumbit new entries somehow...  overall terrific.  
+
+*** Overall
+Well:  nice work!  The site's fantastic, an A for sure, though I think there are still important modifications to be made for the partner's sake.  Go through the text with a fine-toothed comb and look for remaining typos and style issues, e.g. missing italics on the book's title in various places.  still, terrific.  Grade: A.  
+
+
+** UC Voice
+*** Site Structure
+- I still would like some text re: panoramas.  See the [[http://www.janeswalk.net/history/death_and_life][jane's walk]] intor page for a great example of introducing sections using links in the main text.  
+*** Style
+- pretty excellent in general.  
+- still don't love the banners! glad you stuck to your guns though.
+- footnotes much better now
+- Scott, still be careful to introduce people by their first names e.g. in The First UC.  
+- 
+*** Usability
+Works great.  I still think you could go on a bit more specifically about the scope of the project.
+*** Content
+**** About
+much better, though explicit links in the text would still help, see above.  Izzy, see if you can use any of the CC licensed music I sent you links for.  
+**** History
+Significantly better. Scott, what happened to those other sections?  I do think there has to be a little more content to make the site great.  And I know you have the information.
+Also, I still think you could highlight more dramatically the inclusion stuff, esp. e.g. by talking about minorities, the role of Jews in the college, how that might create a precedent for other minorities, etc.  I think it's important.  
+**** Student organizations
+I think you should drop those student organizations for which you don't have original content.  But convince me otherwise if you think I'm wrong.  
+**** Important People
+A bit too cheerleadery.  Can we place these people in a context, so as to make them more generally interesting?  Again, highlight your arguments, make your data subsidiary to them.  
+**** Reznikoff
+I love it, it's great.  
+**** Interviews
+Still haven't listened to them all properly.  I think they really help your site a lot.  Nicework on that, guys.  
+
+*** Overall
+Well -- congratulations to you two.  Very nice work, though I really hope you find a way to implement the changes I'm still suggesting.  Maybe you can hand it off to someone else to do...  Anyway, I'm very proud of all you've managed to do thus far, very nice work.
+
+Grade: A

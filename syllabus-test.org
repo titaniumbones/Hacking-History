@@ -1,0 +1,172 @@
+#+POSTID: 5
+#+DATE: [2010-09-03 Fri 23:25]
+#+AUTHOR:    University of Toronto
+#+EMAIL:     matt.price@utoronto.ca
+#+TITLE:   Syllabus
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+# savetrees breaks mk4ht, see 
+# http://www.mail-archive.com/emacs-orgmode@gnu.org/msg29558.html
+#+LATEX_HEADER: \usepackage{savetrees}
+# #+LATEX_HEADER: \usepackage[letterpaper]{geometry}
+# #+LATEX_HEADER: \geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2cm,rmargin=2cm}%
+# #+LATEX_HEADER: \usepackage{paralist}
+# #+LATEX_HEADER: \let\itemize\compactitem
+# #+LATEX_HEADER: \let\description\compactdesc
+# #+LATEX_HEADER: \let\enumerate\compactenum
+# #+LATEX_HEADER: \usepackage[small,compact,calcwidth]{titlesec}
+# #+LATEX_HEADER: \titlespacing{\section}{0pt}{*1}{*0.2}
+# #+LATEX_HEADER: \titlespacing{\subsection}{5}{*0}{*0}
+# #+LATEX_HEADER: \titlespacing{\subsubsection}{10pt}{*0}{*0}
+# #+LATEX_HEADER: \usepackage{enumitem}
+# #+LaTeX: \setitemize{nolistsep}
+# #+LaTeX: \setitemize{noitemsep}
+# #+latex-header: % this makes list spacing much better.
+# #+latex-header: %
+# #+latex-header: \newenvironment{my_enumerate}{
+# #+latex-header: \begin{enumerate}
+# #+latex-header:   \setlength{\itemsep}{1pt}
+# #+latex-header:   \setlength{\parskip}{0pt}
+# #+latex-header:   \setlength{\parsep}{0pt}}{\end{enumerate}
+# #+latex-header: }
+
+"In what ways can digital media and digital networks allow us to do our work as historians better?" -- Cohen & Rosenzweig
+* _Logistics_
+| *Instructor:* | Matt Price             |
+| *Email:*      | matt.price@utoronto.ca |
+| *Tel:*        | 978-8472               |
+| *Office Hrs:* | R 1-2:30               |
+* _Introduction_ 
+This year-long course examines the relationships among academic history, digital media, and community formation using a variety of texts and methods; it culminates in an intensive semester-long digital storytelling project focused on community engagement.  The intellectual focus of the first semester is two-fold: first, on the history of the public sphere and second, on the politics of "engaged" scholarship.  At the same time, students will be exposed to techniques of multimedia and nonlinear storytelling.  The second semester revolves around a group project undertaken in concert with a community organization.  Working closely with their community partners, students will build a digital archive or storytelling framework using multimedia and/or social networking technologies.  The fundamental aim of the course is to expand the reach of historical scholarship outside of the academy, and to develop modes of historical research compatible with community engagement.
+* _Course Structure_
+** First Semester
+In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[Outline: Semester 1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  In advance of the class meeting students will generally be expected to produce written responses to the readings in the form of blog postings, and to respond to the postings of at least two other students.  In certain weeks there are other types of assignments; these are noted in the outline and referred to in the course requirements.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests.
+** Second Semester
+In the second semester it is expected that students will spend most of their time working directly on their project with the partnering organization.  We will meet as needed, probably about twice a week, to discuss specific technical questions raised by the projects themselves.  However, it is still expected that students will make regular postings about their progress, and comment on each other's writing.  In general, it is expected that the second-semester projects will also be collaborations.  
+#<<Course Requirements>>
+* _Course Requirements_
+The emphasis will be on steady, consistent work.  Students are required to make weekly contributions to the online postings to the class website, and to comment on other postings.  There are also weekly technical assignments, which serve as the basis for the lab portion of the course.The second semester is largely taken up by the final project, which counts for 50% of the grade and in the course of which blog postings will continue to be required.  Grade distribution:
+- online commentary 20%
+- lab assignments 20%
+- in-class participation 10%
+- Final Project (including ancillary assignments) 50%
+** Project Timetable
+Sept. 16: Detailed assignment handed out with preliminary partner suggestions
+Oct. 28: Presentation of preliminary project proposal.  
+Dec. 2: Presentation of Final Proposal
+Jan 10: Internship begins (approximate)
+Feb 24: Intermediate Status Report
+Apr. 7: Project Open House
+** Grading of Posts and Labs
+Posts and labs will be graded in the old-fashioned 0-4 system, where 0 represents and F and 4 an A.  The assignments will be summed and averaged, then converted to a UofT-style numerical grade.  
+# <<texts>>
+* _Texts_
+All texts for this course are online, either in the public web or as pdfs.  Most of them are publicly available. You may want physical copies of some books;  these are available at amazon or by special order from any sizable bookstore. 
+- Cohen & Rosenzweig, /Digital History/ (http://chnm.gmu.edu/digitalhistory/)
+- C. Kelty, /Two Bits/ (http://twobits.net/read/)
+- P. Gralla, /How The Internet Works/ (7th or 8th Edition)
+A sizable collection of links is also provided on the course website and reproduced via [[http://www.deli.cio.us][deli.cio.us]].  The course bibliography is maintained at http://www.zotero.org/.  
+#<<outline1>>
+* _Outline: Semester 1_
+** 1. [[file:./syllabus/what-is-history-for][What is History For?]] (2010-09-16) 
+Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture.  
+Background: [[http://www.journalofamericanhistory.org/issues/952/interchange/index.html][JAH - The Promise of Digital History]]
+*** Lab:  Introduction to Wordpress & the course site.  Blogging & social media review. Preliminary listing of potential NGO partners. 
+** 2. <2010-09-23 Thu> [[file:Syllabus/history-and-the-public-sphere][History and the Public Sphere]]
+On our notion of "public sphere", where it comes from and how it's changing.  
+*** Readings:
+- J. Habermas, "The Public Sphere: Encyclopedia Article" ([[http://www.sociol.unimi.it/docenti/barisione/documenti/File/2008-09/Habermas%20(1964)%20-%20The%20Public%20Sphere.pdf]]) 
+- Mark Poster, "Cyberdemocracy" (http://www.hnet.uci.edu/mposter/writings/democ.html) 
+- Wikileaks Afghan War Diary (http://wikileaks.org/wiki/Afghan_War_Diary,_2004-2010) 
+- Wikileaks Collateral Murder video (http://www.wikileaks.org/wiki/Collateral_Murder,_5_Apr_2010)
+*** Lab: The Wikileaks Episode
+- how does Wikileaks work?  What does it say about the impact of the web on politics and analysis?  
+** 3. <2010-09-30 Thu> [[file:HackingHistory/the-language-of-the-web][The Language of the Web]] 
+How the Internet works, and what that means for historical narrative.
+*** Readings
+- Vannevar Bush, "As We May Think" (http://www.theatlantic.com/magazine/archive/1969/12/as-we-may-think/3881/)
+- Tim Berners-Lee, /Weaving the Web/ Ch. 2,4.  
+- Tim Berners-Lee, "[[http://www.scientificamerican.com/article.cfm?id=the-semantic-web][The Semantic Web]]" 
+- Edward L. Ayers, "[[http://www.vcdh.virginia.edu/Ayers.OAH.html][History in Hypertext]]"
+- Rus Shuler, "[[http://www.theshulers.com/whitepapers/internet_whitepaper/index.html][How Does the Internet Work?]]
+*** Lab: HTML:  the language of the web 
+** 4. <2010-10-07 Thu> Recursive Publics
+the significance of free software; the recursive relation and its possible significance for other disciplines
+*** Readings:
+- Richard Stallman, "[[http://www.gnu.org/gnu/manifesto.html][The GNU Manifesto]]" and "[[http://www.gnu.org/philosophy/free-sw.html][The Free Software Definition]]"
+- Eric Raymond, "[[http://catb.org/esr/writings/homesteading/cathedral-bazaar/][The Cathedral and the Bazaar]]"
+- Kelty, Ch. 1 & 9.
+- Creative Commons Licences: http://creativecommons.org/licenses/
+- Dan Cohen, "[[http://www.dancohen.org/2009/05/12/idealism-and-pragmatism-in-the-free-culture-movement/][Idealism and Pragmatism in the Free Culture Movement]]"
+*** Lab: Markup, Data and Metadata
+the transformations your text makes between you, your audience, and your machine readers.  Background: [[http://digitalhumanities.org/dhq/vol/3/3/000064/000064.html][XML, Interoperability and the Social Construction of Markup Languages: The Library Example]]
+** 5. <2010-10-14 Thu> Abundant Information and the Digitial Divide
+How does the generalized availability of massive amounts of information abundance change the role of the historian?
+*** Readings:
+- Dan Cohen and Roy Rosenzweig, "Becoming digital" ch. 6 in /Digital History/
+- Katie Hafner, "History, Digital (and Abridged)" (http://www.nytimes.com/2007/03/10/business/yourmoney/11archive.html?pagewanted=all)
+- Philip and Harpold, "Of Bugs and Rats" (http://pmc.iath.virginia.edu/text-only/issue.900/11.1harpoldphilip.txt)
+- Geoff Bowker, "Classification and Large-Scale Infrastructure", /Sorting Things Out/ 
+- Geoff bowker, "The Local Knowledge of a Globalizing Ethnos" /Memory Practices in the Sciences/, ch. 5.
+*** Lab: Search Tools
+Using google scholar, zotero, and private search indexes. Background: [[http://digitalhistoryhacks.blogspot.com/2005/12/teaching-young-historians-to-search.html][Teaching Young Historians to Search, Spider and Scrape]]
+** 6. <2010-10-21 Thu> Crowdsourcing 
+The new kinds of collaboration that the web makes possible, and the intelletual challenges they create.
+*** Readings:
+- R. Rosenzweig, "Can History be Open Source?" (http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42)
+- Dan Cohen, "The Spider and the Web" (http://www.dancohen.org/2009/04/16/the-spider-and-the-web-a-crowdsourcing-experiment/)
+- Steven Friess, "50000 Join Distributed Search for Steve Fossett", /Wired/ 09.11.07 (http://www.wired.com/software/webservices/news/2007/09/distributed_search)
+- Nawvieskie, "[[http://digitalhistory.wikispot.org/H9808A_2009_05_Social][Collex]]"
+- Wyman et al, "[[http://www.archimuse.com/mw2006/papers/wyman/wyman.html][Steve.museum: An Ongoing Experiment in Social Tagging, Folksonomy, and Museums]]"
+*** Lab:  Wikipedia Tracking Assignment
+A look at the inner workings of the world's biggest crowdsourcing project.  
+** 7. <2010-10-28 Thu> Project Presentation iteration 1 
+First presentation of project ideas for constructive criticism. No Readings.
+*** Lab: Critique and Improvement of colleagues' project proposals.
+** 8. Engaged History    
+what does it mean to be an 'engaged' scholar?  Virtues and vices.
+*** Readings:
+- Massey, Doreen. “Places and Their Pasts.” History Workshop Journal 39 (Spring 1995): 182-192
+- Novick, Robert "The Defense of the West," ch. 6 of /That Noble Dream/ 
+- Said, Edward W. “Invention, Memory, and Place.” Critical Inquiry 26 (Winter 2000): 175-192
+-  William L. Niemi and David J. Plante, "Democratic Movements, Self-Education, and Economic Democracy: Chartists, Populists, and Wobblies" /Radical History Review/ 2008(102): 185-200
+*** Lab: Setting up Wordpress:  A Trial Run
+Set up mockups -- install plugins -- create users.     
+** 9. Oral History
+One remarkable possibility opened up by the web is abundant oral history.
+*** Readings: 
+- "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
+*** Lab:Oral History Exercise
+    Topic TBA    
+** 10. Working with Communities    
+The ethics of working with laypeople, and the promises & pitfalls of collaborating with non-academics.
+*** Readings:
+TBA
+*** Lab: Collaborative Goal Definition
+** 11. Great History Websites    
+A look at some excellent history websites
+*** Readings:  
+TBA (Websites only!)
+*** Lab: Website dissection
+** 12. Project Presentation iteration 2    
+Presentation of proposals, including plans, mockups, etc. No readings.
+# <<outline2>>    
+* _Outline Semester 2_
+In the second semester we will meet only every second week, to help make time for you to work with your community partner.  You will still be required to post weekly updates to the /course/ blog, while collecting materials and building the infrastructure for your final projects.  Topics discussed in class meetings will be defined by your needs, but a tentative list of topics includes:
+- Defining your project goals
+- Data Capture and Metadata
+- Copyright Issues
+- Video on the Web
+- Audio Post-Processing
+- Website look and Feel
+- Basic Scripting
+- Project Open House    
+    
