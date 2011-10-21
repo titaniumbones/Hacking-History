@@ -1,0 +1,10 @@
+#+POSTID: 458
+#+DATE: [2010-10-07 Thu 01:27]
+#+CATEGORY: assignments
+#+PARENT: Assignments, 
+#+TAGS:
+#+DESCRIPTION: 
+#+TITLE: Lab 02: Humans and Machines
+
+Point of today's exercise is to look at how machines and humans interact in the web.  Instead of an assignment, though, we have a graphic...  
+

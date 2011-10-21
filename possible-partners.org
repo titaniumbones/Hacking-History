@@ -1,0 +1,38 @@
+#+POSTID: 389
+#+DATE: [2011-10-19 Thu 13:56]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS: partners
+#+TITLE: Possible Partners
+
+Listed below are some ideas for possible projects, suggested by community organizations.
+
+*** [[http://www.mhso.ca/][Multicultural History Society of Ontario]] 
+
+Contact: [[mailto:britt.braaten@mhso.ca][Britt Braaten]]
+
+Since 2004, the MHSO has operated an [[http://www.mhso.ca/museum.html][Oral History Museum]] (OHM), which features 4 computer-based modules with text, video, audio and image components. At present, the OHM is only accessible by visiting the MHSO's office in the Columbus Centre (901 Lawrence Ave. West). 
+
+The proposed project would involve creating an online version of the OHM, adapting the existing modules where appropriate, and creating new content as desired. The resulting site would feature digitized materials in the MHSO collection in a way that supports our goal of promoting the positive aspects of living in a multicultural province.
+
+*** [[http://www.toronto.ca/archives/][Toronto Archives]] "The Ward"
+
+Contact: [[mailto:jehrenw@toronto.ca][Jessica Ehrenworth]]
+
+The Toronto Archives runs a successful program for high school students in which the students learn about the history of "[[http://en.wikipedia.org/wiki/The_Ward,_Toronto][The Ward]]" through maps, photographs, and other archival sources. Students working on this project would supplement that realspace program with a website, whose shape and precise function is still to be determined.  The Archive will not be able to act as a formal sponsor of the research, but we can host the project on our server, at least in the medium term. The archive's collection can be [[https://gencat4.eloquent-systems.com/webcat/request/DoMenuRequest?SystemName=City+of+Toronto+Archives&UserName=wa+public&Password=&TemplateProcessID=6000_1580_11104&bCachable=1&MenuName=City+of+Toronto+Archives&eloquentref=toronto][searched online]], and there is also the [[http://www.flickr.com/photos/torontohistory/][flickr stream]], but neither mentions the Ward collection prominently. 
+
+*** Marcus Garvey Anniversary Project
+
+A loose group of intellectuals has expressed interest in a site to commemorate marcus Garvey's 125th anniversary, esp. in regards to his Toronto presence; this is of great interest to me but I'm still awaiting further details.
+
+*** Mississauga Heritage
+
+James -- More info on this? 
+
+
+
+
+
+
+
+

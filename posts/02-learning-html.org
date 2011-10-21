@@ -1,0 +1,71 @@
+* Getting Started
+If you have a computer, go straight to jsbin & fool around while I'm talking:
+http://jsbin.com/ifaveb/1/edit#html,live
+* How the web works
+The web is written in a language called [[http://en.wikipedia.org/wiki/HTML][HTML]]. The HyperText Markup Language provides a way for your browser to receive a stream of text and present that stream to you in a human-friendly format.  
+
+Every web page is made up of many [[http://en.wikipedia.org/wiki/HTML_elements ][HTML Elements]], which are joined together to make a unified whole.  Each element is composed of three main parts:
+- an *opening tag*
+- the *element content*
+- a *closing tag*
+Your browser looks for the opening and closing tags and interprets them as an instruction for displaying the element content.  
+** Anatomy of a tag
+- *Here is some bolded text*.  
+Let's look at the code for this line.
+#+BEGIN_SRC html
+<b>Here is some bolded text</b>
+#+END_SRC
+The opening tag "<b>" tells your browser "apply bold to this element".  
+
+The closing tag </b>tells the broswer where to /stop/ applying bold.
+
+And the content is in this case obvious.
+** Nested tags
+A really important feature of HTML is that tags can be *nested* -- that is, you can have elements within elements.  So, for instance, the real code for that last line is:
+#+BEGIN_SRC html
+<li>
+<b>Here is some bolded text</b>. 
+</li>
+#+END_SRC
+This says "Make a /list item/.  Then add some text in bold.  
+** Some important tags
+HTML is a rich language with many capabilities.  We can't possibly learn them all in class, and I myself forget many of them all the time.  But here are some of the most important:
+- <p></p> identifies a /paragraph./
+- <i></i> identifies /italic text./
+- <b></b> identifies /bold text./
+- <h1></h1> to <h10></h10> identify /headings/ of different levels.
+- <a></a> defines a hyperlink
+- the <img /> tag looks a little different, and identifies a special kind of link -- to an image that will be displayed /inline/, that is, within the web page.  
+** HTML Attributes
+- HTML tags are also allowed to have /attributes/.  These are additions to the opening tag that provide extra information. These can be used, for instance, to control the style in which an element is displayed:
+#+BEGIN_SRC html
+<p align=right>Whoa! This paragraph displays way over to the right!</p>
+#+END_SRC
+
+But for some elements attributes are much more important than that
+*** the href attribute
+Every Hyperlink needs to have a /referent./ For this we *must* use the *href* attribute:
+#+BEGIN_SRC html
+<a href="http://en.wikipedia.org/wiki/HTML">HTML</a>
+#+END_SRC
+*** the src attribute; height and width
+The [[http://w3schools.com/html/html_images.asp][img]] tag looks a little bit different from most other tags, because it has no *element content*.  Instead, the opening tag already contains the closing tag.  So where's the content? It's in the attributes:
+#+BEGIN_SRC html
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg" height=200px width=300px />
+#+END_SRC
+When linking to an image, we absolutely need to identify the /source/ of the image.  And it's almost always a good idea to identify the height and width as well, or a big image will take over your whole desktop.  
+*** Juergen Habermas
+#+ATTR_HTML: height=200px width=300px
+[[http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg]]
+
+* Hacking your way to HTML mastery!
+** Tools!
+- *View source.* When you right click on a web page in any modern browser, you will see a 'view source' option.
+- *Hackasaurus.* Mozilla has a really neat new tool for kids that you might also find useful, claled "Hackasaurus X-Ray Goggles.  [[http://www.hackasaurus.org]]
+- *jsbin*. The awesome real-time html/javascript previewer.
+- *firebug/inspect element*.  The [[http://getfirebug.com/][firebug extension for firefox]] and [[https://code.google.com/chrome/devtools/docs/overview.html][google Chrome's instpect element]] both let you mess with the code on any website you're looking at.  They're amazingly powerful.  
+** Tutorials
+- [[http://w3schools.com/][W3 Schools]] provides excellent tutorials.
+- [[http://p2pu.org/en/schools/school-of-webcraft/#open_signup_projects][Mozilla's School of Webcraft]] is about to open
+- [[http://hackbook.hackasaurus.org/][The Hackasaurus hackbook]] is another great place to start
+- [[https://developer.mozilla.org/en/HTML][The Mozilla HTML Reference]]
