@@ -1,3 +1,4 @@
+#+POSTID: 1792
 #+TITLE:     Second Project Proposal
 #+AUTHOR:    Matt Price
 #+EMAIL:     matt.price@utoronto.ca
@@ -17,22 +18,22 @@
 * Second (proper) Project Proposal
 ** Due Jan. 5 (24 hours before class, Jan 6)
 
-This assignment is a detailed project proposal that outlines the nature of your collaboration, the structure of your proposed website, and the scope of your research plans.  You should also say a few words about the potential audience of the website, and include a brief bibliography.  Please add your sources to the Zotero group bib -- this is much easier to do now, since U of T has added Zotero support to the catalogue! yay.  Formatting the bibliography online may feel like a fair amount of work; this one time, you are welcome to submit your work as an attachment to the blog post.  Length excluding bibliography should probably be on the order of 1000 words.  
+This assignment is a detailed project proposal that outlines the nature of your collaboration, the structure of your proposed website, and the scope of your research plans.  You should also say a few words about the potential audience of the website, and include a brief bibliography. *This is a group assignment* -- try to divide up the work evenly, please. If the division of labour is uneven I would like to hear about that.  I also encourage the submission of primitive mockups of the site -- pencil-and-paper (which I guess you' need to scan afterwards) is about what I'm looking for.  Formatting this via wordpress is difficult; this one time, you are encouraged to submit your work as an attachment to the blog post.  Length excluding bibliography should probably be on the order of 1200 words.  
 
 In detail:
-*Summary & Content:* Introduce your project's general scope and aims.  Describe in some detail the kind of material you expect to present in the site.
+*Summary & Content:* Introduce your project's general scope and aims.  Describe in some detail the kind of material you expect to present in the site. As in the last proposal, argue for the /value/ of your work.  
 
-*Methods:* Describe your research methods in as much detail as you can.
+*Methods:* Describe your research methods in as much detail as you can. What do you need to learn? What are the most interesting historiographical questions?
 
-*Structure & Presentation:* Describe the layout and structure of your website as well as you can.  Feel free to e.g. sketch a design in pencil, take a picture with your cell phone, and attach the image (though I have no objection to more sophisticated mockups!).  In your description, say *why* you chose this particular organizational structure -- why are these the most important navigational axes for your site?
+*Structure & Presentation:* Describe the layout and structure of your website as well as you can. Sketch a design in pencil, or take a picture with your cell phone, and attach the image (though I have no objection to more sophisticated mockups!).  In your description, say *why* you chose this particular organizational structure -- why are these the most important navigational axes for your site?
 
 *Challenges:* Describe /as specifically as you can/ the difficulties you expect to face, and how you hope to overcome them.  If you are missing skills that you need, again, /be as specific as yo ucan/ about what you need to know and how you might address this need.  
 
-*Bibliography:* Include as many on-and off-line sources as you can. Remember to add them to the Zotero group,  
+*Bibliography:* Include as many on-and off-line sources as you can. We have not talked as much about Zotero as I had intended to, but I nonetheless strongly urge that you use Zotero. In fact I very  strongly recommend that each group create a sub-collection to the [[http://www.zotero.org/groups/25659/][Hacking History collection]] and collect resources in that group. You create a new sub-collection by right-clicking on the name of the group (Hacking History) in the right pane of the Zotero interface.  For more on Zotero see the [[http://2011.hackinghistory.ca/tools-2/#sec-1-2][Tools page]].  
 
+The proposal counts towards your project grade, not towards your blog participation grade.  See the [[http://2011.hackinghistory.ca/assignments/class-project/#sec-5][Project Guidelines]] for more details.
 
-The proposal counts towards your project grade, not towards your blog participation grade.  See 'Project Grade Breakdown' for more info.  
 ** Presentation
-You need to hand this in a day before class so that your fellow students can take a look at them all before class starts Thursday.  In class next week I want to do presentations or anyway a sort of 'crit' of all the ideas -- 2 hours in which we all work hard to improve each other's project proposals.  You should feel free to start the process early by responding directly in the class blog.
+You need to hand this in a day before class so that your fellow students can take a look at them all before class starts (remember the new class date is Wednesday, December 7).  In class I want to do presentations or anyway a sort of 'crit' of all the ideas -- 2 hours in which we all work hard to improve each other's project proposals.  You should feel free to start the process early by responding directly in the class blog.
 
 
