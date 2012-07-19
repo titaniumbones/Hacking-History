@@ -1,0 +1,20 @@
+#+TITLE:     version control
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt.price@utoronto.ca
+#+DATE:      2011-10-26 Wed
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+* The Beauty of Version Control
+All of you know that you should make bckups whenever possible. But backups aren't the solution to every data management problem. Often you want, not the last version of a file, but the one before that; or you might want some of the text you deleted from one version, to be added to the new text you wrote in a second version, and perhaps compared to the text your colleague has added to a third version... things can get complicated.  It's these kind of problems that *version control software* was designed to deal with .  
+* Best Practices
+

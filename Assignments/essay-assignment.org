@@ -1,0 +1,9 @@
+#+DATE: [2012-01-04 Wed 15:06]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: assignments, 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Essay Assignment
+
+Write a 7-8 page paper on a topic related to your [[../F
+
