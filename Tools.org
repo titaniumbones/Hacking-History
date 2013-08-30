@@ -1,4 +1,5 @@
-#+POSTID: 1682
+#+BLOG: hh
+#+POSTID: 441
 #+TITLE:     Tools
 #+AUTHOR:    Matt Price
 #+EMAIL:     matt.price@utoronto.ca
@@ -17,7 +18,7 @@
 * Tools for Hacking History
 As we go through the year, you'll need to learn about some or all of these tools.  Explore them when you have a chance
 ** Firefox
-Mozilla Firefox is still the most popular open-source browser and, despite Chrome's advances, in many ways the coolest.  Some of our assignments work best with Firefox, so you should install it.  We will also, from time to time, suggest plugins that work with Firefox exclusively. [[http://getfirebug.com][Firebug]] and [[http://www.zotero.org/][Zotero]] are probably the most important.
+   Mozilla Firefox is still the most popular open-source browser and, despite Chrome's advances, in many ways the coolest.  Some of our assignments work best with Firefox, so you should install it.  We will also, from time to time, suggest plugins that integrate with Firefox.  [[http://getfirebug.com][Firebug]] and [[http://www.zotero.org/][Zotero]] are probably the most important.
 ** FTP and/or SSH clients
 When you run a webserver, you need a way to move files from your local hard drive to the server. The most common way to do this is with an [[http://en.wikipedia.org/wiki/FTP_client][FTP]] client. There are loads of these, but one popular client is [[http://filezilla-project.org/][filezilla]]. There is also a [[http://fireftp.mozdev.org/][Firefox extension]] that lets you run FTP within your web browser, if that feels more familiar.  
 
