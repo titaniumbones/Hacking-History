@@ -28,19 +28,19 @@ The finished product should be a polished website or other digital artifact whic
 - *do not strike out entirely on your own.*  You will need some support from outside -- that is one of the main reasons to have a community partner.
 - *do not put /anything/ off till the last minute.*  In a complex project like this you will be surprised at the number of tasks there are to accomplish.  In particular, you'll gain a lot by attacking your organizational tasks as early as possible.
 * Examples
-Last year's projects are linked to from [[http://2011.hackinghistory.ca/student-projects/][last year's course website]].  Perhaps the most impressive of these is "[[http:microscope.hackinghistory.ca][Neighbourhood Under the Microscope]]".  Please note that these sites were made by students with no prior technical experience; if you're in that category they may look daunting right now, but don't be discouraged, you'll learn what you need to in time to make something really cool.  
+Here is a slideshow with links to some of last year's projects! Of these the most exciting is the [[http://kmhs.ca][Kensington Market Historical Society]], which achieved its goal of putting a new, ocmprehensive historial website out into the world. Please note that these sites were made by students with no prior technical experience; if you're in that category they may look daunting right now, but don't be discouraged, you'll learn what you need to in time to make something really cool.  
 * Technical Parameters
-- Web hosting:  Your project should be housed either in your own webspace or on the class server.  You will need to become familiar with FTP or other transfer protocols in order to edit the project files, and you will need a text editor or online tool such as   You might think about hosting a version on [[http://www.github.com][GitHub]] or a similar service, so that you can make initial changes on your home computer before committing them to the public site.  It is very important that files be publicly accessible, so that your partners and I can help you with design or programming challenges you may encounter. This will also ensure that your site 
+- Web hosting:  Your project should be housed either in your own webspace or on the class server.  You will need to become familiar with FTP or other transfer protocols in order to edit the project files (though you can also try using [[http://wordpress.org/plugins/wpide][a Wordpress plugin that lets you edit files directly on the server]]), and you will need a text editor or online tool such as [[http://jedit.org][jedit]].  You might think about hosting a version on [[http://www.github.com][GitHub]] or a similar service, so that you can make initial changes on your home computer before committing them to the public site. (This can be complicate but actually it's quite a lot of fun, and a really good way to make sure you never lose anything you're writing.)   It is very important that files be publicly accessible, so that your partners and I can help you with design or programming challenges you may encounter. This will also ensure that your site 
 * Human Subjects Ethics Review
 One of the benefits to a partner is that work done /in the service of that organization/ is exempt from the ethics review process.  If however you conduct interviews, etc. outside of the project you will need to comply with the University's [[http://www.research.utoronto.ca/for-researchers-administrators/ethics/human/][Ethics Review process]]; cf. also  [[http://www.research.utoronto.ca/wp-content/uploads/2009/09/ERO_Guidelines_Manual-2007.pdf][this document]].  The procedure is not terribly onerous but it does take some time so be very serious about this.  
 * Grading
 #<<grading>>
 The final project will be evaluated based on its success in meeting the goals outlined in the proposal, on the integrity of historical analysis, on the aesthetics of the presentation, and on the satisfaction of the community partners with your work.  
 | Component      | Due Date | Group/Indiv | % of Course Grade |
-| Draft Proposal | Nov. 01  | Indiv       |                 5 |
-| Final Proposal | Nov. 29  | Group       |                 5 |
-| Interim Report | Feb. 21  | Group       |                10 |
-| Final Product  | Apr. 04  | Group       |                20 |
+| Draft Proposal | Oct. 30  | Indiv       |                 5 |
+| Final Proposal | Nov. 27  | Group       |                 5 |
+| Interim Report | Feb. 19  | Group       |                10 |
+| Final Product  | Apr. 02  | Group       |                20 |
 | Partner Report | ---      | Group       |                 5 |
 In addition, most of your blog postings in semester 2 will be concerned with your project & your progress on it.  
 

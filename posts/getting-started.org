@@ -1,6 +1,0 @@
-#+POSTID: 40
-#+DATE: [2010-09-14 Tue 09:34]
-#+TITLE: Getting Started
-Class starts Thursday and it looks like everything will be ready in time!  I'm looking forward to this project, which will for the first time allow me to combine this particular constellation of interests in a wholly legitimate enterprise. This week's introduction to the course will explore the changing nature of the public sphere in the early twenty-first century, and the way that academic instituttions can intervene to shape it.  I will also, I think, talk a little bit about the idea of the [[http://www.drumbeat.org/][Open Web]] and its mozilla connections.  
-
-Quick notes on this site:  [[http://www.wordpress.org][wordpress]]-powered, as it says in the footer, using a lightly-modified [[http://wordpress.org/extend/themes/twentyten][twentyten]] theme.  There are other themes I like better -- [[http://wordpress.org/extend/themes/primepress][primepress]] and [[http://wordpress.org/extend/themes/inove][inove]] are two -- but neither is really completely compliant with wp 3.0.  Probably we will experiment with the look a bit during class, and think about whether the formatting substantively affects the transmission of information..
