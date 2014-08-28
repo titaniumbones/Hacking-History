@@ -1,0 +1,134 @@
+#+TITLE:     Copyright in Digital History
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt.price@utoronto.ca
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+Some resources:
+- Toronto Archives, [[http://www1.toronto.ca/wps/portal/contentonly?vgnextoid%3Da82a757ae6b31410VgnVCM10000071d60f89RCRD&vgnextchannel%3D2ee1226b48c21410VgnVCM10000071d60f89RCRD#photographs][copyright guidelines for researchers]]
+- Wikipedia, [[http://en.wikipedia.org/wiki/Fair_dealing_in_Canadian_copyright_law][Fair dealing in Canadian copyright law]]
+- [[http://laws-lois.justice.gc.ca/eng/acts/c-42/FullText.html][Copyright Act]]
+- [[https://www.cippic.ca/en/FAQ/Photography_Law#How][copyright and privacy in Photography]]
+- Michael Geist, [[http://www.michaelgeist.ca/content/view/6695/135/][what the New Copyright Law Means For You]]
+- Michael Geist, ed., [[http://www.press.uottawa.ca/sites/default/files/9780776620848.pdf][The Copyright Pentalogy]]
+
+
+* The Function of Copyright
+- a contest joining 3 parties
+  - authors/creators
+  - copyright industries
+  - users/public
+* Origins of Copyright
+- Statue of Anne (1709/10), or "Act for the Encouragement of Learning".
+  - usually seen as thinly-veiled protection of the interests of the book trade
+- Decret of 19 July 1793, "Declaration of the rights of Genius"
+  - transforms pre-revolutionary "Royal Privileges" into /natural rights/ of authors
+- Copyright clause of the US constitution (1787)
+  - makes most explicit /utilitarian/ claim:
+#+BEGIN_QUOTE
+To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries. ([[http://en.wikipedia.org/wiki/Copyright_Clause][Article I, Setion 8, Clause 8]])
+#+END_QUOTE
+(but cf. [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id%3D2206029][Ariel Katz's argument]])
+* Enlightenment Values
+- Authorship/creativity
+- General Good/General Will
+- These rights are fundamentally in tension with each other
+- But c18 political theory familiar with paradoxes of collective action
+  - cf. /Fable of the Bees/, /Wealth of Nations/
+* In the Americas
+- US Copyrights limited to American authors
+  - an anti-British measure w/ underlying ideology re: freedom of ideas/free societies
+- In Canada: emerges from field of public education
+* Copyright in Age of Mechanical Reproduction
+- Problems of reproduction greatly increase in early c.20 w/ photography, phonograph,film
+- Again w/ VHS, Cassette tape
+- Greatly increased scope of copyright in US (e.g. 1976 removal of requirement to apply for copyright, repeated increases in term of copyright)
+* Digital Issues
+- Every act of consumption is a copy
+  - which means that the capacity of copyright law to regulate consumption is greatly increased!
+- availability of copying/reconstructing far greater
+  - (in 1797 not everyone had a printing press!)
+* Fair dealing in Canada
+- the "user right" side of the equation.
+- no "such as" clause in definition (cf. US)
+  - there used to be doubts about whether we have user's rights here.
+    - since 2004 though the courts recognize them explicitly
+  - 2-part test:
+    1. permitted purpose?
+    2. fairness criteria met?
+  - Web de-institutionalizes many of these practices,
+  - C-11 adds 'education' (limited)
+* Fair Dealing: Permitted Purposes I
+1911 UK copyright law lays out permitted purposes (1921 in Canada):
+- Research
+- Private Study
+- criticism
+- news reporting
+- review
+* Fair Dealing: Permitted Purposes II
+** 2012 Bill C-11 expands to 3 further purposes:  
+- education
+- satire
+- parody
+** 2013 "Copyright Pentalogy"  
+- it now appears (after /Alberta (Education)/.and /SOCAN v Bell/) that most purposes are permitted
+* Fair Dealing: Criteria of Fairness
+1. purpose of dealing
+2. character of dealing
+3. amount of dealing
+4. alternatives to dealing
+5. nature of the work
+6. effect of dealing on the work
+* Copyright Terms
+#+BEGIN_QUOTE
+death of the author plus 50 years
+#+END_QUOTE
+* Photos
+** Published before 1949
+- Public Domain
+** Created before 1949 but never published
+- Public Domain
+** Published after 1949
+- life of author + 50
+- unless a corporation, in which case, publication +50
+* Toronto Archive Photos
+- flickr feed:  most are public domain, despite CC Atttrib license
+- in fonds:  license is /not explicit/ and you need to ask permission
+* Film
+- complicated, EITHER publication +50 years, or life-of-author + 50
+* Text
+- life of author + 50 years, unless unpublished, in which case complex.
+* Links
+- embedding of offsite images is /probably/ not copyright violation, but no ruling on that
+- not the greatest practice anyway.  
+* the "Pirate Function"
+- on re-reading decided I love this text
+** back to Foucault's "author-function"
+#+BEGIN_QUOTE
+it is a matter of depriving the subject... of its role as originator, and of analyzing the subject as a variable and complex function of discourse ("What is an Author?")
+#+END_QUOTE
+- that is, while it's true that books are written by people, it's also true that books participate in /discursive formations/ which are /not/ the results of individual creative effort.  Instead, they are products of large-scale historical forces, and can be analyzed at a different level from the individual book -- so if, instead say of looking at Mill's /On Liberty/ as a work of genius, you read widely in British political and philosophical writing ~1850, you will see that Mill's work follows well-established patterns of argumentation, standards of evidence, etc. etc.
+-  the idea of the Author is a kind of myth -- not a falsehood, but a governing ideological construct that we rely on to structure our sensibilities.  We should try to look past it, Foucault argues, because it carries with it a set of ideas (about genius, about creativity) which drastically overemphasize the role of the individual (here I'm simplifying & softening)
+** Good and Bad Pirates
+By analogy (but kind of an inverted analogy) K. Philip describes what she calls a "Pirate-Function" -- the pirate as a governing ideological construct which structure or sensibilities.  And, she further argues, we need to be able to look past this ideological construct if we want to understand /how we, collectively, think about creative production & what role things like copyright play in propping up philosophically weak divisions./  
+- The works we've read rely, like L. Lessig, on the criterion of /individual creativity/ as the governing principle to distinguish good from bad piracy.
+- But 'transformation' is not always about individual contributions.  Instead, the pirated software on the streets of Bangalore of Shanghai permit the construction of a 'shared imagination' which would otherwise be inaccessible to the inhabitants of those places.  Lessig misses the point.   
+* C-32/C-11
+- increased fair dealing
+- new digital locks provisions
+- cf. Americas in the early c. 19
+- summary: [[http://www.michaelgeist.ca/content/view/6695/135/][Michael Giest's blog from last week]]
+* For your project
+- Fair Dealing Exceptions (Research, Education), which is great.
+- but careful w/ esp. images (no 'parts', so safest to link to externally-hosted images). 
+
+

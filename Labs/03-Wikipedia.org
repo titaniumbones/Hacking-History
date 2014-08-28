@@ -1,0 +1,40 @@
+#+POSTID: 721
+#+TITLE:     Lab 03: Understanding Wikipedia
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt@roke.mercey.dyndns.org
+#+DATE:      2012-09-25 Tue
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+CATEGORY: labs, classnotes 
+#+PARENT: Labs+Notes, 
+
+These are some notes about what we'll be doing in class during the lab period.  I'll post these whenever I have a chance, both to give you a chance to get ahead and to give you an opportunity to look back on what we've done afterwards.  
+
+We've read a lot about how Wikipedia works, but it's worth looking more closely at the process.  Let's go through a few steps:
+
+** Sign up for an account
+To edit Wikipedia you need to be logged in.  Create an account [[http://en.wikipedia.org/w/index.php?title%3DSpecial:UserLogin&returnto%3DMain%2BPage&type%3Dsignup][here]]. Edit your basic user preferences.  Then under "Watchlist", check the box labelled "Add pages and files I edit to my watchlist" (near the bottom).  
+ 
+ 
+
+** Pick some very active pages to follow (just for now)
+e.g., [[http://en.wikipedia.org/wiki/IPhone_5][iPhone 5]], [[http://en.wikipedia.org/wiki/Syrian_civil_war][Syrian civial War]], [[http://en.wikipedia.org/wiki/United_States_presidential_election,_2012][United States presidential election, 2012]].  Now go back to [[http://en.wikipedia.org/wiki/Special:Watchlist][your watchlist]] and subscribe to the [[https://en.wikipedia.org/w/api.php?action%3Dfeedwatchlist][RSS feed]]. Consider using [[http://www.google.com/reader/view/#overview-page][Google Reader]] to start managing your RSS feeds.  
+** Experiment with the syntax in the sandbox
+Click on the "My Sandbox" link near the top of the page.  This will take you to a kind of practice room where you can get used to Wikipedia syntax before heading off into the real world.  Hmm, what should you write about? 
+ 
+** Check out history & discussion on some interesting pages
+For us (writing local history) one area of interest is [[http://en.wikipedia.org/wiki/History_of_Toronto][the History of Toronto series]].  Make sure you look at the 'Talk" pages.  Also look at the [[http://en.wikipedia.org/wiki/Wikipedia:WikiProject_Toronto][Toronto Project]] which has a number of important links.  
+
+** Try a few edits
+Scrolling down the Toronto Project you will find that the pages have been rated for quality.  Using the [[http://en.wikipedia.org/wiki/Wikipedia:Version_1.0_Editorial_Team/Assessment][Wikipedia Quality Scale]] you can see what pages need the kind of help you might be able to give.  Now feel free to dive in; then see what happens!
+
+ 

@@ -1,0 +1,28 @@
+#+POSTID: 57
+#+DATE: [2012-08-18 Sat 14:10]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: STA 01 -- Wikipedia
+#+PARENT: Assignments, 
+
+
+*Due Oct 1 by class start (10AM)* 
+
+Post response to class blog, but use the Wordpress embargo feature so that it won't be published till class starts (in case several of you end up working on the same pages, and also just because you should learn how to use this feature.) Tag as "Wikipedia" and "STA", so we can find your work later.  
+
+The purpose of this assignment is to understand how Wikipedia works, and what tools to use to evaluate individual Wikipedia entries.  
+
+* Part 1: Good and Bad Wikipedia Articles
+spend about an hour surfing through Wikipedia, and identify two articles (preferably both on historical topics):
+- one excellent article
+- one lousy article
+What makes one good and the other rotten? Very briefly describe their virtues and failings.
+(*Hint:* lists of good and bad articles are maintained by various WikiProjects, see Part 2, below).  
+
+* Part 2: Edit Histories and Discussion
+Now look through both the talk page and the edit history (for both the excellent and lousy articles).  What do you learn from looking at these?  Does it give you any insight into the circumstances that create good and bad entries?  Are there any broader implications for the Wikipedia project?  Briefly tell us about it.  
+
+* Part 3: Giving Back!
+This is the hard part! I mean, the fun part! Contribute 1-2 well-researched paragraphs to an article about Canadian history.  "But how do I find a page that needs my help?", you may well ask.  Have no fear -- there's a list!  The [[https://en.wikipedia.org/wiki/Wikipedia:WikiProject_History_of_Canada][Canadian History WikiProject]] maintains an [[https://en.wikipedia.org/wiki/Wikipedia:WikiProject_History_of_Canada/Assessment][Assessment]] list of the pages relevant to its project.  Look for pages rated "Stub" or "Start", and consider choosing a page of "mid" or "low" importance (this will make it easier for you to make a significant contribution).  Then edit away, making sure to follow Wikipedia's guidelines on [[http://en.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources][sources]] and [[http://en.wikipedia.org/wiki/Wikipedia:Good_article_criteria][quality]].  In your blog post, describe this experience in 1-2 paragraphs.  

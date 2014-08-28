@@ -1,0 +1,25 @@
+* general solicitation email
+
+Dear NAME,
+
+I am writing to ask whether ORGANIZATION might be interested in participating in a collaborative initiative run out of the History Department at University of Toronto, "[[http://2013.hackinghistory.ca][Hacking History]]".  /Hacking History/ is a fourth-year seminar in which groups of students work closely with community organizations to create historical websites on behalf of those organizations.  We look to partner with groups that have strong historical interests and are looking to expand their web presence, and who would also be served by historical research undertaken by our students themselves.  
+
+We usually work with groups that 
+
+(1) have an interest in historical projects that would require resources (mostly staff time!) beyond their capacities, and 
+(2) can take advantage of our students' unusual skillsets to carry out those history projects in a web-based form
+
+For an example of our students' work, please consult the Kensington Market Historical Society's site, which was built from scratch (including photographs and text) by Hacking History students last year:
+
+http://www.kmhs.ca
+
+Our students are undergraduate history specialists or majors in their final year of study.  In our class, they learn web design skills, and in the second semester (January-April 2014) apply those skills to the creation of a website.  
+
+Hacking History has been running for 3 years, and has become an exciting and successful initiative of our Department.  If you think you'd be interested in participating, please respond and we can set up a time to speak on the phone or on person about the class.
+
+Many thanks for your time.  Sincerely yours,
+
+
+Matt Price
+
+History Department, U of T

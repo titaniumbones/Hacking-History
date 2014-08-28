@@ -1,0 +1,22 @@
+#+BLOG: hh
+#+POSTID: 2804
+#+DATE: [2013-09-09 Mon 14:48]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Welcome to Hacking History!
+
+Hello Everyone,
+
+Welcome to 'Hacking History'! 
+
+This is an introduction to web-based historical scholarship.  Each year, we spend the first semester thinking about the history of information technology and the public sphere, and learning just enough technical skills to create and administer historical websites.  Then, in the second semester, you'll divide into groups and work with a community organization to build a historical website.  This is the real focus of the class, and the most fun.  Every year, we've had at least one of these sites enthusiastically taken up by the sponsoring organization as a public website permanently available on the web.  This is an exciting opportunity and one that previous generations of students have cherished.
+
+Pre-reqs:  There are no formal pre-requisites for this course, and almost all Hacking History students enter with minimal or nonexistent technical skills.  However, you do need to be willing to make an effort to learn some!  If you want to see what you're in for, you can try working through Code Academy's free "Web Fundamentals" course:
+
+http://codeacademy.com/learn/
+
+You may find it difficult -- or, if you have some coding experience, you may find it very dull -- but as long as you're willing to work through it, you're likely to enjoy HIS 495.  If, on the other hand, you find it unbearable, this may not be the right course for you.  If you think you won't be able to make the effort required to come to grips with some of these technical skills, then please do get in touch with me.  If you are very worried about your ability to work productively in a group setting, again, please get in touch.  If you're excited about learning some new skills, and about publishing your work on the open web, and about working hand in hand with a community partner -- then come to class on Tuesday pumped and ready to start. 
+
+Please contact me with any questions you may have.  See you all very soon!

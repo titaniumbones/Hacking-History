@@ -1,0 +1,57 @@
+#+POSTID: 726
+#+TITLE:     Lab 04: Getting Started with Wordpress
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt@roke.mercey.dyndns.org
+#+DATE:      2012-09-25 Tue
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+#+CATEGORY: labs, classnotes, 
+#+PARENT: Labs+Notes, 
+
+[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
+
+* Getting Started
+In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will see a theme called "Hacking History Starter Kit". Let's take a quick look at it:
+* Content Management Systems
+- a [[Chttp://en.wikipedia.org/wiki/Web_content_management_system][CMS]] is a system that allows web pages, and structured sets of pages, to be constructed from existing documents and text/HTML entered by users who may have little knowledge of HTML or the other underlying technologies that display those pages. There are hundreds of CMS's in existence today, some Free/Open Source, others distributed under non-free licenses.  
+* What is Wordpress?
+Take a look at this chart:
+[[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
+
+- WP /assembles/ a page from many component parts. This is accomplished by a now-complex set of /scripts/ that offers instructions on what data to pull from the database and how to represent it on the page.
+- the underlying scripts are primarily written in the computer language [[http://php.net/manual/en/tutorial.php][PHP]], one of most popular languages for web "[[http://en.wikipedia.org/wiki/Server-side][server-side]]" programming. When a URL belonging to the site is requested, the Wordpress scripts activate, [[http://en.wikipedia.org/wiki/Parsing][parse]] the URL, and translate it into a set of instructions which are used to generate the HTML for the specific page we want.
+* Posts and Pages
+Wordpress is highly extensible through the [[http://codex.wordpress.org/Plugins][Plugin]] system. However, the default installation of Wordpress comes with two main types of content: 
+- [[http://codex.wordpress.org/Posts][Posts]] show the origins of Wordpress as a blogging engine -- they're a kind of content that's expected to be updated frequently, and to be of largely trnasitory interest; and
+- [[http://codex.wordpress.org/Pages][Pages]], which are relatively permanent pieces of content that help populate, for instance, your menu system.  
+You'll often see other kinds of content -- events, for instance, or links , biblographies, Facebook-style status updates; these are additional functionality that may or may not be available to you.
+* Databases
+- We won't go into this here, but the information you see in a post is distributed across many entries in a [[http://computer.howstuffworks.com/question599.htm][relational database]]. Knowing this can sometimes help you to track down errors that sneak into your website through admin carelessness.  
+* Themes, Styles and Templates
+- The look and feel of your website is also controlled by PHP files, often with help from files written in other languages, especially [[http://computer.howstuffworks.com/question599.htm][CSS]] and [[http://www.w3schools.com/js/][Javascript]]. Sometimes the look of your website will be affected by [[http://codex.wordpress.org/Plugins][Plugins]], but most of what you see is related instead to your [[http://codex.wordpress.org/Themes][Theme]].
+- A *Theme* is a collection of files -- at minimum two, but often many more -- from which wordpress takes instructions when presenting the page.  There are thousands of themes in the [[http://wordpress.org/extend/themes/][official directory]] and thousands more for sale or download outside it.
+- The easiest way to install a new theme is to *download it* using the Wordpress Admin interface.  Sometimes this won't work -- if you're writing your own theme, for instance!  I'm hoping we will have a chance to write our own [[http://codex.wordpress.org/Child_Themes][Child Themes]] later on, so if you want to do that, drop me a line and I'll hook you up with [[http://en.wikipedia.org/wiki/File_Transfer_Protocol][FTP]] access to the server.  
+* Assignment: build a Wordpress site
+** Commemorate an Imaginary Event
+You are tasked with building a website that explores... something that hasn't happened. Invent an event or historical phenomenon (feel free to write from the future if you like), and create a web page that's suited to its exploration.
+** Your Site already exists
+Navigate to http://yourfirstname.hackinghistory.ca.  Ta-da! there's a wordpress site ready and waiting for you.  Configure it and off we go.
+** Think about Site Structure
+You will probably want to create a small hierarchy of pages that describe your event.  What are the important facts about this event? And how should they be organized? Where will you introduce visitors to the event and to the purpose of the site?  How will users participate in the life of the website?  In one week, you won't be able to build Wikipedia or facebook; you might need to create placeholder pages that just explain what they /ought/ to do.
+** Style your Site
+How do you want this site to look? How many columns? What Images, and where?  Explore the installed themes or installl your own.  We'll move on to writing our own themes soon.  
+
+Have fun!!
+
+
+
+#+//home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-data_and_metadata_on_the_web.png

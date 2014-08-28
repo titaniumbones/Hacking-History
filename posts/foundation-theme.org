@@ -1,0 +1,95 @@
+#+POSTID: 3704
+#+DATE: [2014-02-04 Tue 06:52]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+PARENT: Labs+Notes, 
+#+TITLE: The required+ Foundation Theme
+
+* Web Frameworks
+- packaged standard of solutions to web design problems
+- HTML, CSS, JS components to do design tasks for you in a consistent way
+  - don't have to reinvent wheel
+  - when you /do/ code, there are people to ask about how to do it ([[http://wordpress.stackexchange.com/][stackexchange]]! )
+* Foundation
+** Grid system
+- 12 columns w/ gutters defined by CSS classes
+- complex CSS, Jasvascript reorder columns as screen size changes (small, medium, large)
+** Navigation
+- cool top bar, can be made sticky
+- "off-canvas" navigation
+- again, done with CSS classes that are addressed by javascript
+** JS Plugins
+- slider
+- gallery
+- "modal" windows
+- etc.
+* Foundation -- Advanced
+- Written with [[http://sass-lang.com/][Sass]] and [[http://compass-style.org/][Compass]]
+- JS built on top of [[http://jquery.com/][jQuery]] and [[http://modernizr.com/][Modernizr]]
+- HTML built for cutting-edge HTML5 standards 
+* Exercise: Playing with Foundation
+- Navigate to http://jsbin.com/AwOwoyUY/1/edit?html,css,js,output 
+- in the html pane, adjust the width of the columns just by changing the class
+- add a row with columns INSIDE the right-hand sidebar
+- change the height, and then the content, of the "oprbit" slider
+* Themes in Wordpress
+- remember, themes control presentation of content
+- contain their own CSS, Javascript, and (PHP-generated) HTML
+* Templates
+- presentation of info controlled by templates
+- a "template hierarchy" chooses appropriate template for individual post/content
+* Templates
+[[http://2013.minneapolis.wordcamp.org/files/2013/04/wordcamp-mpls-theme-template-poster.jpg]]
+* Templates
+[[file:~/HackingHistory/Images/template-hierarchy-retina-light.jpg]]
+[[http://marktimemedia.com/redesigning-the-template-hierarchy/][(stolen from marktimemedia]])
+* required+
+- wordpress theme /based on Foundation/
+- packaged as /parent/ plus /child/ themes plus /plugins/
+- activate only the plugins you need!
+* required+ templates
+basic structure:
+#+BEGIN_SRC php
+<?php get_header?>
+<some html structure>
+   <?php get_template_part( 'content', get_post_format() ); ?>
+</close tags on some html>
+<more html>
+   <?php get_sidebar(); ?>
+</close tags more html>
+<?php get_footer();?>
+#+END_SRC
+- all the actual work is done in "content-[whatever-post-format-is].php"
+- cf: http://kovshenin.com/2013/get_template_part/ 
+* Features
+- most of Foundation
+- nice separation between parent and child
+- easy-to-navigate child theme
+- heavy use of "shortcodes": http://themes.required.ch/docs/shortcodes 
+* Exercise: Use shortcodes
+Open up your PERSONAL website
+- create a post
+- create some columns of text using [column] shortcode.  activate plugin first!
+- attach several images to post
+- create a viewing gallery with [clearing] shortcode
+- play with any other shortcodes that seem cool (e.g., reveal)
+* Required-starter Child Theme
+** Structure
+- [[https://github.com/wearerequired/required-starter/blob/master/functions.php][functions.php]]
+- [[https://github.com/wearerequired/required-starter/blob/master/style.css][style.css]]
+- [[https://github.com/wearerequired/required-starter/blob/master/javascripts/child-theme.js][child-theme.js]]
+- [[https://github.com/wearerequired/required-starter/][take a look at the whole theme]]
+* Templates
+New templates live in the *main directory* of the child theme
+- copy "single.php" from required-foundation to required-starter directory.
+- rename to single-my-content-type
+- change "get_post_format" to "get_post_type"
+- copy "content.php" to required-starter & rename "content-[your content type name].php"
+- add in your custom fields
+* Exercise: Create a simple template
+- I think every group has at least one custom content type
+- get to work on designing a template 
+
+# /home/matt/HackingHistory/Images/template-hierarchy-retina-light.jpg http://2013.hackinghistory.ca/wp-content/uploads/2014/02/wpid-template-hierarchy-retina-light.jpg

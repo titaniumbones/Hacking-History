@@ -1,0 +1,38 @@
+#+DATE: [2013-10-08 Tue 09:53]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Theming with wordpress
+
+
+* theming with wordpress
+** Themes are collections of files
+- they live in your wordpress install:
+[[http://www.vooshthemes.com/wp-content/uploads/2009/11/wordpress-file-structure1.png]]
+
+** Themes tell wordpress how to display your content
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+** Files in your theme
+- *style.css:*  your stylesheet; you need this
+- *functions.php:* you're going to need this too
+- *index.php:* this is the default template for your theme; you can't live without it
+- *header.php:* controls your header.
+- *footer.php:* controls your footer area
+- *sidebar.php:* generates your sidebar
+
+** template hierarchy
+remember this
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+** plugins and themes
+- Themes control appearance
+- plugins add funcionality
+- but sometimes the difference isn't so clear
+- check out required-foundation themes and r-* plugins.  They are interdependent
+
+** Editing Your Theme
+- install the [[http://wordpress.org/plugins/wpide/][wp-ide]] plugin to enable you to do syntax-highlighted code editing in your browser.  If the interface feels a little awkward try [[http://wordpress.org/plugins/better-file-editor/][better file editor]] instead -- it may be sufficient for our needs (I haven't experimented with it yet).
+- try changing the 'powered-by' text in the footer to our starter theme.  Did yo umake it work? Did you (alternatively) break the Internet?
+- I'll come up with some other ideas on the fly... 

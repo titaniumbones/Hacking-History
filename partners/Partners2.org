@@ -1,0 +1,13 @@
+#+POSTID: 43
+#+DATE: [2012-08-18 Sat 13:35]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Partners
+
+We work together with partner organizations in the Toronto area to create digital historical objects -- websites, exhibits, and archives.  Community partnerships are the heart of our course, and we are always on the lookout for new partners with a historically-themed project that could use the expert assistance of a 1-4 students, 4-6 hours/week, for about 12 weeks.  If you think you might be interested in working with us, please fill in our [[http:../partners/contact.html][contact form]] and  we'll get back to you as soon as we can.  Please look at our [[http:../partners/guidelines.html][guidelines]]
+page for further information.  And thanks!
+
+
+

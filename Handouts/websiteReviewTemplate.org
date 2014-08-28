@@ -1,0 +1,20 @@
+#+POSTID: 589
+#+DATE: [2012-09-20 Thu 11:48]
+#+TITLE: Website Review
+#+PARENT: Assignments, 
+#+CATEGORY: assignments, 
+
+
+In this assignment you will write a review of a historical website, and then briefly present that website to the class. The purpose of this exercise is to get you thinking about what makes a good history website, so try to choose something that really inspires you.  The written review should be about 500 words long -- so about twice as long as your regular blog post (remember you're exempt from your regular blog post this week!).  The presentation should last just a few minutes, certainly less than 10. Remember we have a full class to get through, so keep it concise.  Here are a few further pointers for each part:
+
+** Written Review
+In your written review you should be sure to include the following:
++ the name and URL of the site
++ The subject matter of the site
++ a brief discussion of the site's approach to history and if appropriate, its main arguments or its methodological/ideological slant
++ description and evaluation of the site's design
++ discussion of any unusaul or interesting technical features, including the use of media such as audio, video, or historical images
++ overall evaluation of the site's usefulness or lessons learned for your project. 
+
+** Presentation 
+In your presentation, briefly walk the class through the site, highlighting whatever features you think are most interesting.  This will work best if you set up a number of browser tabs in advance, projecting them on the wall for the whole class to see.  Briefly point out as many of the important elements of your written review as you can.  

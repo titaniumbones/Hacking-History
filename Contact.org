@@ -1,0 +1,9 @@
+#+POSTID: 51
+#+DATE: [2012-08-18 Sat 14:03]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Contact
+
+To learn more about the course, please contact the instructor by [[mailto:matt.pricd@utoronto.ca][email]] or by phone, 416-978-2014. If you have a project idea and are interested in a[[http:./partners][ community partnership]], please fill out the contact form below and we’ll get back to you soon!

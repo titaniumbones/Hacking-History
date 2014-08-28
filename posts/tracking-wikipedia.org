@@ -1,0 +1,40 @@
+#+POSTID: 419
+#+DATE: [2010-10-13 Wed 10:41]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: assignments, 
+#+TAGS: crowdsourcing
+#+DESCRIPTION: 
+#+PARENT: Assignments, 
+#+TITLE: Lab 03: Tracking Wikipedia
+
+This week's lab is about Wikipedia and the process by which those crowdsourced pages get created.  What do we need to learn?
+
+** 1. How does Wikipedia work?
+This is best discussed by following along with the [[http://en.wikipedia.org/wiki/Wikipedia:Tutorial_%28Editing%29][Tutorial]] in a separate tab.  
+Wikipedia is an encyclopedia project with both a /[[http://www.mediawiki.org/wiki/MediaWiki][technical infrastructure]]/ and a /[[http://www.uic.edu/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/2613/2479][complex]] [[http://web.ebscohost.com/ehost/detail?vid=1&hid=106&sid=5176361d-2b94-4cb4-b34f-550884412bcc%40sessionmgr113&bdata=JnNpdGU9ZWhvc3QtbGl2ZQ%3d%3d#db=buh&AN=43590686][governance]] [[http://www.andreaforte.net/ForteBruckmanScalingConsensus.pdf][structure]]/ (run from [[http://wikimediafoundation.org/wiki/Home][here]]).  For the most part the general public is permitted to [[http://en.wikipedia.org/wiki/Wikipedia:Tutorial_%28Editing%29][edit]] existing pages and [[http://en.wikipedia.org/wiki/Wikipedia:Your_first_article][create new ones]], though there are a number of important restrictions to this, the most important of which have to do with [[http://en.wikipedia.org/wiki/Wikipedia:List_of_controversial_issues][controversial topics]].  Read through the links in this paragraph and play around in a little bit in the [[http://en.wikipedia.org/wiki/Wikipedia:Sandbox][sandbox]] to warm up.  Then [[http://en.wikipedia.org/w/index.php?title=Special:UserLogin&type=signup&returnto=Wikipedia%3ATutorial+%28Registration%29][create an account]] and add some content to your [[http://en.wikipedia.org/wiki/Wikipedia:User_page][user page]].
+
+** 2. Wikipedia syntax
+we could spend hours just on this topic but the main thing to know is that the MediaWiki syntax, like the syntax of other wiki systems, is a very simplified code that uses markers to replace the markup code in standard HTML.  See the [[http://en.wikipedia.org/wiki/Wikipedia:Tutorial_%28Formatting%29][formatting]] section of the tutorial and the [[http://en.wikipedia.org/wiki/Wikipedia:Cheatsheet][cheatsheet]].  Use your new knowledge to modify your user profile.
+
+** 3. How do you see the history of a page?
+Being able to edit Wikipedia is nice (and it's a skill you might want to use in other classes, say, to improve Wikipedia's coverage of historical events).  But Wikipedia can also be /a record of history/.  So, for instance, the Wikipedia pages of highly controversial events are often subject to furious editing known as [[http://en.wikipedia.org/wiki/Wikipedia:EW][edit warring]].  Consider [[http://en.wikipedia.org/wiki/2010_Gaza_flotilla_raid][this page]] --  Note the absence of an 'edit' tab, because editing has been disabled here.  But you can still look at the edit history, e.g. [[http://en.wikipedia.org/w/index.php?title=Gaza_flotilla_raid&diff=365202251&oldid=365202210][this early edit]].  What would you say about this change?  Also consider the Discussion archive, e.g. [[http://en.wikipedia.org/wiki/Talk:Gaza_flotilla_raid/Archive_1#POV_issues][here]] and [[http://en.wikipedia.org/wiki/Talk:Gaza_flotilla_raid/Archive_1#Time_to_lock_down_the_article][here]].  What do you learn about Wikipedia process from reading these? Recent edits are also very interesting.  There's more to learn about the politics of Wikipedia from this page -- c.f. [[http://thelede.blogs.nytimes.com/2010/08/20/wikipedia-editing-for-zionists/][this]].  
+
+If you are interested in tracking public reaction to a particular topic, a useful tool is the [[http://en.wikipedia.org/wiki/Wikipedia:Watchlist][watchlist]]. 
+
+** 4. What can we learn from the history or discussion?
+These are the topics I want to discuss in the lab.
+
+** 5. What external tools help to track Wikipedia?
+There have been quite a number but at the moment all of them seem to be broken.
+- [[http://katrina.cs.caltech.edu/erenrich_rnd345/scanner_final/][Wikitracker]]
+This was and still is a very cool tool that tries to let you see what organizations have been editing Wikipedia, but it's currently having trouble.  There were some neat things about it, though.
+- [[http://reddit.wired.com/wikidgame/][Wikidgame]]
+Uses the reddit interface to report findings from Wikitracker -- fine if you like reddit, I'm not a huge fan.  Also pretty outdated now.
+- [[http://www.trendingtopics.org/][trendingtopics.org]] 
+is very easy to use but not many features.  
+- [[http://wikiwatcher.bloople.net/][Wikiwatcher]]
+similar to trendingtopics
+- [[http://en.wikipedia.org/wiki/Special:RecentChanges][Wikipedia's changes tracker]] and the [[http://meta.wikimedia.org/wiki/Syndication_feeds][global changes feed]]
+Internal tools that report changes to you when you want them. 
+- [[http://wikidashboard.appspot.com/][Wikidashboard]] 
+A tool that makes it a little easier to see who is editing the page you're looking at.  
