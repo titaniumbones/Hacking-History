@@ -1,0 +1,18 @@
+#+POSTID: 443
+#+DATE: [2014-10-28 Tue 10:09]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: assignments, 
+#+TAGS: jandouts
+#+DESCRIPTION: 
+#+PARENT: Assignments, 
+#+TITLE: STA 03 - Foundation
+
+For this short technical assignment, I would like you to switch your perosnal from your home-grown theme to the advanced Foundation framework we'll beworkingwith in our real projects.  Please do the following:
+
+- *activate the Grunterie theme* in the theme browser, using the WP admin interface
+- *customize the grid size* for large screens using SASS variables in ~scss/_settings.scss~
+- *customize the color scheme* using SASS variables in ~scss/_settings.scss~
+- *change the width of the sidebar* using the Foundation class system, in ~index.php~, ~single.php~, and ~sidebar.php~.
+- *understand the construction of small, medium, and large sizes* by looking at those variables in ~scss/_settings.css~
+- *resture your cool customizations from before this change* (that is, add the appropriate bakcground images & elements, etc.)
+- *learn about the /[[http://foundation.zurb.com/docs/components/reveal.html][reveal]]/ and /[[http://foundation.zurb.com/docs/components/accordion.html][accordion]]/ features in foundation, and try to implement them briefly in [[http://jsbin.com/soxowa/2/edit?html,js,output][jsbin]]. 

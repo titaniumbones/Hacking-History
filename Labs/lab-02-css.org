@@ -1,0 +1,216 @@
+#+POSTID: 7
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.6)
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+HTML_CONTAINER: div
+#+HTML_MATHJAX:
+#+INFOJS_OPT:
+#+LATEX_HEADER:
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:nil date:t e:t email:nil
+#+OPTIONS: f:t inline:t num:nil p:nil pri:nil prop:nil stat:t
+#+OPTIONS: tags:not-in-toc tasks:t tex:t timestamp:t toc:nil todo:t
+#+OPTIONS: |:t
+#+TITLE: Lab 02: Css and Web Styles
+#+DATE: <2014-09-03 Wed>
+#+AUTHOR:
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.6)
+
+Last week we experimented with HTMl and dipped our toes into CSS and styles.  In your final projects, much of your coding time will be spent trying to get your site to look the way you want it to.  If you have a firm understanding of CSS (and of where to look for more info when you're having trouble!), this will be a lot easier.
+
+You already know about the [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings.  Another helpful tutorial site is [[http://learnlayout.com/][Learn Layout]], to which I'll be referring later; and there are many other resources available on the web.  
+
+* CSS Basics
+
+CSS is the [[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]] Language; it is a powerful tool for controlling the appearance of web pages (and sometimes other documents, too).  It works in the following way:
+
+- a web page links to a stylesheet
+- the stylesheet instructs the browser as to how to display various kinds of web pages
+- the browser then renders the page according to those instructions.  
+
+Sometimes when you have a really slow Internet connection, you will see a very ugly, cluttured web page before a smooth, clean, modern-looking website loads.  That's because your browser has loaded the web page but is having trouble accessing the stylesheet.  E.g., here is the New York Times with and without CSS:  
+#+ATTR_HTML: :class compare
+[[file:~/HackingHistory/Images/nytimes-w-css.png]]  
+#+ATTR_HTML: :class compare
+[[file:~/HackingHistory/Images/nytimes-no-css.png]] 
+
+So, while HTML is responsible for the *structure and content* of a website, CSS is responsible for its *presentation*.  
+
+* CSS Selectors
+
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
+
+#+BEGIN_SRC css 
+  h1 {
+      color:blue;
+      font-family:serif; 
+      font-size:24px; 
+  }
+
+  div {
+      border: 1px solid black;
+  }
+
+  div.main p {
+      color:red;
+  }
+
+  #specialid {
+      float:left;
+  }
+#+END_SRC
+They all follow the same pattern: 
+- first, a *selector* that identifies the elements to which these instructions will apply
+- then *an open brace* "{" which marks the start of the actual instructions
+- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
+- finally, *a closing brace* that ends the selector declaration.
+
+** Selector types
+Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
+- *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
+- *Class* selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:
+#+BEGIN_SRC html
+<p class="coolpara">Some Content</p>
+#+END_SRC
+
+#+BEGIN_SRC css
+.coolpara {
+color:green;
+}
+#+END_SRC
+- *ID* selector:  this addresses the element with a particular ID:
+#+BEGIN_SRC html
+<p id="myfave">Some Content</p>
+#+END_SRC
+
+#+BEGIN_SRC css
+#myfave {
+color:yellow;
+}
+#+END_SRC
+- Finally, we have many more complex selectors.  This one here is a descendant selector: 
+
+#+BEGIN_SRC css
+div.main p {
+      color:red;
+  }
+#+END_SRC
+It addresses every p that is contained inside a div of class "main."
+
+* Fonts, colors and borders
+A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
+
+#+BEGIN_SRC css
+div.main {
+      color:rgb(150,150,150);
+      background-color(#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+#+END_SRC
+There are plenty of other properties that can be set, in much the same way.
+
+* Display: Block vs. Inline
+
+
+* Box Model
+One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
+
+[[http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png]]
+
+For each element, you have the actual content, which is surrounded by the *padding*, surrounded in turn by the *border*, and once again surrounded by the *margin.*  So for instance, try this code in JSBin:
+
+#+BEGIN_SRC css 
+.simple {
+  width: 500px;
+  margin: 20px auto;
+  border 1px red solid;
+}
+
+.fancy {
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  border: 10px blue solid;
+}
+#+END_SRC
+
+<div class="fancy"> will look a lot bigger than <div class="simple">, even though they are nominally the same size!  
+
+There are two ways to deal with this:  
+1. subtract the size of the padding and border from your width values
+2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
+
+* Positioning
+
+This is a difficult subject.  When you are dealing with lots of different screen sizes and resolutions, and different devices with different fonts installed, etc., it is not trivial to position every element precisely where you want it.  You will find a lot of your teeth-gnashing time is spent trying to get various columns of content to line up pretty, center themselves, etc.  
+
+The CSS "position" property has four possible values, whose names are [[http://learnlayout.com/position.html][impossible to remember and anyway don't make sense]].  The four most important are:
+
+#+BEGIN_SRC css
+.static {
+  position: static;
+}
+.relative1 {
+  position: relative;
+}
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: white;
+}
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+}
+#+END_SRC
+
+- *Static* positioning is the default.  A statically-positioned element is said to be "unpositioned".
+- *Relatively* positioned elements are displaced /relative/ to the position they "ought" to be occupying (according to the defaults).  But meanwhile, the space it "ought" to be occupying is still considered "taken" by the browser, which won't put anything else in that space unless you force it to do so.
+- *fixed* elements have their position /fixed/ to a spot on the screen (which is called "the viewport" in CSS talk).  This is great when you want a fixed header or footer.
+- *absolutely*-positioned elements are like fixed elements, only they're positioned relative to the /closest positioned ancestor/, usually an element with a position property value of "relative".
+
+Understanding this well involves fiddling a lot with code; rather than make a bunch of fiddly exercies myself, I'll direct you [[http://www.codecademy.com/courses/web-beginner-en-6merh/3/1?curriculum_id=50579fb998b470000202dc8b][the codeacademy positioning exercies]], which have a great help system that makes things a little easier.
+
+* Positioning 2: Float
+So, that's one way to position elements.  Another is to use the *float* property, which imagines the page flowing like water.  The element will "float" left or right, and everything else will /flow around it/.  To stop the flowing -- that is, to require the next element to appear *below* a floated element -- that next element will need to apply the *clear* property, which stops the float.
+
+Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
+
+* Changes Comin' Round Real Soon
+All of what you just learned is in the process of changing dramatically.  A new CSS module, *flexbox*, makes a lot of this stuff much easier, but takes some practice to understand.  Since very few Wordpress developers use flexbox yet, we won't be learning about it this term.  Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards.
+
+
+# /home/matt/HackingHistory/Images/nytimes-w-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-w-css.png
+# /home/matt/HackingHistory/Images/nytimes-no-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-no-css.png
+# /home/matt/HackingHistory/Images/boxmodel.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png
+
+# HackingHistory/Images/nytimes-w-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-w-css1.png
+# HackingHistory/Images/nytimes-no-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-no-css1.png
+
+# HackingHistory/Images/boxmodel.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel2.png

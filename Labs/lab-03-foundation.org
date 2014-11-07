@@ -1,0 +1,85 @@
+#+POSTID: 45
+#+DATE: [2014-09-05 Fri 16:26]
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:nil date:t e:t email:nil
+#+OPTIONS: f:t inline:t num:nil p:nil pri:nil prop:nil stat:t
+#+OPTIONS: tags:not-in-toc tasks:t tex:t timestamp:t toc:nil todo:t
+#+OPTIONS: |:t
+#+TITLE: Lab 08: SASS and The Foundation Framework
+#+AUTHOR:
+#+EMAIL: matt@osskil
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.3.1 (Org mode 8.2.6)
+
+Now that you are HTML experts, CSS ninjas, and SASS stars,  we're moving right along...  
+
+Of course there is still tons more to learn, and you will pick up what you need to from me, from the Internet, and from your classmates.  But we are shifting gears to discuss some of the features of the web development /framework/ we will be using this year.   [[http://foundation.zurb.com/][Zurb Foundation]] is an incredibly powerful set of features that simplifies many aspects of website development.  We'll talk about it a little bit here, and you can learn a lot more from [[http://foundation.zurb.com/docs/][the official documentation]]. 
+
+* What is a Web Framework?
+A "framework" is a set of tools, bundled together, that create a coherent environment for web design, with alignment and co-operation between the various elements.  *Foundation* is one of two very popular such frameworks, the other of which is [[http://bootstrap.twitter.com][Twitter Bootstrap]].  It provides:
+- a carefully developed set of classes that make it easy to build stylistically coherent websites, and also to design arbitarily complex layouts
+- a number of cool Javascript libraries that let you do a lot of tricks that are otherwise somewhat hard to program on your own
+- a very cool way to customize all of the design element 
+- and as a bonus, careful attention to responsive design
+
+* How is Foundation organized?
+Foundation is many things, but the simplest way to think of it is as a *grid of 12 columns*, that move and flow as units when you move from one size of screen to another.  Inside the grid there are various kinds of components that you can use, all of which have been pretty carefully sized and matched in relation to each other.  These include buttons, menus, panels, and dynamic elements such as tabs, image lightboxes and sliders, cool "modal" elements that drop down from the top, etc. 
+
+* Getting started with the grid & semantic classes
+Take a look at this image:
+[[file:~/HackingHistory/Images/feature-grid-1.png]]
+
+Foundation takes the space on your screen and 
+- allots itself a certain portion of it -- by default, 980px -- as *usable* space.  On a big screen, you will see wide margins around that space.
+- divides the usable space into *rows* of *12 columns*.
+
+When you're working with Foundation, you structure the webpage with <div> elements using their special semantic classes, e.g.:
+#+BEGIN_SRC html 
+  <div class="row">
+    <div class="large-8 small-4 columns"></div>
+    <div class="large-4 small-4 columns"></div> 
+  </div>
+#+END_SRC
+
+You can also put rows /inside/ these columns, like this (/note:/ the simple SASS example we used last week would /not/ have allowed this row "nesting"):
+
+#+BEGIN_SRC html 
+  <div class="row">
+    <div class="large-8 small-4 columns">
+      <div class="row">
+        <div class="large-8 small-4 columns"></div>
+        <div class="large-4 small-4 columns"></div> 
+      </div> 
+    </div>
+    <div class="large-4 small-4 columns"></div> 
+  </div>
+#+END_SRC
+So, rather than futzing with layout details yourself, you use the expertise of the Foundation designers and just take what they've given you. 
+
+* SASS, yay!
+As you might imagine, we also get to use SASS to customize our sites.  To do this, though, we need to take the next step in editing:  downloading a real text editor.  Let's do this all together in class:  
+
+[[http://komodoide.com/komodo-edit/][Komodo Edit]] is a free cross-platform text editor.  Click on the download link and download the appropriate version for your computer.  
+
+Once it's working, we need to set up a new server under ~Preferences --> Servers~.  I'll give you the login info in class, but the other info is:
+- Server Type :: SFTP
+- Hostname  :: hackinghistory.ca
+- Default Path :: /var/www/YOURURLPREFIX.hackinghistory.ca/wp-content/themes/grunterie/
+
+*Hint:* We'll be opening a bunch of files in class -- it will be easier to open them all up if you create a project at the end. (~Projects --> New Project~) This will open up all your files for you when you restart the project.  
+
+* And Javascript, too...
+Foundation also comes with lots of useful Javascript function that ease the creation of complex effects, such as modal windows, displaying different data on large and small screens.  
+
+* Last Thoughts
+Foundation is the engine inside the Wordpress themes you'll be using for your class projects; the more you know about them, the better off you'll be.  
+
+
+# /home/matt/HackingHistory/Images/feature-grid-1.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-feature-grid-1.png
+
+
+# HackingHistory/Images/feature-grid-1.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-feature-grid-1.png

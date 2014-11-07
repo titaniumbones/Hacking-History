@@ -1,0 +1,30 @@
+#+POSTID: 482
+#+DATE: [2014-11-04 Tue 09:23]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Lab 08: Personas and Wireframes 
+#+PARENT: Labs And Notes, 
+
+Today we are making an imaginary website.  Here's our brief, noting please that it is /imaginary/.  
+
+* Commemorating Vimy Ridge
+
+With the 100th anniversary of World War I now upon us, the City of Toronto Archives wants to commemorate the [[http://en.wikipedia.org/wiki/Battle_of_Vimy_Ridge][Battle of Vimy Ridge]], but is not sure how to do it.  They have a large collection of letters to and from the Front, as well as access to the usual sources that could provide historical context.  The archive serves the general public but also has important educational functions related to school programs.  We assume for purposes of this exercise that their web department is in some kind of disarray (recent cuts have resulted in everyone being fired, perhaps?) and they come to us with wide-open questions about how to proceed.  They ask us to propose a website that will somehow engage a broad public while also being educational.  What will it look like?  Who will visit the site, and why? Should there be integration with real-world materials?  What can you do to make this a fantastic experience for everyone?  
+
+* Groups
+We'll divide up into groups of 3 for this exercise.
+
+* Personas
+Use the provided persona sheets to come up with 3 idealized user personas for potential site users.
+
+* Sitemap/Site description
+In 1 paragraph, explain the purpose of the site, and draw a rough map that outlines the kind of content you provide.
+
+* Wireframes 
+Use the provided wireframe sketching paper (and your own looseleaf paper) to sketch out each type of page that the site will serve up.  
+
+That's it!
+
+

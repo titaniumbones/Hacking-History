@@ -1,0 +1,30 @@
+#+POSTID: 83
+#+TITLE:     STA 01 -- CSS
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt.price@utoronto.ca
+#+DATE:      2011-10-13 Thu
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: `
+#+XSLT:
+#+PARENT: Assignments, 
+
+** Due Tues, Sept. 30 before class
+
+For this short technical assignment, you will complete 3 very short "projects" on the Codeacademy website.  
+
+They are:
+
+- [[http://www.codecademy.com/courses/web-beginner-en-UuBLw/0/1?curriculum_id=50579fb998b470000202dc8b][Design a Button]]
+- [[http://www.codecademy.com/courses/web-beginner-en-jNuXw/0/1?curriculum_id=50579fb998b470000202dc8b][Sort Your Friends]]
+- [[http://www.codecademy.com/courses/web-beginner-en-9x6JW-WnAFv/0/1?curriculum_id=50579fb998b470000202dc8b][Design Your Resume]]
+
+After you're done, sned me an email with a link to your CodeAcademy profile page -- I'll be able to see that you've completed the assignments!
+
