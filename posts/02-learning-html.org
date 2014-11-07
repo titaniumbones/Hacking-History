@@ -63,9 +63,11 @@ When linking to an image, we absolutely need to identify the /source/ of the ima
 - *View source.* When you right click on a web page in any modern browser, you will see a 'view source' option.
 - *Hackasaurus.* Mozilla has a really neat new tool for kids that you might also find useful, claled "Hackasaurus X-Ray Goggles.  [[http://www.hackasaurus.org]]
 - *jsbin*. The awesome real-time html/javascript previewer.
-- *firebug/inspect element*.  The [[http://getfirebug.com/][firebug extension for firefox]] and [[https://code.google.com/chrome/devtools/docs/overview.html][google Chrome's instpect element]] both let you mess with the code on any website you're looking at.  They're amazingly powerful.  
+- *firebug/inspect element*.  The [[http://getfirebug.com/][firebug extension for firefox]] and [[https://code.google.com/chrome/devtools/docs/overview.html][google Chrome's inspect element]] both let you mess with the code on any website you're looking at.  They're amazingly powerful.  
 ** Tutorials
+- [[http://codeacademy.com][Codeacademy]] may have the best intro to HTML sequence
 - [[http://w3schools.com/][W3 Schools]] provides excellent tutorials.
-- [[http://p2pu.org/en/schools/school-of-webcraft/#open_signup_projects][Mozilla's School of Webcraft]] is about to open
+- Mozilla's [[http://discourse.webmakerprototypes.org/category/training][Teach The Web]] site has a number of resources
 - [[http://hackbook.hackasaurus.org/][The Hackasaurus hackbook]] is another great place to start
-- [[https://developer.mozilla.org/en/HTML][The Mozilla HTML Reference]]
+- [[https://developer.mozilla.org/en/HTML][The Mozilla HTML Reference]] is where I go when I need a detailed explanation of something.  
+

@@ -1,15 +1,22 @@
+#+POSTID: 70
 #+DATE: [2013-10-08 Tue 09:53]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
 #+CATEGORY: 
 #+TAGS:
 #+DESCRIPTION:
-#+TITLE: Theming with wordpress
-
+#+TITLE: Lab 05: Theming with wordpress
+#+PARENT: Labs+Notes, 
 
 * theming with wordpress
 ** Themes are collections of files
 - they live in your wordpress install:
-[[http://www.vooshthemes.com/wp-content/uploads/2009/11/wordpress-file-structure1.png]]
+[[file:~/HackingHistory/Images/wp-file-structure.jpg]]
+** Themes are written primarily in PHP
+PHP is a programming language developed specifically for writing web pages.  Most PHP files consist of HTML and PHP intermixed with each other. This can be a little confusing, but you will get used to it. We will puzzle through the PHP syntax together, but you might want to try the [[http://www.codecademy.com/en/tracks/php][Codeacademy PHP track]] as an introduction to the language basics.  Knowing just a little will make your work a lot easier next semester.  
+
+#+BEGIN_SRC php
+<?php echo('Hello World'); ?>
+#+END_SRC
 
 ** Themes tell wordpress how to display your content
 [[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
@@ -23,16 +30,45 @@
 - *sidebar.php:* generates your sidebar
 
 ** template hierarchy
-remember this
+remember this:
+
 [[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+Here is a more detailed view:
+
+[[file:~/HackingHistory/Images/Template_Hierarchy.png]]
+
+When accessing a piece of data from the database, Wordpress will check in sequence to see if appropriate templates are available and use the first matching template it finds.  
 
 ** plugins and themes
 - Themes control appearance
-- plugins add funcionality
+- plugins add functionality
 - but sometimes the difference isn't so clear
-- check out required-foundation themes and r-* plugins.  They are interdependent
+- We will try to keep things pretty well-separated, but sometimes it's just much easier to do all your programming in a theme.  
 
 ** Editing Your Theme
 - install the [[http://wordpress.org/plugins/wpide/][wp-ide]] plugin to enable you to do syntax-highlighted code editing in your browser.  If the interface feels a little awkward try [[http://wordpress.org/plugins/better-file-editor/][better file editor]] instead -- it may be sufficient for our needs (I haven't experimented with it yet).
-- try changing the 'powered-by' text in the footer to our starter theme.  Did yo umake it work? Did you (alternatively) break the Internet?
-- I'll come up with some other ideas on the fly... 
+- try changing the 'powered-by' text in the footer to our starter theme.  Did you make it work? Did you (alternatively) break the Internet?
+- Check out functions.php, and then sidebar.php.  Can you understand what's going on?  It's not easy to understand!
+- try editing the css enough so that you can get something un-hideous.
+*** Headers
+Right now there is no custom header support in our theme!  To use a header image,
+add this code to functions.php:
+
+#+BEGIN_SRC php
+<?php add_theme_support('custom-header); ?>
+#+END_SRC
+
+
+And put this somewhere in header.php: 
+
+#+BEGIN_SRC php
+<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+
+#+END_SRC 
+** Learn much, much more
+There is a huge amount of information online at the [[http://codex.wordpress.org/Stepping_into_Templates][Wordpress Codex]].  That last link is a good starting point, and so is the [[http://codex.wordpress.org/Theme_Development][Theme Development Page]].  There is lots and lots and lots to learn here...  
+
+# HackingHistory/Images/wp-file-structure.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-wp-file-structure.jpg
+
+# HackingHistory/Images/Template_Hierarchy.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-Template_Hierarchy.png

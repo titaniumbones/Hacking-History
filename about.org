@@ -1,5 +1,5 @@
-#+POSTID: 23
-#+DATE: [2012-08-17 Fri 15:42]
+#+POSTID: 89
+#+DATE: [2014-09-05 Fri 17:42]
 #+TITLE: About
 
 
@@ -17,3 +17,5 @@ Matt Price, a historian of science by training, teaches digital history classes 
 
 
 #+Pictures/matt_on_bridge.jpeg http://2013.hackinghistory.ca/wp-content/uploads/2013/08/wpid-matt_on_bridge1.jpeg
+
+# Pictures/matt_on_bridge.jpeg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-matt_on_bridge.jpeg

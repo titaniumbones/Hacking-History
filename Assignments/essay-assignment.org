@@ -1,9 +1,26 @@
-#+DATE: [2012-01-04 Wed 15:06]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
 #+CATEGORY: assignments, 
 #+TAGS:
 #+DESCRIPTION:
 #+TITLE: Essay Assignment
 
-Write a 7-8 page paper on a topic related to your [[../F
+** Basics
+Write an 8-10 page paper on a research topic related to your group project.  This is an ordinary research paper of the kind you have done many times before; an excellent basic guide to writing history papers is available [[http://www.writing.utoronto.ca/advice/specific-types-of-writing/history][on the writing centre website]].    
 
+** Choosing a Topic
+Hopefully many aspects of your topic interest you.  Choose one which is broad enough to sustain a mid-length argument of the sort normally found in this type of short research paper.  This is a small class, and you see me every week; you should check in with me before the end of the semester to ensure that your topic is a good one.  
+
+The research paper stands on its own, but in most cases pieces of the paper can be recycled into the website proper.  For this reason, it's best if group members can choose a variety of topics not too closely bunched to one another.  Consult with your groupmates about their plans, and if possible avoid overlap in your paper topics.  
+
+** Marking
+As has doubtless generally been your experience, marking proceeds on an evaluation of:
+- Originality and thoughtfulness of your thesis:  Are you making an interesting argument?  Is it yours or does it belong to one of your sources?  
+- Quality of your evidence: do you present convincing evidence for each of your claims, supported by compelling arguments?
+- Structure: is your paper easy to follow, and does each part flow naturally from what comes before?
+- Style: is your paper a pleasure to read?
+- Attention to Detail:  are your citations properly formatted (please use [[https://www.zotero.org/][Zotero]] or a similar program), have you avoided typos, etc.?
+
+(listed in approximately descending order)
+
+** Number of Sources
+Please don't ask me how many sources you need.  As many as are required!  The most interesting part of writing a research paper is doing primary source research, so please do as much of that as you can.

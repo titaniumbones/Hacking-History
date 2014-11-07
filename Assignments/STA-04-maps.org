@@ -1,7 +1,8 @@
-#+TITLE:     STA-4: Historical Maps
+#+POSTID: 62
+#+DATE: [2014-09-05 Fri 17:13]
+#+TITLE:     STA-4 -- Foundation
 #+AUTHOR:    Matt Price
 #+EMAIL:     matt.price@utoronto.ca
-#+DATE:      2011-11-11 Fri
 #+DESCRIPTION:
 #+KEYWORDS:
 #+LANGUAGE:  en
@@ -13,7 +14,7 @@
 #+LINK_UP:   
 #+LINK_HOME: 
 #+XSLT:
-
+#+PARENT: Assignments, 
 
 * Historical Mapping
 This is a simple experiment in generating historical maps:  interactive timelines that also map events on a geographical grid.  

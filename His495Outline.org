@@ -1,4 +1,4 @@
-#+POSTID: 5
+#+POSTID: 21
 #+DATE: [2013-05-28 Tue 14:49]
 # #+AUTHOR:    University of Toronto
 # #+EMAIL:     matt.price@utoronto.ca
@@ -19,15 +19,17 @@
 #+TEMPLATE: 
 #+CATEGORY: 
 
-* Logistics
 
+* Logistics
 #+ATTR_HTML: :class org-upload
-[[file:~/Matt_headshots/Matt Price/matt_on_desk_for_web.jpg]]
+[[file:Images/matt_on_desk_for_web.jpg]]
 
 | *Instructor:* | Matt Price             |
 | *Email:*      | matt.price@utoronto.ca |
-| *Tel:*        | 978-8472               |
-| *Office Hrs:* | SS 3077 M 12-2         |
+| *Office Hrs:* | SS 3077 R 1-3          |
+|               |                        |
+
+
 * Introduction 
 In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][World Wide Web]] was an obscure technical work-in-progress buried in the depths of a vast research institute.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
 
@@ -39,9 +41,11 @@ Along the way, we will learn about the history of digital media, and their place
 In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  In advance of the class meeting students will (where not otherwise noted) be expected to produce written responses to the readings in the form of blog postings, and to respond to the postings of at least two other students.  If at all possible, you should bring your laptop or (not as good!) tablet to class for the lab portion.  
 
 In certain weeks there are also other types of assignments; these are noted in the outline and referred to in the course requirements.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests. The semester culminates with group presentations of your proposed projects.  
+
 ** Second Semester
 In the second semester it is expected that students will spend most of their time working directly on their project with the partnering organization.  We will meet most weeks to discuss specific technical questions raised by the projects themselves, and will discuss additional readings as needed.  Importantly, students will continue to make regular postings about their progress, and comment on each other's writing.  Projects will be submitted to community partners for review in the second to last week of classes, presented to the class in the final course meeting, and handed in to the professor immediately before the beginning of finals period.  
-* Course Requirements
+*
+ Course Requirements
 # <<Course Requirements>>
 In this project-based class, we have relatively few readings and instead focus on active learning through a variety of assignments, all of which are intended to help you build towards your final, collaborative group project.  
 
@@ -57,9 +61,9 @@ with the balance of 10% for on- and off-line participation, which includes comme
 
 *Short Technical Assignments (STA's)* are designed to give you the technical skills you will need for your website development work in the second semester.  Approximately every 3 weeks in the first semester, you will complete a short on or off-line assignment for a pass-fail grade.  The lab assignments will cover basic web skills and other technical topics, which will always have been covered in the third 'lab' hour of class. 
 
-The *Website Review* has two parts: a written review of a historical website posted to the course website at least 24 hours before class, and a very short in-class presentation.  We will have one or two website reviews each week in the first semester, except for Nov. 29.  The written portion is posted to the course website in lieu of that week's blog post and should be tagged "review" to make it easier to find (see the review assignment for more details).  
+The *Website Review* has two parts: a written review of a historical website posted to the course website at least 24 hours before class, and a very short in-class presentation.  We will have one or two website reviews each week in the first semester, except for the first and final meetings.  The written portion is posted to the course website in lieu of that week's blog post and should be tagged "review" to make it easier to find (see the review assignment for more details).  
 
-*The Paper* is due shortly after the beginning of the second semester.  Approximately 7-9 pages long, its format is that of a standard course paper:  a well-researched thesis, supported by evidence garnered from primary and secondary sources.  Students are expected to write on topics related to their *Final Projects* (see below).  
+*The Paper* is due shortly after the beginning of the second semester.  Approximately 8-10 pages long, its format is that of a standard course paper:  a well-researched thesis, supported by evidence garnered from primary and secondary sources.  Students are expected to write on topics related to their *Final Projects* (see below).  
 
 *The Final Project* is a major collaborative effort to build a historical website in service to an organization outside the University.  Students will work in groups of 3-4, collaboratively building a substantive site which balances scholarly merit with the interests of the sponsoring organization and accessibility to the general public.  We have assembled a list of [[./PartneringOrganizations.html][Partnering Organizations]] which have expressed interest in working with you, and you should carefully examine their proposals and discuss them with your peers.   See the [[http://./ProjectGuidelines.or][Project Guidelines]] for more detailed discussion & marking breakdown.  
 
@@ -71,39 +75,39 @@ The *Website Review* has two parts: a written review of a historical website pos
 *Paper:* 3%/day.
 
 *Final Project:* It is /essential/ that you complete your final project on time in order to get feedback from the sponsoring organization and organize the handoff of the project. The various deadlines for the project (see [[./ProjectGuidelines.org][Project Guidelines]]) are firm.  *DO NOT MISS THEM.* 
+
 # <<texts>>
 ** Project Timetable
-- <2013-10-01 Teu>: Detailed assignment handed out with preliminary partner suggestions
-- <2012-10-30 Tue>: Hand in preliminary (individual) project proposal.  
-- [2012-11-27 Tue] Presentation of Final (group) Proposal
-- [2013-01-08 Tue]: Placement begins (approximate)
-- [2013-02-19 Tue]: Intermediate Status Report
-- [2013-03-19 Tue]: Submission to Community Partner
-- [2013-04-02 Tue]: Project Open House/FINAL DUE DATE
+- <2014-09-30 Tue>: Detailed assignment handed out with preliminary partner suggestions
+- <2014-12-02 Tue>: Project Proposal due and presented
+- [2014-01-07 Tue]: Paper Due 
+- [2014-02-18 Tue]: Intermediate Status Report
+- [2014-03-18 Tue]: Submission to Community Partner
+- [2014-04-02 Wed]: Project Open House/FINAL DUE DATE
 
 * Texts
 All texts for this course are online, either in the public web or as pdfs.  Most of them are publicly available. You may want physical copies of some books;  these are available at [[http://www.amazon.ca][Amazon]] or by special order from any sizable bookstore. 
 - Cohen & Rosenzweig, /Digital History/ (http://chnm.gmu.edu/digitalhistory/)
-- C. Kelty, /Two Bits/ (http://twobits.net/read/)
 - D. Brown, /Communicating Design: Developing Web Site Documentation for Design and Planning/ (http://communicatingdesign.com/)
 A sizable collection of links is also stored in a [[http://www.zotero.org][Zotero]] database, having been merged with the [[https://www.zotero.org/groups/25659/][course bibliogrpahy]].
 * Tools
-We'll be using a number of important software tools, some of them very easy to use, some of them harder.  All of them are free (as in beer, and usually as in speech) and most run on all three major platforms (Windows, Mac, Linux) or on the web.  See the [[./Tools.org][Tools]] page for more details.
+We'll be using a number of important software tools, some of them very easy to use, some of them harder.  All of them are free (as in beer, and usually as in speech) and most run on all three major platforms (Windows, Mac, Linux) or on the web.  See the Tools page for more details.
 #<<outline1>>
 * Outline for Semester 1
-** <2013-09-10 Tue> Hacking History
+** <2014-09-09 Tue> Hacking History
 #+ATTR_HTML: :class org-upload
-[[file:~/Downloads/future-history-small.jpg]]
+[[file:Images/wpid-future-history-small.jpg]]
 Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture.  
 *** Background: 
 - [[http://www.journalofamericanhistory.org/issues/952/interchange/index.html][JAH - The Promise of Digital History]], [[http://writinghistory.trincoll.edu/revisioning/tanaka-2012-spring/][Pasts in a Digital Age]]
 - Mark Poster, "[[http://www.hnet.uci.edu/mposter/writings/democ.html][Cyberdemocracy]]" 
 *** Lab:  Technical Introduction 
 - Wordpress & the course site.  
-- Blogging & social media review. 
-** <2013-09-17 Tue> Language of the Web
+- Blogging & social media review.
+- HTML
+**  <2014-09-16 Tue> Language of the Web
 #+ATTR_HTML: :class org-upload
-[[file:~/Downloads/Bush-Memex-lg1.jpg]]
+[[file:Images/wpid-Bush-Memex-lg1.jpg]]
 The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
 *** Readings
 - Vannevar Bush, "[[http://www.theatlantic.com/magazine/archive/1969/12/as-we-may-think/3881/][As We May Think]]"
@@ -113,9 +117,7 @@ The Web is written in a language called HTML, with some help from other lanugage
 *** Lab: Understanding HTML
 *Resources:* [[http://jsbin.com/#html,live][JSBin online HTML/Javascript editor]]; [[http://codeacademy.net][codeacademy courses]]; [[http://en.wikipedia.org/wiki/HTML][on Wikipedia]]; [[http://www.w3.org/MarkUp/Guide/][w3 guide]]; also cf. Zotero Bibliography
 
-[[http://2013.hackinghistory.ca/Assignments/lab-01-html.html][Lab 01 Handout]]
-
-** <2013-09-24 Tue> The Wisdom of the Crowd 
+** <2014-09-23 Tue> The Wisdom of the Crowd 
 #+ATTR_HTML: :class org-upload
 [[file:Images/220px-Wikipedia_Logo_1.0.png]]
 The new kinds of collaboration that the web makes possible, and the intellectual challenges they create.
@@ -123,13 +125,11 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 - R. Rosenzweig, "[[http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42][Can History be Open Source?]]"
 - Aaron Swartz, "[[http://www.aaronsw.com/weblog/whowriteswikipedia][Who Writes Wikipedia]]"
 - Owens, Trevor. [[http://onlinelibrary.wiley.com/doi/10.1111/cura.12012/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+on+31+August+from+10%3A00-12%3A00+BST+%2805%3A00-07%3A00+EDT%29+for+essential+maintenance][Digital Cultural Heritage and the Crowd]].” Curator: The Museum Journal 56, no. 1 (2013): 121–130.
-
 - Dan Cohen, ""[[http://www.dancohen.org/2009/04/29/the-spider-and-the-web-results/][The Spider and the Web (Results)]] (be sure to read the preceding two posts)
 - Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
-*** Lab: [[./assignments/lab-03-tracking-wikipedia/][Wikipedia Tracking]] 
-A look at the inner workings of the world's biggest crowdsourcing project.  
-*** Assignments: STA1 Handed Today (Wikipedia)
-** <2013-10-01 Tue> Public History
+*** Lab: CSS and Web Styles
+*** Assignments: STA1 Handed out Today (Web Styles)
+** <2014-09-30 Tue> Public History
 #+ATTR_HTML: :class org-upload
 [[file:Images/comhist.jpg]]
 A basic introduction to the questions surrounding the production of "public" history.  
@@ -139,14 +139,14 @@ A basic introduction to the questions surrounding the production of "public" his
 - Filene, Benjamin. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2012.34.1.11][Passionate Histories: ‘Outsider’ History-Makers and What They Teach Us]].” The Public Historian 34, no. 1 (February 1, 2012): 11–33.
 *** Lab: Getting Started with Wordpress
 *** Assignments: STA1 Due Today 
-** <2013-10-08 Tue> Working with Communities
+** <2014-10-07 Tue> Working with Communities
 The ethics of working with laypeople, and the promises & pitfalls of collaborating with non-academics.
 *** Readings:
 - Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012. 
 - 
 *** Lab: Wordpress Themes
 *** Assignments: STA2 Handed Out (Theming Wordpress)
-** <2013-10-15 Tue> Search and Filter (Information Abundance)
+** <2014-10-14 Tue> Search and Filter (Information Abundance)
 #+ATTR_HTML: :class org-upload
 [[file:Images/info_overload.png]]
 In the past, /access/ to information was one of the historian's most fundamental challenges.  today, it is more often a problem of /filtering/ information.  
@@ -154,10 +154,10 @@ In the past, /access/ to information was one of the historian's most fundamental
 - Carr, Nicholas. “[[http://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/6868/][Is Google Making Us Stupid?]]” The Atlantic, August 2008. 
 - William J Turkel, n.d. [[http://williamjturkel.net/2011/03/15/going-digital/.][Going Digital]]
 - William J. Turkel, “[[http://williamjturkel.net/2011/03/02/research-24-7/.][Research 24/7]].”
-- - Sharma, Ptrick. "[[http://www.historians.org/perspectives/issues/2012/1204/Oral-History-Information-Abundance-and-Scarcity.cfm][Oral History, Policy History, and Information Abundance and Scarcity]]". /Perspectives on History/ April 2012
-*** Lab: Scholarly Search
+- - Sharma, Patrick. "[[http://www.historians.org/perspectives/issues/2012/1204/Oral-History-Information-Abundance-and-Scarcity.cfm][Oral History, Policy History, and Information Abundance and Scarcity]]". /Perspectives on History/ April 2012
+*** Lab: Foundation and SASS
 *** Assignments: STA2 Due
-** <2013-10-22 Tue> Oral History
+** <2014-10-21 Tue> Oral History
 #+ATTR_HTML: :class org-upload
 [[file:Images/mike.jpeg]]
 One remarkable possibility opened up by the web is abundant oral history.
@@ -165,7 +165,7 @@ One remarkable possibility opened up by the web is abundant oral history.
 - "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
 *** Lab: Art of the Interview
 *** Assignments: STA3 Handed Out (Oral History)
-** <2013-10-29 Tue> Piracy, Plagiarism, Citation
+** <2014-10-28 Tue> Piracy, Plagiarism, Citation
 #+ATTR_HTML: :class org-upload
 [[file:Images/tpb.jpg]]
 Ethical, Legal, and Technical Questions around Copyright
@@ -174,17 +174,17 @@ Ethical, Legal, and Technical Questions around Copyright
 - Richard Stallman, "[[http://www.gnu.org/gnu/manifesto.html][The GNU Manifesto]]" and "[[http://www.gnu.org/philosophy/free-sw.html][The Free Software Definition]]"
 - Creative Commons Licences: http://creativecommons.org/licenses/
 - Dan Cohen, "[[http://www.dancohen.org/2009/05/12/idealism-and-pragmatism-in-the-free-culture-movement/][Idealism and Pragmatism in the Free Culture Movement]]"
-*** Lab: What is a Wordpress Plugin?
-*** Assignments: Proposal 1 due
-** <2013-11-05 Tue> Designing Digital Projects
+*** Lab: More Foundation
+
+** <2014-11-04 Tue> Designing Digital Projects
 A crash course in website design
 *** Readings
 - Roy Rosenzweig and Dan Cohen, Chapter 2: "[[http://chnm.gmu.edu/digitalhistory/designing/][Designing for the History Web]]," in Digital History (2006).
 - Dan Brown, /Communicating Design/  Ch. 2 (Personas) and 10 (Wireframes)
 - Bill Buxton, /Sketching User Experiences/ (excerpts)
 *** Lab: Design exercise (Personas & Wireframes)
-*** Assignments: STA3 Due (you get 2 weeks for this one)
-** <2013-11-19 Tue> Maps and Graphs: Visual History
+*** Assignments: STA3 Due
+** <2014-11-18 Tue> Maps and Graphs: Visual History
 Thinking about the visual presentation of information
 *** Readings
 + Franco Moretti, /Graphs, Maps, Trees/, ch. 1 ([[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/placing-history.pdf][Graphs]]).
@@ -193,16 +193,16 @@ Thinking about the visual presentation of information
 + Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
 *** Lab: Google Maps and Javascript
 *** Assignments: STA4 Handed Out (Historical Google Map)
-** <2013-11-27 Wed> Immersive History: Games & Simulations
+** <2014-11-25 Tue> Immersive History: Games & Simulations
 *** Readings
 - Kee and Rockwell, "[[http://gamestudies.org/1102/articles/geoffrey_rockwell_kevin_kee][The Leisure of Serious Games]]"
 - Kee, Kevin, Shawn Graham, Pat Dunae, John Lutz, Andrew Large, Michel Blondeau, and Mike Clare. “[[http://utpjournals.metapress.com/content/588030472qw20368/fulltext.pdf][Towards a Theory of Good History Through Gaming]].” /Canadian Historical Review/ 90, no. 2 (June 1, 2009): 303–326.
 - Squire, Kurt, and Sasha Barab. “[[http://dl.acm.org/ft_gateway.cfm?id%3D1149188&type%3Dpdf&CFID%3D141869106&CFTOKEN%3D23125562][Replaying History: Engaging Urban Underserved Students in Learning World History Through Computer Simulation Games.]]” In Proceedings of the 6th International Conference on Learning Sciences, 505–512. ICLS  ’04.
 - Kee, Kevin. “[[http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx_ver%3DZ39.88-2004&ctx_enc%3Dinfo%253Aofi%252Fenc%253AUTF-8&rfr_id%3Dinfo:sid/summon.serialssolutions.com&rft_val_fmt%3Dinfo:ofi/fmt:kev:mtx:journal&rft.genre%3Darticle&rft.atitle%3DComputerized%2BHistory%2BGames%253A%2BNarrative%2BOptions&rft.jtitle%3DSimulation%2B%2526%2BGaming&rft.au%3DKee%252C%2BKevin&rft.date%3D2011-08-01&rft.pub%3DSAGE%2BPUBLICATIONS%252C%2BINC&rft.issn%3D1046-8781&rft.volume%3D42&rft.issue%3D4&rft.spage%3D423&rft.epage%3D440&rft_id%3Dinfo:doi/10.1177%252F1046878108325441&rft.externalDBID%3Dn%252Fa&rft.externalDocID%3DEJ938650][Computerized History Games: Narrative Options]].” /Simulation & Gaming/ 42, no. 4 (August 1, 2011): 423–440.
-
+  
 *** Lab: How Javascript Works in Wordpress
 *** Assignments: STA4 Due
-** <2013-12-04 Wed> Proposal Presentations
+** <2014-12-02 Tue> Proposal Presentations
 This is your chance to wow the class with your final proposals. Good luck!
 
 
@@ -224,39 +224,25 @@ In the second semester, we will meet mostly to discuss your progress on the proj
 
 Our final meeting will be a Project Open House in which you share the final products of your labours with the class. 
 
-#+./ProjectGuidelines.html http://2012.hackinghistory.ca/wp-content/uploads/2012/08/wpid-ProjectGuidelines.html
-#+./Tools.html http://2012.hackinghistory.ca/wp-content/uploads/2012/08/wpid-Tools.html
-
-#+./PartneringOrganizations.html">Partnering Organizations</a> which have expressed interest in working with you, and you should carefully examine their proposals and discuss them with your peers.   See the <a href="./ProjectGuidelines.html http://2012.hackinghistory.ca/wp-content/uploads/2012/08/wpid-ProjectGuidelines1.html
-
-#+./PartneringOrganizations.html http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-PartneringOrganizations.html
-#+readings/berners-lee-weaving-web.pdf http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-berners-lee-weaving-web.pdf
-
-#+/home/matt/Matt_headshots/hq/in-tent-med.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/08/wpid-in-tent-med.jpg
-#+/home/matt/Matt_headshots/hq/in-tent-small.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/08/wpid-in-tent-small.jpg
-
-#+/home/matt/Downloads/HistoryFuture1.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/08/wpid-HistoryFuture1.jpg
-
-#+/home/matt/Matt_headshots/Matt Price/IMG_9367_.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/08/wpid-IMG_9367_2.jpg
-#+/home/matt/Matt_headshots/Matt Price/matt_on_desk_for_web.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/08/wpid-matt_on_desk_for_web.jpg
-#+/home/matt/Downloads/future-history-small.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/09/wpid-future-history-small.jpg
-#+/home/matt/Downloads/Bush-Memex-lg1.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/09/wpid-Bush-Memex-lg1.jpg
-#+Images/220px-Wikipedia_Logo_1.0.png http://2013.hackinghistory.ca/wp-content/uploads/2013/09/wpid-220px-Wikipedia_Logo_1.0.png
-#+Images/tpb.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/09/wpid-tpb.jpg
 
 
-#+Images/comhist.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/09/wpid-comhist.jpg
-#+Images/info_overload.png http://2013.hackinghistory.ca/wp-content/uploads/2013/09/wpid-info_overload.png
-#+Images/mike.jpeg http://2013.hackinghistory.ca/wp-content/uploads/2013/09/wpid-mike.jpeg
+# /home/matt/Matt_headshots/Matt Price/matt_on_desk_for_web.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-matt_on_desk_for_web1.jpg
+# ./ProjectGuidelines.html http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-ProjectGuidelines1.html
 
-# /home/matt/Matt_headshots/Matt Price/matt_on_desk_for_web.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-matt_on_desk_for_web.jpg
-# ./ProjectGuidelines.html http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-ProjectGuidelines.html
-# ./Tools.html">Tools</a> page for more details. #<a id="outline1" name="outline1 http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-a-page-for-more-details.-a-idoutline1-nameoutline1
-# /home/matt/Downloads/future-history-small.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-future-history-small.jpg
-# /home/matt/Downloads/Bush-Memex-lg1.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-Bush-Memex-lg1.jpg
-# readings/berners-lee-weaving-web.pdf http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-berners-lee-weaving-web.pdf
-# Images/220px-Wikipedia_Logo_1.0.png http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-220px-Wikipedia_Logo_1.0.png
-# Images/comhist.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-comhist.jpg
-# Images/info_overload.png http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-info_overload.png
-# Images/mike.jpeg http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-mike.jpeg
-# Images/tpb.jpg http://2013.hackinghistory.ca/wp-content/uploads/2013/10/wpid-tpb.jpg
+# /home/matt/Downloads/future-history-small.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-future-history-small.jpg
+# /home/matt/Downloads/Bush-Memex-lg1.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-Bush-Memex-lg1.jpg
+# readings/berners-lee-weaving-web.pdf http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-berners-lee-weaving-web.pdf
+# Images/220px-Wikipedia_Logo_1.0.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-220px-Wikipedia_Logo_1.0.png
+# Images/comhist.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-comhist.jpg
+# Images/info_overload.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-info_overload.png
+# Images/mike.jpeg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-mike.jpeg
+# Images/tpb.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-tpb.jpg
+# ./Images/future-history-small.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-future-history-small1.jpg
+# ./Images/Bush-Memex-lg1.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-Bush-Memex-lg11.jpg
+
+# Images/future-history-small.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-future-history-small2.jpg
+# Images/Bush-Memex-lg1.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-Bush-Memex-lg12.jpg
+# Images/wpid-future-history-small.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid13-wpid-future-history-small.jpg
+# Images/wpid-Bush-Memex-lg1.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid14-wpid-Bush-Memex-lg1.jpg
+
+# Images/matt_on_desk_for_web.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-matt_on_desk_for_web2.jpg

@@ -1,5 +1,5 @@
-#+POSTID: 589
-#+DATE: [2012-09-20 Thu 11:48]
+#+POSTID: 108
+#+DATE: [2014-09-08 Mon 21:13]
 #+TITLE: Website Review
 #+PARENT: Assignments, 
 #+CATEGORY: assignments, 
@@ -15,6 +15,6 @@ In your written review you should be sure to include the following:
 + description and evaluation of the site's design
 + discussion of any unusaul or interesting technical features, including the use of media such as audio, video, or historical images
 + overall evaluation of the site's usefulness or lessons learned for your project. 
-
 ** Presentation 
 In your presentation, briefly walk the class through the site, highlighting whatever features you think are most interesting.  This will work best if you set up a number of browser tabs in advance, projecting them on the wall for the whole class to see.  Briefly point out as many of the important elements of your written review as you can.  
+

@@ -18,6 +18,15 @@
 
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
-* Getting Started
-In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will see a theme called "Hacking History Starter Kit". Let's take a quick look at it:
+* Assignment
+Create a simple Wordpress theme to commemmorate a fictitious historical event: 
+- the Unicorn apocalypse
+- Invasion of Russia by NATO, 2015
+- Canadian Victory in the War of 1812
+- Defeat of Roman armies by Pyrrhus of Epirus
+- etc.  
+
+Base the theme o n the starter theme we worked on earlier in class.  
+
+As much as possible, you should match the aesthetics of the theme to your made-up content.  Give your sigte a little bit of structure to fill out the menus and so forth.  Have fun, but produce something that you find reasonably compelling.  
 
