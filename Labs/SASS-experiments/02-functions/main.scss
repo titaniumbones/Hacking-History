@@ -1,0 +1,78 @@
+// color name variables
+
+// greys
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+// colors
+$blue:        #008CBA !default;
+$red:         #D42C2C !default;
+$green:       #10A710 !default;
+
+
+// Colors we are actually using
+// main emphasis for links, header background, etc.  
+$primary-color: $blue !default;
+// contrast color -- used for some backgrounds
+$secondary-color: $ghost !default;
+// default background:  
+$body-bg: $white;  
+// main font color:
+// Notice it is defined with a strange function!
+$text-color: invert($body-bg);
+
+// the width of the content area
+$row-width: 600px;
+// number of columns in a row
+$total-columns: 6;
+
+// splash
+$alert-color: #f04124 !default;
+$success-color: #43AC6A !default;
+$warning-color: #f08a24 !default;
+$info-color: #a0d3e8 !default;
+
+*, *.before, *.after {
+  background-color: $body-bg;
+  color: $text-color;
+}
+
+
+header, header h1 {
+  background:$primary-color;
+  color:lighten($primary-color, 25%);
+  margin-bottom:0px;
+}
+
+.row {
+  max-width: $row-width;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 0px;
+  clear:both;
+  border: 1px dotted $oil;
+}
+
+.column {
+  width: 100%/$total-columns;
+  min-height: 100px;
+  float:left;
+}
+
+
+// the number of columns
+@for $i from 1 through $total-columns {
+  .fade-#{$i} {
+    background-color: scale-color($body-bg,$lightness:-15%*$i);
+    color: adjust-hue(scale-color($green, $lightness:15%*($i - 1), $saturation:10%*$i), 20deg*$i); 
+
+  }
+}
+a {
+  color: $primary-color;
+  background-color: inherit;
+}
+

@@ -1,0 +1,72 @@
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+# #+DECK_POSTAMBLE: <h1>%a - %t</h1>
+#+DECK_POSTAMBLE: 
+#+DECK_PREAMBLE:
+#+HTML_INCLUDE_DEFAULT_STYLE:
+#+HTML_INCLUDE_SCRIPTS:
+#+DECK_BASE_URL: /home/matt/src/deck.js
+#+DECK_THEME: web-2.0.css
+#+DECK_TRANSITION: fade.css
+#+DECK_INCLUDE_EXTENSIONS:
+#+DECK_EXCLUDE_EXTENSIONS:
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: author:nil c:nil creator:comment d:(not "LOGBOOK") date:nil
+#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
+#+TITLE: History, Data, and Visualization: some quotes
+#+DATE: <2014-11-10 Mon>
+#+AUTHOR:
+#+EMAIL: 
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
+
+* Braudel I
+
+#+BEGIN_QUOTE
+An incredible number of dice, always rolling, dominate and determine each individual existence: uncertainty, then, in the realm of individual history; but in that of collective history . . . simplicity and consistency. History is indeed ‘a poor little conjectural science’ when it selects individuals as its objects . . . but much more rational in its procedures and results, when it examines groups and repetitions. 
+#+END_QUOTE
+
+* Braudel II 
+#+BEGIN_QUOTE
+Traditional history, with its concern for the short time span, for the individual and the event, has long accustomed us to the headlong, dramatic, breathless rush of its narrative . . . The new economic and social history puts cyclical movement in the forefront of its research . . . large sections of the past, ten, twenty, fifty years at a stretch . . . Far beyond this . . . we find a history capable of traversing even greater distances . . . to be measured in centuries . . . the long, even the very long time span, the longue durée.
+#+END_QUOTE
+
+- event, cycle, longue durée
+
+* Kuhn, paradigms, normal science: I
+#+BEGIN_QUOTE
+ It’s only when Ptolemaic astronomy begins to generate one ‘monstrosity’ after another, writes Kuhn in The Structure of Scientific Revolutions , that ‘the time comes to give a competitor a chance’—and the same is true here: a historical novel written in 1800, such as Castle Rackrent (or in 1805, like Waverley ’s abandoned first draft) simply didn’t have the incredible opportunity to reshape the literary field that the collapse of the gothic offered Waverley in 1814.
+#+END_QUOTE
+
+* Kuhn, paradigms, normal science: II
+#+BEGIN_QUOTE
+Instead of changing all the time and a little at a time, then, the system stands still for decades, and is then ‘punctuated’ by brief bursts of invention: forms change once, rapidly, across the board, and then repeat themselves for two– three decades: ‘normal literature’, we could call it, in analogy to Kuhn’s normal science.
+#+END_QUOTE
+
+* Bodenhammer
+* General and Particular
+#+BEGIN_QUOTE
+In its essence, history seeks to generalize form the particular, not for the purpose of finding universal laws but rather to glean insights about cause and effect form a known outcome.  Here, history differs from social science, which attempts to reach a generalization that holds true in any similar circumstance.  
+#+END_QUOTE
+
+*  Words
+#+BEGIN_QUOTE
+Multiplicity is inherent in the word-narratives used to communicate history.  Words are complex forms of information; they have "halos of meaning," making them wonderfully evocative but imprecies and slippery...  Historians emprace this range of meanings.  We prefer the medium of words and narratives because it permits us to represent the past as multidimencsional, complex and nonlinear, even though structurally our prose and our logic are sequential.
+#+END_QUOTE
+*  multiplicity within GIS:
+#+BEGIN_QUOTE
+Perhaps historical GIS ultimately makes its contribution not as a positivist tool but a reflexive one: integrating the multiple voices and views of our past, allowing them to be seen and examined at various scales; creating the simulaneous context that historians accept as real but unotainable by words alone; reducing the distance between the observer and the observed; and permitting the past to be as dynamic and contingent as the present.  
+#+END_QUOTE
+* Theibault
+* Visualizing Napoleon
+[[http://writinghistory.trincoll.edu/wp-content/uploads/2011/09/Minard.png]]
+* Learning to read
+#+BEGIN_QUOTE
+It is clear from these sites that people are still expanding the realm of the possible in visualizing information. Looking over these visualizations, even when they are not explicitly historical, will give historians strategies for making more powerful arguments to complement, and sometimes even substitute for, text. But the task of building those arguments will have to include educating fellow historians about how to interpret visualizations. As noted above, it can be very difficult for the uninitiated historian to intuit relationships between entities in a network analysis when they are put into a visualization scheme.  Yet networks are often at the center of questions of greatest interest to historians. To the extent that the difficulties in interpreting innovative visualizations like interactive network diagrams are caused by a simple lack of familiarity with them, they can be overcome by building more such sites. To the extent that they are caused by a lack of background knowledge to understand the cues, creators of such sites will have to learn to build new ways of incorporating that background information as economically in the use of text as possible. In either case, at some point historians will have to accustom themselves to “reading” network diagrams as adeptly as they read maps or scatterplots.
+#+END_QUOTE
