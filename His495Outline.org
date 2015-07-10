@@ -1,3 +1,4 @@
+#+INCLUDE: "~/src/orgpaper/default_packages.org"
 #+POSTID: 21
 #+DATE: [2013-05-28 Tue 14:49]
 # #+AUTHOR:    University of Toronto
@@ -44,8 +45,7 @@ In certain weeks there are also other types of assignments; these are noted in t
 
 ** Second Semester
 In the second semester it is expected that students will spend most of their time working directly on their project with the partnering organization.  We will meet most weeks to discuss specific technical questions raised by the projects themselves, and will discuss additional readings as needed.  Importantly, students will continue to make regular postings about their progress, and comment on each other's writing.  Projects will be submitted to community partners for review in the second to last week of classes, presented to the class in the final course meeting, and handed in to the professor immediately before the beginning of finals period.  
-*
- Course Requirements
+* Course Requirements
 # <<Course Requirements>>
 In this project-based class, we have relatively few readings and instead focus on active learning through a variety of assignments, all of which are intended to help you build towards your final, collaborative group project.  
 
@@ -195,11 +195,11 @@ Thinking about the visual presentation of information
 *** Assignments: STA4 Handed Out (Historical Google Map)
 ** <2014-11-25 Tue> Immersive History: Games & Simulations
 *** Readings
-- Kee and Rockwell, "[[http://gamestudies.org/1102/articles/geoffrey_rockwell_kevin_kee][The Leisure of Serious Games]]"
 - Kee, Kevin, Shawn Graham, Pat Dunae, John Lutz, Andrew Large, Michel Blondeau, and Mike Clare. “[[http://utpjournals.metapress.com/content/588030472qw20368/fulltext.pdf][Towards a Theory of Good History Through Gaming]].” /Canadian Historical Review/ 90, no. 2 (June 1, 2009): 303–326.
 - Squire, Kurt, and Sasha Barab. “[[http://dl.acm.org/ft_gateway.cfm?id%3D1149188&type%3Dpdf&CFID%3D141869106&CFTOKEN%3D23125562][Replaying History: Engaging Urban Underserved Students in Learning World History Through Computer Simulation Games.]]” In Proceedings of the 6th International Conference on Learning Sciences, 505–512. ICLS  ’04.
 - Kee, Kevin. “[[http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx_ver%3DZ39.88-2004&ctx_enc%3Dinfo%253Aofi%252Fenc%253AUTF-8&rfr_id%3Dinfo:sid/summon.serialssolutions.com&rft_val_fmt%3Dinfo:ofi/fmt:kev:mtx:journal&rft.genre%3Darticle&rft.atitle%3DComputerized%2BHistory%2BGames%253A%2BNarrative%2BOptions&rft.jtitle%3DSimulation%2B%2526%2BGaming&rft.au%3DKee%252C%2BKevin&rft.date%3D2011-08-01&rft.pub%3DSAGE%2BPUBLICATIONS%252C%2BINC&rft.issn%3D1046-8781&rft.volume%3D42&rft.issue%3D4&rft.spage%3D423&rft.epage%3D440&rft_id%3Dinfo:doi/10.1177%252F1046878108325441&rft.externalDBID%3Dn%252Fa&rft.externalDocID%3DEJ938650][Computerized History Games: Narrative Options]].” /Simulation & Gaming/ 42, no. 4 (August 1, 2011): 423–440.
-  
+*** Further Reading
+- Kee and Rockwell, "[[http://gamestudies.org/1102/articles/geoffrey_rockwell_kevin_kee][The Leisure of Serious Games]]"
 *** Lab: How Javascript Works in Wordpress
 *** Assignments: STA4 Due
 ** <2014-12-02 Tue> Proposal Presentations

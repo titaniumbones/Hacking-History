@@ -1,0 +1,116 @@
+#+BLOG: hh
+#+POSTID: 729
+#+DATE: [2015-02-24 Tue 07:40]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: A better maps solution (brutal)
+
+This process consumed far more cycles than I intended, or than it ought to have. While in principle simple, the construction of an overlay layer for online maps is currently an elaborate process. Choosing between plugins, between overlay types, and between map types is rather bewildering.  In the end, I have a solution that I am quite pleased with, but it has involved LOTS more work than I initially thought would be required.  
+
+* Plugins
+I initially steered you to the WP-Geo plugin; it has lots of virtues, but at the final stage, I found it would not create adequate markers for maps.  This is a deal-breaker, so I have switched back to an old (but complex!) favourite, [[https://sites.google.com/site/geomashupwiki//guides][Geo Mashup]].  Probably the oldest Wordpress maps plugin, Geo is a little less user-friendly but extremely flexible and featureful.
+
+** Installation
+Install [[https://sites.google.com/site/geomashupwiki//guides][Geo Mashup]] from the Wordpress repositories.  Activate it, and then /manually/ install the [[https://code.google.com/p/wordpress-geo-mashup/wiki/JavaScriptApi][Geo Mashup Custom]] plugin by downloading [[http://wordpress-geo-mashup.googlecode.com/files/geo-mashup-custom-1.0.zip][the zipped archive]], then ftping and unzipping in the plugins directory of your wordpress site.  If you need help, ask Jeremy M, who has already worked out how to do this.  
+
+* Export a GeoTIFF
+We have already gone over how to do this.  Use qGIS to georeference your image, then export it AS A GEOTIFF. Be sure to use the right co-ordinate systems, which are discussed in an earlier post.  You may well have to fiddle with the NODATA values before you get it perfect.  
+
+* Option 1: Create a KML Layer
+
+This is simpler and ought to be easy to do automatically, but unfortunately there's no way available right now.  I describe how to do this in [[http://2014.hackinghistory.ca/maps-recap/][my maps recap from 3 weeks ago]].  Once you've created the KML, FTP it and the accompanying geoTIFF into a new folder in the uploads directory of your wordpress site.  Call it what you want (but no spaces!), and make a note of its name.  
+
+Once they are uploaded, the fun begins.  We will edit a file called ~custom-googlev3.js~ in the ~geo-mashup-custom~ directory.  
+
+simply add this code: 
+#+BEGIN_SRC javascript
+// An Example Google V3 customization
+
+GeoMashup.addAction( 'loadedMap', function ( properties, mxn ) {
+
+        // Load some KML only into global maps - for instance pictures of squirrels
+
+        var google_map = mxn.getMap();
+        
+        // remove the 'if' wrapper if you want the kml to show up in mor than one map.
+        if (properties.map_content == 'global') {
+
+                // Make the Google v3 call to add a simple KML Layer
+                var kml = new google.maps.KmlLayer( 'URL OF YOUR KML FILE', {
+                        map: google_map
+                } );
+
+        }
+
+} );
+#+END_SRC
+
+* Option 2: Create a tile layer
+
+This is more sophisticated but a little harder and probably not entirely necessary.  Export your GeoTIFF as above.  then run it through MapTiler, which will generate a directory with a large number of tiles.  Upload that whole directory to the web as above, in a subdirectory of ~uplaods/~.  Then add the following code to your ~custom-googlev3.js~ file:
+
+#+BEGIN_SRC javascript
+
+GeoMashup.addAction( 'loadedMap', function ( properties, mxn ) {
+
+    // Load some KML only into global maps - for instance pictures of squirrels
+
+    var google_map = mxn.getMap();
+    // uncomment if you want to get messages I n the console
+    // console.log("getting started");
+    // console.log(mxn);
+    // console.log(properties);
+    // console.log(properties.map_content);
+    // here's an example of taking out the "if" wrapper
+//    if (properties.map_content == 'global') {
+        // set the baseURL appropriately!!
+        var baseURL = "http://campbell.hackinghistory.ca/wp-content/uploads/Model-maptiles/";
+        var maptiler = new google.maps.ImageMapType({ 
+            getTileUrl: function(coord, zoom) { 
+                return baseURL + zoom + "/" + coord.x + "/" + coord.y + ".png";
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity:1,
+            isPng: true 
+        });
+        console.log ("function is running");
+	google_map.overlayMapTypes.insertAt(0, maptiler);
+        var newDiv=document.createElement("div");
+        newDiv.setAttribute('id', 'mapControl-');
+        var newSlider = document.createElement("input");
+        newSlider.setAttribute('id', 'opacitySlider');
+        newSlider.setAttribute('type', 'range');
+    //     newSlider.setAttribute('onchange', 'window[\'' + properties.name + '\'].overlayMapTypes.j[0].setOpacity(Number(opacitySlider.value));');
+    newSlider.setAttribute('onchange', 'GeoMashup.map.getMap().overlayMapTypes.j[0].setOpacity(Number(opacitySlider.value));');
+        newSlider.setAttribute('min', '0');
+        newSlider.setAttribute('max', '1');
+        newSlider.setAttribute('value', '.7');
+        newSlider.setAttribute('step', '.01');
+        newDiv.appendChild(newSlider);
+        google_map.__gm.ka.parentNode.insertBefore(newDiv,google_map.__gm.ka);
+
+  //  }
+
+} );
+#+END_SRC
+
+This also adds an opacity slider to the map layer.  It's pretty simple but should be enough to get you started.
+
+If the tiles are not showing up, often that is because of a mismatch between the tile type and the expectations of google maps.  This can be fixed by replacing 
+
+#+BEGIN_SRC javascript
+                return baseURL + zoom + "/" + coord.x + "/" + coord.y + ".png";
+
+#+END_SRC
+
+with 
+
+#+BEGIN_SRC javascript
+return baseURL + zoom + "/" + coord.x + "/" + (Math.pow(2,zoom)-coord.y-1) + ".png";
+#+END_SRC
+
+* Final Notes on Utilities
+In order to learn all this, I also modified some command-line tools; I changed ~gdal2tiles.py~ to create ~XYZ~ tiles instead of ~TMS~ tiles (easier to work with in Google Maps), and ~gdalinfo.py~ so that it reported Decimal Degree style co-ordinates.  I can pass these on to you if you want to use the command line.  Both are in my personal bin folder on my laptop.  
+

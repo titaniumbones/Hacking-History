@@ -1,0 +1,12 @@
+#+BLOG: hh
+#+POSTID: 622
+#+DATE: [2015-01-20 Tue 12:26]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Toronto Historical Maps Online
+
+There are tonnes of historical maps online [[http://oldtorontomaps.blogspot.ca/][here]], while the full collection of Goad's /Atlas of the City of Toronto/ maps can be found [[http://goadstoronto.blogspot.ca/][here]].  Both are great resources.  
+
+

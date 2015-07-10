@@ -1,0 +1,64 @@
+#+BLOG: hh
+#+POSTID: 790
+#+DATE: [2015-03-24 Tue 10:21]
+#+BLOG: hh
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+HTML_MATHJAX:
+#+INFOJS_OPT:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
+#+TITLE: Customizing Admin Toolbar to provide Extra Help
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
+
+Here are two quick snippets of code to change the admin toolbar for your partners.  I find them both useful -- let's discuss in class.
+
+#+BEGIN_SRC php
+//Change Howdy Text
+add_filter('admin_bar_menu','change_howdy_text_toolbar');
+function change_howdy_text_toolbar($wp_admin_bar)
+{
+	$getgreetings = $wp_admin_bar->get_node('my-account');
+	$newtitle = str_replace('Howdy','NEWGREETINGHERE',$getgreetings->title);
+	$wp_admin_bar->add_node(array("id"=>"my-account","title"=>$newtitle));
+}
+#+END_SRC
+
+#+BEGIN_SRC php
+add_action( 'admin_bar_menu', 'Add_Menu_To_Toolbar', 500 );
+
+function Add_Menu_To_Toolbar($wp_admin_bar){
+
+$menu = wp_get_nav_menu_object( "Toolbar Menu" );
+$menu_items = wp_get_nav_menu_items( $menu->term_id );
+						
+   foreach ($menu_items as $items) {
+	$args = array( 'id' => 	$items->ID,
+		'title' => 	$items->title,
+		'parent' =>     $items->menu_item_parent,
+		'href' 	=> 	$items->url,
+		'meta' 	=> 	FALSE
+	);
+				
+	$wp_admin_bar->add_node( $args );
+   }
+}
+#+END_SRC
+
+(note: you will of course have to CREATE A MENU in the ~Appearance --> Menu~ interface in the Wordpress admin area.)

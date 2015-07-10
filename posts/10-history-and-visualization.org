@@ -6,7 +6,8 @@
 #+HTML_INCLUDE_DEFAULT_STYLE:
 #+HTML_INCLUDE_SCRIPTS:
 #+DECK_BASE_URL: /home/matt/src/deck.js
-#+DECK_THEME: web-2.0.css
+# #+DECK_THEME: web-2.0.css
+#+DECK_THEME: swiss.css
 #+DECK_TRANSITION: fade.css
 #+DECK_INCLUDE_EXTENSIONS:
 #+DECK_EXCLUDE_EXTENSIONS:
@@ -25,7 +26,7 @@
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
-
+* Moretti
 * Braudel I
 
 #+BEGIN_QUOTE
@@ -52,7 +53,7 @@ Instead of changing all the time and a little at a time, then, the system stands
 * Bodenhammer
 * General and Particular
 #+BEGIN_QUOTE
-In its essence, history seeks to generalize form the particular, not for the purpose of finding universal laws but rather to glean insights about cause and effect form a known outcome.  Here, history differs from social science, which attempts to reach a generalization that holds true in any similar circumstance.  
+In its essence, history seeks to generalize from the particular, not for the purpose of finding universal laws but rather to glean insights about cause and effect form a known outcome.  Here, history differs from social science, which attempts to reach a generalization that holds true in any similar circumstance.  
 #+END_QUOTE
 
 *  Words

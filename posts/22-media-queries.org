@@ -1,0 +1,83 @@
+#+POSTID: 777
+#+DATE: [2015-03-17 Tue 09:51]
+#+BLOG: hh
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Understanding Media Queries
+
+So-called "responsive" sites are built using [[https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries][media queries]], which ask the browser, "what kind of screen am I displaying on?", and then apply one set of rules for (say) small or portrait-oriented screens, and another for (say) large or landscape-oriented screens.  Foundation is a "mobile-first" framework, so first it defines all the classes for small screens, and then it adds new rules for medium (641-800px) and large screens.
+
+Media queries look like this: 
+
+#+BEGIN_SRC css
+  @media only screen  and (max-width:640px) {
+      body {
+          background-color:pink;
+      }
+  }
+#+END_SRC
+
+What will this CSS snippet do? How would you adjust for other sizes?
+
+
+In Foundation, [[http://foundation.zurb.com/docs/media-queries.html][there are a number of media queries]].  They are ~small~, ~medium~, ~large~, ~xlarge~, ~xxlarge~, and /also/ ~small-up~, ~medium-up~, etc.  Here are two snippets that show the difference:
+
+#+BEGIN_SRC css
+  @media only screen  and (min-width:641px) and (max-width:800px) {
+      body {
+          background-color:blue;
+      }
+  }
+
+  @media only screen  and (min-width:641px) {
+      h1 {
+         font-size: 20px ;
+      }
+  }
+
+#+END_SRC
+
+What differences do you notice? 
+
+So, many of the classes in Foundation change dramatically when you move from one screen size to another. The topbar nav changes from a horizontal to a vertical and self-hiding stack, the slide-out menu (which note of us are using) changes to a solid sidebar on larger screens, the whole grid changes to different column orientations, etc.  It is also possible to hide some elements entirely using the Foundation [[http://foundation.zurb.com/docs/components/visibility.html][visibility classes]]. 
+
+So, for instance, to borrow their examples:
+
+#+BEGIN_SRC html
+<p class="panel">
+  <strong class="show-for-small-only">This text is shown only on a small screen.</strong>
+  <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong>
+  <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong>
+  <strong class="show-for-large-up">This text is shown on large screens and up.</strong>
+  <strong class="show-for-large-only">This text is shown only on a large screen.</strong>
+  <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+  <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+  <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+</p>
+
+<p class="panel">
+  <strong class="hide-for-small-only">You are <em>not</em> on a small screen.</strong>
+  <strong class="hide-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge screen.</strong>
+  <strong class="hide-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+  <strong class="hide-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+  <strong class="hide-for-large-only">You are <em>not</em> on a large screen.</strong>
+  <strong class="hide-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+  <strong class="hide-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+  <strong class="hide-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+</p>
+#+END_SRC
+
+
+Take a look at the link above; it will show you how these work.
+
+In terms of practical applications: if there is something you don't like about the mobile versions of the site, we should discuss in class. Basically you will want to wrap your changes to~app.scss~ in a ~@media {}~ construct, then write normal css within the brackets.  
+
+*Bonus Tip:* The menus at the bottom of the page are starting to drive me crazy!  The easy way to get rid of them altogether is just to comment out one line of code in ~footer.php~: 
+
+#+BEGIN_SRC php
+            <?php //wp_nav_menu(array('theme_location' => 'utility', 'container' => false, 'menu_class' => 'inline-list')); ?>
+#+END_SRC
+
+That's line 18 -- just add the ~//~ after the ~<?php~.  Alternatively, define a new, empty menu and assign it to the role "utility" in the menu editor (under "Appearance" in the dashboard). This is a more flexible method, as it allows you to add a few items to the menu at a later date.  If you just want a couple of static links you can add them by hand, maybe using some foundation grid structure to space them properly on different displays.

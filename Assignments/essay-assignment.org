@@ -1,3 +1,5 @@
+#+POSTID: 592
+#+DATE: [2014-12-02 Tue 10:07]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
 #+CATEGORY: assignments, 
 #+TAGS:

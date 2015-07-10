@@ -1,4 +1,6 @@
-#+TITLE:     Copyright in Digital History
+#+POSTID: 616
+#+DATE: [2015-01-20 Tue 09:39]
+#+TITLE:     Lab 15: Copyright in Digital History
 #+AUTHOR:    Matt Price
 #+EMAIL:     matt.price@utoronto.ca
 #+DESCRIPTION:
@@ -13,14 +15,14 @@
 #+LINK_HOME: 
 #+XSLT:
 
-Some resources:
+* Some resources:
 - Toronto Archives, [[http://www1.toronto.ca/wps/portal/contentonly?vgnextoid%3Da82a757ae6b31410VgnVCM10000071d60f89RCRD&vgnextchannel%3D2ee1226b48c21410VgnVCM10000071d60f89RCRD#photographs][copyright guidelines for researchers]]
 - Wikipedia, [[http://en.wikipedia.org/wiki/Fair_dealing_in_Canadian_copyright_law][Fair dealing in Canadian copyright law]]
 - [[http://laws-lois.justice.gc.ca/eng/acts/c-42/FullText.html][Copyright Act]]
 - [[https://www.cippic.ca/en/FAQ/Photography_Law#How][copyright and privacy in Photography]]
 - Michael Geist, [[http://www.michaelgeist.ca/content/view/6695/135/][what the New Copyright Law Means For You]]
 - Michael Geist, ed., [[http://www.press.uottawa.ca/sites/default/files/9780776620848.pdf][The Copyright Pentalogy]]
-
+- Creative Commons Canada, [[http://www.lib.sfu.ca/sites/default/files/11695/CanadianPublicDomainFlowchart.pdf][Public Domain Flowchart]]
 
 * The Function of Copyright
 - a contest joining 3 parties
@@ -110,25 +112,21 @@ death of the author plus 50 years
 * Links
 - embedding of offsite images is /probably/ not copyright violation, but no ruling on that
 - not the greatest practice anyway.  
-* the "Pirate Function"
-- on re-reading decided I love this text
-** back to Foucault's "author-function"
-#+BEGIN_QUOTE
-it is a matter of depriving the subject... of its role as originator, and of analyzing the subject as a variable and complex function of discourse ("What is an Author?")
-#+END_QUOTE
-- that is, while it's true that books are written by people, it's also true that books participate in /discursive formations/ which are /not/ the results of individual creative effort.  Instead, they are products of large-scale historical forces, and can be analyzed at a different level from the individual book -- so if, instead say of looking at Mill's /On Liberty/ as a work of genius, you read widely in British political and philosophical writing ~1850, you will see that Mill's work follows well-established patterns of argumentation, standards of evidence, etc. etc.
--  the idea of the Author is a kind of myth -- not a falsehood, but a governing ideological construct that we rely on to structure our sensibilities.  We should try to look past it, Foucault argues, because it carries with it a set of ideas (about genius, about creativity) which drastically overemphasize the role of the individual (here I'm simplifying & softening)
-** Good and Bad Pirates
-By analogy (but kind of an inverted analogy) K. Philip describes what she calls a "Pirate-Function" -- the pirate as a governing ideological construct which structure or sensibilities.  And, she further argues, we need to be able to look past this ideological construct if we want to understand /how we, collectively, think about creative production & what role things like copyright play in propping up philosophically weak divisions./  
-- The works we've read rely, like L. Lessig, on the criterion of /individual creativity/ as the governing principle to distinguish good from bad piracy.
-- But 'transformation' is not always about individual contributions.  Instead, the pirated software on the streets of Bangalore of Shanghai permit the construction of a 'shared imagination' which would otherwise be inaccessible to the inhabitants of those places.  Lessig misses the point.   
-* C-32/C-11
-- increased fair dealing
-- new digital locks provisions
-- cf. Americas in the early c. 19
-- summary: [[http://www.michaelgeist.ca/content/view/6695/135/][Michael Giest's blog from last week]]
-* For your project
+* Implicit permission to publish
+- Materials granted to organizations such as CRPM, Campbell House, or the Museum for Childhood, likely imply permission to publish. Burden is on partner organization to ensure they have that permission
+* Your Photographs
+- photographs you take of materials are your own property, and you have permission to use them as you wish.
+- Reproductions of visual art (posters, etc.) are © the original creator; so, e.g., it is likely legal to reproduce the materials from the walls of the Campbell Museum, given their age.
+* Archival Materials
+- Materials residing in archival collections are still © the author, so regular copyright term prevails.  However, terms of the grant may permit early access.
+- Toronto Archive flickr stream is Creative Commons licensed, so free for you to use.  
+* Implications for us
 - Fair Dealing Exceptions (Research, Education), which is great.
-- but careful w/ esp. images (no 'parts', so safest to link to externally-hosted images). 
+- your case is more convincing if you /analyze/ the document in a way that could not take place without the document being present.  So, using an image or text in an analysis is better than just reproducing them in a gallery.  
+- but careful w/ esp. images (no 'parts', so safest to link to externally-hosted images).
+  - argument can be made that a low-res image is a "part"; and reproduction of an image from a book or other large work is generally allowed (!) 
+
+
+
 
 

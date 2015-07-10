@@ -1,0 +1,127 @@
+#+POSTID: 693
+#+DATE: [2015-02-10 Tue 06:09]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+PARENT: Labs And Notes, 
+#+TITLE: Custom Post Types in Wordpress
+
+I've spoken before about custom post types.  Here's a slightly more in-depth discussion
+
+* Reasons for Custom Post Types
+** Good Reason
+The main reason to have a custom post type is when you have /structured information specific to a particular type of post/.
+** Bad Reason
+Sometimes its tempting to think you need a custom post type just because you want /different layouts/ for different pieces of information.  This is mistaken.  In this case, all you generally need is /category- or page-specific templates/.  We'll quickly go over how to do this.
+** A bit more detail
+
+Let's take an example or two.  
+
+Last year, when the Hart House group was putting together their website, they wanted to be able to profile prominent people associated with the theatre.  They could have just used pages, but they realized there was particular information they wanted displayed in the same way for each person:  
+- an image
+- position, if they had an official post at the theatre
+- era they worked there
+- select productions
+
+In principal, this information could have just been included in every post, but that would have been confusing.  So they built a custom post type ("hh_people") and then made templates that displayed that custom information in /the same structured way/ for every person.  [[http://harthouse.hackinghistory.ca/?post_type=hh_people&p=73][Here's an example]]. 
+
+They also had a special page for showcasing the architecture of the building.  It had a number of special features, but it was just one page.  In this case ,it didn't make sense to build a custom post type -- they just carefully managed the layout of the page, [[http://harthouse.hackinghistory.ca/architectural-history/][as you can see here]].
+* Tale of two templates
+Let's say I want most of my pages to be displayed full-width; but if the page is in category "lemons" than I want things to look different.  Here's a template that does this.
+
+#+BEGIN_SRC php
+<?php
+/*
+Template Name: Default Page
+*/
+get_header(); ?>
+
+<!-- Row for main content area -->
+
+	<?php /* Start loop */ ?>
+<?php while (have_posts()) : the_post();
+if (in_category ('lemons')):
+?>
+    
+                <div class="small-12 medium-4 columns" id="category-list" style="background-color:yellow;">
+                    <?php
+                    $args = array (
+                        'cat' => 5,
+                        'posts_per_page' => -1, //showposts is deprecated
+                        'post_type' => 'page',
+                        'orderby' => 'date',
+                    );
+                    $cat_posts = new WP_query($args);
+                        if ($cat_posts->have_posts()) :
+                                 echo "<ul>";
+                                 while ($cat_posts->have_posts()) : $cat_posts->the_post(); ?>
+                        <li><?php the_title(); ?></li>
+                    <?php endwhile;
+                    echo "</ul>";
+                    endif;
+                        
+                        ?>
+                        
+                </div>
+                <?php
+                else:  
+	        get_sidebar();
+                endif;
+                ?>
+                
+                
+                
+	        <div class="small-12 large-8  columns" id="content" role="main">
+                    
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<header>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php reverie_entry_meta(); ?>
+			</header>
+
+          <?php $thisid= get_the_ID();  echo hackhist_slider_template( $thisid ); ?>
+                        
+
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+			<footer>
+				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
+			</footer>
+		</article>
+	<?php endwhile; // End the loop ?>
+                </div>
+	</div>
+        <div class="row">
+        </div>       
+<?php get_footer(); ?>
+
+#+END_SRC
+
+You may have trouble reading this, but the idea is simple:  if the page is in category 'lemons', then we'll build a list of all lemons pages and replace the sidebar with that list; otherwise, just get the sidebar.  
+
+* Desiging a custom Post Type
+
+Before you create a custom post type, ask yourself these questions:
+- what kind of information display do I want?
+- what extra fields will I need?
+- what should I call this? (pick something intuitive)
+
+Spend a few minutes sketching out your desired display
+
+* Creating Custom Post Types and Fields
+For this we'll install two plugins:
+- [[https://wordpress.org/plugins/custom-post-type-ui/][Custom Post Type UI]]
+- [[http://www.advancedcustomfields.com/][Advanced Custom Fields]]
+
+I will let you figure out how to manage these, but basically:
+- to /create/ your custom post types, navigate to  ~CPT UI~ in your sidebar.
+- to /add new fields/ to your post types, navigate to ~Custom Fields~, and then ~add new fields group~ (top-ish left), and then ~add field~.  
+
+* Creating new templates
+Now you still have to display the custom information in your templates!  To do this, create a new template named ~YOURPOSTTYPE.php~ (start with the page.php or single.php text to make it easier on yourself!), and add extra fields & structure for the new information.  The two new template tags you should know about are ~the_field()~ and ~get_field()~, which will retrieve the custom fields attached to your post.  You can [[http://www.advancedcustomfields.com/resources/displaying-custom-field-values-in-your-theme/][read more about it here]].
+
+* Learn more!
+There's tonnes more to learn -- I am around to help you and will do some of this with you today.  
+
