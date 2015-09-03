@@ -1,0 +1,53 @@
+* Tools for Hacking History
+As we go through the year, you'll need to learn about some or all of these tools.  Explore them when you have a chance
+** A laptop
+This course is *MUCH* easier if you have a laptop. If you don't own one, you can still do well, but the work becomes much more strained.  A tablet is much harder to work with, and many of the tools described below do not work properly on mobile devices.  Please see me if you don't have one. 
+** Firefox and Chrome Dev Tools
+Chrome is by far the most popular browser in the world, while Firefox is by far the most open. Both have highly developed *developer tools* with which you should familiarize yourself. As you learn more about web design, you'll come to rely on these tools more and more. Follow these links for more about [[https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector][Firefox Dev Tools]] and [[https://developer.chrome.com/devtools][Chrome's version]].
+** Atom Text Editor
+You will be editing code in this class, and for that you need a text editor. If you already have one you love, stick with it; but if you're new to code editing, you should use the class standard, [[https://atom.io/][Atom]].  Download Atom and, once you've read Chapter One of the [[https://atom.io/docs/v1.0.9/getting-started-atom-basics][Manual]], go ahead and [[https://atom.io/docs/v1.0.9/using-atom-atom-packages][install]] the "atom-html-preview", "open-in-browser" and "emmet" packages by navigating to Edit \rarr Preferences \rarr + Install.  There are hundreds of other packages to install if you like.  
+
+Later, you will also want the "linter" and "linter-jshint" packages; you might as well install them now. You will also need "remote-edit" for your class project, in the second semester.  
+** Github
+Almost all of my course materials are shared on Github, and we'll be learning how to use the underlying git protocol over the course of the semester.  If you want to make things easier on yourself, you can try using the [[https://desktop.github.com/][Github desktop Client]].  
+** FTP and/or SSH clients
+You'll need a way to move files between your laptop and the server.  Atom will do much of this, but an [[https://en.wikipedia.org/wiki/Category:SFTP_clients][SFTP client]] may be of use on certain rare occasions.  I personally use the command line, sort of [[http://stackoverflow.com/questions/11822192/ssh-scp-local-file-to-remote-in-terminal-mac-os-x][like this]]. 
+** Zotero
+In the course of your research projects you will accumulate lots of sources, just as you would in a normal research project. These days, we find most of our sources on the web, but older techniques for managing sources -- notecards & so forth -- don't integrate easily with this workflow.  [[http://zoteor.org][Zotero]] is a great bibliographic tool that will help you manage all of your references from your web browser, and will also let you easily drop them into your documents in Microsoft Word or LibreOffice.  If you want to update a reference, or completely change the style of your citations (from MLA to Chicago Manual of Style, vice-versa, or into any of several hundred freely-available journal styles), you can do that, too, at the click of a button.  You can also share references with each other or with others using Zotero groups.  To get started:
+- [[http://www.zotero.org/download/][Download Zotero]]. Be sure to download both the Zotero program and the connector for MS Word or Libreoffice/OpenOffice, depending on which you need. If you generally use another program, like Scrivener, you will need the [[http://zotero-odf-scan.github.io/zotero-odf-scan/][RTF scanner]]. Make sure you also get the browser connectors for Chrome and Safari, if you use those browsers.
+- Read the [[http://www.zotero.org/support/][documentation]] and/or [[http://www.zotero.org/support/screencast_tutorials][watch the screencasts]]
+- flow like a ninja around all your citation needs.
+** Dropbox or alternative.  
+You will often need to share files with each other. For this a service like [[http://www.dropbox.com][Dropbox]] is essential.  Get it, use it, love it.  If you're uncomfortable with Dropbox's (awful) security paradigm, consider using [[https://spideroak.com/][spideroak groups]], or one of the many other competitors.  
+** Coding resources
+Most of the technical skills you'll learn in this class you can teach yourself (that's mostly how I did it).  Here are just a few links to get you started; there are many, many other options:
+- HTML:
+  - [[https://developer.mozilla.org/en-US/learn/html][MozDev Links Page]]
+  - [[http://w3schools.com/html/default.asp][w3schools HTML tutorials]]
+- Javascript
+  - [[http://www.w3schools.com/js/][W3 Schools Javascript tutorial]]
+  - [[https://developer.mozilla.org/en-US/learn/javascript][MozDev resources]]
+
+
+* About
+This year-long course examines the relationships among academic history, digital media, and community formation using a variety of texts and methods; it culminates in an intensive semester-long digital storytelling project focused on community engagement. The intellectual focus of the first semester is two-fold: first, on the history of the public sphere and second, on the politics of “engaged” scholarship. At the same time, students will be exposed to techniques of multimedia and nonlinear storytelling. The second semester revolves around a group project undertaken in concert with a community organization. Working closely with their community partners, students will build a digital archive or storytelling framework using multimedia and/or social networking technologies. The fundamental aim of the course is to expand the reach of historical scholarship outside of the academy, and to develop modes of historical research compatible with community engagement. 
+
+Registration for the class takes place through [[https://www.rosi.utoronto.ca/main.html][ROSI]].  
+
+** About the Instructor
+#+ATTR_HTML: :class "size-medium alignleft"
+#+ATTR_HTML: height="200" align="left"
+[[file:Pictures/matt_on_bridge.jpeg]]
+Matt Price, a historian of science by training, teaches digital history classes at the University of Toronto, as well as New College 103, "Digital Technology and Society".  His main current interests are in "engaged" pedagogy, and public participation in the creation of knowledge.  
+* Calendar
+** <2015-09-29 Tue> STA 1 Due
+** <2015-10-13 Tue> STA 2 Due
+** <2015-10-27 Tue> STA 3 Due 
+** <2015-11-17 Tue> STA 4 Due
+** <2015-12-01 Tue> STA 5 Due
+** <2015-10-06 Tue> Assignment Handed Out, Partners
+** <2015-12-08 Tue> Presentations, Proposals Due
+** <2016-01-12 Tue> Paper Due
+** <2016-02-23 Tue> Status Report Due
+** <2016-03-29 Tue> Submission to Partner
+** <2016-04-05 Tue> FINAL DUE DATE
