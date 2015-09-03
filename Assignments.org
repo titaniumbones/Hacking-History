@@ -9,6 +9,337 @@
 #+TITLE: Assignments
 
 * Assignments for His 495: Hacking History
-Assignments for HIS495 are linked here as I put them up on the site.   This mostly means lab assignments and documents related to the project, as the weekly writing assignments are straightforward reading responses (this is described in the [[./syllabus/][Syllabus]]).  
+Assignments for HIS495 are linked here as I put them up on the site.   This mostly means lab assignments and documents related to the project, as the bi-weekly writing assignments are straightforward reading responses (this is described in the [[./syllabus/][Syllabus]]).  
 - [[./assignments/lab-01-understanding-html/][Lab 01: HTML]]
 
+* The Course Blog
+Two of the main themes of the class are: the exploration of digital media as a mode of communicating historical knowledge; and experimentation with the collaborative production of knowledge.  So it's not surprising that, first, the bulk of your assignments are shifted over to the digital realm; and second, that we will be thinking of this website as a platform for a collective exploration of our subject matter.  
+
+** Fall Semester  
+After [[http://www.hackinghistory.ca/wp-login.php?action=register][registering]] for the course website, you will be /expected/ to produce one substantive post every two weeks (400 words), and /allowed/ to add as many short 'heads-up' postings as you desire (though for the most part such postings would be better off in the comments section of an existing post).  You will also be expected to comment regularly -- every week -- on your colleagues' (and my own) postings.
+
+Unless otherwise noted, postings in the first semester take the form of a response to the week's readings or theme.  As with any short response paper the object of the posting is not to summarize, but to engage critically with the texts at hand.  For general guidelines on writing, look [[http://www.writing.utoronto.ca/advice/specific-types-of-writing][here]]. You can also think of these posts as a cross between an [[http://www.quicksprout.com/2009/07/21/how-to-write-a-blog-post/][ordinary blog post]] and a [[http://historyprofessor.org/reading/how-to-write-a-review/][review or response paper]].   We will discuss this further as the semester goes on.
+
+Blog entries should be produced regularly, not saved up for a big bang at the end of class. To be counted towards your grade, blog entries /must/ be handed in 24 hours before the start of the next class.  This is a firm deadline to permit others time to comment on your work, and on occasion to give me a chance to post something after everyone has made their contributions.  
+
+** Winter Semester
+
+In the second semester, you are expected to post about your project: progress reports, pieces of text you've written for your site, or reflections on other aspects of the project. Because continuous progress is essential to the success of the project, the blog assignment shifts in the second semester to a /weekly/ assignment:  500 words, 24 hours before class, in time for me and your classmates to read through and comment.  
+
+** Grading
+Your online contributions constitute 20% of your grade (that's not including your final project and ancillary assignments, some of which will also go through the course blog).  Your blog posts will be evaluated in bulk, but I'll be applying the following criteria (cf. Mark Sample's [[http://www.samplereality.com/2009/08/14/pedagogy-and-the-class-blog/][helpful post]] from which parts of this are derived):
+- _4_ Excellent.  Clear, concise analysis, convincingly written, with few spelling or grammatical errors.  Entry has a clear thesis and advances arguments & presents evidence within the limited scope of the assignment to support the thesis. 
+- _3_ Good. Entry is still coherent and well-edited, but its arguments are less pointed, convincing, and novel.  Reflects moderate engagement with the topic. 
+- _2_ Subpar.  Argument is flimsy, posting is mostly a summary or rehashing of readings.  Reflects passing engagement with the topic.
+- _1_ Inadequate.  Unstructured, error-ridden, no argument to speak of.  Shows no engagement with the topic.
+- _0_ No Credit.  Failed to post or made only a token effort.  
+
+The better your postings, the more exciting and engaging this class will be for everyone.  So please approach this part of the class in good faith and take it seriously.  
+* Class Project Overview
+The class project, which will occupy most of the class's second semester and some of the first, is a substantial collaboration between a small group of students and a community organization, on a project of mutual interest.  In almost every case the project will be a Wordpress website, and while I am in principle open to other types of projects, the circumstances under which I would approve such projects are highly constrained. The point of this class is to create something of lasting value to yourself, the organization, and the community it serves, so that your work endures beyond the temporal scope of the class.  The project is worth 45% of your final mark, but this percentage is distributed between various parts of the project.  A high premium will be placed on timely, regular progress made towards intermediate goals, to help make sure that these complex and difficult projects come to fruition.  Some of you have already been thinking about projects; this is great and /you should continue to do so/.  You will work in small groups of 2-4; in a class of this size there are some challenges to group work, but there are substantial benefits to working together, especially when charting unknown territory.  
+** Collaboration and Service
+We should perhaps distinguish between two kinds of working together for this project.  On the one hand, you will be working closely with your peers.  As a result, you have an additional responsibility to your working group -- your lapses affect them too.  You'll also need to be sure to communicate clearly and effectively with each other, both electronically and in person.  Be sure that you know what each of you bring to & get out of the project; and how will you hand the project over.
+
+You will also be working together with an organization that will be depending on you.  In this respect, you act as emissaries of the University and of the course.  You are expected to be respectful, courteous, and responsive.  
+** General Project Parameters
+The finished product should be a polished website or other digital artifact which is directly of use to the partnering organization; it should also be an intellectually honest endeavour which takes seriously the historian's responsibility to tell truths about the past. Your work will, then, be held to a relatively high standard -- I'm asking a lot of you.  You should therefore take pains /not to bite off more than you can chew/.  Your project should be of a manageable scope, and if it's more than your group can do on its own, you should be absolutely sure that your partnering organization has resources to devote to the project either while you work on it, or after the class has finished.  Here are some things you should /not/ attempt to do:
+- *do not design your own web framework.*  Instead, you should use [[http://www.wordpress.org][Wordpress]], whih we will be learning about together in class.  If you have a prior expertise in some other framework or in web design, you should discuss this with me immediately. Past experiences with non-Wordpress technologies have been extremely problematic.  
+- *do not attempt to tell the story of a major event or historical figure.*  Do not attempt to create a digital archive of the Holocaust, or a definitive documentary history of the War of 1812, or an oral history archive of the immigrant experience in Toronto.  These are /areas of interest/, not /topics for a project/.  Narrow your subject as much as you possibly can; then talk about it with me and we will narrow it down further.  
+- *do not strike out entirely on your own.*  You will need some support from outside -- that is one of the main reasons to have a community partner.
+- *do not put /anything/ off till the last minute.*  In a complex project like this you will be surprised at the number of tasks there are to accomplish.  In particular, you'll gain a lot by attacking your organizational tasks as early as possible.
+** Examples
+Previous years' projects are mostly linked to from [[http://2013.hackinghistory.ca/student-projects/][that year's course website]]. They are all great, so look there for some inspiration.  Please note that these sites were made by students with no prior technical experience; if you're in that category they may look daunting right now, but don't be discouraged, you'll learn what you need to in time to make something really cool.  
+** Technical Parameters
+If you have no technical background, this may not make much sense to you in the first class, but as the semester progresses you'll understand more.  Here are some of the technical skills you will be using in your project:
+- Web hosting ::  I will provide hosting for class websites at hackinghistory.ca.
+- Theme Development ::  each of these websites will come equipped with a starter theme with which I have some familiarity.  Over the course of the project, you will adapt that theme to serve your purposes.  This means you will work directly with:
+  - Style ::  changing CSS files to give the site a new look-and-feel
+  - Structure :: modifying HTML templates to change the arrangement of elements on various web pages
+  - Functionality :: installing Wordpress plugins, and tinkering with PHP and Javascript code, to get the functionality you and your partner need
+- Text editing ::  in order to do all of the above, you should become at least a little familiar with a text editor. Ad described in "Tools", the [[http://atom.io][Atom]] editor is the best choice.  Later in the term we will also go over various ways to edit code directly from the Wordpress administrative interface.  
+** Human Subjects Ethics Review
+One of the benefits to a partner is that work done /in the service of that organization/ is exempt from the ethics review process.  If however you conduct interviews, etc. outside of the project you will need to comply with the University's [[http://www.research.utoronto.ca/for-researchers-administrators/ethics/human/][Ethics Review process]]; cf. also  [[http://www.research.utoronto.ca/wp-content/uploads/2009/09/ERO_Guidelines_Manual-2007.pdf][this document]].  The procedure is not terribly onerous but it does take some time so be very serious about this.  
+** Grading
+#<<grading>>
+The final project will be evaluated based on its success in meeting the goals outlined in the proposal, on the integrity of historical analysis, on the aesthetics of the presentation, and on the satisfaction of the community partners with your work.  
+| Component               | Due Date         | Group/Indiv | % of Course Grade |
+| Proposal & Presentation | <2015-12-01 Tue> | Group       |                10 |
+| Interim Report          | <2016-02-02 Tue> | Group       |                10 |
+| Final Product           | <2016-04-05 Tue> | Group       |                20 |
+| Partner Response        | ---              | Group       |                 5 |
+In addition, most of your blog postings in semester 2 will be concerned with your project & your progress on it.  
+
+** Components
+*** Proposal
+The proposal is a substantial group effort which involves the submission of a formal document to me and to your partner, as well as a presentation component.  Read more about it on its own page.
+*** Interim Report
+The Interim Report is a report back to me and to your partner on the progress you're making.  It will be about 8-10 pages long, and indicate 
+- how much of the website content you've completed, and whether there are any serious problems that might require you to change your focus.
+- how much of the website design is complete, and where you expect further challenges
+- in what ways you find yourself departing from the plan agreed upon, and why.
+*** Final Product
+The Final product is a fantastically intricate and rich historical website, with lots of exciting bits of information presented in a vigourous, interesting, and visually appealing manner.
+*** Partner Response
+I'll ask your partner for feedback on your work, and take that into account in my final grade.  
+
+* Essay Assignment
+*Due <2016-01-19 Tue>*
+** Basics
+Write an 8-10 page paper on a research topic related to your group project.  This is an ordinary research paper of the kind you have done many times before; an excellent basic guide to writing history papers is available [[http://www.writing.utoronto.ca/advice/specific-types-of-writing/history][on the writing centre website]].    
+
+** Choosing a Topic
+Hopefully many aspects of your topic interest you.  Choose one which is broad enough to sustain a mid-length argument of the sort normally found in this type of short research paper.  This is a small class, and you see me every week; you should check in with me before the end of the semester to ensure that your topic is a good one.  
+
+The research paper stands on its own, but in most cases pieces of the paper can be recycled into the website proper.  For this reason, it's best if group members can choose a variety of topics not too closely bunched to one another.  Consult with your groupmates about their plans, and if possible avoid overlap in your paper topics.  
+
+** Marking
+As has doubtless generally been your experience, marking proceeds on an evaluation of:
+- Originality and thoughtfulness of your thesis:  Are you making an interesting argument?  Is it yours or does it belong to one of your sources?  
+- Quality of your evidence: do you present convincing evidence for each of your claims, supported by compelling arguments?
+- Structure: is your paper easy to follow, and does each part flow naturally from what comes before?
+- Style: is your paper a pleasure to read?
+- Attention to Detail:  are your citations properly formatted (please use [[https://www.zotero.org/][Zotero]] or a similar program), have you avoided typos, etc.?
+
+(listed in approximately descending order)
+
+** Number of Sources
+Please don't ask me how many sources you need.  As many as are required!  The most interesting part of writing a research paper is doing primary source research, so please do as much of that as you can.
+
+* Project Presentation 1
+Next week we will have preliminary presentations of your projects.  This is in preparation for a more substantial proposal which you will present more formally at the end of the term.  The purpose of next week's class is to ensure that you have something moving along -- most of you are on your way but a couple of you will really have to hustle.  
+
+** Next Week's Blog
+Your blog posting next week should have the following components:  
+
+1) Brief description of the project (title, subject matter, goals)
+2) Short introduction to your community partner (name of the organization, description of their mandate, explanation of how this project fits in with their goals)
+3) Research Methods (oral histories, archival research, web surveys, datamining in the CBC archives...)
+4) Technical infrastructure for the site (how much interactivity do you need? how will source materials and analysis be integrated?  etc.)
+5) Challenges you anticipate (what you're most worried about)
+** Presentation
+This posting will serve as the basis for your presentation the following week.  You'll have about 20 minutes to discuss the topic -- everyone should have your proposal in front of them so they will be an informed, alert, helpful audience.  Consider drawing pictures or charts to describe how site elements will link to each other, or to express relations between structural or logical elements of the project -- these may help you (and us) unhderstnad the issues better.  Think hard about how to engage the community whose attention you want to draw to the site.  
+
+I look forward to seeing your work.  
+
+* Project Proposal
+The project kicks off at the end of Fall semester with a formal proposal and presentation.  The written proposal will be submitted not only to me, but to your partner as well, so it is an important document.  
+
+** What is this project proposal thing for anyway?
+
+A project proposal is a roadmap and guide to the final project. You yourself will consult it many times over the course of the semester, as you struggle to keep track of what you have promised to do. Your partner (who will respond to your proposal with feedback & perhaps call for some changes) will also refer back to the proposal when you present them with the final product. so it's a very important document.
+But what goes in it?
+
+The proposal is a complicated document that walks a fine line: it should present an exciting vision without promising too much; it should present a compelling historical narrative even though your real knowledge about the subject is still somewhat limited; it should propose a look for the website even though what you produce will certainly look different. Here is what I expect from this proposal document:
+
+- a substantial piece of writing that describes your goals for the site in some (but not too much) detail. More on that below. 
+- a preliminary bibliography, of as many different sources as you can muster. Light annotation is a plus (not a paragraph-long description of each source, as in a formal "annotated bibliography", but a sentence or two describing the value of the work to your project). You're going to end up doing a lot of research for this project, so "as many sources as you can muster" should not be 5 or 6, but more like 20 or 30.
+- mockups of representative site pages – this means the front page, a couple of the main pages you plan, and some pages for the main datatypes (posts, events, historical photographs, artefacts, oral history pages, whatever).
+
+** The Main Proposal: defining your project
+
+This is a substantial document (2000 words?) which the group should produce together (so, divide up the work – see below). Here's what it should cover:
+
+- Scope/Introduction :: What is the topic of your website, and what kinds of information will it provide? Why is it useful/important/interesting? Who is the partner, and how does it benefit them? What topics/tasks are out of scope? this latter question, which is sometimes hard to answer, is an important one to think about – setting yourselves limits is an important part of making the project feasible. Your partner will be reading this, so emphasize that you wil lbe uilding a website based onteh Wordpress framework, with light modifications & additional plugins.
+- Audience :: who wants to visit this site, and what will they do there?
+- Structure and Presentation :: Describe the layout and structure of your website as well as you can. Refer to the mockups, and feel free to draw diagrams (showing, e.g., how people are likely to move around the site, or what the hierarchical relation of pages is, etc.). Describe in some detail what kinds of information each type of page will have. In your description, say why you chose this particular organizational structure – why are these the most important navigational axes for your site?
+- Research Methods :: What do you have to learn, and how will you do it? E.g., mention that you will do oral histories if you intend to; or that your will access architectural records in the Toronto Archive, if you intend to do that. consider also what the most interesting historiographical questions are – what are the puzzles that interest/motivate you?
+- Challenges :: Describe as specifically as you can the difficulties you expect to face, and how you hope to overcome them. If your group is missing skills that you need, again, be as specific as you can about what you need to know and how you might address this need.
+- Roadmap :: When do you expect to get your work done? The final website is due in class Apr. 4. You will need to get something done every week until then (!) to make this project great. What are your goals for each week? Also, who is doing what? each person in the group should have specific responsibilities to which they commit. These may change around a bit, and you will all help each other with your assigned tasks, but laying out expectations in writing makes it more likely that things will get done.
+- Working with your Partner :: Describe in as much detail as possible the relationship with your partner.  Include e.g. discussion of:
+  - How your work will benefit your partner
+  - What resources will your partner bring to the project
+  - What plans you have made for turning the project over to your partner
+
+** Mockups
+In addition to the main proposal, you should include mockups of some of the main pages on the website, e.g., the front page and the layout for various content types.  This is a proposal, and we understand that things will change as you go forward.  
+
+I recommend using the 960 grid paper we used in our mockup class, or [[http://www.geekchix.org/blog/2010/01/03/a-collection-of-printable-sketch-templates-and-sketch-books-for-wireframing/#web][this one]], or [[http://www.smashingmagazine.com/2010/03/29/free-printable-sketching-wireframing-and-note-taking-pdf-templates/][one of these]], or [[http://sneakpeekit.com/browser-sketchsheets/#tab-32-5][one of these]], or [[http://quicklinkr.com/creativeintersection/public/2155][one of these]], or, especially for rough brainstorming, [[http://zurb.com/playground/responsive-sketchsheets][ZURB's own sketchsheets for responsive design]] or [[http://www.sparetype.com/wp-content/uploads/2012/01/responsive_sketch_paper_INTERFACE.pdf][this nice little collection]].  Refer back to your excellent reading – your mockups will work best if they indicate some (but not all) of the interactions you expect people to have with the site.
+
+** Bibliography
+
+I really recommend that you use a reference manager to deal with your citations; and of the available options, I strongly recommend Zotero or possibly Mendeley. You can easily set up a group bibliography, and also generate an annotated bibliography with almost no effort. Highly recommended. For more on Zotero see the Tools page.
+
+** Presentation
+Our first week back? will be devoted to project presentations, which will form a part of your mark for the proposal. Consider it practice for presenting to your partner.  You should prepare a set of slides that runs through the basic ideas, organization, and look & feel of your website; it should be brief, some 20 minutes, with ample time for questions at the end. The tone should be formal, in contrast to most of our class meetings.  
+
+
+* In-Class Exercise/Sign-up Sheet for week 2
+
+http://hackinghistory.ca:9001/p/Website_Review_signup_sheet
+
+http://microscope.hackinghistory.ca/
+
+http://jsbin.com/udecir/1/edit 
+
+
+
+* STA 01: HTML & CSS
+*Due <2015-09-29 Tue> before class*
+
+You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  
+
+Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be alittle bit comfortable in all three.  
+
+** Assignment
+Codeacademy.com is a platform that focusses on teaching web skills; [[http://www.codecademy.com/][head over there and set up an account]]. Once you've done that, complete the [[http://www.codecademy.com/tracks/web][HTML & CSS]] course, which will take about 7 hours.
+
+Once you have finished, send me a link to your /profile page/ (click "view my Profile" under the top right menu item with your picture on it).  That's all! But feel free to continue exploring on Codeacademy -- there's lots to learn and much of it will be helpful to this course, or to your further explorations in this field.  
+
+** Alternative
+Already a web hotshot? If you feel like you already know everything you need to about HTML, CSS, and Javascript, prove it to me:  
+- Set up an account on [[https://github.com/][Github]].  Upload one of your completed projects there.  Send me the link so I can explore.
+
+You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
+
+* STA 02: Javascript
+*Due <2015-10-13 Tue>*
+
+Go back to Codeacademy; this time, complete the [[http://www.codecademy.com/tracks/javascript][javascript]] course
+
+The debugging on Codeacademy is somewhat unsatisfactory, and syntax errors can become frustrating.  If you are having trouble, install the "linter", "linter-jshint", and "script-runner" packages in atom.  Then copy the code from Codeacademy to Atom, debug there, and paste back to Codeacademy when you're finished.  It's a clumsy system, but may be worth it if you're having trouble diagnosing your errors.
+
+After you're done, send me an email with a link to your CodeAcademy profile page.
+
+* STA 03: Make a Map
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-spatial-history
+:ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
+:PARENT:   Assignments
+:POST_DATE: [2015-07-23 Thu 09:52]
+:POSTID:   315
+:END:
+*Due Date: <2015-10-27 Tue>*
+
+In class we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]] and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
+
+Your next assignment builds directly on that exercise and on your existing knowledge of HTML, CSS, and Javascript. 
+
+** Assignment
+Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you. The final product should meet the following criteria:
+
+- Essay :: You should write a short essay, approximately 500 words (~ 2 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis.
+
+     Here are some plausible examples of appropriate topics:
+  - Corridor of Power: Berlin's Friedrichstrasse in the Nazi Era
+  - End of an Era: Toronto's last meatpacking plants
+  - An Empire at Home: conservative Think Tanks in Washington, D.C.
+    I just made these up, of course. You should pick something that you (a) know something about already, and (b) are interested in. Ideally, you will already have done some research into this topic, and will have a small number of sources ready to hand. The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.  ("Think tanks, so important in the construction of policy in today's United States, are a relatively new feature of American politics. In this paper, I will discuss the early history of this now-paramount institutional form, and argue that the /geographical proximity/ of these think tanks is actually an important feature.")
+
+    You may notice that most of my examples are drawn from a kind of urban history. Urban history is obviously well-suited to spatial analysis, but there's no reason you can't describe, for instance, more widespread networks (e.g., to take one of your examples at random, networks of hippies. Underground bus networks. Comparative suffrage movements. etc.)
+
+    The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~(Latour, p. 97)[http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a]~.  Don't worry about a bibliography.  
+
+- Map :: Your map should have at least 4 markers.  In class, we cut and paste to create multiple markers. The assignment template is slightly different, and uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
+
+- Styling :: As was also the case with our in-class assignment, the bulk of the styling work is accomplished for us by the /strapdown.js/ script that we call at the bottom of the page. Remember that you can use any of several /bootswatch/ themes if you would like to try a different overall look. If you like, you can also customize the CSS further by using  the /style.css/ file in the project folder
+
+** Getting your assignment, and handing it in
+
+This assignment is stored on Github. Learning how to deal with the Git system is part of this challenge:
+
+- [[https://github.com/join][register for an account]] at Github
+- navigate to the assignment repository at  [[https://github.com/titaniumbones/maps-with-markdown]]
+- [[https://help.github.com/articles/fork-a-repo/]["fork"]] the repo by clicking on the "fork" button at the top left
+- [[https://help.github.com/articles/set-up-git/][set up git]] on your computer; you may prefer to use the [[https://desktop.github.com/][desktop application]].
+- create a local clone for the repository
+- make your changes
+- ~push~ your changes to github
+- submit your work by making a [[https://help.github.com/articles/using-pull-requests/][pull request]]. I'll download and grade your work.  
+
+We will discuss Git in class; make sure to be present for this!
+** Expectations
+Your essay should meet the ordinary criteria for an historical essay: clearly written, providing adequate evidence, minimal spelling and grammatical errors, etc. The relationship between topic and map should not be artificial -- the map should serve as an important part of your historical argument or explanation. 
+
+Your Map should /work/ -- all your markers should display correctly. The initial zoom should be set so that all of your markers are visible, and when I click on those markers the appropriate text should display.  
+
+If you change the styling, you should not create a terrible mess!
+
+* STA 04: Getting started with PHP
+
+You've already learned bits and pieces of 3 languages -- and now we're trying another one? Crazy!  It doesn't /really/ make sense to work this way; but this is part of the hacking method. We learn what we need to, and hope that the whole is a little more than the sum of its parts.  
+
+The Wordpress framework is written in the PHP programming language. PHP structures are similar in /function/ to Javascript analogues; but their form (or /syntax/) is often very different.  So the concepts you review here will be familiar, but the tricky bits will be frustratingly difficult to master.  
+
+** Assignment
+
+Complete the [[https://www.codecademy.com/en/tracks/php][PHP Track at Codeacademy]], and send me an email with your profile URL.  
+
+* STA 05: Wordpress Themes
+
+[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
+
+
+
+* STA 03 - Foundation
+
+For this short technical assignment, I would like you to switch your perosnal from your home-grown theme to the advanced Foundation framework we'll beworkingwith in our real projects.  Please do the following:
+
+- *activate the Grunterie theme* in the theme browser, using the WP admin interface
+- *customize the grid size* for large screens using SASS variables in ~scss/_settings.scss~
+- *customize the color scheme* using SASS variables in ~scss/_settings.scss~
+- *change the width of the sidebar* using the Foundation class system, in ~index.php~, ~single.php~, and ~sidebar.php~.
+- *understand the construction of small, medium, and large sizes* by looking at those variables in ~scss/_settings.css~
+- *resture your cool customizations from before this change* (that is, add the appropriate bakcground images & elements, etc.)
+- *learn about the /[[http://foundation.zurb.com/docs/components/reveal.html][reveal]]/ and /[[http://foundation.zurb.com/docs/components/accordion.html][accordion]]/ features in foundation, and try to implement them briefly in [[http://jsbin.com/soxowa/2/edit?html,js,output][jsbin]]. 
+
+* STA-4 -- Foundation
+** Historical Mapping
+This is a simple experiment in generating historical maps:  interactive timelines that also map events on a geographical grid.  
+
+There is a whole field of [[http://en.wikipedia.org/wiki/Historical_geographic_information_system][Historical GIS]] which involves a significant set of tools and expertise in cartography and geography.  What we're doing is relatively simple compared to that.  We take individual events, write descriptions of them, and assign to them a location (latitude/longitude) and a time (start/end dates).  Then we feed that data to a program called [[http://code.google.com/p/timemap/][Timemap]] that generates a [[http://www.simile-widgets.org/timeline/][timeline]] and a map on which our data are displayed.  And we embed those elements - -the map and the timeline -- in a web page, where we can add supporting text, images ,and other elements.  
+
+This is *one* tool that can accomplish this sort of task. There are others, and some of them are prettier, but most are harder to use.  
+
+** Your Assignment
+Your assignment is to create your own timemap.  This time, I don't want you to make something up entirely on your own, but instead, to use real data that relates in some way to your class project.  Here are some ideas:
+- Read a novel or short story that relates to your project. Map out 15 or 20 moments in the novel.
+- read a secondary source that relates to your project. Map out 15 or 20 events mentioned in the source.
+- find 2 or 3 primary sources.  Map them in detail on your map.  
+
+** Details
+*** Getting prepared
+this project involves editing very small amounts of HTML, CSS, and Javascript.  Therefore I strongly advise that you use a real text editor to do the work.  Some popular editors are [[http://www.jedit.org/][jEdit]] (cross-platform), [[http://notepad-plus-plus.org/][Notepad++]] (Windows), and [[http://macromates.com][TextMate]] (Mac, not free).  You can also test out your code on [[http://jsbin.ocm][jsbin]] or [[http://jsfiddle.net/][jsfiddle]], though maybe neither is ideal -- jsbin doesn't include a css pane, and jsfiddle seemed to have some trouble loading the timemap libraries when I tried last.  
+
+TO check your work, simply load map-overlay.html (see below) in your favourite browser (which should be either firefox or chrome, please don't make me angry) using "Open File" (Ctrl-O).  
+
+*** Getting Started 
+I've created a template for you to download [[https://github.com/titaniumbones/Student-Timemaps/zipball/master][here]].  This is a zipped folder -- you will need to uncompress the files and store them in a convenient location on your computer.  Ask [[https://www.google.com/search?client=ubuntu&channel=fs&q=g+howto+unzip+folder][Google]] how to do that.  You can also inspect the files directly on [[https://github.com/titaniumbones/Student-Timemaps/][github]], where you can [[http://help.github.com/][learn all kinds of stuff about version controlled software]].  I've also put up a live running version of the site [[http://sandbox.hackinghistory.ca/Student-Timemaps/][on the web]]. It's just a mirror of what you'll find at github. The template folder contains the following files:
+**** map-overlay.html
+this is the main HTML file that your project will load.  It is pretty well-commented, and contains three parts that you need to think about:
+- references to other files and scripts that the project will require.
+- a short script that creates the Timemap objects.
+- A very small amount of HTML code that mostly serves to contain the Timemap objects. 
+**** examples.css
+the display of map-overlay.html is mostly controlled using [[http://www.w3schools.com/css/][CSS]].  We haven't talked much about this language, but you should still be able to read it a little bit.  Hint: search for "map" and "timeline" in the file.  You'll find what you need. You can use this e.g. to change the size or position of the timeline and map elements of the web page. Or, alternatively, you can leave well enough alone and not touch this.   
+**** overlay-data.js
+This file contains the actual data for your timemaps; or in some cases, specific instructions on where the data lives ,if it's on the web.  It's written in Javascript, which we went over in class last week and about which you can learn more [[http://p2pu.org/en/groups/javascript-101/content/full-description/][here]] or [[https://developer.mozilla.org/en-US/learn/javascript][here]] or [[http://www.w3schools.com/js/][here]].  This file defines a small number of variables, each of which is either a /datapoint/ or a /dataset/ that gets displayed in the timeline.
+**** media/images/toronto_downtown_1913_rotated_smaller.gif
+This is an image of an old map (from 1913) that I found [[http://maps.library.utoronto.ca/cgi-bin/files.pl?idnum=1089&title=Centre+of+Toronto+1913][here]].  I edited it slightly (cropped it, rotated it, saved as .gif instead of .jpeg to permit transparency, reduced the quality so it wouldn't take forever to load), then defined a datapoint in overlay-data.js that creates an "overlay" in the final map.  You can replace this file with one of your own if you like, or leave it out altogether.  More on overlays below.
+*** Understanding Timemap
+Timemap is an open-source project that allows data to be added simultaneously to a timeline and a map.  Though very simple compared to proper GIS, it is still fairly powerful and flexible, which leads to a corresponding degree of complexity.  If you look closely at the template you will see the function TimeMap.init(), which defines a timemap object.  For your project, you will probably keep the structure more or less intact, though you will change some of the particulars.  If you want to add new parameters -- new values for other variables that affect how the timemap looks and works, you can look at some helpful instructions [[http://code.google.com/p/timemap/wiki/UsingTimeMapInit][here]] or at the full documentation [[http://timemap.googlecode.com/svn/tags/2.0.1/docs/symbols/TimeMap.html#constructor][here]] (probably a little more detail then you want). There are several other helpful links [[http://code.google.com/p/timemap/][here]].  
+*** Understanding your data
+The basic datapoints for timemap are [[http://www.sitepoint.com/oriented-programming-1-2/][Javascript objects]] that contain instructions for Timemap. These instructions tell Timemap how to display the data in the object on the map and timeline.  
+
+However, timemap also includes [[http://code.google.com/p/timemap/wiki/UsingTimeMapInit#Dataset_Options][loaders]] (really, [[http://en.wikipedia.org/wiki/Parsing#Programming_languages][parsers]]) that translate other data streams into the sort of Javascipt data objects that Timemap can read.  So, they take information from other places, and rewrite that information so that it can be fed to a timemap object.  Note that we have to include the loader scripts individually in our html file, like this:
+#+BEGIN_SRC language=html
+<script src="http://timemap.googlecode.com/svn/tags/2.0.1/src/loaders/google_spreadsheet.js" type="text/javascript"></script>
+#+END_SRC
+So if you decide to use any of the other loaders, please be sure to include the right scripts.  
+
+**** Google Spreadsheet Datasets
+the most important type of dataset for us is the [[http://timemap.googlecode.com/svn/tags/2.0.1/docs/symbols/TimeMap.loaders.gss.html][Google Spreadsheet]] type. Using this type makes it much simpler to enter your data -- you use the familiar spreadsheet form, instead of having to type everything in javascript syntax.  Do use it, you will have to do the following in your project:
+- include the google spreadsheet loader for timemap (see above, and the template does this already)
+- create a google spreadsheet whose first column includes at least these fields: Start, Lat, Lng, Title, Description
+- [[http://docs.google.com/support/bin/answer.py?answer=47134][publish]] your spreadsheet
+- find the spreadsheet [[http://www.google.com/support/forum/p/Google%20Docs/thread?tid=7f044ba7e214c576&hl=en][key]] and create a new dataset that uses that spreadsheet as a base
+- make sure the dataset is included in your definition of "datasets:" when the timemap is initialized.
+**** Historical Overlays
+Having an authentic historical map is a really fun way to make your map look great online. However, making historical maps sync up with Google maps can be a bit cumbersome, and is really best done with a GIS tool.  The process is called [[http://en.wikipedia.org/wiki/Georeference][Georeferencing]], and a professional tool will subtly warp and bend the overlay image to get it to align with the underlying map.  
+
+For now, though, if you want to try this, there is a less accurate, rather fincky way to do this that you can try.  
+- First, find an image; if you are looking for an image of Toronto, the University's [[http://maps.library.utoronto.ca/cgi-bin/search.pl?keyword=toronto][Map Library]] is a great place to start.
+- Next, find an image editor.  Phoshop is hat most people use, I use [[http://www.gimp.org/][GIMP]] but then, I run Linux, too.
+- Crop the image so that borders, etc, don't show.
+- rotate the image so that it aligns with the north-south contours of a map of your location
+- futz endlessly with the north, south, east, and west parameters of your overlay object in overlay-data.js
+- ta-da!  with luck the overlay will more or less fit the underlying geography.  If not... well, that's another lesson.  A starting point for more and better ideas is [[http://groups.google.com/group/timemap-development/browse_thread/thread/4515706dccec5fad?hl=en][here]].  

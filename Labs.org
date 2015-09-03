@@ -1,0 +1,1121 @@
+#+POSTID: 67
+#+DATE: [2013-10-08 Tue 09:53]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Labs And Notes
+
+When I can, I'll place notes about class and our labs in this category.  
+* Lab 00: Getting Started
+- Registration
+- Intro Post:
+  - Name
+  - interests
+  - looking forward to/anxious about.
+  - gravatar is possible
+- What is Wordpress; Logging in
+- 
+* Lab 01: Understanding HTML
+One of the goals of this week is to help you think of the Web as a protocol-driven infrastructure.  The language in which that infrastructure operates is called [[http://en.wikipedia.org/wiki/HTML][HTML]]. Like a traveller in a foreign country, you may not need to be fluent in this language, but if you know just a little bit then you'll be much more comfortable.  In this exercise we will introduce an online tool called [[http://jsbin.com/welcome/1/edit][JSBin]], now one of many such tools available online, and somewhat similar to the [[http://codeacademy.net][Codeacademy]] website you will be using for your assignments.
+
+I strongly advise you to also take this opportunity to download the [[http://atom.io][Atom text editor]], as well. Further instructions are on the Tools page.  
+** Tags
+An HTML Document is composed of [[http://en.wikipedia.org/wiki/HTML_element][elements]] marked off by [[http://www.w3schools.com/tags/default.asp][tags]].  The elements look like this:  
+#+BEGIN_SRC html
+<p>This is a paragraph</p>
+#+END_SRC
+Note the opening and closing tags, which surround the text you want to have marked up.
+
+*** Important tags
+Here are a few examples of important tags, though there are many, many more in current versions of HTML.  
+**** Document Structure
+Certain tags exist solely to lend *structure* to a document.  
+#+BEGIN_SRC html 
+  <html>
+    <head></head>
+
+    <body>
+      <header></header>
+
+      <article>
+        <div>
+          <span></span>
+        </div>
+      </article>
+
+      <footer></footer>
+
+    </body>
+  </html>
+#+END_SRC
+
+**** Text Attributes
+Others give instructions for emphasizing text
+#+BEGIN_SRC html -n
+  <b>bold</b> <strong>strong</strong>
+  <i>italic</i> <em>emphasis</em>
+#+END_SRC
+**** Text Functions
+Still others define pieces of structure in a functional way that generally also affects the way text will look on your screen.
+#+BEGIN_SRC html -n
+  <h1>This is a top-level Heading</h1>
+  <h2>While this is a lower-level heading</h2>
+  <p>..and this is a mere paragraph</p>
+  <ul>
+    <li>This is a list item</li>
+    <li>And this is a second item</li>
+  </ul>
+
+  <ol>
+    <li>this is a different kind of list</li>
+    <li>you'll see the differences soon</li>
+  </ol>
+#+END_SRC
+
+**** Linking
+The fundamental, breathtaking feature of the web is its capacity to create links between documents, images, media sources, etc., with absolute disregard for where those resources are physiclaly stored.  THh syntax for making a link is as follows 
+
+#+BEGIN_SRC html -n
+  <a href="" target="">Text </a>
+  <img src="" alt="" title=""/>
+  <video>
+    <source src="" type="">
+  </video>
+  <script src="" lang=""/>
+#+END_SRC
+
+Figure out what these mean by browsing on w3schools. Work especially hard at the <a> tag.  Hint:  the standard syntax is <a href="link">Text</a> and there are plenty of instances in the code below.
+
+*** Exercise 0
+Navigate to [[http://jsbin.com/onopaz/7/edit][this page]].  This is the JSBin editor, an online tool for inspecting code.  
+*** Exercise 1
+First, let's quickly compare the text of an old post of mine:
+
+#+BEGIN_QUOTE
+The WWW as Public Sphere
+Posted on September 21, 2010 by admin
+
+Just a few quick words about the readings this week, which concern the idea of the “Public Sphere“. This phrase is rooted in ideas about enlightenment that stretch at least back to Immanuel Kant. The analyses of Jürgen Habermas (SEP entry), in particular, developed the idea of a sort of virtual space of critical discussion...
+
+Some of the features of this "authentic public sphere" would be 
+- a space free from political repression
+- a space accessible to all members of society
+- a form of discourse in which ideas are evaluated on their own merits exclusively, and not arbitrated based on some set of characteristics of the speaker
+
+
+#+END_QUOTE
+
+with the HTML code that generates what you would see on your screen if you went to the website from that year: 
+
+#+BEGIN_SRC html -n
+<div id="post-77" class="post-77 post type-post hentry category-notes-for-class tag-publicsphere">
+					<h1 class="entry-title">The WWW as Public Sphere</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> 
+<a href="http://www.hackinghistory.ca/2010/09/21/the-www-as-public-sphere/" title="11:03 am" rel="bookmark"><span class="entry-date">September 21, 2010</span></a> <span class="meta-sep">by</span> 
+<span class="author vcard"><a class="url fn n" href="http://www.hackinghistory.ca/author/admin/" title="View all posts by admin">admin</a></span>					</div><!-- .entry-meta -->
+
+<div class="entry-content">
+	<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;rft.title=The WWW as Public Sphere&amp;rft.aulast=Price&amp;rft.aufirst=Matt&amp;rft.subject=Pre-class notes&amp;rft.source=Hacking History (His495)&amp;rft.date=2010-09-21&amp;rft.type=&amp;rft.format=text&amp;rft.identifier=http://www.hackinghistory.ca/2010/09/21/the-www-as-public-sphere/&amp;rft.language=English"></span>
+
+<div class="sticky_post"><p> Just a few quick words about the readings this week, which concern the idea of the  &#8220;
+<a href="http://en.wikipedia.org/wiki/Public_sphere">Public Sphere</a>&#8220;.  This phrase is rooted in ideas about <a href="http://plato.stanford.edu/entries/enlightenment/">enlightenment</a> that stretch at least back to 
+<a href="http://en.wikipedia.org/wiki/Immanuel_Kant">Immanuel Kant</a>.  The analyses of 
+<a href="http://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas">Jürgen Habermas</a> 
+(<a href="http://plato.stanford.edu/entries/habermas/">SEP entry</a>), in particular, developed the idea of a sort of virtual space of critical discussion  </p>
+
+</div>
+											</div><!-- .entry-content -->
+#+END_SRC
+
+They look pretty different, right?  Now, paste the text-only version into the HTML tab in [[http://jsbin.com/waxufekequte/2/edit][this JSBin page]].  
+
+Figure out how to accomplish the following tasks:
+1. Make the title "The WWW and the Public Sphere" into a heading.
+2. Add a link to "http://www.hackinghistory.ca/author/admin/" to the word "admin" in the second line.
+3. Italicize the date line.
+4. Organize the elements so that the appropriate content is nn the <header> tag, and the rest in the "article".
+
+These are all pretty easy, you can figure them out either by inspecting the marked-up version I reproduced here, or following the w3schools HTML tutorials.  
+ 
+*** Styles
+Styles in HTML are pretty complex, see the [[http://www.w3schools.com/html/html_css.asp][HTML style tutorials]] on w3schools.  Check out their very quick description of [[http://www.w3schools.com/css/css_intro.asp][css]].  
+**** Exercise 2
+    Go back to your TryIt experiment at w3schools.  Can you make the text render in the same styles that are used by the website?  There's a clue in the <head> element of any page from the site.  Hint: search for "css" in the sourcecode...
+*** Scripts
+Though HTML is the language of the web, modern HTML (HTML 4, HTML 5) have "translators" of a sort that allow other languages to run inside the web page.  this is actually incredibly powerful, and allows amazing things that were unheard of in the early days of the web, like dynamically-generated lists, moving images, the embedding of video and so forth.  You don't have to know how to script (I can't really use javascript, for instance) but you should understand that scripting is what makes a lot of today's web work the way it does.  
+**** Exercise 3
+Inspect the source code of three complex pages on the web and find every instance of a script tag.  Note anything you think is interesting about it.  
+
+** Hacking your way to HTML mastery!
+*** Tools!
+- *View source.* When you right click on a web page in any modern browser, you will see a 'view source' option.
+- *developer tools*.  The Developer Tools for [[https://developer.chrome.com/devtools][Chrome]] and [[https://developer.mozilla.org/en/docs/Tools][Firefox]] are both amazing.  They allow you to temporarily change the code (HTML, CSS, and Javascript) running on any website, and thus test out your ideas for changes.  We will use this tool *A LOT* over the course of the year.  
+- *[[http://jsbin.com][jsbin]]*. The awesome real-time html/javascript previewer.
+*** Tutorials
+- [[http://codeacademy.com][Codeacademy]] may have the best intro to HTML sequence
+- [[http://w3schools.com/][W3 Schools]] provides excellent tutorials.
+- [[https://developer.mozilla.org/en/HTML][The Mozilla HTML Reference]] is where I go when I need a detailed explanation of something.  
+* Lab 02: Css and Web Styles
+Last week we experimented with HTMl and dipped our toes into CSS and styles.  In your final projects, much of your coding time will be spent trying to get your site to look the way you want it to.  If you have a firm understanding of CSS (and of where to look for more info when you're having trouble!), this will be a lot easier.
+
+You already know about the [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings.  Another helpful tutorial site is [[http://learnlayout.com/][Learn Layout]], to which I'll be referring later; and there are many other resources available on the web.  
+
+** CSS Basics
+
+CSS is the [[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]] Language; it is a powerful tool for controlling the appearance of web pages (and sometimes other documents, too).  It works in the following way:
+
+- a web page links to a stylesheet
+- the stylesheet instructs the browser as to how to display various kinds of web pages
+- the browser then renders the page according to those instructions.  
+
+Sometimes when you have a really slow Internet connection, you will see a very ugly, cluttured web page before a smooth, clean, modern-looking website loads.  That's because your browser has loaded the web page but is having trouble accessing the stylesheet.  E.g., here is the New York Times with and without CSS:  
+#+ATTR_HTML: :class compare
+[[file:~/HackingHistory/Images/nytimes-w-css.png]]  
+#+ATTR_HTML: :class compare
+[[file:~/HackingHistory/Images/nytimes-no-css.png]] 
+
+So, while HTML is responsible for the *structure and content* of a website, CSS is responsible for its *presentation*.  
+
+** CSS Selectors
+
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
+
+#+BEGIN_SRC css 
+  h1 {
+      color:blue;
+      font-family:serif; 
+      font-size:24px; 
+  }
+
+  div {
+      border: 1px solid black;
+  }
+
+  div.main p {
+      color:red;
+  }
+
+  #specialid {
+      float:left;
+  }
+#+END_SRC
+They all follow the same pattern: 
+- first, a *selector* that identifies the elements to which these instructions will apply
+- then *an open brace* "{" which marks the start of the actual instructions
+- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
+- finally, *a closing brace* that ends the selector declaration.
+
+*** Selector types
+Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
+- *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
+- *Class* selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:
+#+BEGIN_SRC html
+<p class="coolpara">Some Content</p>
+#+END_SRC
+
+#+BEGIN_SRC css
+.coolpara {
+color:green;
+}
+#+END_SRC
+- *ID* selector:  this addresses the element with a particular ID:
+#+BEGIN_SRC html
+<p id="myfave">Some Content</p>
+#+END_SRC
+
+#+BEGIN_SRC css
+#myfave {
+color:yellow;
+}
+#+END_SRC
+- Finally, we have many more complex selectors.  This one here is a descendant selector: 
+
+#+BEGIN_SRC css
+div.main p {
+      color:red;
+  }
+#+END_SRC
+It addresses every p that is contained inside a div of class "main."
+
+** Fonts, colors and borders
+A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
+
+#+BEGIN_SRC css
+div.main {
+      color:rgb(150,150,150);
+      background-color(#b0c4ee);
+      text-align: center;
+      text-decoration:underline;
+      font-family: "Times New Roman", Times, Serif;
+      font-style:italic;
+      font-size:1.25em;
+      border: 4px green solid;
+      border-radius:20%;
+  }
+#+END_SRC
+There are plenty of other properties that can be set, in much the same way.
+
+** Display: Block vs. Inline
+
+
+** Box Model
+One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
+
+[[http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png]]
+
+For each element, you have the actual content, which is surrounded by the *padding*, surrounded in turn by the *border*, and once again surrounded by the *margin.*  So for instance, try this code in JSBin:
+
+#+BEGIN_SRC css 
+.simple {
+  width: 500px;
+  margin: 20px auto;
+  border 1px red solid;
+}
+
+.fancy {
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  border: 10px blue solid;
+}
+#+END_SRC
+
+~<div class="fancy">~ will look a lot bigger than ~<div class="simple">~, even though they are nominally the same size!  
+
+There are two ways to deal with this:  
+1. subtract the size of the padding and border from your width values
+2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
+
+** Positioning
+
+This is a difficult subject.  When you are dealing with lots of different screen sizes and resolutions, and different devices with different fonts installed, etc., it is not trivial to position every element precisely where you want it.  You will find a lot of your teeth-gnashing time is spent trying to get various columns of content to line up pretty, center themselves, etc.  
+
+The CSS "position" property has four possible values, whose names are [[http://learnlayout.com/position.html][impossible to remember and anyway don't make sense]].  The four most important are:
+
+#+BEGIN_SRC css
+.static {
+  position: static;
+}
+.relative1 {
+  position: relative;
+}
+.relative2 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  background-color: white;
+  width: 500px;
+}
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  background-color: white;
+}
+.absolute {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 300px;
+  height: 200px;
+}
+#+END_SRC
+
+- *Static* positioning is the default.  A statically-positioned element is said to be "unpositioned".
+- *Relatively* positioned elements are displaced /relative/ to the position they "ought" to be occupying (according to the defaults).  But meanwhile, the space it "ought" to be occupying is still considered "taken" by the browser, which won't put anything else in that space unless you force it to do so.
+- *fixed* elements have their position /fixed/ to a spot on the screen (which is called "the viewport" in CSS talk).  This is great when you want a fixed header or footer.
+- *absolutely*-positioned elements are like fixed elements, only they're positioned relative to the /closest positioned ancestor/, usually an element with a position property value of "relative".
+
+Understanding this well involves fiddling a lot with code; rather than make a bunch of fiddly exercies myself, I'll direct you [[http://www.codecademy.com/courses/web-beginner-en-6merh/3/1?curriculum_id=50579fb998b470000202dc8b][the codeacademy positioning exercies]], which have a great help system that makes things a little easier.
+
+** Positioning 2: Float
+So, that's one way to position elements.  Another is to use the *float* property, which imagines the page flowing like water.  The element will "float" left or right, and everything else will /flow around it/.  To stop the flowing -- that is, to require the next element to appear *below* a floated element -- that next element will need to apply the *clear* property, which stops the float.
+
+Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
+
+** Changes Comin' Round Real Soon
+All of what you just learned is in the process of changing dramatically.  A new CSS module, *flexbox*, makes a lot of this stuff much easier, but takes some practice to understand.  Since very few Wordpress developers use flexbox yet, we won't be learning about it this term.  Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards.
+
+
+# /home/matt/HackingHistory/Images/nytimes-w-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-w-css.png
+# /home/matt/HackingHistory/Images/nytimes-no-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-no-css.png
+# /home/matt/HackingHistory/Images/boxmodel.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png
+
+# HackingHistory/Images/nytimes-w-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-w-css1.png
+# HackingHistory/Images/nytimes-no-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-no-css1.png
+
+# HackingHistory/Images/boxmodel.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel2.png
+* Lab 06: From CSS to SASS!
+Now that you are alll HTML/CSS/PHP ninjas....  it's time for the next language!  The web frmework we're using -- "Foundation" -- uses a language called SASS to manage style instructions.  It takes a little getting used to be soon you will start to love it, I promise.  
+
+**  What's wrong with plain old CSS?
+CSS is great, but it has some problems:
+- it's repetitive :: often you find yourself writing the same color codes over and over again in different selectors:
+#+BEGIN_SRC css
+  h1 {
+      color: #ab23ab;
+  }
+  h2 {
+      color: #ab23ab;
+  }
+#+END_SRC
+- it's brittle :: you may spend a long time figuring out the right proportions between, say, the font sizes for h1, h2,h3, and h4, or the right dimensions for div.class1 and div.class2.  Then as you're working, you find you actually want h1 to be smaller, or div.class2 to take up more of the screen.  Then you have to go back to your CSS and modify all of the individual values you just entered.
+#+BEGIN_SRC css
+  h1 {
+      font-size: 2.0rem;
+  }
+  h2 {
+      font-size: 1.8rem;
+  }
+  h3 {
+      font-size: 1.6rem;
+  }
+
+  div.class1 {
+      width: 38%;
+  }
+
+  div.class2 {
+      width: 58%
+  }
+
+#+END_SRC
+- it's hard to read :: when CSS files get complicated, they also tend to get a little convoluted;  it can be difficult to make a logical, easy-to-follow structure that makes sense of everything.
+
+** What's the solution?
+More and more web developers have turned to *CSS preprocessors* as a solution to this tricky problem.  A preprocessor extends the CSS language to make it capable of more cool tricks, and when you're ready, /processes/ the code you've written to allow browsers to read it.  In effect they are new languages, which are "supersets" of the CSS language.  THe two main preprocessors are SASS and LESS, nad in our class we will use SASS (for no really good reason, just because).  SASS lets you 
+- *stop repeating yourself* 
+- *write cleaner code*
+- and as a result, *write maintainable code* -- code that it's easy to understand when you come back to look at it two weeks or six months or two years later.  
+
+How does it do this, you might ask?  Well, let's see.
+
+*** Variables
+By now you should be getting a sense of how fantastic variables are.  PHP templates would be useless without them -- they let wordpress insert different text and HTMl content in the various slots that you've provided in your layout.  For instance, ~$post->title~ is a variable (actually, it's an =object property=, but let's not be too formal), that retrieves... the Title!  Almost all programming languages use variables, but CSS doesn't.  However:  SASS does!  
+
+#+BEGIN_SRC scss
+    $header-color: #eeeeee;
+    h1 {
+      color: $header-color;
+      font-size:  44px;
+      }
+    h2 {
+        color: $header-color;
+        font-size: 37px;  
+    }
+
+#+END_SRC
+
+This will generate the following CSS:
+
+#+BEGIN_SRC css
+
+  h1 {
+       color: #eeeeee;
+       font-size:  44px;
+       }
+  h2 {
+      color: #eeeeee;
+      font-size: 37px;  
+  }
+#+END_SRC
+
+check it out!  Now whenever you want two elements to be the same color, you can just type the variable name instead of inserting a complicated color code.  And you can change the color of a bunch of elements all at once, simply by changing the variable value.  
+
+
+
+*** Functions
+You can also manipulate values using functions.  You can write your own functions (complicatd!) or use the built-in functions SASS provides.  Here's an example.  
+#+BEGIN_SRC scss
+  $header-color: #eeeeee;
+  h1 {
+    color:$header-color;
+    background-color: scale-color($header-color, $lightness=30%)
+    }
+
+  h2 {
+    color: scale-color($header-color, $lightness=-10%);
+    }
+
+
+#+END_SRC
+There are many built-in color manipulation functions in SASS. Here's a partial list: 
+- darken()
+- lighten()
+- saturate()
+- desaturate()
+- adjust-hue()
+- invert()
+- complement()
+- scale-color()
+ 
+~scale-color()~ is probably the most versatile.  Let's look at it again:
+
+#+BEGIN_SRC scss
+    background-color: scale-color($header-color, $lightness:30%)
+#+END_SRC
+Note the different parts:
+*scale-color* /($header-color, $lightness=30%)/. This function takes one main argument -- a color -- and also a number of possible "parameters", of the form: 
+
+#+BEGIN_SRC scss
+$lightness:-XX%, hue:-XXXdeg, saturation:-XX%, red:XX, blue:xXX, green:XX
+#+END_SRC
+
+You can see in our example that I make the header text color by lightening the header background.  
+
+*** Loops and Conditionals
+SASS contains all the basic programming syntax you want from a simple language:  conditionals, loops, and a few other tricks.  So for instance, you can try: 
+
+#+BEGIN_SRC scss
+// the number of columns
+@for $i from 1 through $total-columns {
+  .fade-#{$i} {
+    background-color: scale-color($body-bg, $lightness:-15%*$i);
+    color: scale-color($green, $lightness:15%*($i - 1));
+
+  }
+}
+#+END_SRC
+
+This piece of code will create a bunch of CSS stanzas, like this:
+
+#+BEGIN_SRC css
+.fade-1 {
+  background-color: #d9d9d9;
+  color: #33cc33; }
+
+.fade-2 {
+  background-color: #b3b3b3;
+  color: #70db70; }
+
+.fade-3 {
+  background-color: #8c8c8c;
+  color: #adebad; }
+
+.fade-4 {
+  background-color: #666666;
+  color: #ebfaeb; }
+#+END_SRC
+
+
+*** 
+
+*** Mixins 
+It gets even crazier!  You can define "mixins" that you can add to whatever classes you want.  These mixins can contain complicated functions or whatever.  Here's an example:  
+
+#+BEGIN_SRC sass
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+.some-other-box { @include border-radius(10px); }
+#+END_SRC
+
+This generates the code:
+
+#+BEGIN_SRC css
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+.some-other-box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+
+#+END_SRC
+*** Excited yet?
+
+You Should be.  There is still plenty to learn, but we'll stop here for now.  check out the SASS website for more info.
+** Playing with SASS
+I have a series of JSBins set up, here they are:
+
+- [[http://jsbin.com/ruhalo/5/edit?html,css,output][Intro to SASS variables]]
+- [[http://jsbin.com/zakeji/1/edit?html,css,output][A little bit of programming]]
+- [[http://jsbin.com/heyaj/edit][Sneak Peek at Foundation]]
+
+
+** Using Foundation on your personal site
+For fun, I have also enabled real-time compiling of SCSS files in the "grunterie" theme on your personal websites.  Feel free to try it out!
+
+
+** Next week: Foundation
+
+SASS is just the tip of the iceberg for Foundation.  Next week we will check out some of the many features of Foundation, but if you want a sneak peek you can check out [[http://foundation.zurb.com/docs/][the Foundation docs]],.  
+
+
+** things to put into the playbround
+- text, background colors; grid sizes; div types; font sizes; 
+* Lab 04: Getting Started with Wordpress
+[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
+
+** Getting Started
+In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will see a theme called "Hacking History Starter Kit". Let's take a quick look at it:
+** Content Management Systems
+- a [[Chttp://en.wikipedia.org/wiki/Web_content_management_system][CMS]] is a system that allows web pages, and structured sets of pages, to be constructed from existing documents and text/HTML entered by users who may have little knowledge of HTML or the other underlying technologies that display those pages. There are hundreds of CMS's in existence today, some Free/Open Source, others distributed under non-free licenses.  
+** What is Wordpress?
+Take a look at this chart:
+[[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
+
+- WP /assembles/ a page from many component parts. This is accomplished by a now-complex set of /scripts/ that offers instructions on what data to pull from the database and how to represent it on the page.
+- the underlying scripts are primarily written in the computer language [[http://php.net/manual/en/tutorial.php][PHP]], one of most popular languages for web "[[http://en.wikipedia.org/wiki/Server-side][server-side]]" programming. When a URL belonging to the site is requested, the Wordpress scripts activate, [[http://en.wikipedia.org/wiki/Parsing][parse]] the URL, and translate it into a set of instructions which are used to generate the HTML for the specific page we want.
+** Posts and Pages
+Wordpress is highly extensible through the [[http://codex.wordpress.org/Plugins][Plugin]] system. However, the default installation of Wordpress comes with two main types of content: 
+- [[http://codex.wordpress.org/Posts][Posts]] show the origins of Wordpress as a blogging engine -- they're a kind of content that's expected to be updated frequently, and to be of largely trnasitory interest; and
+- [[http://codex.wordpress.org/Pages][Pages]], which are relatively permanent pieces of content that help populate, for instance, your menu system.  
+You'll often see other kinds of content -- events, for instance, or links , biblographies, Facebook-style status updates; these are additional functionality that may or may not be available to you.
+** Databases
+- We won't go into this here, but the information you see in a post is distributed across many entries in a [[http://computer.howstuffworks.com/question599.htm][relational database]]. Knowing this can sometimes help you to track down errors that sneak into your website through admin carelessness.  
+** Themes, Styles and Templates
+- The look and feel of your website is also controlled by PHP files, often with help from files written in other languages, especially [[http://computer.howstuffworks.com/question599.htm][CSS]] and [[http://www.w3schools.com/js/][Javascript]]. Sometimes the look of your website will be affected by [[http://codex.wordpress.org/Plugins][Plugins]], but most of what you see is related instead to your [[http://codex.wordpress.org/Themes][Theme]].
+- A *Theme* is a collection of files -- at minimum two, but often many more -- from which wordpress takes instructions when presenting the page.  There are thousands of themes in the [[http://wordpress.org/extend/themes/][official directory]] and thousands more for sale or download outside it.
+- The easiest way to install a new theme is to *download it* using the Wordpress Admin interface.  Sometimes this won't work -- if you're writing your own theme, for instance!  I'm hoping we will have a chance to write our own [[http://codex.wordpress.org/Child_Themes][Child Themes]] later on, so if you want to do that, drop me a line and I'll hook you up with [[http://en.wikipedia.org/wiki/File_Transfer_Protocol][FTP]] access to the server.  
+** Assignment: build a Wordpress site
+*** Commemorate an Imaginary Event
+You are tasked with building a website that explores... something that hasn't happened. Invent an event or historical phenomenon (feel free to write from the future if you like), and create a web page that's suited to its exploration.
+*** Your Site already exists
+Navigate to http://yourfirstname.hackinghistory.ca.  Ta-da! there's a wordpress site ready and waiting for you.  Configure it and off we go.
+*** Think about Site Structure
+You will probably want to create a small hierarchy of pages that describe your event.  What are the important facts about this event? And how should they be organized? Where will you introduce visitors to the event and to the purpose of the site?  How will users participate in the life of the website?  In one week, you won't be able to build Wikipedia or facebook; you might need to create placeholder pages that just explain what they /ought/ to do.
+*** Style your Site
+How do you want this site to look? How many columns? What Images, and where?  Explore the installed themes or installl your own.  We'll move on to writing our own themes soon.  
+
+Have fun!!
+
+
+
+#+//home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-data_and_metadata_on_the_web.png
+* theming with wordpress
+** Themes are collections of files
+- they live in your wordpress install:
+[[file:~/HackingHistory/Images/wp-file-structure.jpg]]
+** Themes are written primarily in PHP
+PHP is a programming language developed specifically for writing web pages.  Most PHP files consist of HTML and PHP intermixed with each other. This can be a little confusing, but you will get used to it. We will puzzle through the PHP syntax together, but you might want to try the [[http://www.codecademy.com/en/tracks/php][Codeacademy PHP track]] as an introduction to the language basics.  Knowing just a little will make your work a lot easier next semester.  
+
+#+BEGIN_SRC php
+<?php echo('Hello World'); ?>
+#+END_SRC
+
+** Themes tell wordpress how to display your content
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+** Files in your theme
+- *style.css:*  your stylesheet; you need this
+- *functions.php:* you're going to need this too
+- *index.php:* this is the default template for your theme; you can't live without it
+- *header.php:* controls your header.
+- *footer.php:* controls your footer area
+- *sidebar.php:* generates your sidebar
+
+** template hierarchy
+remember this:
+
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+Here is a more detailed view:
+
+[[file:~/HackingHistory/Images/Template_Hierarchy.png]]
+
+When accessing a piece of data from the database, Wordpress will check in sequence to see if appropriate templates are available and use the first matching template it finds.  
+
+** plugins and themes
+- Themes control appearance
+- plugins add functionality
+- but sometimes the difference isn't so clear
+- We will try to keep things pretty well-separated, but sometimes it's just much easier to do all your programming in a theme.  
+
+** Editing Your Theme
+- install the [[http://wordpress.org/plugins/wpide/][wp-ide]] plugin to enable you to do syntax-highlighted code editing in your browser.  If the interface feels a little awkward try [[http://wordpress.org/plugins/better-file-editor/][better file editor]] instead -- it may be sufficient for our needs (I haven't experimented with it yet).
+- try changing the 'powered-by' text in the footer to our starter theme.  Did you make it work? Did you (alternatively) break the Internet?
+- Check out functions.php, and then sidebar.php.  Can you understand what's going on?  It's not easy to understand!
+- try editing the css enough so that you can get something un-hideous.
+*** Headers
+Right now there is no custom header support in our theme!  To use a header image,
+add this code to functions.php:
+
+#+BEGIN_SRC php
+<?php add_theme_support('custom-header); ?>
+#+END_SRC
+
+
+And put this somewhere in header.php: 
+
+#+BEGIN_SRC php
+<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+
+#+END_SRC 
+** Learn much, much more
+There is a huge amount of information online at the [[http://codex.wordpress.org/Stepping_into_Templates][Wordpress Codex]].  That last link is a good starting point, and so is the [[http://codex.wordpress.org/Theme_Development][Theme Development Page]].  There is lots and lots and lots to learn here...  
+
+# HackingHistory/Images/wp-file-structure.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-wp-file-structure.jpg
+
+# HackingHistory/Images/Template_Hierarchy.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-Template_Hierarchy.png
+* Lab 08: SASS and The Foundation Framework
+Now that you are HTML experts, CSS ninjas, and SASS stars,  we're moving right along...  
+
+Of course there is still tons more to learn, and you will pick up what you need to from me, from the Internet, and from your classmates.  But we are shifting gears to discuss some of the features of the web development /framework/ we will be using this year.   [[http://foundation.zurb.com/][Zurb Foundation]] is an incredibly powerful set of features that simplifies many aspects of website development.  We'll talk about it a little bit here, and you can learn a lot more from [[http://foundation.zurb.com/docs/][the official documentation]]. 
+
+** What is a Web Framework?
+A "framework" is a set of tools, bundled together, that create a coherent environment for web design, with alignment and co-operation between the various elements.  *Foundation* is one of two very popular such frameworks, the other of which is [[http://bootstrap.twitter.com][Twitter Bootstrap]].  It provides:
+- a carefully developed set of classes that make it easy to build stylistically coherent websites, and also to design arbitarily complex layouts
+- a number of cool Javascript libraries that let you do a lot of tricks that are otherwise somewhat hard to program on your own
+- a very cool way to customize all of the design element 
+- and as a bonus, careful attention to responsive design
+
+** How is Foundation organized?
+Foundation is many things, but the simplest way to think of it is as a *grid of 12 columns*, that move and flow as units when you move from one size of screen to another.  Inside the grid there are various kinds of components that you can use, all of which have been pretty carefully sized and matched in relation to each other.  These include buttons, menus, panels, and dynamic elements such as tabs, image lightboxes and sliders, cool "modal" elements that drop down from the top, etc. 
+
+** Getting started with the grid & semantic classes
+Take a look at this image:
+[[file:~/HackingHistory/Images/feature-grid-1.png]]
+
+Foundation takes the space on your screen and 
+- allots itself a certain portion of it -- by default, 980px -- as *usable* space.  On a big screen, you will see wide margins around that space.
+- divides the usable space into *rows* of *12 columns*.
+
+When you're working with Foundation, you structure the webpage with <div> elements using their special semantic classes, e.g.:
+#+BEGIN_SRC html 
+  <div class="row">
+    <div class="large-8 small-4 columns"></div>
+    <div class="large-4 small-4 columns"></div> 
+  </div>
+#+END_SRC
+
+You can also put rows /inside/ these columns, like this (/note:/ the simple SASS example we used last week would /not/ have allowed this row "nesting"):
+
+#+BEGIN_SRC html 
+  <div class="row">
+    <div class="large-8 small-4 columns">
+      <div class="row">
+        <div class="large-8 small-4 columns"></div>
+        <div class="large-4 small-4 columns"></div> 
+      </div> 
+    </div>
+    <div class="large-4 small-4 columns"></div> 
+  </div>
+#+END_SRC
+So, rather than futzing with layout details yourself, you use the expertise of the Foundation designers and just take what they've given you. 
+
+** SASS, yay!
+As you might imagine, we also get to use SASS to customize our sites.  To do this, though, we need to take the next step in editing:  downloading a real text editor.  Let's do this all together in class:  
+
+[[http://komodoide.com/komodo-edit/][Komodo Edit]] is a free cross-platform text editor.  Click on the download link and download the appropriate version for your computer.  
+
+Once it's working, we need to set up a new server under ~Preferences --> Servers~.  I'll give you the login info in class, but the other info is:
+- Server Type :: SFTP
+- Hostname  :: hackinghistory.ca
+- Default Path :: /var/www/YOURURLPREFIX.hackinghistory.ca/wp-content/themes/grunterie/
+
+*Hint:* We'll be opening a bunch of files in class -- it will be easier to open them all up if you create a project at the end. (~Projects --> New Project~) This will open up all your files for you when you restart the project.  
+
+** And Javascript, too...
+Foundation also comes with lots of useful Javascript function that ease the creation of complex effects, such as modal windows, displaying different data on large and small screens.  
+
+** Last Thoughts
+Foundation is the engine inside the Wordpress themes you'll be using for your class projects; the more you know about them, the better off you'll be.  
+
+
+# /home/matt/HackingHistory/Images/feature-grid-1.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-feature-grid-1.png
+
+
+# HackingHistory/Images/feature-grid-1.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-feature-grid-1.png
+* Lab 16: Wordpress Templates
+We've talked about Wordpress themes [[/lab-05-theming-with-wordpress/][before]]. Today we go a little more in depth into wordpress templates, which are the heart of any theme.  
+
+[[http://codex.wordpress.org/Stepping_Into_Templates][Stepping Into Templates]] is an excellent introduction to Wordpress templates.  I advise you read it, and we will do some of the exercises in class.  More advanced documentation can be found [[http://codex.wordpress.org/Theme_Development#Template_Files][in the Theme Development page]], and also [[http://codex.wordpress.org/Blog_Design_and_Layout][elsewhere on the Wordpress codex]].  I strongly advise you to use this powerful resource.  
+
+One way to think about template files is as [[http://en.wikipedia.org/wiki/Blackboxing][black boxes]], which need to be "opened up" when you have a problem, but otherwise stay safely closed behind the scenes.  When you open the template up, each piece of it is also a black box:  these pieces can either be ignored, or opened up themselves.  Your main job will be to figure to /which boxes you need to open/, and /how to find out more about each piece/.  
+** Templates
+Finally, just a note on how pages are generated in wordpress out of templates.  Quickly read [[http://codex.wordpress.org/Stepping_Into_Templates][this page]] on the wordpress website.  Can you tell where the template divisions are in a page from our site?  Try inspecting the sourcecode or (nuch better!) uing the [[https://developer.mozilla.org/en-US/docs/Tools][Developer Tools]]in your browser.
+
+** Templates are PHP
+Templates are PHP documents.  We have talked a /little tiny bit/ about PHP, but not much.  It is a language like other languages, but designed for the web.  As a result, php files have a strange structure:  they mix pieces of PHP code with pieces of plain HTML markup.  So, you will see things like this:
+
+#+BEGIN_VERSE
+    <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?></a></figure>
+#+END_VERSE
+
+Notice that this is a piece of plain-old HTML, except for a little piece of php embedded in it:
+#+BEGIN_VERSE
+<?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?>
+#+END_VERSE
+All PHP code is contained in tags that start with ~<?php~ and end with ~?>~.  This way, you can write your markup in HTML, and embed /dynamic content/ using PHP.
+
+*** Exercise
+Create a new template file in the main directory of your theme (grunterie).  Call it page-YOURNAME.php
+
+** Identifying your Templates
+Every custom template you write should have a name, so that it can be used in the Wordpress editor interface (and for other reasons as well.) The Template Name is stored as a special comment at the very beginning of the template file.  It will look like this: 
+
+#+BEGIN_VERSE
+<?php
+/*
+Template Name: super Cool Design For Your Awesome Content!
+*/
+?>
+#+END_VERSE
+
+*** Exercise
+Add this text to your template
+
+** Adding the Basic Template Parts
+Every page has three main areas:  The header, the footer, and the content.
+- *the header* contains /both/ the ~<head>~ element -- with all the included CSS and javascript, metadata, etc. -- and the opening ~<body>~ tag, as well as the /header/ that you see at the top of every page.
+- *the footer* closes up the ~</body>~ and ~</html>~ tags, but before doing so, adds everything you want to put at the bottom of every page -- the copyright notice, for instance, and in some cases navigation elelemtns or widgets.
+- *the content* contains everything else -- all the complex layout that comes in between.  For instance, it contains both the *sidebar* and the *Wordpress Loop*.  
+
+To see how it works, Let's make an ultra-simple template.
+
+*** Exercise
+
+Add some structure to your template by adding these lines:
+
+#+BEGIN_VERSE
+<?php /* first get the header */ ?>
+<?php  get_header(); ?>
+
+<?php /* then get the sidebar */ ?>
+<?php get_sidebar(); ?>
+
+<?php /* finally get the footer */ ?>		
+<?php get_footer(); ?>
+
+#+END_VERSE
+
+Now, create a new page on your website (+ button in the interface) and assign in your template file. Make sure you type a title and some content.  What does it look like when you "view page"?
+
+** Adding the Loop
+You will only get your content to display by adding the so-called "loop". Most of this is pretty dark magic (and some developers really hate Wordpress because of this design!).  It is, in fact, a "loop" in php -- a ~while~ loop that repeats for as many posts as are intended to be displayed on the page (for us, it is almost always only one page, except when we build searches).
+
+*** Exercise
+Add this code to your template file:
+#+BEGIN_VERSE
+<!-- Row for main content area -->
+<div class="small-12 large-12 columns" id="content" role="main">
+    <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?></a></figure>
+</div>
+
+	<?php /* Start 'the loop', the mysterious wordpress magic */ ?>
+	<?php while (have_posts()) : the_post(); ?>
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<header>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php reverie_entry_meta(); ?>
+			</header>
+
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+                        <?php $featured_img = wp_get_attachment_image_src ( get_post_thumbnail_id ( $post->ID ), 'single-post-thumbnail' );  ?>
+                        <?php if ($featured_img) { ?>
+                            <div class="lightbox-img featured-img-wrap">
+                              <a href="<?php echo $featured_img[0]; ?>" rel="lightbox"><img src="<?php echo $featured_img[2]; ?>" /></a></div>
+                        <?php } ?>
+			<footer>
+				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
+				<p><?php the_tags(); ?></p>
+			</footer>
+			<?php comments_template(); ?>
+		</article>
+	<?php endwhile; // End the loop ?>
+
+
+#+END_VERSE
+
+This is the main "loop" that grunterie uses for pages.  Where should it go in your file? And what happens when you use it? 
+
+** Template Tags
+So, templates are combination of /static/ HTML layout, and /dynamic/ PHP-generated content.  The PHP functions we use in templates are called ~template tags~.  There are hundreds of them, and most are [[http://codex.wordpress.org/Template_Tags][listed here]].  We have already seen three of them in some detail:  ~get_header()~, ~get_footer()~, and ~get_sidebar()~.  What do they do, and how do you think they work?  
+
+Three is one more important tag in the same category: ~get_template_part('partA', 'partB')~.  The syntax is described in detail in the Codex -- can you find it? Can you read it?  
+
+Every template tag takes ~parameters~ -- sometimes optional, sometimes required.  THere is a lot more info [[http://codex.wordpress.org/Stepping_Into_Template_Tags][here]].  It's worth reading.  
+
+*** Exercise
+Find the template tags inside the Loop.  change some of them to display other information!
+
+** Designing Templates
+You should be now have ideas for your layouts.  We will spend the rest of class implementing them; I will continue to update this page with more details as it becomes clear what you need!
+* Back To Wordpress, People!
+
+Well, here we are again, with just a few minutes to go before class and I'm still not sure what we'll be doing exactly!  The point of this week's class is to give you a little push to start (re-)exploring wordpress as you get ready to learn more for your projects.  You already know [[http://2012.hackinghistory.ca/labsnotes/lab-04-getting-started-with-wordpress/][the basics]]: Wordpress is an extensible MS with two main kinds of extensions:
+
+- [[https://wordpress.org/extend/themes/][Themes]], which mostly control the layout, design and presentation of the site, but can have lots of whirligigs and features in addition
+- [[https://wordpress.org/extend/plugins/][Plugins]], which add new functions to your site -- such as the ability to add a Twitter feed or use a Google Map
+
+There's also a third category: [[https://codex.wordpress.org/Post_Types#Custom_Types][Custom Post types]], also called Custom Content Types.  These are new categories of data that you define, and instrut Wordpress to handle differently from the default data types (such as posts, pages, and "media").  
+
+To get started, you will want to choose a theme that is close to the layout you're hoping for, and modify it to match your desires.  And you'll have to add functionality by installing new plugins; and when they don't quite do what you ant, we'll have to work together to either modify them or write new ones that do what you want.  
+
+** Themes
+This is where most of you will want to start -- you want to have a site that can at least display your working data.  Two immediate concerns:
+- Backwards compatibility:  any newer themes use features that don't reender well in older browser & on older devices.  You have to decide (1) how important these devices are to you and (2) how you will deal with the incompatibilities (usually by using some kind of "fallback" system.
+- Forwards Compatibility:  the web is changing fast and an increasing percentage of web traffic goes through mobile devices -- already in Canada I'm pretty sure it's a majority.  Older websites display quite poorly on these devices.  To work well with these devices you need to work with at least some of the HTML5 & CSS3 features -- like "responsive" design.  
+
+My immediate suggestion to take a look at some of the HTML5, responsive "framework" themes -- these don't have tons of features built-in, but they are built to help you build your own theme the way you want it.  I have a bunch of these installed now, and meant to put a list here but will do so in very short order!  
+
+
+** Plugins
+Custom Content Manager
+* Lab 13: SASS and Wordpress Templates Review
+You will remember that the Wordpress theme we are using, "grunterie", is based on the Foundation web framework and uses SASS for quick and easy modification of CSS.  Today's activities are both a review of what we've already learned, and a a push to get started with some design.  Let's dive RIGHT IN.
+
+** EDITING YOUR SASS FILES
+FIRST, REMEMBER HOW TO USE YOUR EDITOR.  REMEMBER, WE HAVE BEEN USING [[HTTP://KOMODOIDE.COM/KOMODO-EDIT/][KOMODO EDIT]] UP TO NOW, AND YOU SHOULD STILL HAVE A SHORTCUT SET UP THAT LOOKS SOMETHING LIKE THIS:
+
+[[FILE:~/HACKINGHISTORY/IMAGES/KOMODO-PREFS.PNG]] 
+
+NOTICE HOW I'VE REWRITTEN THE DEFAULT PATH -- SINCE YOU WILL BE DOING ALMOST ALL YOUR WORK IN THE GRUNTERIE THEME, CHANGE THIS TO ~/VAR/WWW/PROJECTNAME.HACKINGHISTORY.CA/WP-CONTENT/THEMES/GRUNTERIE~, WHERE "PROJECTNAME" IS "CABBAGETOWN", "CHILDHOOD", OR "CAMPBELL".  
+
+NOW, OPEN A REMOTE FILE: 
+
+[[FILE:~/HACKINGHISTORY/IMAGES/KOMODO-OPEN.PNG]]
+
+THE FILES WE WANT FOR TODAY ARE IN THE ~SCSS~ DIRECTORY.  WE CAN ALSO MAKE CHANGES TO THE ~.PHP~ FILES IN THE THEME'S MAIN DIRECTORY, WHICH ARE THE TEMPLATE FILES ([[HTTP://2014.HACKINGHISTORY.CA/LAB-05-THEMING-WITH-WORDPRESS/][REMEMBER THIS?]]); I'LL TALK ABOUT THAT A LITTLE LATER.  FOR NOW, LET'S TAKE A QUICK LOOK AT THESE THREE FILES:
+
+- ~SCSS/_SETTINGS.SCSS~ IS WHERE YOU WILL DO MOST OF YOUR WORK.  IT LOOKS LIKE THIS:
+
+  [[FILE:~/HACKINGHISTORY/IMAGES/SETTINGS-SCSS.PNG]]
+
+  EACH LINE EITHER STARTS WITH A COMMENT LIKE  ~// COMMENT~ OR A VARIABLE DECLARATION LIKE ~$VARNAME : VALUE~.  TO CHANGE THE DEFAULT STYLES, CHANGE THE VALUES OF ONE OR MORE VARIABLES.
+
+- ~SCSS/APP.SCSS~ READS THE VALUES FROM ~_SETTINGS.SCSS~ AND USES THEM TO GENERATE COMPLEX RULES FORM THE MUCH MORE COMPLICATED ~FOUNDATION~ STYLESHEETS THAT ARE STORED IN A DIFFERENT PLACE.  YOU WON'T EDIT THIS.
+
+- ~SCSS/STYLE.SCSS~ MODIFIES THE FINAL PRODUCT WITH A SERIES OF RULES DESIGNED TO MAKE FOUNDATION FIT BETTER WITH WORDPRESS.  YOU MAY CHANGE A FEW OF THESE, TOO, THOUGH THAT'S NOT ALL THAT LIKELY.  
+
+SO, YOU WILL MOSTLY BE WORKING IN _SETTINGS.SCSS, AT LEAST FOR NOW.  LET'S GET STARTED.  
+
+** CHANGING COLORS
+
+YOU WILL ALMOST CERTAINLY WANT TO CHANGE A NUMBER OF COLORS IN THE SITE IN ORDER TO GET A LOOK-N-FEEL THAT APPROXIMATES YOUR PARTNER'S WISHES.  THE COLORS IN FOUNDATION ARE NOT AS SIMPLE AS THEY SHOULD BE, AND SOME OF THEM CAN BE A PAIN TO HUNT DOWN.  HERE IS A PARTIAL LIST THOUGH:
+- ~$PRIMARY-COLOR~ IS A LIGHT BLUE BY DEFAULT, AND IS USED FOR HIGHLIGHTING LINKS AND HEADINGS (BECAUSE THOSE ARE ALSO LINKS), AND THE BACKGROUND OF THE SEARCH BAR AND SOME OTHER ELEMENTS.
+- ~$SECONDARY-COLOR~ IS A STEEL-GREY, AND IS USED FOR A NUMBER OF BACKGROUNDS AND SOME TEXT COLORS
+- ~$ALERT-COLOR~ IS RED, AND IS USUALLY ONLY USED IF THERE'S SOME KIND OF ERROR.
+- ~$SUCCESS-COLOR~ IS SIMILARLY RARELY USED
+- ~$BODY-BG~ CONTORLS THE BACKGROUND OF THE OFF-GRID PAGE BODY -- OUTSIDE THE CONTENT AREA
+- ~$BODY-FONT-COLOR~ IS THE MAIN FONT COLOR (THIS MAY BE CHANGED A BIT IN SOME CONTEXTS)
+- ~$HEADER-FONT-COLOR~ IS THE COLOR NON-TITLE HEADERS (TITLES ARE LINKS, SO ARE ALWAYS $PRIMARY-COLOR)
+
+THERE ARE NUMEROUS OTHER COLOR SETTINGS BUT THEY MOSTLY KEY OFF OF THESE "MAIN" COLORS, OR APPLY ONLY TO A FEW SPECIALIZED ELEMENTS.  A SLIGHTLY OUTDATED LIST IS [[HTTP://F.CL.LY/ITEMS/1E0H22242A0N1T1P0R2Y/FOUNDATION-WEBSMART.HTML][PUBLISHED HERE]]; AS YOU CAN SEE, MOST ARE SIMPLE.    
+
+*EXERCISE:* USING YOUR MOCKUPS, CHOOSE A PROVISIONAL COLOR SCHEME FOR YOUR SITE.  
+- *FIRST*, CHOOSE A /MAIN COLOR/ THAT EITHER PLAYS OFF OF THE ORGANIZATION LOGO, OR WORKS FROM A "HERO IMAGE" OF SOME KIND
+- THEN, USE AN ONLINE TOOL TO PICK A COLOR SCHEME (FIRST LEARN ABOUT THE [[HTTP://CDN.MAKEUSEOF.COM/WP-CONTENT/UPLOADS/2014/05/COMMANDMENTS-COLOUR.JPG?B9031B][COLOR COMMANDMENTS]]):
+  - [[HTTP://COLORSCHEMEDESIGNER.COM/CSD-3.5/][PALETTON]] IS ONE OF THE MOST POPULAR,
+  - [[HTTPS://COLOR.ADOBE.COM/CREATE/COLOR-WHEEL/][ADOBE COLOR CC]] IS PROBABLY THE MOST WIDELY USED, BUT IT'S TOO HARD FOR ME
+  - [[HTTP://COLOR.HAILPIXEL.COM][HAILPIXEL IS FUN]] AND
+  - [[HTTP://WWW.PICTACULOUS.COM/][PICTACULOUS]] IS A COOL WAY TO EXTRACT A PALETTE FROM AN IMAGE.
+- FINALLY, APPLY YOUR COLOUR SCHEME TO THE WEBSITE BY CHANGING SOME OF THE COLOR VARIABLES WE JUST DISCUSSED.
+
+** NAVIGATION
+THIS THEME COMES WITH THREE NAVIGATION MENUS BY DEFAULT: 
+- THE PRIMARY NAV BAR, WHICH LIVES IN THE TOP BAR
+- THE UTILITY NAV BAR, WHICH LIVES DOWN IN THE FOOTER
+- THE "ADDITIONAL" NAV BAR, WHICH IS A DROPDOWN POSITIONED ON THE VERY RIGHT SIDE OF THE NAV BAR AND IS DISABLED BY DEFAULT.  YOU CAN ACTIVATE IT BY REMOVING THE COMMENTS FROM LINES 70-82 IN THE ~HEADER.PHP~ TEMPLATE FILE, AND THEN ADD CONTENT TO IT THROUGH THE WORDPRESS ADMINISTRATIVE INTERFACE.  
+
+IT IS ALSO POSSIBLE TO CREATE A "OFF-CANVAS NAV" THAT SWOOPS OUT FROM THE LEFT ON MOBILE DEVICES AND REPLACES THE TOP BAR ON THOSE SMALL SCREENS -- BUT IT TAKES A LITTLE BIT OF WORK, SO WE'LL LEAVE THE EXPLANATION FOR ANOTHER DAY.  
+
+ONE THING YOU MIGHT WANT TO DO IS TO CHANGE THE HEIGHT OF THE TOP-BAR, AT LEAST ON LARGE SCREENS.  ALL THE TOP BAR SETTINGS ARE IN SECTION "34" OF ~_SETTINGS.SCSS~, WHICH STARTS AT AROUND LINE 1368.  
+
+IF YOU WANT A FIXED OR STICKY NAV BAR, THIS CAN ALSO BE DONE; YOU JUST HAVE TO ADD A ~<DIV CLASS="FIXED">...</DIV>~ AROUND THE NAV ELEMENT IN ~HEADER.PHP~.  
+
+*EXERCISE:* INCREASE THE HEIGHT OF THE TOP BAR TO GIVE IT A CHUNKIER FEEL.  CHANGE THE BACKGROUND COLOR TO SOMETHING THAT MESHES WELL WITH YOUR MAIN SITE COLOR -- BUT MAKE SURE THAT TEXT IS STILL EASY TO READ (COMPLEMENTARY).  
+
+** GRID 
+MOST OF THE GRID STRUCTURE ON FOUNDATION IS GREAT, BUT SOMETIMES YOU WANT TO FILL THE WHOLE SCREEN; THIS WILL BE ESPECIALLY TRUE IF YOU MAKE HEAVY USE OF MEDIA, OR ARE GOING FOR A PARTICULARLY CONTEMPORARY LOOK.  THIS IS EASILY DONE BY MODIFYING THE ~$ROW-WIDTH~ VARIABLE, CHANGING IT FROM "REM-CALC(1140)" TO "100%". DO THIS AS AN *EXERCISE*, AND SEE IF IT CHANGES YOUR FEELINGS ABOUT THE COLORS.  
+
+** LAYOUT
+THE PART YOU'VE DONE SO FAR CAN BE VERY FIDDLY AND TIME-CONSUMING, BUT FOR THE MOST PART IT ISN'T TECHNICALLY /DIFFICULT/.  A LOT OF THE HARD PART WILL GETTING THE PAGES TO LOOK THE WAY YOU WANT THEM TO.  THIS WILL BE FUNDAMENTALLY PRETTY DIFFICULT, AND OFTEN INVOLVE SWITCHING BACK AND FORTH BETWEEN SASS/CSS AND PHP, BECAUSE YOU WILL NEED TO ADD HTML STRUCTURES FOR YOUR LAYOUT CSS TO GRAB ON TO AND CHANGE.  YOU MAY ALSO NEED TO ADD SOME CUSTOM FIELDS AND CUSTOM CONTENT TYPES -- HEAVY LIFTING! -- BUT WE WIL LGET TO THAT IN ANOTHER SESSION.  
+
+FOR NOW, LET'S TRY DOING A COUPLE OF THINGS: 
+- MAKE SIDEBAR-LESS DISPLAY THE DEFAULT FOR PAGES BY RENAMING ~PAGE.PHP~ TO ~PAGE-SIDEBAR.PHP~ AND ~PAGE-FULL.PHP~ TO ~PAGE.PHP~.  HMM, CAN YOU EVEN DO THAT WITH KOMODO? I HOPE SO!
+- NOW LET'S THINK ABOUT LAYOUT.  ALL OF YOUR SITES HAVE DIFFERENT NEEDS, BUT
+  1) YOU WILL ALMOST ALL BE USING PAGES, AND BLOG POSTS WILL BE DISTINCTLY SECONDARY IF PRESENT AT ALL; AND
+  2) WHEN THINKING ABOUT LAYOUT, THE MOST OBVIOUS AND EASIEST ELEMENTS TO LAY OUT TOGETHER ARE THE *MAIN TEXT* AND *SOME KIND OF IMAGE*. WORDPRESS HAS A UBILT-IN FEATURE FOR HIGHLIGHTING IMAGES -- IT USES SOMETHING CALLED THE 'FEATURED IMAGE" IN THE ADMIN INTERFACE, WHILE IN THE PHP CODE ITSELF IT IS REFERRED TO AS THE "THUMBNAIL".  UNFORTUNATELY, BY DEFAULT PAGES DO NOT HAVE "FEATURED IMAGES", SO LET'S FIX THAT REAL QUICK.  
+
+
+*** FEATURED IMAGES IN THEMES
+FIRST, WE NEED TO ADD FEATURED IMAGE SUPPORT TO THE 'PAGE' CONTENT TYPE.  THIS IS THE KIND OF THING THAT WILL DRIVE YOU MAD IF YOU DON'T KNOW HOW TO DO IT, BUT IS VERY EASY IF YOU DO KNOW HOW.  FIRST, FIND THE FILE ~FUNCTIONS.PHP~ AND OPEN IT.  
+
+ON LINE ~50~ IS THE CODE 
+#+BEGIN_SRC PHP
+ADD_THEME_SUPPORT('POST-THUMBNAILS');
+#+END_SRC
+
+SIMPLY REPLACE THAT LINE WITH 
+#+BEGIN_SRC PHP
+ADD_THEME_SUPPORT( 'POST-THUMBNAILS', ARRAY( 'POST', 'PAGE' ) );
+#+END_SRC
+
+OK, THAT'S STEP ONE -- WE CAN ATTACH A FEATURED IMAGE TO A PAGE NOW; BUT WE HAVEN'T ADDED THE INSTRUCTIONS THAT WILL GET THE FEATURED IMAGE TO DISPLAY IN OUR PAGE TEMPLATE.  TO DO THIS WE WILL HAVE TO OPEN ~CONTENT.PHP~ -- WHICH IS THE TEMPLATE THAT ACTUALLY GENERATES THE DISPLAY OF /POSTS/ -- AND FIND THE LINE THAT SHOWS THE FEATURED IMAGE.  IT'S LINE 16, ACTUALLY:
+
+#+BEGIN_QUOTE
+<FIGURE><A HREF="<?PHP THE_PERMALINK(); ?>"><?PHP IF ( HAS_POST_THUMBNAIL() ) {THE_POST_THUMBNAIL('LARGE'); } ?></A></FIGURE>
+#+END_QUOTE
+
+SO, WE NEED TO PUT THIS SOMEWHERE IN OUR TEMPLATE.  THE QUESTON IS, WHERE?  WE HAVE A COUPLE OF OPTIONS: 
+
+- WE CAN USE "THE GRID" -- FOUNDATION'S AMAZING WAY OF ARRANGING ELEMENTS ON THE PAGE; OR
+- WE CAN INSTEAD JUST FLOAT THE IMAGE /WITHIN/ THE GRID, ALLOWING TEXT TO WRAP AROUND IT.  HOW YOU DO THIS IS KIND OF UP TO YOU, BUT WILL INVOLVE SOME CSS.
+
+*EXERCISE:* DECIDE WHICH METHOD YOU WANT TO TRY, AND, WITH YOUR MOCKUPS IN FRONT OF YOU, TRY TO GET A LAYOUT THAT APPROXIMATES WHAT YOU ARE SHOOTING FOR.
+
+** FURTHER TOPICS
+WE'LL SEE WHERE WE GET ON OTHER TOPICS TODAY -- MUCH WILL DEPEND ON YOUR SPECIFIC GOALS.  
+
+
+  
+
+# HACKINGHISTORY/IMAGES/KOMODO-PREFS.PNG HTTP://2014.HACKINGHISTORY.CA/WP-CONTENT/UPLOADS/2015/01/WPID-KOMODO-PREFS.PNG
+# HACKINGHISTORY/IMAGES/KOMODO-OPEN.PNG HTTP://2014.HACKINGHISTORY.CA/WP-CONTENT/UPLOADS/2015/01/WPID-KOMODO-OPEN.PNG
+# HACKINGHISTORY/IMAGES/SETTINGS-SCSS.PNG HTTP://2014.HACKINGHISTORY.CA/WP-CONTENT/UPLOADS/2015/01/WPID-SETTINGS-SCSS.PNG
+
+* Lab 08: Personas and Wireframes 
+Today we are making an imaginary website.  Here's our brief, noting please that it is /imaginary/.  
+
+** Commemorating Vimy Ridge
+
+With the 100th anniversary of World War I now upon us, the City of Toronto Archives wants to commemorate the [[http://en.wikipedia.org/wiki/Battle_of_Vimy_Ridge][Battle of Vimy Ridge]], but is not sure how to do it.  They have a large collection of letters to and from the Front, as well as access to the usual sources that could provide historical context.  The archive serves the general public but also has important educational functions related to school programs.  We assume for purposes of this exercise that their web department is in some kind of disarray (recent cuts have resulted in everyone being fired, perhaps?) and they come to us with wide-open questions about how to proceed.  They ask us to propose a website that will somehow engage a broad public while also being educational.  What will it look like?  Who will visit the site, and why? Should there be integration with real-world materials?  What can you do to make this a fantastic experience for everyone?  
+
+** Groups
+We'll divide up into groups of 3 for this exercise.
+
+** Personas
+Use the provided persona sheets to come up with 3 idealized user personas for potential site users.
+
+** Sitemap/Site description
+In 1 paragraph, explain the purpose of the site, and draw a rough map that outlines the kind of content you provide.
+
+** Wireframes 
+Use the provided wireframe sketching paper (and your own looseleaf paper) to sketch out each type of page that the site will serve up.  
+
+That's it!
+* Lab 15: Copyright in Digital History
+** Some resources:
+- Toronto Archives, [[http://www1.toronto.ca/wps/portal/contentonly?vgnextoid%3Da82a757ae6b31410VgnVCM10000071d60f89RCRD&vgnextchannel%3D2ee1226b48c21410VgnVCM10000071d60f89RCRD#photographs][copyright guidelines for researchers]]
+- Wikipedia, [[http://en.wikipedia.org/wiki/Fair_dealing_in_Canadian_copyright_law][Fair dealing in Canadian copyright law]]
+- [[http://laws-lois.justice.gc.ca/eng/acts/c-42/FullText.html][Copyright Act]]
+- [[https://www.cippic.ca/en/FAQ/Photography_Law#How][copyright and privacy in Photography]]
+- Michael Geist, [[http://www.michaelgeist.ca/content/view/6695/135/][what the New Copyright Law Means For You]]
+- Michael Geist, ed., [[http://www.press.uottawa.ca/sites/default/files/9780776620848.pdf][The Copyright Pentalogy]]
+- Creative Commons Canada, [[http://www.lib.sfu.ca/sites/default/files/11695/CanadianPublicDomainFlowchart.pdf][Public Domain Flowchart]]
+
+** The Function of Copyright
+- a contest joining 3 parties
+  - authors/creators
+  - copyright industries
+  - users/public
+** Origins of Copyright
+- Statue of Anne (1709/10), or "Act for the Encouragement of Learning".
+  - usually seen as thinly-veiled protection of the interests of the book trade
+- Decret of 19 July 1793, "Declaration of the rights of Genius"
+  - transforms pre-revolutionary "Royal Privileges" into /natural rights/ of authors
+- Copyright clause of the US constitution (1787)
+  - makes most explicit /utilitarian/ claim:
+#+BEGIN_QUOTE
+To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries. ([[http://en.wikipedia.org/wiki/Copyright_Clause][Article I, Setion 8, Clause 8]])
+#+END_QUOTE
+(but cf. [[http://papers.ssrn.com/sol3/papers.cfm?abstract_id%3D2206029][Ariel Katz's argument]])
+** Enlightenment Values
+- Authorship/creativity
+- General Good/General Will
+- These rights are fundamentally in tension with each other
+- But c18 political theory familiar with paradoxes of collective action
+  - cf. /Fable of the Bees/, /Wealth of Nations/
+** In the Americas
+- US Copyrights limited to American authors
+  - an anti-British measure w/ underlying ideology re: freedom of ideas/free societies
+- In Canada: emerges from field of public education
+** Copyright in Age of Mechanical Reproduction
+- Problems of reproduction greatly increase in early c.20 w/ photography, phonograph,film
+- Again w/ VHS, Cassette tape
+- Greatly increased scope of copyright in US (e.g. 1976 removal of requirement to apply for copyright, repeated increases in term of copyright)
+** Digital Issues
+- Every act of consumption is a copy
+  - which means that the capacity of copyright law to regulate consumption is greatly increased!
+- availability of copying/reconstructing far greater
+  - (in 1797 not everyone had a printing press!)
+** Fair dealing in Canada
+- the "user right" side of the equation.
+- no "such as" clause in definition (cf. US)
+  - there used to be doubts about whether we have user's rights here.
+    - since 2004 though the courts recognize them explicitly
+  - 2-part test:
+    1. permitted purpose?
+    2. fairness criteria met?
+  - Web de-institutionalizes many of these practices,
+  - C-11 adds 'education' (limited)
+** Fair Dealing: Permitted Purposes I
+1911 UK copyright law lays out permitted purposes (1921 in Canada):
+- Research
+- Private Study
+- criticism
+- news reporting
+- review
+** Fair Dealing: Permitted Purposes II
+*** 2012 Bill C-11 expands to 3 further purposes:  
+- education
+- satire
+- parody
+*** 2013 "Copyright Pentalogy"  
+- it now appears (after /Alberta (Education)/.and /SOCAN v Bell/) that most purposes are permitted
+** Fair Dealing: Criteria of Fairness
+1. purpose of dealing
+2. character of dealing
+3. amount of dealing
+4. alternatives to dealing
+5. nature of the work
+6. effect of dealing on the work
+** Copyright Terms
+#+BEGIN_QUOTE
+death of the author plus 50 years
+#+END_QUOTE
+** Photos
+*** Published before 1949
+- Public Domain
+*** Created before 1949 but never published
+- Public Domain
+*** Published after 1949
+- life of author + 50
+- unless a corporation, in which case, publication +50
+** Toronto Archive Photos
+- flickr feed:  most are public domain, despite CC Atttrib license
+- in fonds:  license is /not explicit/ and you need to ask permission
+** Film
+- complicated, EITHER publication +50 years, or life-of-author + 50
+** Text
+- life of author + 50 years, unless unpublished, in which case complex.
+** Links
+- embedding of offsite images is /probably/ not copyright violation, but no ruling on that
+- not the greatest practice anyway.  
+** Implicit permission to publish
+- Materials granted to organizations such as CRPM, Campbell House, or the Museum for Childhood, likely imply permission to publish. Burden is on partner organization to ensure they have that permission
+** Your Photographs
+- photographs you take of materials are your own property, and you have permission to use them as you wish.
+- Reproductions of visual art (posters, etc.) are © the original creator; so, e.g., it is likely legal to reproduce the materials from the walls of the Campbell Museum, given their age.
+** Archival Materials
+- Materials residing in archival collections are still © the author, so regular copyright term prevails.  However, terms of the grant may permit early access.
+- Toronto Archive flickr stream is Creative Commons licensed, so free for you to use.  
+** Implications for us
+- Fair Dealing Exceptions (Research, Education), which is great.
+- your case is more convincing if you /analyze/ the document in a way that could not take place without the document being present.  So, using an image or text in an analysis is better than just reproducing them in a gallery.  
+- but careful w/ esp. images (no 'parts', so safest to link to externally-hosted images).
+  - argument can be made that a low-res image is a "part"; and reproduction of an image from a book or other large work is generally allowed (!) 
+
+* Lab 02: Humans and Machines
+Point of today's exercise is to look at how machines and humans interact in the web.  Instead of an assignment, though, we have a graphic...  
+

@@ -1,6 +1,5 @@
 #+INCLUDE: "~/src/orgpaper/default_packages.org"
-#+POSTID: 21
-#+DATE: [2013-05-28 Tue 14:49]
+# #+POSTID: 21
 # #+AUTHOR:    University of Toronto
 # #+EMAIL:     matt.price@utoronto.ca
 #+TITLE:   Syllabus
@@ -27,21 +26,21 @@
 
 | *Instructor:* | Matt Price             |
 | *Email:*      | matt.price@utoronto.ca |
-| *Office Hrs:* | SS 3077 R 1-3          |
-|               |                        |
-
+| *Office Hrs:* | SS 3077 T 12-2         |
 
 * Introduction 
 In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][World Wide Web]] was an obscure technical work-in-progress buried in the depths of a vast research institute.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
 
 Along the way, we will learn about the history of digital media, and their place in the development of the public sphere; and we will also study the history and politics of "engaged" and "public" scholarship.  We will also spend a substantial amount of time acquiring the technical skills needed for a project like this, e.g., the fundamentals of [[http://en.wikipedia.org/wiki/HTML][HTML]] and [[http://www.codecademy.com/tracks/javascript][Javascript]], as well as just enough [[http://ca.php.net/tut.php][PHP]] to work with the [[http://www.wordpress.org][Wordpress]] Content Management System.  No prior technical knowledge is required for this, but you will need to be willing to challenge yourself to learn a few tricks and principles of web programming.  The payoff for that effort is huge: a chance to contribute in a meaningful way to historical discourse beyond the walls of the University, and to explore the frontiers of historical communication in the process.  
 
-
+In 2015-16, the combination of a very small class size and an unusual opportunity have prompted me to make a change to the class's format. We will all be working together with a focus on the Black Creek region of Toronto, in advance of the "Make It Better Fair" scheduled for April, 2016.  The precise shape of the project will rapidly become more clear in September and October. 
 * Course Structure
 ** First Semester
-In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  In advance of the class meeting students will (where not otherwise noted) be expected to produce written responses to the readings in the form of blog postings, and to respond to the postings of at least two other students.  If at all possible, you should bring your laptop or (not as good!) tablet to class for the lab portion.  
+In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  
 
-In certain weeks there are also other types of assignments; these are noted in the outline and referred to in the course requirements.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests. The semester culminates with group presentations of your proposed projects.  
+Every two weeks, students will (where not otherwise noted) be expected to post blog responses to the readings in advance of the class meeting, and to respond to the postings of at least two other students.  If at all possible, you should bring your laptop or (not as good!) tablet to class for the lab portion.  
+
+Also about once every two weeks, there are other types of assignments; these are noted in the outline and referred to in the course requirements.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests. The semester culminates with group presentations of your proposed projects.  
 
 ** Second Semester
 In the second semester it is expected that students will spend most of their time working directly on their project with the partnering organization.  We will meet most weeks to discuss specific technical questions raised by the projects themselves, and will discuss additional readings as needed.  Importantly, students will continue to make regular postings about their progress, and comment on each other's writing.  Projects will be submitted to community partners for review in the second to last week of classes, presented to the class in the final course meeting, and handed in to the professor immediately before the beginning of finals period.  
@@ -50,27 +49,26 @@ In the second semester it is expected that students will spend most of their tim
 In this project-based class, we have relatively few readings and instead focus on active learning through a variety of assignments, all of which are intended to help you build towards your final, collaborative group project.  
 
 The class has 5 kinds of assignments:
-- 19 Weekly Blog Postings   (both semesters, *20%*) 
-- 4 "Short Technical Assignments"   (STA's, first semester, *10%*)
+- 16 Weekly Blog Postings   (6 in semester 1, 12 in semester 2, *20%*) 
+- 5 "Short Technical Assignments"   (STA's, first semester, *10%*)
 - 1 Website Review (First Semester, *5%*)
-- One Written Paper  (7-9 pp, Jan 10, *10%*)
-- The Final Project  (website, ongoing but due April 4, *45%*)
+- One Written Paper  (7-9 pp, Jan 12, *10%*)
+- The Final Project  (website, ongoing but due April 5, *45%*)
 with the balance of 10% for on- and off-line participation, which includes comments on other students' blog posts, contributions to online resources, and discussion.
 
-*Blog Postings* are thoughtful pieces, 300 words or so in length, posted to the course blog by noon the day before class meets (so, noon each Monday).  You will be expected to read your colleagues' postings and respond to them, both online (using the blog's comment function) and in class.  In the first semester, these postings will primarily be /responses to the weekly readings./ In the second semester, they will instead generally take the form of /progress reports/ in which you discuss your final projects and your interactions with partnering organizations, or of /short written pieces from your project site/ (see below).  In the event that I want you to focus on something else, I will inform you one week in advance /in class/.  Some informality in tone is acceptable and even expected, but these are to be serious, thoughtful engagements with the course materials.  Think of them as a cross between a [[http://www.quicksprout.com/2009/07/21/how-to-write-a-blog-post/][regular blog post]] and a [[http://historyprofessor.org/reading/how-to-write-a-review/][review or response paper]].  Citations of online sources should use hyperlinks; other material should be cited as in printed assignments (I recommend [[http://www.chicagomanualofstyle.org/home.html][Chicago Manual of Style]], but we will discuss this at greater length during the semester).  You are expected to blog each week of class, with the exception of the first and last week of each semester, and the week of your website review.  I will comment on individual blog posts as much as possible, but will give out marks only twice a year (approx. Nov. 29 & Apr. 3). 
+*Blog Postings* are thoughtful pieces, 400 words or so in length, posted to the course blog by noon the day before class meets (so, noon each Monday).  You will be expected to read your colleagues' postings and respond to them, both online (using the blog's comment function) and in class.  In the first semester, these postings will primarily be /responses to the weekly readings./ In the second semester, they will instead generally take the form of /progress reports/ in which you discuss your final projects and your interactions with partnering organizations, or of /short written pieces from your project site/ (see below).  In the event that I want you to focus on something else, I will inform you one week in advance /in class/.  Some informality in tone is acceptable and even expected, but these are to be serious, thoughtful engagements with the course materials.  Think of them as a cross between a [[http://www.quicksprout.com/2009/07/21/how-to-write-a-blog-post/][regular blog post]] and a [[http://historyprofessor.org/reading/how-to-write-a-review/][review or response paper]].  Citations of online sources should use hyperlinks; other material should be cited as in printed assignments (I recommend [[http://www.chicagomanualofstyle.org/home.html][Chicago Manual of Style]], but we will discuss this at greater length during the semester).  You are expected to blog each week of class, with the exception of the first and last week of each semester, and the week of your website review.  I will comment on individual blog posts as much as possible, but will give out marks only twice a year (approx. Nov. 29 & Apr. 3). 
 
-*Short Technical Assignments (STA's)* are designed to give you the technical skills you will need for your website development work in the second semester.  Approximately every 3 weeks in the first semester, you will complete a short on or off-line assignment for a pass-fail grade.  The lab assignments will cover basic web skills and other technical topics, which will always have been covered in the third 'lab' hour of class. 
+*Short Technical Assignments (STA's)* are designed to give you the technical skills you will need for your website development work in the second semester.  Approximately every 2 weeks in the first semester, you will complete a short on or off-line assignment for a pass-fail grade.  The lab assignments will cover basic web skills and other technical topics, which will always have been covered in the third 'lab' hour of class. 
 
 The *Website Review* has two parts: a written review of a historical website posted to the course website at least 24 hours before class, and a very short in-class presentation.  We will have one or two website reviews each week in the first semester, except for the first and final meetings.  The written portion is posted to the course website in lieu of that week's blog post and should be tagged "review" to make it easier to find (see the review assignment for more details).  
 
-*The Paper* is due shortly after the beginning of the second semester.  Approximately 8-10 pages long, its format is that of a standard course paper:  a well-researched thesis, supported by evidence garnered from primary and secondary sources.  Students are expected to write on topics related to their *Final Projects* (see below).  
+*The Paper* is due shortly after the beginning of the second semester.  Approximately 7-9 pages long, its format is that of a standard course paper:  a well-researched thesis, supported by evidence garnered from primary and secondary sources.  Students are expected to write on topics related to their *Final Projects* (see below).  
 
 *The Final Project* is a major collaborative effort to build a historical website in service to an organization outside the University.  Students will work in groups of 3-4, collaboratively building a substantive site which balances scholarly merit with the interests of the sponsoring organization and accessibility to the general public.  We have assembled a list of [[./PartneringOrganizations.html][Partnering Organizations]] which have expressed interest in working with you, and you should carefully examine their proposals and discuss them with your peers.   See the [[http://./ProjectGuidelines.or][Project Guidelines]] for more detailed discussion & marking breakdown.  
-
 ** Late Policy
 *Blogs:* blog postings are due by noon /the day before class/. Late blog postings will not be marked.
 
-*STA's:* 5%/day late penalty for the first 4 days, after which they will not be marked.
+*STA's:* no late papers! STA's are pass/fail, hand them in on time please.  
 
 *Paper:* 3%/day.
 
@@ -78,23 +76,23 @@ The *Website Review* has two parts: a written review of a historical website pos
 
 # <<texts>>
 ** Project Timetable
-- <2014-09-30 Tue>: Detailed assignment handed out with preliminary partner suggestions
-- <2014-12-02 Tue>: Project Proposal due and presented
-- [2014-01-07 Tue]: Paper Due 
-- [2014-02-18 Tue]: Intermediate Status Report
-- [2014-03-18 Tue]: Submission to Community Partner
-- [2014-04-02 Wed]: Project Open House/FINAL DUE DATE
+- <2015-10-06 Tue>: Detailed assignment handed out 
+- <2015-12-08 Tue>: Project Proposal due and presented
+- <2016-01-12 Tue>: Paper Due 
+- <2016-02-23 Tue>: Intermediate Status Report
+- <2016-03-29 Tue>: Submission to Community Partner
+- <2016-04-05 Tue>: Project Open House/FINAL DUE DATE
 
 * Texts
 All texts for this course are online, either in the public web or as pdfs.  Most of them are publicly available. You may want physical copies of some books;  these are available at [[http://www.amazon.ca][Amazon]] or by special order from any sizable bookstore. 
 - Cohen & Rosenzweig, /Digital History/ (http://chnm.gmu.edu/digitalhistory/)
 - D. Brown, /Communicating Design: Developing Web Site Documentation for Design and Planning/ (http://communicatingdesign.com/)
-A sizable collection of links is also stored in a [[http://www.zotero.org][Zotero]] database, having been merged with the [[https://www.zotero.org/groups/25659/][course bibliogrpahy]].
+A sizable collection of links is also stored in a [[http://www.zotero.org][Zotero]] database, having been merged with the [[https://www.zotero.org/groups/25659/][course bibliography]].
 * Tools
 We'll be using a number of important software tools, some of them very easy to use, some of them harder.  All of them are free (as in beer, and usually as in speech) and most run on all three major platforms (Windows, Mac, Linux) or on the web.  See the Tools page for more details.
 #<<outline1>>
 * Outline for Semester 1
-** <2014-09-09 Tue> Hacking History
+** <2015-09-15 Tue> Hacking History
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-future-history-small.jpg]]
 Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture.  
@@ -105,7 +103,7 @@ Why we should write history, why everyone should do it, and why that means we ne
 - Wordpress & the course site.  
 - Blogging & social media review.
 - HTML
-**  <2014-09-16 Tue> Language of the Web
+**  <2015-09-22 Tue> Language of the Web
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-Bush-Memex-lg1.jpg]]
 The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
