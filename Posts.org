@@ -1,0 +1,1835 @@
+* 02-learning-html.org
+** Getting Started
+If you have a computer, go straight to jsbin & fool around while I'm talking:
+http://jsbin.com/ifaveb/1/edit#html,live
+** How the web works
+The web is written in a language called [[http://en.wikipedia.org/wiki/HTML][HTML]]. The HyperText Markup Language provides a way for your browser to receive a stream of text and present that stream to you in a human-friendly format.  
+
+Every web page is made up of many [[http://en.wikipedia.org/wiki/HTML_elements ][HTML Elements]], which are joined together to make a unified whole.  Each element is composed of three main parts:
+- an *opening tag*
+- the *element content*
+- a *closing tag*
+Your browser looks for the opening and closing tags and interprets them as an instruction for displaying the element content.  
+*** Anatomy of a tag
+- *Here is some bolded text*.  
+Let's look at the code for this line.
+#+BEGIN_SRC html
+<b>Here is some bolded text</b>
+#+END_SRC
+The opening tag "<b>" tells your browser "apply bold to this element".  
+
+The closing tag </b>tells the broswer where to /stop/ applying bold.
+
+And the content is in this case obvious.
+*** Nested tags
+A really important feature of HTML is that tags can be *nested* -- that is, you can have elements within elements.  So, for instance, the real code for that last line is:
+#+BEGIN_SRC html
+<li>
+<b>Here is some bolded text</b>. 
+</li>
+#+END_SRC
+This says "Make a /list item/.  Then add some text in bold.  
+*** Some important tags
+HTML is a rich language with many capabilities.  We can't possibly learn them all in class, and I myself forget many of them all the time.  But here are some of the most important:
+- <p></p> identifies a /paragraph./
+- <i></i> identifies /italic text./
+- <b></b> identifies /bold text./
+- <h1></h1> to <h10></h10> identify /headings/ of different levels.
+- <a></a> defines a hyperlink
+- the <img /> tag looks a little different, and identifies a special kind of link -- to an image that will be displayed /inline/, that is, within the web page.  
+*** HTML Attributes
+- HTML tags are also allowed to have /attributes/.  These are additions to the opening tag that provide extra information. These can be used, for instance, to control the style in which an element is displayed:
+#+BEGIN_SRC html
+<p align=right>Whoa! This paragraph displays way over to the right!</p>
+#+END_SRC
+
+But for some elements attributes are much more important than that
+**** the href attribute
+Every Hyperlink needs to have a /referent./ For this we *must* use the *href* attribute:
+#+BEGIN_SRC html
+<a href="http://en.wikipedia.org/wiki/HTML">HTML</a>
+#+END_SRC
+**** the src attribute; height and width
+The [[http://w3schools.com/html/html_images.asp][img]] tag looks a little bit different from most other tags, because it has no *element content*.  Instead, the opening tag already contains the closing tag.  So where's the content? It's in the attributes:
+#+BEGIN_SRC html
+<img src="http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg" height=200px width=300px />
+#+END_SRC
+When linking to an image, we absolutely need to identify the /source/ of the image.  And it's almost always a good idea to identify the height and width as well, or a big image will take over your whole desktop.  
+**** Juergen Habermas
+#+ATTR_HTML: height=200px width=300px
+[[http://upload.wikimedia.org/wikipedia/commons/4/4d/JuergenHabermas.jpg]]
+
+** Hacking your way to HTML mastery!
+*** Tools!
+- *View source.* When you right click on a web page in any modern browser, you will see a 'view source' option.
+- *Hackasaurus.* Mozilla has a really neat new tool for kids that you might also find useful, claled "Hackasaurus X-Ray Goggles.  [[http://www.hackasaurus.org]]
+- *jsbin*. The awesome real-time html/javascript previewer.
+- *firebug/inspect element*.  The [[http://getfirebug.com/][firebug extension for firefox]] and [[https://code.google.com/chrome/devtools/docs/overview.html][google Chrome's inspect element]] both let you mess with the code on any website you're looking at.  They're amazingly powerful.  
+*** Tutorials
+- [[http://codeacademy.com][Codeacademy]] may have the best intro to HTML sequence
+- [[http://w3schools.com/][W3 Schools]] provides excellent tutorials.
+- Mozilla's [[http://discourse.webmakerprototypes.org/category/training][Teach The Web]] site has a number of resources
+- [[http://hackbook.hackasaurus.org/][The Hackasaurus hackbook]] is another great place to start
+- [[https://developer.mozilla.org/en/HTML][The Mozilla HTML Reference]] is where I go when I need a detailed explanation of something.  
+
+* 10-history-and-visualization.org
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+# #+DECK_POSTAMBLE: <h1>%a - %t</h1>
+#+DECK_POSTAMBLE: 
+#+DECK_PREAMBLE:
+#+HTML_INCLUDE_DEFAULT_STYLE:
+#+HTML_INCLUDE_SCRIPTS:
+#+DECK_BASE_URL: /home/matt/src/deck.js
+# #+DECK_THEME: web-2.0.css
+#+DECK_THEME: swiss.css
+#+DECK_TRANSITION: fade.css
+#+DECK_INCLUDE_EXTENSIONS:
+#+DECK_EXCLUDE_EXTENSIONS:
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: author:nil c:nil creator:comment d:(not "LOGBOOK") date:nil
+#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
+#+TITLE: History, Data, and Visualization: some quotes
+#+DATE: <2014-11-10 Mon>
+#+AUTHOR:
+#+EMAIL: 
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
+** Moretti
+** Braudel I
+
+#+BEGIN_QUOTE
+An incredible number of dice, always rolling, dominate and determine each individual existence: uncertainty, then, in the realm of individual history; but in that of collective history . . . simplicity and consistency. History is indeed ‘a poor little conjectural science’ when it selects individuals as its objects . . . but much more rational in its procedures and results, when it examines groups and repetitions. 
+#+END_QUOTE
+
+** Braudel II 
+#+BEGIN_QUOTE
+Traditional history, with its concern for the short time span, for the individual and the event, has long accustomed us to the headlong, dramatic, breathless rush of its narrative . . . The new economic and social history puts cyclical movement in the forefront of its research . . . large sections of the past, ten, twenty, fifty years at a stretch . . . Far beyond this . . . we find a history capable of traversing even greater distances . . . to be measured in centuries . . . the long, even the very long time span, the longue durée.
+#+END_QUOTE
+
+- event, cycle, longue durée
+
+** Kuhn, paradigms, normal science: I
+#+BEGIN_QUOTE
+ It’s only when Ptolemaic astronomy begins to generate one ‘monstrosity’ after another, writes Kuhn in The Structure of Scientific Revolutions , that ‘the time comes to give a competitor a chance’—and the same is true here: a historical novel written in 1800, such as Castle Rackrent (or in 1805, like Waverley ’s abandoned first draft) simply didn’t have the incredible opportunity to reshape the literary field that the collapse of the gothic offered Waverley in 1814.
+#+END_QUOTE
+
+** Kuhn, paradigms, normal science: II
+#+BEGIN_QUOTE
+Instead of changing all the time and a little at a time, then, the system stands still for decades, and is then ‘punctuated’ by brief bursts of invention: forms change once, rapidly, across the board, and then repeat themselves for two– three decades: ‘normal literature’, we could call it, in analogy to Kuhn’s normal science.
+#+END_QUOTE
+
+** Bodenhammer
+** General and Particular
+#+BEGIN_QUOTE
+In its essence, history seeks to generalize from the particular, not for the purpose of finding universal laws but rather to glean insights about cause and effect form a known outcome.  Here, history differs from social science, which attempts to reach a generalization that holds true in any similar circumstance.  
+#+END_QUOTE
+
+**  Words
+#+BEGIN_QUOTE
+Multiplicity is inherent in the word-narratives used to communicate history.  Words are complex forms of information; they have "halos of meaning," making them wonderfully evocative but imprecies and slippery...  Historians emprace this range of meanings.  We prefer the medium of words and narratives because it permits us to represent the past as multidimencsional, complex and nonlinear, even though structurally our prose and our logic are sequential.
+#+END_QUOTE
+**  multiplicity within GIS:
+#+BEGIN_QUOTE
+Perhaps historical GIS ultimately makes its contribution not as a positivist tool but a reflexive one: integrating the multiple voices and views of our past, allowing them to be seen and examined at various scales; creating the simulaneous context that historians accept as real but unotainable by words alone; reducing the distance between the observer and the observed; and permitting the past to be as dynamic and contingent as the present.  
+#+END_QUOTE
+** Theibault
+** Visualizing Napoleon
+[[http://writinghistory.trincoll.edu/wp-content/uploads/2011/09/Minard.png]]
+** Learning to read
+#+BEGIN_QUOTE
+It is clear from these sites that people are still expanding the realm of the possible in visualizing information. Looking over these visualizations, even when they are not explicitly historical, will give historians strategies for making more powerful arguments to complement, and sometimes even substitute for, text. But the task of building those arguments will have to include educating fellow historians about how to interpret visualizations. As noted above, it can be very difficult for the uninitiated historian to intuit relationships between entities in a network analysis when they are put into a visualization scheme.  Yet networks are often at the center of questions of greatest interest to historians. To the extent that the difficulties in interpreting innovative visualizations like interactive network diagrams are caused by a simple lack of familiarity with them, they can be overcome by building more such sites. To the extent that they are caused by a lack of background knowledge to understand the cues, creators of such sites will have to learn to build new ways of incorporating that background information as economically in the use of text as possible. In either case, at some point historians will have to accustom themselves to “reading” network diagrams as adeptly as they read maps or scatterplots.
+#+END_QUOTE
+* 20-learning-about-layout.org
+#+BLOG: hh
+#+POSTID: 731
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
+#+TITLE: Thinking about Layout
+#+DATE: <2015-02-26 Thu>
+#+AUTHOR:
+#+EMAIL: matt@osskil.lan
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
+
+
+Daniel has requested that we spend some time this week thinking about site layout.  This is a somewhat broad question, actually, so let's divide it into component parts.  
+
+** Basics
+At the most basic level, layout, like other elements of presentation is largely controlled by CSS, and the CSS is, for us, generated from the Foundation SCSS.  So, for instance, the height of the topbar is set by the variable ~$topbar-height~ near line ~1378~ of ~_settings.scss~.  The width of rows is set by ~$row-width~ (line 82 or so). The number of columns, by ~$total-columns~ (line 12).  Using CSS, you can customize the ~float~ value of different components to control whether they appear on the left or right of their containing element, while ~padding~ and ~margin~ control the distance between content and border, and between border and surrounding elements.  
+
+So, to understand what's happening in the page layout, at the most basic level, you need to have a grasp of the basic CSS classes provided by the Foundation framework within which we work.  You can learn all about them [[http://foundation.zurb.com/docs][here]], and in the rest of the documentation, eg. [[http://foundation.zurb.com/docs/components/grid.html][check here for the grid]].  Also check out the [[http://codepen.io/ZURBFoundation/pen/olduj][Foundation Codepen examples]], which show their grid and some other featues in action. Showing just the most basic example:
+
+#+BEGIN_SRC html
+  <div class="row">
+    <div class="small-12 medium-3 columns" id="sidebar">
+      This div contains the sidebar
+    </div>
+    <div class="small-12 medium 9 columns" id="main">
+      While this wone contains the main content.  
+    </div>
+  </div>
+  <div class"row">
+    Everything in this row will appear below everything in the row above.  
+  </div>
+#+END_SRC
+
+You should be able to figure out the layout just by looking at the div class names -- can you?  
+
+** Wordpress Layout in Templates
+
+Or course, to work properly, CSS requires elements to be labelled with the right classes.  We create those labels when we generate the HTML for a post or page. But where does the HTML come from?  From the PHP templates, as you will remember.  If you want the same layout on every page -- and for most things, you do -- then you should set the layout in the template.  So for instance, we might, as a trivial example, have this:
+#+BEGIN_SRC php
+  <div class="row">
+  <?php get_sidebar ?>
+    <div class="small-12 medium 9 columns" id="main">
+      <?php the_title ?>
+      <?php the_content ?>
+    </div>
+  </div>
+
+#+END_SRC
+
+So, in order to change the layout, you will need to modify template files directly.  Sometime,s this will just mean adding CSS classes to existing ~div~ elements; more often, you will be inserting additional wordpress "template tags" -- that is, wordpress php functions that generate specific HTML.  
+
+I could be more specific, but you need to decide what layout elements you want.  For instance, do you want to include extra widgets, either in the footer, the sidebar, or elsewhere?  [[http://wpshout.com/need-know-making-widget-areas-wordpress-themes/][Here is one of many web tutorials]] that tell you how to do this.  Do you want to position a featured image somewhere on the page? [[http://codex.wordpress.org/Function_Reference/the_post_thumbnail][The documentation for the_post_thumbnail]] has lots of info about how to do that.  
+
+It would be helpful if you guys could ask some specific questions in the comments to this post -- then I can update with relevant examples.
+
+** Sidebar Widgets
+Mike asked how to display a Twitter feed in a page. This is best thought of as part of a more general question: how do you create a box of content that (a) is displayed in a way that separates it visually form the main part of your post, and (b) contains automatically generated content, that doesn't have to be curated by a user or editor?  
+
+The answer is: use a [[http://codex.wordpress.org/WordPress_Widgets][widget]]. From a user's perspective, widgets are small bits of information that appear in a sidebar or other segregated area of a website (like the footer, for instance).  From an administrator's perspective, widgets are "gadgets" that you can drag and drop into your theme's sidebar areas; when the sidebar displays (in any template that calls ~<?php get-sidebar(); ?>~), it will call up those widgets.
+
+From a developer's perspective, widgets are bits of code that run and produce HTML whenever they are hooked into the sidebar.  [[http://code.tutsplus.com/articles/building-custom-wordpress-widgets--wp-25241][Here is one tutorial]] that shows you how to code them; [[http://codex.wordpress.org/Widgets_API#Developing_Widgets][here is the official documentation]]; and here is [[http://automattic.com/code/widgets/plugins/][one more resource  that may be helpful]]. 
+
+However, in the case of a twitter feed, you already have a zillion options.  [[https://wordpress.org/plugins/easy-twitter-feed-widget/][Easy Twitter Feed widget]] is one; and [[http://www.elegantthemes.com/blog/resources/best-twitter-widget-plugins-for-wordpress][here is a list of some of the most popular alternatives]]. 
+
+** Editing layout in the Visual editor
+It is also possible to control layout on a page-by-page basis by adding css classes to elements within a post.  I have done this in my syllabus -- I created new rules for a  css class, ~org-upload~, and then added that class to all the images in the "Course Outline" section.  You can do this pretty easily from within the html editor.  But in the visual editor, it's pretty difficult.  First you need to  make the visual editor aware of the new styles -- tell it how they look, so that your preview looks as it should.  Then, in addition, you need to provide some way for users to access the new style from the user interface.  This is pretty complicated, unfortunately!  You can read all about it [[http://codex.wordpress.org/Function_Reference/add_editor_style][here]] and [[http://codex.wordpress.org/TinyMCE_Custom_Styles][here]].  Fortunately thre is a plugin that will do *much* of the work for you -- you can find it [[https://wordpress.org/plugins/tinymce-and-tinymce-advanced-professsional-formats-and-styles/][here]].  However, you will still need to /define/ the new styles and /make the editor aware of them/.  But this is simple CSS -- if you want to do this, indicate in the comments section and  will work with you to create appropriate stiles.  
+
+
+* 22-media-queries.org
+#+POSTID: 777
+#+DATE: [2015-03-17 Tue 09:51]
+#+BLOG: hh
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Understanding Media Queries
+
+So-called "responsive" sites are built using [[https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries][media queries]], which ask the browser, "what kind of screen am I displaying on?", and then apply one set of rules for (say) small or portrait-oriented screens, and another for (say) large or landscape-oriented screens.  Foundation is a "mobile-first" framework, so first it defines all the classes for small screens, and then it adds new rules for medium (641-800px) and large screens.
+
+Media queries look like this: 
+
+#+BEGIN_SRC css
+  @media only screen  and (max-width:640px) {
+      body {
+          background-color:pink;
+      }
+  }
+#+END_SRC
+
+What will this CSS snippet do? How would you adjust for other sizes?
+
+
+In Foundation, [[http://foundation.zurb.com/docs/media-queries.html][there are a number of media queries]].  They are ~small~, ~medium~, ~large~, ~xlarge~, ~xxlarge~, and /also/ ~small-up~, ~medium-up~, etc.  Here are two snippets that show the difference:
+
+#+BEGIN_SRC css
+  @media only screen  and (min-width:641px) and (max-width:800px) {
+      body {
+          background-color:blue;
+      }
+  }
+
+  @media only screen  and (min-width:641px) {
+      h1 {
+         font-size: 20px ;
+      }
+  }
+
+#+END_SRC
+
+What differences do you notice? 
+
+So, many of the classes in Foundation change dramatically when you move from one screen size to another. The topbar nav changes from a horizontal to a vertical and self-hiding stack, the slide-out menu (which note of us are using) changes to a solid sidebar on larger screens, the whole grid changes to different column orientations, etc.  It is also possible to hide some elements entirely using the Foundation [[http://foundation.zurb.com/docs/components/visibility.html][visibility classes]]. 
+
+So, for instance, to borrow their examples:
+
+#+BEGIN_SRC html
+<p class="panel">
+  <strong class="show-for-small-only">This text is shown only on a small screen.</strong>
+  <strong class="show-for-medium-up">This text is shown on medium screens and up.</strong>
+  <strong class="show-for-medium-only">This text is shown only on a medium screen.</strong>
+  <strong class="show-for-large-up">This text is shown on large screens and up.</strong>
+  <strong class="show-for-large-only">This text is shown only on a large screen.</strong>
+  <strong class="show-for-xlarge-up">This text is shown on xlarge screens and up.</strong>
+  <strong class="show-for-xlarge-only">This text is shown only on an xlarge screen.</strong>
+  <strong class="show-for-xxlarge-up">This text is shown on xxlarge screens and up.</strong>
+</p>
+
+<p class="panel">
+  <strong class="hide-for-small-only">You are <em>not</em> on a small screen.</strong>
+  <strong class="hide-for-medium-up">You are <em>not</em> on a medium, large, xlarge, or xxlarge screen.</strong>
+  <strong class="hide-for-medium-only">You are <em>not</em> on a medium screen.</strong>
+  <strong class="hide-for-large-up">You are <em>not</em> on a large, xlarge, or xxlarge screen.</strong>
+  <strong class="hide-for-large-only">You are <em>not</em> on a large screen.</strong>
+  <strong class="hide-for-xlarge-up">You are <em>not</em> on an xlarge screen and up.</strong>
+  <strong class="hide-for-xlarge-only">You are <em>not</em> on an xlarge screen.</strong>
+  <strong class="hide-for-xxlarge-up">You are <em>not</em> on an xxlarge screen.</strong>
+</p>
+#+END_SRC
+
+
+Take a look at the link above; it will show you how these work.
+
+In terms of practical applications: if there is something you don't like about the mobile versions of the site, we should discuss in class. Basically you will want to wrap your changes to~app.scss~ in a ~@media {}~ construct, then write normal css within the brackets.  
+
+**Bonus Tip:* The menus at the bottom of the page are starting to drive me crazy!  The easy way to get rid of them altogether is just to comment out one line of code in ~footer.php~: 
+
+#+BEGIN_SRC php
+            <?php //wp_nav_menu(array('theme_location' => 'utility', 'container' => false, 'menu_class' => 'inline-list')); ?>
+#+END_SRC
+
+That's line 18 -- just add the ~//~ after the ~<?php~.  Alternatively, define a new, empty menu and assign it to the role "utility" in the menu editor (under "Appearance" in the dashboard). This is a more flexible method, as it allows you to add a few items to the menu at a later date.  If you just want a couple of static links you can add them by hand, maybe using some foundation grid structure to space them properly on different displays.
+* 23-customizingmenus.org
+#+BLOG: hh
+#+POSTID: 790
+#+DATE: [2015-03-24 Tue 10:21]
+#+BLOG: hh
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+HTML_MATHJAX:
+#+INFOJS_OPT:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.4.1 (<a href="http://orgmode.org">Org</a> mode 8.3beta)
+#+LATEX_HEADER:
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
+#+OPTIONS: e:t email:nil f:t inline:t num:nil p:nil pri:nil prop:nil
+#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:nil todo:t |:t
+#+TITLE: Customizing Admin Toolbar to provide Extra Help
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.4.1 (Org mode 8.3beta)
+
+Here are two quick snippets of code to change the admin toolbar for your partners.  I find them both useful -- let's discuss in class.
+
+#+BEGIN_SRC php
+//Change Howdy Text
+add_filter('admin_bar_menu','change_howdy_text_toolbar');
+function change_howdy_text_toolbar($wp_admin_bar)
+{
+	$getgreetings = $wp_admin_bar->get_node('my-account');
+	$newtitle = str_replace('Howdy','NEWGREETINGHERE',$getgreetings->title);
+	$wp_admin_bar->add_node(array("id"=>"my-account","title"=>$newtitle));
+}
+#+END_SRC
+
+#+BEGIN_SRC php
+add_action( 'admin_bar_menu', 'Add_Menu_To_Toolbar', 500 );
+
+function Add_Menu_To_Toolbar($wp_admin_bar){
+
+$menu = wp_get_nav_menu_object( "Toolbar Menu" );
+$menu_items = wp_get_nav_menu_items( $menu->term_id );
+						
+   foreach ($menu_items as $items) {
+	$args = array( 'id' => 	$items->ID,
+		'title' => 	$items->title,
+		'parent' =>     $items->menu_item_parent,
+		'href' 	=> 	$items->url,
+		'meta' 	=> 	FALSE
+	);
+				
+	$wp_admin_bar->add_node( $args );
+   }
+}
+#+END_SRC
+
+(note: you will of course have to CREATE A MENU in the ~Appearance --> Menu~ interface in the Wordpress admin area.)
+* choosing-a-map-plugin.org
+#+POSTID: 677
+#+DATE: [2015-02-03 Tue 09:45]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Maps Recap
+
+Many thanks to Marcel Fortin for his invaluable lesson yesterday.  We learned a lot, and yet I think we only just barely scratched the surface.  
+
+I have spent the last two days trying to figure out the next steps for our projects, and I think I understand it now.  But first, a warning and a review.
+
+** Warning
+This is a very tricky task.  I have just spent two full days trying to understand it better.  Expect this to take a very long time.  
+
+Your best bet: set aside some time to go to the map library, and ask for help.  You will need to use ARCgis and probably a number of other tools.  Be patient and diligent.  
+
+
+** Georeferencing
+
+We learned two methods of georeferencing images.
+- The Easy Way :: Fire up Google Earth, press a few buttons, export as .KMZ, /voilà/, you're done!
+- The Hard Way :: import into ARCmap, choose a co-ordinate system, adda base map, navigate to Toronto, painfully reference a number of co-ordinates, warp the picture, export as geoTIFF but make sure to get the "nodata" color right in the settings somewhere, /voilà/, you're, er, well, not done exactly so much as sort of started.
+- The Other Way :: I can't get ARCgis at home, so I used [[http://www.qgis.org/en/site/][qGIS]], a pretty amazing Open Source GIS tool.  I won't describe the whole process, but there are tutorials [[http://www.qgistutorials.com/en/docs/georeferencing_basics.html][here]] and [[http://www.qgistutorials.com/en/docs/advanced_georeferencing.html][here]] (read them in order).  One important thing: when exporting the geoTIFF, I had to be sure to click the "nodata" button at the bottom, otherwise I ended up with that thick black line that Marcel got during class. Remember: after you've finished georeferencing the geoTIFF, you need to *export as png*!  This is the file you will use later on.   
+
+So we should do this the easy way, right?  Well, that's what I thought, until I learned that /georeferenced images exported from Google Earth do not display properly in Google Maps!/  It seems impossible but it's true -- Google Maps cannot read the "Rotation" attribute of "GroundOverlays" -- georeferenced images -- and so, those images will not display correctly on a map.  Ugh!  
+
+So, we need to do things the hard way.  What a drag!  
+
+
+
+There are [[http://www.wpmayor.com/best-google-maps-plugins-for-wordpress/][zillions]] of Wordpress mapping plugins available.  They have different feature sets and price points, and cater to a wide variety of audiences.  It can be very difficult to navigate this space!
+
+** Building a KML file
+I don't have access to ARCgis, so I can't tell if it's posible to build a kml file directly in that program.  In qGIS, it's not possible!  Blah!
+
+THis means we have to build a KML file from scratch.  Fortunately it's not that complicated.  Here is a a model kml file:
+
+#+BEGIN_SRC xml
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<GroundOverlay>
+	<name>PUT A MEANINGFUL NAME HERE </name>
+	<color>ccffffff</color>
+	<Icon>
+		<href>HREF OF YOUR IMAGE HERE</href>
+		<viewBoundScale>0.75</viewBoundScale>
+	</Icon>
+	<LatLonBox>
+		<north>DECIMALNORTHBOUNDARY</north>
+		<south>DECIMALSOUTHBOUNDARY</south>
+		<east>DECIMALEASTBOUNDARY</east>
+		<west>DECIMALWESTBOUNDARY</west>
+	</LatLonBox>
+</GroundOverlay>
+</kml>
+
+#+END_SRC
+
+All you have to do is fill in *6* fields.  But first you have to figure out what values to use.  
+
+*** Name
+Be sure to choose something memorable, in some programs the name is used to keep track of this layer.
+
+*** href
+Wait a moment, we'll come back to this. 
+*** North, South, East, West
+These are the most important and difficult values toget -- they're the precise boundaries of your warped, modified TIFF file, expressedin decimal degrees (like, -79.86592010).  Unfortunately, qGIS only uses degree/minute/second, like ~73d43'26.5324~.  You can see these values in qgis by clicking on ~Raster --> Miscellaneous ==> information~.  To convert them to decimal, use an online calculator like [[http://www.fcc.gov/encyclopedia/degrees-minutes-seconds-tofrom-decimal-degrees][this one]].  Once you have the right values, enter them in the kml file.
+** Uploading to Wordpress
+This is a tricky part!  The next thing you do is upload the georeferenced TIFF file to wordpress using the media uploader.  Click on "Edit this image", and copy the full URL.  It will look something like this:
+[[http://cameron.hackinghistory.ca/wp-content/uploads/2015/02/media-edit-screen.png]] 
+
+The URL will look a bit like this: ~http://cameron.hackinghistory.ca/wp-content/uploads/2015/02/media-edit-screen.png~.  
+
+Now you're ready to finish editing your KML file.  Add this URL to the ~<href>~ field.  Now, upload the .KML file to Wordpress using the media uploader.  You will point to this file with your map plugin (see below -- sort of!).
+** What's next?
+The next step is to choose a map plugin.  This is not an easy task!  There are dozens and dozens of them, and they have different feature sets.  I have figured out how to use a couple of them, and so far, [[https://github.com/benhuson/WP-Geo/wiki/wpgeo_map_js_preoverlays][WP-Geo]] is my favourite.  The tutorial in that last link explains how to add a KML.  Read through it, and in class we can modify the script to work with your maps.  Whew!  
+
+* crowdsourcing-the-past.org
+#+POSTID: 472
+#+DATE: [2010-10-19 Tue 22:46]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: pre-class-notes, 
+#+TAGS: crowdsourcing, 
+#+DESCRIPTION: 
+#+TITLE: Crowdsourcing the Past
+
+Let's start with this quote from [[http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42][Rosenzweig]]:
+
+#+BEGIN_QUOTE
+Can the wiki way foster the collaborative creation of historical knowledge? One promising approach would leverage the volunteer labor of amateurs and enthusiasts to advance historical understanding. Historians have, of course, benefited from the labors of amateurs and volunteers. Think of the generations of local historians who have collected, preserved, and organized historical documents subsequently mined by professional historians. But the new technology of the Internet opens up the possibility of much more massive efforts relying on what the legal scholar Yochai Benkler has called "commons-based peer production." 
+#+END_QUOTE
+
+These possibilities are some of the most exciting ones on the web, and I want to be sure we make use of them /but not foolishly/.  Rosenzweig is very cautious in his estimation of the possibilities of open source history; this may be because he was far too reliant on Wikpedia as an example (and also because the Wikipedia he was looking at, in 2006, was far less developed than it is today).  Most of the other articles (leaving aside Aaron Swartz's for now) give examples of interesting collaborations that are mediated by technology.  The search for Steve Fossett, though not remotely historical, is nonetheless interesting because of the way it calls upon a community which is itself created out of an event (Fossett's disappearance) and joins thousands of people together in pursuit of a common goal.  [[http://crisiscommons.org/][Crisis Commons]] is a somewhat similar project, in that it joins like-minded geeks together in an infrastucutre around ocmmon interests which themselves almost emerge form the infrastructure itself.  How can we put this to use in a historical project?  Steve.museum offers some interesting insights, which should be somewhat familiar from our delicious experience: tagging is a fantastic way to involve a wide public in collectively evaluating a work of art or a piece of analysis.  There is a kind of wisdom of the mass which can be captured by such an endeavour, but at the same time an organizational benefit to tags that opens new possibilities for use of a collection (remember [[http://www.theatlantic.com/magazine/archive/1969/12/as-we-may-think/3881/][Vannevar]]?).  We need to think about how to mobilize the communities who care about our projects in similar ways.  Look forward to hearing what you have to say over the next 2 days. 
+
+* crunch-time.org
+#+BLOG: hh
+#+POSTID: 768
+#+DATE: [2015-03-16 Mon 13:56]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Crunch Time!
+
+Hey folks! I'm really looking forward to these projects coming together! What do you need in class tomorrow to support you as you move towards a final push?
+
+
+
+* custom-post-types.org
+#+POSTID: 693
+#+DATE: [2015-02-10 Tue 06:09]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+PARENT: Labs And Notes, 
+#+TITLE: Custom Post Types in Wordpress
+
+I've spoken before about custom post types.  Here's a slightly more in-depth discussion
+
+** Reasons for Custom Post Types
+*** Good Reason
+The main reason to have a custom post type is when you have /structured information specific to a particular type of post/.
+*** Bad Reason
+Sometimes its tempting to think you need a custom post type just because you want /different layouts/ for different pieces of information.  This is mistaken.  In this case, all you generally need is /category- or page-specific templates/.  We'll quickly go over how to do this.
+*** A bit more detail
+
+Let's take an example or two.  
+
+Last year, when the Hart House group was putting together their website, they wanted to be able to profile prominent people associated with the theatre.  They could have just used pages, but they realized there was particular information they wanted displayed in the same way for each person:  
+- an image
+- position, if they had an official post at the theatre
+- era they worked there
+- select productions
+
+In principal, this information could have just been included in every post, but that would have been confusing.  So they built a custom post type ("hh_people") and then made templates that displayed that custom information in /the same structured way/ for every person.  [[http://harthouse.hackinghistory.ca/?post_type=hh_people&p=73][Here's an example]]. 
+
+They also had a special page for showcasing the architecture of the building.  It had a number of special features, but it was just one page.  In this case ,it didn't make sense to build a custom post type -- they just carefully managed the layout of the page, [[http://harthouse.hackinghistory.ca/architectural-history/][as you can see here]].
+** Tale of two templates
+Let's say I want most of my pages to be displayed full-width; but if the page is in category "lemons" than I want things to look different.  Here's a template that does this.
+
+#+BEGIN_SRC php
+<?php
+/*
+Template Name: Default Page
+**/
+get_header(); ?>
+
+<!-- Row for main content area -->
+
+	<?php /* Start loop */ ?>
+<?php while (have_posts()) : the_post();
+if (in_category ('lemons')):
+?>
+    
+                <div class="small-12 medium-4 columns" id="category-list" style="background-color:yellow;">
+                    <?php
+                    $args = array (
+                        'cat' => 5,
+                        'posts_per_page' => -1, //showposts is deprecated
+                        'post_type' => 'page',
+                        'orderby' => 'date',
+                    );
+                    $cat_posts = new WP_query($args);
+                        if ($cat_posts->have_posts()) :
+                                 echo "<ul>";
+                                 while ($cat_posts->have_posts()) : $cat_posts->the_post(); ?>
+                        <li><?php the_title(); ?></li>
+                    <?php endwhile;
+                    echo "</ul>";
+                    endif;
+                        
+                        ?>
+                        
+                </div>
+                <?php
+                else:  
+	        get_sidebar();
+                endif;
+                ?>
+                
+                
+                
+	        <div class="small-12 large-8  columns" id="content" role="main">
+                    
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<header>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php reverie_entry_meta(); ?>
+			</header>
+
+          <?php $thisid= get_the_ID();  echo hackhist_slider_template( $thisid ); ?>
+                        
+
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+			<footer>
+				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
+			</footer>
+		</article>
+	<?php endwhile; // End the loop ?>
+                </div>
+	</div>
+        <div class="row">
+        </div>       
+<?php get_footer(); ?>
+
+#+END_SRC
+
+You may have trouble reading this, but the idea is simple:  if the page is in category 'lemons', then we'll build a list of all lemons pages and replace the sidebar with that list; otherwise, just get the sidebar.  
+
+** Desiging a custom Post Type
+
+Before you create a custom post type, ask yourself these questions:
+- what kind of information display do I want?
+- what extra fields will I need?
+- what should I call this? (pick something intuitive)
+
+Spend a few minutes sketching out your desired display
+
+** Creating Custom Post Types and Fields
+For this we'll install two plugins:
+- [[https://wordpress.org/plugins/custom-post-type-ui/][Custom Post Type UI]]
+- [[http://www.advancedcustomfields.com/][Advanced Custom Fields]]
+
+I will let you figure out how to manage these, but basically:
+- to /create/ your custom post types, navigate to  ~CPT UI~ in your sidebar.
+- to /add new fields/ to your post types, navigate to ~Custom Fields~, and then ~add new fields group~ (top-ish left), and then ~add field~.  
+
+** Creating new templates
+Now you still have to display the custom information in your templates!  To do this, create a new template named ~YOURPOSTTYPE.php~ (start with the page.php or single.php text to make it easier on yourself!), and add extra fields & structure for the new information.  The two new template tags you should know about are ~the_field()~ and ~get_field()~, which will retrieve the custom fields attached to your post.  You can [[http://www.advancedcustomfields.com/resources/displaying-custom-field-values-in-your-theme/][read more about it here]].
+
+** Learn more!
+There's tonnes more to learn -- I am around to help you and will do some of this with you today.  
+
+* designing-a-slider.org
+#+POSTID: 642
+#+DATE: [2015-02-02 Mon 20:13]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Designing a Cool Slider with Minimal Effort
+
+** Background 
+The Childhood group has a couple of special needs for an important subset of their pages.  Some of their pages focus on an object of group of objects, and they want to be able to have those images display at the top of the page in the following manner (approx.):
+
+#+ATTR_HTML: :class alignright figure
+[[http://2014.hackinghistory.ca/wp-content/uploads/2015/02/childhood-exhibit-mockup.png]]
+
+Their initial plan was to install one of the many slider plugins -- they chose one which was[[http://www.wonderplugin.com/wordpress-gallery/][ particularly lovely to look at]].  However, wordpress slider plugins are not really designed for automated use. They depend on the user to create slideshows and then attach the slideshows to individual posts, usually by adding a "[[http://codex.wordpress.org/Shortcode][shortcode]]" to the post.  The slider will show up wherever the user adds the shortcode, so consistency of appearance will depend on the users' consistency.  
+
+For this project, in which the website will be handed over to people with no technical experience, it is probably better to give them a more constrained solution that restricts them to a uniform layout.  It turns out that this is not at all a simple task, but in the end it was not so hard.  Here's the process I followed when I was figuring it out.
+
+** Architecture
+I had two goals:
+- simplest possible user experience
+- simplest and most maintainable code
+
+These two goals are always in tension.  In this case, the first goal is the most important, so we will do some slightly convoluted things to make our code work. Here's what we need:
+
+- a simple, obvious way to attach multiple images to pages -- like the built-in "featured image" capability, but more powerful
+- a slider "library".  Foundation actually comes with one, called [[http://foundation.zurb.com/docs/components/orbit.html][Orbit]], but it is deprecated and not as pretty as the Childhood group wanted.  So I hunted around and found one called [[http://www.woothemes.com/flexslider/][FlexSlider]], which seemed powerful and pretty enough for the group's needs.
+- page templates that displayed those attached images using FlexSlider.  That is, the templates have to produce HTML markup that FlexSlider recognizes and transforms into slider form.  As you'll see, for most sliders this takes the form of a ~<ul>~ list of images that's wrapped in one or more ~<div class="something distinctive">'s~
+- some bits of glue that tell Wordpress how to include the FlexSlider code when pages are loaded, and a few other little tasks.  
+
+** Multiple Attachments
+There are a couple of wordpress plugins that do this kind of thing, and I settled more or less at random on [[https://wordpress.org/plugins/attachments/][Attachments]], which is relatively simple and straightforward.  I installed it and [[https://github.com/jchristopher/attachments#documentation][carefully read the documentation]], which I always try to do when I install a plugin.  In this case, it was clear and well-written, which is usually a good sign. The plugin is pretty powerful and allows you to set up complex entry fields on different post types; this is detailed [[https://github.com/jchristopher/attachments/blob/master/docs/usage.md#setting-up-instances][here]], but I didn't need this capacity so I ignored it for now.  Much more important was learning [[https://github.com/jchristopher/attachments/blob/master/docs/usage.md#pulling-attachments-to-your-theme][how to get access to the attachments]].  I learned a few things.  
+
+First, I found out that you need to "create an Attachments instance" in order to access them in your template: 
+#+BEGIN_SRC php
+  <?php 
+    /* 'attachments' is the default name, don't change it */
+    $attachments = new Attachments( 'attachments' );
+  ?>
+#+END_SRC
+Second, I learned how to loop through attachments while creating some HTML code to wrap them in: 
+
+#+BEGIN_SRC php
+<?php if( $attachments->exist() ) : ?>
+  <h3>Attachments</h3>
+  <ul>
+    <?php while( $attachment = $attachments->get() ) : ?>
+      <li>
+        <pre><?php print_r( $attachment ); ?></pre>
+      </li>
+    <?php endwhile; ?>
+  </ul>
+<?php endif; ?>
+#+END_SRC
+Finally, I learned how to[[https://github.com/jchristopher/attachments/blob/master/docs/usage.md#search][ search only for certain attachments]].  All of this was useful later on.
+
+** FLexSlider
+It's common to want to include external code -- libraries -- in a theme.  WHen you do this, you need to know:
+- where do you get the files, and where should you put them?
+- what markup does the code require in order to function properly?
+*** Files
+FlexSlider code is kept on [[https://github.com/woothemes/FlexSlider][the Github code-sharing website]], and Grunterie has a [[https://github.com/gpspake/grunterie/tree/master/lib][sub-directory called "lib"]], where external code is supposed to go.  So, I copied the FlexSlider files into the ~lib~ directory of my Grunterie theme.  This was easier for me to do than it would be for you, since you don't have root access to the server!  Well, so, I did that step for you...
+*** Markup
+The [[http://flexslider.woothemes.com/thumbnail-slider.html][FlexSlider demo page]] shows the basic markup we need:
+#+BEGIN_SRC html
+<!-- Place somewhere in the <body> of your page -->
+<div class="flexslider">
+  <ul class="slides">
+    <li data-thumb="slide1-thumb.jpg">
+      <img src="slide1.jpg" />
+    </li>
+    <li data-thumb="slide2-thumb.jpg">
+      <img src="slide2.jpg" />
+    </li>
+    <li data-thumb="slide3-thumb.jpg">
+      <img src="slide3.jpg" />
+    </li>
+    <li data-thumb="slide4-thumb.jpg">
+      <img src="slide4.jpg" />
+    </li>
+  </ul>
+</div>
+
+#+END_SRC
+This is a really simple structure: 
+#+BEGIN_EXAMPLE
+flexslider div 
+  --> slides ul
+     --> li with data-thumb attribute
+         --> img tag
+     --> close li
+  --> close ul
+close div
+#+END_EXAMPLE
+the ~data-WHATEVER~ attribute is a special notification for Javascript -- it says "hey, I can be used for some data purpose.  Do something with me."  In this case, it says, "I am an image in the slider.  But for the navigation row on the bottom, use the thumbnail version of me, which is saved separately and is much smaller."
+
+This will be pretty easy to reproduce in a template -- all we need to do is to get the right URL's for all the attached images.
+
+** Writing the page templates
+My preference is to save functions in ~functions.php~ or another file, and then just call those functions from within a template file.  That way, if it turns out I want to use the function somewhere else, I can still do so.  (Note: I also stole most of this code from [[http://revelationconcept.com/wordpress-display-all-post-attachment-images-in-a-slider/][here]]). 
+
+So, first I write the function:
+
+#+BEGIN_SRC php
+ 
+function hackhist_slider_template() {
+    /* collect the attachments */
+    $attachments = new Attachments('attachments');
+    $search_args = array(
+        'instance'      => 'attachments',       // search 'attachments' instance
+        'post_id' => get_the_ID(), // only get the attachments for this post, not all posts
+""        'filetype'        => 'image'  // search through the images, but not documents like PDF's
+    );
+
+    $attachments->search( null, $search_args ); // don't actully search for anything -- return all the images
+    if( $attachments->exist() ) : 
+        // Start the Slider, provided there are some images attached!
+        ?>
+    <div class="flexslider row"> <!-- use the flexslider class, but also give slexslider its own row, so the page content doesn't compete with it  -->
+      <ul class="slides"> <!-- make a list of slides -->
+      <?php while( $attachments->get() ) :  ?>  <!-- loop through the attachments -->
+         <li data-thumb="<?php echo $attachments->src('thumbnail');?>"> <?php  echo $attachments->image( 'large'); echo $attachments->field('caption'); ?></li> <!-- one li for each image -->
+      <?php endwhile; ?>
+      </ul><!-- end .slides -->
+   </div><!-- end .flexslider .row -->
+ 
+   <?php 
+     endif;
+        
+    // Reset Post Data
+    wp_reset_postdata(
+    
+    );
+}
+        
+        ?>
+#+END_SRC
+
+Then I add the function to my template file. I will be using it with pages, so I add it to ~page.php~: 
+#+BEGIN_SRC php
+  <?php get_header(); ?>
+          <?php get_sidebar(); ?>
+
+  <!-- Row for main content area -->
+          <div class="small-12 large-8  columns" id="content" role="main">
+
+          <?php /* Start loop */ ?>
+          <?php while (have_posts()) : the_post(); ?>
+                  <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+                          <header>
+                                  <h1 class="entry-title"><?php the_title(); ?></h1>
+                                  <?php reverie_entry_meta(); ?>
+                          </header>
+
+  <!-- This is the function call!! --> <?php echo hackhist_slider_template(); ?>
+
+                          <div class="entry-content">
+                                  <?php the_content(); ?>
+                          </div>
+                          <footer>
+                                  <?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
+                          </footer>
+                  </article>
+          <?php endwhile; // End the loop ?>
+
+          </div>
+          <div class="row">
+          </div>       
+  <?php get_footer(); ?>
+
+
+#+END_SRC
+
+Notice the function call in between the article ~header~ and the ~entry-content~.  
+
+** Adding Glue
+
+Now we pull it all together by adding the glue code
+*** functions.php
+Rather than store all this code in ~functions.php~, which is normally recommended, we can put almost all our glue in a separate file in ~lib/Flexslider~.  That way, if you ever want to change themes or something, you can quickly grab everything you need.  But we will need to tell Wordpress to load the file.  so, we add this code to ~functions.php~: 
+
+#+BEGIN_SRC php
+require( get_template_directory() . '/lib/FlexSlider/slider.php' );
+#+END_SRC
+Dead simple.
+
+
+
+# slide1.jpg http://2014.hackinghistory.ca/wp-content/uploads/2015/02/wpid-slide1.jpg
+# slide2.jpg http://2014.hackinghistory.ca/wp-content/uploads/2015/02/wpid-slide2.jpg
+# slide3.jpg http://2014.hackinghistory.ca/wp-content/uploads/2015/02/wpid-slide3.jpg
+# slide4.jpg http://2014.hackinghistory.ca/wp-content/uploads/2015/02/wpid-slide4.jpg
+*** slider.php
+Now we create slider.php, and add the function described above.  But that's not enough.  We also need our glue.
+**** Activate FlexSlider
+First, tell Wordpress where to find flexslider, and to load it on every page:
+#+BEGIN_SRC php
+// Enqueue Flexslider Files
+function hackhist_slider_scripts() {
+    wp_enqueue_script( 'jquery' ); 
+    wp_enqueue_style( 'flex-style', get_template_directory_uri() . '/lib/FlexSlider/flexslider.css' );
+    wp_enqueue_script( 'flex-script', get_template_directory_uri() .  '/lib/FlexSlider/jquery.flexslider-min.js', array( 'jquery' ), false, true );
+}
+add_action( 'wp_enqueue_scripts', 'hackhist_slider_scripts' );
+#+END_SRC
+**** Set Slider Options
+Then, we set the default slider options & add them to the top of every page:
+#+BEGIN_SRC php
+// Initialize Slider
+ 
+function hackhist_slider_initialize() { ?>
+    <script type="text/javascript" charset="utf-8">
+    jQuery(window).load(function() {
+        jQuery('.flexslider').flexslider({
+                animation: "fade",
+                   direction: "horizontal",
+                   slideshowSpeed: 7000,
+                   animationSpeed: 600,
+                   //smoothHeight: true,
+                   controlNav: "thumbnails"
+                   });
+    });
+    </script>
+<?php }
+add_action( 'wp_head', 'hackhist_slider_initialize' );
+
+#+END_SRC
+Feel free to change those around a little, or add some other options from the [[https://github.com/woothemes/FlexSlider#properties][many possibilities]].
+
+** Summing up
+That's it! The full content of ~lib/flexSlider/slider.php~ follows in the next code block.  You can still customize this further:
+- add CSS properties to the thumbnails (borders, paddding, etc.)
+- style the captions so that they look a little less stupid; or remove them if you don't like them.
+- doubtless many other ways
+
+Finally, here is the full code of my ~lib/flexSlider/slider.php~, which you can just copy:
+#+BEGIN_SRC php
+
+<?php
+ 
+// Enqueue Flexslider Files
+ 
+function hackhist_slider_scripts() {
+    wp_enqueue_script( 'jquery' );
+ 
+    wp_enqueue_style( 'flex-style', get_template_directory_uri() . '/lib/FlexSlider/flexslider.css' );
+ 
+    wp_enqueue_script( 'flex-script', get_template_directory_uri() .  '/lib/FlexSlider/jquery.flexslider-min.js', array( 'jquery' ), false, true );
+}
+add_action( 'wp_enqueue_scripts', 'hackhist_slider_scripts' );
+
+// Initialize Slider
+ 
+function hackhist_slider_initialize() { ?>
+    <script type="text/javascript" charset="utf-8">
+    jQuery(window).load(function() {
+        jQuery('.flexslider').flexslider({
+                animation: "fade",
+                   direction: "horizontal",
+                   slideshowSpeed: 7000,
+                   animationSpeed: 600,
+                   //smoothHeight: true,
+                   controlNav: "thumbnails"
+                   });
+    });
+    </script>
+<?php }
+add_action( 'wp_head', 'hackhist_slider_initialize' );
+
+// Create Slider
+ 
+function hackhist_slider_template() {
+    /* collect the attachments */
+    $attachments = new Attachments('attachments');
+    $search_args = array(
+        'instance'      => 'attachments',       // search 'attachments' instance
+        'post_id' => get_the_ID(), // only get the attachments for this post, not all posts
+        'filetype'        => 'image'  // search through the images, but not documents like PDF's
+    );
+
+    $attachments->search( null, $search_args ); // don't actully search for anything -- return all the images
+    if( $attachments->exist() ) : 
+        // Start the Slider, provided there are some images attached!
+        ?>
+    <div class="flexslider row"> <!-- use the flexslider class, but also give slexslider its own row, so the page content doesn't compete with it  -->
+      <ul class="slides"> <!-- make a list of slides -->
+      <?php while( $attachments->get() ) :  ?>  <!-- loop through the attachments -->
+         <li data-thumb="<?php echo $attachments->src('thumbnail');?>"> <?php  echo $attachments->image( 'large'); echo $attachments->field('caption'); ?></li> <!-- one li for each image -->
+      <?php endwhile; ?>
+      </ul><!-- end .slides -->
+   </div><!-- end .flexslider .row -->
+ 
+   <?php 
+     endif;
+        
+    // Reset Post Data
+    wp_reset_postdata(
+    
+    );
+}
+        
+?>
+            
+
+
+#+END_SRC
+
+
+** PS!!
+
+I added this code to my style.scss, just for fun:
+#+BEGIN_SRC css
+ul.slides {
+    li {
+
+        p {
+            position: absolute;
+            background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.3);
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 15px;
+            bottom: -20px;
+        }
+    }
+}
+
+#+END_SRC
+* even-more-about-overlays.org
+#+BLOG: hh
+#+POSTID: 729
+#+DATE: [2015-02-24 Tue 07:40]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: A better maps solution (brutal)
+
+This process consumed far more cycles than I intended, or than it ought to have. While in principle simple, the construction of an overlay layer for online maps is currently an elaborate process. Choosing between plugins, between overlay types, and between map types is rather bewildering.  In the end, I have a solution that I am quite pleased with, but it has involved LOTS more work than I initially thought would be required.  
+
+** Plugins
+I initially steered you to the WP-Geo plugin; it has lots of virtues, but at the final stage, I found it would not create adequate markers for maps.  This is a deal-breaker, so I have switched back to an old (but complex!) favourite, [[https://sites.google.com/site/geomashupwiki//guides][Geo Mashup]].  Probably the oldest Wordpress maps plugin, Geo is a little less user-friendly but extremely flexible and featureful.
+
+*** Installation
+Install [[https://sites.google.com/site/geomashupwiki//guides][Geo Mashup]] from the Wordpress repositories.  Activate it, and then /manually/ install the [[https://code.google.com/p/wordpress-geo-mashup/wiki/JavaScriptApi][Geo Mashup Custom]] plugin by downloading [[http://wordpress-geo-mashup.googlecode.com/files/geo-mashup-custom-1.0.zip][the zipped archive]], then ftping and unzipping in the plugins directory of your wordpress site.  If you need help, ask Jeremy M, who has already worked out how to do this.  
+
+** Export a GeoTIFF
+We have already gone over how to do this.  Use qGIS to georeference your image, then export it AS A GEOTIFF. Be sure to use the right co-ordinate systems, which are discussed in an earlier post.  You may well have to fiddle with the NODATA values before you get it perfect.  
+
+** Option 1: Create a KML Layer
+
+This is simpler and ought to be easy to do automatically, but unfortunately there's no way available right now.  I describe how to do this in [[http://2014.hackinghistory.ca/maps-recap/][my maps recap from 3 weeks ago]].  Once you've created the KML, FTP it and the accompanying geoTIFF into a new folder in the uploads directory of your wordpress site.  Call it what you want (but no spaces!), and make a note of its name.  
+
+Once they are uploaded, the fun begins.  We will edit a file called ~custom-googlev3.js~ in the ~geo-mashup-custom~ directory.  
+
+simply add this code: 
+#+BEGIN_SRC javascript
+// An Example Google V3 customization
+
+GeoMashup.addAction( 'loadedMap', function ( properties, mxn ) {
+
+        // Load some KML only into global maps - for instance pictures of squirrels
+
+        var google_map = mxn.getMap();
+        
+        // remove the 'if' wrapper if you want the kml to show up in mor than one map.
+        if (properties.map_content == 'global') {
+
+                // Make the Google v3 call to add a simple KML Layer
+                var kml = new google.maps.KmlLayer( 'URL OF YOUR KML FILE', {
+                        map: google_map
+                } );
+
+        }
+
+} );
+#+END_SRC
+
+** Option 2: Create a tile layer
+
+This is more sophisticated but a little harder and probably not entirely necessary.  Export your GeoTIFF as above.  then run it through MapTiler, which will generate a directory with a large number of tiles.  Upload that whole directory to the web as above, in a subdirectory of ~uplaods/~.  Then add the following code to your ~custom-googlev3.js~ file:
+
+#+BEGIN_SRC javascript
+
+GeoMashup.addAction( 'loadedMap', function ( properties, mxn ) {
+
+    // Load some KML only into global maps - for instance pictures of squirrels
+
+    var google_map = mxn.getMap();
+    // uncomment if you want to get messages I n the console
+    // console.log("getting started");
+    // console.log(mxn);
+    // console.log(properties);
+    // console.log(properties.map_content);
+    // here's an example of taking out the "if" wrapper
+//    if (properties.map_content == 'global') {
+        // set the baseURL appropriately!!
+        var baseURL = "http://campbell.hackinghistory.ca/wp-content/uploads/Model-maptiles/";
+        var maptiler = new google.maps.ImageMapType({ 
+            getTileUrl: function(coord, zoom) { 
+                return baseURL + zoom + "/" + coord.x + "/" + coord.y + ".png";
+            },
+            tileSize: new google.maps.Size(256, 256),
+            opacity:1,
+            isPng: true 
+        });
+        console.log ("function is running");
+	google_map.overlayMapTypes.insertAt(0, maptiler);
+        var newDiv=document.createElement("div");
+        newDiv.setAttribute('id', 'mapControl-');
+        var newSlider = document.createElement("input");
+        newSlider.setAttribute('id', 'opacitySlider');
+        newSlider.setAttribute('type', 'range');
+    //     newSlider.setAttribute('onchange', 'window[\'' + properties.name + '\'].overlayMapTypes.j[0].setOpacity(Number(opacitySlider.value));');
+    newSlider.setAttribute('onchange', 'GeoMashup.map.getMap().overlayMapTypes.j[0].setOpacity(Number(opacitySlider.value));');
+        newSlider.setAttribute('min', '0');
+        newSlider.setAttribute('max', '1');
+        newSlider.setAttribute('value', '.7');
+        newSlider.setAttribute('step', '.01');
+        newDiv.appendChild(newSlider);
+        google_map.__gm.ka.parentNode.insertBefore(newDiv,google_map.__gm.ka);
+
+  //  }
+
+} );
+#+END_SRC
+
+This also adds an opacity slider to the map layer.  It's pretty simple but should be enough to get you started.
+
+If the tiles are not showing up, often that is because of a mismatch between the tile type and the expectations of google maps.  This can be fixed by replacing 
+
+#+BEGIN_SRC javascript
+                return baseURL + zoom + "/" + coord.x + "/" + coord.y + ".png";
+
+#+END_SRC
+
+with 
+
+#+BEGIN_SRC javascript
+return baseURL + zoom + "/" + coord.x + "/" + (Math.pow(2,zoom)-coord.y-1) + ".png";
+#+END_SRC
+
+** Final Notes on Utilities
+In order to learn all this, I also modified some command-line tools; I changed ~gdal2tiles.py~ to create ~XYZ~ tiles instead of ~TMS~ tiles (easier to work with in Google Maps), and ~gdalinfo.py~ so that it reported Decimal Degree style co-ordinates.  I can pass these on to you if you want to use the command line.  Both are in my personal bin folder on my laptop.  
+
+* favicons.org
+#+POSTID: 3183
+#+DATE: [2013-02-14 Thu 09:48]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Favicons
+
+This is a very small issue you will want to deal with near the end of your project.  Load your website in a new tab.  Notice that there is a small picture -- an "icon" -- displayed in the tab.  
+
+This picutre is called, for obscure reasons, a "favicon".  Its main use it to help you navigate visually between tabs -- so you just look up at your tab bar and know immediately which tab is the one with your site loaded.  The favicon has to be a file that is somewhere accessible on the web, usually in the root directory of the site.
+
+Our starter theme uses the following line in header.php to find the favicon: 
+
+#+BEGIN_SRC html
+	<link rel="shortcut icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png">
+#+END_SRC
+
+Try to read this and understand it.  This is a pretty simple HTML tag, using the [[http://blog.whatwg.org/the-road-to-html-5-link-relations#what][link]] tag and the [[http://blog.whatwg.org/the-road-to-html-5-link-relations#rel-icon][icon relation]] to tell the browser where the favicon is located.  However, there is one tiny php command hidden inside:
+
+#+BEGIN_SRC php
+ <?php echo get_stylesheet_directory_uri(); ?>
+#+END_SRC
+
+This  command just says to wordpress:  "first, check to see if this is a child theme; if it is, look for the file there; if not, look for the file in the parent theme".  So then, back to the original html:
+
+#+BEGIN_SRC html
+	<link rel="shortcut icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png">
+#+END_SRC
+
+and you can see Wordpress will try to find a file called "favicon.png" in the directory themes/required-starter/, and if it can't find it, will try to find the file themes/required-foundation/favicon.png.  So:  right now your favicon.png is the company logo for the developer firm "required".  You will eventually want to replace that with the logo of your client.  The standard favicon format is a PNG file of 32x32 pixels.  So you will want to generate that somehow, eventually.  
+
+OK, tutorial #1 for today.  
+
+* foundation-theme.org
+#+POSTID: 3704
+#+DATE: [2014-02-04 Tue 06:52]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+PARENT: Labs+Notes, 
+#+TITLE: The required+ Foundation Theme
+
+** Web Frameworks
+- packaged standard of solutions to web design problems
+- HTML, CSS, JS components to do design tasks for you in a consistent way
+  - don't have to reinvent wheel
+  - when you /do/ code, there are people to ask about how to do it ([[http://wordpress.stackexchange.com/][stackexchange]]! )
+** Foundation
+*** Grid system
+- 12 columns w/ gutters defined by CSS classes
+- complex CSS, Jasvascript reorder columns as screen size changes (small, medium, large)
+*** Navigation
+- cool top bar, can be made sticky
+- "off-canvas" navigation
+- again, done with CSS classes that are addressed by javascript
+*** JS Plugins
+- slider
+- gallery
+- "modal" windows
+- etc.
+** Foundation -- Advanced
+- Written with [[http://sass-lang.com/][Sass]] and [[http://compass-style.org/][Compass]]
+- JS built on top of [[http://jquery.com/][jQuery]] and [[http://modernizr.com/][Modernizr]]
+- HTML built for cutting-edge HTML5 standards 
+** Exercise: Playing with Foundation
+- Navigate to http://jsbin.com/AwOwoyUY/1/edit?html,css,js,output 
+- in the html pane, adjust the width of the columns just by changing the class
+- add a row with columns INSIDE the right-hand sidebar
+- change the height, and then the content, of the "oprbit" slider
+** Themes in Wordpress
+- remember, themes control presentation of content
+- contain their own CSS, Javascript, and (PHP-generated) HTML
+** Templates
+- presentation of info controlled by templates
+- a "template hierarchy" chooses appropriate template for individual post/content
+** Templates
+[[http://2013.minneapolis.wordcamp.org/files/2013/04/wordcamp-mpls-theme-template-poster.jpg]]
+** Templates
+[[file:~/HackingHistory/Images/template-hierarchy-retina-light.jpg]]
+[[http://marktimemedia.com/redesigning-the-template-hierarchy/][(stolen from marktimemedia]])
+** required+
+- wordpress theme /based on Foundation/
+- packaged as /parent/ plus /child/ themes plus /plugins/
+- activate only the plugins you need!
+** required+ templates
+basic structure:
+#+BEGIN_SRC php
+<?php get_header?>
+<some html structure>
+   <?php get_template_part( 'content', get_post_format() ); ?>
+</close tags on some html>
+<more html>
+   <?php get_sidebar(); ?>
+</close tags more html>
+<?php get_footer();?>
+#+END_SRC
+- all the actual work is done in "content-[whatever-post-format-is].php"
+- cf: http://kovshenin.com/2013/get_template_part/ 
+** Features
+- most of Foundation
+- nice separation between parent and child
+- easy-to-navigate child theme
+- heavy use of "shortcodes": http://themes.required.ch/docs/shortcodes 
+** Exercise: Use shortcodes
+Open up your PERSONAL website
+- create a post
+- create some columns of text using [column] shortcode.  activate plugin first!
+- attach several images to post
+- create a viewing gallery with [clearing] shortcode
+- play with any other shortcodes that seem cool (e.g., reveal)
+** Required-starter Child Theme
+*** Structure
+- [[https://github.com/wearerequired/required-starter/blob/master/functions.php][functions.php]]
+- [[https://github.com/wearerequired/required-starter/blob/master/style.css][style.css]]
+- [[https://github.com/wearerequired/required-starter/blob/master/javascripts/child-theme.js][child-theme.js]]
+- [[https://github.com/wearerequired/required-starter/][take a look at the whole theme]]
+** Templates
+New templates live in the *main directory* of the child theme
+- copy "single.php" from required-foundation to required-starter directory.
+- rename to single-my-content-type
+- change "get_post_format" to "get_post_type"
+- copy "content.php" to required-starter & rename "content-[your content type name].php"
+- add in your custom fields
+** Exercise: Create a simple template
+- I think every group has at least one custom content type
+- get to work on designing a template 
+
+# /home/matt/HackingHistory/Images/template-hierarchy-retina-light.jpg http://2013.hackinghistory.ca/wp-content/uploads/2014/02/wpid-template-hierarchy-retina-light.jpg
+* georeferencing.org
+#+POSTID: 1864
+#+DATE: [2012-01-19 Thu 10:47]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: maps, georeferencing, tools
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Georeferencing -- References & Tips
+
+Next week's class will take place in the Map and Data Library, on the 5th floor of Robarts.  PLEASE ARRIVE PROMPTLY -- we are presuming on the generosity of a very sought-after expert, Marcel Fortin (thanks Marcel!).  Class, which may or may not take a full 3 hours, will focus on [[http://en.wikipedia.org/wiki/Georeference][georeferencing]].  We use the term in a fairly limited way, meaning "matching a historical map to GIS co-ordinates", but it's worth thinking for a moment about the technical definition.  To 'georeference' something means to locate it in space.  If I have one representation of space, and you have another, then in order for us to co-ordinate our representations we need a third object -- a set of co-ordinates -- to which we then map BOTH of our representations.  Then we can mediate between representations by making reference to the common, underlying co-ordinate system.  
+
+Not long ago this type of practice would have been pretty distant from the kinds of activities an undergraduate would undertake, but it's become worthwhile for us.  Why? Because services like Google Maps (and there are others -- [[http://openlayers.org/][OpenLayers]], for instance) offer increasingly easier integration with all kinds of data sources.  So, for instance, it is possible to chart wordpress posts on a map; and as you know, I'm, er,  working on a wordpress plugin for timeMap, which works with google maps.  But it doesn't make sense to chart historical data on contemporary maps; so it would be nicer to use a sophisticated GIS-driven system -- like google Maps -- with a representation of space that shows the terrain as it likely was in the past.  In order to do this, we need to take that historical representation and map it onto our underlying co-ordinate system.  This is a difficult and complex task, but fortunately, there are programs that have been specifically designed to help us accomplish it.  In our workshop next week, we will learn the basics of georeferencing with [[http://www.esri.com/software/arcgis/index.html][ArcGIS]] -- the industry standard -- and also within Google Earth. If there's time, you'll also be introduced to Quantum GIS, an Open Source tool that will allow you to georeference almost a well as ArcGIS, but at home (to use Arc GIS, you will need to work at a licensed workstation on the 5th floor of Robarts).  
+
+In order to prepare for our meeting, you should familiarize yourself with the main concepts of Georeferencing and, if possible, experiment with some of the tools involved.  It would also be GREAT to choose a map to georeference; if you find one, please bring it class on a USB key or put it in a web-accessible location (e.g. Dropbox) so you can experiment with georeferencing it directly after the workshop, before you forget what you've learned.  
+
+The following links are meant to get you started: 
+
+- [[http://help.oldmapsonline.org/georeference][Old Maps Online]] has a collection of links and, in particular, a link to their online tool [[http://www.georeferencer.org/][georeferecer]] which might be of interest, and has a useful youtube video on the front page.
+- [[http://code.google.com/apis/kml/documentation/kml_tut.html][Google's KML documentation]], which will tell you what a KML file is and what can be included in it.
+- [[http://www.whatwasthere.com/][What was There]] won't really teach you much about georeferencing but will show you what can be done with it -- some pretty cool stuff actualy, though not especially scholarly.
+- [[http://www.qgis.org/][Quantum GIS Project]] provides a pretty good gentle introduction to GIS intheir documentation section; and you can download the software and try it out
+- Another interesting project is [[http://www.maptiler.org/][Map Tiler]] -- not likely to be the right choice for your projects, but another example of how georeferenced maps can make for really neat user interfaces.  
+
+Add any other resources you find in the comments section, so your colleagues can find them.  
+* historical-maps.org
+#+BLOG: hh
+#+POSTID: 622
+#+DATE: [2015-01-20 Tue 12:26]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Toronto Historical Maps Online
+
+There are tonnes of historical maps online [[http://oldtorontomaps.blogspot.ca/][here]], while the full collection of Goad's /Atlas of the City of Toronto/ maps can be found [[http://goadstoronto.blogspot.ca/][here]].  Both are great resources.  
+
+
+* HistorySites.org
+#+POSTID: 1780
+#+TITLE:     History Sites
+#+AUTHOR:    Matt Price
+#+EMAIL:     matt.price@utoronto.ca
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+#+XSLT:
+
+OK, I see people aren't feeling especially enthusiastic about their sites (or anyway the assignment!) tonight.  To be sure we have something to talk about, here are a couple of sites I'd like you all to check out:
+
+- [[http://mainstreet.lib.unc.edu/][Main Street, Calorlina]] is an umbrella project for local history projects in North Caroline.  Do you like it? What does and doesn't work about it? Would you wantto emulate some part of it in your project? And do you think the deficits can be overcome?
+- [[http://www.viseyes.org/][VisualEyes Project]], especially [[http://www.viseyes.org/show/?base=vh][Vinegar Hill]].  Again, what do you think? What's the purpose of the site(s)? How do htey mobilize the power of the web (or fail todo so)?
+- [[http://megaprojects.uwo.ca/][MegaProjects]].  And, once again: What's the aim, what's the effect, do you enjoy them?
+
+See you in class.
+* language-of-the-web.org
+#+BLOG: hh
+#+POSTID: 2944
+#+DATE: [2013-09-17 Tue 06:02]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+TAGS: html,notes 
+#+DESCRIPTION:
+#+PARENT: 
+#+TITLE: Notes on Hypertext
+
+/These are some notes I wrote up last year after reading these articles.  Read through them if you think it might be helpful./
+
+When reading Bush's article, bear in mind, first, just how science-fictional this all sounds in the 1940's, and second, just who this is speaking to us.  Bush was probably the most important administrative scientist of the era.  As a professor of electrical engineering at MIT, Bush is now best-knwon for the invention of the [[http://en.wikipedia.org/wiki/Differential_analyser][differential analyser]], a very fun device now fetishized for its role in the history of computing.  But his most widespread notoriety is for his pivotal role in the construction ofthe Atomic Bomb, about which we can say that it is hard to imagine how it would have been built without him.  "As We May Think" was a relatively lighthearted piece of very little practical significance in Bush's career, which he never really followed up in any substantive way.  But the sense of the possibilities of science come out of this strange and formative era in the history of science.
+
+This time around I'm particularly captivated by the thinking subject pictured in the article: 
+#+BEGIN_QUOTE
+On the top of the memex is a transparent plate. On this are placed longhand notes, photographs, memoranda, all sorts of things. When one is in place, the depression of a lever causes it to be photographed onto the next blank space in a section of the memex film, dry photography being employed.
+
+There is, of course, provision for consultation of the record by the usual scheme of indexing. If the user wishes to consult a certain book, he taps its code on the keyboard, and the title page of the book promptly appears before him, projected onto one of his viewing positions. Frequently-used codes are mnemonic, so that he seldom consults his code book; but when he does, a single tap of a key projects it for his use. Moreover, he has supplemental levers. On deflecting one of these levers to the right he runs through the book before him, each page in turn being projected at a speed which just allows a recognizing glance at each.
+#+END_QUOTE
+I can't help feeling that I'm in the lair of a mad scientist, but at the same time I feel like I',m in a suburban "den" where Dad sits alone, smoking his pipe.  There is something extraordinarily /individual/ about this scheme, given that it's meant to provide an account of the /collective/ organization of scientific knowledge.  This seems to me more important than the casual references to a sort of Gibsonesque "jacking-in", or other specific technological advances described by the piece.  There is no real sense, I don't think, of a World Wide Web of information -- no transparent, effortless, anonymous sharing.  In this it differs substantially from our server-mediated version of hypertext.  compare it, e.g., to [[http://www.theshulers.com/whitepapers/internet_whitepaper/index.html#http][the description of http]] in Schuler's piece.  
+
+Berner's-Lee's Semantic Web seems no less Utopian to me than Bush's article though undergirded by a much more robust technological infrastructure and research agenda.  RDF is a real technology now.  But there is something quite unsophisticated in the notion of ontologies defined, negotiated, and mediated almost exclusively by machines.  There is a reason the [[http://www.amazon.com/Being-Time-Martin-Heidegger/dp/0061575593/ref=sr_1_1?s=gateway&ie=UTF8&qid=1285845507&sr=8-1][most important philosophical work on ontology]] belongs to a tradition called "hermeneutics" -- the act of interpretation is complex and essential to the production of meaning.  It's not clear that meaning that resides in machines is still meaning at all.  Moreover, the privacy concerns raised by [[http://www.hackinghistory.ca/2010/09/29/all-aboard-next-stop-the-web-3-0/][Izzy]] are substantive and serious.  There's a lot to think about there and more generally in the future of the web.  
+
+This question of interpretation raises its head again in Ayers' work, e.g. here
+
+#+BEGIN_QUOTE
+That said, I cannot help but think about what might come next. Might there be a way, using the electronic environment, to create forms of narrative and analysis that take fuller advantage of the digital archive? Everyone knows the past was wonderfully complex, but seeing the complexity of even a small slice of the past displayed before us can be discomfiting. Historians tend to forget the choices and compromises we make as we winnow evidence through finer and finer grids of notetaking, narrative, and analysis; we suppress detail as the abstracted patterns take on a fixity of their own. A digital archive, by contrast, reminds us every time we look at it of the connections we are not making, of the simultaneity and reflexivity as well as the linearity of the past. May we now be able to, need to, write a new kind of history, a history that can be arrayed and understood in multiple sequences and layers, a history that involves and rewards more engagement on the part of the reader than a book requires or permits? We might call that history, for convenience, "hypertextual," since it would involve linked text in a manipulable electronic environment. Better, less awkward, names may evolve along with the genre. 
+#+END_QUOTE
+and here
+#+BEGIN_QUOTE
+Fortunately, the digital archive emphasizes the centrality of evidence and thus presents no challenge to the central demand of the profession. Digital history excels in presenting evidence, enormous amounts of it. 
+#+END_QUOTE
+This is something all of us will need to think about as we move forward.  I look forward to that now and over the coming weeks.  
+* more-about-overlays.org
+#+DATE: [2015-02-10 Tue 09:23]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: More about adding overlays to maps
+
+Whew, this turned out to be a killer!  It is not very easy to get information from a standalone GIS program into google maps -- in fact, it's crazy hard!  
+
+** options
+We have two sets of options:
+- which mapping framework do we use, Google Maps or Leaflet?
+- What kind of overlay do we create -- KML, Javascript Ground Overlay, or Tiled Overlay?
+
+The new(ish) Leaflet.js mapping framework is awesome, and I expect to switch to it in future years.  Among other things, it makes it really easy to add overlays and things like transparency controls. 
+
+Unfortunately, it isn't yet fully implemented for Wordpress.  So, another time, and Google Maps it is.
+
+What kind of overlay to create -- that is so tough!  I have figured out how to do it both with KML and with Ground Overlays.  Tiled Overlays are complicated, though easier with Leaflet.  So, I think it all depends on which mapping plugin you choose.
+
+** My choice
+I installed the [[http://www.wpgeo.com/][WPGeo]] map plugin, which I like a lot.  It has very simple shortcode syntax, and you can easily display a map with markers for all geotagged posts, which is lovely.  
+
+Unfortunately, it isn't easy to add an overlay.  At first I added KML overlays, but then I couldn't control the opacity.  So I settled on this code, which goes in functions.php:
+
+#+BEGIN_SRC php
+function my_wpgeo_map_js_preoverlays( $output, $map_id ) {
+    /* 
+    This function adds an image overlay to all maps generated by the WP Geo map plugin.  
+    You will first need to upload a .PNG image using the media uploader.  This image should
+    be generated via export of a georeferenced "raster layer" in QGIS or ARCgis.  When exporting, you 
+    will also need to acquire the precise "bounding co-ordinates" in decimal degrees.  This 
+    sounds simple but isn't so easy.  See my guide for more info
+    */
+
+    /*  You will need to adjust all of these */
+    /*  The first 4 are the co-ordinates you established in your GIS program*/
+    $north_bound = 43.65661944444;
+    $south_bound = 43.64408888888889;
+    $east_bound = -79.41159722222223;
+    $west_bound = -79.43393333333333;
+
+    
+    /* this variable is the ID of the image attachment -- the only way to find this out
+       is within wordpress itself */
+    $image_id = 62;
+    /* you could also input the url directly here instead */
+    $image_url = wp_get_attachment_url ($image_id);
+
+    /* set the image opacity here */  
+    $image_opacity = 0.7;
+    $output .= "
+          var imageBounds = new google.maps.LatLngBounds(
+             new google.maps.LatLng($south_bound,$west_bound),
+             new google.maps.LatLng($north_bound, $east_bound));
+          var overlayOpts = {
+             opacity:$image_opacity
+           }
+          var historicalImageOverlay = new google.maps.GroundOverlay(
+    \"$image_url\",imageBounds, overlayOpts);
+          historicalImageOverlay.setMap(" . $map_id . ");
+";
+      return $output;
+}
+
+/* now we make sure our function is called every time a map is generated */
+add_filter( 'wpgeo_map_js_preoverlays', 'my_wpgeo_map_js_preoverlays', 10, 2 );
+
+#+END_SRC
+
+And that's pretty much that -- you just need to adjust all of the variables to fit your specific image.  I have written a short python script that spits out the bound values for a given geoTIFF so that part should not be much easier.  
+
+Another possibility is to use the [[https://wordpress.org/plugins/comprehensive-google-map-plugin/][Comprehensive Google Maps Plugin]]; it is actually awesome, but has been discontinued, so that is a little bit of a worry.  Also I wasn't quite sure how to geotag posts.  But it does a great job of importing KML data!  
+
+Next year it will be Leaflet!  But not yet, alas.  
+* notes-on-abundance-and-classification.org
+#+DATE: [2010-10-12 Tue 22:23]
+#+POSTID: 407
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY:pre-class-notes,  
+#+TAGS: abundance, 
+#+DESCRIPTION: 
+#+TITLE: Notes on Abundance and Classification
+
+I hope by this brief posting to draw some links between the readings for this weeek which at first glance might seem an incoherent assemblage.  The point of this week's class was, for me, to call attention to the problem of abundance which might perhaps have  best been addressed by Roy Rosenzweig's [[http://www.historycooperative.org/journals/ahr/108.3/rosenzweig.html][earlier article]] on the subject.  Rosenzweig, using language that is mirrored in [[http://chnm.gmu.edu/digitalhistory/collecting/][Chapter 6]] of [[http://chnm.gmu.edu/digitalhistory/][Digital History]], draws attention to the extremely difficult problems of information abundance in the era of the web.  There are at least two such problems of tremendous and immediate importance:
+1) the difficulty of /locating/ the information you really want in the enormous detritus of the past, and beyond that, of actually /reading/ it;
+2) the /extreme transience/ of information and digital formats, such that e.g. extremely important documents can easily disappear without leaving traces of themselves behind, and files can easily become unreadable as the hardware and software required to interpret them becomes obsolete (e.g. the coming obsolescence of Flash -- 50 years from now, who will be able to play Flash 3.0 files?) Consider this example:
+#+BEGIN_QUOTE
+ But this "system" will not work in the digital era because preservation cannot begin twenty-five years after the fact. What might happen, for example, to the records of a writer active in the 1980s who dies in 2003 after a long illness? Her heirs will find a pile of unreadable 5¼" floppy disks with copies of letters and poems written in WordStar for the CP/M operating system or one of the more than fifty now-forgotten word-processing programs used in the late 1980s. ([[http://www.historycooperative.org/journals/ahr/108.3/rosenzweig.html][Rosenz]]weig)
+#+END_QUOTE
+These kinds of nightmares are more or less new to our age, and they are challenges we need to confront.  When you build your own websites, you will need to ensure that they are standards-compliant and durable in this sense. /Times/ reporter  Katie Hafner raises similar issues in her article from this week's readings:
+#+BEGIN_QUOTE
+The ultimate fate of information relating to potentially valuable but obscure people, places, events or things like the Silenus highlights one of the paradoxes of the digital era. While the Internet boom has made information more accessible and widespread than ever, that very ubiquity also threatens records and artifacts that do not easily lend themselves to digitization — because of cost, but also because Web surfers and more devoted data hounds simply find it easier to go online than to travel far and wide to see tangible artifacts.
+#+END_QUOTE
+If the Internet becomes our only archive, what happens to objects that are not "Internet-able"?  And are there ways to capture artifacts in the information infrastructure of our age?  "Collecting History Online" -- which unlike the Rosenzweig article I quoted above, actually does form part of our readings -- is also concerned with practical questions of how to capture history online in an enduring way.  The prominent example of [[http://911digitalarchive.org/][the September 11 Digital Archive]] itself raises as many questions as it answers, about methods and meanings in particular.  
+
+The readings by Bowker and Star were intended to highlight the ways that information infrastructures arise to deal with problems of abundance, and the ways that those infrastructures shape our experience of the things that they are meant to classify.  The structures of knowledge are a longstanding topic of anthropology; Bowker and Star are interested, though, in the /infrastructures/ of knowledge -- the technical and practical systems that underlie the capacity to know.  They are at pains to show that all historical narratives are constructed around non-obvious classifications -- cf. the discussion on p. 41 of the 'apparently unproblematic statement: " In 1640, the English revolution occurred; this led to a twenty-year period in which the English had no monarchy."'  You should decide for yourselves whether the dependence of this statement on highly contingent notions of time, the classifications of peoples, the classification of events, and the classification of political systems, matters to you; but for thinking about history, it ought to matter that "Whatever appears as universal or indeed standard, is the result of negotiations, organizational processes, and conflict." (p.44) That is, you can expect to find a social and technical apparatus lying behind the most banal truths, /without which those truths lose their validity./ The computational systems that enable our current classificatory systems -- scientific and lay -- affect how and what it is possible to think.  So we can expect that the new forms of historical narrative that we are exploring, alongside Cohen & Rosenzweig and many others, will exert important influences on how we imagine the past. It is not immediately obvious to me, anyway, just what those effects will be, but it's certainly worth thinking about.  
+* PublicSphere.org
+#+POSTID: 77
+#+DATE: [2010-09-21 Tue 07:03]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: 
+#+TAGS: publicsphere
+#+DESCRIPTION: 
+
+#+TITLE: The WWW as Public Sphere
+
+Just a few quick words about the readings this week, which concern the idea of the  "[[http://en.wikipedia.org/wiki/Public_sphere][Public Sphere]]".  This phrase is rooted in ideas about [[http://plato.stanford.edu/entries/enlightenment/][enlightenment]] that stretch at least back to [[http://en.wikipedia.org/wiki/Immanuel_Kant][Immanuel Kant]].  The analyses of [[http://en.wikipedia.org/wiki/J%C3%BCrgen_Habermas][Jürgen Habermas]] ([[http://plato.stanford.edu/entries/habermas/][SEP entry]]), in particular, developed the idea of a sort of virtual space of critical discussion, in which participants treat each other as equals and are freed from economic or political pressures that might inhibit the authentic exchange of ideas.  While this is in some ways an /ideal/ space, Habermas also contends that it reached a height of development in the real historical circumstances of the Enlightenment, that is, in the decades prior to and just following 1800.  After this period, Habermas argued, the rise of mass media and the pervasive influence of capitalism and its pressures began to undermine this sphere of activity.  
+
+[[http://www.humanities.uci.edu/mposter/][Mark Poster]] was among the first to ask whether the Internet, and in particular the World Wide Web (anyone have a sense of the difference between the two?) provided an opportunity for a resurgence of the Public Sphere.  If the original Public Sphere was largely rooted in one set of social and media technologies (coffee houses, salons), and destroyed by another set of developments (mass media, broadcasting), could this new technology -- not quite so new any more! -- allow it to return to prominence?  This vision has been taken up by a variety of analysts and is still important not only to media studies professors, but to many of the architects of the web itself.  This raises many questions, of course, in particular about the role of technology in these developments (does technology drive the social change all by itself?  or are the effects of a technical innovation shaped by pre-existing social forces and pressures?), and about the definition of "authentic" free discussion (how broadly do we define the topics that are worth discussing?).  There's something of a tension between nostalgia and Utopianism -- that is, between yearning for a bygone era and faithfully believing that an era of perfection is yet to come.  
+
+So, you can bear these issues in mind as you read the texts.  The Habermas text in particular is somewhat more philosophical in its language and style than most of what we'll be reading this term; so don't be too put off by that, but also take time to read it carefully and patiently.  *You /will/ be rewarded for your efforts,* as these are all worth reading.  
+
+In addition to the Poster and Habermas texts, we have two links to the [[http://www.wikileaks.org/][Wikileaks]] scandal from this summer.  The point of those readings is to ask, is this what the Public Sphere looks like?  Your task is not to read the 91000 documents in the [[http://wikileaks.org/wiki/Afghan_War_Diary,_2004-2010][Afghan War Diary]] (though you should certainly watch the [[http://www.wikileaks.org/wiki/Collateral_Murder,_5_Apr_2010][Collateral Murder]] video, which is easiest to do on the [[http://collateralmurder.com/en/index.html][dedicated website]]); instead, you should get a feel for the nature of the documents that have been published here, and for the way that Wikileaks operates; and finally, for the manner in which the scandal proceeded.  So (and this is your lab assignment, basically) you should be tracing the historical development of this phenomenon.  As you do so, think about what tools you use (google?  google news? newspaper indexes? what else?), and tag you bookmarks on delicious with 'hackinghistory' and 'publicsphere', so we can all follow what you're doing.  
+
+See you on Thursday!
+Matt
+* reflections-on-crowdsourcing.org
+#+BLOG: hh
+#+POSTID: 250
+#+DATE: [2014-09-23 Tue 09:30]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Reflections on Crowdsourcing
+
+THanks to everyone who posted on the topic of crowdsourcing.  Reading your blogs, it seems to me there are a few themes that recur, around which we should probably structure our conversation:
+
+- "What constitutes a real historical practice?", as Marsden Brooks asks (thx to [[http://2014.hackinghistory.ca/2014/09/22/how-can-professional-historians-and-enthusiasts-work-together/][Mike]]).
+- What to make of Wikipedia's NPOV requirement (thanks to [[http://2014.hackinghistory.ca/2014/09/23/can-history-be-crowdsourced/][Angelo]])
+- relationship between crowdsourced history & professional history ([[http://2014.hackinghistory.ca/2014/09/22/open-source-projects-as-information-aggregators/][Kylie]], [[http://2014.hackinghistory.ca/2014/09/22/crowdsourcing-as-a-historians-tool/][Aidar]], [[http://2014.hackinghistory.ca/2014/09/22/post-on-crowdsourcing/][Jeremy C]])
+- the strong case against crowdsourcing ([[http://2014.hackinghistory.ca/2014/09/22/the-pros-and-cons-of-open-source-projects/][Ken]] esp)
+- Crowsdourcing and Community (this is my own primary interest in Owens' post)
+
+Look forward to the discussion, in just a few minutes. 
+* slider-in-required-theme.org
+#+POSTID: 3191
+#+DATE: [2013-02-14 Thu 10:43]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Front Page Slider in Required+ Theme
+
+OK, we talked about this last week but I'm not sure you guys were paying attention.  The folks at Required+ very generously [[https://github.com/wearerequired/required-foundation/issues/13][responded to my request for help]] in making a front-page slider using their starter theme & the underlying capabilities of the [[http://foundation.zurb.com/][Foundation]] framework.  This turns out to be entirely doable!  As Silvan says in the issue I link to above (and which I recommend you all read), several things need to be done:
+
+** Create a new template, and call it from the front page only
+This has several steps:
+- copy the full text of page.php from themes/required-foundation into themes/required-starter/front-page.php -- now you have a separate front page template that will only run on the front page.  
+- Now add a line like the middle one below into front-page.php: 
+#+BEGIN_SRC html
+		<div id="main" class="twelve columns" role="main">
+		  <?php get_template_part ('content', 'slider-img' ); ?>
+			<div class="post-box">
+#+END_SRC
+(this fetches the contents of the file content-slider-img.php and inserts it into this part of the web page).  
+
+** Write your slider template
+We need to generate some simple html that contains all of the slides we will want presented in our slider.  The Foundation [[http://foundation.zurb.com/docs/orbit.php][Orbit Slider javascript]] will then find this HTMl and manipulate it to create the slider dynamically (see below).  
+
+This is the most complicated step of the process, and in fact there are a couple of options for doing it.  The best option is to generate the "slides" as individual <img /> tags.  The thing about this is, you will need to do a little more work to make sure the slider looks good if this is the option you choose.  In particular, you need to make sure that all the images being shown in the slider are *the same size and shape*, or they will end up off-center and weird-looking.  Fortunately, there is a solution to that issue (see "Tweaks", below).  Here's the code you will need if you want to do things this way:
+
+#+BEGIN_SRC php
+<?php
+/* a short template to generate the front-page slider from content */
+/* Creates individual <img /> tags for each slide.  Requires the
+   "fluid" attribute to be set to "true" rather than, say, "16x9"
+   in javascripts/child-theme.js.
+ */
+
+// Prepare the args for the query
+$args = array(
+    'post_type' => array( 'post', 'page' ),
+    'meta_key' => 'req_slider_checkbox',
+    'meta_value' => '1',
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'posts_per_page' => 3
+);
+// Fire the query
+$slider_query = new WP_Query( $args );
+
+// Check for posts in the query
+if ( $slider_query->have_posts() ) :
+?>
+<div id="slider-home" class="row"><!-- Slider -->
+    <div class="twelve columns">
+        <div id="slider">
+            <?php while ( $slider_query->have_posts() ) : $slider_query->the_post();
+
+                if ( has_post_thumbnail() ) { // Check for an post thumbnail
+		  $this_id = get_the_ID(); // we use this value so many times might as well not run the funtion each time
+                    $source = wp_get_attachment_image_src( get_post_thumbnail_id( $this_id ), 'slider-16x9' ); // Change the size according to the registered image sizes you have 'thumbnail|medium|large|full' and any custom sizes you have created in functions.php.
+		    $tiny_thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $this_id ), 'slider-thumb' ); // if we use thumbnails, which are broken right now
+
+                }
+            ?>
+   <div data-thumb="<?php echo $tiny_thumb[0]; ?>" data-caption="#caption-<?php echo $this_id; ?>" id="slide-<?php echo $this_id; ?>"  >
+                <?php the_post_thumbnail('slider16x9'); ?>
+              </div> <!-- /slide-ID --> 
+              <span class="orbit-caption" id="caption-<?php echo $this_id; ?>">
+                 <a href="<?php the_permalink(); ?>"> 
+                   <h3><?php the_title(); ?></h3> 
+                   <?php the_excerpt(); ?> 
+                 </a>
+              </span> <!-- /orbit-caption span -->
+
+            <?php endwhile; ?>
+        </div>  <!-- /slider -->
+
+   </div> <!-- twelve columns div -->
+</div><!-- / slider-home -->
+<?php endif; wp_reset_postdata(); ?>
+#+END_SRC
+
+If the tweaks I discuss below seem too complicated, you can create the slider in a somewhat more roundabout way, using empty divs with custom background images!  This is a dirty hack and leads to some complications, but it is still legitimate.  Here's how you would do it that way:
+
+#+BEGIN_SRC php
+<?php
+/* a short template to generate the front-page slider from content */
+/* puts images in the BACKGROUND of the slider element rather than 
+   generating <img /> tags for each image.  Requires the use fluid: attribute
+   to be set to (say) 16x9 in javascripts/child-theme.js, rather than 
+   "true".  
+**/
+
+// Prepare the args for the query
+$args = array(
+    'post_type' => array( 'post', 'page' ),
+    'meta_key' => 'req_slider_checkbox',
+    'meta_value' => '1',
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'posts_per_page' => 3
+);
+// Fire the query
+$slider_query = new WP_Query( $args );
+
+// Check for posts in the query
+if ( $slider_query->have_posts() ) :
+?>
+<div id="slider-home" class="row"><!-- Slider -->
+        <div id="slider">
+            <?php while ( $slider_query->have_posts() ) : $slider_query->the_post();
+
+                $slide_bg_css = ''; // We need this later, if we have a background image
+
+                if ( has_post_thumbnail() ) { // Check for a post thumbnail
+		  $this_id = get_the_ID(); // we use this value so many times might as well not run the funtion each time
+                    $source = wp_get_attachment_image_src( get_post_thumbnail_id( $this_id ), 'full' ); // Change the size according to the registered image sizes you have 'thumbnail|medium|large|full'
+		    $tiny_thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $this_id ), 'slider-thumb' ); // if we use thumbnails, which are broken right now
+                    $slide_bg_url = $source[0]; // The URI is always the first argument here
+		    // this css uses the image as a background.  
+                    $slide_bg_css = ' style="background-image: url(' . $slide_bg_url . '); background-position:center; background-repeat:no-repeat"';
+
+                }
+            ?>
+   <div data-thumb="<?php echo $tiny_thumb[0]; ?>" data-caption="#caption-<?php echo $this_id; ?>" id="slide-<?php echo $this_id; ?>" <?php echo $slide_bg_css; ?> onclick="location.href='<?php the_permalink(); ?>';"  >
+              </div> <!-- /slide-ID --> 
+              <span class="orbit-caption" id="caption-<?php echo $this_id; ?>">
+                 <a href="<?php the_permalink(); ?>"> 
+                   <h3><?php the_title(); ?></h3> 
+                   <?php the_excerpt(); ?> 
+                 </a>
+              </span> <!-- /orbit-caption span -->
+
+            <?php endwhile; ?>
+        </div>  <!-- /slider -->
+
+
+</div><!-- / Slider -->
+<?php endif; wp_reset_postdata(); ?>
+#+END_SRC
+
+In fact you, can even try both out at once.  Simply create two files in your child theme directory, "content-slider-bkgrnd.php" and "content-slider-img.php" and modify front.php to call one or the other, and see which you like better.
+
+** Make Orbit aware of your slider 
+We add a tiny piece of javascript code to required-starter/javascripts/child-theme.js: 
+#+BEGIN_SRC javascript
+    $('#slider').orbit({
+        // fluid: '16x6',
+        fluid:true,
+        timer: true,
+        directionalNav: true,
+        bullets: true,
+        // captions: false,
+        captions: true,
+        animation: 'fade',
+        advanceSpeed: 6000,          // if timer is enabled, time between transitions
+        pauseOnHover: true,        // if you hover pauses the slider
+        startClockOnMouseOut: true,    // if clock should start on MouseOut
+        startClockOnMouseOutAfter: 1000,
+        bulletThumbs: false,
+        bulletThumbsLocation: ""
+    });
+    //$('#slider-home .timer').hide();
+#+END_SRC
+
+This code simply says, "look in the web page for the HTML element named 'slider'.  Then, apply the orbit slider code to that element.  And while you're at it, here are some more specific instructions for you:  resize the slider dynamically depending on the size of the screen we're viewing form; put a timer & arrow-based navigation on the slider; use bullets and captions; etc." You can learn more about the options and what they mean from the [[http://foundation.zurb.com/docs/orbit.php][Foundation Orbit docs]].  
+
+** Tweaks
+To get this to look really good, we still have to do a couple of little things. 
+*** Add new image sizes. 
+When you upload an image to wordpress, it automatically creates a whole set of "thumbnail" images of different sizes, to use in different contexts.  So, you have the "full" image, and then (by default, "thumbnail", "Medium", and "large" sizes.  However, you can create your own sizes if you want!  And if you're using the <img /> tag method described above, it's a really good idea to do so.  You might want to think about the dimensions for this -- do you want a really long, skinny picture -- so that it looks almost like a website banner?  Or would you like something almost squarish, suitable perhaps for a slider that is placed to the left or the right of some explanatory text?  The dimensions I've chosen is sort of middling, but you can modify it easily.  All we do is add one little line to the section "function required_theme_setup" in "functions.php" file in themes/required-starter:
+#+BEGIN_SRC php
+**/
+function required_starter_themesetup() {
+
+	load_child_theme_textdomain( 'requiredstarter', get_template_directory() . '/languages' );
+
+	// Register an additional Menu Location
+	register_nav_menus( array(
+		'meta' => __( 'Meta Menu', 'requiredstarter' )
+	) );
+
+	// Add support for custom backgrounds and overwrite the parent backgorund color
+	add_theme_support( 'custom-background', array( 'default-color' => 'f7f7f7' ) );
+	
+	// add an image size for slider
+	add_image_size( 'slider-16x9', 960, 540, true ); // Hard Crop Mode
+	add_image_size( 'slider-thumb', 32, 18, false ); // Soft Crop Mode
+}
+#+END_SRC
+You can see I actually have two "add_image_size lines here -- one for the main image, and one intended to be used for tiny slider thumbnails (that isn 't working right now though!).  
+*** Regenerate image Thumbs
+These new thumbnails will be applied to all NEW images uploaded to the site.  The old ones, though, won't have them.  If you already have a bnuch of images on your site, you can install the "regenerate Thumbnails" plugin, which will regenerate all your thumbnails for you.  You can deactivate and then delete it after you're done with the development of your site, so your lcients don't have to think about it.  
+**** CSS
+You may want some CSS to make the captions look nice & perhaps add a border or something to the slider div.  This is what I've put in my own style.css file to prettify my slider:
+#+BEGIN_SRC css
+/* Slider Tweaks  */
+div.orbit-caption h3, div.orbit-caption p {
+    color:white;
+}
+#+END_SRC
+Can you tell what that does? Try to figure it out, it's trivially simple.  
+
+OK, that's all for now!  Keep on trucking!
+* test-code.org
+
+#+BEGIN_SRC html
+<a href="http://test.org">Test </a>
+
+
+#+END_SRC
+
+#+BEGIN_SRC php
+
+
+#+END_SRC
+* tracking-wikipedia.org
+#+POSTID: 419
+#+DATE: [2010-10-13 Wed 10:41]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: assignments, 
+#+TAGS: crowdsourcing
+#+DESCRIPTION: 
+#+PARENT: Assignments, 
+#+TITLE: Lab 03: Tracking Wikipedia
+
+This week's lab is about Wikipedia and the process by which those crowdsourced pages get created.  What do we need to learn?
+
+*** 1. How does Wikipedia work?
+This is best discussed by following along with the [[http://en.wikipedia.org/wiki/Wikipedia:Tutorial_%28Editing%29][Tutorial]] in a separate tab.  
+Wikipedia is an encyclopedia project with both a /[[http://www.mediawiki.org/wiki/MediaWiki][technical infrastructure]]/ and a /[[http://www.uic.edu/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/2613/2479][complex]] [[http://web.ebscohost.com/ehost/detail?vid=1&hid=106&sid=5176361d-2b94-4cb4-b34f-550884412bcc%40sessionmgr113&bdata=JnNpdGU9ZWhvc3QtbGl2ZQ%3d%3d#db=buh&AN=43590686][governance]] [[http://www.andreaforte.net/ForteBruckmanScalingConsensus.pdf][structure]]/ (run from [[http://wikimediafoundation.org/wiki/Home][here]]).  For the most part the general public is permitted to [[http://en.wikipedia.org/wiki/Wikipedia:Tutorial_%28Editing%29][edit]] existing pages and [[http://en.wikipedia.org/wiki/Wikipedia:Your_first_article][create new ones]], though there are a number of important restrictions to this, the most important of which have to do with [[http://en.wikipedia.org/wiki/Wikipedia:List_of_controversial_issues][controversial topics]].  Read through the links in this paragraph and play around in a little bit in the [[http://en.wikipedia.org/wiki/Wikipedia:Sandbox][sandbox]] to warm up.  Then [[http://en.wikipedia.org/w/index.php?title=Special:UserLogin&type=signup&returnto=Wikipedia%3ATutorial+%28Registration%29][create an account]] and add some content to your [[http://en.wikipedia.org/wiki/Wikipedia:User_page][user page]].
+
+*** 2. Wikipedia syntax
+we could spend hours just on this topic but the main thing to know is that the MediaWiki syntax, like the syntax of other wiki systems, is a very simplified code that uses markers to replace the markup code in standard HTML.  See the [[http://en.wikipedia.org/wiki/Wikipedia:Tutorial_%28Formatting%29][formatting]] section of the tutorial and the [[http://en.wikipedia.org/wiki/Wikipedia:Cheatsheet][cheatsheet]].  Use your new knowledge to modify your user profile.
+
+*** 3. How do you see the history of a page?
+Being able to edit Wikipedia is nice (and it's a skill you might want to use in other classes, say, to improve Wikipedia's coverage of historical events).  But Wikipedia can also be /a record of history/.  So, for instance, the Wikipedia pages of highly controversial events are often subject to furious editing known as [[http://en.wikipedia.org/wiki/Wikipedia:EW][edit warring]].  Consider [[http://en.wikipedia.org/wiki/2010_Gaza_flotilla_raid][this page]] --  Note the absence of an 'edit' tab, because editing has been disabled here.  But you can still look at the edit history, e.g. [[http://en.wikipedia.org/w/index.php?title=Gaza_flotilla_raid&diff=365202251&oldid=365202210][this early edit]].  What would you say about this change?  Also consider the Discussion archive, e.g. [[http://en.wikipedia.org/wiki/Talk:Gaza_flotilla_raid/Archive_1#POV_issues][here]] and [[http://en.wikipedia.org/wiki/Talk:Gaza_flotilla_raid/Archive_1#Time_to_lock_down_the_article][here]].  What do you learn about Wikipedia process from reading these? Recent edits are also very interesting.  There's more to learn about the politics of Wikipedia from this page -- c.f. [[http://thelede.blogs.nytimes.com/2010/08/20/wikipedia-editing-for-zionists/][this]].  
+
+If you are interested in tracking public reaction to a particular topic, a useful tool is the [[http://en.wikipedia.org/wiki/Wikipedia:Watchlist][watchlist]]. 
+
+*** 4. What can we learn from the history or discussion?
+These are the topics I want to discuss in the lab.
+
+*** 5. What external tools help to track Wikipedia?
+There have been quite a number but at the moment all of them seem to be broken.
+- [[http://katrina.cs.caltech.edu/erenrich_rnd345/scanner_final/][Wikitracker]]
+This was and still is a very cool tool that tries to let you see what organizations have been editing Wikipedia, but it's currently having trouble.  There were some neat things about it, though.
+- [[http://reddit.wired.com/wikidgame/][Wikidgame]]
+Uses the reddit interface to report findings from Wikitracker -- fine if you like reddit, I'm not a huge fan.  Also pretty outdated now.
+- [[http://www.trendingtopics.org/][trendingtopics.org]] 
+is very easy to use but not many features.  
+- [[http://wikiwatcher.bloople.net/][Wikiwatcher]]
+similar to trendingtopics
+- [[http://en.wikipedia.org/wiki/Special:RecentChanges][Wikipedia's changes tracker]] and the [[http://meta.wikimedia.org/wiki/Syndication_feeds][global changes feed]]
+Internal tools that report changes to you when you want them. 
+- [[http://wikidashboard.appspot.com/][Wikidashboard]] 
+A tool that makes it a little easier to see who is editing the page you're looking at.  
+* tragedy-of-the-commons.org
+#+POSTID: 508
+#+DATE: [2010-10-21 Thu 10:54]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+CATEGORY: 
+#+TAGS: crowdsourcing, 
+#+DESCRIPTION: 
+#+TITLE: Tragedy of the Commons
+
+The term "tragedy of the commons" came up a bunch in class today.  It dates to Garrett Hardin's [[http://www.garretthardinsociety.org/articles/art_tragedy_of_the_commons.html][1968 article of the same name]], in which he uses the destruction of the English common pastures as a sort of metonymy to describe a widespread dynamic in which common ownership of property can lead to a set of incentives that privileges overuse above stewardship of that resource.  Here's how he says it:
+
+#+BEGIN_QUOTE
+The tragedy of the commons develops in this way. Picture a pasture open to all. It is to be expected that each herdsman will try to keep as many cattle as possible on the commons. Such an arrangement may work reasonably satisfactorily for centuries because tribal wars, poaching, and disease keep the numbers of both man and beast well below the carrying capacity of the land. Finally, however, comes the day of reckoning, that is, the day when the long-desired goal of social stability becomes a reality. At this point, the inherent logic of the commons remorselessly generates tragedy.
+
+As a rational being, each herdsman seeks to maximize his gain. Explicitly or implicitly, more or less consciously, he asks, "What is the utility to me of adding one more animal to my herd?"...  the rational herdsman concludes that the only sensible course for him to pursue is to add another animal to his herd. And another; and another.... But this is the conclusion reached by each and every rational herdsman sharing a commons. Therein is the tragedy. Each man is locked into a system that compels him to increase his herd without limit--in a world that is limited. Ruin is the destination toward which all men rush, each pursuing his own best interest in a society that believes in the freedom of the commons. Freedom in a commons brings ruin to all. 
+#+END_QUOTE
+
+The tragedy of the commons then, is about the conflict between self-interest and communal interest, and the way that commons property can exacerbate that conflict.  Hardin, contrary to many people's first interpretation, recommends /eliminating the commons whenever possible/: 
+
+#+BEGIN_QUOTE
+What shall we do? We have several options. We might sell them off as private property. We might keep them as public property, but allocate the right enter them. The allocation might be on the basis of wealth, by the use of an auction system. It might be on the basis merit, as defined by some agreed-upon standards. It might be by lottery. Or it might be on a first-come, first-served basis, administered to long queues. These, I think, are all the reasonable possibilities. They are all objectionable. But we must choose--or acquiesce in the destruction of the commons...
+#+END_QUOTE
+
+But an interesting fact about the digital commons: when you use it, it's often not the case that it /gets used up/.  The economy of the copy is different form the economy of the pasture.  So there are lots of reasons to doubt whether the Tragedy of the Commons even applies in this domain -- let alone whether Hardin's solutions to that conundrum are the ones we should implement.  
+* welcome.org
+#+BLOG: hh
+#+POSTID: 2804
+#+DATE: [2013-09-09 Mon 14:48]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Welcome to Hacking History!
+
+Hello Everyone,
+
+Welcome to 'Hacking History'! 
+
+This is an introduction to web-based historical scholarship.  Each year, we spend the first semester thinking about the history of information technology and the public sphere, and learning just enough technical skills to create and administer historical websites.  Then, in the second semester, you'll divide into groups and work with a community organization to build a historical website.  This is the real focus of the class, and the most fun.  Every year, we've had at least one of these sites enthusiastically taken up by the sponsoring organization as a public website permanently available on the web.  This is an exciting opportunity and one that previous generations of students have cherished.
+
+Pre-reqs:  There are no formal pre-requisites for this course, and almost all Hacking History students enter with minimal or nonexistent technical skills.  However, you do need to be willing to make an effort to learn some!  If you want to see what you're in for, you can try working through Code Academy's free "Web Fundamentals" course:
+
+http://codeacademy.com/learn/
+
+You may find it difficult -- or, if you have some coding experience, you may find it very dull -- but as long as you're willing to work through it, you're likely to enjoy HIS 495.  If, on the other hand, you find it unbearable, this may not be the right course for you.  If you think you won't be able to make the effort required to come to grips with some of these technical skills, then please do get in touch with me.  If you are very worried about your ability to work productively in a group setting, again, please get in touch.  If you're excited about learning some new skills, and about publishing your work on the open web, and about working hand in hand with a community partner -- then come to class on Tuesday pumped and ready to start. 
+
+Please contact me with any questions you may have.  See you all very soon!
+* WhatIsHistoryFor.org
+#+POSTID: 29
+#+PARENT: 10
+#+DATE: [2010-09-01 Wed 12:13]
+
+#+TITLE: What is History For?
+** What Is History For?
+What is the function of history?  
+In this session we should talk about the public ufnctions of history; I need a sliel about narratives, meaning, creation of communal meaning, etc.  
+Then after that talk about the public sphere, the Internet, what communities are, etc.  Will need to do some research in recent socialogy of technology and also back into the public-sphere discussions.  reading Chris's book essential.  
+* what-is-history-for.org
+#+TITLE: What is History For?
+** What Is History For?
+Why do we tell stories?  There are lots of answers to this question, some of them contained [[http://www.historycooperative.org/journals/ht/35.4/carrier.html][here]] -- none of them, perhaps, entirely satisfying. So maybe it would have been better to name this session, "/How/ do we tell stories?" -- and in particular, how does the technical infrastructure of society condition the kinds of stories we tell and the uses to which they are put? 
+* wordpress-typography.org
+
+#+BLOG: hh
+#+POSTID: 749
+#+BLOG: hh
+#+DATE: [2015-03-09 Mon 10:21]
+#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
+#+CATEGORY: 
+#+TAGS:
+#+DESCRIPTION:
+#+TITLE: Wordpress Typography
+
+I am lousy at typograpy, but will do my best to provide a simple guide here. 
+
+** Basic principles of typography
+You should really [[http://designinstruct.com/tools-basics/the-basics-of-typography/][ask someone else]], but here are some basics:
+- fonts look different on-screen than on paper
+- most default web fonts are ugly
+- while many font prettiness characteristics are general (kerning, proportionality, line-height, x-height, etc.) other are context-dependent (contrast to other fonts used, seriousness, etc.)
+- in general, for web use we /prefer sans-serif fonts/
+- in general, we favour /general-purpose, usually minimalist fonts/ instead of, e.g., comical or ultra-techy or super-flowery fonts
+- you should *almost never* use more than 2 fonts on a page, though occasionally 3 fonts is acceptable. Usually, then, this means one font for headings, and another for body. 
+
+** Font Pairings
+I'm terrible at this. [[https://www.google.com/search?q=font+pairings&ie=utf-8&oe=utf-8][Other people have lots of ideas]], but be prepared to haveto do some work to get this right.
+
+** Adding Fonts
+The basic problem of web typography boils down to this: your browser can only render the fonts that your computer knows about; but every computer has different fonts installed. Therefore, outside of a very small number of "web-safe" fonts, you can't guarantee that your website will render the same on all computers.  
+
+The first step in addressing this is to use a so-called "font stack," which you define using the "font-family" instruction in CSS:
+
+#+BEGIN_SRC css
+body {
+  font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+#+END_SRC
+
+Your browser will go through the stack and display the first font it recognizes: first it will try Helvetica Neue, then Helvetica, and if neither of those work, then it will display the default sans-serif font.  If you define your stack right, then at least your bage will have similar layout on all screens, even if the particulars will vary slightly.  
+
+The second stage has been the development, in CSS3, of web fonts.  These are font definitions that live in a web-accessible file. Your browser renders the fonts directly, rather than asking your computer for the font definition first.  So, a web font should look the same on a Mac, Windows, Linux, Android, iOS, or whatever device. This is actually pretty simple.  Here's how it looks in CSS:
+
+#+BEGIN_SRC css
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+  font-family: 'MyWebFont', Fallback, sans-serif;
+}
+#+END_SRC
+
+Let's talk about 3 different mechanisms for applying this.
+
+*** Add a Google Font to your Stylesheet
+
+This is so easy; we do it directly in SASS.  First, find a font you like at [[https://www.google.com/fonts][Google fonts]]. Click on "Add to Collection", then press "use", which will open up a new screen.  Make sure to customize the font as you desire; then in step 3, click the "include" tab which will show you a line like this:
+
+#+BEGIN_SRC css
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic|Lato:400,400italic);
+#+END_SRC
+
+Add this line to ~_settings.scss~ or ~app.scss~; your font will now be loaded automatically! Now you just have to use it; do this by setting the ~$body-font-family~ and ~$header-font-family~ variables in ~_settings.scss~:
+
+#+BEGIN_SRC css
+//$body-font-family: 'Open Sans', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;            
+$body-font-family: 'Roboto', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;            
+
+// $header-font-family: $body-font-family;
+$header-font-family: 'Lato', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;            
+#+END_SRC
+
+All done!
+
+- Advantages :: incredibly easy!
+- Disadvantages :: Google Fonts can be very slow to load. If you find your sites starts taking ages to load, this could be the culprit, and you should try one of the other options.
+
+*** Register a google Stylesheet
+This is almost exactly the same as before, but instead of using ~@import~, use wordpress's ~wp_register-style~ method by adding this to the bottom of your ~functions.php~:
+
+#+BEGIN_SRC php
+            // register Google font
+            wp_register_style('google-font', 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora:400,700|Droid+Sans+Mono');
+            wp_enqueue_style('google-font');
+#+END_SRC
+
+*** Uploading fonts and adding by hand
+If styles are still slow to load, you can upload the font files to your wordpress site and write the ~@font-face~ css by hand.  [[http://www.fontsquirrel.com/fonts/open-sans][Font Squirrel]] will create a zipfile full of individual font files for you to upload.  Put these in a subfolder in your uploads directory.  Then create the ~@font-face~ css entries by hand as above -- put them athte top of your ~app.scss~.  This will be fairly timeconsuming, as you need an entry for the normal, bold, tialica, and bold-italic font faces.  [[https://css-tricks.com/snippets/css/using-font-face/][Follow this guide]], which was also referenced above.  
+
+*** Using a plugin
+If all else fails, you can use a plugin instead of these methods.  [[https://wordpress.org/plugins/tags/typography][Here are some possibilities]]. However, this is a less robust solution and I don't recommend it.
+
+OK, there you are!  Maybe come to class having already thought about what fonts you want to use, and in what circumstances.  
+

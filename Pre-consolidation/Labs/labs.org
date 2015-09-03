@@ -1,9 +1,0 @@
-#+POSTID: 67
-#+DATE: [2013-10-08 Tue 09:53]
-#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
-#+CATEGORY: 
-#+TAGS:
-#+DESCRIPTION:
-#+TITLE: Labs And Notes
-
-When I can, I'll place notes about class and our labs in this category.  

@@ -1,3 +1,0 @@
-#+TITLE: What is History For?
-* What Is History For?
-Why do we tell stories?  There are lots of answers to this question, some of them contained [[http://www.historycooperative.org/journals/ht/35.4/carrier.html][here]] -- none of them, perhaps, entirely satisfying. So maybe it would have been better to name this session, "/How/ do we tell stories?" -- and in particular, how does the technical infrastructure of society condition the kinds of stories we tell and the uses to which they are put? 
