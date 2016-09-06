@@ -1319,10 +1319,10 @@ function my_wpgeo_map_js_preoverlays( $output, $map_id ) {
 
     /*  You will need to adjust all of these */
     /*  The first 4 are the co-ordinates you established in your GIS program*/
-    $north_bound = 43.65661944444;
-    $south_bound = 43.64408888888889;
-    $east_bound = -79.41159722222223;
-    $west_bound = -79.43393333333333;
+    $north_bound = 43.8073086158169;
+    $south_bound = 43.76891864109982;
+    $west_bound = -79.45731331229433;
+    $east_bound = -79.38658034742863;
 
     
     /* this variable is the ID of the image attachment -- the only way to find this out
@@ -1833,3 +1833,130 @@ If all else fails, you can use a plugin instead of these methods.  [[https://wor
 
 OK, there you are!  Maybe come to class having already thought about what fonts you want to use, and in what circumstances.  
 
+* Changes for Next Week
+:PROPERTIES:
+:EXPORT_FILE_NAME: changes-for-next-week
+:ID:       o2b:f430ecad-3085-45a3-a37e-78c041892638
+:POST_DATE: [2015-10-13 Tue 14:49]
+:POSTID:   182
+:BLOG:     hh
+:END:
+
+Wow, that was an empty classroom today! Let's try to avoid that in the future.
+
+In any event, the few of us who were present decided on an alternate course of events for next week. Instead of the scheduled "spatial history" workshop, we will take a walk through downtown Toronto, thinking about its history.  It will be just us -- no guide -- so this will work best if we prepare well.  Therefore:
+
+- Please read Jay Young's "Filled with Nature: Exploring the environmental history of downtown Toronto" (pdf coming soon)
+- In addition, read at least chapter 2 of the dissertation version of Jennifer Bonnell's history of the Don River Valley, "Imagined Futures and Unintended Consequences", available [[https://tspace.library.utoronto.ca/bitstream/1807/24690/1/Bonnell_Jennifer_201006_PhD_thesis.pdf][from T-Space]].  Feel free to read more, or to investigate the book version, /Reclaiming the Don/.
+- Finally, take a look at [[http://2014.hackinghistory.ca/wp-content/uploads/2014/11/placing-history.pdf][Placing History]], which should give you some ideas about using GIS for place-based history.
+
+Read "Filled with Nature" particularly carefully; come to class with a list of places you are particularly interested in investigating, and ideas about how to learn more about the neighbourhood.  What would it take to make a similar tour in your own neighbourhood? In Black Creek?
+
+* Quick Todo List for class
+- [ ] Set Front Page to Static Page (not blogs)
+- [ ] sidebar?
+- [ ] Site Map -- what is happening w/ that?
+  - [ ] Once we know the main categories, set up a menu.
+- [ ] SASS Work:
+  - [ ] colour palette
+  - [ ] Layout: fullscreen? When?
+- [ ] Templates
+  - [ ] Images? In what categories, and how?
+  - [ ] Additional navigation: related posts?
+- [ ] Improve wordpress search e.g. with [[https://wordpress.org/plugins/swiftype-search/][Swiftype]] or similar plugin
+
+* Defining a Colour Palette in SASS
+:PROPERTIES:
+:ID:       o2b:37fe05bc-7162-4f6b-9822-be3d5507d790
+:POST_DATE: [2016-02-03 Wed 07:55]
+:POSTID:   346
+:BLOG:     hh
+:END:
+It took a few moments, but working with Marie & Ran in class yesterday I think I figured out a good way to define a colour palette for the site.  If you take a quick look at the file ~_settings~ in the ~assets/scss~ directory of the theme, You'll notice the following around line 40 or so:
+
+#+BEGIN_SRC scss
+
+// 1. Global
+// ---------
+
+$global-font-size: 100%;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
+
+$primary-color: #2199e8;
+//$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #e6e6e6;
+//$light-gray: #00ffff;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a; 
+$black: #0a0a0a;
+$white: #fefefe;
+$body-background: $white;
+$body-font-color: $black;
+$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-antialiased: true; 
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 0;
+$global-text-direction: ltr;
+#+END_SRC
+
+Note that there are about 10 colour definitions in the middle of this code block, starting with ~$primary-color~ and going all the way to ~$white~.  Almost all of the colours on the whole site are set with these variables (the only exceptions I found were buttons around line 240, and the "select arrow" around 340). What I suggest is defining a new set of colour right at the start of the colour block.  So, for instance, Marie and I grabbed a bunch of colours from some of Ran's pictures: 
+
+#+BEGIN_SRC scss
+  $flynnyellow : #F6BB68;
+  $flynnbabyblue : #C7DBE2;
+  $flynnotherbabyblue: #a4b8c6;
+  $flynnbrown: lighten(#34292A, 15%);
+#+END_SRC
+
+You might also do something like:
+#+BEGIN_SRC scss
+$flynnwhite: #something;
+$flynnblack: #something;
+$flynngray: #something;
+
+#+END_SRC
+
+Then just go ahead and replace the colour hex values in the original text with yor variables, e.g.:
+#+BEGIN_SRC scss
+$primary-color: $flynnyellow;
+//$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+//$light-gray: #e6e6e6;
+$light-gray: $flynngray;
+//$light-gray: #00ffff;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a; 
+// $black: #0a0a0a;
+$black: $flynnblack;
+// $white: #fefefe;
+$white: $flynnwhite;
+$body-background: $white;
+$body-font-color: $black;
+
+#+END_SRC
+
+This will do most of the work for you.  The roles of the colouurs in Foundation are described [[http://foundation.zurb.com/sites/docs/global.html][on this page]]; we don't have much call for success-color, failure-color, and alert-color in our sites, but primary is all over the place and secondary also shows up occasionally.  White is used for the background, and black for the main text as well as some other features.  
+
+Anyway, now is a good time to get familiar with all of this; feel free to experiment on your personal sites. Just edit the appropriate files; the ufll css should be updated automatically.
+
+* Hacking History Wordpress Plugin
+:PROPERTIES:
+:ID:       o2b:6bec9b85-da2b-4b58-ab62-bdf50de8c5c0
+:POST_DATE: [2016-03-01 Tue 09:42]
+:POSTID:   377
+:BLOG:     hh
+:END:
+Hi folks! I devoted a fair amount of time this week to writing a simple Wordpress plugin for Hacking History. Long overdue, this plugin will eventually hold whatever code snippets we decide are relevant to the class, but for now contains only the code for a cool shortcode which permits image overlays in Foundation. The "cool" part refers to the fact that it is straightforward to choose two images in the Wordpress visual editor, something of a coup that took me a long time to figure out. Please read the [[https://github.com/titaniumbones/hack-history-plugin][README]] which explains more.  
+
+There's an example on the front page of [[http://matttest.hackinghistory.ca/][my test site]], which yo can check out for yourselves.  

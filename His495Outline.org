@@ -1,5 +1,6 @@
-#+INCLUDE: "~/src/orgpaper/default_packages.org"
-# #+POSTID: 21
+#+POSTID: 38
+#+DATE: <2017-08-30 Wed>
+# #+INCLUDE: "~/src/orgpaper/default_packages.org"
 # #+AUTHOR:    University of Toronto
 # #+EMAIL:     matt.price@utoronto.ca
 #+TITLE:   Syllabus
@@ -15,25 +16,26 @@
 # #+EXPORT_EXCLUDE_TAGS: noexport
 # #+LINK_UP:   
 # #+LINK_HOME: 
-#+ODT_STYLES_FILE: "/home/matt/.emacs.d/odt-syllabus-export.odt"
+# #+ODT_STYLES_FILE: "/home/matt/.emacs.d/odt-syllabus-export.odt"
 #+TEMPLATE: 
 #+CATEGORY: 
 
 
 * Logistics
-#+ATTR_HTML: :class org-upload
-[[file:Images/matt_on_desk_for_web.jpg]]
 
 | *Instructor:* | Matt Price             |
 | *Email:*      | matt.price@utoronto.ca |
-| *Office Hrs:* | SS 3077 T 12-2         |
+| *Office Hrs:* | SS 3077 T 1:30-2:45    |
 
 * Introduction 
+
+#+ATTR_HTML: :class org-upload
+[[file:Images/matt_on_desk_for_web.jpg]]
 In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][World Wide Web]] was an obscure technical work-in-progress buried in the depths of a vast research institute.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
 
 Along the way, we will learn about the history of digital media, and their place in the development of the public sphere; and we will also study the history and politics of "engaged" and "public" scholarship.  We will also spend a substantial amount of time acquiring the technical skills needed for a project like this, e.g., the fundamentals of [[http://en.wikipedia.org/wiki/HTML][HTML]] and [[http://www.codecademy.com/tracks/javascript][Javascript]], as well as just enough [[http://ca.php.net/tut.php][PHP]] to work with the [[http://www.wordpress.org][Wordpress]] Content Management System.  No prior technical knowledge is required for this, but you will need to be willing to challenge yourself to learn a few tricks and principles of web programming.  The payoff for that effort is huge: a chance to contribute in a meaningful way to historical discourse beyond the walls of the University, and to explore the frontiers of historical communication in the process.  
 
-In 2015-16, the combination of a very small class size and an unusual opportunity have prompted me to make a change to the class's format. We will all be working together with a focus on the Black Creek region of Toronto, in advance of the "Make It Better Fair" scheduled for April, 2016.  The precise shape of the project will rapidly become more clear in September and October. 
+In 2017-17, we have a very small class size, so we will likely have only one class project; we'll work together as a class to find something that interests everyone. 
 * Course Structure
 ** First Semester
 In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  
@@ -48,23 +50,24 @@ In the second semester it is expected that students will spend most of their tim
 # <<Course Requirements>>
 In this project-based class, we have relatively few readings and instead focus on active learning through a variety of assignments, all of which are intended to help you build towards your final, collaborative group project.  
 
-The class has 5 kinds of assignments:
-- 16 Weekly Blog Postings   (6 in semester 1, 12 in semester 2, *20%*) 
-- 5 "Short Technical Assignments"   (STA's, first semester, *10%*)
-- 1 Website Review (First Semester, *5%*)
-- One Written Paper  (7-9 pp, Jan 12, *10%*)
-- The Final Project  (website, ongoing but due April 5, *45%*)
+The class has 4 kinds of assignments:
+- 16 Blog Postings   (6 in semester 1, 12 in semester 2, *20%*) 
+- 5 "Short Technical Assignments"   (STA's, first semester, *15%*)
+- One Written Paper  (7-9 pp, Jan 6, *10%*)
+- The Final Project  (website, ongoing but due April 4, *45%*)
 with the balance of 10% for on- and off-line participation, which includes comments on other students' blog posts, contributions to online resources, and discussion.
 
-*Blog Postings* are thoughtful pieces, 400 words or so in length, posted to the course blog by noon the day before class meets (so, noon each Monday).  You will be expected to read your colleagues' postings and respond to them, both online (using the blog's comment function) and in class.  In the first semester, these postings will primarily be /responses to the weekly readings./ In the second semester, they will instead generally take the form of /progress reports/ in which you discuss your final projects and your interactions with partnering organizations, or of /short written pieces from your project site/ (see below).  In the event that I want you to focus on something else, I will inform you one week in advance /in class/.  Some informality in tone is acceptable and even expected, but these are to be serious, thoughtful engagements with the course materials.  Think of them as a cross between a [[http://www.quicksprout.com/2009/07/21/how-to-write-a-blog-post/][regular blog post]] and a [[http://historyprofessor.org/reading/how-to-write-a-review/][review or response paper]].  Citations of online sources should use hyperlinks; other material should be cited as in printed assignments (I recommend [[http://www.chicagomanualofstyle.org/home.html][Chicago Manual of Style]], but we will discuss this at greater length during the semester).  You are expected to blog each week of class, with the exception of the first and last week of each semester, and the week of your website review.  I will comment on individual blog posts as much as possible, but will give out marks only twice a year (approx. Nov. 29 & Apr. 3). 
+*Blog Postings* are thoughtful pieces, 400 words or so in length, posted to the course blog by noon the day before class meets (so, noon each Monday).  You will be expected to read your colleagues' postings and respond to them, both online (using the blog's comment function) and in class.  In the first semester, these postings will primarily be /responses to the weekly readings/, and are required /every two weeks/.  In the second semester, they will instead generally take the form of *weekly* (not bi-weekly) /progress reports/ in which you discuss your final projects and your interactions with partnering organizations, or of /short written pieces from your project site/ (see below). See the [[http://2015.hackinghistory.ca/assignments/the-course-blog/][assignment page]] for more details. 
 
-*Short Technical Assignments (STA's)* are designed to give you the technical skills you will need for your website development work in the second semester.  Approximately every 2 weeks in the first semester, you will complete a short on or off-line assignment for a pass-fail grade.  The lab assignments will cover basic web skills and other technical topics, which will always have been covered in the third 'lab' hour of class. 
+*Short Technical Assignments (STA's)* are designed to give you the technical skills you will need for your website development work in the second semester.  Approximately every 2 weeks in the first semester, you will complete a short on or off-line assignment for a *pass-fail* grade.  The lab assignments will cover basic web skills and other technical topics, which will always have been covered in the third 'lab' hour of class. 
 
 The *Website Review* has two parts: a written review of a historical website posted to the course website at least 24 hours before class, and a very short in-class presentation.  We will have one or two website reviews each week in the first semester, except for the first and final meetings.  The written portion is posted to the course website in lieu of that week's blog post and should be tagged "review" to make it easier to find (see the review assignment for more details).  
 
 *The Paper* is due shortly after the beginning of the second semester.  Approximately 7-9 pages long, its format is that of a standard course paper:  a well-researched thesis, supported by evidence garnered from primary and secondary sources.  Students are expected to write on topics related to their *Final Projects* (see below).  
 
-*The Final Project* is a major collaborative effort to build a historical website in service to an organization outside the University.  Students will work in groups of 3-4, collaboratively building a substantive site which balances scholarly merit with the interests of the sponsoring organization and accessibility to the general public.  We have assembled a list of [[./PartneringOrganizations.html][Partnering Organizations]] which have expressed interest in working with you, and you should carefully examine their proposals and discuss them with your peers.   See the [[http://./ProjectGuidelines.or][Project Guidelines]] for more detailed discussion & marking breakdown.  
+*The Final Project* is a major collaborative effort to build a historical website in service to an organization outside the University. In previous years, students have worked in groups of 3-4, collaboratively building a substantive site which balances scholarly merit with the interests of the sponsoring organization and accessibility to the general public. The plan for this year is in flux and may depend on class size, but I tentatively foresee a single class project in collaboration with a new initiative in the Black Creek region of Toronto (which includes Pioneer Village).  
+
+See the [[http://www.hackinghistory.ca/assignments/class-project-overview/][Project Guidelines]] for more detailed discussion & marking breakdown, though that document does not yet reflect this year's direction..  
 ** Late Policy
 *Blogs:* blog postings are due by noon /the day before class/. Late blog postings will not be marked.
 
@@ -76,12 +79,12 @@ The *Website Review* has two parts: a written review of a historical website pos
 
 # <<texts>>
 ** Project Timetable
-- <2015-10-06 Tue>: Detailed assignment handed out 
-- <2015-12-08 Tue>: Project Proposal due and presented
-- <2016-01-12 Tue>: Paper Due 
-- <2016-02-23 Tue>: Intermediate Status Report
-- <2016-03-29 Tue>: Submission to Community Partner
-- <2016-04-05 Tue>: Project Open House/FINAL DUE DATE
+- <2016-10-04 Tue>: Detailed assignment handed out 
+- <2016-12-06 Tue>: Project Proposal due and presented
+- <2017-01-10 Tue>: Paper Due 
+- <2017-02-21 Tue>: Intermediate Status Report
+- <2017-03-28 Tue>: Submission to Community Partner
+- <2017-04-04 Tue>: Project Open House/FINAL DUE DATE
 
 * Texts
 All texts for this course are online, either in the public web or as pdfs.  Most of them are publicly available. You may want physical copies of some books;  these are available at [[http://www.amazon.ca][Amazon]] or by special order from any sizable bookstore. 
@@ -92,18 +95,18 @@ A sizable collection of links is also stored in a [[http://www.zotero.org][Zoter
 We'll be using a number of important software tools, some of them very easy to use, some of them harder.  All of them are free (as in beer, and usually as in speech) and most run on all three major platforms (Windows, Mac, Linux) or on the web.  See the Tools page for more details.
 #<<outline1>>
 * Outline for Semester 1
-** <2015-09-15 Tue> Hacking History
+** <2016-09-13 Tue> Hacking History
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-future-history-small.jpg]]
 Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture.  
 *** Background: 
 - [[http://www.journalofamericanhistory.org/issues/952/interchange/index.html][JAH - The Promise of Digital History]], [[http://writinghistory.trincoll.edu/revisioning/tanaka-2012-spring/][Pasts in a Digital Age]]
 - Mark Poster, "[[http://www.hnet.uci.edu/mposter/writings/democ.html][Cyberdemocracy]]" 
-*** Lab:  Technical Introduction 
+*** Lab 01: Getting Started
 - Wordpress & the course site.  
 - Blogging & social media review.
 - HTML
-**  <2015-09-22 Tue> Language of the Web
+** <2016-09-20 Tue> Language of the Web
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-Bush-Memex-lg1.jpg]]
 The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
@@ -112,10 +115,10 @@ The Web is written in a language called HTML, with some help from other lanugage
 - Tim Berners-Lee, /Weaving the Web/ [[file:readings/berners-lee-weaving-web.pdf][Ch. 2,4]].  
 - Edward L. Ayers, "[[http://www.vcdh.virginia.edu/Ayers.OAH.html][History in Hypertext]]"
 - Rus Shuler, "[[http://www.theshulers.com/whitepapers/internet_whitepaper/index.html][How Does the Internet Work?]]
-*** Lab: Understanding HTML
+*** Lab 02: Understanding HTML
 *Resources:* [[http://jsbin.com/#html,live][JSBin online HTML/Javascript editor]]; [[http://codeacademy.net][codeacademy courses]]; [[http://en.wikipedia.org/wiki/HTML][on Wikipedia]]; [[http://www.w3.org/MarkUp/Guide/][w3 guide]]; also cf. Zotero Bibliography
 
-** <2014-09-23 Tue> The Wisdom of the Crowd 
+** <2016-09-27 Tue> The Crowd and the Public
 #+ATTR_HTML: :class org-upload
 [[file:Images/220px-Wikipedia_Logo_1.0.png]]
 The new kinds of collaboration that the web makes possible, and the intellectual challenges they create.
@@ -123,28 +126,64 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 - R. Rosenzweig, "[[http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42][Can History be Open Source?]]"
 - Aaron Swartz, "[[http://www.aaronsw.com/weblog/whowriteswikipedia][Who Writes Wikipedia]]"
 - Owens, Trevor. [[http://onlinelibrary.wiley.com/doi/10.1111/cura.12012/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+on+31+August+from+10%3A00-12%3A00+BST+%2805%3A00-07%3A00+EDT%29+for+essential+maintenance][Digital Cultural Heritage and the Crowd]].” Curator: The Museum Journal 56, no. 1 (2013): 121–130.
-- Dan Cohen, ""[[http://www.dancohen.org/2009/04/29/the-spider-and-the-web-results/][The Spider and the Web (Results)]] (be sure to read the preceding two posts)
-- Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
-*** Lab: CSS and Web Styles
-*** Assignments: STA1 Handed out Today (Web Styles)
-** <2014-09-30 Tue> Public History
-#+ATTR_HTML: :class org-upload
-[[file:Images/comhist.jpg]]
-A basic introduction to the questions surrounding the production of "public" history.  
-*** Readings 
+- Filene, Benjamin. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2012.34.1.11][Passionate Histories: ‘Outsider’ History-Makers and What They Teach Us]].” The Public Historian 34, no. 1 (February 1, 2012): 11–33.
+*** Further Reading:
 - Corbett, Katharine T., and Howard S. (Dick) Miller. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2006.28.1.15?origin%3Dapi][A Shared Inquiry into Shared Inquiry]].” /The Public Historian/ 28, no. 1 (February 1, 2006): 15–38.
 - Carr, Graham. [[http://muse.jhu.edu.myaccess.library.utoronto.ca/journals/canadian_historical_review/v086/86.2carr.pdf][Rules of Engagement: Public History and the Drama of Legitimation]].” The Canadian Historical Review 86, no. 2 (2005): 317–354.
-- Filene, Benjamin. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2012.34.1.11][Passionate Histories: ‘Outsider’ History-Makers and What They Teach Us]].” The Public Historian 34, no. 1 (February 1, 2012): 11–33.
-*** Lab: Getting Started with Wordpress
-*** Assignments: STA1 Due Today 
-** <2014-10-07 Tue> Working with Communities
-The ethics of working with laypeople, and the promises & pitfalls of collaborating with non-academics.
+- Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
+*** Lab 03: CSS and Web Styles
+** <2016-10-04 Tue> Before Toronto
+Before there was a "Toronto", there was already a place by the shore, and people who inhabited it. 
 *** Readings:
+- Jon Johnson, ‘The Indigenous Environmental History of Toronto, “The Meeting Place”’ https://www.academia.edu/4949457/The_Indigenous_Environmental_History_of_Toronto_The_Meeting_Place
+- First Story Toronto <https://firststoryblog.wordpress.com/>
+*** Lab 04: Javascript Basics
+** <2016-10-11 Tue> Toronto's Environmental History
+What do the geography and natural history of Toronto have to say to us, as historians; and how do we write an environmental history that is also a history of /people/? 
+*** Readings
+- Urban Explorations : Environmental Histories of the Toronto Region (Hamilton, ON: L.R. Wilson Institute for Canadian History, 2013), selections TBA
+Also /either/ selections from Bonnell, /Reclaiming the Don/, /or/ Dagenais, "The Urbanization of Nature: Water Networks and Green spaces in Montreal /or/ Ken Cruikshank and Nancy B. Bouchi
+er, “Blighted Communities and Obnoxious Industries: Constructing Environmental Inequality on an Industrial Waterfront, Hamilton,Ontario, 1890-1960”
+*** NOTE: Extra Lab reading!
+Please also take a quick look at the first two chapters of 
+*** Lab 05: Introducing Github
+** <2016-10-18 Tue> Spatial History
+Thinking about the visual presentation of information, especially in map form
+*** Readings
++ Franco Moretti, /Graphs, Maps, Trees/, ch. 1 ([[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/placing-history.pdf][Graphs]]).
++ Knowles, A. K. “GIS and History.” [[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/pariser-filter-bubble.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]] (2008): 1–13.
++ Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
++ Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
+*** Lab 06: Spatial History with Google Maps
+** <2016-10-25 Tue> Toronto's Immigration History
+To understand any Toronto region or neighbourhood, we need to attend to the patterns of settlement and migration as the city developed into a multicultural mosaic in the 20th Century.  
+*** ACTION Readings
+TBA, but tentatively:
+- Harold Troper, "Becoming an Immigrant City" in Aniseph and Lanphier, /The World in a City/
+- Selection from Walker, /The History of Immigration and Racism in Canada/
+*** Lab 07: Getting Started with Wordpress
+** <2016-11-01 Tue> Toronto's Towers
+Towers are one of the defining characteristics of the Black Creek neighbourhood; how are we best to understand them?
+*** ACTION Readings
+- Highrise "1000th Tower" http://highrise.nfb.ca/thousandthtower/
+- TBA
+*** Lab 08: Theming with Wordpress
+** NO CLASS 11/8 (break)
+** COMMENT <2016-11-08 Tue> Utopian Toronto
+There's a long history of imagining a more perfect Toronto. How does that project fit in to our objectives this year?
+*** ACTION Readings
+- UTOpia : Towards a New Toronto (Toronto: Coach House Books, 2005) Selections TBA
+- TBA
+*** Lab 09: From CSS to SASS!
+** <2016-11-15 Tue> Oral History, and Working with Communities
+#+ATTR_HTML: :class org-upload
+[[file:Images/mike.jpeg]]
+One remarkable possibility opened up by the web is abundant oral history.
+*** Readings: 
+- "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
 - Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012. 
-- 
-*** Lab: Wordpress Themes
-*** Assignments: STA2 Handed Out (Theming Wordpress)
-** <2014-10-14 Tue> Search and Filter (Information Abundance)
+*** Lab 09: Art of the Interview
+** <2016-11-22 Tue> Search and Filter (Information Abundance)
 #+ATTR_HTML: :class org-upload
 [[file:Images/info_overload.png]]
 In the past, /access/ to information was one of the historian's most fundamental challenges.  today, it is more often a problem of /filtering/ information.  
@@ -153,17 +192,8 @@ In the past, /access/ to information was one of the historian's most fundamental
 - William J Turkel, n.d. [[http://williamjturkel.net/2011/03/15/going-digital/.][Going Digital]]
 - William J. Turkel, “[[http://williamjturkel.net/2011/03/02/research-24-7/.][Research 24/7]].”
 - - Sharma, Patrick. "[[http://www.historians.org/perspectives/issues/2012/1204/Oral-History-Information-Abundance-and-Scarcity.cfm][Oral History, Policy History, and Information Abundance and Scarcity]]". /Perspectives on History/ April 2012
-*** Lab: Foundation and SASS
-*** Assignments: STA2 Due
-** <2014-10-21 Tue> Oral History
-#+ATTR_HTML: :class org-upload
-[[file:Images/mike.jpeg]]
-One remarkable possibility opened up by the web is abundant oral history.
-*** Readings: 
-- "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
-*** Lab: Art of the Interview
-*** Assignments: STA3 Handed Out (Oral History)
-** <2014-10-28 Tue> Piracy, Plagiarism, Citation
+*** Lab 10: From CSS to SASS!
+** <2016-11-29 Tue> Piracy, Plagiarism, Citation
 #+ATTR_HTML: :class org-upload
 [[file:Images/tpb.jpg]]
 Ethical, Legal, and Technical Questions around Copyright
@@ -172,9 +202,12 @@ Ethical, Legal, and Technical Questions around Copyright
 - Richard Stallman, "[[http://www.gnu.org/gnu/manifesto.html][The GNU Manifesto]]" and "[[http://www.gnu.org/philosophy/free-sw.html][The Free Software Definition]]"
 - Creative Commons Licences: http://creativecommons.org/licenses/
 - Dan Cohen, "[[http://www.dancohen.org/2009/05/12/idealism-and-pragmatism-in-the-free-culture-movement/][Idealism and Pragmatism in the Free Culture Movement]]"
-*** Lab: More Foundation
-
-** <2014-11-04 Tue> Designing Digital Projects
+*** Lab 11: SASS and the Foundation Framework
+** <2016-12-06 Tue> Proposal Presentations
+This is your chance to wow the class with your final proposals. Good luck!
+*** No Readings!
+*** Lab 12: Wordpress Templates (if we feel like it)
+** COMMENT Designing Digital Projects
 A crash course in website design
 *** Readings
 - Roy Rosenzweig and Dan Cohen, Chapter 2: "[[http://chnm.gmu.edu/digitalhistory/designing/][Designing for the History Web]]," in Digital History (2006).
@@ -182,16 +215,7 @@ A crash course in website design
 - Bill Buxton, /Sketching User Experiences/ (excerpts)
 *** Lab: Design exercise (Personas & Wireframes)
 *** Assignments: STA3 Due
-** <2014-11-18 Tue> Maps and Graphs: Visual History
-Thinking about the visual presentation of information
-*** Readings
-+ Franco Moretti, /Graphs, Maps, Trees/, ch. 1 ([[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/placing-history.pdf][Graphs]]).
-+ Knowles, A. K. “GIS and History.” [[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/pariser-filter-bubble.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]] (2008): 1–13.
-+ Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
-+ Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
-*** Lab: Google Maps and Javascript
-*** Assignments: STA4 Handed Out (Historical Google Map)
-** <2014-11-25 Tue> Immersive History: Games & Simulations
+** COMMENT Immersive History: Games & Simulations
 *** Readings
 - Kee, Kevin, Shawn Graham, Pat Dunae, John Lutz, Andrew Large, Michel Blondeau, and Mike Clare. “[[http://utpjournals.metapress.com/content/588030472qw20368/fulltext.pdf][Towards a Theory of Good History Through Gaming]].” /Canadian Historical Review/ 90, no. 2 (June 1, 2009): 303–326.
 - Squire, Kurt, and Sasha Barab. “[[http://dl.acm.org/ft_gateway.cfm?id%3D1149188&type%3Dpdf&CFID%3D141869106&CFTOKEN%3D23125562][Replaying History: Engaging Urban Underserved Students in Learning World History Through Computer Simulation Games.]]” In Proceedings of the 6th International Conference on Learning Sciences, 505–512. ICLS  ’04.
@@ -200,17 +224,17 @@ Thinking about the visual presentation of information
 - Kee and Rockwell, "[[http://gamestudies.org/1102/articles/geoffrey_rockwell_kevin_kee][The Leisure of Serious Games]]"
 *** Lab: How Javascript Works in Wordpress
 *** Assignments: STA4 Due
-** <2014-12-02 Tue> Proposal Presentations
-This is your chance to wow the class with your final proposals. Good luck!
 
 
 * 'Outline' for  Semester 2
 In the second semester, we will meet mostly to discuss your progress on the project and to address specific issues you are encountering as you work.  You will be working pretty intensively on research, design, and writing/creating, so we will usually /not/ have class readings, except in cases where a background reading will obvously be of assistance to most of the class in addressing some issue.  The particular topics we take on will be defined by your needs, but some potential ones include:
+- Designing digital Projects
+- Immersive History (games & Simulations)
 - Refining your project goals
 - Social Media in a community website (Twitter, Facebook, Google Plus, etc)
 - Data Capture and Metadata
 - How Databases Work
-- The Digital divide: Design Implications
+- The Digital Divide: Design Implications
 - Copyright Issues
 - Accessibility
 - Wordpress Content Types
@@ -220,8 +244,13 @@ In the second semester, we will meet mostly to discuss your progress on the proj
 - Audio Post-Processing
 - Website look and Feel
 
-Our final meeting will be a Project Open House in which you share the final products of your labours with the class. 
+** COMMENT dross                                                   :noexport:  
+Our final meeting will be a Project Open House in which you share the final products of your labours with the class.
 
+- More Toronto History
+- Living Museums
+- Responsive Design
+- Wordpress Templates 
 
 
 # /home/matt/Matt_headshots/Matt Price/matt_on_desk_for_web.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-matt_on_desk_for_web1.jpg
@@ -244,3 +273,5 @@ Our final meeting will be a Project Open House in which you share the final prod
 # Images/wpid-Bush-Memex-lg1.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid14-wpid-Bush-Memex-lg1.jpg
 
 # Images/matt_on_desk_for_web.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-matt_on_desk_for_web2.jpg
+
+# ./PartneringOrganizations.html http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-PartneringOrganizations.html

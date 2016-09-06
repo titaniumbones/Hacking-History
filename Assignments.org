@@ -4,27 +4,38 @@
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
 #+CATEGORY: assignments
 #+TAGS: 
-#+PARENT: 
 #+DESCRIPTION: 
 #+TITLE: Assignments
+#+PROPERTY: PARENT 52
 
-* Assignments for His 495: Hacking History
-Assignments for HIS495 are linked here as I put them up on the site.   This mostly means lab assignments and documents related to the project, as the bi-weekly writing assignments are straightforward reading responses (this is described in the [[./syllabus/][Syllabus]]).  
-- [[./assignments/lab-01-understanding-html/][Lab 01: HTML]]
+* Assignments
+:PROPERTIES:
+:ID:       o2b:3fff9aa9-d319-471d-bb29-17f04e617463
+:POST_DATE: [2015-09-10 Thu 22:04]
+:POSTID:   52
+:END:
 
+Assignments for HIS495 are linked here as I put them up on the site. See the [[http://www.hackinghistory.ca/][Syllabus]] for an overview of assignments and their values.
 * The Course Blog
+:PROPERTIES:
+:ID:       o2b:a846871f-5de5-4f23-a73c-43d7328f6679
+:POST_DATE: [2015-09-10 Thu 22:04]
+:POSTID:   55
+:END:
 Two of the main themes of the class are: the exploration of digital media as a mode of communicating historical knowledge; and experimentation with the collaborative production of knowledge.  So it's not surprising that, first, the bulk of your assignments are shifted over to the digital realm; and second, that we will be thinking of this website as a platform for a collective exploration of our subject matter.  
 
 ** Fall Semester  
 After [[http://www.hackinghistory.ca/wp-login.php?action=register][registering]] for the course website, you will be /expected/ to produce one substantive post every two weeks (400 words), and /allowed/ to add as many short 'heads-up' postings as you desire (though for the most part such postings would be better off in the comments section of an existing post).  You will also be expected to comment regularly -- every week -- on your colleagues' (and my own) postings.
 
-Unless otherwise noted, postings in the first semester take the form of a response to the week's readings or theme.  As with any short response paper the object of the posting is not to summarize, but to engage critically with the texts at hand.  For general guidelines on writing, look [[http://www.writing.utoronto.ca/advice/specific-types-of-writing][here]]. You can also think of these posts as a cross between an [[http://www.quicksprout.com/2009/07/21/how-to-write-a-blog-post/][ordinary blog post]] and a [[http://historyprofessor.org/reading/how-to-write-a-review/][review or response paper]].   We will discuss this further as the semester goes on.
+Unless otherwise noted, postings in the first semester take the form of a response to the week's readings or theme. In the event that I want you to focus on something else, I will inform you one week in advance /in class/.  As with any short response paper the object of the posting is not to summarize, but to engage critically with the texts at hand. Some informality in tone is acceptable and even expected, but these are to be serious, thoughtful engagements with the course materials.  For general guidelines on writing, look [[http://www.writing.utoronto.ca/advice/specific-types-of-writing][here]]. You can also think of these posts as a cross between an [[http://www.quicksprout.com/2009/07/21/how-to-write-a-blog-post/][ordinary blog post]] and a [[http://historyprofessor.org/reading/how-to-write-a-review/][review or response paper]].   We will discuss this further as the semester goes on. 
+
+Citations of online sources should use hyperlinks; other material should be cited as in printed assignments (I recommend [[http://www.chicagomanualofstyle.org/home.html][Chicago Manual of Style]], but we will discuss this at greater length during the semester).
 
 Blog entries should be produced regularly, not saved up for a big bang at the end of class. To be counted towards your grade, blog entries /must/ be handed in 24 hours before the start of the next class.  This is a firm deadline to permit others time to comment on your work, and on occasion to give me a chance to post something after everyone has made their contributions.  
 
 ** Winter Semester
 
-In the second semester, you are expected to post about your project: progress reports, pieces of text you've written for your site, or reflections on other aspects of the project. Because continuous progress is essential to the success of the project, the blog assignment shifts in the second semester to a /weekly/ assignment:  500 words, 24 hours before class, in time for me and your classmates to read through and comment.  
+In the second semester, you are expected to post about your project: progress reports, pieces of text you've written for your site, or reflections on other aspects of the project. Because continuous progress is essential to the success of the project, the blog assignment shifts in the second semester to a /weekly/ assignment:  400 words, 24 hours before class, in time for me and your classmates to read through and comment.  
 
 ** Grading
 Your online contributions constitute 20% of your grade (that's not including your final project and ancillary assignments, some of which will also go through the course blog).  Your blog posts will be evaluated in bulk, but I'll be applying the following criteria (cf. Mark Sample's [[http://www.samplereality.com/2009/08/14/pedagogy-and-the-class-blog/][helpful post]] from which parts of this are derived):
@@ -34,8 +45,14 @@ Your online contributions constitute 20% of your grade (that's not including you
 - _1_ Inadequate.  Unstructured, error-ridden, no argument to speak of.  Shows no engagement with the topic.
 - _0_ No Credit.  Failed to post or made only a token effort.  
 
-The better your postings, the more exciting and engaging this class will be for everyone.  So please approach this part of the class in good faith and take it seriously.  
+I will comment on individual blog posts as much as possible, but will give out marks only twice a year (approx. Nov. 29 & Apr. 3). The better your postings, the more exciting and engaging this class will be for everyone.  So please approach this part of the class in good faith and take it seriously.    
+
 * Class Project Overview
+:PROPERTIES:
+:ID:       o2b:cc562cf2-c5aa-4dbf-bd04-cf9d0e14b46e
+:POST_DATE: [2015-09-11 Fri 06:59]
+:POSTID:   74
+:END:
 The class project, which will occupy most of the class's second semester and some of the first, is a substantial collaboration between a small group of students and a community organization, on a project of mutual interest.  In almost every case the project will be a Wordpress website, and while I am in principle open to other types of projects, the circumstances under which I would approve such projects are highly constrained. The point of this class is to create something of lasting value to yourself, the organization, and the community it serves, so that your work endures beyond the temporal scope of the class.  The project is worth 45% of your final mark, but this percentage is distributed between various parts of the project.  A high premium will be placed on timely, regular progress made towards intermediate goals, to help make sure that these complex and difficult projects come to fruition.  Some of you have already been thinking about projects; this is great and /you should continue to do so/.  You will work in small groups of 2-4; in a class of this size there are some challenges to group work, but there are substantial benefits to working together, especially when charting unknown territory.  
 ** Collaboration and Service
 We should perhaps distinguish between two kinds of working together for this project.  On the one hand, you will be working closely with your peers.  As a result, you have an additional responsibility to your working group -- your lapses affect them too.  You'll also need to be sure to communicate clearly and effectively with each other, both electronically and in person.  Be sure that you know what each of you bring to & get out of the project; and how will you hand the project over.
@@ -122,6 +139,11 @@ This posting will serve as the basis for your presentation the following week.  
 I look forward to seeing your work.  
 
 * Project Proposal
+:PROPERTIES:
+:ID:       o2b:967aa03e-fc6e-40a0-bbea-07267a27efd4
+:POST_DATE: [2015-11-24 Tue 09:54]
+:POSTID:   277
+:END:
 The project kicks off at the end of Fall semester with a formal proposal and presentation.  The written proposal will be submitted not only to me, but to your partner as well, so it is an important document.  
 
 ** What is this project proposal thing for anyway?
@@ -174,6 +196,11 @@ http://jsbin.com/udecir/1/edit
 
 
 * STA 01: HTML & CSS
+:PROPERTIES:
+:ID:       o2b:5d585d1a-c18b-4020-99fb-4906149d62ce
+:POSTID:   58
+:POST_DATE: [2015-09-11 Fri 06:56]
+:END:
 *Due <2015-09-29 Tue> before class*
 
 You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  
@@ -192,6 +219,11 @@ Already a web hotshot? If you feel like you already know everything you need to 
 You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
 
 * STA 02: Javascript
+:PROPERTIES:
+:ID:       o2b:5136bc02-9c0c-4a85-bff7-601fc3ce0f77
+:POSTID:   60
+:POST_DATE: [2015-09-11 Fri 06:56]
+:END:
 *Due <2015-10-13 Tue>*
 
 Go back to Codeacademy; this time, complete the [[http://www.codecademy.com/tracks/javascript][javascript]] course
@@ -202,11 +234,9 @@ After you're done, send me an email with a link to your CodeAcademy profile page
 
 * STA 03: Make a Map
 :PROPERTIES:
-:EXPORT_FILE_NAME: 03-spatial-history
-:ID:       o2b:627e464d-d361-45f6-a371-9cd74dbdc060
-:PARENT:   Assignments
-:POST_DATE: [2015-07-23 Thu 09:52]
-:POSTID:   315
+:ID:       o2b:78b5fa70-113f-4fa2-a27e-6960c2adf7c9
+:POSTID:   62
+:POST_DATE: [2015-09-11 Fri 06:58]
 :END:
 *Due Date: <2015-10-27 Tue>*
 
@@ -217,21 +247,13 @@ Your next assignment builds directly on that exercise and on your existing knowl
 ** Assignment
 Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you. The final product should meet the following criteria:
 
-- Essay :: You should write a short essay, approximately 500 words (~ 2 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis.
-
-     Here are some plausible examples of appropriate topics:
-  - Corridor of Power: Berlin's Friedrichstrasse in the Nazi Era
-  - End of an Era: Toronto's last meatpacking plants
-  - An Empire at Home: conservative Think Tanks in Washington, D.C.
-    I just made these up, of course. You should pick something that you (a) know something about already, and (b) are interested in. Ideally, you will already have done some research into this topic, and will have a small number of sources ready to hand. The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.  ("Think tanks, so important in the construction of policy in today's United States, are a relatively new feature of American politics. In this paper, I will discuss the early history of this now-paramount institutional form, and argue that the /geographical proximity/ of these think tanks is actually an important feature.")
-
-    You may notice that most of my examples are drawn from a kind of urban history. Urban history is obviously well-suited to spatial analysis, but there's no reason you can't describe, for instance, more widespread networks (e.g., to take one of your examples at random, networks of hippies. Underground bus networks. Comparative suffrage movements. etc.)
+- Essay :: You should write a short essay, approximately 500 words (~ 2 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis. Moreover (and this is a recent change), your topic should be *Toronto-centric* -- you should choose a neighbourhood or theme that is relevant to the course and especially to the Toronto Region.  You should pick something that you (a) know something about already, and (b) are interested in. . The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.
 
     The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~(Latour, p. 97)[http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a]~.  Don't worry about a bibliography.  
 
-- Map :: Your map should have at least 4 markers.  In class, we cut and paste to create multiple markers. The assignment template is slightly different, and uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
+- Map :: Your map should have at least 4 markers. The assignment template uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
 
-- Styling :: As was also the case with our in-class assignment, the bulk of the styling work is accomplished for us by the /strapdown.js/ script that we call at the bottom of the page. Remember that you can use any of several /bootswatch/ themes if you would like to try a different overall look. If you like, you can also customize the CSS further by using  the /style.css/ file in the project folder
+- Styling :: As was also the case with our in-class assignment, the bulk of the styling work is accomplished for us by the /strapdown.js/ script that we call at the bottom of the page. Remember that you can use any of several /bootswatch/ themes if you would like to try a different overall look. If you like, you can also customize the CSS further by using  the /style.css/ file in the project folder.  In fact, I would definitely recommend doing some styling work.  Can you, for instance, style the map legend to crate a 
 
 ** Getting your assignment, and handing it in
 
@@ -255,6 +277,11 @@ Your Map should /work/ -- all your markers should display correctly. The initial
 If you change the styling, you should not create a terrible mess!
 
 * STA 04: Getting started with PHP
+:PROPERTIES:
+:ID:       o2b:283d25bf-d268-4a04-a5de-d552fac129ee
+:POST_DATE: [2015-09-10 Thu 22:08]
+:POSTID:   64
+:END:
 
 You've already learned bits and pieces of 3 languages -- and now we're trying another one? Crazy!  It doesn't /really/ make sense to work this way; but this is part of the hacking method. We learn what we need to, and hope that the whole is a little more than the sum of its parts.  
 
@@ -264,13 +291,13 @@ The Wordpress framework is written in the PHP programming language. PHP structur
 
 Complete the [[https://www.codecademy.com/en/tracks/php][PHP Track at Codeacademy]], and send me an email with your profile URL.  
 
-* STA 05: Wordpress Themes
+* ACTION STA 05: Wordpress Themes 
 
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
 
 
-* STA 03 - Foundation
+* COMMENT Foundation
 
 For this short technical assignment, I would like you to switch your perosnal from your home-grown theme to the advanced Foundation framework we'll beworkingwith in our real projects.  Please do the following:
 
@@ -282,7 +309,7 @@ For this short technical assignment, I would like you to switch your perosnal fr
 - *resture your cool customizations from before this change* (that is, add the appropriate bakcground images & elements, etc.)
 - *learn about the /[[http://foundation.zurb.com/docs/components/reveal.html][reveal]]/ and /[[http://foundation.zurb.com/docs/components/accordion.html][accordion]]/ features in foundation, and try to implement them briefly in [[http://jsbin.com/soxowa/2/edit?html,js,output][jsbin]]. 
 
-* STA-4 -- Foundation
+* COMMENT Timemap
 ** Historical Mapping
 This is a simple experiment in generating historical maps:  interactive timelines that also map events on a geographical grid.  
 

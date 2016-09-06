@@ -1,3 +1,4 @@
+
 * Use and Reuse
 This repository collects most of my course materials for /Hacking History/ a year-long 4th-year seminar I teach in the History Department at University of Toronto.  The repository contains most of my notes and assignments, as well as the syllabus and some auxiliary materials.
 
@@ -5,10 +6,9 @@ It's not as well-organized as the website,
 
 http://www.hackinghistory.ca/
 
-But it should be easier to reuse.  It's written in [[http://orgmode.org/][Org-Mode]], a syntax similar to Markdown but not as widely used. If you use Pandoc, it can translate pretty well between org and markdown syntax. 
+But it should be easier to reuse.  It's written in [[http://orgmode.org/][Org-Mode]], a syntax similar to Markdown but not as widely used. If you use Pandoc, it can translate pretty well between org and markdown syntax. The website itself is served by Wordpress, using the fantastic [[https://github.com/punchagan/org2blog/][org2blog]] tool from within the Emacs editor.
 
 Some features don't work perfectly in the web environment. Most notably citations, which I generate using Zotero, will not always look or act the way they should.  Also, a whole lot of images are missing, since I steal a lot of my images & don't have permission to republish them.  
-
 
 This repo is neither complete nor fully organized, but I intend to keep improving it so let me know if you can't find something.
 

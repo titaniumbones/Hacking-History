@@ -1,22 +1,70 @@
 #+POSTID: 67
 #+DATE: [2013-10-08 Tue 09:53]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
-#+CATEGORY: 
+#+CATEGORY: labs
 #+TAGS:
+#+PARENT: 5
 #+DESCRIPTION:
 #+TITLE: Labs And Notes
+#+PROPERTY: PARENT 5
 
-When I can, I'll place notes about class and our labs in this category.  
-* Lab 00: Getting Started
-- Registration
-- Intro Post:
-  - Name
-  - interests
-  - looking forward to/anxious about.
-  - gravatar is possible
-- What is Wordpress; Logging in
-- 
-* Lab 01: Understanding HTML
+* Labs and Notes  
+:PROPERTIES:
+:ID:       o2b:d8a04e9c-23ed-421f-b04f-a09e5135abfe
+:POST_DATE: [2015-09-09 Wed 19:27]
+:POSTID:   5
+:PARENT: 0
+:END:
+In general, each weekly seminar also includes a "lab" component in which we explore technical skills. See the individual Lab pages for more information
+* Lab 01: Getting Started
+:PROPERTIES:
+:ID:       o2b:7bbae931-b531-47a9-9bdd-aaecf55d45af
+:POST_DATE: [2015-09-09 Wed 19:34]
+:POSTID:   8
+:END:
+Welcome to /Hacking History/.
+
+Today's "lab" is really just an introduction to the website; but since you will be building your own site before the year is out, you'll want to pay attention to the interface.  We use the [[http://wordpress.org][Wordpress]] web framework in this class. Wordpress is the most popular "Content Management System" in the world, and runs ~75 million sites.  It is often praised for the relatively quick learning curve encountered by both users and developers. 
+
+** Registration and First Post
+:PROPERTIES:
+:ID:       o2b:5a91f103-5faf-4489-8e0d-8003f97bd290
+:POST_DATE: [2015-09-10 Thu 11:28]
+:END:
+You should receive an email with your site login info shortly before class starts; to log in find the [[http://www.hackinghistory.ca/wp-login.php][admin login page]] and type in your email.  Request a new password and log in.
+
+[[file:Images/wp-admin-interface.png]]
+
+In the "new post" screen write a short post introducing yourself to me and your classmates. Include some of the following:
+- What interests you about this class?
+- What are you looking forward to/anxious about?
+- Is there something unusual about yourself that you're willing to share with the class, that will help us to know you better?  
+
+If you're concerned about privacy, consider restricting access to users of level "author" or higher:
+
+[[file:Images/wp-restrict-post.png]]
+
+ Press "Publish," and /voilà/, you're done.  If you've used Wordpress before, you may still learn something from reading about the [[https://make.wordpress.org/core/2015/08/01/editor-enhancements-in-4-3-%E2%9C%A8/][new structured text improvements]] and the [[https://en.support.wordpress.com/markdown/][advanced Markdown capabilities]].  
+                                                                                        
+** User Profile
+
+If you want a picture of yourself to appear next to your name (and it would be helpful for me to have one), you can [[https://en.gravatar.com/][create an account at Gravatar]] and upload an image.  Wordpress will automatically link to your gravatar profile.  
+
+** Understanding Wordpress
+We will discuss this in more detail in a few weeks; but for now, here is a picture:
+[[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
+** HTML Preview
+If we have time at the end, let's take a look at [[http://jsbin.com/onopaz/7/edit][this exercise]] which is planned for next week.  
+
+Also, this is an opportunity to download and install the [[http://atom.io][Atom text editor]] which we will be using in coming weeks.  
+
+* Lab 02: Understanding HTML
+:PROPERTIES:
+:PARENT:   67
+:ID:       o2b:7d99ec52-6cfc-4005-829f-6ecde511b460
+:POST_DATE: [2015-09-09 Wed 19:36]
+:POSTID:   11
+:END:
 One of the goals of this week is to help you think of the Web as a protocol-driven infrastructure.  The language in which that infrastructure operates is called [[http://en.wikipedia.org/wiki/HTML][HTML]]. Like a traveller in a foreign country, you may not need to be fluent in this language, but if you know just a little bit then you'll be much more comfortable.  In this exercise we will introduce an online tool called [[http://jsbin.com/welcome/1/edit][JSBin]], now one of many such tools available online, and somewhat similar to the [[http://codeacademy.net][Codeacademy]] website you will be using for your assignments.
 
 I strongly advise you to also take this opportunity to download the [[http://atom.io][Atom text editor]], as well. Further instructions are on the Tools page.  
@@ -74,7 +122,7 @@ Still others define pieces of structure in a functional way that generally also 
 #+END_SRC
 
 **** Linking
-The fundamental, breathtaking feature of the web is its capacity to create links between documents, images, media sources, etc., with absolute disregard for where those resources are physiclaly stored.  THh syntax for making a link is as follows 
+The fundamental, breathtaking feature of the web is its capacity to create links between documents, images, media sources, etc., with absolute disregard for where those resources are physiclaly stored.  The syntax for making a link is as follows 
 
 #+BEGIN_SRC html -n
   <a href="" target="">Text </a>
@@ -158,7 +206,13 @@ Inspect the source code of three complex pages on the web and find every instanc
 - [[http://codeacademy.com][Codeacademy]] may have the best intro to HTML sequence
 - [[http://w3schools.com/][W3 Schools]] provides excellent tutorials.
 - [[https://developer.mozilla.org/en/HTML][The Mozilla HTML Reference]] is where I go when I need a detailed explanation of something.  
-* Lab 02: Css and Web Styles
+* Lab 03: CSS and Web Styles
+:PROPERTIES:
+:ID:       o2b:2a926b2c-7fda-4ae5-88b3-0837ce62757a
+:POST_DATE: [2015-09-09 Wed 20:23]
+:PARENT: 5
+:POSTID:   15
+:END:
 Last week we experimented with HTMl and dipped our toes into CSS and styles.  In your final projects, much of your coding time will be spent trying to get your site to look the way you want it to.  If you have a firm understanding of CSS (and of where to look for more info when you're having trouble!), this will be a lot easier.
 
 You already know about the [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings.  Another helpful tutorial site is [[http://learnlayout.com/][Learn Layout]], to which I'll be referring later; and there are many other resources available on the web.  
@@ -338,18 +392,594 @@ So, that's one way to position elements.  Another is to use the *float* property
 Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
 
 ** Changes Comin' Round Real Soon
-All of what you just learned is in the process of changing dramatically.  A new CSS module, *flexbox*, makes a lot of this stuff much easier, but takes some practice to understand.  Since very few Wordpress developers use flexbox yet, we won't be learning about it this term.  Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards.
+All of what you just learned is in the process of changing dramatically.  A new CSS module, *[[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][flexbox]]*, makes a lot of this stuff much easier, but takes some practice to understand.
+
+It turns out that the theme framework we use may be converting to flexbox very soon. So, [[http://jsbin.com/yukiwe/3/edit?html,css][here]] is a very quick introduction to flexbox.  You may want to look at [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][this cheatsheet]], this [[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties][slightly more verbose one]], or [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes][this very detailed specification]]. Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards. We will keep an eye out for those as we continue; meanwhile, if you want to, you can check out [[http://jsbin.com/bawoqo/3/edit?html,css,output][transitions]] and [[https://css-tricks.com/almanac/properties/a/animation/][learn]] a little bit about [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations][animations]].
 
 
-# /home/matt/HackingHistory/Images/nytimes-w-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-w-css.png
-# /home/matt/HackingHistory/Images/nytimes-no-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-no-css.png
-# /home/matt/HackingHistory/Images/boxmodel.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png
+* ACTION Lab 04: Javascript Basics 
+:PROPERTIES:
+:ID:       o2b:62f1b3b6-a51b-4581-bdb4-118280788bf1
+:POST_DATE: [2015-09-29 Tue 09:18]
+:POSTID:   160
+:END:
 
-# HackingHistory/Images/nytimes-w-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-w-css1.png
-# HackingHistory/Images/nytimes-no-css.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-nytimes-no-css1.png
+Another week, another language! This is in some ways a ridiculous way to learn about programming, and you may not remember all you learn. The most important thing is to get some sense of the types of operations that take place when programming languages interact with web pages, so you can change the code you are given to get it to do exactly what you want.  But in order to do this it wil lbe very helpful to know just a little bit about programming in general.
 
-# HackingHistory/Images/boxmodel.png http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel2.png
-* Lab 06: From CSS to SASS!
+** What is Javascript and why do we learn it?
+You'll remember that I made a a very general division early in the semester:
+| Structure | Style | Dynamic Content & Effects |
+|-----------+-------+---------------------------|
+| HTML      | CSS   | Javascript                |
+
+In contemporary web pages, a *lot* of the work that runs the page is done by javascript. This is easy to see, e.g., in the "Network" or "profiler" tabs of the developer tools in Chrome or Firefox.  In general, if you want to make changes to a web page after it's written, javascript is the easiest way to do it (except for CSS animations, I guess).  
+
+Javascript also has uses outside the browser -- the Atom editor is written in Javascript, for instance.
+
+** Running Javascript
+
+Because we use javascript mostly to manipulate web pages, it can be a little hard to run javascript programs.  Here are a couple of ways to try javascript form inside your browser:
+*** Run in Atom Editor
+This might be the easiest (though eventually you will need to run in a browser, e.g., if you want to practice manipulating DOM elements).  Install the [[https://atom.io/packages/script-runner][script-runner]] package, or one off the alternatives like [[https://atom.io/packages/script][run in atom]] or [[https://atom.io/packages/script][script]], and follow directions to run code directly in the editor.
+*** Console
+Both Chrome and Firefox have built-in "Javascript Consoles" accessible from the developer tools: ~Tools \rarr Web Developer \rarr Console~ or ~Menu \rarr More Tools \rarr Developer \rarr Console~
+*** Scratchpad
+The FF console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful.
+*** Accessing the console
+When you run code in the browser, the easiest way to print something is with the ~console.log~ function. This prints text /to the console/ so you will have to open the console to see if your code is working.  
+** some code to paste into your console or scratchpad
+We can start by just fooling around with a little test code. 
+
+#+BEGIN_SRC javascript
+  /*
+   Here are some basic javascript constructs you will encounter in your homework
+   ,*/
+
+  // two ways to "print"
+  console.log("hello");
+  // alert("hello");
+
+
+  // here is a very basic "for loop":
+  for (i=0; i<10; i++ ) {
+    console.log("this is number: " + (i+1));
+  }
+
+  // a simple array -- essentially a list
+  var veggies = ["carrot", "potato", "pea"];
+
+  // a "for-of loop" -- iterates over array items
+  for (i of veggies) {
+    console.log(i)
+  };
+
+  // a for-in loop -- iterates over array length (0,1,2,3, etc)
+  for (i in veggies) {
+       console.log(veggies[i])
+       };
+
+
+  // the same stuff, now applied to a web page
+  // this stuff won't work from inside your editor!
+  // try with other element types: h2, p, etc.  
+  var headings = document.getElementsByTagName("h1");
+  console.log(headings);
+  for (i=0; i<headings.length; i++) {
+      headings[i].innerHTML = i + 1 +". " + headings[i].innerHTML;
+      console.log(headings[i].innerHTML);
+  };
+
+  // this will overwrite the whole document!
+  //document.write("hello");
+
+  // objects
+
+  // defines a new object type: Animal
+  function Animal (name,numLegs) {
+      this.name=name;
+      this.numLegs=numLegs;
+  }
+
+
+  // creates a variable of type Animal
+  var penguin = new Animal("Penguin", 2);
+
+  // shows the internal structure of the object
+  console.log (penguin);
+
+  // you can iterate over the penguin's attributes
+  for (i in penguin) {
+      console.log(i + ": " + penguin[i]);
+  }
+
+  // Add a new "method" to the object
+  Animal.prototype.sayName = function() {
+      console.log("Hi my name is " + this.name);
+  };
+
+#+END_SRC
+** COMMENT Pseudo-code
+Sometimes when you're trying to figure out what to do, it cam be useful to write /pseudo-code:/ a skeletal outline of what you're trying to do that you then can translate into a real computer language:
+
+#+BEGIN_SRC text
+Headlines = all the headline elements
+counter = 1
+Loop over Headlines:
+    add "counter" and ". " to beginning of headline
+done
+#+END_SRC
+Obviously this code won't work, but it will help you figure out what you do need to know in order to accomplish your goal.
+
+Things I need to cover: 
+- control structures
+- variables
+- functions
+- objects
+
+** Iteration and Control Structures
+
+Every computer language has "control structures" that allow iteration: (how many times will this repeat?)
+#+BEGIN_SRC javascript
+  for(var i = 0; i < 10; i++) {
+      console.log("This is iteration number: " + (i + 1) );
+  }
+#+END_SRC
+
+also if statements -- what will this print?
+#+BEGIN_SRC javascript
+  var dimensions = 3;
+
+  if (dimensions > 3) {
+      warp.speed("Make it so");
+  } else {
+      console.log (" I dannae think she can take any more, Captain!");
+  }
+
+#+END_SRC
+
+You'll learn a few more in the homework (notably ~switch/case~ and ~try/catch~); but these two do the two basic operations you need to understand: /repeat/ and /test/. 
+
+** Variables
+You have all taken algebra, so you have all seen /variables/. Let's think of it this way: a variable is a box, into whic you can place a /value/.
+#+BEGIN_SRC javascript
+  var myString = "some value in here";
+  var myNumber = 47;
+  var myArray = ["first is a string", 2, "third is also a string"];
+  var myObject = {first:"first is a string", second: 2, third:"third is also a string"};
+#+END_SRC
+In almost all programming languages, there are many variable "types"; javascript variables are "dynamically typed", which means that the type is determined only when the variable is actually being used. This is very handy, but can sometimes lead to confusion, e.g., compare:
+
+#+BEGIN_SRC javascript
+  console.log("Hello, I am a string and " + 1 + 2);
+  console.log(1 + 2 + " but I am a number");
+#+END_SRC
+
+** Accessing the DOM
+Javascript uses something called the Document Object Model to understand the web page. As far as Javascript is concerned, the DOM is a big complex object, whose parts can be identified, manipulated, and used as input for complex functions.  Here's a relatively simple operation you can try in the Firefox scratchpad with a :
+#+BEGIN_SRC javascript
+var headings = document.getElementsByTagName("h1");
+console.log(headings);
+for (i=0; i<headings.length; i++) {console.log(headings[i].innerHTML);};
+// alert(headings);
+#+END_SRC
+
+** Objects
+Objects deserve special mention, because they can be hideously complex.  
+
+#+BEGIN_SRC javascript
+
+  // defines a new object type: Animal
+  function Animal (name,numLegs) {
+      this.name=name;
+      this.numLegs=numLegs;
+  }
+
+
+  // creates a variable of type Animal
+  var penguin = new Animal("Penguin", 2);
+
+  // shows the internal structure of the object
+  console.log (penguin);
+
+  // you can iterate over the penguin's attributes
+  for (i in penguin) {
+      console.log(i + ": " + penguin[i]);
+  }
+
+  // Add a new "method" to the object
+  Animal.prototype.sayName = function() {
+      console.log("Hi my name is " + this.name);
+  };
+#+END_SRC
+
+** Functions
+Functions in JS are defined in two ways: 
+
+As a declaration:
+#+BEGIN_SRC javascript
+function square(number) {
+  return number * number;
+}
+#+END_SRC
+As an expression:
+#+BEGIN_SRC javascript
+  var square = function(number) { 
+      return number * number 
+  };
+#+END_SRC
+
+Functions in Javascript are "first-order objects" and can be used in mind-bending ways.  You don't need to worry about those for a little while yet.  
+* Lab 05: Introducing Github
+:PROPERTIES:
+:ID:       o2b:41e67f32-3800-4ede-981d-39b0caa6d498
+:POST_DATE: [2015-10-27 Tue 14:22]
+:POSTID:   236
+:END:
+This lab is a very brief introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
+
+I /strongly/ recommend you follow this lesson up by [[http://git-scm.com/book/en/v2][reading the Git book]], especially the first 2 or 3 chapters.  
+
+Most people love git once they start to use it, but it can be very frustrating and difficult at the beginning.  We'll go over it once, kind of quickly, then try a real-world example (checking out the next STA).
+** Pasta-Please
+My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] creted a simple github training exercise last week for some of my other students.  It was really fun, so let's check it out:
+1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
+2. Navigate to [[https://github.com/titaniumbones/pasta-please][my fork of the pasta-please repository]]
+3. Take a quick look at the [[https://github.com/titaniumbones/pasta-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
+4. Have you found where the Recipes live?
+5. Add a new recipe *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
+   - Be sure to name the file "some-recipe-name.md" so that everyone knows it's written in Markdown
+   - follow markdown syntax in writing your recipe
+   - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
+   [[./Images/github-add-file.png]]
+6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/pasta-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
+
+Wow, that was cool, right? And if we get through this fast enough, we can try working from the command line.  
+1. Choose an appropriate home for your repo and execute ~git clone https://github.com/your-user-name/pasta-please.git~
+2. Add your directory to atom as a "project directory: [[./Images/github-add-project.png]]
+3. Install the "git-plus" package in Atom
+4. Create a new file in the appropriate place.
+5. Choose menu item ~Packages \rarr Git Plus \rarr Add~, then ~Packages \rarr Git Plus \rarr Commit~, then ~Packages \rarr Git Plus \rarr Push~
+
+There's still tons to learn but this is a good start.  
+** Quick Start
+- [[https://github.com/join][Sign Up for a Github Account]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install Git on your Laptop]]
+- [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
+- [[https://help.github.com/articles/set-up-git/][configure your git information]]
+- [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be sure you can authenticate with github]]
+- Create a local copy of your new Maps repository by [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
+  ~git clone https://github.com/YOUR-USERNAME/maps-with-markdown~
+- Make some changes
+- Commit your changes with ~git commit -m "Useful Message Here" -a~
+- *optional* Push your changes to the web with ~git push~
+- *optional* [[https://help.github.com/articles/using-pull-requests/][Submit a pull request ]]
+
+** Resources
+This web page is woefully incomplete! Here are some better resources: 
+- [[https://guides.github.com/activities/hello-world/][Hello World Guide on Githb]]
+- [[https://try.github.io/levels/1/challenges/1][Code School Git Intro]]
+- [[http://gitimmersion.com/index.html][Git Immersion]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official Git Book]]
+
+** Install Git
+If you're on Mac or Windows, the easiest way to start is to [[https://desktop.github.com/][install the Github Desktop client]].  This will also install the command-line tools you need for our tutorials, while giving you a very pretty GUI interface. You can [[https://css-tricks.com/first-impression-of-github-desktop/][learn more about the desktop client here]] (There's no Linux version, so I don't use this).  
+
+Once you've installed Git, let's execute our first command-line commands. In Mac, open Terminal. In Windows, open Powershell (it comes with Github Desktop).  Then type 
+#+BEGIN_SRC sh
+git config --global user.name "Your Name"
+#+END_SRC
+
+and then:
+#+BEGIN_SRC sh
+git config --global user.email youraddress@mail.utoronto.ca
+#+END_SRC
+
+This tells git some basic information about you, which it will use later on.  
+
+** Git "States"
+*(feel free to skip this if you want to get to the action)*
+
+A git repository has three important "areas", each of which represents a different "state": 
+- Working Directory (Uncommitted)
+- Staging Area (Staged)
+- .git repository (Committed)
+
+When you look at the repository, all you see is the *working directory*.  So, if I want to start a new project, I create an empty directory, say, "Project".  Then I run the command:
+#+BEGIN_SRC sh
+git init
+#+END_SRC
+This command creates the invisible ~.git~ subdirectory, which is the real heart of the repo:  it stores all the information about previous and current states of the repository.  
+
+** Doing and Undoing
+Every time you commit your changes in git, git saves a snapshot of the working directory to the .git repository.  So, in principle, you can get back to any earlier working state of the repository, which is awesome.  
+
+- commit :: the most elementary operation in git is "committing"; this saves your working directory to the repository. Here are the steps
+  - make some changes
+  - commit them with ~git commit -a -m Message~
+- checkout :: To inspect some other state of the repository, you will need to "checkout" that state:
+     ~git checkout HEAD~3~ will checkout the version you were working on 3 saves ago, for instance.   
+
+** Branching
+Sometimes you want to be able to come back to a particular revision -- maybe you have everything working fine, and you want to be sure you can get back to the working state.  Maybe you create an "experiments branch" to work on; if it breaks, you can just switch back to the master branch with no harm done.  
+#+BEGIN_SRC sh
+git branch # show branches 
+git branch -c experiment # create the experiment branch
+git checkout experiment # chekout the experiment branch; then work on it for a while
+git commit -a -m "added a cool new feature, but it doesn't quite work" # commit your changes
+git checkout master # go back to the master branch, since it still lworks and you need to use it for something.  
+#+END_SRC
+** Push and Pull
+When you're working together you may want to *pull* someone else's changes or *push* your own to the group.  
+#+BEGIN_SRC  sh
+git pull # get the most recent branch of your original repository
+git push # send all your commits on the current branch to the original repository
+#+END_SRC
+
+
+OK, that's what I've got for now.  Follow the excellent links near the top for more info.  Good luck!
+
+* Lab 06: Spatial History with Google Maps
+:PROPERTIES:
+:ID:       o2b:ef1c68be-0f41-4ad8-8798-84dbc7e73b7c
+:POST_DATE: [2015-09-14 Mon 16:07]
+:POSTID:   100
+:END:
+
+** Google Maps and Spatial History
+
+Today in class we discussed /spatial history/, that is, history which focusses very strongly on the cultural history of space and place. There is nothing /intrinsically digital/ about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
+
+Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29][Spatial History Project]] and Ben Schmidt's [[http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html][Whaling Maps Project]] take substantial technical effort to achieve their effects; in general, lengthy training in the use of specialized GIS software is required. We have our own example in the [[http://decima.chass.utoronto.ca/][DECIMA Project]] run by Prof. Terpstra in our department.
+
+Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
+** Read this part! Follow the links! 
+Today's exercise is also something of a test.  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
+- working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which we saw briefly in the first class, and
+  using [[https://github.com/titaniumbones/maps-with-markdown][a copy you can download and work with on your own]].
+
+The latter version also serves as an introduction to the [[https://github.com/][Github code-sharing platform]]. If you continue working with code-based academic projects, you will eventually want to learn more about git, which is an enormously powerful resource.  Our next assignment will also be made available on Github, so this is a chance to get a head start. If you want to work locally, I strongly recommend the newly-released [[https://atom.io/][Atom Code Editor]].  If you also install the atom-html-preview package, you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
+
+** What is a GIS?
+:PROPERTIES:
+:ID:       o2b:29ea8244-dab2-47a5-abae-7aac7fdcabca
+:POST_DATE: [2015-07-20 Mon 22:53]
+:POSTID:   291
+:BLOG:     dig
+:END:
+GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses [[http://www.arcgis.com/features/][ArcGIS]], which is expensive and something of an industry standard, while many independent scholars use [[http://www.qgis.org/en/site/][QGIS]], which is free, open source, and not quite as powerful as Arc.
+
+The data in a GIS is all [[https://en.wikipedia.org/wiki/Geotagging][geotagged]], that is, assigned a set of geographical co-ordinates. This sounds simple but it is actually quite complex, since any co-ordinate system is a /simplified projection/ of real, disordered, 3-dimensional space.  Many of the frustrations of working with GIS comes from the difficulty of rendering (say) historical map images /commensurate/ with modern, satellite-derived maps.
+
+Within a GIS, information is generally accessed as a set of *layers*.  Data of specific types is /stratified/ in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
+http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
+
+** Controlling Google Maps
+For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Google Maps API/.
+
+#+BEGIN_ASIDE
+An *API* is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Google Maps API, our web pages can communicate directly with Google's servers to modify the map that Google is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  
+#+END_ASIDE 
+
+You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
+
+** Using Markdown
+It was useful to learn HTML but it is a pain to generate it by hand. You do have to do some hand-coding of HTML for this exercise, because some of the work actually happens in Javascript; but the rest of it can be done in markdown, which I find much easier to write than HTML. 
+
+#+BEGIN_SRC markdown
+# one or more '#' marks indicates a headline
+
+### this one is "level 3"
+
+*a single asterisk is emphasis, or italics*
+
+**two are strong, or bold**
+
+An empty line separates paragraphs.
+
+> blockquotes are made with angle brackets
+> like this
+
+#+END_SRC
+
+You can also mix HTML in with markdown and it will generally render perfectly well. This is important for us because we have to create some ~<div>~ elements, which markdown can't do for us.
+
+While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=0m20s][the satisfaction that good, honest work brings to the act of electronic communication]]. 
+
+** The Exercise
+Today you will create a web page containing a Google Map.  The Google Map will contain 1-3 markers related to one of the themes we wrote on the blackboard in our last class.  It will also contain a VERY brief essay that discusses the historical significance of the events represented by those markers, all the while paying homage to the project of spatial history: foregrounding the spatial elements of the historical narrative at hand.  You're not handing in your work, so don't fret too much.  Try to enjoy yourself; but also work hard, as this is good preparation for our next assignment, which wil lbe handed out in class on Thursday. 
+
+** The code
+*** Javascript
+I have made the Javascript as simple as I can. There are more efficient and interesting ways to do this, but they are a little more complex. To make your markers -- and to re-centre your map -- you will need to modify the Javascript directly.
+*** HTML
+I /think/ the only modifications you will need to make to the HTML are within the special "textarea" block containing the markdown syntax.  The rest you can probably safely ignore, though you might learn something from looking at it.
+*** CSS
+The CSS for this exercise is deceptively simple.  We make only a few small changes tothe defaults, /but/ we are cheating here.  The [[http://strapdownjs.com/][strapdown]] javascript library which enables us to magically write using markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][bootstrap]] web development framework, which includes some sophisticated CSS.  Try changing the first ~textarea~'s ~theme=united~ to one of the other supported "swatches" -- I'm a fan of "cyborg" and "slate", myself.
+* Lab 07: Getting Started with Wordpress
+:PROPERTIES:
+:ID:       o2b:00873ce5-90ca-4c97-aa2b-d58be4609329
+:POST_DATE: [2015-09-14 Mon 16:08]
+:POSTID:   108
+:END:
+[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
+
+** Getting Started
+In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will see a theme called "Hacking History Starter Kit". Let's take a quick look at it:
+** Content Management Systems
+- a [[http://en.wikipedia.org/wiki/Web_content_management_system][CMS]] is a system that allows web pages, and structured sets of pages, to be constructed from existing documents and text/HTML entered by users who may have little knowledge of HTML or the other underlying technologies that display those pages. There are hundreds of CMS's in existence today, some Free/Open Source, others distributed under non-free licenses.  
+** What is Wordpress?
+Take a look at this chart:
+[[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
+
+- WP /assembles/ a page from many component parts. This is accomplished by a now-complex set of /scripts/ that offers instructions on what data to pull from the database and how to represent it on the page.
+- the underlying scripts are primarily written in the computer language [[http://php.net/manual/en/tutorial.php][PHP]], one of most popular languages for web "[[http://en.wikipedia.org/wiki/Server-side][server-side]]" programming. When a URL belonging to the site is requested, the Wordpress scripts activate, [[http://en.wikipedia.org/wiki/Parsing][parse]] the URL, and translate it into a set of instructions which are used to generate the HTML for the specific page we want.
+** Posts and Pages
+Wordpress is highly extensible through the [[http://codex.wordpress.org/Plugins][Plugin]] system. However, the default installation of Wordpress comes with two main types of content: 
+- [[http://codex.wordpress.org/Posts][Posts]] show the origins of Wordpress as a blogging engine -- they're a kind of content that's expected to be updated frequently, and to be of largely trnasitory interest; and
+- [[http://codex.wordpress.org/Pages][Pages]], which are relatively permanent pieces of content that help populate, for instance, your menu system.  
+You'll often see other kinds of content -- events, for instance, or links , biblographies, Facebook-style status updates; these are additional functionality that may or may not be available to you.
+** Databases
+- We won't go into this here, but the information you see in a post is distributed across many entries in a [[http://computer.howstuffworks.com/question599.htm][relational database]]. Knowing this can sometimes help you to track down errors that sneak into your website through admin carelessness.  
+** Themes, Styles and Templates
+- The look and feel of your website is also controlled by PHP files, often with help from files written in other languages, especially [[http://computer.howstuffworks.com/question599.htm][CSS]] and [[http://www.w3schools.com/js/][Javascript]]. Sometimes the look of your website will be affected by [[http://codex.wordpress.org/Plugins][Plugins]], but most of what you see is related instead to your [[http://codex.wordpress.org/Themes][Theme]].
+- A *Theme* is a collection of files -- at minimum two, but often many more -- from which wordpress takes instructions when presenting the page.  There are thousands of themes in the [[http://wordpress.org/extend/themes/][official directory]] and thousands more for sale or download outside it.
+- The easiest way to install a new theme is to *download it* using the Wordpress Admin interface.  Sometimes this won't work -- if you're writing your own theme, for instance!  I'm hoping we will have a chance to write our own [[http://codex.wordpress.org/Child_Themes][Child Themes]] later on, so if you want to do that, drop me a line and I'll hook you up with [[http://en.wikipedia.org/wiki/File_Transfer_Protocol][FTP]] access to the server.  
+** Assignment: build a Wordpress site
+*** Commemorate an Imaginary Event
+You are tasked with building a website that explores... something that hasn't happened. Invent an event or historical phenomenon (feel free to write from the future if you like), and create a web page that's suited to its exploration.
+*** Your Site already exists
+Navigate to http://yourfirstname.hackinghistory.ca.  Ta-da! there's a wordpress site ready and waiting for you.  Configure it and off we go.
+*** Think about Site Structure
+You will probably want to create a small hierarchy of pages that describe your event.  What are the important facts about this event? And how should they be organized? Where will you introduce visitors to the event and to the purpose of the site?  How will users participate in the life of the website?  In one week, you won't be able to build Wikipedia or facebook; you might need to create placeholder pages that just explain what they /ought/ to do.
+*** Style your Site
+How do you want this site to look? How many columns? What Images, and where?  Explore the installed themes or installl your own.  We'll move on to writing our own themes soon.  
+
+Have fun!!
+
+
+
+#+//home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-data_and_metadata_on_the_web.png
+* Lab 08: Theming with Wordpress
+:PROPERTIES:
+:ID:       o2b:771ddc0e-fbdc-45cf-be28-54113248bc2e
+:POST_DATE: [2015-09-14 Mon 16:08]
+:POSTID:   105
+:END:
+** Themes are collections of files
+- they live in your wordpress install:
+[[file:~/HackingHistory/Images/wp-file-structure.jpg]]
+** Themes are written primarily in PHP
+PHP is a programming language developed specifically for writing web pages.  Most PHP files consist of HTML and PHP intermixed with each other. This can be a little confusing, but you will get used to it. We will puzzle through the PHP syntax together, but you might want to try the [[http://www.codecademy.com/en/tracks/php][Codeacademy PHP track]] as an introduction to the language basics.  Knowing just a little will make your work a lot easier next semester.  
+
+#+BEGIN_SRC php
+<?php echo('Hello World'); ?>
+#+END_SRC
+
+** Themes tell wordpress how to display your content
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+** Understanding the Loop
+One of the first things you will encounter in a Wordpress theme is "the loop", which usually looks like this:
+#+BEGIN_SRC php
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<!-- do stuff ... -->
+<?php endwhile; else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+#+END_SRC
+
+This is a little hard to read, because it uses PHP's hideous [[http://php.net/manual/en/control-structures.alternative-syntax.php][alternate syntax for control structures]]. Let's rewrite it in the ordinary syntax:
+
+#+BEGIN_SRC php
+<?php 
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post(); 
+		//
+		// Post Content here: do stuff
+		//
+	} // end while
+} else {  ?> 
+    <p>
+    <?php _e( 'Sorry, no posts matched your criteria.' ); } // end if/else ?>
+
+#+END_SRC
+
+What the heck does this mean? Well, you'll see there is a ~while~ loop wrapped in an ~if~ test.  Then there are two functions -- can you see them?  The [[https://codex.wordpress.org/The_Loop][wordpress docs]] explain it this way:
+
+#+BEGIN_QUOTE
+In English (PHP types and people familiar with code speak can skip to below), the above would be read: If we are going to be displaying posts, then get them, one at a time. For each post in the list, display it according to <!-- do stuff ... -->. When you hit the last post, stop. The do stuff line(s), are template dependent.
+
+A little aside on Do stuff: in this example it is simply a placeholder for a bunch of code that determines how to format and display each post on a page. 
+#+END_QUOTE
+
+Digging a little deeper, we find:
+#+BEGIN_QUOTE
+An explanation for the coders out there: The have_posts() and the_post() are convenience wrappers around the global $wp_query object, which is where all of the action is. The $wp_query is called in the blog header and fed query arguments coming in through GET and PATH_INFO. The $wp_query takes the arguments and builds and executes a DB query that results in an array of posts. This array is stored in the object and also returned back to the blog header where it is stuffed into the global $posts array (for backward compatibility with old post loops). 
+#+END_QUOTE
+
+So, basically: 
+- ~the_post()~ is a function that grabs one member of an array of posts -- itself a very complex object -- and dumps it into a new object called ~$post~.
+- Within the loop, you will then call on other function to access properties of the post.  You can also access those properties directly, but it is often hard to do that.  So, for instance, you might write:
+#+BEGIN_SRC php
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <article id="post-<?php the_ID(); ?>">
+      <header>
+          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      </header>
+      <div class="entry-content">
+          <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></a></figure> <?php the_excerpt(); ?>
+      </div>
+  </article>
+
+  <?php endwhile; else : ?>
+          <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
+#+END_SRC
+
+Let's go over each of these functions in class.  
+
+** Files in your theme
+- *style.css:*  your stylesheet; you need this
+- *functions.php:* you're going to need this too
+- *index.php:* this is the default template for your theme; you can't live without it
+- *header.php:* controls your header.
+- *footer.php:* controls your footer area
+- *sidebar.php:* generates your sidebar
+
+** Template hierarchy
+remember this:
+
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+Here is a more detailed view:
+
+[[file:~/HackingHistory/Images/Template_Hierarchy.png]]
+
+When accessing a piece of data from the database, Wordpress will check in sequence to see if appropriate templates are available and use the first matching template it finds.  
+
+** Plugins and themes
+- Themes control appearance
+- plugins add functionality
+- but sometimes the difference isn't so clear
+- We will try to keep things pretty well-separated, but sometimes it's just much easier to do all your programming in a theme.  
+
+** Editing Your Theme
+- I recommend editing directly from Atom. We'll discuss in class how to do it. However, if that doesn't work, you can try one of the options below:
+  - install the [[http://wordpress.org/plugins/wpide/][wp-ide]] plugin to enable you to do syntax-highlighted code editing in your browser.  If the interface feels a little awkward try [[http://wordpress.org/plugins/better-file-editor/][better file editor]] instead -- it may be sufficient for our needs (I haven't experimented with it yet).
+- try changing the 'powered-by' text in the footer to our starter theme.  Did you make it work? Did you (alternatively) break the Internet?
+- Check out functions.php, and then sidebar.php.  Can you understand what's going on?  It's not easy to understand!
+- try editing the css enough so that you can get something un-hideous.
+*** Headers
+Right now there is no custom header support in our theme!  To use a header image,
+add this code to functions.php:
+
+#+BEGIN_SRC php
+<?php add_theme_support('custom-header); ?>
+#+END_SRC
+
+
+And put this somewhere in header.php: 
+
+#+BEGIN_SRC php
+<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+
+#+END_SRC 
+** Learn much, much more
+There is a huge amount of information online at the [[http://codex.wordpress.org/Stepping_into_Templates][Wordpress Codex]].  That last link is a good starting point, and so is the [[http://codex.wordpress.org/Theme_Development][Theme Development Page]].  There is lots and lots and lots to learn here...  
+
+# HackingHistory/Images/wp-file-structure.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-wp-file-structure.jpg
+
+# HackingHistory/Images/Template_Hierarchy.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-Template_Hierarchy.png
+
+
+* ACTION Lab 09: Art of the Interview
+* Lab 10: From CSS to SASS!
+:PROPERTIES:
+:ID:       o2b:a40eea2b-0cdf-46a1-b4cd-78674099991a
+:POST_DATE: [2015-09-10 Thu 07:10]
+:POSTID:   21
+:END:
 Now that you are alll HTML/CSS/PHP ninjas....  it's time for the next language!  The web frmework we're using -- "Foundation" -- uses a language called SASS to manage style instructions.  It takes a little getting used to be soon you will start to love it, I promise.  
 
 **  What's wrong with plain old CSS?
@@ -387,7 +1017,7 @@ CSS is great, but it has some problems:
 - it's hard to read :: when CSS files get complicated, they also tend to get a little convoluted;  it can be difficult to make a logical, easy-to-follow structure that makes sense of everything.
 
 ** What's the solution?
-More and more web developers have turned to *CSS preprocessors* as a solution to this tricky problem.  A preprocessor extends the CSS language to make it capable of more cool tricks, and when you're ready, /processes/ the code you've written to allow browsers to read it.  In effect they are new languages, which are "supersets" of the CSS language.  THe two main preprocessors are SASS and LESS, nad in our class we will use SASS (for no really good reason, just because).  SASS lets you 
+More and more web developers have turned to *CSS preprocessors* as a solution to this tricky problem.  A preprocessor extends the CSS language to make it capable of more cool tricks, and when you're ready, /processes/ the code you've written to allow browsers to read it.  In effect they are new languages, which are "supersets" of the CSS language.  The two main preprocessors are SASS and LESS, and in our class we will use SASS (for no really good reason, just because).  SASS lets you:
 - *stop repeating yourself* 
 - *write cleaner code*
 - and as a result, *write maintainable code* -- code that it's easy to understand when you come back to look at it two weeks or six months or two years later.  
@@ -429,7 +1059,7 @@ check it out!  Now whenever you want two elements to be the same color, you can 
 
 
 *** Functions
-You can also manipulate values using functions.  You can write your own functions (complicatd!) or use the built-in functions SASS provides.  Here's an example.  
+You can also manipulate values using functions.  You can write your own functions (complicated!) or use the built-in functions SASS provides.  Here's an example.  
 #+BEGIN_SRC scss
   $header-color: #eeeeee;
   h1 {
@@ -501,23 +1131,20 @@ This piece of code will create a bunch of CSS stanzas, like this:
   color: #ebfaeb; }
 #+END_SRC
 
-
-*** 
-
 *** Mixins 
 It gets even crazier!  You can define "mixins" that you can add to whatever classes you want.  These mixins can contain complicated functions or whatever.  Here's an example:  
 
 #+BEGIN_SRC sass
-@mixin border-radius($radius) {
+@mixin my-border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
 
-.box { @include border-radius(10px); }
+.box { @include my-border-radius(10px); }
 
-.some-other-box { @include border-radius(10px); }
+.some-other-box { @include my-border-radius(10px); }
 #+END_SRC
 
 This generates the code:
@@ -542,11 +1169,11 @@ This generates the code:
 
 You Should be.  There is still plenty to learn, but we'll stop here for now.  check out the SASS website for more info.
 ** Playing with SASS
-I have a series of JSBins set up, here they are:
+I have a series of JSBins set up from last year, here they are:
 
-- [[http://jsbin.com/ruhalo/5/edit?html,css,output][Intro to SASS variables]]
-- [[http://jsbin.com/zakeji/1/edit?html,css,output][A little bit of programming]]
-- [[http://jsbin.com/heyaj/edit][Sneak Peek at Foundation]]
+- [[http://jsbin.com/xiyosu/edit?html,css][Intro to SASS variables]]
+- [[http://jsbin.com/vomepovate/edit?html,css,output][A little bit of programming]]
+- [[http://jsbin.com/gajile/edit?html][Sneak Peek at Foundation]]
 
 
 ** Using Foundation on your personal site
@@ -558,113 +1185,14 @@ For fun, I have also enabled real-time compiling of SCSS files in the "grunterie
 SASS is just the tip of the iceberg for Foundation.  Next week we will check out some of the many features of Foundation, but if you want a sneak peek you can check out [[http://foundation.zurb.com/docs/][the Foundation docs]],.  
 
 
-** things to put into the playbround
+** things to put into the playground
 - text, background colors; grid sizes; div types; font sizes; 
-* Lab 04: Getting Started with Wordpress
-[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
-
-** Getting Started
-In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will see a theme called "Hacking History Starter Kit". Let's take a quick look at it:
-** Content Management Systems
-- a [[Chttp://en.wikipedia.org/wiki/Web_content_management_system][CMS]] is a system that allows web pages, and structured sets of pages, to be constructed from existing documents and text/HTML entered by users who may have little knowledge of HTML or the other underlying technologies that display those pages. There are hundreds of CMS's in existence today, some Free/Open Source, others distributed under non-free licenses.  
-** What is Wordpress?
-Take a look at this chart:
-[[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
-
-- WP /assembles/ a page from many component parts. This is accomplished by a now-complex set of /scripts/ that offers instructions on what data to pull from the database and how to represent it on the page.
-- the underlying scripts are primarily written in the computer language [[http://php.net/manual/en/tutorial.php][PHP]], one of most popular languages for web "[[http://en.wikipedia.org/wiki/Server-side][server-side]]" programming. When a URL belonging to the site is requested, the Wordpress scripts activate, [[http://en.wikipedia.org/wiki/Parsing][parse]] the URL, and translate it into a set of instructions which are used to generate the HTML for the specific page we want.
-** Posts and Pages
-Wordpress is highly extensible through the [[http://codex.wordpress.org/Plugins][Plugin]] system. However, the default installation of Wordpress comes with two main types of content: 
-- [[http://codex.wordpress.org/Posts][Posts]] show the origins of Wordpress as a blogging engine -- they're a kind of content that's expected to be updated frequently, and to be of largely trnasitory interest; and
-- [[http://codex.wordpress.org/Pages][Pages]], which are relatively permanent pieces of content that help populate, for instance, your menu system.  
-You'll often see other kinds of content -- events, for instance, or links , biblographies, Facebook-style status updates; these are additional functionality that may or may not be available to you.
-** Databases
-- We won't go into this here, but the information you see in a post is distributed across many entries in a [[http://computer.howstuffworks.com/question599.htm][relational database]]. Knowing this can sometimes help you to track down errors that sneak into your website through admin carelessness.  
-** Themes, Styles and Templates
-- The look and feel of your website is also controlled by PHP files, often with help from files written in other languages, especially [[http://computer.howstuffworks.com/question599.htm][CSS]] and [[http://www.w3schools.com/js/][Javascript]]. Sometimes the look of your website will be affected by [[http://codex.wordpress.org/Plugins][Plugins]], but most of what you see is related instead to your [[http://codex.wordpress.org/Themes][Theme]].
-- A *Theme* is a collection of files -- at minimum two, but often many more -- from which wordpress takes instructions when presenting the page.  There are thousands of themes in the [[http://wordpress.org/extend/themes/][official directory]] and thousands more for sale or download outside it.
-- The easiest way to install a new theme is to *download it* using the Wordpress Admin interface.  Sometimes this won't work -- if you're writing your own theme, for instance!  I'm hoping we will have a chance to write our own [[http://codex.wordpress.org/Child_Themes][Child Themes]] later on, so if you want to do that, drop me a line and I'll hook you up with [[http://en.wikipedia.org/wiki/File_Transfer_Protocol][FTP]] access to the server.  
-** Assignment: build a Wordpress site
-*** Commemorate an Imaginary Event
-You are tasked with building a website that explores... something that hasn't happened. Invent an event or historical phenomenon (feel free to write from the future if you like), and create a web page that's suited to its exploration.
-*** Your Site already exists
-Navigate to http://yourfirstname.hackinghistory.ca.  Ta-da! there's a wordpress site ready and waiting for you.  Configure it and off we go.
-*** Think about Site Structure
-You will probably want to create a small hierarchy of pages that describe your event.  What are the important facts about this event? And how should they be organized? Where will you introduce visitors to the event and to the purpose of the site?  How will users participate in the life of the website?  In one week, you won't be able to build Wikipedia or facebook; you might need to create placeholder pages that just explain what they /ought/ to do.
-*** Style your Site
-How do you want this site to look? How many columns? What Images, and where?  Explore the installed themes or installl your own.  We'll move on to writing our own themes soon.  
-
-Have fun!!
-
-
-
-#+//home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-data_and_metadata_on_the_web.png
-* theming with wordpress
-** Themes are collections of files
-- they live in your wordpress install:
-[[file:~/HackingHistory/Images/wp-file-structure.jpg]]
-** Themes are written primarily in PHP
-PHP is a programming language developed specifically for writing web pages.  Most PHP files consist of HTML and PHP intermixed with each other. This can be a little confusing, but you will get used to it. We will puzzle through the PHP syntax together, but you might want to try the [[http://www.codecademy.com/en/tracks/php][Codeacademy PHP track]] as an introduction to the language basics.  Knowing just a little will make your work a lot easier next semester.  
-
-#+BEGIN_SRC php
-<?php echo('Hello World'); ?>
-#+END_SRC
-
-** Themes tell wordpress how to display your content
-[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
-
-** Files in your theme
-- *style.css:*  your stylesheet; you need this
-- *functions.php:* you're going to need this too
-- *index.php:* this is the default template for your theme; you can't live without it
-- *header.php:* controls your header.
-- *footer.php:* controls your footer area
-- *sidebar.php:* generates your sidebar
-
-** template hierarchy
-remember this:
-
-[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
-
-Here is a more detailed view:
-
-[[file:~/HackingHistory/Images/Template_Hierarchy.png]]
-
-When accessing a piece of data from the database, Wordpress will check in sequence to see if appropriate templates are available and use the first matching template it finds.  
-
-** plugins and themes
-- Themes control appearance
-- plugins add functionality
-- but sometimes the difference isn't so clear
-- We will try to keep things pretty well-separated, but sometimes it's just much easier to do all your programming in a theme.  
-
-** Editing Your Theme
-- install the [[http://wordpress.org/plugins/wpide/][wp-ide]] plugin to enable you to do syntax-highlighted code editing in your browser.  If the interface feels a little awkward try [[http://wordpress.org/plugins/better-file-editor/][better file editor]] instead -- it may be sufficient for our needs (I haven't experimented with it yet).
-- try changing the 'powered-by' text in the footer to our starter theme.  Did you make it work? Did you (alternatively) break the Internet?
-- Check out functions.php, and then sidebar.php.  Can you understand what's going on?  It's not easy to understand!
-- try editing the css enough so that you can get something un-hideous.
-*** Headers
-Right now there is no custom header support in our theme!  To use a header image,
-add this code to functions.php:
-
-#+BEGIN_SRC php
-<?php add_theme_support('custom-header); ?>
-#+END_SRC
-
-
-And put this somewhere in header.php: 
-
-#+BEGIN_SRC php
-<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
-
-#+END_SRC 
-** Learn much, much more
-There is a huge amount of information online at the [[http://codex.wordpress.org/Stepping_into_Templates][Wordpress Codex]].  That last link is a good starting point, and so is the [[http://codex.wordpress.org/Theme_Development][Theme Development Page]].  There is lots and lots and lots to learn here...  
-
-# HackingHistory/Images/wp-file-structure.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-wp-file-structure.jpg
-
-# HackingHistory/Images/Template_Hierarchy.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-Template_Hierarchy.png
-* Lab 08: SASS and The Foundation Framework
+* Lab 11: SASS and The Foundation Framework
+:PROPERTIES:
+:ID:       o2b:88d214db-06b7-4ba2-970a-a4f3e8c18499
+:POST_DATE: [2016-01-12 Tue 20:19]
+:POSTID:   308
+:END:
 Now that you are HTML experts, CSS ninjas, and SASS stars,  we're moving right along...  
 
 Of course there is still tons more to learn, and you will pick up what you need to from me, from the Internet, and from your classmates.  But we are shifting gears to discuss some of the features of the web development /framework/ we will be using this year.   [[http://foundation.zurb.com/][Zurb Foundation]] is an incredibly powerful set of features that simplifies many aspects of website development.  We'll talk about it a little bit here, and you can learn a lot more from [[http://foundation.zurb.com/docs/][the official documentation]]. 
@@ -711,16 +1239,8 @@ You can also put rows /inside/ these columns, like this (/note:/ the simple SASS
 So, rather than futzing with layout details yourself, you use the expertise of the Foundation designers and just take what they've given you. 
 
 ** SASS, yay!
-As you might imagine, we also get to use SASS to customize our sites.  To do this, though, we need to take the next step in editing:  downloading a real text editor.  Let's do this all together in class:  
+As you might imagine, we also get to use SASS to customize our sites. Take a look at ~assets/sass~ in the JointsWP directory to see how things are organized. Pay attention esp. to _settings.  
 
-[[http://komodoide.com/komodo-edit/][Komodo Edit]] is a free cross-platform text editor.  Click on the download link and download the appropriate version for your computer.  
-
-Once it's working, we need to set up a new server under ~Preferences --> Servers~.  I'll give you the login info in class, but the other info is:
-- Server Type :: SFTP
-- Hostname  :: hackinghistory.ca
-- Default Path :: /var/www/YOURURLPREFIX.hackinghistory.ca/wp-content/themes/grunterie/
-
-*Hint:* We'll be opening a bunch of files in class -- it will be easier to open them all up if you create a project at the end. (~Projects --> New Project~) This will open up all your files for you when you restart the project.  
 
 ** And Javascript, too...
 Foundation also comes with lots of useful Javascript function that ease the creation of complex effects, such as modal windows, displaying different data on large and small screens.  
@@ -733,7 +1253,7 @@ Foundation is the engine inside the Wordpress themes you'll be using for your cl
 
 
 # HackingHistory/Images/feature-grid-1.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-feature-grid-1.png
-* Lab 16: Wordpress Templates
+* Lab 12: Wordpress Templates
 We've talked about Wordpress themes [[/lab-05-theming-with-wordpress/][before]]. Today we go a little more in depth into wordpress templates, which are the heart of any theme.  
 
 [[http://codex.wordpress.org/Stepping_Into_Templates][Stepping Into Templates]] is an excellent introduction to Wordpress templates.  I advise you read it, and we will do some of the exercises in class.  More advanced documentation can be found [[http://codex.wordpress.org/Theme_Development#Template_Files][in the Theme Development page]], and also [[http://codex.wordpress.org/Blog_Design_and_Layout][elsewhere on the Wordpress codex]].  I strongly advise you to use this powerful resource.  
@@ -850,7 +1370,151 @@ Find the template tags inside the Loop.  change some of them to display other in
 
 ** Designing Templates
 You should be now have ideas for your layouts.  We will spend the rest of class implementing them; I will continue to update this page with more details as it becomes clear what you need!
-* Back To Wordpress, People!
+
+
+
+-----
+* Notes on Git and Version Control for Wordpress Theming
+:PROPERTIES:
+:ID:       o2b:51a50b53-4de6-4921-bf1f-f7f312abdee4
+:POST_DATE: [2016-01-12 Tue 18:56]
+:POSTID:   301
+:END:
+(especially on Windows!)
+
+Many thanks to Hillary for sitting with me for an hour after class as I tried to figure this out.  
+
+Bottom  line: installing Git on Windows is somewhat convoluted and difficult to do properly.  The first-best solution is not easy to achieve, so I'm going to describe a second-best solution first. This is what I recommend for you.  
+
+I'll also go on to discuss how you can get Git to run perfectly on your system.
+
+** Undistributed Version Control...
+
+Git was designed to solve the problem of many people living far apart, working together on a single project. For this reason it's called a "distributed" version control system.  Usually, each developer has her own copy of the repository on a local computer.  She does her testing there, and when she's ready to let other people see her work, she commits it to the central repository where other programmers can check out and test her code. 
+
+For this to work properly, she needs a full testing environment on her computer. For Wordpress, setting up such an environment is a little complicated. In addition to the theme repository, our hypothetical coder  would need to install Wordpress, a of course, but also a webserver that runs PHP.  There are [[https://premium.wpmudev.org/blog/testing-environment-wordpress/][two pretty good]] [[https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/][guides that I urge you to follow]] if you want to take this route. There are certainly advantages, and if one of you tries Desktop Server and the Duplicator plugin  (see the first link) and you find it works, please let me know.  
+
+Meanwhile, the rest of us will be doing UNdistributed version control -- working together off of the central theme repository.  It's not the best way to work, but it should be a little simpler.
+
+** Step 1: Setting up your text editor
+You should make sure that your text editor supports working with files over ssh.  If you use [[https://www.sublimetext.com/][Sublime Text]], as I think some f yo do, I believe this is built-in.  If you use Atom, then one of several ways to do this is to install the "remote-ftp" package and "Create SFTP config file", filling in the following values:
+#+BEGIN_SRC json
+{
+    "protocol": "sftp",
+    "host": "hackinghistory.ca",
+    "port": 22,
+    "user": "hhstudents",
+    "pass": "ASK ME FOR THE PASSWORD - THIS WILL NOT WORK AS IS",
+    "promptForPass": false,
+    "remote": "/var/www/flynnhouse.hackinghistory.ca/wp-content/themes/JointsWP",
+    "agent": "",
+    "privatekey": "",
+    "passphrase": "",
+    "hosthash": "",
+    "ignorehost": true,
+    "connTimeout": 10000,
+    "keepalive": 10000,
+    "keyboardInteractive": false
+}
+#+END_SRC
+
+Hopefully this will work. Don't forget to change the password field.
+
+Whenever you want to make changes to a file in the theme, do it directly on the server using Atom: Packages -> Remote-ftp -> connect, and choose the file from the sidebar that opens up.  
+
+Test your changes by loading the relevant pages in a web browser and making sure there are no errors. When yo're sure your code makes sense, move on to the next steps.  
+
+** Step 2: Learn how to SSH into the server
+
+We'll be making git commits manually at the command line while logged in to the server (such tech!). To do this, you will need an SSH client (SSH sort of stands for "Secure SHell", and it is the standard way to get command line access to another computer). 
+
+If you have a mac, open up a terminal and type "ssh hhstudents@hackinghistory.ca". Enter the password. You are done.  
+
+If you have Windows, sigh.  You will need to install Putty, which you can [[http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html][get here]].  Then you will need to set up a connection to hackinghistory.ca, on port 22, with user hhstudents, and password you-know-what.  You can learn all about [[https://mediatemple.net/community/products/dv/204404604/using-ssh-in-putty-][the process here]].
+
+** Step 3: making a git commit
+
+When you log in, you will be taken directly to the theme repository, because +magic+ I set things up that way.  Commit your changes this way:
+
+#+BEGIN_SRC sh
+git commit -a -m "Put a Meaningful Message Here and Include Yor Name"
+#+END_SRC
+
+Then confirm that it's worked:
+#+BEGIN_SRC sh
+git log
+#+END_SRC
+
+This is just scratching the surface of what you can do at the terminal.  For more help with git, [[https://git-scm.com/book/en/v2/Getting-Started-Git-Basics][review the book]].  If you want to learn more about the Linux command line, [[https://www.google.ca/search?q=linux+shell+basics&ie=utf-8&oe=utf-8&gws_rd=cr&ei=sI6VVom4OIrJeNqGnJgK][ask Google for help]].  I like the 5-minute intro about 5 hits down.  
+
+** Checking out a local copy
+
+If you want to install a local copy of the theme repository, please note that the theme is backed up on a daily basis to a [[https://github.com/HackingHistory/JointsWP/tree/flynnhouse][github repository]], which you can checkout from the command line with:
+
+#+BEGIN_SRC sh
+git clone https://github.com/HackingHistory/JointsWP.git
+#+END_SRC
+
+** Rolling back errors
+
+If you've made some stupid changes, but HAVEN'T committed them yet, fix them at the command line with:
+
+#+BEGIN_SRC sh
+git checkout -- .
+#+END_SRC
+
+If you have already committed your stupid changes, then you need to do something more radical. There are a couple of options but the best choice is almost always to /revert/ your changes.  
+
+First figure out which commit you want to get back to:
+
+#+BEGIN_SRC sh
+git log --oneline
+#+END_SRC
+
+which will show you something like this:
+#+BEGIN_SRC sh
+b7119f2 Continue doing crazy things
+872fa7e Try something crazy
+a1e8fb5 Make some important changes to page.php
+435b61d Create page.php
+9773e52 Initial import
+#+END_SRC
+
+Now decide which of these commits was the last good one. Usually you will just want to go back one commit:
+
+#+BEGIN_SRC sh
+git revert b7119f2
+#+END_SRC
+
+But maybe you know that you made a whole string of mistakes, and stupidly committed them without realizing how foolish you were.  Then you might revert to an earlier commit, say ~a1e8fb5~.  
+
+#+BEGIN_SRC sh
+git revert a1e8fb5
+#+END_SRC
+
+Now when you look at your commit history, you will see something like this:
+
+#+BEGIN_SRC sh
+e30583f Revert 872fa7e b7119f2
+b7119f2 Continue doing crazy things
+872fa7e Try something crazy
+a1e8fb5 Make some important changes to hello.py
+435b61d Create hello.py
+9773e52 Initial import
+#+END_SRC
+
+What's cool about this? The stupid changes you made are still there in your git history, so if it turns out you SHOULDN'T have reverted to that commit, you can get back to an earlier state.
+
+** For the Keeners: Setting up git for real
+
+To make git really really work on Windows, you have to set up the whole toolchain carefully.  I'm too tired to write this all up, but I had a lot of success following this guide:
+
+http://guides.beanstalkapp.com/version-control/git-on-windows.html
+
+That's enough git-fu for today. More in the coming weeks!
+
+
+* COMMENT Back To Wordpress, People!
 
 Well, here we are again, with just a few minutes to go before class and I'm still not sure what we'll be doing exactly!  The point of this week's class is to give you a little push to start (re-)exploring wordpress as you get ready to learn more for your projects.  You already know [[http://2012.hackinghistory.ca/labsnotes/lab-04-getting-started-with-wordpress/][the basics]]: Wordpress is an extensible MS with two main kinds of extensions:
 
@@ -871,120 +1535,120 @@ My immediate suggestion to take a look at some of the HTML5, responsive "framewo
 
 ** Plugins
 Custom Content Manager
-* Lab 13: SASS and Wordpress Templates Review
-You will remember that the Wordpress theme we are using, "grunterie", is based on the Foundation web framework and uses SASS for quick and easy modification of CSS.  Today's activities are both a review of what we've already learned, and a a push to get started with some design.  Let's dive RIGHT IN.
+* COMMENT Lab 13: SASS and Wordpress Templates Review
+You will remember that the Wordpress theme we are using, "grunterie", is based on the Foundation web framework and uses SASS for quick and easy modification of CSS.  Today's activities are both a review of what we've already learned, and a a push to get started with some design.  Let's dive right in.
 
-** EDITING YOUR SASS FILES
-FIRST, REMEMBER HOW TO USE YOUR EDITOR.  REMEMBER, WE HAVE BEEN USING [[HTTP://KOMODOIDE.COM/KOMODO-EDIT/][KOMODO EDIT]] UP TO NOW, AND YOU SHOULD STILL HAVE A SHORTCUT SET UP THAT LOOKS SOMETHING LIKE THIS:
+** editing your sass files
+first, remember how to use your editor.  remember, we have been using [[http://komodoide.com/komodo-edit/][komodo edit]] up to now, and you should still have a shortcut set up that looks something like this:
 
-[[FILE:~/HACKINGHISTORY/IMAGES/KOMODO-PREFS.PNG]] 
+[[file:~/hackinghistory/images/komodo-prefs.png]] 
 
-NOTICE HOW I'VE REWRITTEN THE DEFAULT PATH -- SINCE YOU WILL BE DOING ALMOST ALL YOUR WORK IN THE GRUNTERIE THEME, CHANGE THIS TO ~/VAR/WWW/PROJECTNAME.HACKINGHISTORY.CA/WP-CONTENT/THEMES/GRUNTERIE~, WHERE "PROJECTNAME" IS "CABBAGETOWN", "CHILDHOOD", OR "CAMPBELL".  
+notice how i've rewritten the default path -- since you will be doing almost all your work in the grunterie theme, change this to ~/var/www/projectname.hackinghistory.ca/wp-content/themes/grunterie~, where "projectname" is "cabbagetown", "childhood", or "campbell".  
 
-NOW, OPEN A REMOTE FILE: 
+now, open a remote file: 
 
-[[FILE:~/HACKINGHISTORY/IMAGES/KOMODO-OPEN.PNG]]
+[[file:~/hackinghistory/images/komodo-open.png]]
 
-THE FILES WE WANT FOR TODAY ARE IN THE ~SCSS~ DIRECTORY.  WE CAN ALSO MAKE CHANGES TO THE ~.PHP~ FILES IN THE THEME'S MAIN DIRECTORY, WHICH ARE THE TEMPLATE FILES ([[HTTP://2014.HACKINGHISTORY.CA/LAB-05-THEMING-WITH-WORDPRESS/][REMEMBER THIS?]]); I'LL TALK ABOUT THAT A LITTLE LATER.  FOR NOW, LET'S TAKE A QUICK LOOK AT THESE THREE FILES:
+the files we want for today are in the ~scss~ directory.  we can also make changes to the ~.php~ files in the theme's main directory, which are the template files ([[http://2014.hackinghistory.ca/lab-05-theming-with-wordpress/][remember this?]]); i'll talk about that a little later.  for now, let's take a quick look at these three files:
 
-- ~SCSS/_SETTINGS.SCSS~ IS WHERE YOU WILL DO MOST OF YOUR WORK.  IT LOOKS LIKE THIS:
+- ~scss/_settings.scss~ is where you will do most of your work.  it looks like this:
 
-  [[FILE:~/HACKINGHISTORY/IMAGES/SETTINGS-SCSS.PNG]]
+  [[file:~/hackinghistory/images/settings-scss.png]]
 
-  EACH LINE EITHER STARTS WITH A COMMENT LIKE  ~// COMMENT~ OR A VARIABLE DECLARATION LIKE ~$VARNAME : VALUE~.  TO CHANGE THE DEFAULT STYLES, CHANGE THE VALUES OF ONE OR MORE VARIABLES.
+  each line either starts with a comment like  ~// comment~ or a variable declaration like ~$varname : value~.  to change the default styles, change the values of one or more variables.
 
-- ~SCSS/APP.SCSS~ READS THE VALUES FROM ~_SETTINGS.SCSS~ AND USES THEM TO GENERATE COMPLEX RULES FORM THE MUCH MORE COMPLICATED ~FOUNDATION~ STYLESHEETS THAT ARE STORED IN A DIFFERENT PLACE.  YOU WON'T EDIT THIS.
+- ~scss/app.scss~ reads the values from ~_settings.scss~ and uses them to generate complex rules form the much more complicated ~foundation~ stylesheets that are stored in a different place.  you won't edit this.
 
-- ~SCSS/STYLE.SCSS~ MODIFIES THE FINAL PRODUCT WITH A SERIES OF RULES DESIGNED TO MAKE FOUNDATION FIT BETTER WITH WORDPRESS.  YOU MAY CHANGE A FEW OF THESE, TOO, THOUGH THAT'S NOT ALL THAT LIKELY.  
+- ~scss/style.scss~ modifies the final product with a series of rules designed to make foundation fit better with wordpress.  you may change a few of these, too, though that's not all that likely.  
 
-SO, YOU WILL MOSTLY BE WORKING IN _SETTINGS.SCSS, AT LEAST FOR NOW.  LET'S GET STARTED.  
+so, you will mostly be working in _settings.scss, at least for now.  let's get started.  
 
-** CHANGING COLORS
+** changing colors
 
-YOU WILL ALMOST CERTAINLY WANT TO CHANGE A NUMBER OF COLORS IN THE SITE IN ORDER TO GET A LOOK-N-FEEL THAT APPROXIMATES YOUR PARTNER'S WISHES.  THE COLORS IN FOUNDATION ARE NOT AS SIMPLE AS THEY SHOULD BE, AND SOME OF THEM CAN BE A PAIN TO HUNT DOWN.  HERE IS A PARTIAL LIST THOUGH:
-- ~$PRIMARY-COLOR~ IS A LIGHT BLUE BY DEFAULT, AND IS USED FOR HIGHLIGHTING LINKS AND HEADINGS (BECAUSE THOSE ARE ALSO LINKS), AND THE BACKGROUND OF THE SEARCH BAR AND SOME OTHER ELEMENTS.
-- ~$SECONDARY-COLOR~ IS A STEEL-GREY, AND IS USED FOR A NUMBER OF BACKGROUNDS AND SOME TEXT COLORS
-- ~$ALERT-COLOR~ IS RED, AND IS USUALLY ONLY USED IF THERE'S SOME KIND OF ERROR.
-- ~$SUCCESS-COLOR~ IS SIMILARLY RARELY USED
-- ~$BODY-BG~ CONTORLS THE BACKGROUND OF THE OFF-GRID PAGE BODY -- OUTSIDE THE CONTENT AREA
-- ~$BODY-FONT-COLOR~ IS THE MAIN FONT COLOR (THIS MAY BE CHANGED A BIT IN SOME CONTEXTS)
-- ~$HEADER-FONT-COLOR~ IS THE COLOR NON-TITLE HEADERS (TITLES ARE LINKS, SO ARE ALWAYS $PRIMARY-COLOR)
+you will almost certainly want to change a number of colors in the site in order to get a look-n-feel that approximates your partner's wishes.  the colors in foundation are not as simple as they should be, and some of them can be a pain to hunt down.  here is a partial list though:
+- ~$primary-color~ is a light blue by default, and is used for highlighting links and headings (because those are also links), and the background of the search bar and some other elements.
+- ~$secondary-color~ is a steel-grey, and is used for a number of backgrounds and some text colors
+- ~$alert-color~ is red, and is usually only used if there's some kind of error.
+- ~$success-color~ is similarly rarely used
+- ~$body-bg~ contorls the background of the off-grid page body -- outside the content area
+- ~$body-font-color~ is the main font color (this may be changed a bit in some contexts)
+- ~$header-font-color~ is the color non-title headers (titles are links, so are always $primary-color)
 
-THERE ARE NUMEROUS OTHER COLOR SETTINGS BUT THEY MOSTLY KEY OFF OF THESE "MAIN" COLORS, OR APPLY ONLY TO A FEW SPECIALIZED ELEMENTS.  A SLIGHTLY OUTDATED LIST IS [[HTTP://F.CL.LY/ITEMS/1E0H22242A0N1T1P0R2Y/FOUNDATION-WEBSMART.HTML][PUBLISHED HERE]]; AS YOU CAN SEE, MOST ARE SIMPLE.    
+there are numerous other color settings but they mostly key off of these "main" colors, or apply only to a few specialized elements.  a slightly outdated list is [[http://f.cl.ly/items/1e0h22242a0n1t1p0r2y/foundation-websmart.html][published here]]; as you can see, most are simple.    
 
-*EXERCISE:* USING YOUR MOCKUPS, CHOOSE A PROVISIONAL COLOR SCHEME FOR YOUR SITE.  
-- *FIRST*, CHOOSE A /MAIN COLOR/ THAT EITHER PLAYS OFF OF THE ORGANIZATION LOGO, OR WORKS FROM A "HERO IMAGE" OF SOME KIND
-- THEN, USE AN ONLINE TOOL TO PICK A COLOR SCHEME (FIRST LEARN ABOUT THE [[HTTP://CDN.MAKEUSEOF.COM/WP-CONTENT/UPLOADS/2014/05/COMMANDMENTS-COLOUR.JPG?B9031B][COLOR COMMANDMENTS]]):
-  - [[HTTP://COLORSCHEMEDESIGNER.COM/CSD-3.5/][PALETTON]] IS ONE OF THE MOST POPULAR,
-  - [[HTTPS://COLOR.ADOBE.COM/CREATE/COLOR-WHEEL/][ADOBE COLOR CC]] IS PROBABLY THE MOST WIDELY USED, BUT IT'S TOO HARD FOR ME
-  - [[HTTP://COLOR.HAILPIXEL.COM][HAILPIXEL IS FUN]] AND
-  - [[HTTP://WWW.PICTACULOUS.COM/][PICTACULOUS]] IS A COOL WAY TO EXTRACT A PALETTE FROM AN IMAGE.
-- FINALLY, APPLY YOUR COLOUR SCHEME TO THE WEBSITE BY CHANGING SOME OF THE COLOR VARIABLES WE JUST DISCUSSED.
+*exercise:* using your mockups, choose a provisional color scheme for your site.  
+- *first*, choose a /main color/ that either plays off of the organization logo, or works from a "hero image" of some kind
+- then, use an online tool to pick a color scheme (first learn about the [[http://cdn.makeuseof.com/wp-content/uploads/2014/05/commandments-colour.jpg?b9031b][color commandments]]):
+  - [[http://colorschemedesigner.com/csd-3.5/][paletton]] is one of the most popular,
+  - [[https://color.adobe.com/create/color-wheel/][adobe color cc]] is probably the most widely used, but it's too hard for me
+  - [[http://color.hailpixel.com][hailpixel is fun]] and
+  - [[http://www.pictaculous.com/][pictaculous]] is a cool way to extract a palette from an image.
+- finally, apply your colour scheme to the website by changing some of the color variables we just discussed.
 
-** NAVIGATION
-THIS THEME COMES WITH THREE NAVIGATION MENUS BY DEFAULT: 
-- THE PRIMARY NAV BAR, WHICH LIVES IN THE TOP BAR
-- THE UTILITY NAV BAR, WHICH LIVES DOWN IN THE FOOTER
-- THE "ADDITIONAL" NAV BAR, WHICH IS A DROPDOWN POSITIONED ON THE VERY RIGHT SIDE OF THE NAV BAR AND IS DISABLED BY DEFAULT.  YOU CAN ACTIVATE IT BY REMOVING THE COMMENTS FROM LINES 70-82 IN THE ~HEADER.PHP~ TEMPLATE FILE, AND THEN ADD CONTENT TO IT THROUGH THE WORDPRESS ADMINISTRATIVE INTERFACE.  
+** navigation
+this theme comes with three navigation menus by default: 
+- the primary nav bar, which lives in the top bar
+- the utility nav bar, which lives down in the footer
+- the "additional" nav bar, which is a dropdown positioned on the very right side of the nav bar and is disabled by default.  you can activate it by removing the comments from lines 70-82 in the ~header.php~ template file, and then add content to it through the wordpress administrative interface.  
 
-IT IS ALSO POSSIBLE TO CREATE A "OFF-CANVAS NAV" THAT SWOOPS OUT FROM THE LEFT ON MOBILE DEVICES AND REPLACES THE TOP BAR ON THOSE SMALL SCREENS -- BUT IT TAKES A LITTLE BIT OF WORK, SO WE'LL LEAVE THE EXPLANATION FOR ANOTHER DAY.  
+it is also possible to create a "off-canvas nav" that swoops out from the left on mobile devices and replaces the top bar on those small screens -- but it takes a little bit of work, so we'll leave the explanation for another day.  
 
-ONE THING YOU MIGHT WANT TO DO IS TO CHANGE THE HEIGHT OF THE TOP-BAR, AT LEAST ON LARGE SCREENS.  ALL THE TOP BAR SETTINGS ARE IN SECTION "34" OF ~_SETTINGS.SCSS~, WHICH STARTS AT AROUND LINE 1368.  
+one thing you might want to do is to change the height of the top-bar, at least on large screens.  all the top bar settings are in section "34" of ~_settings.scss~, which starts at around line 1368.  
 
-IF YOU WANT A FIXED OR STICKY NAV BAR, THIS CAN ALSO BE DONE; YOU JUST HAVE TO ADD A ~<DIV CLASS="FIXED">...</DIV>~ AROUND THE NAV ELEMENT IN ~HEADER.PHP~.  
+if you want a fixed or sticky nav bar, this can also be done; you just have to add a ~<div class="fixed">...</div>~ around the nav element in ~header.php~.  
 
-*EXERCISE:* INCREASE THE HEIGHT OF THE TOP BAR TO GIVE IT A CHUNKIER FEEL.  CHANGE THE BACKGROUND COLOR TO SOMETHING THAT MESHES WELL WITH YOUR MAIN SITE COLOR -- BUT MAKE SURE THAT TEXT IS STILL EASY TO READ (COMPLEMENTARY).  
+*exercise:* increase the height of the top bar to give it a chunkier feel.  change the background color to something that meshes well with your main site color -- but make sure that text is still easy to read (complementary).  
 
-** GRID 
-MOST OF THE GRID STRUCTURE ON FOUNDATION IS GREAT, BUT SOMETIMES YOU WANT TO FILL THE WHOLE SCREEN; THIS WILL BE ESPECIALLY TRUE IF YOU MAKE HEAVY USE OF MEDIA, OR ARE GOING FOR A PARTICULARLY CONTEMPORARY LOOK.  THIS IS EASILY DONE BY MODIFYING THE ~$ROW-WIDTH~ VARIABLE, CHANGING IT FROM "REM-CALC(1140)" TO "100%". DO THIS AS AN *EXERCISE*, AND SEE IF IT CHANGES YOUR FEELINGS ABOUT THE COLORS.  
+** grid 
+most of the grid structure on foundation is great, but sometimes you want to fill the whole screen; this will be especially true if you make heavy use of media, or are going for a particularly contemporary look.  this is easily done by modifying the ~$row-width~ variable, changing it from "rem-calc(1140)" to "100%". do this as an *exercise*, and see if it changes your feelings about the colors.  
 
-** LAYOUT
-THE PART YOU'VE DONE SO FAR CAN BE VERY FIDDLY AND TIME-CONSUMING, BUT FOR THE MOST PART IT ISN'T TECHNICALLY /DIFFICULT/.  A LOT OF THE HARD PART WILL GETTING THE PAGES TO LOOK THE WAY YOU WANT THEM TO.  THIS WILL BE FUNDAMENTALLY PRETTY DIFFICULT, AND OFTEN INVOLVE SWITCHING BACK AND FORTH BETWEEN SASS/CSS AND PHP, BECAUSE YOU WILL NEED TO ADD HTML STRUCTURES FOR YOUR LAYOUT CSS TO GRAB ON TO AND CHANGE.  YOU MAY ALSO NEED TO ADD SOME CUSTOM FIELDS AND CUSTOM CONTENT TYPES -- HEAVY LIFTING! -- BUT WE WIL LGET TO THAT IN ANOTHER SESSION.  
+** layout
+the part you've done so far can be very fiddly and time-consuming, but for the most part it isn't technically /difficult/.  a lot of the hard part will getting the pages to look the way you want them to.  this will be fundamentally pretty difficult, and often involve switching back and forth between sass/css and php, because you will need to add html structures for your layout css to grab on to and change.  you may also need to add some custom fields and custom content types -- heavy lifting! -- but we wil lget to that in another session.  
 
-FOR NOW, LET'S TRY DOING A COUPLE OF THINGS: 
-- MAKE SIDEBAR-LESS DISPLAY THE DEFAULT FOR PAGES BY RENAMING ~PAGE.PHP~ TO ~PAGE-SIDEBAR.PHP~ AND ~PAGE-FULL.PHP~ TO ~PAGE.PHP~.  HMM, CAN YOU EVEN DO THAT WITH KOMODO? I HOPE SO!
-- NOW LET'S THINK ABOUT LAYOUT.  ALL OF YOUR SITES HAVE DIFFERENT NEEDS, BUT
-  1) YOU WILL ALMOST ALL BE USING PAGES, AND BLOG POSTS WILL BE DISTINCTLY SECONDARY IF PRESENT AT ALL; AND
-  2) WHEN THINKING ABOUT LAYOUT, THE MOST OBVIOUS AND EASIEST ELEMENTS TO LAY OUT TOGETHER ARE THE *MAIN TEXT* AND *SOME KIND OF IMAGE*. WORDPRESS HAS A UBILT-IN FEATURE FOR HIGHLIGHTING IMAGES -- IT USES SOMETHING CALLED THE 'FEATURED IMAGE" IN THE ADMIN INTERFACE, WHILE IN THE PHP CODE ITSELF IT IS REFERRED TO AS THE "THUMBNAIL".  UNFORTUNATELY, BY DEFAULT PAGES DO NOT HAVE "FEATURED IMAGES", SO LET'S FIX THAT REAL QUICK.  
+for now, let's try doing a couple of things: 
+- make sidebar-less display the default for pages by renaming ~page.php~ to ~page-sidebar.php~ and ~page-full.php~ to ~page.php~.  hmm, can you even do that with komodo? i hope so!
+- now let's think about layout.  all of your sites have different needs, but
+  1) you will almost all be using pages, and blog posts will be distinctly secondary if present at all; and
+  2) when thinking about layout, the most obvious and easiest elements to lay out together are the *main text* and *some kind of image*. wordpress has a ubilt-in feature for highlighting images -- it uses something called the 'featured image" in the admin interface, while in the php code itself it is referred to as the "thumbnail".  unfortunately, by default pages do not have "featured images", so let's fix that real quick.  
 
 
-*** FEATURED IMAGES IN THEMES
-FIRST, WE NEED TO ADD FEATURED IMAGE SUPPORT TO THE 'PAGE' CONTENT TYPE.  THIS IS THE KIND OF THING THAT WILL DRIVE YOU MAD IF YOU DON'T KNOW HOW TO DO IT, BUT IS VERY EASY IF YOU DO KNOW HOW.  FIRST, FIND THE FILE ~FUNCTIONS.PHP~ AND OPEN IT.  
+*** featured images in themes
+first, we need to add featured image support to the 'page' content type.  this is the kind of thing that will drive you mad if you don't know how to do it, but is very easy if you do know how.  first, find the file ~functions.php~ and open it.  
 
-ON LINE ~50~ IS THE CODE 
-#+BEGIN_SRC PHP
-ADD_THEME_SUPPORT('POST-THUMBNAILS');
-#+END_SRC
+on line ~50~ is the code 
+#+begin_src php
+add_theme_support('post-thumbnails');
+#+end_src
 
-SIMPLY REPLACE THAT LINE WITH 
-#+BEGIN_SRC PHP
-ADD_THEME_SUPPORT( 'POST-THUMBNAILS', ARRAY( 'POST', 'PAGE' ) );
-#+END_SRC
+simply replace that line with 
+#+begin_src php
+add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+#+end_src
 
-OK, THAT'S STEP ONE -- WE CAN ATTACH A FEATURED IMAGE TO A PAGE NOW; BUT WE HAVEN'T ADDED THE INSTRUCTIONS THAT WILL GET THE FEATURED IMAGE TO DISPLAY IN OUR PAGE TEMPLATE.  TO DO THIS WE WILL HAVE TO OPEN ~CONTENT.PHP~ -- WHICH IS THE TEMPLATE THAT ACTUALLY GENERATES THE DISPLAY OF /POSTS/ -- AND FIND THE LINE THAT SHOWS THE FEATURED IMAGE.  IT'S LINE 16, ACTUALLY:
+ok, that's step one -- we can attach a featured image to a page now; but we haven't added the instructions that will get the featured image to display in our page template.  to do this we will have to open ~content.php~ -- which is the template that actually generates the display of /posts/ -- and find the line that shows the featured image.  it's line 16, actually:
 
-#+BEGIN_QUOTE
-<FIGURE><A HREF="<?PHP THE_PERMALINK(); ?>"><?PHP IF ( HAS_POST_THUMBNAIL() ) {THE_POST_THUMBNAIL('LARGE'); } ?></A></FIGURE>
-#+END_QUOTE
+#+begin_quote
+<figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></a></figure>
+#+end_quote
 
-SO, WE NEED TO PUT THIS SOMEWHERE IN OUR TEMPLATE.  THE QUESTON IS, WHERE?  WE HAVE A COUPLE OF OPTIONS: 
+so, we need to put this somewhere in our template.  the queston is, where?  we have a couple of options: 
 
-- WE CAN USE "THE GRID" -- FOUNDATION'S AMAZING WAY OF ARRANGING ELEMENTS ON THE PAGE; OR
-- WE CAN INSTEAD JUST FLOAT THE IMAGE /WITHIN/ THE GRID, ALLOWING TEXT TO WRAP AROUND IT.  HOW YOU DO THIS IS KIND OF UP TO YOU, BUT WILL INVOLVE SOME CSS.
+- we can use "the grid" -- foundation's amazing way of arranging elements on the page; or
+- we can instead just float the image /within/ the grid, allowing text to wrap around it.  how you do this is kind of up to you, but will involve some css.
 
-*EXERCISE:* DECIDE WHICH METHOD YOU WANT TO TRY, AND, WITH YOUR MOCKUPS IN FRONT OF YOU, TRY TO GET A LAYOUT THAT APPROXIMATES WHAT YOU ARE SHOOTING FOR.
+*exercise:* decide which method you want to try, and, with your mockups in front of you, try to get a layout that approximates what you are shooting for.
 
-** FURTHER TOPICS
-WE'LL SEE WHERE WE GET ON OTHER TOPICS TODAY -- MUCH WILL DEPEND ON YOUR SPECIFIC GOALS.  
+** further topics
+we'll see where we get on other topics today -- much will depend on your specific goals.  
 
 
   
 
-# HACKINGHISTORY/IMAGES/KOMODO-PREFS.PNG HTTP://2014.HACKINGHISTORY.CA/WP-CONTENT/UPLOADS/2015/01/WPID-KOMODO-PREFS.PNG
-# HACKINGHISTORY/IMAGES/KOMODO-OPEN.PNG HTTP://2014.HACKINGHISTORY.CA/WP-CONTENT/UPLOADS/2015/01/WPID-KOMODO-OPEN.PNG
-# HACKINGHISTORY/IMAGES/SETTINGS-SCSS.PNG HTTP://2014.HACKINGHISTORY.CA/WP-CONTENT/UPLOADS/2015/01/WPID-SETTINGS-SCSS.PNG
+# hackinghistory/images/komodo-prefs.png http://2014.hackinghistory.ca/wp-content/uploads/2015/01/wpid-komodo-prefs.png
+# hackinghistory/images/komodo-open.png http://2014.hackinghistory.ca/wp-content/uploads/2015/01/wpid-komodo-open.png
+# hackinghistory/images/settings-scss.png http://2014.hackinghistory.ca/wp-content/uploads/2015/01/wpid-settings-scss.png
 
-* Lab 08: Personas and Wireframes 
+* COMMENT Lab 08: Personas and Wireframes 
 Today we are making an imaginary website.  Here's our brief, noting please that it is /imaginary/.  
 
 ** Commemorating Vimy Ridge
@@ -1004,7 +1668,7 @@ In 1 paragraph, explain the purpose of the site, and draw a rough map that outli
 Use the provided wireframe sketching paper (and your own looseleaf paper) to sketch out each type of page that the site will serve up.  
 
 That's it!
-* Lab 15: Copyright in Digital History
+* COMMENT Lab 15: Copyright in Digital History
 ** Some resources:
 - Toronto Archives, [[http://www1.toronto.ca/wps/portal/contentonly?vgnextoid%3Da82a757ae6b31410VgnVCM10000071d60f89RCRD&vgnextchannel%3D2ee1226b48c21410VgnVCM10000071d60f89RCRD#photographs][copyright guidelines for researchers]]
 - Wikipedia, [[http://en.wikipedia.org/wiki/Fair_dealing_in_Canadian_copyright_law][Fair dealing in Canadian copyright law]]
@@ -1116,6 +1780,23 @@ death of the author plus 50 years
 - but careful w/ esp. images (no 'parts', so safest to link to externally-hosted images).
   - argument can be made that a low-res image is a "part"; and reproduction of an image from a book or other large work is generally allowed (!) 
 
-* Lab 02: Humans and Machines
+* COMMENT Lab 02: Humans and Machines
 Point of today's exercise is to look at how machines and humans interact in the web.  Instead of an assignment, though, we have a graphic...  
 
+
+# Images/wp-admin-interface.png http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-wp-admin-interface.png
+
+# Images/wp-restrict-post.png http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-wp-restrict-post.png
+# /home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-data_and_metadata_on_the_web.png
+
+# /home/matt/HackingHistory/Images/wp-file-structure.jpg http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-wp-file-structure.jpg
+# /home/matt/HackingHistory/Images/Template_Hierarchy.png http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-Template_Hierarchy.png
+
+# /home/matt/HackingHistory/Images/nytimes-w-css.png http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-nytimes-w-css.png
+# /home/matt/HackingHistory/Images/nytimes-no-css.png http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-nytimes-no-css.png
+
+# ./Images/github-add-files.png http://2015.hackinghistory.ca/wp-content/uploads/2015/11/wpid-github-add-files.png
+# ./Images/github-pull-request.png http://2015.hackinghistory.ca/wp-content/uploads/2015/11/wpid-github-pull-request.png
+# ./Images/github-add-project.png http://2015.hackinghistory.ca/wp-content/uploads/2015/11/wpid-github-add-project.png
+
+# ./Images/github-add-file.png http://2015.hackinghistory.ca/wp-content/uploads/2015/11/wpid-github-add-file.png

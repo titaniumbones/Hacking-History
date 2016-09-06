@@ -1,4 +1,9 @@
 * Tools for Hacking History
+:PROPERTIES:
+:ID:       o2b:49b150d9-e9f3-47ae-9a09-e2b003fe5ef4
+:POST_DATE: [2015-09-11 Fri 07:07]
+:POSTID:   77
+:END:
 As we go through the year, you'll need to learn about some or all of these tools.  Explore them when you have a chance
 ** A laptop
 This course is *MUCH* easier if you have a laptop. If you don't own one, you can still do well, but the work becomes much more strained.  A tablet is much harder to work with, and many of the tools described below do not work properly on mobile devices.  Please see me if you don't have one. 
@@ -28,8 +33,12 @@ Most of the technical skills you'll learn in this class you can teach yourself (
   - [[http://www.w3schools.com/js/][W3 Schools Javascript tutorial]]
   - [[https://developer.mozilla.org/en-US/learn/javascript][MozDev resources]]
 
-
 * About
+:PROPERTIES:
+:ID:       o2b:9b3e5997-b3de-43c7-af69-afa0d03dda96
+:POST_DATE: [2015-09-11 Fri 07:07]
+:POSTID:   80
+:END:
 This year-long course examines the relationships among academic history, digital media, and community formation using a variety of texts and methods; it culminates in an intensive semester-long digital storytelling project focused on community engagement. The intellectual focus of the first semester is two-fold: first, on the history of the public sphere and second, on the politics of “engaged” scholarship. At the same time, students will be exposed to techniques of multimedia and nonlinear storytelling. The second semester revolves around a group project undertaken in concert with a community organization. Working closely with their community partners, students will build a digital archive or storytelling framework using multimedia and/or social networking technologies. The fundamental aim of the course is to expand the reach of historical scholarship outside of the academy, and to develop modes of historical research compatible with community engagement. 
 
 Registration for the class takes place through [[https://www.rosi.utoronto.ca/main.html][ROSI]].  
@@ -40,6 +49,13 @@ Registration for the class takes place through [[https://www.rosi.utoronto.ca/ma
 [[file:Pictures/matt_on_bridge.jpeg]]
 Matt Price, a historian of science by training, teaches digital history classes at the University of Toronto, as well as New College 103, "Digital Technology and Society".  His main current interests are in "engaged" pedagogy, and public participation in the creation of knowledge.  
 * Calendar
+:PROPERTIES:
+:PARENT:   80
+:ID:       o2b:f0a5bebf-c6c5-4e42-9f9a-3ae0e108b131
+:POST_DATE: [2015-09-11 Fri 07:08]
+:POSTID:   84
+:END:
+
 ** <2015-09-29 Tue> STA 1 Due
 ** <2015-10-13 Tue> STA 2 Due
 ** <2015-10-27 Tue> STA 3 Due 
@@ -51,3 +67,5 @@ Matt Price, a historian of science by training, teaches digital history classes 
 ** <2016-02-23 Tue> Status Report Due
 ** <2016-03-29 Tue> Submission to Partner
 ** <2016-04-05 Tue> FINAL DUE DATE
+
+# Pictures/matt_on_bridge.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-matt_on_bridge.jpeg
