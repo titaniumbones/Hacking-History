@@ -1,27 +1,26 @@
 #+POSTID: 29
-#+DATE: [2012-08-18 Sat 13:26]
-##+DATE: [2010-09-27 Mon 13:20]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
 #+CATEGORY: assignments
 #+TAGS: 
 #+DESCRIPTION: 
 #+TITLE: Assignments
-#+PROPERTY: PARENT 52
+#+PROPERTY: PARENT 16
 
 * Assignments
 :PROPERTIES:
 :ID:       o2b:3fff9aa9-d319-471d-bb29-17f04e617463
-:POST_DATE: [2015-09-10 Thu 22:04]
-:POSTID:   52
+:POST_DATE: [2016-09-11 Sun 09:35]
+:POSTID:   16
 :END:
 
 Assignments for HIS495 are linked here as I put them up on the site. See the [[http://www.hackinghistory.ca/][Syllabus]] for an overview of assignments and their values.
 * The Course Blog
 :PROPERTIES:
-:ID:       o2b:a846871f-5de5-4f23-a73c-43d7328f6679
-:POST_DATE: [2015-09-10 Thu 22:04]
-:POSTID:   55
+:ID:       o2b:83a116e8-8740-43bd-b653-58e1074fb720
+:POST_DATE: [2016-09-11 Sun 09:38]
+:POSTID:   21
 :END:
+
 Two of the main themes of the class are: the exploration of digital media as a mode of communicating historical knowledge; and experimentation with the collaborative production of knowledge.  So it's not surprising that, first, the bulk of your assignments are shifted over to the digital realm; and second, that we will be thinking of this website as a platform for a collective exploration of our subject matter.  
 
 ** Fall Semester  
@@ -45,13 +44,15 @@ Your online contributions constitute 20% of your grade (that's not including you
 - _1_ Inadequate.  Unstructured, error-ridden, no argument to speak of.  Shows no engagement with the topic.
 - _0_ No Credit.  Failed to post or made only a token effort.  
 
-I will comment on individual blog posts as much as possible, but will give out marks only twice a year (approx. Nov. 29 & Apr. 3). The better your postings, the more exciting and engaging this class will be for everyone.  So please approach this part of the class in good faith and take it seriously.    
-
+I will comment on individual blog posts as much as possible, but will give out marks only twice a year (approx. Nov. 29 & Apr. 3). The better your postings, the more exciting and engaging this class will be for everyone.  So please approach this part of the class in good faith and take it seriously.
+* Participation
+This is a small fourth-year seminar; paricipation means a lot.  more soon.  
 * Class Project Overview
 :PROPERTIES:
-:ID:       o2b:cc562cf2-c5aa-4dbf-bd04-cf9d0e14b46e
-:POST_DATE: [2015-09-11 Fri 06:59]
-:POSTID:   74
+:PARENT:   16
+:ID:       o2b:f2f068a5-5eb2-4cb7-a541-b69ff3fda868
+:POST_DATE: [2016-09-11 Sun 09:47]
+:POSTID:   27
 :END:
 The class project, which will occupy most of the class's second semester and some of the first, is a substantial collaboration between a small group of students and a community organization, on a project of mutual interest.  In almost every case the project will be a Wordpress website, and while I am in principle open to other types of projects, the circumstances under which I would approve such projects are highly constrained. The point of this class is to create something of lasting value to yourself, the organization, and the community it serves, so that your work endures beyond the temporal scope of the class.  The project is worth 45% of your final mark, but this percentage is distributed between various parts of the project.  A high premium will be placed on timely, regular progress made towards intermediate goals, to help make sure that these complex and difficult projects come to fruition.  Some of you have already been thinking about projects; this is great and /you should continue to do so/.  You will work in small groups of 2-4; in a class of this size there are some challenges to group work, but there are substantial benefits to working together, especially when charting unknown territory.  
 ** Collaboration and Service
@@ -65,7 +66,7 @@ The finished product should be a polished website or other digital artifact whic
 - *do not strike out entirely on your own.*  You will need some support from outside -- that is one of the main reasons to have a community partner.
 - *do not put /anything/ off till the last minute.*  In a complex project like this you will be surprised at the number of tasks there are to accomplish.  In particular, you'll gain a lot by attacking your organizational tasks as early as possible.
 ** Examples
-Previous years' projects are mostly linked to from [[http://2013.hackinghistory.ca/student-projects/][that year's course website]]. They are all great, so look there for some inspiration.  Please note that these sites were made by students with no prior technical experience; if you're in that category they may look daunting right now, but don't be discouraged, you'll learn what you need to in time to make something really cool.  
+Previous years' projects are mostly linked to from [[http://2013.hackinghistory.ca/student-projects/][that year's course website]]. You may be particularly interested in [[http://flynnhousehackinghistory.,ca][the project from last year's class]], which was almost as tiny as this year's.  They are all great, so look there for some inspiration.  Please note that these sites were made by students with no prior technical experience; if you're in that category they may look daunting right now, but don't be discouraged, you'll learn what you need to in time to make something really cool.  
 ** Technical Parameters
 If you have no technical background, this may not make much sense to you in the first class, but as the semester progresses you'll understand more.  Here are some of the technical skills you will be using in your project:
 - Web hosting ::  I will provide hosting for class websites at hackinghistory.ca.
@@ -80,9 +81,9 @@ One of the benefits to a partner is that work done /in the service of that organ
 #<<grading>>
 The final project will be evaluated based on its success in meeting the goals outlined in the proposal, on the integrity of historical analysis, on the aesthetics of the presentation, and on the satisfaction of the community partners with your work.  
 | Component               | Due Date         | Group/Indiv | % of Course Grade |
-| Proposal & Presentation | <2015-12-01 Tue> | Group       |                10 |
-| Interim Report          | <2016-02-02 Tue> | Group       |                10 |
-| Final Product           | <2016-04-05 Tue> | Group       |                20 |
+| Proposal & Presentation | <2016-12-06 Tue> | Group       |                10 |
+| Interim Report          | <2017-02-07 Tue> | Group       |                10 |
+| Final Product           | <2017-04-04 Tue> | Group       |                20 |
 | Partner Response        | ---              | Group       |                 5 |
 In addition, most of your blog postings in semester 2 will be concerned with your project & your progress on it.  
 
@@ -100,6 +101,9 @@ The Final product is a fantastically intricate and rich historical website, with
 I'll ask your partner for feedback on your work, and take that into account in my final grade.  
 
 * Essay Assignment
+:PROPERTIES:
+:PARENT:   16
+:END:
 *Due <2016-01-19 Tue>*
 ** Basics
 Write an 8-10 page paper on a research topic related to your group project.  This is an ordinary research paper of the kind you have done many times before; an excellent basic guide to writing history papers is available [[http://www.writing.utoronto.ca/advice/specific-types-of-writing/history][on the writing centre website]].    
@@ -123,6 +127,9 @@ As has doubtless generally been your experience, marking proceeds on an evaluati
 Please don't ask me how many sources you need.  As many as are required!  The most interesting part of writing a research paper is doing primary source research, so please do as much of that as you can.
 
 * Project Presentation 1
+:PROPERTIES:
+:PARENT:   16
+:END:
 Next week we will have preliminary presentations of your projects.  This is in preparation for a more substantial proposal which you will present more formally at the end of the term.  The purpose of next week's class is to ensure that you have something moving along -- most of you are on your way but a couple of you will really have to hustle.  
 
 ** Next Week's Blog
@@ -141,8 +148,7 @@ I look forward to seeing your work.
 * Project Proposal
 :PROPERTIES:
 :ID:       o2b:967aa03e-fc6e-40a0-bbea-07267a27efd4
-:POST_DATE: [2015-11-24 Tue 09:54]
-:POSTID:   277
+:PARENT:   16
 :END:
 The project kicks off at the end of Fall semester with a formal proposal and presentation.  The written proposal will be submitted not only to me, but to your partner as well, so it is an important document.  
 
@@ -186,6 +192,9 @@ Our first week back? will be devoted to project presentations, which will form a
 
 
 * In-Class Exercise/Sign-up Sheet for week 2
+:PROPERTIES:
+:PARENT:   16
+:END:
 
 http://hackinghistory.ca:9001/p/Website_Review_signup_sheet
 
@@ -198,8 +207,9 @@ http://jsbin.com/udecir/1/edit
 * STA 01: HTML & CSS
 :PROPERTIES:
 :ID:       o2b:5d585d1a-c18b-4020-99fb-4906149d62ce
-:POSTID:   58
-:POST_DATE: [2015-09-11 Fri 06:56]
+:POSTID:
+:POST_DATE:
+:PARENT:   16
 :END:
 *Due <2015-09-29 Tue> before class*
 
@@ -221,8 +231,7 @@ You can learn more about git and github [[https://try.github.io/levels/1/challen
 * STA 02: Javascript
 :PROPERTIES:
 :ID:       o2b:5136bc02-9c0c-4a85-bff7-601fc3ce0f77
-:POSTID:   60
-:POST_DATE: [2015-09-11 Fri 06:56]
+:PARENT:   16
 :END:
 *Due <2015-10-13 Tue>*
 
@@ -234,9 +243,7 @@ After you're done, send me an email with a link to your CodeAcademy profile page
 
 * STA 03: Make a Map
 :PROPERTIES:
-:ID:       o2b:78b5fa70-113f-4fa2-a27e-6960c2adf7c9
-:POSTID:   62
-:POST_DATE: [2015-09-11 Fri 06:58]
+:PARENT:   16
 :END:
 *Due Date: <2015-10-27 Tue>*
 
@@ -278,9 +285,7 @@ If you change the styling, you should not create a terrible mess!
 
 * STA 04: Getting started with PHP
 :PROPERTIES:
-:ID:       o2b:283d25bf-d268-4a04-a5de-d552fac129ee
-:POST_DATE: [2015-09-10 Thu 22:08]
-:POSTID:   64
+:PARENT:   16
 :END:
 
 You've already learned bits and pieces of 3 languages -- and now we're trying another one? Crazy!  It doesn't /really/ make sense to work this way; but this is part of the hacking method. We learn what we need to, and hope that the whole is a little more than the sum of its parts.  
@@ -292,12 +297,18 @@ The Wordpress framework is written in the PHP programming language. PHP structur
 Complete the [[https://www.codecademy.com/en/tracks/php][PHP Track at Codeacademy]], and send me an email with your profile URL.  
 
 * ACTION STA 05: Wordpress Themes 
+:PROPERTIES:
+:PARENT:   16
+:END:
 
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
 
 
 * COMMENT Foundation
+:PROPERTIES:
+:PARENT:   16
+:END:
 
 For this short technical assignment, I would like you to switch your perosnal from your home-grown theme to the advanced Foundation framework we'll beworkingwith in our real projects.  Please do the following:
 
@@ -310,6 +321,9 @@ For this short technical assignment, I would like you to switch your perosnal fr
 - *learn about the /[[http://foundation.zurb.com/docs/components/reveal.html][reveal]]/ and /[[http://foundation.zurb.com/docs/components/accordion.html][accordion]]/ features in foundation, and try to implement them briefly in [[http://jsbin.com/soxowa/2/edit?html,js,output][jsbin]]. 
 
 * COMMENT Timemap
+:PROPERTIES:
+:PARENT:   16
+:END:
 ** Historical Mapping
 This is a simple experiment in generating historical maps:  interactive timelines that also map events on a geographical grid.  
 

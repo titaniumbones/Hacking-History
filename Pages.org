@@ -35,9 +35,9 @@ Most of the technical skills you'll learn in this class you can teach yourself (
 
 * About
 :PROPERTIES:
-:ID:       o2b:9b3e5997-b3de-43c7-af69-afa0d03dda96
-:POST_DATE: [2015-09-11 Fri 07:07]
-:POSTID:   80
+:ID:       o2b:aaa759bf-58b9-4d4f-8342-1cdc0229e98c
+:POST_DATE: [2016-09-11 Sun 09:58]
+:POSTID:   31
 :END:
 This year-long course examines the relationships among academic history, digital media, and community formation using a variety of texts and methods; it culminates in an intensive semester-long digital storytelling project focused on community engagement. The intellectual focus of the first semester is two-fold: first, on the history of the public sphere and second, on the politics of “engaged” scholarship. At the same time, students will be exposed to techniques of multimedia and nonlinear storytelling. The second semester revolves around a group project undertaken in concert with a community organization. Working closely with their community partners, students will build a digital archive or storytelling framework using multimedia and/or social networking technologies. The fundamental aim of the course is to expand the reach of historical scholarship outside of the academy, and to develop modes of historical research compatible with community engagement. 
 
@@ -45,9 +45,9 @@ Registration for the class takes place through [[https://www.rosi.utoronto.ca/ma
 
 ** About the Instructor
 #+ATTR_HTML: :class "size-medium alignleft"
-#+ATTR_HTML: height="200" align="left"
+#+ATTR_HTML: :style float:left; padding-right:10px;
 [[file:Pictures/matt_on_bridge.jpeg]]
-Matt Price, a historian of science by training, teaches digital history classes at the University of Toronto, as well as New College 103, "Digital Technology and Society".  His main current interests are in "engaged" pedagogy, and public participation in the creation of knowledge.  
+Matt Price, a historian of science by training, teaches digital history classes at the University of Toronto, as well as NEW103 & 113, "Digital Technology and Society"; INF1501, "Culture & Technology 1"; and RLG231, "Religion and Society."  His main current interests are in "engaged" pedagogy, and public participation in the creation of knowledge.  
 * Calendar
 :PROPERTIES:
 :PARENT:   80

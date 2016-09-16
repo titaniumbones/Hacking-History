@@ -1,5 +1,6 @@
-#+POSTID: 38
-#+DATE: <2017-08-30 Wed>
+#+POSTID: 4
+#+DATE: [2016-09-11 Sun 09:20]
+#+TODO: ACTION TENTATIVE | DONE FINAL
 # #+INCLUDE: "~/src/orgpaper/default_packages.org"
 # #+AUTHOR:    University of Toronto
 # #+EMAIL:     matt.price@utoronto.ca
@@ -35,7 +36,7 @@ In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_Wor
 
 Along the way, we will learn about the history of digital media, and their place in the development of the public sphere; and we will also study the history and politics of "engaged" and "public" scholarship.  We will also spend a substantial amount of time acquiring the technical skills needed for a project like this, e.g., the fundamentals of [[http://en.wikipedia.org/wiki/HTML][HTML]] and [[http://www.codecademy.com/tracks/javascript][Javascript]], as well as just enough [[http://ca.php.net/tut.php][PHP]] to work with the [[http://www.wordpress.org][Wordpress]] Content Management System.  No prior technical knowledge is required for this, but you will need to be willing to challenge yourself to learn a few tricks and principles of web programming.  The payoff for that effort is huge: a chance to contribute in a meaningful way to historical discourse beyond the walls of the University, and to explore the frontiers of historical communication in the process.  
 
-In 2017-17, we have a very small class size, so we will likely have only one class project; we'll work together as a class to find something that interests everyone. 
+In 2017-17, we have a very small class size, so we will likely have only one class project; we'll work together as a class to find something that interests everyone. For the present, I have structured the middle portion of the first semester around a tentative topic -- the history of water in Toronto.  
 * Course Structure
 ** First Semester
 In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  
@@ -53,15 +54,13 @@ In this project-based class, we have relatively few readings and instead focus o
 The class has 4 kinds of assignments:
 - 16 Blog Postings   (6 in semester 1, 12 in semester 2, *20%*) 
 - 5 "Short Technical Assignments"   (STA's, first semester, *15%*)
-- One Written Paper  (7-9 pp, Jan 6, *10%*)
+- One Written Paper  (7-9 pp, Jan 10, *10%*)
 - The Final Project  (website, ongoing but due April 4, *45%*)
 with the balance of 10% for on- and off-line participation, which includes comments on other students' blog posts, contributions to online resources, and discussion.
 
 *Blog Postings* are thoughtful pieces, 400 words or so in length, posted to the course blog by noon the day before class meets (so, noon each Monday).  You will be expected to read your colleagues' postings and respond to them, both online (using the blog's comment function) and in class.  In the first semester, these postings will primarily be /responses to the weekly readings/, and are required /every two weeks/.  In the second semester, they will instead generally take the form of *weekly* (not bi-weekly) /progress reports/ in which you discuss your final projects and your interactions with partnering organizations, or of /short written pieces from your project site/ (see below). See the [[http://2015.hackinghistory.ca/assignments/the-course-blog/][assignment page]] for more details. 
 
 *Short Technical Assignments (STA's)* are designed to give you the technical skills you will need for your website development work in the second semester.  Approximately every 2 weeks in the first semester, you will complete a short on or off-line assignment for a *pass-fail* grade.  The lab assignments will cover basic web skills and other technical topics, which will always have been covered in the third 'lab' hour of class. 
-
-The *Website Review* has two parts: a written review of a historical website posted to the course website at least 24 hours before class, and a very short in-class presentation.  We will have one or two website reviews each week in the first semester, except for the first and final meetings.  The written portion is posted to the course website in lieu of that week's blog post and should be tagged "review" to make it easier to find (see the review assignment for more details).  
 
 *The Paper* is due shortly after the beginning of the second semester.  Approximately 7-9 pages long, its format is that of a standard course paper:  a well-researched thesis, supported by evidence garnered from primary and secondary sources.  Students are expected to write on topics related to their *Final Projects* (see below).  
 
@@ -95,6 +94,7 @@ A sizable collection of links is also stored in a [[http://www.zotero.org][Zoter
 We'll be using a number of important software tools, some of them very easy to use, some of them harder.  All of them are free (as in beer, and usually as in speech) and most run on all three major platforms (Windows, Mac, Linux) or on the web.  See the Tools page for more details.
 #<<outline1>>
 * Outline for Semester 1
+In 2016, the outline will change drastically in approximately the third week of class, as we confirm the direction class will take.  
 ** <2016-09-13 Tue> Hacking History
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-future-history-small.jpg]]
@@ -132,42 +132,39 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 - Carr, Graham. [[http://muse.jhu.edu.myaccess.library.utoronto.ca/journals/canadian_historical_review/v086/86.2carr.pdf][Rules of Engagement: Public History and the Drama of Legitimation]].” The Canadian Historical Review 86, no. 2 (2005): 317–354.
 - Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
 *** Lab 03: CSS and Web Styles
-** <2016-10-04 Tue> Before Toronto
+** <2016-10-04 Tue> Fresh Water in Canadian History
+*In flux:* possible field trip to [[https://binational.net/2016/05/26/registration-inscription/][Great Lakes Public Forum]] opening session on [[https://binational.net/2016/05/26/glpf2016pfgl/#oct4m][State of the Lakes]].  To discuss in class!
+
+More than many other places, Canada has been shaped by its relationship to freshwater lakes and rivers.
+*** Readings
+- Stéphane Castonguay, “The Production of Flood as Natural Catastrophe: Extreme Events and the Construction of Vulnerability in the Drainage Basin of the St. Francis River (Quebec), Mid-Nineteenth to Mid-Twentieth Century,” /Environmental History/ (2007) 12(4): 820-844
+- Dagenais, "The Urbanization of Nature: Water Networks and Green spaces in Montreal 
+*** Lab 04: Javascript Basics
+** <2016-10-11 Tue> Before Toronto
 Before there was a "Toronto", there was already a place by the shore, and people who inhabited it. 
 *** Readings:
 - Jon Johnson, ‘The Indigenous Environmental History of Toronto, “The Meeting Place”’ https://www.academia.edu/4949457/The_Indigenous_Environmental_History_of_Toronto_The_Meeting_Place
 - First Story Toronto <https://firststoryblog.wordpress.com/>
-*** Lab 04: Javascript Basics
-** <2016-10-11 Tue> Toronto's Environmental History
-What do the geography and natural history of Toronto have to say to us, as historians; and how do we write an environmental history that is also a history of /people/? 
-*** Readings
-- Urban Explorations : Environmental Histories of the Toronto Region (Hamilton, ON: L.R. Wilson Institute for Canadian History, 2013), selections TBA
-Also /either/ selections from Bonnell, /Reclaiming the Don/, /or/ Dagenais, "The Urbanization of Nature: Water Networks and Green spaces in Montreal /or/ Ken Cruikshank and Nancy B. Bouchi
-er, “Blighted Communities and Obnoxious Industries: Constructing Environmental Inequality on an Industrial Waterfront, Hamilton,Ontario, 1890-1960”
-*** NOTE: Extra Lab reading!
-Please also take a quick look at the first two chapters of 
 *** Lab 05: Introducing Github
-** <2016-10-18 Tue> Spatial History
+
+** ACTION <2016-10-18 Tue> Toronto and the Great Lakes
+- Urban Explorations: Environmental Histories of the Toronto Region (Hamilton, ON: L.R. Wilson Institute for Canadian History, 2013), selections TBA
+- Bonnell, /Reclaiming the Don/, selections.
+ - Ken Cruikshank and Nancy B. Bouchier, “Blighted Communities and Obnoxious Industries: Constructing Environmental Inequality on an Industrial Waterfront, Hamilton,Ontario, 1890-1960” 
+
+** <2016-10-25 Tue> Spatial History
 Thinking about the visual presentation of information, especially in map form
 *** Readings
-+ Franco Moretti, /Graphs, Maps, Trees/, ch. 1 ([[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/placing-history.pdf][Graphs]]).
 + Knowles, A. K. “GIS and History.” [[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/pariser-filter-bubble.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]] (2008): 1–13.
 + Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
 + Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
 *** Lab 06: Spatial History with Google Maps
-** <2016-10-25 Tue> Toronto's Immigration History
-To understand any Toronto region or neighbourhood, we need to attend to the patterns of settlement and migration as the city developed into a multicultural mosaic in the 20th Century.  
+** TENTATIVE <2016-10-25 Tue> Canals and Hydropower
+Two periods of major engineering projects transformed the traditional waterways of Eastern Canada: the canal projects of the early Nineteenth Century, and the hydroelectric dams of the mid-twentieth. 
 *** ACTION Readings
-TBA, but tentatively:
-- Harold Troper, "Becoming an Immigrant City" in Aniseph and Lanphier, /The World in a City/
-- Selection from Walker, /The History of Immigration and Racism in Canada/
-*** Lab 07: Getting Started with Wordpress
-** <2016-11-01 Tue> Toronto's Towers
-Towers are one of the defining characteristics of the Black Creek neighbourhood; how are we best to understand them?
-*** ACTION Readings
-- Highrise "1000th Tower" http://highrise.nfb.ca/thousandthtower/
+- Caroline Desbiens, “Producing North and South: A Political Geography of Hydro Development in Quebec,” /Canadian Geographer/ 48, no. 2 (2004): 101-18.
 - TBA
-*** Lab 08: Theming with Wordpress
+*** Lab 07: Getting Started with Wordpress
 ** NO CLASS 11/8 (break)
 ** COMMENT <2016-11-08 Tue> Utopian Toronto
 There's a long history of imagining a more perfect Toronto. How does that project fit in to our objectives this year?

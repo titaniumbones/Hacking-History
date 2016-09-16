@@ -10,18 +10,19 @@
 
 * Labs and Notes  
 :PROPERTIES:
-:ID:       o2b:d8a04e9c-23ed-421f-b04f-a09e5135abfe
-:POST_DATE: [2015-09-09 Wed 19:27]
-:POSTID:   5
-:PARENT: 0
+:ID:       o2b:1570b619-d117-4f34-bd4e-a618bba6ea37
+:POST_DATE: [2016-09-11 Sun 09:28]
+:POSTID:   10
 :END:
-In general, each weekly seminar also includes a "lab" component in which we explore technical skills. See the individual Lab pages for more information
+In general, each weekly seminar also includes a "lab" component in which we explore technical skills. See the individual Lab pages for more information.
 * Lab 01: Getting Started
 :PROPERTIES:
-:ID:       o2b:7bbae931-b531-47a9-9bdd-aaecf55d45af
-:POST_DATE: [2015-09-09 Wed 19:34]
-:POSTID:   8
+:PARENT:   10
+:ID:       o2b:d84b0692-6129-4e96-931a-0585c628c57e
+:POST_DATE: [2016-09-11 Sun 09:32]
+:POSTID:   13
 :END:
+
 Welcome to /Hacking History/.
 
 Today's "lab" is really just an introduction to the website; but since you will be building your own site before the year is out, you'll want to pay attention to the interface.  We use the [[http://wordpress.org][Wordpress]] web framework in this class. Wordpress is the most popular "Content Management System" in the world, and runs ~75 million sites.  It is often praised for the relatively quick learning curve encountered by both users and developers. 
@@ -53,6 +54,20 @@ If you want a picture of yourself to appear next to your name (and it would be h
 ** Understanding Wordpress
 We will discuss this in more detail in a few weeks; but for now, here is a picture:
 [[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
+** Heroes-Please
+This is a fun excercise to introduce everyone to the practice of hacking. 
+
+My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple github training exercise last year for some of my other students.  It was really fun, so I modified it for us:
+1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
+2. Navigate to [[https://github.com/titaniumbones/heroes-please][my heroes-please repository]]
+3. Take a quick look at the [[https://github.com/titaniumbones/heroes-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
+4. Have you found where the Heroes live?
+5. Add a new hero *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
+   - Be sure to name the file "some-persons-name.md" so that everyone knows it's written in Markdown
+   - follow markdown syntax in writing your recipe (see [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
+   - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
+   [[./Images/github-add-file.png]]
+6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/heroes-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
 ** HTML Preview
 If we have time at the end, let's take a look at [[http://jsbin.com/onopaz/7/edit][this exercise]] which is planned for next week.  
 
@@ -60,7 +75,7 @@ Also, this is an opportunity to download and install the [[http://atom.io][Atom 
 
 * Lab 02: Understanding HTML
 :PROPERTIES:
-:PARENT:   67
+:PARENT:   10
 :ID:       o2b:7d99ec52-6cfc-4005-829f-6ecde511b460
 :POST_DATE: [2015-09-09 Wed 19:36]
 :POSTID:   11
@@ -210,7 +225,7 @@ Inspect the source code of three complex pages on the web and find every instanc
 :PROPERTIES:
 :ID:       o2b:2a926b2c-7fda-4ae5-88b3-0837ce62757a
 :POST_DATE: [2015-09-09 Wed 20:23]
-:PARENT: 5
+:PARENT:   10
 :POSTID:   15
 :END:
 Last week we experimented with HTMl and dipped our toes into CSS and styles.  In your final projects, much of your coding time will be spent trying to get your site to look the way you want it to.  If you have a firm understanding of CSS (and of where to look for more info when you're having trouble!), this will be a lot easier.
@@ -402,6 +417,7 @@ It turns out that the theme framework we use may be converting to flexbox very s
 :ID:       o2b:62f1b3b6-a51b-4581-bdb4-118280788bf1
 :POST_DATE: [2015-09-29 Tue 09:18]
 :POSTID:   160
+:PARENT:   10
 :END:
 
 Another week, another language! This is in some ways a ridiculous way to learn about programming, and you may not remember all you learn. The most important thing is to get some sense of the types of operations that take place when programming languages interact with web pages, so you can change the code you are given to get it to do exactly what you want.  But in order to do this it wil lbe very helpful to know just a little bit about programming in general.
@@ -614,6 +630,7 @@ Functions in Javascript are "first-order objects" and can be used in mind-bendin
 :ID:       o2b:41e67f32-3800-4ede-981d-39b0caa6d498
 :POST_DATE: [2015-10-27 Tue 14:22]
 :POSTID:   236
+:PARENT:   10
 :END:
 This lab is a very brief introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
 
@@ -723,6 +740,7 @@ OK, that's what I've got for now.  Follow the excellent links near the top for m
 :ID:       o2b:ef1c68be-0f41-4ad8-8798-84dbc7e73b7c
 :POST_DATE: [2015-09-14 Mon 16:07]
 :POSTID:   100
+:PARENT:   10
 :END:
 
 ** Google Maps and Spatial History
@@ -800,6 +818,7 @@ The CSS for this exercise is deceptively simple.  We make only a few small chang
 :ID:       o2b:00873ce5-90ca-4c97-aa2b-d58be4609329
 :POST_DATE: [2015-09-14 Mon 16:08]
 :POSTID:   108
+:PARENT:   10
 :END:
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
@@ -844,6 +863,7 @@ Have fun!!
 :ID:       o2b:771ddc0e-fbdc-45cf-be28-54113248bc2e
 :POST_DATE: [2015-09-14 Mon 16:08]
 :POSTID:   105
+:PARENT:   10
 :END:
 ** Themes are collections of files
 - they live in your wordpress install:
