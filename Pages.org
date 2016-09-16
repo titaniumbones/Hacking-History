@@ -46,8 +46,8 @@ Registration for the class takes place through [[https://www.rosi.utoronto.ca/ma
 ** About the Instructor
 #+ATTR_HTML: :class "size-medium alignleft"
 #+ATTR_HTML: :style float:left; padding-right:10px;
-[[file:Pictures/matt_on_bridge.jpeg]]
-Matt Price, a historian of science by training, teaches digital history classes at the University of Toronto, as well as NEW103 & 113, "Digital Technology and Society"; INF1501, "Culture & Technology 1"; and RLG231, "Religion and Society."  His main current interests are in "engaged" pedagogy, and public participation in the creation of knowledge.  
+[[file:Images/BrainBoy.jpg]]
+Matt Price is the world's most powerful telepath
 * Calendar
 :PROPERTIES:
 :PARENT:   80
@@ -69,3 +69,5 @@ Matt Price, a historian of science by training, teaches digital history classes 
 ** <2016-04-05 Tue> FINAL DUE DATE
 
 # Pictures/matt_on_bridge.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-matt_on_bridge.jpeg
+
+# Images/BrainBoy.jpg http://2016.hackinghistory.ca/wp-content/uploads/2016/09/BrainBoy.jpg
