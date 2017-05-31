@@ -1,4 +1,4 @@
-#+POSTID: 67
+x#+POSTID: 67
 #+DATE: [2013-10-08 Tue 09:53]
 #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil
 #+CATEGORY: labs
@@ -6,7 +6,7 @@
 #+PARENT: 5
 #+DESCRIPTION:
 #+TITLE: Labs And Notes
-#+PROPERTY: PARENT 5
+#+PROPERTY: PARENT 10
 
 * Labs and Notes  
 :PROPERTIES:
@@ -76,9 +76,9 @@ Also, this is an opportunity to download and install the [[http://atom.io][Atom 
 * Lab 02: Understanding HTML
 :PROPERTIES:
 :PARENT:   10
-:ID:       o2b:7d99ec52-6cfc-4005-829f-6ecde511b460
-:POST_DATE: [2015-09-09 Wed 19:36]
-:POSTID:   11
+:ID:       o2b:4cadb43d-7585-4fd0-9e68-00308148320f
+:POST_DATE: [2016-09-20 Tue 09:05]
+:POSTID:   88
 :END:
 One of the goals of this week is to help you think of the Web as a protocol-driven infrastructure.  The language in which that infrastructure operates is called [[http://en.wikipedia.org/wiki/HTML][HTML]]. Like a traveller in a foreign country, you may not need to be fluent in this language, but if you know just a little bit then you'll be much more comfortable.  In this exercise we will introduce an online tool called [[http://jsbin.com/welcome/1/edit][JSBin]], now one of many such tools available online, and somewhat similar to the [[http://codeacademy.net][Codeacademy]] website you will be using for your assignments.
 
@@ -151,7 +151,7 @@ The fundamental, breathtaking feature of the web is its capacity to create links
 Figure out what these mean by browsing on w3schools. Work especially hard at the <a> tag.  Hint:  the standard syntax is <a href="link">Text</a> and there are plenty of instances in the code below.
 
 *** Exercise 0
-Navigate to [[http://jsbin.com/onopaz/7/edit][this page]].  This is the JSBin editor, an online tool for inspecting code.  
+Navigate to [[http://jsbin.com/onopaz/edit?html,output][this page]].  This is the JSBin editor, an online tool for inspecting code.  
 *** Exercise 1
 First, let's quickly compare the text of an old post of mine:
 
@@ -224,9 +224,9 @@ Inspect the source code of three complex pages on the web and find every instanc
 * Lab 03: CSS and Web Styles
 :PROPERTIES:
 :ID:       o2b:2a926b2c-7fda-4ae5-88b3-0837ce62757a
-:POST_DATE: [2015-09-09 Wed 20:23]
 :PARENT:   10
-:POSTID:   15
+:POST_DATE: [2016-09-20 Tue 09:28]
+:POSTID:   94
 :END:
 Last week we experimented with HTMl and dipped our toes into CSS and styles.  In your final projects, much of your coding time will be spent trying to get your site to look the way you want it to.  If you have a firm understanding of CSS (and of where to look for more info when you're having trouble!), this will be a lot easier.
 
@@ -246,6 +246,7 @@ Sometimes when you have a really slow Internet connection, you will see a very u
 #+ATTR_HTML: :class compare
 [[file:~/HackingHistory/Images/nytimes-no-css.png]] 
 
+#+ATTR_HTML: :style clear:both;
 So, while HTML is responsible for the *structure and content* of a website, CSS is responsible for its *presentation*.  
 
 ** CSS Selectors
@@ -314,8 +315,8 @@ A lot of what we do with CSS is to set fonts and colors.  Here are some examples
 
 #+BEGIN_SRC css
 div.main {
-      color:rgb(150,150,150);
-      background-color(#b0c4ee);
+      color: rgb(150,150,150);
+      background-color: (#b0c4ee);
       text-align: center;
       text-decoration:underline;
       font-family: "Times New Roman", Times, Serif;
@@ -412,12 +413,12 @@ All of what you just learned is in the process of changing dramatically.  A new 
 It turns out that the theme framework we use may be converting to flexbox very soon. So, [[http://jsbin.com/yukiwe/3/edit?html,css][here]] is a very quick introduction to flexbox.  You may want to look at [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][this cheatsheet]], this [[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties][slightly more verbose one]], or [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes][this very detailed specification]]. Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards. We will keep an eye out for those as we continue; meanwhile, if you want to, you can check out [[http://jsbin.com/bawoqo/3/edit?html,css,output][transitions]] and [[https://css-tricks.com/almanac/properties/a/animation/][learn]] a little bit about [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations][animations]].
 
 
-* ACTION Lab 04: Javascript Basics 
+*  Lab 04: Javascript Basics 
 :PROPERTIES:
 :ID:       o2b:62f1b3b6-a51b-4581-bdb4-118280788bf1
-:POST_DATE: [2015-09-29 Tue 09:18]
-:POSTID:   160
 :PARENT:   10
+:POST_DATE: [2016-10-11 Tue 10:12]
+:POSTID:   145
 :END:
 
 Another week, another language! This is in some ways a ridiculous way to learn about programming, and you may not remember all you learn. The most important thing is to get some sense of the types of operations that take place when programming languages interact with web pages, so you can change the code you are given to get it to do exactly what you want.  But in order to do this it wil lbe very helpful to know just a little bit about programming in general.
@@ -532,15 +533,59 @@ Things I need to cover:
 - functions
 - objects
 
+** Variables
+You have all taken algebra, so you have all seen /variables/. Let's think of it this way: a variable is a box, into whic you can place a /value/.
+#+BEGIN_SRC js :results output code  replace :exports both
+var myString = "Hello, everyone";
+console.log(myString);
+#+END_SRC
+
+#+BEGIN_SRC javascript
+  var myString = "some value in here";
+  var myNumber = 47;
+  var myArray = ["first is a string", 2, "third is also a string"];
+  var myObject = {first:"first is a string", second: 2, third:"third is also a string"};
+#+END_SRC
+In almost all programming languages, there are many variable "types"; javascript variables are "dynamically typed", which means that the type is determined only when the variable is actually being used. This is very handy, but can sometimes lead to confusion, e.g., compare:
+
+#+BEGIN_SRC javascript
+  console.log("Hello, I am a string " + 1 + 2);
+  console.log(1 + 2 + " but I am a number");
+#+END_SRC
+
 ** Iteration and Control Structures
 
-Every computer language has "control structures" that allow iteration: (how many times will this repeat?)
+Every computer language has "control structures"
+** Loops
+#+BEGIN_SRC js :results output code  replace :exports both
+ // here is a very basic "for loop":
+  for (i=0; i<10; i++ ) {
+    console.log("this is number: " + (i+1));
+  }
+
+  // a simple array -- essentially a list
+  var veggies = ["carrot", "potato", "pea"];
+
+  // a "for-of loop" -- iterates over array items
+  for (i of veggies) {
+    console.log(i)
+  };
+
+  // a for-in loop -- iterates over array length (0,1,2,3, etc)
+  for (i in veggies) {
+       console.log(veggies[i])
+       };
+
+
+#+END_SRC
+
+
 #+BEGIN_SRC javascript
   for(var i = 0; i < 10; i++) {
       console.log("This is iteration number: " + (i + 1) );
   }
 #+END_SRC
-
+**** Flow Control
 also if statements -- what will this print?
 #+BEGIN_SRC javascript
   var dimensions = 3;
@@ -554,21 +599,6 @@ also if statements -- what will this print?
 #+END_SRC
 
 You'll learn a few more in the homework (notably ~switch/case~ and ~try/catch~); but these two do the two basic operations you need to understand: /repeat/ and /test/. 
-
-** Variables
-You have all taken algebra, so you have all seen /variables/. Let's think of it this way: a variable is a box, into whic you can place a /value/.
-#+BEGIN_SRC javascript
-  var myString = "some value in here";
-  var myNumber = 47;
-  var myArray = ["first is a string", 2, "third is also a string"];
-  var myObject = {first:"first is a string", second: 2, third:"third is also a string"};
-#+END_SRC
-In almost all programming languages, there are many variable "types"; javascript variables are "dynamically typed", which means that the type is determined only when the variable is actually being used. This is very handy, but can sometimes lead to confusion, e.g., compare:
-
-#+BEGIN_SRC javascript
-  console.log("Hello, I am a string and " + 1 + 2);
-  console.log(1 + 2 + " but I am a number");
-#+END_SRC
 
 ** Accessing the DOM
 Javascript uses something called the Document Object Model to understand the web page. As far as Javascript is concerned, the DOM is a big complex object, whose parts can be identified, manipulated, and used as input for complex functions.  Here's a relatively simple operation you can try in the Firefox scratchpad with a :
@@ -625,12 +655,12 @@ As an expression:
 #+END_SRC
 
 Functions in Javascript are "first-order objects" and can be used in mind-bending ways.  You don't need to worry about those for a little while yet.  
-* Lab 05: Introducing Github
+* Lab 06: Introducing Github
 :PROPERTIES:
 :ID:       o2b:41e67f32-3800-4ede-981d-39b0caa6d498
 :POST_DATE: [2015-10-27 Tue 14:22]
-:POSTID:   236
 :PARENT:   10
+:POSTID:   188
 :END:
 This lab is a very brief introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
 
@@ -660,12 +690,13 @@ Wow, that was cool, right? And if we get through this fast enough, we can try wo
 There's still tons to learn but this is a good start.  
 ** Quick Start
 - [[https://github.com/join][Sign Up for a Github Account]]
-- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install Git on your Laptop]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install Git on your Laptop]] (or use clound9, below)
 - [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
 - [[https://help.github.com/articles/set-up-git/][configure your git information]]
 - [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be sure you can authenticate with github]]
 - Create a local copy of your new Maps repository by [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
   ~git clone https://github.com/YOUR-USERNAME/maps-with-markdown~
+- Alternatively, [[https://c9.io/][set up an account with cloud9]], then make sure you are logged into your github Account and [[https://docs.c9.io/v1.0/docs/connected-services][connect Cloud9 to github]], then [[https://docs.c9.io/docs/setting-up-github-workspace][follow the instructions to set up a new workspace]]
 - Make some changes
 - Commit your changes with ~git commit -m "Useful Message Here" -a~
 - *optional* Push your changes to the web with ~git push~
@@ -735,12 +766,12 @@ git push # send all your commits on the current branch to the original repositor
 
 OK, that's what I've got for now.  Follow the excellent links near the top for more info.  Good luck!
 
-* Lab 06: Spatial History with Google Maps
+* Lab 05: Spatial History with Google Maps
 :PROPERTIES:
 :ID:       o2b:ef1c68be-0f41-4ad8-8798-84dbc7e73b7c
-:POST_DATE: [2015-09-14 Mon 16:07]
-:POSTID:   100
 :PARENT:   10
+:POST_DATE: [2016-10-25 Tue 09:28]
+:POSTID:   176
 :END:
 
 ** Google Maps and Spatial History
@@ -751,11 +782,11 @@ Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/c
 
 Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
 ** Read this part! Follow the links! 
-Today's exercise is also something of a test.  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
-- working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which we saw briefly in the first class, and
+Today's exercise also brings together some of what you've already learned in class, and brings back the .  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
+- working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which we've seen before
   using [[https://github.com/titaniumbones/maps-with-markdown][a copy you can download and work with on your own]].
 
-The latter version also serves as an introduction to the [[https://github.com/][Github code-sharing platform]]. If you continue working with code-based academic projects, you will eventually want to learn more about git, which is an enormously powerful resource.  Our next assignment will also be made available on Github, so this is a chance to get a head start. If you want to work locally, I strongly recommend the newly-released [[https://atom.io/][Atom Code Editor]].  If you also install the atom-html-preview package, you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
+The latter version also serves as an introduction to the [[https://github.com/][Github code-sharing platform]]. If you continue working with code-based academic projects, you will eventually want to learn more about git, which is an enormously powerful resource.  Our next assignment will also be made available on Github, so this is a chance to get a head start. If you want to work locally, I strongly recommend the [[https://atom.io/][Atom Code Editor]], which we've discussed  If you also install the atom-html-preview package, you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
 
 ** What is a GIS?
 :PROPERTIES:
@@ -783,7 +814,7 @@ You don't have to understand the Google Maps API very thoroughly to be able to d
 ** Using Markdown
 It was useful to learn HTML but it is a pain to generate it by hand. You do have to do some hand-coding of HTML for this exercise, because some of the work actually happens in Javascript; but the rest of it can be done in markdown, which I find much easier to write than HTML. 
 
-#+BEGIN_SRC markdown
+#+BEGIN_SRC txt
 # one or more '#' marks indicates a headline
 
 ### this one is "level 3"
@@ -813,18 +844,18 @@ I have made the Javascript as simple as I can. There are more efficient and inte
 I /think/ the only modifications you will need to make to the HTML are within the special "textarea" block containing the markdown syntax.  The rest you can probably safely ignore, though you might learn something from looking at it.
 *** CSS
 The CSS for this exercise is deceptively simple.  We make only a few small changes tothe defaults, /but/ we are cheating here.  The [[http://strapdownjs.com/][strapdown]] javascript library which enables us to magically write using markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][bootstrap]] web development framework, which includes some sophisticated CSS.  Try changing the first ~textarea~'s ~theme=united~ to one of the other supported "swatches" -- I'm a fan of "cyborg" and "slate", myself.
-* Lab 07: Getting Started with Wordpress
+* Lab 10: Wordpress & Wordpress Themes
 :PROPERTIES:
 :ID:       o2b:00873ce5-90ca-4c97-aa2b-d58be4609329
-:POST_DATE: [2015-09-14 Mon 16:08]
-:POSTID:   108
 :PARENT:   10
+:POST_DATE: [2016-11-29 Tue 09:53]
+:POSTID:   239
 :END:
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
 ** Getting Started
-In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will see a theme called "Hacking History Starter Kit". Let's take a quick look at it:
-** Content Management Systems
+In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will have access to a completely breakable sandbox environment. Go wild!
+*k* Content Management Systems
 - a [[http://en.wikipedia.org/wiki/Web_content_management_system][CMS]] is a system that allows web pages, and structured sets of pages, to be constructed from existing documents and text/HTML entered by users who may have little knowledge of HTML or the other underlying technologies that display those pages. There are hundreds of CMS's in existence today, some Free/Open Source, others distributed under non-free licenses.  
 ** What is Wordpress?
 Take a look at this chart:
@@ -843,7 +874,137 @@ You'll often see other kinds of content -- events, for instance, or links , bibl
 - The look and feel of your website is also controlled by PHP files, often with help from files written in other languages, especially [[http://computer.howstuffworks.com/question599.htm][CSS]] and [[http://www.w3schools.com/js/][Javascript]]. Sometimes the look of your website will be affected by [[http://codex.wordpress.org/Plugins][Plugins]], but most of what you see is related instead to your [[http://codex.wordpress.org/Themes][Theme]].
 - A *Theme* is a collection of files -- at minimum two, but often many more -- from which wordpress takes instructions when presenting the page.  There are thousands of themes in the [[http://wordpress.org/extend/themes/][official directory]] and thousands more for sale or download outside it.
 - The easiest way to install a new theme is to *download it* using the Wordpress Admin interface.  Sometimes this won't work -- if you're writing your own theme, for instance!  I'm hoping we will have a chance to write our own [[http://codex.wordpress.org/Child_Themes][Child Themes]] later on, so if you want to do that, drop me a line and I'll hook you up with [[http://en.wikipedia.org/wiki/File_Transfer_Protocol][FTP]] access to the server.  
-** Assignment: build a Wordpress site
+
+*** Themes are collections of files
+- they live in your wordpress install:
+[[file:~/HackingHistory/Images/wp-file-structure.jpg]]
+*** Themes are written primarily in PHP
+PHP is a programming language developed specifically for writing web pages.  Most PHP files consist of HTML and PHP intermixed with each other. This can be a little confusing, but you will get used to it. We will puzzle through the PHP syntax together, but you might want to try the [[http://www.codecademy.com/en/tracks/php][Codeacademy PHP track]] as an introduction to the language basics.  Knowing just a little will make your work a lot easier next semester.  
+
+#+BEGIN_SRC php
+<?php echo('Hello World'); ?>
+#+END_SRC
+
+*** Themes tell wordpress how to display your content
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+*** Understanding the Loop
+One of the first things you will encounter in a Wordpress theme is "the loop", which usually looks like this:
+#+BEGIN_SRC 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<!-- do stuff ... -->
+<?php endwhile; else : ?>
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+#+END_SRC
+
+This is a little hard to read, because it uses PHP's hideous [[http://php.net/manual/en/control-structures.alternative-syntax.php][alternate syntax for control structures]]. Let's rewrite it in the ordinary syntax:
+
+#+BEGIN_SRC 
+<?php 
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post(); 
+		//
+		// Post Content here: do stuff
+		//
+	} // end while
+} else {  ?> 
+    <p>
+    <?php _e( 'Sorry, no posts matched your criteria.' ); } // end if/else ?>
+
+#+END_SRC
+
+What the heck does this mean? Well, you'll see there is a ~while~ loop wrapped in an ~if~ test.  Then there are two functions -- can you see them?  The [[https://codex.wordpress.org/The_Loop][wordpress docs]] explain it this way:
+
+#+BEGIN_QUOTE
+In English (PHP types and people familiar with code speak can skip to below), the above would be read: If we are going to be displaying posts, then get them, one at a time. For each post in the list, display it according to <!-- do stuff ... -->. When you hit the last post, stop. The do stuff line(s), are template dependent.
+
+A little aside on Do stuff: in this example it is simply a placeholder for a bunch of code that determines how to format and display each post on a page. 
+#+END_QUOTE
+
+Digging a little deeper, we find:
+#+BEGIN_QUOTE
+An explanation for the coders out there: The have_posts() and the_post() are convenience wrappers around the global $wp_query object, which is where all of the action is. The $wp_query is called in the blog header and fed query arguments coming in through GET and PATH_INFO. The $wp_query takes the arguments and builds and executes a DB query that results in an array of posts. This array is stored in the object and also returned back to the blog header where it is stuffed into the global $posts array (for backward compatibility with old post loops). 
+#+END_QUOTE
+
+So, basically: 
+- ~the_post()~ is a function that grabs one member of an array of posts -- itself a very complex object -- and dumps it into a new object called ~$post~.
+- Within the loop, you will then call on other function to access properties of the post.  You can also access those properties directly, but it is often hard to do that.  So, for instance, you might write:
+#+BEGIN_SRC 
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <article id="post-<?php the_ID(); ?>">
+      <header>
+          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      </header>
+      <div class="entry-content">
+          <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('large'); } ?></a></figure> <?php the_excerpt(); ?>
+      </div>
+  </article>
+
+  <?php endwhile; else : ?>
+          <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <?php endif; ?>
+#+END_SRC
+
+Let's go over each of these functions in class.  
+
+*** Files in your theme
+- *style.css:*  your stylesheet; you need this
+- *functions.php:* you're going to need this too
+- *index.php:* this is the default template for your theme; you can't live without it
+- *header.php:* controls your header.
+- *footer.php:* controls your footer area
+- *sidebar.php:* generates your sidebar
+
+*** Template hierarchy
+remember this:
+
+[[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
+
+Here is a more detailed view:
+
+[[file:~/HackingHistory/Images/Template_Hierarchy.png]]
+
+When accessing a piece of data from the database, Wordpress will check in sequence to see if appropriate templates are available and use the first matching template it finds.  
+
+*** Plugins and themes
+- Themes control appearance
+- plugins add functionality
+- but sometimes the difference isn't so clear
+- We will try to keep things pretty well-separated, but sometimes it's just much easier to do all your programming in a theme.  
+
+*** Editing Your Theme
+- I recommend editing directly from Atom. We'll discuss in class how to do it. However, if that doesn't work, you can try one of the options below:
+  - install one of several Wordpress plugins that make theme editing a litlte easier:
+    - [[https://en-ca.wordpress.org/plugins/wp-editor/]]WP-editor]] appears to be the best maintained
+    - [[http://wordpress.org/plugins/wpide/][wp-ide]] is one I've used in the past.
+    - If these feel a little awkward try [[http://wordpress.org/plugins/better-file-editor/][better file editor]] instead -- it may be sufficient for our needs (I haven't experimented with it yet).
+- try changing the 'powered-by' text in the footer to our starter theme.  Did you make it work? Did you (alternatively) break the Internet?
+- Check out functions.php, and then sidebar.php.  Can you understand what's going on?  It's not easy to understand!
+- try editing the css enough so that you can get something un-hideous.
+**** Headers
+Right now there is no custom header support in our theme!  To use a header image,
+add this code to functions.php:
+
+#+BEGIN_SRC php
+<?php add_theme_support('custom-header); ?>
+#+END_SRC
+
+
+And put this somewhere in header.php: 
+
+#+BEGIN_SRC php
+<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>" />
+
+#+END_SRC 
+*** Learn much, much more
+There is a huge amount of information online at the [[http://codex.wordpress.org/Stepping_into_Templates][Wordpress Codex]].  That last link is a good starting point, and so is the [[http://codex.wordpress.org/Theme_Development][Theme Development Page]].  There is lots and lots and lots to learn here...  
+
+
+
+
+** COMMENT Assignment: build a Wordpress site
 *** Commemorate an Imaginary Event
 You are tasked with building a website that explores... something that hasn't happened. Invent an event or historical phenomenon (feel free to write from the future if you like), and create a web page that's suited to its exploration.
 *** Your Site already exists
@@ -857,7 +1018,7 @@ Have fun!!
 
 
 
-#+//home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-data_and_metadata_on_the_web.png
+#+//home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-data_and_metadata_on_the_web.pn
 * Lab 08: Theming with Wordpress
 :PROPERTIES:
 :ID:       o2b:771ddc0e-fbdc-45cf-be28-54113248bc2e
@@ -994,11 +1155,12 @@ There is a huge amount of information online at the [[http://codex.wordpress.org
 
 
 * ACTION Lab 09: Art of the Interview
-* Lab 10: From CSS to SASS!
+* Lab 1l: From CSS to SASS!
 :PROPERTIES:
 :ID:       o2b:a40eea2b-0cdf-46a1-b4cd-78674099991a
-:POST_DATE: [2015-09-10 Thu 07:10]
-:POSTID:   21
+:PARENT:   10
+:POST_DATE: [2016-12-06 Tue 10:06]
+:POSTID:   250
 :END:
 Now that you are alll HTML/CSS/PHP ninjas....  it's time for the next language!  The web frmework we're using -- "Foundation" -- uses a language called SASS to manage style instructions.  It takes a little getting used to be soon you will start to love it, I promise.  
 
@@ -1200,7 +1362,7 @@ I have a series of JSBins set up from last year, here they are:
 For fun, I have also enabled real-time compiling of SCSS files in the "grunterie" theme on your personal websites.  Feel free to try it out!
 
 
-** Next week: Foundation
+** COMMENT Next week: Foundation
 
 SASS is just the tip of the iceberg for Foundation.  Next week we will check out some of the many features of Foundation, but if you want a sneak peek you can check out [[http://foundation.zurb.com/docs/][the Foundation docs]],.  
 
@@ -1273,7 +1435,12 @@ Foundation is the engine inside the Wordpress themes you'll be using for your cl
 
 
 # HackingHistory/Images/feature-grid-1.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-feature-grid-1.png
-* Lab 12: Wordpress Templates
+* ACTION [#B] COMMENT Lab 12: Wordpress Templates
+:PROPERTIES:
+:ID:       o2b:e80d81e3-8725-4427-a8bf-cb3d39419c25
+:POST_DATE: [2017-01-17 Tue 11:04]
+:POSTID:   257
+:END:
 We've talked about Wordpress themes [[/lab-05-theming-with-wordpress/][before]]. Today we go a little more in depth into wordpress templates, which are the heart of any theme.  
 
 [[http://codex.wordpress.org/Stepping_Into_Templates][Stepping Into Templates]] is an excellent introduction to Wordpress templates.  I advise you read it, and we will do some of the exercises in class.  More advanced documentation can be found [[http://codex.wordpress.org/Theme_Development#Template_Files][in the Theme Development page]], and also [[http://codex.wordpress.org/Blog_Design_and_Layout][elsewhere on the Wordpress codex]].  I strongly advise you to use this powerful resource.  
@@ -1282,7 +1449,7 @@ One way to think about template files is as [[http://en.wikipedia.org/wiki/Black
 ** Templates
 Finally, just a note on how pages are generated in wordpress out of templates.  Quickly read [[http://codex.wordpress.org/Stepping_Into_Templates][this page]] on the wordpress website.  Can you tell where the template divisions are in a page from our site?  Try inspecting the sourcecode or (nuch better!) uing the [[https://developer.mozilla.org/en-US/docs/Tools][Developer Tools]]in your browser.
 
-** Templates are PHP
+** ACTION [#B] Templates are PHP
 Templates are PHP documents.  We have talked a /little tiny bit/ about PHP, but not much.  It is a language like other languages, but designed for the web.  As a result, php files have a strange structure:  they mix pieces of PHP code with pieces of plain HTML markup.  So, you will see things like this:
 
 #+BEGIN_VERSE
@@ -1298,7 +1465,7 @@ All PHP code is contained in tags that start with ~<?php~ and end with ~?>~.  Th
 *** Exercise
 Create a new template file in the main directory of your theme (grunterie).  Call it page-YOURNAME.php
 
-** Identifying your Templates
+** ACTION [#B] COMMENT Identifying your Templates                             :tag1:
 Every custom template you write should have a name, so that it can be used in the Wordpress editor interface (and for other reasons as well.) The Template Name is stored as a special comment at the very beginning of the template file.  It will look like this: 
 
 #+BEGIN_VERSE

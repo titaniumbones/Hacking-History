@@ -103,8 +103,11 @@ I'll ask your partner for feedback on your work, and take that into account in m
 * Essay Assignment
 :PROPERTIES:
 :PARENT:   16
+:ID:       o2b:8117e14f-ce3e-4762-a9b7-7b7179731ad4
+:POST_DATE: [2016-11-29 Tue 12:54]
+:POSTID:   243
 :END:
-*Due <2016-01-19 Tue>*
+*Due <2017-01-10 Tue>*
 ** Basics
 Write an 8-10 page paper on a research topic related to your group project.  This is an ordinary research paper of the kind you have done many times before; an excellent basic guide to writing history papers is available [[http://www.writing.utoronto.ca/advice/specific-types-of-writing/history][on the writing centre website]].    
 
@@ -149,6 +152,7 @@ I look forward to seeing your work.
 :PROPERTIES:
 :ID:       o2b:967aa03e-fc6e-40a0-bbea-07267a27efd4
 :PARENT:   16
+:POST_DATE: [2016-11-15 Tue 12:49]
 :END:
 The project kicks off at the end of Fall semester with a formal proposal and presentation.  The written proposal will be submitted not only to me, but to your partner as well, so it is an important document.  
 
@@ -187,10 +191,6 @@ I recommend using the 960 grid paper we used in our mockup class, or [[http://ww
 
 I really recommend that you use a reference manager to deal with your citations; and of the available options, I strongly recommend Zotero or possibly Mendeley. You can easily set up a group bibliography, and also generate an annotated bibliography with almost no effort. Highly recommended. For more on Zotero see the Tools page.
 
-** Presentation
-Our first week back? will be devoted to project presentations, which will form a part of your mark for the proposal. Consider it practice for presenting to your partner.  You should prepare a set of slides that runs through the basic ideas, organization, and look & feel of your website; it should be brief, some 20 minutes, with ample time for questions at the end. The tone should be formal, in contrast to most of our class meetings.  
-
-
 * In-Class Exercise/Sign-up Sheet for week 2
 :PROPERTIES:
 :PARENT:   16
@@ -207,11 +207,11 @@ http://jsbin.com/udecir/1/edit
 * STA 01: HTML & CSS
 :PROPERTIES:
 :ID:       o2b:5d585d1a-c18b-4020-99fb-4906149d62ce
-:POSTID:
-:POST_DATE:
 :PARENT:   16
+:POST_DATE: [2016-09-20 Tue 09:25]
+:POSTID:   91
 :END:
-*Due <2015-09-29 Tue> before class*
+*Due <2016-09-27 Tue> before class*
 
 You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  
 
@@ -232,20 +232,25 @@ You can learn more about git and github [[https://try.github.io/levels/1/challen
 :PROPERTIES:
 :ID:       o2b:5136bc02-9c0c-4a85-bff7-601fc3ce0f77
 :PARENT:   16
+:POST_DATE: [2016-10-11 Tue 09:58]
+:POSTID:   141
 :END:
-*Due <2015-10-13 Tue>*
+*Due <2016-10-25 Tue>*
 
 Go back to Codeacademy; this time, complete the [[http://www.codecademy.com/tracks/javascript][javascript]] course
 
 The debugging on Codeacademy is somewhat unsatisfactory, and syntax errors can become frustrating.  If you are having trouble, install the "linter", "linter-jshint", and "script-runner" packages in atom.  Then copy the code from Codeacademy to Atom, debug there, and paste back to Codeacademy when you're finished.  It's a clumsy system, but may be worth it if you're having trouble diagnosing your errors.
 
-After you're done, send me an email with a link to your CodeAcademy profile page.
+After you're done, send me (another!) email with a link to your CodeAcademy profile page.
 
 * STA 03: Make a Map
 :PROPERTIES:
 :PARENT:   16
+:ID:       o2b:5cb4ad2a-bd4b-463c-9ba3-554e97cda1be
+:POST_DATE: [2016-10-25 Tue 09:35]
+:POSTID:   179
 :END:
-*Due Date: <2015-10-27 Tue>*
+*Due Date: <2016-11-08 Tue>*
 
 In class we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]] and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
 
@@ -254,9 +259,9 @@ Your next assignment builds directly on that exercise and on your existing knowl
 ** Assignment
 Build a web page that includes a Google Map (complete with markers) as part of a short but substantive historical exploration of a historical topic of interest to you. The final product should meet the following criteria:
 
-- Essay :: You should write a short essay, approximately 500 words (~ 2 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis. Moreover (and this is a recent change), your topic should be *Toronto-centric* -- you should choose a neighbourhood or theme that is relevant to the course and especially to the Toronto Region.  You should pick something that you (a) know something about already, and (b) are interested in. . The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.
+- Essay :: You should write a short essay, approximately 500 words (~ 2 pages double-spaced, if we were using word processors) addressing a small, specific historical topic /with a spatial history component/. That is, the "spatial" element shouldn't just be an afterthought, but should be at the centre of your analysis. Moreover, your topic should be *Toronto-centric* -- you should choose a neighbourhood or theme that is relevant to the course and especially to the Toronto Region.  You should pick something that you (a) know something about already, and (b) are interested in. . The essay should introduce the reader to the topic, and make a not-too-complex argument which, again, highlights the spatial component.
 
-    The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~(Latour, p. 97)[http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a]~.  Don't worry about a bibliography.  
+    The essay will be written in [[http://markdowntutorial.com/lesson/1/][Markdown]], which makes traditional citations a little complicated ([[http://scholdoc.scholarlymarkdown.com/][Scholarly Markdown]] solves that problem, but it's fairly difficult to set up).  So please use simple links for your citations; in Markdown, these take the form ~[I'm an inline-style link](https://www.google.com)~. So, for instance: ~[Latour, p. 97](http://search.library.utoronto.ca/details?5484640&uuid=4f41639c-43d4-45e8-81f2-d8acd9263f8a)~.  Don't worry about a bibliography.  
 
 - Map :: Your map should have at least 4 markers. The assignment template uses a [[http://www.w3schools.com/js/js_loop_for.asp][/for/ loop]] to /iterate/, that is, repeat, a set of actions for a group of markers.  See the template for details.  Each marker's info-window contents should contain a brief headline and some explanatory text.  Your essay should refer back to the markers, and you are free to refer to your essay in the marker text itself.
 

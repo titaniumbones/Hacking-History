@@ -44,10 +44,10 @@ This year-long course examines the relationships among academic history, digital
 Registration for the class takes place through [[https://www.rosi.utoronto.ca/main.html][ROSI]].  
 
 ** About the Instructor
-#+ATTR_HTML: :class "size-medium alignleft"
+#+ATTR_HTML: :class "size-large alignleft"
 #+ATTR_HTML: :style float:left; padding-right:10px;
 [[file:Images/BrainBoy.jpg]]
-Matt Price is the world's most powerful telepath
+Matt Price is the world's most powerful telepath.
 * Calendar
 :PROPERTIES:
 :PARENT:   80
@@ -70,4 +70,7 @@ Matt Price is the world's most powerful telepath
 
 # Pictures/matt_on_bridge.jpeg http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-matt_on_bridge.jpeg
 
-# Images/BrainBoy.jpg http://2016.hackinghistory.ca/wp-content/uploads/2016/09/BrainBoy.jpg
+
+
+
+# Images/BrainBoy.jpg http://2016.hackinghistory.ca/wp-content/uploads/2016/09/BrainBoy-2.jpg

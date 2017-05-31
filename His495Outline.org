@@ -4,7 +4,7 @@
 # #+INCLUDE: "~/src/orgpaper/default_packages.org"
 # #+AUTHOR:    University of Toronto
 # #+EMAIL:     matt.price@utoronto.ca
-#+TITLE:   Syllabus
+#+TITLE:   HIS495: Hacking History 
 #+STARTUP: customtime
 #+DESCRIPTION: 
 #+KEYWORDS: 
@@ -125,8 +125,8 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 *** Readings:
 - R. Rosenzweig, "[[http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42][Can History be Open Source?]]"
 - Aaron Swartz, "[[http://www.aaronsw.com/weblog/whowriteswikipedia][Who Writes Wikipedia]]"
-- Owens, Trevor. [[http://onlinelibrary.wiley.com/doi/10.1111/cura.12012/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+on+31+August+from+10%3A00-12%3A00+BST+%2805%3A00-07%3A00+EDT%29+for+essential+maintenance][Digital Cultural Heritage and the Crowd]].” Curator: The Museum Journal 56, no. 1 (2013): 121–130.
-- Filene, Benjamin. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2012.34.1.11][Passionate Histories: ‘Outsider’ History-Makers and What They Teach Us]].” The Public Historian 34, no. 1 (February 1, 2012): 11–33.
+- Owens, Trevor. [[http://onlinelibrary.wiley.com.myaccess.library.utoronto.ca/doi/10.1111/cura.12012/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+on+31+August+from+10:00-12:00+BST+(05:00-07:00+EDT)+for+essential+maintenance][Digital Cultural Heritage and the Crowd]].” /Curator: The Museum Journal/ 56, no. 1 (2013): 121–130.
+- Filene, Benjamin. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2012.34.1.11][Passionate Histories: ‘Outsider’ History-Makers and What They Teach Us]].” /The Public Historian/ 34, no. 1 (February 1, 2012): 11–33.
 *** Further Reading:
 - Corbett, Katharine T., and Howard S. (Dick) Miller. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2006.28.1.15?origin%3Dapi][A Shared Inquiry into Shared Inquiry]].” /The Public Historian/ 28, no. 1 (February 1, 2006): 15–38.
 - Carr, Graham. [[http://muse.jhu.edu.myaccess.library.utoronto.ca/journals/canadian_historical_review/v086/86.2carr.pdf][Rules of Engagement: Public History and the Drama of Legitimation]].” The Canadian Historical Review 86, no. 2 (2005): 317–354.
@@ -148,14 +148,14 @@ Before there was a "Toronto", there was already a place by the shore, and people
 *** Lab 05: Introducing Github
 
 ** ACTION <2016-10-18 Tue> Toronto and the Great Lakes
-- Urban Explorations: Environmental Histories of the Toronto Region (Hamilton, ON: L.R. Wilson Institute for Canadian History, 2013), selections TBA
+- Urban Explorations: Environmental Histories of the Toronto Region (Hamilton, ON: L.R. Wilson Institute for Canadian History, 2013), selections TBA.
 - Bonnell, /Reclaiming the Don/, selections.
  - Ken Cruikshank and Nancy B. Bouchier, “Blighted Communities and Obnoxious Industries: Constructing Environmental Inequality on an Industrial Waterfront, Hamilton,Ontario, 1890-1960” 
 
 ** <2016-10-25 Tue> Spatial History
 Thinking about the visual presentation of information, especially in map form
 *** Readings
-+ Knowles, A. K. “GIS and History.” [[http://2012.hackinghistory.ca/wp-content/uploads/2012/09/pariser-filter-bubble.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]] (2008): 1–13.
++ Knowles, A. K. “GIS and History.” [[file:readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
 + Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
 + Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
 *** Lab 06: Spatial History with Google Maps
@@ -163,7 +163,8 @@ Thinking about the visual presentation of information, especially in map form
 Two periods of major engineering projects transformed the traditional waterways of Eastern Canada: the canal projects of the early Nineteenth Century, and the hydroelectric dams of the mid-twentieth. 
 *** ACTION Readings
 - Caroline Desbiens, “Producing North and South: A Political Geography of Hydro Development in Quebec,” /Canadian Geographer/ 48, no. 2 (2004): 101-18.
-- TBA
+- Bonnell, Jennifer Leigh. 2010. “Imagined Futures and Unintended Consequences: An Environmental History of Toronto’s Don River Valley.” Thesis. https://tspace.library.utoronto.ca/handle/1807/24690. Ch. 1, 7 plus ano other one.  
+
 *** Lab 07: Getting Started with Wordpress
 ** NO CLASS 11/8 (break)
 ** COMMENT <2016-11-08 Tue> Utopian Toronto
@@ -272,3 +273,5 @@ Our final meeting will be a Project Open House in which you share the final prod
 # Images/matt_on_desk_for_web.jpg http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-matt_on_desk_for_web2.jpg
 
 # ./PartneringOrganizations.html http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-PartneringOrganizations.html
+
+# readings/placing-history_ocr-rotated180.pdf http://2016.hackinghistory.ca/wp-content/uploads/2016/10/placing-history_ocr-rotated180.pdf
