@@ -74,3 +74,10 @@ Matt Price is the world's most powerful telepath.
 
 
 # Images/BrainBoy.jpg http://2016.hackinghistory.ca/wp-content/uploads/2016/09/BrainBoy-2.jpg
+* Contact
+#+TITLE: Contact
+#+PARENT: About, 
+
+
+To learn more about the course, please contact the instructor by [[mailto:matt.pricd@utoronto.ca][email]]. If you have a project idea and are interested in a[[http:./partners][ community partnership]], please fill out the contact form below and we’ll get back to you soon!
+
