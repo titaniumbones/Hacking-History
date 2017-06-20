@@ -1,10 +1,10 @@
 #+POSTID: 4
-#+DATE: [2016-09-11 Sun 09:20]
+#+DATE: [2017-09-10 Sun 09:20]
 #+TODO: ACTION TENTATIVE | DONE FINAL
 # #+INCLUDE: "~/src/orgpaper/default_packages.org"
 # #+AUTHOR:    University of Toronto
 # #+EMAIL:     matt.price@utoronto.ca
-#+TITLE:   HIS495: Hacking History 
+#+TITLE:   HIS455: Hacking History 
 #+STARTUP: customtime
 #+DESCRIPTION: 
 #+KEYWORDS: 
@@ -32,11 +32,27 @@
 
 #+ATTR_HTML: :class org-upload
 [[file:Images/matt_on_desk_for_web.jpg]]
-In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][World Wide Web]] was an obscure technical work-in-progress buried in the depths of a vast research institute.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
+In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][World Wide Web]] was a novelty, just beginning to make itself known outside of universities and research institutes.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
 
-Along the way, we will learn about the history of digital media, and their place in the development of the public sphere; and we will also study the history and politics of "engaged" and "public" scholarship.  We will also spend a substantial amount of time acquiring the technical skills needed for a project like this, e.g., the fundamentals of [[http://en.wikipedia.org/wiki/HTML][HTML]] and [[http://www.codecademy.com/tracks/javascript][Javascript]], as well as just enough [[http://ca.php.net/tut.php][PHP]] to work with the [[http://www.wordpress.org][Wordpress]] Content Management System.  No prior technical knowledge is required for this, but you will need to be willing to challenge yourself to learn a few tricks and principles of web programming.  The payoff for that effort is huge: a chance to contribute in a meaningful way to historical discourse beyond the walls of the University, and to explore the frontiers of historical communication in the process.  
+Along the way, we learn about the history of digital media, and their place in the development of the public sphere; and we will also study the history and politics of "engaged" and "public" scholarship.  We will also spend a substantial amount of time acquiring the technical skills needed for a project like this, e.g., the fundamentals of [[http://en.wikipedia.org/wiki/HTML][HTML]] and [[http://www.codecademy.com/tracks/javascript][Javascript]], as well as just enough [[http://ca.php.net/tut.php][PHP]] to work with the [[http://www.wordpress.org][Wordpress]] Content Management System.  No prior technical knowledge is required for this, but you will need to be willing to challenge yourself to learn a few tricks and principles of web programming.  The payoff for that effort is huge: a chance to contribute in a meaningful way to historical discourse beyond the walls of the University, and to explore the frontiers of historical communication in the process.  
 
-In 2017-17, we have a very small class size, so we will likely have only one class project; we'll work together as a class to find something that interests everyone. For the present, I have structured the middle portion of the first semester around a tentative topic -- the history of water in Toronto.  
+From year to year, we *also* investigate specific historical trends and events relevant to the class project. In past years, our projects have mostly focused on local history in the Toronto region. This year marks a radical break with that tradition! 
+
+* 2017-18 partner: Kangchendzonga Conservation Committee
+
+I'm very pleased to be able to announce in advance our partner for 2017-18. The [[http://sikkimkcc.blogspot.ca/][Khangchendzonga Conservation Committee]] is a small NGO based in Yuksom, a village which is the main access point to a UNESCO World Heritage Site in the Indian Himalaya on the Nepal border. Over the last 21 years ,the KCC has accomplished a series of incredible feats, despite its small size. Its history gives a remarkable window into important dynamics that affect the whole region: 
+- the absorption of small Himalayan kingdoms into the regional superpowers (India and China);
+- the rise of global tourism as a major economic driver in Asia and especially the Himalaya;
+- the acceleration of climate change and environmental degradation in the region;
+- the deployment of environmentalism by local groups as a lever for both regional autonomy and global integration;
+- the migration of peoples which has created tremendous ethnic diversity in many Himalayan regions
+- the relationships between Western mountaineering culture and local conceptions of sacred space;
+- many other phenomena which we will attempt to explore over the course of the year.
+
+Working with the KCC will also accentuate some of the most interesting dynamics of public history: the relationships between experts and lay knowledge; power dynamics between historian and oral history subjects; and the potential for conflicts between the duties of a historian and those of a "contractor" working on behalf of an organization. Each of these problem areas is an opportunity for learning, and we will treat them as such.  
+
+All of this means that the readings and topic areas for 2017-18 will differ quite a bit from previous years, and will give students the chance to explore corners of history most U of T students rarely encounter. We will also be working closely with primary sources; a research assistant is currently scanning the entire KCC archive for our use. 
+
 * Course Structure
 ** First Semester
 In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  
@@ -78,12 +94,12 @@ See the [[http://www.hackinghistory.ca/assignments/class-project-overview/][Proj
 
 # <<texts>>
 ** Project Timetable
-- <2016-10-04 Tue>: Detailed assignment handed out 
-- <2016-12-06 Tue>: Project Proposal due and presented
-- <2017-01-10 Tue>: Paper Due 
-- <2017-02-21 Tue>: Intermediate Status Report
-- <2017-03-28 Tue>: Submission to Community Partner
-- <2017-04-04 Tue>: Project Open House/FINAL DUE DATE
+- <2017-10-03 Tue>: Detailed assignment handed out 
+- <2017-12-05 Tue>: Project Proposal due and presented
+- <2018-01-09 Tue>: Paper Due 
+- <2018-02-20 Tue>: Intermediate Status Report
+- <2018-03-27 Tue>: Submission to Community Partner
+- <2018-04-03 Tue>: Project Open House/FINAL DUE DATE
 
 * Texts
 All texts for this course are online, either in the public web or as pdfs.  Most of them are publicly available. You may want physical copies of some books;  these are available at [[http://www.amazon.ca][Amazon]] or by special order from any sizable bookstore. 
@@ -95,7 +111,7 @@ We'll be using a number of important software tools, some of them very easy to u
 #<<outline1>>
 * Outline for Semester 1
 In 2016, the outline will change drastically in approximately the third week of class, as we confirm the direction class will take.  
-** <2016-09-13 Tue> Hacking History
+** <2017-09-12 Tue> Hacking History
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-future-history-small.jpg]]
 Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture.  
@@ -106,7 +122,7 @@ Why we should write history, why everyone should do it, and why that means we ne
 - Wordpress & the course site.  
 - Blogging & social media review.
 - HTML
-** <2016-09-20 Tue> Language of the Web
+** <2017-09-19 Tue> Language of the Web
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-Bush-Memex-lg1.jpg]]
 The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
@@ -118,7 +134,7 @@ The Web is written in a language called HTML, with some help from other lanugage
 *** Lab 02: Understanding HTML
 *Resources:* [[http://jsbin.com/#html,live][JSBin online HTML/Javascript editor]]; [[http://codeacademy.net][codeacademy courses]]; [[http://en.wikipedia.org/wiki/HTML][on Wikipedia]]; [[http://www.w3.org/MarkUp/Guide/][w3 guide]]; also cf. Zotero Bibliography
 
-** <2016-09-27 Tue> The Crowd and the Public
+** <2017-09-26 Tue> The Crowd and the Public
 #+ATTR_HTML: :class org-upload
 [[file:Images/220px-Wikipedia_Logo_1.0.png]]
 The new kinds of collaboration that the web makes possible, and the intellectual challenges they create.
@@ -132,7 +148,7 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 - Carr, Graham. [[http://muse.jhu.edu.myaccess.library.utoronto.ca/journals/canadian_historical_review/v086/86.2carr.pdf][Rules of Engagement: Public History and the Drama of Legitimation]].” The Canadian Historical Review 86, no. 2 (2005): 317–354.
 - Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
 *** Lab 03: CSS and Web Styles
-** <2016-10-04 Tue> Fresh Water in Canadian History
+** <2017-10-03 Tue> Fresh Water in Canadian History
 *In flux:* possible field trip to [[https://binational.net/2016/05/26/registration-inscription/][Great Lakes Public Forum]] opening session on [[https://binational.net/2016/05/26/glpf2016pfgl/#oct4m][State of the Lakes]].  To discuss in class!
 
 More than many other places, Canada has been shaped by its relationship to freshwater lakes and rivers.
@@ -140,26 +156,26 @@ More than many other places, Canada has been shaped by its relationship to fresh
 - Stéphane Castonguay, “The Production of Flood as Natural Catastrophe: Extreme Events and the Construction of Vulnerability in the Drainage Basin of the St. Francis River (Quebec), Mid-Nineteenth to Mid-Twentieth Century,” /Environmental History/ (2007) 12(4): 820-844
 - Dagenais, "The Urbanization of Nature: Water Networks and Green spaces in Montreal 
 *** Lab 04: Javascript Basics
-** <2016-10-11 Tue> Before Toronto
+** <2017-10-10 Tue> Before Toronto
 Before there was a "Toronto", there was already a place by the shore, and people who inhabited it. 
 *** Readings:
 - Jon Johnson, ‘The Indigenous Environmental History of Toronto, “The Meeting Place”’ https://www.academia.edu/4949457/The_Indigenous_Environmental_History_of_Toronto_The_Meeting_Place
 - First Story Toronto <https://firststoryblog.wordpress.com/>
 *** Lab 05: Introducing Github
 
-** ACTION <2016-10-18 Tue> Toronto and the Great Lakes
+** ACTION <2017-10-17 Tue> Toronto and the Great Lakes
 - Urban Explorations: Environmental Histories of the Toronto Region (Hamilton, ON: L.R. Wilson Institute for Canadian History, 2013), selections TBA.
 - Bonnell, /Reclaiming the Don/, selections.
  - Ken Cruikshank and Nancy B. Bouchier, “Blighted Communities and Obnoxious Industries: Constructing Environmental Inequality on an Industrial Waterfront, Hamilton,Ontario, 1890-1960” 
 
-** <2016-10-25 Tue> Spatial History
+** <2017-10-24 Tue> Spatial History
 Thinking about the visual presentation of information, especially in map form
 *** Readings
 + Knowles, A. K. “GIS and History.” [[file:readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
 + Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
 + Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
 *** Lab 06: Spatial History with Google Maps
-** TENTATIVE <2016-10-25 Tue> Canals and Hydropower
+** TENTATIVE <2017-10-24 Tue> Canals and Hydropower
 Two periods of major engineering projects transformed the traditional waterways of Eastern Canada: the canal projects of the early Nineteenth Century, and the hydroelectric dams of the mid-twentieth. 
 *** ACTION Readings
 - Caroline Desbiens, “Producing North and South: A Political Geography of Hydro Development in Quebec,” /Canadian Geographer/ 48, no. 2 (2004): 101-18.
@@ -167,13 +183,13 @@ Two periods of major engineering projects transformed the traditional waterways 
 
 *** Lab 07: Getting Started with Wordpress
 ** NO CLASS 11/8 (break)
-** COMMENT <2016-11-08 Tue> Utopian Toronto
+** COMMENT <2017-11-07 Tue> Utopian Toronto
 There's a long history of imagining a more perfect Toronto. How does that project fit in to our objectives this year?
 *** ACTION Readings
 - UTOpia : Towards a New Toronto (Toronto: Coach House Books, 2005) Selections TBA
 - TBA
 *** Lab 09: From CSS to SASS!
-** <2016-11-15 Tue> Oral History, and Working with Communities
+** <2017-11-14 Tue> Oral History, and Working with Communities
 #+ATTR_HTML: :class org-upload
 [[file:Images/mike.jpeg]]
 One remarkable possibility opened up by the web is abundant oral history.
@@ -181,7 +197,7 @@ One remarkable possibility opened up by the web is abundant oral history.
 - "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
 - Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012. 
 *** Lab 09: Art of the Interview
-** <2016-11-22 Tue> Search and Filter (Information Abundance)
+** <2017-11-21 Tue> Search and Filter (Information Abundance)
 #+ATTR_HTML: :class org-upload
 [[file:Images/info_overload.png]]
 In the past, /access/ to information was one of the historian's most fundamental challenges.  today, it is more often a problem of /filtering/ information.  
@@ -191,7 +207,7 @@ In the past, /access/ to information was one of the historian's most fundamental
 - William J. Turkel, “[[http://williamjturkel.net/2011/03/02/research-24-7/.][Research 24/7]].”
 - - Sharma, Patrick. "[[http://www.historians.org/perspectives/issues/2012/1204/Oral-History-Information-Abundance-and-Scarcity.cfm][Oral History, Policy History, and Information Abundance and Scarcity]]". /Perspectives on History/ April 2012
 *** Lab 10: From CSS to SASS!
-** <2016-11-29 Tue> Piracy, Plagiarism, Citation
+** <2017-11-28 Tue> Piracy, Plagiarism, Citation
 #+ATTR_HTML: :class org-upload
 [[file:Images/tpb.jpg]]
 Ethical, Legal, and Technical Questions around Copyright
@@ -201,7 +217,7 @@ Ethical, Legal, and Technical Questions around Copyright
 - Creative Commons Licences: http://creativecommons.org/licenses/
 - Dan Cohen, "[[http://www.dancohen.org/2009/05/12/idealism-and-pragmatism-in-the-free-culture-movement/][Idealism and Pragmatism in the Free Culture Movement]]"
 *** Lab 11: SASS and the Foundation Framework
-** <2016-12-06 Tue> Proposal Presentations
+** <2017-12-05 Tue> Proposal Presentations
 This is your chance to wow the class with your final proposals. Good luck!
 *** No Readings!
 *** Lab 12: Wordpress Templates (if we feel like it)

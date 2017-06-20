@@ -13,7 +13,7 @@
 :POSTID:   16
 :END:
 
-Assignments for HIS495 are linked here as I put them up on the site. See the [[http://www.hackinghistory.ca/][Syllabus]] for an overview of assignments and their values.
+Assignments for HIS455 are linked here as I put them up on the site. See the [[http://www.hackinghistory.ca/][Syllabus]] for an overview of assignments and their values.
 * The Course Blog
 :PROPERTIES:
 :ID:       o2b:83a116e8-8740-43bd-b653-58e1074fb720

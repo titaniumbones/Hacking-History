@@ -181,7 +181,7 @@ with the HTML code that generates what you would see on your screen if you went 
 <span class="author vcard"><a class="url fn n" href="http://www.hackinghistory.ca/author/admin/" title="View all posts by admin">admin</a></span>					</div><!-- .entry-meta -->
 
 <div class="entry-content">
-	<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;rft.title=The WWW as Public Sphere&amp;rft.aulast=Price&amp;rft.aufirst=Matt&amp;rft.subject=Pre-class notes&amp;rft.source=Hacking History (His495)&amp;rft.date=2010-09-21&amp;rft.type=&amp;rft.format=text&amp;rft.identifier=http://www.hackinghistory.ca/2010/09/21/the-www-as-public-sphere/&amp;rft.language=English"></span>
+	<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rfr_id=info%3Asid%2Focoins.info%3Agenerator&amp;rft.title=The WWW as Public Sphere&amp;rft.aulast=Price&amp;rft.aufirst=Matt&amp;rft.subject=Pre-class notes&amp;rft.source=Hacking History (His455)&amp;rft.date=2010-09-21&amp;rft.type=&amp;rft.format=text&amp;rft.identifier=http://www.hackinghistory.ca/2010/09/21/the-www-as-public-sphere/&amp;rft.language=English"></span>
 
 <div class="sticky_post"><p> Just a few quick words about the readings this week, which concern the idea of the  &#8220;
 <a href="http://en.wikipedia.org/wiki/Public_sphere">Public Sphere</a>&#8220;.  This phrase is rooted in ideas about <a href="http://plato.stanford.edu/entries/enlightenment/">enlightenment</a> that stretch at least back to 
