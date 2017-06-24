@@ -55,24 +55,24 @@ All of this means that the readings and topic areas for 2017-18 will differ quit
 
 * Course Structure
 ** First Semester
-In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]).  
+In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]). You will *need* a laptop for this portion of the class; if you don't have one, you will need to figure out an alternative solution.   
 
-Every two weeks, students will (where not otherwise noted) be expected to post blog responses to the readings in advance of the class meeting, and to respond to the postings of at least two other students.  If at all possible, you should bring your laptop or (not as good!) tablet to class for the lab portion.  
+Twice in the first semester ,each student will take the role of *discussion leader*. In these weeks, you will take on additional responsibility for ensuring that issues from the readings are raised in seminar and discussed at a high level. 
 
-Also about once every two weeks, there are other types of assignments; these are noted in the outline and referred to in the course requirements.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests. The semester culminates with group presentations of your proposed projects.  
+About once every two weeks, a short assignment is required; these are noted in the outline and referred to in the course requirements section.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests. The semester culminates with a group presentations of your proposed project.  
 
 ** Second Semester
-In the second semester it is expected that students will spend most of their time working directly on their project with the partnering organization.  We will meet most weeks to discuss specific technical questions raised by the projects themselves, and will discuss additional readings as needed.  Importantly, students will continue to make regular postings about their progress, and comment on each other's writing.  Projects will be submitted to community partners for review in the second to last week of classes, presented to the class in the final course meeting, and handed in to the professor immediately before the beginning of finals period.  
+In the second semester it is expected that students will spend most of their time working directly on the project with the partnering organization.  We will meet most weeks to discuss specific technical questions raised by the projects themselves, and will discuss additional readings as needed.  Each student will maintain a "Development Log" in which you track your weekly progress on the project. The project will be submitted to the KCC for review in the second to last week of classes, presented formally in the final class session, and finishing touches completed immediately before the beginning of finals period.  
 * Course Requirements
 # <<Course Requirements>>
 In this project-based class, we have relatively few readings and instead focus on active learning through a variety of assignments, all of which are intended to help you build towards your final, collaborative group project.  
 
 The class has 4 kinds of assignments:
-- 16 Blog Postings   (6 in semester 1, 12 in semester 2, *20%*) 
 - 5 "Short Technical Assignments"   (STA's, first semester, *15%*)
-- One Written Paper  (7-9 pp, Jan 10, *10%*)
+- One Written Paper  (7-9 pp, Jan 9, *10%*)
+- 12 entries in the "Development Log"   (Weekly in Semester 2, *10%*) 
 - The Final Project  (website, ongoing but due April 4, *45%*)
-with the balance of 10% for on- and off-line participation, which includes comments on other students' blog posts, contributions to online resources, and discussion.
+with the balance of 20% for on- and off-line participation, which includes leading and participating in seminar discussion, active participation in the Slack team, and taking a role in choosing topics and finding activities during the second semester. 
 
 *Blog Postings* are thoughtful pieces, 400 words or so in length, posted to the course blog by noon the day before class meets (so, noon each Monday).  You will be expected to read your colleagues' postings and respond to them, both online (using the blog's comment function) and in class.  In the first semester, these postings will primarily be /responses to the weekly readings/, and are required /every two weeks/.  In the second semester, they will instead generally take the form of *weekly* (not bi-weekly) /progress reports/ in which you discuss your final projects and your interactions with partnering organizations, or of /short written pieces from your project site/ (see below). See the [[http://2015.hackinghistory.ca/assignments/the-course-blog/][assignment page]] for more details. 
 
@@ -84,9 +84,9 @@ with the balance of 10% for on- and off-line participation, which includes comme
 
 See the [[http://www.hackinghistory.ca/assignments/class-project-overview/][Project Guidelines]] for more detailed discussion & marking breakdown, though that document does not yet reflect this year's direction..  
 ** Late Policy
-*Blogs:* blog postings are due by noon /the day before class/. Late blog postings will not be marked.
-
 *STA's:* no late papers! STA's are pass/fail, hand them in on time please.  
+
+*Dev log:* Dev Log postings are due by noon /the day before class/. Late blog postings will not be marked.
 
 *Paper:* 3%/day.
 
@@ -111,17 +111,17 @@ We'll be using a number of important software tools, some of them very easy to u
 #<<outline1>>
 * Outline for Semester 1
 In 2016, the outline will change drastically in approximately the third week of class, as we confirm the direction class will take.  
-** <2017-09-12 Tue> Hacking History
+** <2017-09-12 Tue> Hacking History in the Himalaya
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-future-history-small.jpg]]
-Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture.  
+Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture. And a few words about the world's third-tallest mountain.  
 *** Background: 
 - [[http://www.journalofamericanhistory.org/issues/952/interchange/index.html][JAH - The Promise of Digital History]], [[http://writinghistory.trincoll.edu/revisioning/tanaka-2012-spring/][Pasts in a Digital Age]]
 - Mark Poster, "[[http://www.hnet.uci.edu/mposter/writings/democ.html][Cyberdemocracy]]" 
 *** Lab 01: Getting Started
-- Wordpress & the course site.  
-- Blogging & social media review.
-- HTML
+- HTML and Markdown
+- Some Tools: Github, Dropbox, Atom Text Editor
+- About Our Partners
 ** <2017-09-19 Tue> Language of the Web
 #+ATTR_HTML: :class org-upload
 [[file:Images/wpid-Bush-Memex-lg1.jpg]]
@@ -148,56 +148,20 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 - Carr, Graham. [[http://muse.jhu.edu.myaccess.library.utoronto.ca/journals/canadian_historical_review/v086/86.2carr.pdf][Rules of Engagement: Public History and the Drama of Legitimation]].” The Canadian Historical Review 86, no. 2 (2005): 317–354.
 - Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
 *** Lab 03: CSS and Web Styles
-** <2017-10-03 Tue> Fresh Water in Canadian History
-*In flux:* possible field trip to [[https://binational.net/2016/05/26/registration-inscription/][Great Lakes Public Forum]] opening session on [[https://binational.net/2016/05/26/glpf2016pfgl/#oct4m][State of the Lakes]].  To discuss in class!
+** ACTION <2017-10-03 Tue> Mountains in History and Imagination
 
-More than many other places, Canada has been shaped by its relationship to freshwater lakes and rivers.
 *** Readings
-- Stéphane Castonguay, “The Production of Flood as Natural Catastrophe: Extreme Events and the Construction of Vulnerability in the Drainage Basin of the St. Francis River (Quebec), Mid-Nineteenth to Mid-Twentieth Century,” /Environmental History/ (2007) 12(4): 820-844
-- Dagenais, "The Urbanization of Nature: Water Networks and Green spaces in Montreal 
+- 
 *** Lab 04: Javascript Basics
-** <2017-10-10 Tue> Before Toronto
-Before there was a "Toronto", there was already a place by the shore, and people who inhabited it. 
+** ACTION <2017-10-10 Tue> Khangchendzonga in Sikkim
+
 *** Readings:
-- Jon Johnson, ‘The Indigenous Environmental History of Toronto, “The Meeting Place”’ https://www.academia.edu/4949457/The_Indigenous_Environmental_History_of_Toronto_The_Meeting_Place
-- First Story Toronto <https://firststoryblog.wordpress.com/>
+- 
 *** Lab 05: Introducing Github
 
-** ACTION <2017-10-17 Tue> Toronto and the Great Lakes
-- Urban Explorations: Environmental Histories of the Toronto Region (Hamilton, ON: L.R. Wilson Institute for Canadian History, 2013), selections TBA.
-- Bonnell, /Reclaiming the Don/, selections.
- - Ken Cruikshank and Nancy B. Bouchier, “Blighted Communities and Obnoxious Industries: Constructing Environmental Inequality on an Industrial Waterfront, Hamilton,Ontario, 1890-1960” 
-
-** <2017-10-24 Tue> Spatial History
-Thinking about the visual presentation of information, especially in map form
-*** Readings
-+ Knowles, A. K. “GIS and History.” [[file:readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
-+ Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
-+ Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
-*** Lab 06: Spatial History with Google Maps
-** TENTATIVE <2017-10-24 Tue> Canals and Hydropower
-Two periods of major engineering projects transformed the traditional waterways of Eastern Canada: the canal projects of the early Nineteenth Century, and the hydroelectric dams of the mid-twentieth. 
-*** ACTION Readings
-- Caroline Desbiens, “Producing North and South: A Political Geography of Hydro Development in Quebec,” /Canadian Geographer/ 48, no. 2 (2004): 101-18.
-- Bonnell, Jennifer Leigh. 2010. “Imagined Futures and Unintended Consequences: An Environmental History of Toronto’s Don River Valley.” Thesis. https://tspace.library.utoronto.ca/handle/1807/24690. Ch. 1, 7 plus ano other one.  
-
-*** Lab 07: Getting Started with Wordpress
-** NO CLASS 11/8 (break)
-** COMMENT <2017-11-07 Tue> Utopian Toronto
-There's a long history of imagining a more perfect Toronto. How does that project fit in to our objectives this year?
-*** ACTION Readings
-- UTOpia : Towards a New Toronto (Toronto: Coach House Books, 2005) Selections TBA
-- TBA
-*** Lab 09: From CSS to SASS!
-** <2017-11-14 Tue> Oral History, and Working with Communities
-#+ATTR_HTML: :class org-upload
-[[file:Images/mike.jpeg]]
-One remarkable possibility opened up by the web is abundant oral history.
-*** Readings: 
-- "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
-- Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012. 
-*** Lab 09: Art of the Interview
-** <2017-11-21 Tue> Search and Filter (Information Abundance)
+** ACTION <2017-10-17 Tue> Sikkim's Annexation and the Rise of Tourism
+- 
+** <2017-10-24 Tue> Search and Filter (Information Abundance)
 #+ATTR_HTML: :class org-upload
 [[file:Images/info_overload.png]]
 In the past, /access/ to information was one of the historian's most fundamental challenges.  today, it is more often a problem of /filtering/ information.  
@@ -207,6 +171,26 @@ In the past, /access/ to information was one of the historian's most fundamental
 - William J. Turkel, “[[http://williamjturkel.net/2011/03/02/research-24-7/.][Research 24/7]].”
 - - Sharma, Patrick. "[[http://www.historians.org/perspectives/issues/2012/1204/Oral-History-Information-Abundance-and-Scarcity.cfm][Oral History, Policy History, and Information Abundance and Scarcity]]". /Perspectives on History/ April 2012
 *** Lab 10: From CSS to SASS!
+** NO CLASS 11/8 (break)
+*** Lab 09: From CSS to SASS!
+
+** <2017-10-24 Tue> Spatial History
+Thinking about the visual presentation of information, especially in map form
+*** Readings
++ Knowles, A. K. “GIS and History.” [[file:readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
++ Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
++ Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012. 
+*** Lab 06: Spatial History with Google Maps
+
+*** Lab 07: Getting Started with Wordpress
+** <2017-11-14 Tue> Oral History, and Working with Communities
+#+ATTR_HTML: :class org-upload
+[[file:Images/mike.jpeg]]
+One remarkable possibility opened up by the web is abundant oral history.
+*** Readings: 
+- "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
+- Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012. 
+*** Lab 09: Art of the Interview
 ** <2017-11-28 Tue> Piracy, Plagiarism, Citation
 #+ATTR_HTML: :class org-upload
 [[file:Images/tpb.jpg]]
@@ -229,17 +213,6 @@ A crash course in website design
 - Bill Buxton, /Sketching User Experiences/ (excerpts)
 *** Lab: Design exercise (Personas & Wireframes)
 *** Assignments: STA3 Due
-** COMMENT Immersive History: Games & Simulations
-*** Readings
-- Kee, Kevin, Shawn Graham, Pat Dunae, John Lutz, Andrew Large, Michel Blondeau, and Mike Clare. “[[http://utpjournals.metapress.com/content/588030472qw20368/fulltext.pdf][Towards a Theory of Good History Through Gaming]].” /Canadian Historical Review/ 90, no. 2 (June 1, 2009): 303–326.
-- Squire, Kurt, and Sasha Barab. “[[http://dl.acm.org/ft_gateway.cfm?id%3D1149188&type%3Dpdf&CFID%3D141869106&CFTOKEN%3D23125562][Replaying History: Engaging Urban Underserved Students in Learning World History Through Computer Simulation Games.]]” In Proceedings of the 6th International Conference on Learning Sciences, 505–512. ICLS  ’04.
-- Kee, Kevin. “[[http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx_ver%3DZ39.88-2004&ctx_enc%3Dinfo%253Aofi%252Fenc%253AUTF-8&rfr_id%3Dinfo:sid/summon.serialssolutions.com&rft_val_fmt%3Dinfo:ofi/fmt:kev:mtx:journal&rft.genre%3Darticle&rft.atitle%3DComputerized%2BHistory%2BGames%253A%2BNarrative%2BOptions&rft.jtitle%3DSimulation%2B%2526%2BGaming&rft.au%3DKee%252C%2BKevin&rft.date%3D2011-08-01&rft.pub%3DSAGE%2BPUBLICATIONS%252C%2BINC&rft.issn%3D1046-8781&rft.volume%3D42&rft.issue%3D4&rft.spage%3D423&rft.epage%3D440&rft_id%3Dinfo:doi/10.1177%252F1046878108325441&rft.externalDBID%3Dn%252Fa&rft.externalDocID%3DEJ938650][Computerized History Games: Narrative Options]].” /Simulation & Gaming/ 42, no. 4 (August 1, 2011): 423–440.
-*** Further Reading
-- Kee and Rockwell, "[[http://gamestudies.org/1102/articles/geoffrey_rockwell_kevin_kee][The Leisure of Serious Games]]"
-*** Lab: How Javascript Works in Wordpress
-*** Assignments: STA4 Due
-
-
 * 'Outline' for  Semester 2
 In the second semester, we will meet mostly to discuss your progress on the project and to address specific issues you are encountering as you work.  You will be working pretty intensively on research, design, and writing/creating, so we will usually /not/ have class readings, except in cases where a background reading will obvously be of assistance to most of the class in addressing some issue.  The particular topics we take on will be defined by your needs, but some potential ones include:
 - Designing digital Projects
