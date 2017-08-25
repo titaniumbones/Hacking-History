@@ -1,44 +1,45 @@
 #+POSTID: 4
-#+DATE: [2017-09-10 Sun 09:20]
+# #+DATE: [2017-09-10 Sun 09:20]
 #+TODO: ACTION TENTATIVE | DONE FINAL
 # #+INCLUDE: "~/src/orgpaper/default_packages.org"
 # #+AUTHOR:    University of Toronto
 # #+EMAIL:     matt.price@utoronto.ca
-#+TITLE:   HIS455: Hacking History 
+# #+TITLE:   HIS455: Hacking History 
+#+TITLE:   Syllabus
+#+EXPORT_FILE_NAME: syllabus
 #+STARTUP: customtime
 #+DESCRIPTION: 
 #+KEYWORDS: 
 #+LANGUAGE:  en
-#+OPTIONS: toc:1 H:3 num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
-# #+OPTIONS:   H:3 num:nil toc:nil  @:t ::t |:t ^:t -:t f:t *:t <:t
-# #+OPTIONS:   TeX:t LaTeX:nil skip:nil d:nil todo:t pri:nil tags:not-in-toc
-# #+INFOJS_OPT: view:nil toc:3 ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
-# #+EXPORT_SELECT_TAGS: export
-# #+EXPORT_EXCLUDE_TAGS: noexport
-# #+LINK_UP:   
-# #+LINK_HOME: 
+#+OPTIONS: toc:nil H:3 num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
 # #+ODT_STYLES_FILE: "/home/matt/.emacs.d/odt-syllabus-export.odt"
 #+TEMPLATE: 
 #+CATEGORY: 
-
+#+HUGO_BASE_DIR: ./hugoplayground/
+#+HUGO_SECTION: article
+#+HUGO_STATIC_IMAGES: images
+#+HUGO_MENU: :menu main :weight 80
+# #+HUGO_MENU:  :menu "something here" :weight 80 :parent posts :identifier foo1
 
 * Logistics
 
-| *Instructor:* | Matt Price             |
-| *Email:*      | matt.price@utoronto.ca |
-| *Office Hrs:* | SS 3077 T 1:30-2:45    |
+| *Instructor:*     | Matt Price              |
+| *Email:*          | matt.price@utoronto.ca  |
+| *Office Hrs:*     | SS 3077 T 1:30-2:45     |
+| *Class Meetings:* | OISE10204, T 10:00-1:00 |
 
 * Introduction 
 
-#+ATTR_HTML: :class org-upload
-[[file:Images/matt_on_desk_for_web.jpg]]
+#+ATTR_HTML: :class org-upload pull-left
+[[./Images/matt_on_desk_for_web.jpg]]
 In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][World Wide Web]] was a novelty, just beginning to make itself known outside of universities and research institutes.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
 
 Along the way, we learn about the history of digital media, and their place in the development of the public sphere; and we will also study the history and politics of "engaged" and "public" scholarship.  We will also spend a substantial amount of time acquiring the technical skills needed for a project like this, e.g., the fundamentals of [[http://en.wikipedia.org/wiki/HTML][HTML]] and [[http://www.codecademy.com/tracks/javascript][Javascript]], as well as just enough [[http://ca.php.net/tut.php][PHP]] to work with the [[http://www.wordpress.org][Wordpress]] Content Management System.  No prior technical knowledge is required for this, but you will need to be willing to challenge yourself to learn a few tricks and principles of web programming.  The payoff for that effort is huge: a chance to contribute in a meaningful way to historical discourse beyond the walls of the University, and to explore the frontiers of historical communication in the process.  
 
 From year to year, we *also* investigate specific historical trends and events relevant to the class project. In past years, our projects have mostly focused on local history in the Toronto region. This year marks a radical break with that tradition! 
 
-* 2017-18 partner: Kangchendzonga Conservation Committee
+* 2017-18 partner
+** Kangchendzonga Conservation Committee
 
 I'm very pleased to be able to announce in advance our partner for 2017-18. The [[http://sikkimkcc.blogspot.ca/][Khangchendzonga Conservation Committee]] is a small NGO based in Yuksom, a village which is the main access point to a UNESCO World Heritage Site in the Indian Himalaya on the Nepal border. Over the last 21 years ,the KCC has accomplished a series of incredible feats, despite its small size. Its history gives a remarkable window into important dynamics that affect the whole region: 
 - the absorption of small Himalayan kingdoms into the regional superpowers (India and China);
@@ -112,30 +113,30 @@ We'll be using a number of important software tools, some of them very easy to u
 * Outline for Semester 1
 In 2016, the outline will change drastically in approximately the third week of class, as we confirm the direction class will take.  
 ** <2017-09-12 Tue> Hacking History in the Himalaya
-#+ATTR_HTML: :class org-upload
+#+ATTR_HTML: :class org-upload pull-left
 [[file:Images/wpid-future-history-small.jpg]]
 Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture. And a few words about the world's third-tallest mountain.  
 *** Background: 
 - [[http://www.journalofamericanhistory.org/issues/952/interchange/index.html][JAH - The Promise of Digital History]], [[http://writinghistory.trincoll.edu/revisioning/tanaka-2012-spring/][Pasts in a Digital Age]]
-- Mark Poster, "[[http://www.hnet.uci.edu/mposter/writings/democ.html][Cyberdemocracy]]" 
+- 
 *** Lab 01: Getting Started
 - HTML and Markdown
 - Some Tools: Github, Dropbox, Atom Text Editor
 - About Our Partners
 ** <2017-09-19 Tue> Language of the Web
-#+ATTR_HTML: :class org-upload
+#+ATTR_HTML: :class org-upload pull-left
 [[file:Images/wpid-Bush-Memex-lg1.jpg]]
 The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
 *** Readings
-- Vannevar Bush, "[[http://www.theatlantic.com/magazine/archive/1969/12/as-we-may-think/3881/][As We May Think]]"
+- Vannevar Bush, "[[http://www.theatlantic.com/magazine/archive/1969/12/as-we-may-think/3881/][As We May Think]]" 
 - Tim Berners-Lee, /Weaving the Web/ [[file:readings/berners-lee-weaving-web.pdf][Ch. 2,4]].  
 - Edward L. Ayers, "[[http://www.vcdh.virginia.edu/Ayers.OAH.html][History in Hypertext]]"
-- Rus Shuler, "[[http://www.theshulers.com/whitepapers/internet_whitepaper/index.html][How Does the Internet Work?]]
+- Rus Shuler, "[[http://www.theshulers.com/whitepapers/internet_whitepaper/index.html][How Does the Internet Work?]]" 
 *** Lab 02: Understanding HTML
 *Resources:* [[http://jsbin.com/#html,live][JSBin online HTML/Javascript editor]]; [[http://codeacademy.net][codeacademy courses]]; [[http://en.wikipedia.org/wiki/HTML][on Wikipedia]]; [[http://www.w3.org/MarkUp/Guide/][w3 guide]]; also cf. Zotero Bibliography
 
 ** <2017-09-26 Tue> The Crowd and the Public
-#+ATTR_HTML: :class org-upload
+#+ATTR_HTML: :class org-upload pull-left
 [[file:Images/220px-Wikipedia_Logo_1.0.png]]
 The new kinds of collaboration that the web makes possible, and the intellectual challenges they create.
 *** Readings:
@@ -156,13 +157,15 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 ** ACTION <2017-10-10 Tue> Khangchendzonga in Sikkim
 
 *** Readings:
-- 
+- Pema Wangchuk and Mita Zulca. /Khangchendzonga Sacred Summit./ Gangtok, Kathmandu: Pema Wangchuk, 2007. ch 1,3,4 at least.
+- Denjongpa, Anna Balikci. “[[https://www.repository.cam.ac.uk/bitstream/handle/1810/242513/bot_2002_02_01.pdf?sequence=1.][Kangchendzonga: Secular and Buddhist Perceptions of the Mountain Deity of Sikkim among the Lhopos]],” 2002.
+- Scheid, Claire S. “[[https://cora.ucc.ie/handle/10468/1868.][Hidden Land and Changing Landscape: Narratives about Mount Khangchendzonga among the Lepcha and the Lhopo]].” Journal of the Irish Society for the Academic Study of Religions 1, no. 1 (2014): 66–89. 
 *** Lab 05: Introducing Github
 
 ** ACTION <2017-10-17 Tue> Sikkim's Annexation and the Rise of Tourism
 - 
 ** <2017-10-24 Tue> Search and Filter (Information Abundance)
-#+ATTR_HTML: :class org-upload
+#+ATTR_HTML: :class org-upload pull-left
 [[file:Images/info_overload.png]]
 In the past, /access/ to information was one of the historian's most fundamental challenges.  today, it is more often a problem of /filtering/ information.  
 *** Readings:
@@ -184,7 +187,7 @@ Thinking about the visual presentation of information, especially in map form
 
 *** Lab 07: Getting Started with Wordpress
 ** <2017-11-14 Tue> Oral History, and Working with Communities
-#+ATTR_HTML: :class org-upload
+#+ATTR_HTML: :class org-upload pull-left
 [[file:Images/mike.jpeg]]
 One remarkable possibility opened up by the web is abundant oral history.
 *** Readings: 
@@ -192,7 +195,7 @@ One remarkable possibility opened up by the web is abundant oral history.
 - Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012. 
 *** Lab 09: Art of the Interview
 ** <2017-11-28 Tue> Piracy, Plagiarism, Citation
-#+ATTR_HTML: :class org-upload
+#+ATTR_HTML: :class org-upload pull-left
 [[file:Images/tpb.jpg]]
 Ethical, Legal, and Technical Questions around Copyright
 *** Readings

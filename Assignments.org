@@ -1,29 +1,54 @@
 #+POSTID: 29
-#+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+# #+OPTIONS: toc:nil num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
 #+CATEGORY: assignments
 #+TAGS: 
 #+DESCRIPTION: 
 #+TITLE: Assignments
 #+PROPERTY: PARENT 16
+#+HUGO_BASE_DIR: ./hugoplayground/
+#+HUGO_SECTION: assignment
+#+HUGO_STATIC_IMAGES: images
+#+HUGO_MENU: :menu main :weight 50 :parent Assignments
 
-* Assignments
+
+#+BEGIN_SRC emacs-lisp
+  (defun org-hugo--collect-table-metadata (info )
+    "Collect all menu-related metadata for export.
+  INFO is a plist holding export options.
+  returns a nested plist of the form:
+  (menu '(menu-name '(option-name option value) option-name2 option-value2...) "
+    (let* () (menu-attributes '(:hugo-menu-parent :hugo-menu-weight))
+          (cl-loop for att in menu-attributes
+                   collect 
+                   )))
+#+END_SRC
+
+#+RESULTS:
+
+* Overview
 :PROPERTIES:
 :ID:       o2b:3fff9aa9-d319-471d-bb29-17f04e617463
 :POST_DATE: [2016-09-11 Sun 09:35]
 :POSTID:   16
+:EXPORT_FILE_NAME: overview
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 10
 :END:
 
 Assignments for HIS455 are linked here as I put them up on the site. See the [[http://www.hackinghistory.ca/][Syllabus]] for an overview of assignments and their values.
-* The Course Blog
+* COMMENT The Course Blog :noexport:
 :PROPERTIES:
 :ID:       o2b:83a116e8-8740-43bd-b653-58e1074fb720
 :POST_DATE: [2016-09-11 Sun 09:38]
 :POSTID:   21
+:EXPORT_FILE_NAME: the-course-blog
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 20
 :END:
 
 Two of the main themes of the class are: the exploration of digital media as a mode of communicating historical knowledge; and experimentation with the collaborative production of knowledge.  So it's not surprising that, first, the bulk of your assignments are shifted over to the digital realm; and second, that we will be thinking of this website as a platform for a collective exploration of our subject matter.  
 
 ** Fall Semester  
+:PROPERTIES:
+:END:
 After [[http://www.hackinghistory.ca/wp-login.php?action=register][registering]] for the course website, you will be /expected/ to produce one substantive post every two weeks (400 words), and /allowed/ to add as many short 'heads-up' postings as you desire (though for the most part such postings would be better off in the comments section of an existing post).  You will also be expected to comment regularly -- every week -- on your colleagues' (and my own) postings.
 
 Unless otherwise noted, postings in the first semester take the form of a response to the week's readings or theme. In the event that I want you to focus on something else, I will inform you one week in advance /in class/.  As with any short response paper the object of the posting is not to summarize, but to engage critically with the texts at hand. Some informality in tone is acceptable and even expected, but these are to be serious, thoughtful engagements with the course materials.  For general guidelines on writing, look [[http://www.writing.utoronto.ca/advice/specific-types-of-writing][here]]. You can also think of these posts as a cross between an [[http://www.quicksprout.com/2009/07/21/how-to-write-a-blog-post/][ordinary blog post]] and a [[http://historyprofessor.org/reading/how-to-write-a-review/][review or response paper]].   We will discuss this further as the semester goes on. 
@@ -46,6 +71,10 @@ Your online contributions constitute 20% of your grade (that's not including you
 
 I will comment on individual blog posts as much as possible, but will give out marks only twice a year (approx. Nov. 29 & Apr. 3). The better your postings, the more exciting and engaging this class will be for everyone.  So please approach this part of the class in good faith and take it seriously.
 * Participation
+:PROPERTIES:
+:EXPORT_FILE_NAME: participation
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 200
+:END:
 This is a small fourth-year seminar; paricipation means a lot.  more soon.  
 * Class Project Overview
 :PROPERTIES:
@@ -53,6 +82,8 @@ This is a small fourth-year seminar; paricipation means a lot.  more soon.
 :ID:       o2b:f2f068a5-5eb2-4cb7-a541-b69ff3fda868
 :POST_DATE: [2016-09-11 Sun 09:47]
 :POSTID:   27
+:EXPORT_FILE_NAME: class-project-overview
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 150
 :END:
 The class project, which will occupy most of the class's second semester and some of the first, is a substantial collaboration between a small group of students and a community organization, on a project of mutual interest.  In almost every case the project will be a Wordpress website, and while I am in principle open to other types of projects, the circumstances under which I would approve such projects are highly constrained. The point of this class is to create something of lasting value to yourself, the organization, and the community it serves, so that your work endures beyond the temporal scope of the class.  The project is worth 45% of your final mark, but this percentage is distributed between various parts of the project.  A high premium will be placed on timely, regular progress made towards intermediate goals, to help make sure that these complex and difficult projects come to fruition.  Some of you have already been thinking about projects; this is great and /you should continue to do so/.  You will work in small groups of 2-4; in a class of this size there are some challenges to group work, but there are substantial benefits to working together, especially when charting unknown territory.  
 ** Collaboration and Service
@@ -106,6 +137,8 @@ I'll ask your partner for feedback on your work, and take that into account in m
 :ID:       o2b:8117e14f-ce3e-4762-a9b7-7b7179731ad4
 :POST_DATE: [2016-11-29 Tue 12:54]
 :POSTID:   243
+:EXPORT_FILE_NAME: essay-assignment
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 100
 :END:
 *Due <2017-01-10 Tue>*
 ** Basics
@@ -132,6 +165,8 @@ Please don't ask me how many sources you need.  As many as are required!  The mo
 * Project Presentation 1
 :PROPERTIES:
 :PARENT:   16
+:EXPORT_FILE_NAME: project-presentation-1
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 160
 :END:
 Next week we will have preliminary presentations of your projects.  This is in preparation for a more substantial proposal which you will present more formally at the end of the term.  The purpose of next week's class is to ensure that you have something moving along -- most of you are on your way but a couple of you will really have to hustle.  
 
@@ -153,6 +188,7 @@ I look forward to seeing your work.
 :ID:       o2b:967aa03e-fc6e-40a0-bbea-07267a27efd4
 :PARENT:   16
 :POST_DATE: [2016-11-15 Tue 12:49]
+:EXPORT_FILE_NAME: project-proposal
 :END:
 The project kicks off at the end of Fall semester with a formal proposal and presentation.  The written proposal will be submitted not only to me, but to your partner as well, so it is an important document.  
 
@@ -191,9 +227,10 @@ I recommend using the 960 grid paper we used in our mockup class, or [[http://ww
 
 I really recommend that you use a reference manager to deal with your citations; and of the available options, I strongly recommend Zotero or possibly Mendeley. You can easily set up a group bibliography, and also generate an annotated bibliography with almost no effort. Highly recommended. For more on Zotero see the Tools page.
 
-* In-Class Exercise/Sign-up Sheet for week 2
+* In-Class Exercise/Sign-up Sheet for week 2 :noexport:
 :PROPERTIES:
 :PARENT:   16
+:EXPORT_FILE_NAME: in-class-exercise/sign-up-sheet-for-week-2
 :END:
 
 http://hackinghistory.ca:9001/p/Website_Review_signup_sheet
@@ -210,6 +247,8 @@ http://jsbin.com/udecir/1/edit
 :PARENT:   16
 :POST_DATE: [2016-09-20 Tue 09:25]
 :POSTID:   91
+:EXPORT_FILE_NAME: sta-01-html-&-css
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 50
 :END:
 *Due <2016-09-27 Tue> before class*
 
@@ -234,6 +273,8 @@ You can learn more about git and github [[https://try.github.io/levels/1/challen
 :PARENT:   16
 :POST_DATE: [2016-10-11 Tue 09:58]
 :POSTID:   141
+:EXPORT_FILE_NAME: sta-02-javascript
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 60
 :END:
 *Due <2016-10-25 Tue>*
 
@@ -249,6 +290,8 @@ After you're done, send me (another!) email with a link to your CodeAcademy prof
 :ID:       o2b:5cb4ad2a-bd4b-463c-9ba3-554e97cda1be
 :POST_DATE: [2016-10-25 Tue 09:35]
 :POSTID:   179
+:EXPORT_FILE_NAME: sta-03-make-a-map
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 70
 :END:
 *Due Date: <2016-11-08 Tue>*
 
@@ -291,6 +334,8 @@ If you change the styling, you should not create a terrible mess!
 * STA 04: Getting started with PHP
 :PROPERTIES:
 :PARENT:   16
+:EXPORT_FILE_NAME: sta-04-getting-started-with-php
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 80
 :END:
 
 You've already learned bits and pieces of 3 languages -- and now we're trying another one? Crazy!  It doesn't /really/ make sense to work this way; but this is part of the hacking method. We learn what we need to, and hope that the whole is a little more than the sum of its parts.  
@@ -304,6 +349,8 @@ Complete the [[https://www.codecademy.com/en/tracks/php][PHP Track at Codeacadem
 * ACTION STA 05: Wordpress Themes 
 :PROPERTIES:
 :PARENT:   16
+:EXPORT_FILE_NAME: sta-05-wordpress-themes
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 90
 :END:
 
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
@@ -328,6 +375,7 @@ For this short technical assignment, I would like you to switch your perosnal fr
 * COMMENT Timemap
 :PROPERTIES:
 :PARENT:   16
+:EXPORT_FILE_NAME: timemap
 :END:
 ** Historical Mapping
 This is a simple experiment in generating historical maps:  interactive timelines that also map events on a geographical grid.  
