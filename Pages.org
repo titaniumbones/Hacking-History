@@ -1,3 +1,4 @@
+
 * Tools for Hacking History
 :PROPERTIES:
 :ID:       o2b:49b150d9-e9f3-47ae-9a09-e2b003fe5ef4
@@ -10,7 +11,10 @@ This course is *MUCH* easier if you have a laptop. If you don't own one, you can
 ** Firefox and Chrome Dev Tools
 Chrome is by far the most popular browser in the world, while Firefox is by far the most open. Both have highly developed *developer tools* with which you should familiarize yourself. As you learn more about web design, you'll come to rely on these tools more and more. Follow these links for more about [[https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector][Firefox Dev Tools]] and [[https://developer.chrome.com/devtools][Chrome's version]].
 ** Atom Text Editor
-You will be editing code in this class, and for that you need a text editor. If you already have one you love, stick with it; but if you're new to code editing, you should use the class standard, [[https://atom.io/][Atom]].  Download Atom and, once you've read Chapter One of the [[https://atom.io/docs/v1.0.9/getting-started-atom-basics][Manual]], go ahead and [[https://atom.io/docs/v1.0.9/using-atom-atom-packages][install]] the "atom-html-preview", "open-in-browser" and "emmet" packages by navigating to Edit \rarr Preferences \rarr + Install.  There are hundreds of other packages to install if you like.  
+:PROPERTIES:
+:ID:       5cb16a33-f9a5-41d0-862a-2d8367624f6e
+:END:
+You will be editing code in this class, and for that you need a text editor. If you already have one you love, stick with it; but if you're new to code editing, you should use the class standard, [[https://atom.io/][Atom]].  Download Atom and, once you've read Chapter One of the [[http://flight-manual.atom.io/getting-started/][Manual]], go ahead and [[http://flight-manual.atom.io/using-atom/sections/atom-packages/][install]] the "atom-html-preview", "open-in-browser" and "emmet" packages by navigating to Edit \rarr Preferences \rarr + Install.  There are hundreds of other packages to install if you like.  
 
 Later, you will also want the "linter" and "linter-jshint" packages; you might as well install them now. You will also need "remote-edit" for your class project, in the second semester.  
 ** Github
@@ -22,6 +26,7 @@ In the course of your research projects you will accumulate lots of sources, jus
 - [[http://www.zotero.org/download/][Download Zotero]]. Be sure to download both the Zotero program and the connector for MS Word or Libreoffice/OpenOffice, depending on which you need. If you generally use another program, like Scrivener, you will need the [[http://zotero-odf-scan.github.io/zotero-odf-scan/][RTF scanner]]. Make sure you also get the browser connectors for Chrome and Safari, if you use those browsers.
 - Read the [[http://www.zotero.org/support/][documentation]] and/or [[http://www.zotero.org/support/screencast_tutorials][watch the screencasts]]
 - flow like a ninja around all your citation needs.
+- Join the [[https://www.zotero.org/groups/1658543/kcc-project][class bibliography group]] and please add your sources there.  
 ** Dropbox or alternative.  
 You will often need to share files with each other. For this a service like [[http://www.dropbox.com][Dropbox]] is essential.  Get it, use it, love it.  If you're uncomfortable with Dropbox's (awful) security paradigm, consider using [[https://spideroak.com/][spideroak groups]], or one of the many other competitors.  
 ** Coding resources
@@ -33,7 +38,7 @@ Most of the technical skills you'll learn in this class you can teach yourself (
   - [[http://www.w3schools.com/js/][W3 Schools Javascript tutorial]]
   - [[https://developer.mozilla.org/en-US/learn/javascript][MozDev resources]]
 
-* About
+* COMMENT About
 :PROPERTIES:
 :ID:       o2b:aaa759bf-58b9-4d4f-8342-1cdc0229e98c
 :POST_DATE: [2016-09-11 Sun 09:58]
@@ -48,7 +53,7 @@ Registration for the class takes place through [[https://www.rosi.utoronto.ca/ma
 #+ATTR_HTML: :style float:left; padding-right:10px;
 [[file:Images/BrainBoy.jpg]]
 Matt Price is the world's most powerful telepath.
-* Calendar
+* COMMENT Calendar
 :PROPERTIES:
 :PARENT:   80
 :ID:       o2b:f0a5bebf-c6c5-4e42-9f9a-3ae0e108b131
@@ -74,7 +79,7 @@ Matt Price is the world's most powerful telepath.
 
 
 # Images/BrainBoy.jpg http://2016.hackinghistory.ca/wp-content/uploads/2016/09/BrainBoy-2.jpg
-* Contact
+* COMMENT Contact
 #+TITLE: Contact
 #+PARENT: About, 
 
