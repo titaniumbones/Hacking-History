@@ -5,10 +5,11 @@
 #+DESCRIPTION: 
 #+TITLE: Assignments
 #+PROPERTY: PARENT 16
+#+STARTUP: customtime
 #+HUGO_BASE_DIR: ./hugoplayground/
 #+HUGO_SECTION: assignment
 #+HUGO_STATIC_IMAGES: images
-#+HUGO_MENU: :menu main :weight 50 :parent Assignments
+#+HUGO_MENU: :menu main :parent Assignments
 
 
 #+BEGIN_SRC emacs-lisp
@@ -25,10 +26,9 @@
 
 #+RESULTS:
 
-* Overview
+* Summary
 :PROPERTIES:
 :ID:       o2b:3fff9aa9-d319-471d-bb29-17f04e617463
-:POST_DATE: [2016-09-11 Sun 09:35]
 :POSTID:   16
 :EXPORT_FILE_NAME: overview
 :EXPORT_HUGO_MENU_OVERRIDE: :weight 10
@@ -73,31 +73,71 @@ I will comment on individual blog posts as much as possible, but will give out m
 * Participation
 :PROPERTIES:
 :EXPORT_FILE_NAME: participation
-:EXPORT_HUGO_MENU_OVERRIDE: :weight 200
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 20
 :END:
-This is a small fourth-year seminar; paricipation means a lot.  more soon.  
+Your participation mark is quite substantial (20%) and reflects the collaborative nature of the seminar. The mark reflects your participation in class discussions and /also/ in offline discussions on Slack. So, approximately, to get an A you will:
+
+- [ ] craft *excellent* 
+
+** How to create a discussion question
+
+Formulate a good discussion question that will be interesting to other
+students and call for some thinking about the reading. Try also to find
+a question that genuinely interests you.
+
+The following are characteristics of a good discussion question:
+
+1. A discussion question cannot be answered yes or no.
+2. A discussion question cannot be answered with a fact.
+3. A discussion question should not require a personal opinion outside
+   the reading.
+4. A discussion questions should redirect the discussion to the reading
+   itself.
+5. A discussion question should ask the discussants to explain the
+   author's meaning and not simply quote the author or authors.
+6. A discussion question should indicate that the person who posed the
+   question is actually curious about the answer.
+7. A discussion question should be answerable with evidence from the
+   reading and common information that has preceded it in the course.
+8. A discussion question should permit several interpretations. In other
+   words, it should be rich enough to offer several possible directions
+   in its answers.
+
+
+
 * Class Project Overview
 :PROPERTIES:
 :PARENT:   16
 :ID:       o2b:f2f068a5-5eb2-4cb7-a541-b69ff3fda868
-:POST_DATE: [2016-09-11 Sun 09:47]
 :POSTID:   27
 :EXPORT_FILE_NAME: class-project-overview
-:EXPORT_HUGO_MENU_OVERRIDE: :weight 150
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 30
 :END:
-The class project, which will occupy most of the class's second semester and some of the first, is a substantial collaboration between a small group of students and a community organization, on a project of mutual interest.  In almost every case the project will be a Wordpress website, and while I am in principle open to other types of projects, the circumstances under which I would approve such projects are highly constrained. The point of this class is to create something of lasting value to yourself, the organization, and the community it serves, so that your work endures beyond the temporal scope of the class.  The project is worth 45% of your final mark, but this percentage is distributed between various parts of the project.  A high premium will be placed on timely, regular progress made towards intermediate goals, to help make sure that these complex and difficult projects come to fruition.  Some of you have already been thinking about projects; this is great and /you should continue to do so/.  You will work in small groups of 2-4; in a class of this size there are some challenges to group work, but there are substantial benefits to working together, especially when charting unknown territory.  
+The class project, which will occupy most of the class's second semester and some of the first, is always a substantial collaboration between some or all of the students in the course, and a community organization. In most years, we work with one or more local history groups.  This year we will be working exclusively with the [[https://www.facebook.com/kcc.sikkim/][Khangchendzonga Conservation Committee (KCC)]], a local NGO in the Indian Himalayan State of Sikkim.  This is a very exciting change for Hacking History, and also represents the first phase of a broad collaborative project involving a number of other scholars. The project is an opportunity to offer a substantial service to an incredible organization, while rapidly learning about an enormously interesting and diverse region, rich in cultural and ecological heritage.
+
+Unusually for this class, some of the parameters for this class have already been laid out in a [[./static/docs/kcc-mou.docx][Memorandum of Understanding]] between the KCC and the leaders of the broader project.  Here are some highlights of that document, plus some further constraints:
+- The website we're building will serve two functions:
+  - a general purpose website to serve as the KCC's public presence (their current website dates from 2004 and has very little information)
+  - a historical section which will provide context for the KCC's current work and an archive of some of their most important documents, e.g. the training manuals from their education programs
+- Website content will be based in part on student term papers, and will draw upon an already-existing archive of digitized material from the KCC.
+- The website will run the [[https://wordpress.org/][Wordpress]] software, a user-friendly, open-source content management system.
+- Students will design the website by modifying an existing [[https://wordpress.org/themes/][Wordpress theme]], probably one based on the [[http://getbootstrap.com/][Bootstrap]] web framework.
+- Students will write most of the content, but images will be drawn from a large archive belonging to the broader project and the KCC
+- KCC is a small, under-resourced NGO located in a remote village in a developing country. As a result, particular attention needs to be paid to code quality & accessibility. We will also need to build an excellent online help system as part of our project.
+- Sikkim is a multilingual state. For the first time, Hacking History students will need to pay attention to [[https://codex.wordpress.org/I18n_for_WordPress_Developers][internationalization]] and [[https://codex.wordpress.org/Multilingual_WordPress][multilingual content]].
+- After the academic year has finished, there *may* be an opportunity to travel to Sikkim and present the website to the KCC.  More information on this possibility will follow late in the Fall semester.  
+
+A primary goal of this class is to create something of lasting value to yourself, the KCC, and the community it serves, so that your work endures beyond the temporal scope of the class.  The project is worth 45% of your final mark, but this percentage is distributed between various parts of the project.  A high premium will be placed on timely, regular progress made towards intermediate goals, to help make sure that these complex and difficult projects come to fruition. The class is a /large/ working group; as a result, you will specialize quite a bit and it may be difficult to co-ordinate work effectively. We'll discuss tools and strategies for project management along the way. 
+
 ** Collaboration and Service
 We should perhaps distinguish between two kinds of working together for this project.  On the one hand, you will be working closely with your peers.  As a result, you have an additional responsibility to your working group -- your lapses affect them too.  You'll also need to be sure to communicate clearly and effectively with each other, both electronically and in person.  Be sure that you know what each of you bring to & get out of the project; and how will you hand the project over.
 
 You will also be working together with an organization that will be depending on you.  In this respect, you act as emissaries of the University and of the course.  You are expected to be respectful, courteous, and responsive.  
+
 ** General Project Parameters
-The finished product should be a polished website or other digital artifact which is directly of use to the partnering organization; it should also be an intellectually honest endeavour which takes seriously the historian's responsibility to tell truths about the past. Your work will, then, be held to a relatively high standard -- I'm asking a lot of you.  You should therefore take pains /not to bite off more than you can chew/.  Your project should be of a manageable scope, and if it's more than your group can do on its own, you should be absolutely sure that your partnering organization has resources to devote to the project either while you work on it, or after the class has finished.  Here are some things you should /not/ attempt to do:
-- *do not design your own web framework.*  Instead, you should use [[http://www.wordpress.org][Wordpress]], whih we will be learning about together in class.  If you have a prior expertise in some other framework or in web design, you should discuss this with me immediately. Past experiences with non-Wordpress technologies have been extremely problematic.  
-- *do not attempt to tell the story of a major event or historical figure.*  Do not attempt to create a digital archive of the Holocaust, or a definitive documentary history of the War of 1812, or an oral history archive of the immigrant experience in Toronto.  These are /areas of interest/, not /topics for a project/.  Narrow your subject as much as you possibly can; then talk about it with me and we will narrow it down further.  
-- *do not strike out entirely on your own.*  You will need some support from outside -- that is one of the main reasons to have a community partner.
-- *do not put /anything/ off till the last minute.*  In a complex project like this you will be surprised at the number of tasks there are to accomplish.  In particular, you'll gain a lot by attacking your organizational tasks as early as possible.
+The finished product should be a polished website which is directly of use to the partnering organization; it should also be an intellectually honest endeavour which takes seriously the historian's responsibility to tell truths about the past. Your work will, then, be held to a relatively high standard -- I'm asking a lot of you. *Do not put /anything/ off till the last minute.*  In a complex project like this you will be surprised at the number of tasks there are to accomplish.  In particular, you'll gain a lot by attacking your organizational tasks as early as possible.
 ** Examples
-Previous years' projects are mostly linked to from [[http://2013.hackinghistory.ca/student-projects/][that year's course website]]. You may be particularly interested in [[http://flynnhousehackinghistory.,ca][the project from last year's class]], which was almost as tiny as this year's.  They are all great, so look there for some inspiration.  Please note that these sites were made by students with no prior technical experience; if you're in that category they may look daunting right now, but don't be discouraged, you'll learn what you need to in time to make something really cool.  
+Previous years' projects are mostly linked to from [[http://2013.hackinghistory.ca/student-projects/][that year's course website]]. You may be particularly interested in [[http://flynnhousehackinghistory.,ca][the project from 2015]].  They are all great, so look there for some inspiration.  Please note that these sites were made by students with no prior technical experience; if you're in that category they may look daunting right now, but don't be discouraged, you'll learn what you need to in time to make something really cool.  (But: this year's project is for sure the most ambitious we've ever attempted. Yay!)
 ** Technical Parameters
 If you have no technical background, this may not make much sense to you in the first class, but as the semester progresses you'll understand more.  Here are some of the technical skills you will be using in your project:
 - Web hosting ::  I will provide hosting for class websites at hackinghistory.ca.
@@ -107,68 +147,37 @@ If you have no technical background, this may not make much sense to you in the 
   - Functionality :: installing Wordpress plugins, and tinkering with PHP and Javascript code, to get the functionality you and your partner need
 - Text editing ::  in order to do all of the above, you should become at least a little familiar with a text editor. Ad described in "Tools", the [[http://atom.io][Atom]] editor is the best choice.  Later in the term we will also go over various ways to edit code directly from the Wordpress administrative interface.  
 ** Human Subjects Ethics Review
-One of the benefits to a partner is that work done /in the service of that organization/ is exempt from the ethics review process.  If however you conduct interviews, etc. outside of the project you will need to comply with the University's [[http://www.research.utoronto.ca/for-researchers-administrators/ethics/human/][Ethics Review process]]; cf. also  [[http://www.research.utoronto.ca/wp-content/uploads/2009/09/ERO_Guidelines_Manual-2007.pdf][this document]].  The procedure is not terribly onerous but it does take some time so be very serious about this.  
+
+Our project will make use of interviews conducted under a protocol approved by the Unviersity's Ethics Review Board. You are advised to familiarize yourselves with the University's  [[http://www.research.utoronto.ca/for-researchers-administrators/ethics/human/][Ethics Review process]], and we will discuss general guidelines for oral history research in the early part of the Fall semester.    
 ** Grading
-#<<grading>>
+
 The final project will be evaluated based on its success in meeting the goals outlined in the proposal, on the integrity of historical analysis, on the aesthetics of the presentation, and on the satisfaction of the community partners with your work.  
 | Component               | Due Date         | Group/Indiv | % of Course Grade |
-| Proposal & Presentation | <2016-12-06 Tue> | Group       |                10 |
+| Proposal & Presentation | <2017-12-05 Tue> | Group       |                10 |
 | Interim Report          | <2017-02-07 Tue> | Group       |                10 |
 | Final Product           | <2017-04-04 Tue> | Group       |                20 |
 | Partner Response        | ---              | Group       |                 5 |
-In addition, most of your blog postings in semester 2 will be concerned with your project & your progress on it.  
 
 ** Components
 *** Proposal
 The proposal is a substantial group effort which involves the submission of a formal document to me and to your partner, as well as a presentation component.  Read more about it on its own page.
 *** Interim Report
-The Interim Report is a report back to me and to your partner on the progress you're making.  It will be about 8-10 pages long, and indicate 
+The Interim Report is a report back to me and to your partner on the progress you're making.  It will be about 8-10 pages long, and indicate :
 - how much of the website content you've completed, and whether there are any serious problems that might require you to change your focus.
 - how much of the website design is complete, and where you expect further challenges
 - in what ways you find yourself departing from the plan agreed upon, and why.
 *** Final Product
-The Final product is a fantastically intricate and rich historical website, with lots of exciting bits of information presented in a vigourous, interesting, and visually appealing manner.
+The Final Product is a fantastically intricate and rich historical website, with lots of exciting bits of information presented in a vigourous, interesting, and visually appealing manner.
 *** Partner Response
-I'll ask your partner for feedback on your work, and take that into account in my final grade.  
+I'll ask the KCC for feedback on your work, and take that into account in my final grade.  
 
-* Essay Assignment
-:PROPERTIES:
-:PARENT:   16
-:ID:       o2b:8117e14f-ce3e-4762-a9b7-7b7179731ad4
-:POST_DATE: [2016-11-29 Tue 12:54]
-:POSTID:   243
-:EXPORT_FILE_NAME: essay-assignment
-:EXPORT_HUGO_MENU_OVERRIDE: :weight 100
-:END:
-*Due <2017-01-10 Tue>*
-** Basics
-Write an 8-10 page paper on a research topic related to your group project.  This is an ordinary research paper of the kind you have done many times before; an excellent basic guide to writing history papers is available [[http://www.writing.utoronto.ca/advice/specific-types-of-writing/history][on the writing centre website]].    
-
-** Choosing a Topic
-Hopefully many aspects of your topic interest you.  Choose one which is broad enough to sustain a mid-length argument of the sort normally found in this type of short research paper.  This is a small class, and you see me every week; you should check in with me before the end of the semester to ensure that your topic is a good one.  
-
-The research paper stands on its own, but in most cases pieces of the paper can be recycled into the website proper.  For this reason, it's best if group members can choose a variety of topics not too closely bunched to one another.  Consult with your groupmates about their plans, and if possible avoid overlap in your paper topics.  
-
-** Marking
-As has doubtless generally been your experience, marking proceeds on an evaluation of:
-- Originality and thoughtfulness of your thesis:  Are you making an interesting argument?  Is it yours or does it belong to one of your sources?  
-- Quality of your evidence: do you present convincing evidence for each of your claims, supported by compelling arguments?
-- Structure: is your paper easy to follow, and does each part flow naturally from what comes before?
-- Style: is your paper a pleasure to read?
-- Attention to Detail:  are your citations properly formatted (please use [[https://www.zotero.org/][Zotero]] or a similar program), have you avoided typos, etc.?
-
-(listed in approximately descending order)
-
-** Number of Sources
-Please don't ask me how many sources you need.  As many as are required!  The most interesting part of writing a research paper is doing primary source research, so please do as much of that as you can.
-
-* Project Presentation 1
+* COMMENT Project Presentation 1 :noexport:
 :PROPERTIES:
 :PARENT:   16
 :EXPORT_FILE_NAME: project-presentation-1
 :EXPORT_HUGO_MENU_OVERRIDE: :weight 160
 :END:
-Next week we will have preliminary presentations of your projects.  This is in preparation for a more substantial proposal which you will present more formally at the end of the term.  The purpose of next week's class is to ensure that you have something moving along -- most of you are on your way but a couple of you will really have to hustle.  
+In December we will have preliminary presentations of your projects.  This is in preparation for a more substantial proposal which you will present more formally at the end of the term.  The purpose of next week's class is to ensure that you have something moving along -- most of you are on your way but a couple of you will really have to hustle.  
 
 ** Next Week's Blog
 Your blog posting next week should have the following components:  
@@ -187,10 +196,10 @@ I look forward to seeing your work.
 :PROPERTIES:
 :ID:       o2b:967aa03e-fc6e-40a0-bbea-07267a27efd4
 :PARENT:   16
-:POST_DATE: [2016-11-15 Tue 12:49]
 :EXPORT_FILE_NAME: project-proposal
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 90
 :END:
-The project kicks off at the end of Fall semester with a formal proposal and presentation.  The written proposal will be submitted not only to me, but to your partner as well, so it is an important document.  
+The project kicks off at the end of Fall semester with a formal proposal and presentation.  The written proposal will be submitted not only to me, but to the KCC as well, so it is an important document.  
 
 ** What is this project proposal thing for anyway?
 
@@ -225,9 +234,39 @@ I recommend using the 960 grid paper we used in our mockup class, or [[http://ww
 
 ** Bibliography
 
-I really recommend that you use a reference manager to deal with your citations; and of the available options, I strongly recommend Zotero or possibly Mendeley. You can easily set up a group bibliography, and also generate an annotated bibliography with almost no effort. Highly recommended. For more on Zotero see the Tools page.
+You wil lbe required to use Zotero and the [[https://www.zotero.org/groups/1658543/kcc-project][class bibliography]] in all your work from this point on.
 
-* In-Class Exercise/Sign-up Sheet for week 2 :noexport:
+* Essay Assignment
+:PROPERTIES:
+:PARENT:   16
+:ID:       o2b:8117e14f-ce3e-4762-a9b7-7b7179731ad4
+:POSTID:   243
+:EXPORT_FILE_NAME: essay-assignment
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 100
+:END:
+*Due <2018-01-16 Tue>*
+** Basics
+Write an 8-10 page paper on a research topic related to the KCC.  This is an ordinary research paper of the kind you have done many times before; an excellent basic guide to writing history papers is available [[http://www.writing.utoronto.ca/advice/specific-types-of-writing/history][on the writing centre website]].    
+
+** Choosing a Topic
+Hopefully many aspects of the project interest you (this document will be updated with a list of suggestions several weeks into the semester).  Choose a topic which is broad enough to sustain a mid-length argument of the sort normally found in this type of short research paper.  This is a small class, and you see me every week; you should check in with me before the end of the semester to ensure that your topic is a good one.  
+
+The research paper stands on its own, but in most cases pieces of the paper can be recycled into the website proper.  For this reason, it's best if group members can choose a variety of topics not too closely bunched to one another.  Consult with your classmates about their plans, and if possible avoid excessive overlap in your paper topics.  
+
+** Marking
+As has doubtless generally been your experience, marking proceeds on an evaluation of:
+- Originality and thoughtfulness of your thesis:  Are you making an interesting argument?  Is it yours or does it belong to one of your sources?  
+- Quality of your evidence: do you present convincing evidence for each of your claims, supported by compelling arguments?
+- Structure: is your paper easy to follow, and does each part flow naturally from what comes before?
+- Style: is your paper a pleasure to read?
+- Attention to Detail:  are your citations properly formatted (please use [[https://www.zotero.org/][Zotero]] and add your citations to the [[https://www.zotero.org/groups/1658543/kcc-project][class Zotero bibliography]]), have you avoided typos, etc.?
+
+(listed in approximately descending order)
+
+** Number of Sources
+Please don't ask me how many sources you need.  As many as are required!  The most interesting part of writing a research paper is doing primary source research, and we are privileged to have a substantial archive of primary sources direct from the KCC.  Please make the most of them.  
+
+* COMMENT In-Class Exercise/Sign-up Sheet for week 2               :noexport:
 :PROPERTIES:
 :PARENT:   16
 :EXPORT_FILE_NAME: in-class-exercise/sign-up-sheet-for-week-2
@@ -245,29 +284,41 @@ http://jsbin.com/udecir/1/edit
 :PROPERTIES:
 :ID:       o2b:5d585d1a-c18b-4020-99fb-4906149d62ce
 :PARENT:   16
-:POST_DATE: [2016-09-20 Tue 09:25]
 :POSTID:   91
 :EXPORT_FILE_NAME: sta-01-html-&-css
-:EXPORT_HUGO_MENU_OVERRIDE: :weight 50
+:EXPORT_HUGO_MENU_OVERRIDE: 200
 :END:
-*Due <2016-09-27 Tue> before class*
+*Due <2017-09-26 Tue> before class*
 
 You do not have to become a coder to do well in this course.  However, you /will/ have to be willing to explore technical skills that you might not otherwise develop as a humanities scholar.  In this initial assignment, we'll use one of the web's many excellent self-education platforms to learn the very basics of how web pages work.  
 
 Web pages are composed of three components:  HTML, CSS, and Javascript.  HTML provides the /structure and content/ of a web page; CSS controls the /style of presentation/; and Javascript permits /dynamic modification/ of both.  To explore the web from the inside, you need to be alittle bit comfortable in all three.  
 
-** Assignment
+** Assignment A (for *beginners*)
 Codeacademy.com is a platform that focusses on teaching web skills; [[http://www.codecademy.com/][head over there and set up an account]]. Once you've done that, complete the [[http://www.codecademy.com/tracks/web][HTML & CSS]] course, which will take about 7 hours.
 
 Once you have finished, send me a link to your /profile page/ (click "view my Profile" under the top right menu item with your picture on it).  That's all! But feel free to continue exploring on Codeacademy -- there's lots to learn and much of it will be helpful to this course, or to your further explorations in this field.  
 
-** Alternative
-Already a web hotshot? If you feel like you already know everything you need to about HTML, CSS, and Javascript, prove it to me:  
-- Set up an account on [[https://github.com/][Github]].  Upload one of your completed projects there.  Send me the link so I can explore.
+** Assignment B (for *returnees*)
+If you are already a hotshot coder, *or* if you took /Digital History/ last Spring: codacademy is not for you!
+- return to (or set up) your [[https://github.com/][Github]] account
+- clone my [[https://github.com/titaniumbones/html-tutorial-ex][html-tutorial-ex]] tutorial
+- write a short tutorial about one of the following:
+  - the HTML5 ~<audio>~ and ~<video>~ elements
+  - HTML tables
+  - "new" semantic tags such as ~<aside>~, ~<article>~, ~<header>~, ~<footer>~, etc.
+  - CSS float
+  - Padding and Margins
+  - Flexbox or CSS Grids
 
-You can learn more about git and github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
+Your tutorial should include a ~README.md~ that explains the function of this HTML/CSS feature to the reader, and a practical example that the reader can play with to understand it. The playground should take the form of one HTML and one CSS file.  Once you're done, you should feel free to set up a tiny [[https://hsbin.com][jsbin]] with your sample code; this will make it a bit easier for your readers to mess about.
+  
+You can learn more about git and Github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
 
-* STA 02: Javascript
+
+* COMMENT STA 02: Oral History
+Choose one of 3 or 4 files.  Plug it into a github template (don't worry about JS, probably). Write a markdown page or so, with a set of questions and reflections.  write more about this soon.
+* COMMENT STA 02: Javascript
 :PROPERTIES:
 :ID:       o2b:5136bc02-9c0c-4a85-bff7-601fc3ce0f77
 :PARENT:   16
@@ -284,7 +335,16 @@ The debugging on Codeacademy is somewhat unsatisfactory, and syntax errors can b
 
 After you're done, send me (another!) email with a link to your CodeAcademy profile page.
 
-* STA 03: Make a Map
+* COMMENT ACTION STA 03: Wordpress Themes 
+:PROPERTIES:
+:PARENT:   16
+:EXPORT_FILE_NAME: sta-05-wordpress-themes
+:EXPORT_HUGO_MENU_OVERRIDE: :weight 90
+:END:
+
+[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
+
+* COMMENT STA 04: Make a Map
 :PROPERTIES:
 :PARENT:   16
 :ID:       o2b:5cb4ad2a-bd4b-463c-9ba3-554e97cda1be
@@ -294,6 +354,8 @@ After you're done, send me (another!) email with a link to your CodeAcademy prof
 :EXPORT_HUGO_MENU_OVERRIDE: :weight 70
 :END:
 *Due Date: <2016-11-08 Tue>*
+
+A map of the KNP. What to learn or highlight from it. 
 
 In class we made a kind of toy Google Map out of hand-coded HTML, CSS, and Javascript.  You will remember it from [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin]] and from [[https://github.com/titaniumbones/maps-with-markdown][Github]].  
 
@@ -331,7 +393,7 @@ Your Map should /work/ -- all your markers should display correctly. The initial
 
 If you change the styling, you should not create a terrible mess!
 
-* STA 04: Getting started with PHP
+* COMMENT STA 03: Getting started with PHP
 :PROPERTIES:
 :PARENT:   16
 :EXPORT_FILE_NAME: sta-04-getting-started-with-php
@@ -345,15 +407,6 @@ The Wordpress framework is written in the PHP programming language. PHP structur
 ** Assignment
 
 Complete the [[https://www.codecademy.com/en/tracks/php][PHP Track at Codeacademy]], and send me an email with your profile URL.  
-
-* ACTION STA 05: Wordpress Themes 
-:PROPERTIES:
-:PARENT:   16
-:EXPORT_FILE_NAME: sta-05-wordpress-themes
-:EXPORT_HUGO_MENU_OVERRIDE: :weight 90
-:END:
-
-[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
 
 
@@ -437,3 +490,6 @@ For now, though, if you want to try this, there is a less accurate, rather finck
 - rotate the image so that it aligns with the north-south contours of a map of your location
 - futz endlessly with the north, south, east, and west parameters of your overlay object in overlay-data.js
 - ta-da!  with luck the overlay will more or less fit the underlying geography.  If not... well, that's another lesson.  A starting point for more and better ideas is [[http://groups.google.com/group/timemap-development/browse_thread/thread/4515706dccec5fad?hl=en][here]].  
+
+
+

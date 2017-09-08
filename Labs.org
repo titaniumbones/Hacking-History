@@ -44,57 +44,27 @@ In general, each weekly seminar also includes a "lab" component in which we expl
 :PARENT:   10
 :ID:       o2b:d84b0692-6129-4e96-931a-0585c628c57e
 :POSTID:   13
-:EXPORT_FILE_NAME: lab-01-getting-started
+:EXPORT_FILE_NAME: lab-getting-started
 :END:
 
 Welcome to /Hacking History/.
 
-Today's "lab" is really just an introduction to the website; but since you will be building your own site before the year is out, you'll want to pay attention to the interface.  We use the [[http://wordpress.org][Wordpress]] web framework in this class. Wordpress is the most popular "Content Management System" in the world, and runs ~75 million sites.  It is often praised for the relatively quick learning curve encountered by both users and developers. 
+In today's lab we learn (or recall) a little bit about some of the tools we'll be using during the class.  They are:
 
-** Registration and First Post
+- Markdown
+- Github
+- Zotero
+
+Next week we will start learning about HTML, but for today it's all just fun. 
+
+** Mountain-Please
 :PROPERTIES:
-:ID:       o2b:5a91f103-5faf-4489-8e0d-8003f97bd290
-:POST_DATE: [2015-09-10 Thu 11:28]
-:EXPORT_FILE_NAME: ""
-:BLOG:     dig
 :END:
-You should receive an email with your site login info shortly before class starts; to log in find the [[http://www.hackinghistory.ca/wp-login.php][admin login page]] and type in your email.  Request a new password and log in.
+This is a fun excercise to introduce everyone to the practice of hacking. It will also get you used to using Github, one of the fundamental tools of open-source software development.  
 
-[[file:Images/wp-admin-interface.png]]
-
-In the "new post" screen write a short post introducing yourself to me and your classmates. Include some of the following:
-- What interests you about this class?
-- What are you looking forward to/anxious about?
-- Is there something unusual about yourself that you're willing to share with the class, that will help us to know you better?  
-
-If you're concerned about privacy, consider restricting access to users of level "author" or higher:
-
-[[file:Images/wp-restrict-post.png]]
-
- Press "Publish," and /voilà/, you're done.  If you've used Wordpress before, you may still learn something from reading about the [[https://make.wordpress.org/core/2015/08/01/editor-enhancements-in-4-3-%E2%9C%A8/][new structured text improvements]] and the [[https://en.support.wordpress.com/markdown/][advanced Markdown capabilities]].  
-                                                                                        
-** User Profile
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-
-If you want a picture of yourself to appear next to your name (and it would be helpful for me to have one), you can [[https://en.gravatar.com/][create an account at Gravatar]] and upload an image.  Wordpress will automatically link to your gravatar profile.  
-
-** Understanding Wordpress
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-We will discuss this in more detail in a few weeks; but for now, here is a picture:
-[[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
-** Heroes-Please
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-This is a fun excercise to introduce everyone to the practice of hacking. 
-
-My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple github training exercise last year for some of my other students.  It was really fun, so I modified it for us:
+My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple github training exercise two years ago for some of my other students.  It was really fun, so I modified it for us (twice):
 1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
-2. Navigate to [[https://github.com/titaniumbones/heroes-please][my heroes-please repository]]
+2. Navigate to [[https://github.com/titaniumbones/mountain-please][my mountain-please repository]]
 3. Take a quick look at the [[https://github.com/titaniumbones/heroes-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
 4. Have you found where the Heroes live?
 5. Add a new hero *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
@@ -103,28 +73,26 @@ My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simpl
    - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
    [[./Images/github-add-file.png]]
 6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/heroes-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
+
 ** HTML Preview
 :PROPERTIES:
-:EXPORT_FILE_NAME:
 :END:
 If we have time at the end, let's take a look at [[http://jsbin.com/onopaz/7/edit][this exercise]] which is planned for next week.  
 
 Also, this is an opportunity to download and install the [[http://atom.io][Atom text editor]] which we will be using in coming weeks.  
-
 * Lab 02: Understanding HTML
 :PROPERTIES:
 :PARENT:   10
 :ID:       o2b:4cadb43d-7585-4fd0-9e68-00308148320f
 :POST_DATE: [2016-09-20 Tue 09:05]
 :POSTID:   88
-:EXPORT_FILE_NAME: lab-02-understanding-html
+:EXPORT_FILE_NAME: lab-understanding-html
 :END:
 One of the goals of this week is to help you think of the Web as a protocol-driven infrastructure.  The language in which that infrastructure operates is called [[http://en.wikipedia.org/wiki/HTML][HTML]]. Like a traveller in a foreign country, you may not need to be fluent in this language, but if you know just a little bit then you'll be much more comfortable.  In this exercise we will introduce an online tool called [[http://jsbin.com/welcome/1/edit][JSBin]], now one of many such tools available online, and somewhat similar to the [[http://codeacademy.net][Codeacademy]] website you will be using for your assignments.
 
 I strongly advise you to also take this opportunity to download the [[http://atom.io][Atom text editor]], as well. Further instructions are on the Tools page.  
 ** Tags
 :PROPERTIES:
-:EXPORT_FILE_NAME: tags
 :END:
 An HTML Document is composed of [[http://en.wikipedia.org/wiki/HTML_element][elements]] marked off by [[http://www.w3schools.com/tags/default.asp][tags]].  The elements look like this:  
 #+BEGIN_SRC html
@@ -133,14 +101,8 @@ An HTML Document is composed of [[http://en.wikipedia.org/wiki/HTML_element][ele
 Note the opening and closing tags, which surround the text you want to have marked up.
 
 *** Important tags
-:PROPERTIES:
-:EXPORT_FILE_NAME: important-tags
-:END:
 Here are a few examples of important tags, though there are many, many more in current versions of HTML.  
 **** Document Structure
-:PROPERTIES:
-:EXPORT_FILE_NAME: document-structure
-:END:
 Certain tags exist solely to lend *structure* to a document.  
 #+BEGIN_SRC html 
   <html>
@@ -161,19 +123,13 @@ Certain tags exist solely to lend *structure* to a document.
   </html>
 #+END_SRC
 
-**** Text Attributes
-:PROPERTIES:
-:EXPORT_FILE_NAME: text-attributes
-:END:
+**** Text Properties
 Others give instructions for emphasizing text
 #+BEGIN_SRC html -n
   <b>bold</b> <strong>strong</strong>
   <i>italic</i> <em>emphasis</em>
 #+END_SRC
 **** Text Functions
-:PROPERTIES:
-:EXPORT_FILE_NAME: text-functions
-:END:
 Still others define pieces of structure in a functional way that generally also affects the way text will look on your screen.
 #+BEGIN_SRC html -n
   <h1>This is a top-level Heading</h1>
@@ -191,9 +147,6 @@ Still others define pieces of structure in a functional way that generally also 
 #+END_SRC
 
 **** Linking
-:PROPERTIES:
-:EXPORT_FILE_NAME: linking
-:END:
 The fundamental, breathtaking feature of the web is its capacity to create links between documents, images, media sources, etc., with absolute disregard for where those resources are physiclaly stored.  The syntax for making a link is as follows 
 
 #+BEGIN_SRC html -n
@@ -207,15 +160,9 @@ The fundamental, breathtaking feature of the web is its capacity to create links
 
 Figure out what these mean by browsing on w3schools. Work especially hard at the <a> tag.  Hint:  the standard syntax is <a href="link">Text</a> and there are plenty of instances in the code below.
 
-*** Exercise 0
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise-0
-:END:
+*** Exercise 0                                                       
 Navigate to [[http://jsbin.com/onopaz/edit?html,output][this page]].  This is the JSBin editor, an online tool for inspecting code.  
 *** Exercise 1
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise-1
-:END:
 First, let's quickly compare the text of an old post of mine:
 
 #+BEGIN_QUOTE
@@ -267,60 +214,39 @@ Figure out how to accomplish the following tasks:
 These are all pretty easy, you can figure them out either by inspecting the marked-up version I reproduced here, or following the w3schools HTML tutorials.  
  
 *** Styles
-:PROPERTIES:
-:EXPORT_FILE_NAME: styles
-:END:
 Styles in HTML are pretty complex, see the [[http://www.w3schools.com/html/html_css.asp][HTML style tutorials]] on w3schools.  Check out their very quick description of [[http://www.w3schools.com/css/css_intro.asp][css]].  
 **** Exercise 2
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise-2
-:END:
     Go back to your TryIt experiment at w3schools.  Can you make the text render in the same styles that are used by the website?  There's a clue in the <head> element of any page from the site.  Hint: search for "css" in the sourcecode...
 *** Scripts
-:PROPERTIES:
-:EXPORT_FILE_NAME: scripts
-:END:
 Though HTML is the language of the web, modern HTML (HTML 4, HTML 5) have "translators" of a sort that allow other languages to run inside the web page.  this is actually incredibly powerful, and allows amazing things that were unheard of in the early days of the web, like dynamically-generated lists, moving images, the embedding of video and so forth.  You don't have to know how to script (I can't really use javascript, for instance) but you should understand that scripting is what makes a lot of today's web work the way it does.  
 **** Exercise 3
 :PROPERTIES:
-:EXPORT_FILE_NAME:
 :END:
 Inspect the source code of three complex pages on the web and find every instance of a script tag.  Note anything you think is interesting about it.  
 
+
 ** Hacking your way to HTML mastery!
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 *** Tools!
-:PROPERTIES:
-:EXPORT_FILE_NAME: tools!
-:END:
 - *View source.* When you right click on a web page in any modern browser, you will see a 'view source' option.
 - *developer tools*.  The Developer Tools for [[https://developer.chrome.com/devtools][Chrome]] and [[https://developer.mozilla.org/en/docs/Tools][Firefox]] are both amazing.  They allow you to temporarily change the code (HTML, CSS, and Javascript) running on any website, and thus test out your ideas for changes.  We will use this tool *A LOT* over the course of the year.  
 - *[[http://jsbin.com][jsbin]]*. The awesome real-time html/javascript previewer.
 *** Tutorials
-:PROPERTIES:
-:EXPORT_FILE_NAME: tutorials
-:END:
 - [[http://codeacademy.com][Codeacademy]] may have the best intro to HTML sequence
 - [[http://w3schools.com/][W3 Schools]] provides excellent tutorials.
-- [[https://developer.mozilla.org/en/HTML][The Mozilla HTML Reference]] is where I go when I need a detailed explanation of something.  
+- [[https://developer.mozilla.org/en/HTML][The Mozilla Developers' Network HTML Reference]] is where I go when I need a detailed explanation of something.  
 * Lab 03: CSS and Web Styles
 :PROPERTIES:
 :ID:       o2b:2a926b2c-7fda-4ae5-88b3-0837ce62757a
 :PARENT:   10
 :POST_DATE: [2016-09-20 Tue 09:28]
 :POSTID:   94
-:EXPORT_FILE_NAME: lab-03-css-and-web-styles
+:EXPORT_FILE_NAME: lab-css-and-web-styles
 :END:
 Last week we experimented with HTMl and dipped our toes into CSS and styles.  In your final projects, much of your coding time will be spent trying to get your site to look the way you want it to.  If you have a firm understanding of CSS (and of where to look for more info when you're having trouble!), this will be a lot easier.
 
-You already know about the [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings.  Another helpful tutorial site is [[http://learnlayout.com/][Learn Layout]], to which I'll be referring later; and there are many other resources available on the web.  
+You already know about the [[http://www.codecademy.com/courses/web-beginner-en-TlhFi/0/1?curriculum_id=50579fb998b470000202dc8b][Codeacademy]] CSS offerings.  Two other helpful tutorial sites are [[http://learn.shayhowe.com/][shayhowe]] and  [[http://learnlayout.com/][Learn Layout]], to which I'll be referring later; and there are many other resources available on the web.  
 
 ** CSS Basics
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 
 CSS is the [[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]] Language; it is a powerful tool for controlling the appearance of web pages (and sometimes other documents, too).  It works in the following way:
 
@@ -338,9 +264,7 @@ Sometimes when you have a really slow Internet connection, you will see a very u
 So, while HTML is responsible for the *structure and content* of a website, CSS is responsible for its *presentation*.  
 
 ** CSS Selectors
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
+
 
 When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
 
@@ -370,9 +294,6 @@ They all follow the same pattern:
 - finally, *a closing brace* that ends the selector declaration.
 
 *** Selector types
-:PROPERTIES:
-:EXPORT_FILE_NAME: selector-types
-:END:
 Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
 - *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
 - *Class* selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:
@@ -405,9 +326,7 @@ div.main p {
 It addresses every p that is contained inside a div of class "main."
 
 ** Fonts, colors and borders
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
+
 A lot of what we do with CSS is to set fonts and colors.  Here are some examples:
 
 #+BEGIN_SRC css
@@ -426,15 +345,9 @@ div.main {
 There are plenty of other properties that can be set, in much the same way.
 
 ** Display: Block vs. Inline
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 
 
 ** Box Model
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 One important notion to understand in CSS is the so-called "[[http://www.w3.org/TR/CSS2/box.html][Box Model]]", which accounts for the distribution of whitespace around elements.  A lot of the grief you will encounter when designing websites will come back to the box model, so it's important to learn it:  
 
 [[http://2014.hackinghistory.ca/wp-content/uploads/2014/09/wpid-boxmodel.png]]
@@ -463,9 +376,6 @@ There are two ways to deal with this:
 2. use the new "box-sizing:border-box" attribute.  This will do all the math for you.  
 
 ** Positioning
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 
 This is a difficult subject.  When you are dealing with lots of different screen sizes and resolutions, and different devices with different fonts installed, etc., it is not trivial to position every element precisely where you want it.  You will find a lot of your teeth-gnashing time is spent trying to get various columns of content to line up pretty, center themselves, etc.  
 
@@ -509,37 +419,30 @@ The CSS "position" property has four possible values, whose names are [[http://l
 Understanding this well involves fiddling a lot with code; rather than make a bunch of fiddly exercies myself, I'll direct you [[http://www.codecademy.com/courses/web-beginner-en-6merh/3/1?curriculum_id=50579fb998b470000202dc8b][the codeacademy positioning exercies]], which have a great help system that makes things a little easier.
 
 ** Positioning 2: Float
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 So, that's one way to position elements.  Another is to use the *float* property, which imagines the page flowing like water.  The element will "float" left or right, and everything else will /flow around it/.  To stop the flowing -- that is, to require the next element to appear *below* a floated element -- that next element will need to apply the *clear* property, which stops the float.
 
 Let's play around with this briefly [[http://jsbin.com/dakedo/1/edit?html,css,output][in JSBin]].  
 
 ** Changes Comin' Round Real Soon
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-All of what you just learned is in the process of changing dramatically.  A new CSS module, *[[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][flexbox]]*, makes a lot of this stuff much easier, but takes some practice to understand.
+All of what you just learned is in the process of changing dramatically.  Two new new CSS modules, *[[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][flexbox]]* and  makes a lot of this stuff much easier, but takes some practice to understand.
 
 It turns out that the theme framework we use may be converting to flexbox very soon. So, [[http://jsbin.com/yukiwe/3/edit?html,css][here]] is a very quick introduction to flexbox.  You may want to look at [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/][this cheatsheet]], this [[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties][slightly more verbose one]], or [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes][this very detailed specification]]. Meanwhile, there are lots of other new CSS features coming along, which will be supported by more and more browsers as we move forwards. We will keep an eye out for those as we continue; meanwhile, if you want to, you can check out [[http://jsbin.com/bawoqo/3/edit?html,css,output][transitions]] and [[https://css-tricks.com/almanac/properties/a/animation/][learn]] a little bit about [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations][animations]].
-
-
-*  Lab 04: Javascript Basics 
+* COMMENT ACTION Lab 04: Art of the Interview
+:PROPERTIES:
+:EXPORT_FILE_NAME: lab-04-art-of-the-interview
+:END:
+* Lab 05: Javascript Basics 
 :PROPERTIES:
 :ID:       o2b:62f1b3b6-a51b-4581-bdb4-118280788bf1
 :PARENT:   10
 :POST_DATE: [2016-10-11 Tue 10:12]
 :POSTID:   145
-:EXPORT_FILE_NAME: lab-04-javascript-basics
+:EXPORT_FILE_NAME: lab-javascript-basics
 :END:
 
 Another week, another language! This is in some ways a ridiculous way to learn about programming, and you may not remember all you learn. The most important thing is to get some sense of the types of operations that take place when programming languages interact with web pages, so you can change the code you are given to get it to do exactly what you want.  But in order to do this it wil lbe very helpful to know just a little bit about programming in general.
 
 ** What is Javascript and why do we learn it?
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 You'll remember that I made a a very general division early in the semester:
 | Structure | Style | Dynamic Content & Effects |
 |-----------+-------+---------------------------|
@@ -550,35 +453,17 @@ In contemporary web pages, a *lot* of the work that runs the page is done by jav
 Javascript also has uses outside the browser -- the Atom editor is written in Javascript, for instance.
 
 ** Running Javascript
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 
 Because we use javascript mostly to manipulate web pages, it can be a little hard to run javascript programs.  Here are a couple of ways to try javascript form inside your browser:
 *** Run in Atom Editor
-:PROPERTIES:
-:EXPORT_FILE_NAME: run-in-atom-editor
-:END:
 This might be the easiest (though eventually you will need to run in a browser, e.g., if you want to practice manipulating DOM elements).  Install the [[https://atom.io/packages/script-runner][script-runner]] package, or one off the alternatives like [[https://atom.io/packages/script][run in atom]] or [[https://atom.io/packages/script][script]], and follow directions to run code directly in the editor.
 *** Console
-:PROPERTIES:
-:EXPORT_FILE_NAME: console
-:END:
 Both Chrome and Firefox have built-in "Javascript Consoles" accessible from the developer tools: ~Tools \rarr Web Developer \rarr Console~ or ~Menu \rarr More Tools \rarr Developer \rarr Console~
 *** Scratchpad
-:PROPERTIES:
-:EXPORT_FILE_NAME: scratchpad
-:END:
 The FF console is a little awkward to use for multi-line programming, so they have also provided a "Scratchpad" tool (~Shift-F4~), which I find helpful.
 *** Accessing the console
-:PROPERTIES:
-:EXPORT_FILE_NAME: accessing-the-console
-:END:
 When you run code in the browser, the easiest way to print something is with the ~console.log~ function. This prints text /to the console/ so you will have to open the console to see if your code is working.  
 ** some code to paste into your console or scratchpad
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 We can start by just fooling around with a little test code. 
 
 #+BEGIN_SRC javascript
@@ -650,9 +535,6 @@ We can start by just fooling around with a little test code.
 
 #+END_SRC
 ** COMMENT Pseudo-code
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 Sometimes when you're trying to figure out what to do, it cam be useful to write /pseudo-code:/ a skeletal outline of what you're trying to do that you then can translate into a real computer language:
 
 #+BEGIN_SRC text
@@ -671,9 +553,7 @@ Things I need to cover:
 - objects
 
 ** Variables
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
+
 You have all taken algebra, so you have all seen /variables/. Let's think of it this way: a variable is a box, into whic you can place a /value/.
 #+BEGIN_SRC js :results output code  replace :exports both
 var myString = "Hello, everyone";
@@ -694,9 +574,6 @@ In almost all programming languages, there are many variable "types"; javascript
 #+END_SRC
 
 ** Loops
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 #+BEGIN_SRC js :results output code  replace :exports both
  // here is a very basic "for loop":
   for (i=0; i<10; i++ ) {
@@ -726,9 +603,6 @@ In almost all programming languages, there are many variable "types"; javascript
   }
 #+END_SRC
 **** Flow Control
-:PROPERTIES:
-:EXPORT_FILE_NAME: flow-control
-:END:
 also if statements -- what will this print?
 #+BEGIN_SRC javascript
   var dimensions = 3;
@@ -743,10 +617,8 @@ also if statements -- what will this print?
 
 You'll learn a few more in the homework (notably ~switch/case~ and ~try/catch~); but these two do the two basic operations you need to understand: /repeat/ and /test/. 
 
+
 ** Accessing the DOM
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 Javascript uses something called the Document Object Model to understand the web page. As far as Javascript is concerned, the DOM is a big complex object, whose parts can be identified, manipulated, and used as input for complex functions.  Here's a relatively simple operation you can try in the Firefox scratchpad with a :
 #+BEGIN_SRC javascript
 var headings = document.getElementsByTagName("h1");
@@ -756,9 +628,6 @@ for (i=0; i<headings.length; i++) {console.log(headings[i].innerHTML);};
 #+END_SRC
 
 ** Objects
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 Objects deserve special mention, because they can be hideously complex.  
 
 #+BEGIN_SRC javascript
@@ -787,10 +656,8 @@ Objects deserve special mention, because they can be hideously complex.
   };
 #+END_SRC
 
+
 ** Functions
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 Functions in JS are defined in two ways: 
 
 As a declaration:
@@ -807,305 +674,45 @@ As an expression:
 #+END_SRC
 
 Functions in Javascript are "first-order objects" and can be used in mind-bending ways.  You don't need to worry about those for a little while yet.  
-* Lab 06: Introducing Github
-:PROPERTIES:
-:ID:       o2b:41e67f32-3800-4ede-981d-39b0caa6d498
-:POST_DATE: [2015-10-27 Tue 14:22]
-:PARENT:   10
-:POSTID:   188
-:EXPORT_FILE_NAME: lab-06-introducing-github
-:END:
-This lab is a very brief introduction to the [[https://git-scm.com/][Git revision control system]]. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
-
-I /strongly/ recommend you follow this lesson up by [[http://git-scm.com/book/en/v2][reading the Git book]], especially the first 2 or 3 chapters.  
-
-Most people love git once they start to use it, but it can be very frustrating and difficult at the beginning.  We'll go over it once, kind of quickly, then try a real-world example (checking out the next STA).
-** Pasta-Please
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] creted a simple github training exercise last week for some of my other students.  It was really fun, so let's check it out:
-1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
-2. Navigate to [[https://github.com/titaniumbones/pasta-please][my fork of the pasta-please repository]]
-3. Take a quick look at the [[https://github.com/titaniumbones/pasta-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
-4. Have you found where the Recipes live?
-5. Add a new recipe *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
-   - Be sure to name the file "some-recipe-name.md" so that everyone knows it's written in Markdown
-   - follow markdown syntax in writing your recipe
-   - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
-   [[./Images/github-add-file.png]]
-6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/pasta-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
-
-Wow, that was cool, right? And if we get through this fast enough, we can try working from the command line.  
-1. Choose an appropriate home for your repo and execute ~git clone https://github.com/your-user-name/pasta-please.git~
-2. Add your directory to atom as a "project directory: [[./Images/github-add-project.png]]
-3. Install the "git-plus" package in Atom
-4. Create a new file in the appropriate place.
-5. Choose menu item ~Packages \rarr Git Plus \rarr Add~, then ~Packages \rarr Git Plus \rarr Commit~, then ~Packages \rarr Git Plus \rarr Push~
-
-There's still tons to learn but this is a good start.  
-** Quick Start
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-- [[https://github.com/join][Sign Up for a Github Account]]
-- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install Git on your Laptop]] (or use clound9, below)
-- [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
-- [[https://help.github.com/articles/set-up-git/][configure your git information]]
-- [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be sure you can authenticate with github]]
-- Create a local copy of your new Maps repository by [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
-  ~git clone https://github.com/YOUR-USERNAME/maps-with-markdown~
-- Alternatively, [[https://c9.io/][set up an account with cloud9]], then make sure you are logged into your github Account and [[https://docs.c9.io/v1.0/docs/connected-services][connect Cloud9 to github]], then [[https://docs.c9.io/docs/setting-up-github-workspace][follow the instructions to set up a new workspace]]
-- Make some changes
-- Commit your changes with ~git commit -m "Useful Message Here" -a~
-- *optional* Push your changes to the web with ~git push~
-- *optional* [[https://help.github.com/articles/using-pull-requests/][Submit a pull request ]]
-
-** Resources
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-This web page is woefully incomplete! Here are some better resources: 
-- [[https://guides.github.com/activities/hello-world/][Hello World Guide on Githb]]
-- [[https://try.github.io/levels/1/challenges/1][Code School Git Intro]]
-- [[http://gitimmersion.com/index.html][Git Immersion]]
-- [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official Git Book]]
-
-** Install Git
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-If you're on Mac or Windows, the easiest way to start is to [[https://desktop.github.com/][install the Github Desktop client]].  This will also install the command-line tools you need for our tutorials, while giving you a very pretty GUI interface. You can [[https://css-tricks.com/first-impression-of-github-desktop/][learn more about the desktop client here]] (There's no Linux version, so I don't use this).  
-
-Once you've installed Git, let's execute our first command-line commands. In Mac, open Terminal. In Windows, open Powershell (it comes with Github Desktop).  Then type 
-#+BEGIN_SRC sh
-git config --global user.name "Your Name"
-#+END_SRC
-
-and then:
-#+BEGIN_SRC sh
-git config --global user.email youraddress@mail.utoronto.ca
-#+END_SRC
-
-This tells git some basic information about you, which it will use later on.  
-
-** Git "States"
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-*(feel free to skip this if you want to get to the action)*
-
-A git repository has three important "areas", each of which represents a different "state": 
-- Working Directory (Uncommitted)
-- Staging Area (Staged)
-- .git repository (Committed)
-
-When you look at the repository, all you see is the *working directory*.  So, if I want to start a new project, I create an empty directory, say, "Project".  Then I run the command:
-#+BEGIN_SRC sh
-git init
-#+END_SRC
-This command creates the invisible ~.git~ subdirectory, which is the real heart of the repo:  it stores all the information about previous and current states of the repository.  
-
-** Doing and Undoing
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Every time you commit your changes in git, git saves a snapshot of the working directory to the .git repository.  So, in principle, you can get back to any earlier working state of the repository, which is awesome.  
-
-- commit :: the most elementary operation in git is "committing"; this saves your working directory to the repository. Here are the steps
-  - make some changes
-  - commit them with ~git commit -a -m Message~
-- checkout :: To inspect some other state of the repository, you will need to "checkout" that state:
-     ~git checkout HEAD~3~ will checkout the version you were working on 3 saves ago, for instance.   
-
-** Branching
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Sometimes you want to be able to come back to a particular revision -- maybe you have everything working fine, and you want to be sure you can get back to the working state.  Maybe you create an "experiments branch" to work on; if it breaks, you can just switch back to the master branch with no harm done.  
-#+BEGIN_SRC sh
-git branch # show branches 
-git branch -c experiment # create the experiment branch
-git checkout experiment # chekout the experiment branch; then work on it for a while
-git commit -a -m "added a cool new feature, but it doesn't quite work" # commit your changes
-git checkout master # go back to the master branch, since it still lworks and you need to use it for something.  
-#+END_SRC
-** Push and Pull
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-When you're working together you may want to *pull* someone else's changes or *push* your own to the group.  
-#+BEGIN_SRC  sh
-git pull # get the most recent branch of your original repository
-git push # send all your commits on the current branch to the original repository
-#+END_SRC
-
-
-OK, that's what I've got for now.  Follow the excellent links near the top for more info.  Good luck!
-
-* Lab 05: Spatial History with Google Maps
-:PROPERTIES:
-:ID:       o2b:ef1c68be-0f41-4ad8-8798-84dbc7e73b7c
-:PARENT:   10
-:POST_DATE: [2016-10-25 Tue 09:28]
-:POSTID:   176
-:EXPORT_FILE_NAME: lab-05-spatial-history-with-google-maps
-:END:
-
-** Google Maps and Spatial History
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-
-Today in class we discussed /spatial history/, that is, history which focusses very strongly on the cultural history of space and place. There is nothing /intrinsically digital/ about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
-
-Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29][Spatial History Project]] and Ben Schmidt's [[http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html][Whaling Maps Project]] take substantial technical effort to achieve their effects; in general, lengthy training in the use of specialized GIS software is required. We have our own example in the [[http://decima.chass.utoronto.ca/][DECIMA Project]] run by Prof. Terpstra in our department.
-
-Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
-** Read this part! Follow the links! 
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Today's exercise also brings together some of what you've already learned in class, and brings back the .  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
-- working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which we've seen before
-  using [[https://github.com/titaniumbones/maps-with-markdown][a copy you can download and work with on your own]].
-
-The latter version also serves as an introduction to the [[https://github.com/][Github code-sharing platform]]. If you continue working with code-based academic projects, you will eventually want to learn more about git, which is an enormously powerful resource.  Our next assignment will also be made available on Github, so this is a chance to get a head start. If you want to work locally, I strongly recommend the [[https://atom.io/][Atom Code Editor]], which we've discussed  If you also install the atom-html-preview package, you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
-
-** What is a GIS?
-:PROPERTIES:
-:ID:       o2b:29ea8244-dab2-47a5-abae-7aac7fdcabca
-:POST_DATE: [2015-07-20 Mon 22:53]
-:POSTID:   291
-:BLOG:     dig
-:EXPORT_FILE_NAME:
-:END:
-GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses [[http://www.arcgis.com/features/][ArcGIS]], which is expensive and something of an industry standard, while many independent scholars use [[http://www.qgis.org/en/site/][QGIS]], which is free, open source, and not quite as powerful as Arc.
-
-The data in a GIS is all [[https://en.wikipedia.org/wiki/Geotagging][geotagged]], that is, assigned a set of geographical co-ordinates. This sounds simple but it is actually quite complex, since any co-ordinate system is a /simplified projection/ of real, disordered, 3-dimensional space.  Many of the frustrations of working with GIS comes from the difficulty of rendering (say) historical map images /commensurate/ with modern, satellite-derived maps.
-
-Within a GIS, information is generally accessed as a set of *layers*.  Data of specific types is /stratified/ in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
-http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
-
-** Controlling Google Maps
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Google Maps API/.
-
-#+BEGIN_ASIDE
-An *API* is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Google Maps API, our web pages can communicate directly with Google's servers to modify the map that Google is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  
-#+END_ASIDE 
-
-You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
-
-** Using Markdown
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-It was useful to learn HTML but it is a pain to generate it by hand. You do have to do some hand-coding of HTML for this exercise, because some of the work actually happens in Javascript; but the rest of it can be done in markdown, which I find much easier to write than HTML. 
-
-#+BEGIN_SRC txt
-# one or more '#' marks indicates a headline
-
-### this one is "level 3"
-
-*a single asterisk is emphasis, or italics*
-
-**two are strong, or bold**
-
-An empty line separates paragraphs.
-
-> blockquotes are made with angle brackets
-> like this
-
-#+END_SRC
-
-You can also mix HTML in with markdown and it will generally render perfectly well. This is important for us because we have to create some ~<div>~ elements, which markdown can't do for us.
-
-While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=0m20s][the satisfaction that good, honest work brings to the act of electronic communication]]. 
-
-** The Exercise
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Today you will create a web page containing a Google Map.  The Google Map will contain 1-3 markers related to one of the themes we wrote on the blackboard in our last class.  It will also contain a VERY brief essay that discusses the historical significance of the events represented by those markers, all the while paying homage to the project of spatial history: foregrounding the spatial elements of the historical narrative at hand.  You're not handing in your work, so don't fret too much.  Try to enjoy yourself; but also work hard, as this is good preparation for our next assignment, which wil lbe handed out in class on Thursday. 
-
-** The code
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-*** Javascript
-:PROPERTIES:
-:EXPORT_FILE_NAME: javascript
-:END:
-I have made the Javascript as simple as I can. There are more efficient and interesting ways to do this, but they are a little more complex. To make your markers -- and to re-centre your map -- you will need to modify the Javascript directly.
-*** HTML
-:PROPERTIES:
-:EXPORT_FILE_NAME: html
-:END:
-I /think/ the only modifications you will need to make to the HTML are within the special "textarea" block containing the markdown syntax.  The rest you can probably safely ignore, though you might learn something from looking at it.
-*** CSS
-:PROPERTIES:
-:EXPORT_FILE_NAME: css
-:END:
-The CSS for this exercise is deceptively simple.  We make only a few small changes tothe defaults, /but/ we are cheating here.  The [[http://strapdownjs.com/][strapdown]] javascript library which enables us to magically write using markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][bootstrap]] web development framework, which includes some sophisticated CSS.  Try changing the first ~textarea~'s ~theme=united~ to one of the other supported "swatches" -- I'm a fan of "cyborg" and "slate", myself.
-* Lab 10: Wordpress & Wordpress Themes
+* COMMENT Lab 06: Wordpress & Wordpress Themes
 :PROPERTIES:
 :ID:       o2b:00873ce5-90ca-4c97-aa2b-d58be4609329
 :PARENT:   10
 :POST_DATE: [2016-11-29 Tue 09:53]
 :POSTID:   239
-:EXPORT_FILE_NAME: lab-10-wordpress-&-wordpress-themes
+:EXPORT_FILE_NAME: lab-wordpress-&-wordpress-themes
 :END:
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
 ** Getting Started
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will have access to a completely breakable sandbox environment. Go wild!
 *k* Content Management Systems
 - a [[http://en.wikipedia.org/wiki/Web_content_management_system][CMS]] is a system that allows web pages, and structured sets of pages, to be constructed from existing documents and text/HTML entered by users who may have little knowledge of HTML or the other underlying technologies that display those pages. There are hundreds of CMS's in existence today, some Free/Open Source, others distributed under non-free licenses.  
 ** What is Wordpress?
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 Take a look at this chart:
 [[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
 
 - WP /assembles/ a page from many component parts. This is accomplished by a now-complex set of /scripts/ that offers instructions on what data to pull from the database and how to represent it on the page.
 - the underlying scripts are primarily written in the computer language [[http://php.net/manual/en/tutorial.php][PHP]], one of most popular languages for web "[[http://en.wikipedia.org/wiki/Server-side][server-side]]" programming. When a URL belonging to the site is requested, the Wordpress scripts activate, [[http://en.wikipedia.org/wiki/Parsing][parse]] the URL, and translate it into a set of instructions which are used to generate the HTML for the specific page we want.
 ** Posts and Pages
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 Wordpress is highly extensible through the [[http://codex.wordpress.org/Plugins][Plugin]] system. However, the default installation of Wordpress comes with two main types of content: 
 - [[http://codex.wordpress.org/Posts][Posts]] show the origins of Wordpress as a blogging engine -- they're a kind of content that's expected to be updated frequently, and to be of largely trnasitory interest; and
 - [[http://codex.wordpress.org/Pages][Pages]], which are relatively permanent pieces of content that help populate, for instance, your menu system.  
 You'll often see other kinds of content -- events, for instance, or links , biblographies, Facebook-style status updates; these are additional functionality that may or may not be available to you.
 ** Databases
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 - We won't go into this here, but the information you see in a post is distributed across many entries in a [[http://computer.howstuffworks.com/question599.htm][relational database]]. Knowing this can sometimes help you to track down errors that sneak into your website through admin carelessness.  
 ** Themes, Styles and Templates
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 - The look and feel of your website is also controlled by PHP files, often with help from files written in other languages, especially [[http://computer.howstuffworks.com/question599.htm][CSS]] and [[http://www.w3schools.com/js/][Javascript]]. Sometimes the look of your website will be affected by [[http://codex.wordpress.org/Plugins][Plugins]], but most of what you see is related instead to your [[http://codex.wordpress.org/Themes][Theme]].
 - A *Theme* is a collection of files -- at minimum two, but often many more -- from which wordpress takes instructions when presenting the page.  There are thousands of themes in the [[http://wordpress.org/extend/themes/][official directory]] and thousands more for sale or download outside it.
 - The easiest way to install a new theme is to *download it* using the Wordpress Admin interface.  Sometimes this won't work -- if you're writing your own theme, for instance!  I'm hoping we will have a chance to write our own [[http://codex.wordpress.org/Child_Themes][Child Themes]] later on, so if you want to do that, drop me a line and I'll hook you up with [[http://en.wikipedia.org/wiki/File_Transfer_Protocol][FTP]] access to the server.  
 
 *** Themes are collections of files
 :PROPERTIES:
-:EXPORT_FILE_NAME: themes-are-collections-of-files
 :END:
 - they live in your wordpress install:
 [[file:~/HackingHistory/Images/wp-file-structure.jpg]]
 *** Themes are written primarily in PHP
 :PROPERTIES:
-:EXPORT_FILE_NAME: themes-are-written-primarily-in-php
 :END:
 PHP is a programming language developed specifically for writing web pages.  Most PHP files consist of HTML and PHP intermixed with each other. This can be a little confusing, but you will get used to it. We will puzzle through the PHP syntax together, but you might want to try the [[http://www.codecademy.com/en/tracks/php][Codeacademy PHP track]] as an introduction to the language basics.  Knowing just a little will make your work a lot easier next semester.  
 
@@ -1115,13 +722,11 @@ PHP is a programming language developed specifically for writing web pages.  Mos
 
 *** Themes tell wordpress how to display your content
 :PROPERTIES:
-:EXPORT_FILE_NAME: themes-tell-wordpress-how-to-display-your-content
 :END:
 [[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
 
 *** Understanding the Loop
 :PROPERTIES:
-:EXPORT_FILE_NAME: understanding-the-loop
 :END:
 One of the first things you will encounter in a Wordpress theme is "the loop", which usually looks like this:
 #+BEGIN_SRC 
@@ -1185,7 +790,6 @@ Let's go over each of these functions in class.
 
 *** Files in your theme
 :PROPERTIES:
-:EXPORT_FILE_NAME: files-in-your-theme
 :END:
 - *style.css:*  your stylesheet; you need this
 - *functions.php:* you're going to need this too
@@ -1196,7 +800,6 @@ Let's go over each of these functions in class.
 
 *** Template hierarchy
 :PROPERTIES:
-:EXPORT_FILE_NAME: template-hierarchy
 :END:
 remember this:
 
@@ -1210,7 +813,6 @@ When accessing a piece of data from the database, Wordpress will check in sequen
 
 *** Plugins and themes
 :PROPERTIES:
-:EXPORT_FILE_NAME: plugins-and-themes
 :END:
 - Themes control appearance
 - plugins add functionality
@@ -1219,7 +821,6 @@ When accessing a piece of data from the database, Wordpress will check in sequen
 
 *** Editing Your Theme
 :PROPERTIES:
-:EXPORT_FILE_NAME: editing-your-theme
 :END:
 - I recommend editing directly from Atom. We'll discuss in class how to do it. However, if that doesn't work, you can try one of the options below:
   - install one of several Wordpress plugins that make theme editing a litlte easier:
@@ -1231,7 +832,6 @@ When accessing a piece of data from the database, Wordpress will check in sequen
 - try editing the css enough so that you can get something un-hideous.
 **** Headers
 :PROPERTIES:
-:EXPORT_FILE_NAME: headers
 :END:
 Right now there is no custom header support in our theme!  To use a header image,
 add this code to functions.php:
@@ -1249,7 +849,6 @@ And put this somewhere in header.php:
 #+END_SRC 
 *** Learn much, much more
 :PROPERTIES:
-:EXPORT_FILE_NAME: learn-much,-much-more
 :END:
 There is a huge amount of information online at the [[http://codex.wordpress.org/Stepping_into_Templates][Wordpress Codex]].  That last link is a good starting point, and so is the [[http://codex.wordpress.org/Theme_Development][Theme Development Page]].  There is lots and lots and lots to learn here...  
 
@@ -1257,27 +856,20 @@ There is a huge amount of information online at the [[http://codex.wordpress.org
 
 
 ** COMMENT Assignment: build a Wordpress site
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
 *** Commemorate an Imaginary Event
 :PROPERTIES:
-:EXPORT_FILE_NAME: commemorate-an-imaginary-event
 :END:
 You are tasked with building a website that explores... something that hasn't happened. Invent an event or historical phenomenon (feel free to write from the future if you like), and create a web page that's suited to its exploration.
 *** Your Site already exists
 :PROPERTIES:
-:EXPORT_FILE_NAME: your-site-already-exists
 :END:
 Navigate to http://yourfirstname.hackinghistory.ca.  Ta-da! there's a wordpress site ready and waiting for you.  Configure it and off we go.
 *** Think about Site Structure
 :PROPERTIES:
-:EXPORT_FILE_NAME: think-about-site-structure
 :END:
 You will probably want to create a small hierarchy of pages that describe your event.  What are the important facts about this event? And how should they be organized? Where will you introduce visitors to the event and to the purpose of the site?  How will users participate in the life of the website?  In one week, you won't be able to build Wikipedia or facebook; you might need to create placeholder pages that just explain what they /ought/ to do.
 *** Style your Site
 :PROPERTIES:
-:EXPORT_FILE_NAME: style-your-site
 :END:
 How do you want this site to look? How many columns? What Images, and where?  Explore the installed themes or installl your own.  We'll move on to writing our own themes soon.  
 
@@ -1286,23 +878,157 @@ Have fun!!
 
 
 #+//home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png http://2012.hackinghistory.ca/wp-content/uploads/2012/09/wpid-data_and_metadata_on_the_web.pn
-* Lab 08: Theming with Wordpress
+* COMMENT Lab 07: Wordpress Templates
+:PROPERTIES:
+:ID:       o2b:e80d81e3-8725-4427-a8bf-cb3d39419c25
+:POST_DATE: [2017-01-17 Tue 11:04]
+:POSTID:   257
+:END:
+We've talked about Wordpress themes [[/lab-05-theming-with-wordpress/][before]]. Today we go a little more in depth into wordpress templates, which are the heart of any theme.  
+
+[[http://codex.wordpress.org/Stepping_Into_Templates][Stepping Into Templates]] is an excellent introduction to Wordpress templates.  I advise you read it, and we will do some of the exercises in class.  More advanced documentation can be found [[http://codex.wordpress.org/Theme_Development#Template_Files][in the Theme Development page]], and also [[http://codex.wordpress.org/Blog_Design_and_Layout][elsewhere on the Wordpress codex]].  I strongly advise you to use this powerful resource.  
+
+One way to think about template files is as [[http://en.wikipedia.org/wiki/Blackboxing][black boxes]], which need to be "opened up" when you have a problem, but otherwise stay safely closed behind the scenes.  When you open the template up, each piece of it is also a black box:  these pieces can either be ignored, or opened up themselves.  Your main job will be to figure to /which boxes you need to open/, and /how to find out more about each piece/.  
+** Templates
+Finally, just a note on how pages are generated in wordpress out of templates.  Quickly read [[http://codex.wordpress.org/Stepping_Into_Templates][this page]] on the wordpress website.  Can you tell where the template divisions are in a page from our site?  Try inspecting the sourcecode or (nuch better!) uing the [[https://developer.mozilla.org/en-US/docs/Tools][Developer Tools]]in your browser.
+
+** ACTION [#B] Templates are PHP
+Templates are PHP documents.  We have talked a /little tiny bit/ about PHP, but not much.  It is a language like other languages, but designed for the web.  As a result, php files have a strange structure:  they mix pieces of PHP code with pieces of plain HTML markup.  So, you will see things like this:
+
+#+BEGIN_VERSE
+    <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?></a></figure>
+#+END_VERSE
+
+Notice that this is a piece of plain-old HTML, except for a little piece of php embedded in it:
+#+BEGIN_VERSE
+<?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?>
+#+END_VERSE
+All PHP code is contained in tags that start with ~<?php~ and end with ~?>~.  This way, you can write your markup in HTML, and embed /dynamic content/ using PHP.
+
+*** Exercise
+:PROPERTIES:
+:END:
+Create a new template file in the main directory of your theme (grunterie).  Call it page-YOURNAME.php
+
+** ACTION [#B] COMMENT Identifying your Templates                             :tag1:
+Every custom template you write should have a name, so that it can be used in the Wordpress editor interface (and for other reasons as well.) The Template Name is stored as a special comment at the very beginning of the template file.  It will look like this: 
+
+#+BEGIN_VERSE
+<?php
+/*
+Template Name: super Cool Design For Your Awesome Content!
+*/
+?>
+#+END_VERSE
+
+*** Exercise
+:PROPERTIES:
+:END:
+Add this text to your template
+
+** Adding the Basic Template Parts
+Every page has three main areas:  The header, the footer, and the content.
+- *the header* contains /both/ the ~<head>~ element -- with all the included CSS and javascript, metadata, etc. -- and the opening ~<body>~ tag, as well as the /header/ that you see at the top of every page.
+- *the footer* closes up the ~</body>~ and ~</html>~ tags, but before doing so, adds everything you want to put at the bottom of every page -- the copyright notice, for instance, and in some cases navigation elelemtns or widgets.
+- *the content* contains everything else -- all the complex layout that comes in between.  For instance, it contains both the *sidebar* and the *Wordpress Loop*.  
+
+To see how it works, Let's make an ultra-simple template.
+
+*** Exercise
+:PROPERTIES:
+:END:
+
+Add some structure to your template by adding these lines:
+
+#+BEGIN_VERSE
+<?php /* first get the header */ ?>
+<?php  get_header(); ?>
+
+<?php /* then get the sidebar */ ?>
+<?php get_sidebar(); ?>
+
+<?php /* finally get the footer */ ?>		
+<?php get_footer(); ?>
+
+#+END_VERSE
+
+Now, create a new page on your website (+ button in the interface) and assign in your template file. Make sure you type a title and some content.  What does it look like when you "view page"?
+
+** Adding the Loop
+You will only get your content to display by adding the so-called "loop". Most of this is pretty dark magic (and some developers really hate Wordpress because of this design!).  It is, in fact, a "loop" in php -- a ~while~ loop that repeats for as many posts as are intended to be displayed on the page (for us, it is almost always only one page, except when we build searches).
+
+*** Exercise
+:PROPERTIES:
+:END:
+Add this code to your template file:
+#+BEGIN_VERSE
+<!-- Row for main content area -->
+<div class="small-12 large-12 columns" id="content" role="main">
+    <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?></a></figure>
+</div>
+
+	<?php /* Start 'the loop', the mysterious wordpress magic */ ?>
+	<?php while (have_posts()) : the_post(); ?>
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+			<header>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php reverie_entry_meta(); ?>
+			</header>
+
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+                        <?php $featured_img = wp_get_attachment_image_src ( get_post_thumbnail_id ( $post->ID ), 'single-post-thumbnail' );  ?>
+                        <?php if ($featured_img) { ?>
+                            <div class="lightbox-img featured-img-wrap">
+                              <a href="<?php echo $featured_img[0]; ?>" rel="lightbox"><img src="<?php echo $featured_img[2]; ?>" /></a></div>
+                        <?php } ?>
+			<footer>
+				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
+				<p><?php the_tags(); ?></p>
+			</footer>
+			<?php comments_template(); ?>
+		</article>
+	<?php endwhile; // End the loop ?>
+
+
+#+END_VERSE
+
+This is the main "loop" that grunterie uses for pages.  Where should it go in your file? And what happens when you use it? 
+
+** Template Tags
+So, templates are combination of /static/ HTML layout, and /dynamic/ PHP-generated content.  The PHP functions we use in templates are called ~template tags~.  There are hundreds of them, and most are [[http://codex.wordpress.org/Template_Tags][listed here]].  We have already seen three of them in some detail:  ~get_header()~, ~get_footer()~, and ~get_sidebar()~.  What do they do, and how do you think they work?  
+
+Three is one more important tag in the same category: ~get_template_part('partA', 'partB')~.  The syntax is described in detail in the Codex -- can you find it? Can you read it?  
+
+Every template tag takes ~parameters~ -- sometimes optional, sometimes required.  THere is a lot more info [[http://codex.wordpress.org/Stepping_Into_Template_Tags][here]].  It's worth reading.  
+
+*** Exercise
+:PROPERTIES:
+:END:
+Find the template tags inside the Loop.  change some of them to display other information!
+
+** Designing Templates
+You should be now have ideas for your layouts.  We will spend the rest of class implementing them; I will continue to update this page with more details as it becomes clear what you need!
+
+
+
+-----
+* COMMENT Lab 07: Theming with Wordpress
 :PROPERTIES:
 :ID:       o2b:771ddc0e-fbdc-45cf-be28-54113248bc2e
 :POST_DATE: [2015-09-14 Mon 16:08]
 :POSTID:   105
 :PARENT:   10
-:EXPORT_FILE_NAME: lab-08-theming-with-wordpress
+:EXPORT_FILE_NAME: lab-07-theming-with-wordpress
 :END:
 ** Themes are collections of files
 :PROPERTIES:
-:EXPORT_FILE_NAME:
 :END:
 - they live in your wordpress install:
 [[file:~/HackingHistory/Images/wp-file-structure.jpg]]
 ** Themes are written primarily in PHP
 :PROPERTIES:
-:EXPORT_FILE_NAME:
 :END:
 PHP is a programming language developed specifically for writing web pages.  Most PHP files consist of HTML and PHP intermixed with each other. This can be a little confusing, but you will get used to it. We will puzzle through the PHP syntax together, but you might want to try the [[http://www.codecademy.com/en/tracks/php][Codeacademy PHP track]] as an introduction to the language basics.  Knowing just a little will make your work a lot easier next semester.  
 
@@ -1312,13 +1038,11 @@ PHP is a programming language developed specifically for writing web pages.  Mos
 
 ** Themes tell wordpress how to display your content
 :PROPERTIES:
-:EXPORT_FILE_NAME:
 :END:
 [[http://pengbos.com/wp-content/uploads/2010/11/wp.jpg]]
 
 ** Understanding the Loop
 :PROPERTIES:
-:EXPORT_FILE_NAME:
 :END:
 One of the first things you will encounter in a Wordpress theme is "the loop", which usually looks like this:
 #+BEGIN_SRC php
@@ -1416,7 +1140,6 @@ When accessing a piece of data from the database, Wordpress will check in sequen
 
 ** Editing Your Theme
 :PROPERTIES:
-:EXPORT_FILE_NAME:
 :END:
 - I recommend editing directly from Atom. We'll discuss in class how to do it. However, if that doesn't work, you can try one of the options below:
   - install the [[http://wordpress.org/plugins/wpide/][wp-ide]] plugin to enable you to do syntax-highlighted code editing in your browser.  If the interface feels a little awkward try [[http://wordpress.org/plugins/better-file-editor/][better file editor]] instead -- it may be sufficient for our needs (I haven't experimented with it yet).
@@ -1425,7 +1148,6 @@ When accessing a piece of data from the database, Wordpress will check in sequen
 - try editing the css enough so that you can get something un-hideous.
 *** Headers
 :PROPERTIES:
-:EXPORT_FILE_NAME: headers
 :END:
 Right now there is no custom header support in our theme!  To use a header image,
 add this code to functions.php:
@@ -1451,12 +1173,129 @@ There is a huge amount of information online at the [[http://codex.wordpress.org
 
 # HackingHistory/Images/Template_Hierarchy.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-Template_Hierarchy.png
 
-
-* ACTION Lab 09: Art of the Interview
+* COMMENT Lab 08: Spatial History with Google Maps
 :PROPERTIES:
-:EXPORT_FILE_NAME: lab-09-art-of-the-interview
+:ID:       o2b:ef1c68be-0f41-4ad8-8798-84dbc7e73b7c
+:PARENT:   10
+:POST_DATE: [2016-10-25 Tue 09:28]
+:POSTID:   176
+:EXPORT_FILE_NAME: lab-spatial-history-with-google-maps
 :END:
-* Lab 11: From CSS to SASS!
+
+** Google Maps and Spatial History
+
+Today in class we discussed /spatial history/, that is, history which focusses very strongly on the cultural history of space and place. There is nothing /intrinsically digital/ about spatial history, nor is it necessarily qunatitative in nature; but the incredible development of Geographical Information Systems (GIS) in the last 15 years has made the use of interactive digital maps an attractive target for historians.
+
+Sophisticated works such as the [[http://web.stanford.edu/group/spatialhistory/cgi-bin/site/pub.php?id=29][Spatial History Project]] and Ben Schmidt's [[http://sappingattention.blogspot.co.uk/2012/10/data-narratives-and-structural.html][Whaling Maps Project]] take substantial technical effort to achieve their effects; in general, lengthy training in the use of specialized GIS software is required. We have our own example in the [[http://decima.chass.utoronto.ca/][DECIMA Project]] run by Prof. Terpstra in our department.
+
+Our approach will be decidedly more lightweight. In class today, we will build a very simple "Geographical Information System" around a Google Map. Google Maps are, in fact, highly sophisticated GIS's, with powerful tools for accessing various layers of information; but in order to work with them, we will need to use a very small amount of Javascript.
+** Read this part! Follow the links! 
+Today's exercise also brings together some of what you've already learned in class, and brings back the .  We will be working in the /[[https://help.github.com/articles/markdown-basics/][markdown]]/ syntax ([[https://help.github.com/articles/github-flavored-markdown/][github flavour]]), and you will also be able to choose between
+- working in the [[http://jsbin.com/jusena/10/edit?html,js,output][JSBin Online Editor]], which we've seen before
+  using [[https://github.com/titaniumbones/maps-with-markdown][a copy you can download and work with on your own]].
+
+The latter version also serves as an introduction to the [[https://github.com/][Github code-sharing platform]]. If you continue working with code-based academic projects, you will eventually want to learn more about git, which is an enormously powerful resource.  Our next assignment will also be made available on Github, so this is a chance to get a head start. If you want to work locally, I strongly recommend the [[https://atom.io/][Atom Code Editor]], which we've discussed  If you also install the atom-html-preview package, you will get live updates of your code in a second tab, almost like in jsbin.  See the [[https://atom.io/docs/v1.0.2/using-atom-atom-packages][documentation]] for more info.    
+
+** What is a GIS?
+GIS is just a name for any system that tries to capture, manipulate, and represent geographical data. There are many GIS tools; the history department uses [[http://www.arcgis.com/features/][ArcGIS]], which is expensive and something of an industry standard, while many independent scholars use [[http://www.qgis.org/en/site/][QGIS]], which is free, open source, and not quite as powerful as Arc.
+
+The data in a GIS is all [[https://en.wikipedia.org/wiki/Geotagging][geotagged]], that is, assigned a set of geographical co-ordinates. This sounds simple but it is actually quite complex, since any co-ordinate system is a /simplified projection/ of real, disordered, 3-dimensional space.  Many of the frustrations of working with GIS comes from the difficulty of rendering (say) historical map images /commensurate/ with modern, satellite-derived maps.
+
+Within a GIS, information is generally accessed as a set of *layers*.  Data of specific types is /stratified/ in layers, in much the same way that one creates image layers in photoshop. This image gives a typical example.  Note that the creation of layers is itself an intellectual decision, relying on judgments about the relationships between individual bits of data.
+http://iolandarch.com/wp-content/uploads/2014/09/overlay-analysis.jpg
+
+** Controlling Google Maps
+
+For our exercise today, we are really only interested in two layers:  the "basemap", that is, the street or satellite map most of us use on an almost-daily basis; and the /marker layer/, in which all of the little pins on a map are stored.  We access these layers, and create those markers, with Javascript, by making /calls/ to the /Google Maps API/.
+
+#+BEGIN_ASIDE
+An *API* is an "Application Programming Interface": a communications channel that lets programs talk to each other.  By "loading" the Google Maps API, our web pages can communicate directly with Google's servers to modify the map that Google is presenting to us.  In fact, most of the interesting stuff happening on the web these days happens via these machine-to-machine communication channels.  
+#+END_ASIDE 
+
+You don't have to understand the Google Maps API very thoroughly to be able to do this assignment.  The code comes pre-written; all you have to do is hack at it till it does what you want it to.  
+
+** Using Markdown
+
+It was useful to learn HTML but it is a pain to generate it by hand. You do have to do some hand-coding of HTML for this exercise, because some of the work actually happens in Javascript; but the rest of it can be done in markdown, which I find much easier to write than HTML. 
+
+#+BEGIN_SRC markdown
+# one or more '#' marks indicates a headline
+
+### this one is "level 3"
+
+*a single asterisk is emphasis, or italics*. _underscores usually work too_
+
+**two are strong, or bold** __in most markdown flavours underscores work with bold, too, which can be confusing__ 
+
+An empty line separates paragraphs.
+
+> blockquotes are made with angle brackets
+> like this
+
+#+END_SRC
+
+You can also mix HTML in with markdown and it will generally render perfectly well. This is important for us because we have to create some =<div>= elements, which markdown can't do for us.
+
+While you're coding, reflect on [[https://www.youtube.com/watch?v=Q8gGsuWouDE&t=0m20s][the satisfaction that good, honest work brings to the act of electronic communication]]. 
+
+** The Exercise
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+Today you will create a web page containing a Google Map.  The Google Map will contain 1-3 markers related to one of the themes we wrote on the blackboard in our last class.  It will also contain a VERY brief essay that discusses the historical significance of the events represented by those markers, all the while paying homage to the project of spatial history: foregrounding the spatial elements of the historical narrative at hand.  You're not handing in your work, so don't fret too much.  Try to enjoy yourself; but also work hard, as this is good preparation for our next assignment, which will be handed out in class on Thursday. 
+
+** The code
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+*** Javascript
+:PROPERTIES:
+I have made the Javascript as simple as I can. There are more efficient and interesting ways to do this, but they are a little more complex. To make your markers -- and to re-centre your map -- you will need to modify the Javascript directly.
+*** HTML
+:PROPERTIES:
+I /think/ the only modifications you will need to make to the HTML are within the special "textarea" block containing the markdown syntax.  The rest you can probably safely ignore, though you might learn something from looking at it.
+*** CSS
+:PROPERTIES:
+markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][bootstrap]] web development framework, which includes some sophisticated CSS.  Try changing the first ~textarea~'s ~theme=united~ to one of the other supported "swatches" -- I'm a fan of "cyborg" and "slate", myself.
+
+* COMMENT Lab 09: Personas and Wireframes 
+:PROPERTIES:
+:END:
+Today we are making an imaginary website.  Here's our brief, noting please that it is /imaginary/.  
+
+** Commemorating Vimy Ridge
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+
+With the 100th anniversary of World War I now upon us, the City of Toronto Archives wants to commemorate the [[http://en.wikipedia.org/wiki/Battle_of_Vimy_Ridge][Battle of Vimy Ridge]], but is not sure how to do it.  They have a large collection of letters to and from the Front, as well as access to the usual sources that could provide historical context.  The archive serves the general public but also has important educational functions related to school programs.  We assume for purposes of this exercise that their web department is in some kind of disarray (recent cuts have resulted in everyone being fired, perhaps?) and they come to us with wide-open questions about how to proceed.  They ask us to propose a website that will somehow engage a broad public while also being educational.  What will it look like?  Who will visit the site, and why? Should there be integration with real-world materials?  What can you do to make this a fantastic experience for everyone?  
+
+** Groups
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+We'll divide up into groups of 3 for this exercise.
+
+** Personas
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+Use the provided persona sheets to come up with 3 idealized user personas for potential site users.
+
+** Sitemap/Site description
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+In 1 paragraph, explain the purpose of the site, and draw a rough map that outlines the kind of content you provide.
+
+** Wireframes 
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+Use the provided wireframe sketching paper (and your own looseleaf paper) to sketch out each type of page that the site will serve up.  
+
+That's it!
+* Lab 10: From CSS to SASS!
 :PROPERTIES:
 :ID:       o2b:a40eea2b-0cdf-46a1-b4cd-78674099991a
 :PARENT:   10
@@ -1516,7 +1355,6 @@ How does it do this, you might ask?  Well, let's see.
 
 *** Variables
 :PROPERTIES:
-:EXPORT_FILE_NAME: variables
 :END:
 By now you should be getting a sense of how fantastic variables are.  PHP templates would be useless without them -- they let wordpress insert different text and HTMl content in the various slots that you've provided in your layout.  For instance, ~$post->title~ is a variable (actually, it's an =object property=, but let's not be too formal), that retrieves... the Title!  Almost all programming languages use variables, but CSS doesn't.  However:  SASS does!  
 
@@ -1553,7 +1391,6 @@ check it out!  Now whenever you want two elements to be the same color, you can 
 
 *** Functions
 :PROPERTIES:
-:EXPORT_FILE_NAME: functions
 :END:
 You can also manipulate values using functions.  You can write your own functions (complicated!) or use the built-in functions SASS provides.  Here's an example.  
 #+BEGIN_SRC scss
@@ -1595,8 +1432,6 @@ You can see in our example that I make the header text color by lightening the h
 
 *** Loops and Conditionals
 :PROPERTIES:
-:EXPORT_FILE_NAME: loops-and-conditionals
-:END:
 SASS contains all the basic programming syntax you want from a simple language:  conditionals, loops, and a few other tricks.  So for instance, you can try: 
 
 #+BEGIN_SRC scss
@@ -1632,7 +1467,6 @@ This piece of code will create a bunch of CSS stanzas, like this:
 
 *** Mixins 
 :PROPERTIES:
-:EXPORT_FILE_NAME: mixins
 :END:
 It gets even crazier!  You can define "mixins" that you can add to whatever classes you want.  These mixins can contain complicated functions or whatever.  Here's an example:  
 
@@ -1669,7 +1503,6 @@ This generates the code:
 #+END_SRC
 *** Excited yet?
 :PROPERTIES:
-:EXPORT_FILE_NAME: excited-yet?
 :END:
 
 You Should be.  There is still plenty to learn, but we'll stop here for now.  check out the SASS website for more info.
@@ -1704,7 +1537,8 @@ SASS is just the tip of the iceberg for Foundation.  Next week we will check out
 :EXPORT_FILE_NAME:
 :END:
 - text, background colors; grid sizes; div types; font sizes; 
-* Lab 11: SASS and The Foundation Framework
+* COMMENT Lab 11: Work Session
+* COMMENT Lab 11: SASS and The Foundation Framework
 :PROPERTIES:
 :ID:       o2b:88d214db-06b7-4ba2-970a-a4f3e8c18499
 :POST_DATE: [2016-01-12 Tue 20:19]
@@ -1789,170 +1623,7 @@ Foundation is the engine inside the Wordpress themes you'll be using for your cl
 
 
 # HackingHistory/Images/feature-grid-1.png http://2014.hackinghistory.ca/wp-content/uploads/2014/10/wpid-feature-grid-1.png
-* ACTION [#B] COMMENT Lab 12: Wordpress Templates
-:PROPERTIES:
-:ID:       o2b:e80d81e3-8725-4427-a8bf-cb3d39419c25
-:POST_DATE: [2017-01-17 Tue 11:04]
-:POSTID:   257
-:EXPORT_FILE_NAME: lab-12-wordpress-templates
-:END:
-We've talked about Wordpress themes [[/lab-05-theming-with-wordpress/][before]]. Today we go a little more in depth into wordpress templates, which are the heart of any theme.  
-
-[[http://codex.wordpress.org/Stepping_Into_Templates][Stepping Into Templates]] is an excellent introduction to Wordpress templates.  I advise you read it, and we will do some of the exercises in class.  More advanced documentation can be found [[http://codex.wordpress.org/Theme_Development#Template_Files][in the Theme Development page]], and also [[http://codex.wordpress.org/Blog_Design_and_Layout][elsewhere on the Wordpress codex]].  I strongly advise you to use this powerful resource.  
-
-One way to think about template files is as [[http://en.wikipedia.org/wiki/Blackboxing][black boxes]], which need to be "opened up" when you have a problem, but otherwise stay safely closed behind the scenes.  When you open the template up, each piece of it is also a black box:  these pieces can either be ignored, or opened up themselves.  Your main job will be to figure to /which boxes you need to open/, and /how to find out more about each piece/.  
-** Templates
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Finally, just a note on how pages are generated in wordpress out of templates.  Quickly read [[http://codex.wordpress.org/Stepping_Into_Templates][this page]] on the wordpress website.  Can you tell where the template divisions are in a page from our site?  Try inspecting the sourcecode or (nuch better!) uing the [[https://developer.mozilla.org/en-US/docs/Tools][Developer Tools]]in your browser.
-
-** ACTION [#B] Templates are PHP
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Templates are PHP documents.  We have talked a /little tiny bit/ about PHP, but not much.  It is a language like other languages, but designed for the web.  As a result, php files have a strange structure:  they mix pieces of PHP code with pieces of plain HTML markup.  So, you will see things like this:
-
-#+BEGIN_VERSE
-    <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?></a></figure>
-#+END_VERSE
-
-Notice that this is a piece of plain-old HTML, except for a little piece of php embedded in it:
-#+BEGIN_VERSE
-<?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?>
-#+END_VERSE
-All PHP code is contained in tags that start with ~<?php~ and end with ~?>~.  This way, you can write your markup in HTML, and embed /dynamic content/ using PHP.
-
-*** Exercise
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise
-:END:
-Create a new template file in the main directory of your theme (grunterie).  Call it page-YOURNAME.php
-
-** ACTION [#B] COMMENT Identifying your Templates                             :tag1:
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Every custom template you write should have a name, so that it can be used in the Wordpress editor interface (and for other reasons as well.) The Template Name is stored as a special comment at the very beginning of the template file.  It will look like this: 
-
-#+BEGIN_VERSE
-<?php
-/*
-Template Name: super Cool Design For Your Awesome Content!
-*/
-?>
-#+END_VERSE
-
-*** Exercise
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise
-:END:
-Add this text to your template
-
-** Adding the Basic Template Parts
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Every page has three main areas:  The header, the footer, and the content.
-- *the header* contains /both/ the ~<head>~ element -- with all the included CSS and javascript, metadata, etc. -- and the opening ~<body>~ tag, as well as the /header/ that you see at the top of every page.
-- *the footer* closes up the ~</body>~ and ~</html>~ tags, but before doing so, adds everything you want to put at the bottom of every page -- the copyright notice, for instance, and in some cases navigation elelemtns or widgets.
-- *the content* contains everything else -- all the complex layout that comes in between.  For instance, it contains both the *sidebar* and the *Wordpress Loop*.  
-
-To see how it works, Let's make an ultra-simple template.
-
-*** Exercise
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise
-:END:
-
-Add some structure to your template by adding these lines:
-
-#+BEGIN_VERSE
-<?php /* first get the header */ ?>
-<?php  get_header(); ?>
-
-<?php /* then get the sidebar */ ?>
-<?php get_sidebar(); ?>
-
-<?php /* finally get the footer */ ?>		
-<?php get_footer(); ?>
-
-#+END_VERSE
-
-Now, create a new page on your website (+ button in the interface) and assign in your template file. Make sure you type a title and some content.  What does it look like when you "view page"?
-
-** Adding the Loop
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-You will only get your content to display by adding the so-called "loop". Most of this is pretty dark magic (and some developers really hate Wordpress because of this design!).  It is, in fact, a "loop" in php -- a ~while~ loop that repeats for as many posts as are intended to be displayed on the page (for us, it is almost always only one page, except when we build searches).
-
-*** Exercise
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise
-:END:
-Add this code to your template file:
-#+BEGIN_VERSE
-<!-- Row for main content area -->
-<div class="small-12 large-12 columns" id="content" role="main">
-    <figure><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) {the_post_thumbnail('medium'); } ?></a></figure>
-</div>
-
-	<?php /* Start 'the loop', the mysterious wordpress magic */ ?>
-	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php reverie_entry_meta(); ?>
-			</header>
-
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
-                        <?php $featured_img = wp_get_attachment_image_src ( get_post_thumbnail_id ( $post->ID ), 'single-post-thumbnail' );  ?>
-                        <?php if ($featured_img) { ?>
-                            <div class="lightbox-img featured-img-wrap">
-                              <a href="<?php echo $featured_img[0]; ?>" rel="lightbox"><img src="<?php echo $featured_img[2]; ?>" /></a></div>
-                        <?php } ?>
-			<footer>
-				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
-				<p><?php the_tags(); ?></p>
-			</footer>
-			<?php comments_template(); ?>
-		</article>
-	<?php endwhile; // End the loop ?>
-
-
-#+END_VERSE
-
-This is the main "loop" that grunterie uses for pages.  Where should it go in your file? And what happens when you use it? 
-
-** Template Tags
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-So, templates are combination of /static/ HTML layout, and /dynamic/ PHP-generated content.  The PHP functions we use in templates are called ~template tags~.  There are hundreds of them, and most are [[http://codex.wordpress.org/Template_Tags][listed here]].  We have already seen three of them in some detail:  ~get_header()~, ~get_footer()~, and ~get_sidebar()~.  What do they do, and how do you think they work?  
-
-Three is one more important tag in the same category: ~get_template_part('partA', 'partB')~.  The syntax is described in detail in the Codex -- can you find it? Can you read it?  
-
-Every template tag takes ~parameters~ -- sometimes optional, sometimes required.  THere is a lot more info [[http://codex.wordpress.org/Stepping_Into_Template_Tags][here]].  It's worth reading.  
-
-*** Exercise
-:PROPERTIES:
-:EXPORT_FILE_NAME: exercise
-:END:
-Find the template tags inside the Loop.  change some of them to display other information!
-
-** Designing Templates
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-You should be now have ideas for your layouts.  We will spend the rest of class implementing them; I will continue to update this page with more details as it becomes clear what you need!
-
-
-
------
-* Notes on Git and Version Control for Wordpress Theming
+* COMMENT Notes on Git and Version Control for Wordpress Theming
 :PROPERTIES:
 :ID:       o2b:51a50b53-4de6-4921-bf1f-f7f312abdee4
 :POST_DATE: [2016-01-12 Tue 18:56]
@@ -2112,6 +1783,141 @@ To make git really really work on Windows, you have to set up the whole toolchai
 http://guides.beanstalkapp.com/version-control/git-on-windows.html
 
 That's enough git-fu for today. More in the coming weeks!
+* COMMENT Lab 06: Introducing Github
+:PROPERTIES:
+:ID:       o2b:41e67f32-3800-4ede-981d-39b0caa6d498
+:POST_DATE: [2015-10-27 Tue 14:22]
+:PARENT:   10
+:POSTID:   188
+:EXPORT_FILE_NAME: lab-06-introducing-github
+:END:
+In this lab we come back to the [[https://git-scm.com/][Git revision control system]], which we introduced in the first class. Git is the most powerful and widely-used [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][version control]] system in the world; it is primarily used by software developers but is enormously useful for any text-based document repository and is [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][increasingly being used by humanists to share their work]]. You can find git repositories for [[https://github.com/titaniumbones?tab=repositories][most of my teaching materials]], for instance.  
+
+I /strongly/ recommend you follow this lesson up by [[http://git-scm.com/book/en/v2][reading the Git book]], especially the first 2 or 3 chapters.  
+
+Most people love git once they start to use it, but it can be very frustrating and difficult at the beginning.  We'll go over it once, kind of quickly, then try a real-world example (checking out the next STA).
+** COMMENT Pasta-Please
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] creted a simple github training exercise last week for some of my other students.  It was really fun, so let's check it out:
+1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
+2. Navigate to [[https://github.com/titaniumbones/pasta-please][my fork of the pasta-please repository]]
+3. Take a quick look at the [[https://github.com/titaniumbones/pasta-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
+4. Have you found where the Recipes live?
+5. Add a new recipe *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
+   - Be sure to name the file "some-recipe-name.md" so that everyone knows it's written in Markdown
+   - follow markdown syntax in writing your recipe
+   - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
+   [[./Images/github-add-file.png]]
+6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/pasta-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
+
+Wow, that was cool, right? And if we get through this fast enough, we can try working from the command line.  
+1. Choose an appropriate home for your repo and execute ~git clone https://github.com/your-user-name/pasta-please.git~
+2. Add your directory to atom as a "project directory: [[./Images/github-add-project.png]]
+3. Install the "git-plus" package in Atom
+4. Create a new file in the appropriate place.
+5. Choose menu item ~Packages \rarr Git Plus \rarr Add~, then ~Packages \rarr Git Plus \rarr Commit~, then ~Packages \rarr Git Plus \rarr Push~
+
+There's still tons to learn but this is a good start.  
+** Quick Start
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+- [[https://github.com/join][Sign Up for a Github Account]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-Installing-Git][Install Git on your Laptop]] 
+- [[https://github.com/titaniumbones/maps-with-markdown#fork-destination-box][Fork the Maps Assignment]]
+- [[https://help.github.com/articles/set-up-git/][configure your git information]]
+- [[https://help.github.com/articles/set-up-git/#next-steps-authenticating-with-github-from-git][Be sure you can authenticate with github]]
+- Create a local copy of your new Maps repository by [[https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork][cloning it]]:
+  ~git clone https://github.com/YOUR-USERNAME/maps-with-markdown~
+- Alternatively, [[https://c9.io/][set up an account with cloud9]], then make sure you are logged into your github Account and [[https://docs.c9.io/v1.0/docs/connected-services][connect Cloud9 to github]], then [[https://docs.c9.io/docs/setting-up-github-workspace][follow the instructions to set up a new workspace]]
+- Make some changes
+- Commit your changes with ~git commit -m "Useful Message Here" -a~
+- *optional* Push your changes to the web with ~git push~
+- *optional* [[https://help.github.com/articles/using-pull-requests/][Submit a pull request ]]
+
+** Resources
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+This web page is woefully incomplete! Here are some better resources: 
+- [[https://guides.github.com/activities/hello-world/][Hello World Guide on Githb]]
+- [[https://try.github.io/levels/1/challenges/1][Code School Git Intro]]
+- [[http://gitimmersion.com/index.html][Git Immersion]]
+- [[https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control][Official Git Book]]
+
+** Install Git
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+If you're on Mac or Windows, the easiest way to start is to [[https://desktop.github.com/][install the Github Desktop client]].  This will also install the command-line tools you need for our tutorials, while giving you a very pretty GUI interface. You can [[https://css-tricks.com/first-impression-of-github-desktop/][learn more about the desktop client here]] (There's no Linux version, so I don't use this).  
+
+Once you've installed Git, let's execute our first command-line commands. In Mac, open Terminal. In Windows, open Powershell (it comes with Github Desktop).  Then type 
+#+BEGIN_SRC sh
+git config --global user.name "Your Name"
+#+END_SRC
+
+and then:
+#+BEGIN_SRC sh
+git config --global user.email youraddress@mail.utoronto.ca
+#+END_SRC
+
+This tells git some basic information about you, which it will use later on.  
+
+** Git "States"
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+*(feel free to skip this if you want to get to the action)*
+
+A git repository has three important "areas", each of which represents a different "state": 
+- Working Directory (Uncommitted)
+- Staging Area (Staged)
+- .git repository (Committed)
+
+When you look at the repository, all you see is the *working directory*.  So, if I want to start a new project, I create an empty directory, say, "Project".  Then I run the command:
+#+BEGIN_SRC sh
+git init
+#+END_SRC
+This command creates the invisible ~.git~ subdirectory, which is the real heart of the repo:  it stores all the information about previous and current states of the repository.  
+
+** Doing and Undoing
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+Every time you commit your changes in git, git saves a snapshot of the working directory to the .git repository.  So, in principle, you can get back to any earlier working state of the repository, which is awesome.  
+
+- commit :: the most elementary operation in git is "committing"; this saves your working directory to the repository. Here are the steps
+  - make some changes
+  - commit them with ~git commit -a -m Message~
+- checkout :: To inspect some other state of the repository, you will need to "checkout" that state:
+     ~git checkout HEAD~3~ will checkout the version you were working on 3 saves ago, for instance.   
+
+** Branching
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+Sometimes you want to be able to come back to a particular revision -- maybe you have everything working fine, and you want to be sure you can get back to the working state.  Maybe you create an "experiments branch" to work on; if it breaks, you can just switch back to the master branch with no harm done.  
+#+BEGIN_SRC sh
+git branch # show branches 
+git branch -c experiment # create the experiment branch
+git checkout experiment # chekout the experiment branch; then work on it for a while
+git commit -a -m "added a cool new feature, but it doesn't quite work" # commit your changes
+git checkout master # go back to the master branch, since it still lworks and you need to use it for something.  
+#+END_SRC
+** Push and Pull
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+When you're working together you may want to *pull* someone else's changes or *push* your own to the group.  
+#+BEGIN_SRC  sh
+git pull # get the most recent branch of your original repository
+git push # send all your commits on the current branch to the original repository
+#+END_SRC
+
+
+OK, that's what I've got for now.  Follow the excellent links near the top for more info.  Good luck!
 
 
 * COMMENT Back To Wordpress, People!
@@ -2241,7 +2047,6 @@ for now, let's try doing a couple of things:
 
 *** featured images in themes
 :PROPERTIES:
-:EXPORT_FILE_NAME: featured-images-in-themes
 :END:
 first, we need to add featured image support to the 'page' content type.  this is the kind of thing that will drive you mad if you don't know how to do it, but is very easy if you do know how.  first, find the file ~functions.php~ and open it.  
 
@@ -2280,45 +2085,6 @@ we'll see where we get on other topics today -- much will depend on your specifi
 # hackinghistory/images/komodo-prefs.png http://2014.hackinghistory.ca/wp-content/uploads/2015/01/wpid-komodo-prefs.png
 # hackinghistory/images/komodo-open.png http://2014.hackinghistory.ca/wp-content/uploads/2015/01/wpid-komodo-open.png
 # hackinghistory/images/settings-scss.png http://2014.hackinghistory.ca/wp-content/uploads/2015/01/wpid-settings-scss.png
-
-* COMMENT Lab 08: Personas and Wireframes 
-:PROPERTIES:
-:EXPORT_FILE_NAME: lab-08-personas-and-wireframes
-:END:
-Today we are making an imaginary website.  Here's our brief, noting please that it is /imaginary/.  
-
-** Commemorating Vimy Ridge
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-
-With the 100th anniversary of World War I now upon us, the City of Toronto Archives wants to commemorate the [[http://en.wikipedia.org/wiki/Battle_of_Vimy_Ridge][Battle of Vimy Ridge]], but is not sure how to do it.  They have a large collection of letters to and from the Front, as well as access to the usual sources that could provide historical context.  The archive serves the general public but also has important educational functions related to school programs.  We assume for purposes of this exercise that their web department is in some kind of disarray (recent cuts have resulted in everyone being fired, perhaps?) and they come to us with wide-open questions about how to proceed.  They ask us to propose a website that will somehow engage a broad public while also being educational.  What will it look like?  Who will visit the site, and why? Should there be integration with real-world materials?  What can you do to make this a fantastic experience for everyone?  
-
-** Groups
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-We'll divide up into groups of 3 for this exercise.
-
-** Personas
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Use the provided persona sheets to come up with 3 idealized user personas for potential site users.
-
-** Sitemap/Site description
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-In 1 paragraph, explain the purpose of the site, and draw a rough map that outlines the kind of content you provide.
-
-** Wireframes 
-:PROPERTIES:
-:EXPORT_FILE_NAME:
-:END:
-Use the provided wireframe sketching paper (and your own looseleaf paper) to sketch out each type of page that the site will serve up.  
-
-That's it!
 * COMMENT Lab 15: Copyright in Digital History
 :PROPERTIES:
 :EXPORT_FILE_NAME: lab-15-copyright-in-digital-history
@@ -2416,15 +2182,11 @@ To promote the Progress of Science and useful Arts, by securing for limited Time
 :EXPORT_FILE_NAME:
 :END:
 *** 2012 Bill C-11 expands to 3 further purposes:  
-:PROPERTIES:
-:EXPORT_FILE_NAME: 2012-bill-c-11-expands-to-3-further-purposes
-:END:
 - education
 - satire
 - parody
 *** 2013 "Copyright Pentalogy"  
 :PROPERTIES:
-:EXPORT_FILE_NAME: 2013-"copyright-pentalogy"
 :END:
 - it now appears (after /Alberta (Education)/.and /SOCAN v Bell/) that most purposes are permitted
 ** Fair Dealing: Criteria of Fairness
@@ -2450,17 +2212,14 @@ death of the author plus 50 years
 :END:
 *** Published before 1949
 :PROPERTIES:
-:EXPORT_FILE_NAME: published-before-1949
 :END:
 - Public Domain
 *** Created before 1949 but never published
 :PROPERTIES:
-:EXPORT_FILE_NAME: created-before-1949-but-never-published
 :END:
 - Public Domain
 *** Published after 1949
 :PROPERTIES:
-:EXPORT_FILE_NAME: published-after-1949
 :END:
 - life of author + 50
 - unless a corporation, in which case, publication +50
@@ -2511,6 +2270,44 @@ death of the author plus 50 years
 - your case is more convincing if you /analyze/ the document in a way that could not take place without the document being present.  So, using an image or text in an analysis is better than just reproducing them in a gallery.  
 - but careful w/ esp. images (no 'parts', so safest to link to externally-hosted images).
   - argument can be made that a low-res image is a "part"; and reproduction of an image from a book or other large work is generally allowed (!) 
+
+* COMMENT Wordpress cruft from old lab 1
+ really just an introduction to the website; but since you will be building your own site before the year is out, you'll want to pay attention to the interface.  We use the [[http://wordpress.org][Wordpress]] web framework in this class. Wordpress is the most popular "Content Management System" in the world, and runs ~75 million sites.  It is often praised for the relatively quick learning curve encountered by both users and developers. 
+
+** Registration and First Post
+:PROPERTIES:
+:ID:       o2b:5a91f103-5faf-4489-8e0d-8003f97bd290
+:POST_DATE: [2015-09-10 Thu 11:28]
+:BLOG:     dig
+:END:
+You should receive an email with your site login info shortly before class starts; to log in find the [[http://www.hackinghistory.ca/wp-login.php][admin login page]] and type in your email.  Request a new password and log in.
+
+[[file:Images/wp-admin-interface.png]]
+
+In the "new post" screen write a short post introducing yourself to me and your classmates. Include some of the following:
+- What interests you about this class?
+- What are you looking forward to/anxious about?
+- Is there something unusual about yourself that you're willing to share with the class, that will help us to know you better?  
+
+If you're concerned about privacy, consider restricting access to users of level "author" or higher:
+
+[[file:Images/wp-restrict-post.png]]
+
+ Press "Publish," and /voilà/, you're done.  If you've used Wordpress before, you may still learn something from reading about the [[https://make.wordpress.org/core/2015/08/01/editor-enhancements-in-4-3-%E2%9C%A8/][new structured text improvements]] and the [[https://en.support.wordpress.com/markdown/][advanced Markdown capabilities]].  
+                                                                                        
+** User Profile
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+
+If you want a picture of yourself to appear next to your name (and it would be helpful for me to have one), you can [[https://en.gravatar.com/][create an account at Gravatar]] and upload an image.  Wordpress will automatically link to your gravatar profile.  
+
+** Understanding Wordpress
+:PROPERTIES:
+:EXPORT_FILE_NAME:
+:END:
+We will discuss this in more detail in a few weeks; but for now, here is a picture:
+[[file:///home/matt/HackingHistory/Handouts/data_and_metadata_on_the_web.png]]
 
 * COMMENT Lab 02: Humans and Machines
 :PROPERTIES:
