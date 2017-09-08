@@ -19,7 +19,8 @@
 #+HUGO_SECTION: article
 #+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :weight 80
-# #+HUGO_MENU:  :menu "something here" :weight 80 :parent posts :identifier foo1
+#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
+#+MACRO: ts (eval (get-ts+7))
 
 * Logistics
 
@@ -32,35 +33,39 @@
 
 #+ATTR_HTML: :class org-upload pull-left
 [[./Images/matt_on_desk_for_web.jpg]]
-In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][World Wide Web]] was a novelty, just beginning to make itself known outside of universities and research institutes.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
+
+In the year of your birth, the [[http://en.wikipedia.org/wiki/History_of_the_World_Wide_Web#1979.E2.80.931991:_Development_of_the_World_Wide_Web][Web]] was a novelty, just beginning to make itself known outside of universities and research institutes.  Today, it permeates almost every aspect of our lives, including every stage in the production of knowledge.  You have been living through a fundamental transformation of knowledge; and yet the modes of communication you've learned and explored at University (the essay, the article, the scholarly monograph) belong to the world that came before.  There are good reasons for this.  The standards of our discipline were formed carefully over hundreds of years, in a determined quest to uncover and communicate truths about the past to our colleagues and the wider world.  Even so, historians need to explore the digital media of our present and future.  The books and other writings of old will not disappear, but they will be supplemented and to some extent supplanted by the new media of the web and its successors.  In this class, we will explore those new media as tools for the transmission of historical knowledge, culminating in an intensive group project in which you will build a historical website in close collaboration with a community partner.  The community partnership is a key element of "Hacking History", and a source of many of its pleasures and challenges.  
 
 Along the way, we learn about the history of digital media, and their place in the development of the public sphere; and we will also study the history and politics of "engaged" and "public" scholarship.  We will also spend a substantial amount of time acquiring the technical skills needed for a project like this, e.g., the fundamentals of [[http://en.wikipedia.org/wiki/HTML][HTML]] and [[http://www.codecademy.com/tracks/javascript][Javascript]], as well as just enough [[http://ca.php.net/tut.php][PHP]] to work with the [[http://www.wordpress.org][Wordpress]] Content Management System.  No prior technical knowledge is required for this, but you will need to be willing to challenge yourself to learn a few tricks and principles of web programming.  The payoff for that effort is huge: a chance to contribute in a meaningful way to historical discourse beyond the walls of the University, and to explore the frontiers of historical communication in the process.  
 
 From year to year, we *also* investigate specific historical trends and events relevant to the class project. In past years, our projects have mostly focused on local history in the Toronto region. This year marks a radical break with that tradition! 
 
-* 2017-18 partner
+* 2017-18 Partner
 ** Kangchendzonga Conservation Committee
+#+ATTR_HTML: :class insert
+[[file:Images/kcc-building.jpg]]
 
-I'm very pleased to be able to announce in advance our partner for 2017-18. The [[http://sikkimkcc.blogspot.ca/][Khangchendzonga Conservation Committee]] is a small NGO based in Yuksom, a village which is the main access point to a UNESCO World Heritage Site in the Indian Himalaya on the Nepal border. Over the last 21 years ,the KCC has accomplished a series of incredible feats, despite its small size. Its history gives a remarkable window into important dynamics that affect the whole region: 
+I'm very pleased to be able to announce in advance our partner for 2017-18. The [[http://sikkimkcc.blogspot.ca/][Khangchendzonga Conservation Committee]] is a small NGO based in Yuksom, a village which is a main access point to a UNESCO World Heritage Site in the Indian Himalaya on the Nepal border. Over the last 21 years, the KCC has accomplished a series of incredible feats, despite its small size. Its history gives a remarkable window into important dynamics that affect the whole region: 
+
 - the absorption of small Himalayan kingdoms into the regional superpowers (India and China);
 - the rise of global tourism as a major economic driver in Asia and especially the Himalaya;
 - the acceleration of climate change and environmental degradation in the region;
 - the deployment of environmentalism by local groups as a lever for both regional autonomy and global integration;
-- the migration of peoples which has created tremendous ethnic diversity in many Himalayan regions
+- the migration of peoples which has created tremendous ethnic diversity in many Himalayan regions;
 - the relationships between Western mountaineering culture and local conceptions of sacred space;
 - many other phenomena which we will attempt to explore over the course of the year.
 
 Working with the KCC will also accentuate some of the most interesting dynamics of public history: the relationships between experts and lay knowledge; power dynamics between historian and oral history subjects; and the potential for conflicts between the duties of a historian and those of a "contractor" working on behalf of an organization. Each of these problem areas is an opportunity for learning, and we will treat them as such.  
 
-All of this means that the readings and topic areas for 2017-18 will differ quite a bit from previous years, and will give students the chance to explore corners of history most U of T students rarely encounter. We will also be working closely with primary sources; a research assistant is currently scanning the entire KCC archive for our use. 
-
+All of this means that the readings and topic areas for 2017-18 will differ quite a bit from previous years, and will give students the chance to explore corners of history most U of T students rarely encounter. We will also be working closely with primary sources; a research assistant has scanned the  KCC's archive for our use. 
+i
 * Course Structure
 ** First Semester
-In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]). You will *need* a laptop for this portion of the class; if you don't have one, you will need to figure out an alternative solution.   
+In the first semester we will meet on a weekly basis to discuss the week's readings ("Readings" in the [[outline1][outline]]) and work together on a technical or interpretative task that will be defined in advance ("Lab" in the [[outline1][outline]]). You will *need* a laptop for this portion of the class; if you don't have one, you will need to figure out an alternative solution.  
 
-Twice in the first semester ,each student will take the role of *discussion leader*. In these weeks, you will take on additional responsibility for ensuring that issues from the readings are raised in seminar and discussed at a high level. 
+Twice in the first semester, each student will take the role of *discussion leader*. In these weeks, you will take on additional responsibility for ensuring that issues from the readings are raised in seminar and discussed at a high level. 
 
-About once every two weeks, a short assignment is required; these are noted in the outline and referred to in the course requirements section.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests. The semester culminates with a group presentations of your proposed project.  
+About once every three weeks, a short assignment is required; these are noted in the outline and referred to in the course requirements section.  In general the aim is to foster an atmosphere of collaborative and self-directed learning in which all work is focused on building the analytic resources, technical skills, and confidence to create really great projects in the second semester.  Though the assignment structure is fixed, readings may change based on student interests. The semester culminates with a group presentations of your proposed project.  
 
 ** Second Semester
 In the second semester it is expected that students will spend most of their time working directly on the project with the partnering organization.  We will meet most weeks to discuss specific technical questions raised by the projects themselves, and will discuss additional readings as needed.  Each student will maintain a "Development Log" in which you track your weekly progress on the project. The project will be submitted to the KCC for review in the second to last week of classes, presented formally in the final class session, and finishing touches completed immediately before the beginning of finals period.  
@@ -69,31 +74,31 @@ In the second semester it is expected that students will spend most of their tim
 In this project-based class, we have relatively few readings and instead focus on active learning through a variety of assignments, all of which are intended to help you build towards your final, collaborative group project.  
 
 The class has 4 kinds of assignments:
-- 5 "Short Technical Assignments"   (STA's, first semester, *15%*)
-- One Written Paper  (7-9 pp, Jan 9, *10%*)
-- 12 entries in the "Development Log"   (Weekly in Semester 2, *10%*) 
-- The Final Project  (website, ongoing but due April 4, *45%*)
+- 4 "Short Technical Assignments"   (STA's, first semester, *15%* nc/c/plus)
+- One Written Paper  (7-9 pp, Jan 9, *10%* graded)
+- 12 entries in the "Development Log"   (Weekly in Semester 2, *10%* graded) 
+- The Final Project  (website, ongoing but due April 4, *45%* graded)
 with the balance of 20% for on- and off-line participation, which includes leading and participating in seminar discussion, active participation in the Slack team, and taking a role in choosing topics and finding activities during the second semester. 
-
-*Blog Postings* are thoughtful pieces, 400 words or so in length, posted to the course blog by noon the day before class meets (so, noon each Monday).  You will be expected to read your colleagues' postings and respond to them, both online (using the blog's comment function) and in class.  In the first semester, these postings will primarily be /responses to the weekly readings/, and are required /every two weeks/.  In the second semester, they will instead generally take the form of *weekly* (not bi-weekly) /progress reports/ in which you discuss your final projects and your interactions with partnering organizations, or of /short written pieces from your project site/ (see below). See the [[http://2015.hackinghistory.ca/assignments/the-course-blog/][assignment page]] for more details. 
 
 *Short Technical Assignments (STA's)* are designed to give you the technical skills you will need for your website development work in the second semester.  Approximately every 2 weeks in the first semester, you will complete a short on or off-line assignment for a *pass-fail* grade.  The lab assignments will cover basic web skills and other technical topics, which will always have been covered in the third 'lab' hour of class. 
 
 *The Paper* is due shortly after the beginning of the second semester.  Approximately 7-9 pages long, its format is that of a standard course paper:  a well-researched thesis, supported by evidence garnered from primary and secondary sources.  Students are expected to write on topics related to their *Final Projects* (see below).  
 
-*The Final Project* is a major collaborative effort to build a historical website in service to an organization outside the University. In previous years, students have worked in groups of 3-4, collaboratively building a substantive site which balances scholarly merit with the interests of the sponsoring organization and accessibility to the general public. The plan for this year is in flux and may depend on class size, but I tentatively foresee a single class project in collaboration with a new initiative in the Black Creek region of Toronto (which includes Pioneer Village).  
+*The Final Project* is a major collaborative effort to build a historical website in collaboration with the KCC (see above).  
 
-See the [[http://www.hackinghistory.ca/assignments/class-project-overview/][Project Guidelines]] for more detailed discussion & marking breakdown, though that document does not yet reflect this year's direction..  
+See the [[http://www.hackinghistory.ca/assignments/class-project-overview/][Project Guidelines]] for more detailed discussion & marking breakdown, though that document does not yet reflect this year's direction.
+
+**Your Devlog* is a collection of thoughtful pieces, about 400 words in length, detailing your progress on the class project. Details will be posted in late October; it's expected that you maintain your devlog on Github (preferred) or in a Wordpress blog (if you want the practice with Wordpress). Posts are due Mondays at noon, and you're expected to read your classmates' devlogs and comment either in GH isuses, via Wordpress commnts, or in class. See the [[../../assignment/devlog/][assignment page (when it goes up!)]] for more details. 
 ** Late Policy
 *STA's:* no late papers! STA's are pass/fail, hand them in on time please.  
 
-*Dev log:* Dev Log postings are due by noon /the day before class/. Late blog postings will not be marked.
+*Devlog:* Devlog postings are due by noon /the day before class/. Late blog postings will not be marked.
 
 *Paper:* 3%/day.
 
 *Final Project:* It is /essential/ that you complete your final project on time in order to get feedback from the sponsoring organization and organize the handoff of the project. The various deadlines for the project (see [[./ProjectGuidelines.org][Project Guidelines]]) are firm.  *DO NOT MISS THEM.* 
 
-# <<texts>>
+
 ** Project Timetable
 - <2017-10-03 Tue>: Detailed assignment handed out 
 - <2017-12-05 Tue>: Project Proposal due and presented
@@ -108,12 +113,145 @@ All texts for this course are online, either in the public web or as pdfs.  Most
 - D. Brown, /Communicating Design: Developing Web Site Documentation for Design and Planning/ (http://communicatingdesign.com/)
 A sizable collection of links is also stored in a [[http://www.zotero.org][Zotero]] database, having been merged with the [[https://www.zotero.org/groups/25659/][course bibliography]].
 * Tools
-We'll be using a number of important software tools, some of them very easy to use, some of them harder.  All of them are free (as in beer, and usually as in speech) and most run on all three major platforms (Windows, Mac, Linux) or on the web.  See the Tools page for more details.
-#<<outline1>>
+We'll be using a number of important software tools, some of them very easy to use, some of them harder.  All of them are free (as in beer, and usually as in speech) and most run on all three major platforms (Windows, Mac, Linux) or on the web.  See the [[../../article/Tools][Tools]] page for more details.
+
+<<outline1>>
 * Outline for Semester 1
-In 2016, the outline will change drastically in approximately the third week of class, as we confirm the direction class will take.  
-** <2017-09-12 Tue> Hacking History in the Himalaya
+** <2017-09-12 Tue> (Week {{{n(w)}}}) Hacking History in the Himalaya
+#+ATTR_HTML: :class insert
+[[file:Images/wpid-future-history-small.jpg]]
+
+Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture. And a few words about the world's third-tallest mountain, and our partners, the KCC.
+*** Background Reading:
+- [[http://www.journalofamericanhistory.org/issues/952/interchange/index.html][JAH - The Promise of Digital History]], [[http://writinghistory.trincoll.edu/revisioning/tanaka-2012-spring/][Pasts in a Digital Age]]
+- [[../../static/docs/kcc-activities-list.docx][KCC Activities List (2017)]]
+*** Lab {{{n(l)}}}: Getting Started
+- HTML and Markdown
+- Some Tools: Github, Dropbox, Atom Text Editor
+*STA 01 handed out*
+
+** {{{ts}}} (Week {{{n(w)}}}) Language of the Web
+#+ATTR_HTML: :class insert
+[[file:Images/wpid-Bush-Memex-lg1.jpg]]
+
+The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
+*** Readings
+- Vannevar Bush, "[[http://www.theatlantic.com/magazine/archive/1969/12/as-we-may-think/3881/][As We May Think]]"
+- Tim Berners-Lee, /Weaving the Web/ [[file:readings/berners-lee-weaving-web.pdf][Ch. 2,4]].
+- Edward L. Ayers, "[[http://www.vcdh.virginia.edu/Ayers.OAH.html][History in Hypertext]]"
+- Rus Shuler, "[[http://www.theshulers.com/whitepapers/internet_whitepaper/index.html][How Does the Internet Work?]]"
+*** Lab {{{n(l)}}}: Understanding HTML
+*Resources:* [[http://jsbin.com/#html,live][JSBin online HTML/Javascript editor]]; [[http://codeacademy.net][codeacademy courses]]; [[http://en.wikipedia.org/wiki/HTML][on Wikipedia]]; [[http://www.w3.org/MarkUp/Guide/][w3 guide]]; also cf. Zotero Bibliography
+
+
+** {{{ts}}} (Week {{{n(w)}}}) The Crowd and the Public
+#+ATTR_HTML: :class insert
+[[file:Images/220px-Wikipedia_Logo_1.0.png]]
+
+The new kinds of collaboration that the web makes possible, and the intellectual challenges they create.
+*** Readings:
+- R. Rosenzweig, "[[http://chnm.gmu.edu/essays-on-history-new-media/essays/?essayid=42][Can History be Open Source?]]"
+- Aaron Swartz, "[[http://www.aaronsw.com/weblog/whowriteswikipedia][Who Writes Wikipedia]]"
+- Owens, Trevor. [[http://onlinelibrary.wiley.com.myaccess.library.utoronto.ca/doi/10.1111/cura.12012/abstract?systemMessage=Wiley+Online+Library+will+be+disrupted+on+31+August+from+10:00-12:00+BST+(05:00-07:00+EDT)+for+essential+maintenance][Digital Cultural Heritage and the Crowd]].” /Curator: The Museum Journal/ 56, no. 1 (2013): 121–130.
+- Filene, Benjamin. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2012.34.1.11][Passionate Histories: ‘Outsider’ History-Makers and What They Teach Us]].” /The Public Historian/ 34, no. 1 (February 1, 2012): 11–33.
+*** Further Reading:
+- Corbett, Katharine T., and Howard S. (Dick) Miller. “[[http://www.jstor.org.myaccess.library.utoronto.ca/stable/10.1525/tph.2006.28.1.15?origin%3Dapi][A Shared Inquiry into Shared Inquiry]].” /The Public Historian/ 28, no. 1 (February 1, 2006): 15–38.
+- Carr, Graham. [[http://muse.jhu.edu.myaccess.library.utoronto.ca/journals/canadian_historical_review/v086/86.2carr.pdf][Rules of Engagement: Public History and the Drama of Legitimation]].” The Canadian Historical Review 86, no. 2 (2005): 317–354.
+- Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
+*** Lab {{{n(l)}}}: CSS and Web Styles
+
+** {{{ts}}} (Week {{{n(w)}}}) Oral History, and Working with Communities
+#+ATTR_HTML: :class insert
+[[file:Images/mike.jpeg]]
+
+One remarkable possibility opened up by the web is abundant oral history; another is collaboration with the communities whose histories we study
+*** Readings:
+- "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
+- Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012.
+*** Lab {{{n(l)}}}: Understanding  Interviews
+*STA 01 due, STA 02 handed out*
+
+** {{{ts}}} (Week {{{n(w)}}}) State, Empire, and Nature in India
+To place the KCC in historical context, we need to begin to understand the place of conservation and environmentalism in India's colonial past. 
+*** Readings
+- J. Sharma, /Empire's Garden/, Introduction
+- Richard Grove, "The Beginnings of global environmentalism" in /Green Imperialism/ p.309-379.  
+- a more recent review TBA
+
+*** Lab {{{n(l)}}}: Javascript Basics
+
+** {{{ts}}} (Week {{{n(w)}}})  Khangchendzonga in Sikkim
+The KCC draws heavily on the status of Mt. Khangchendzonga in Sikkim.  
+*** Readings:
+- Pema Wangchuk and Mita Zulca. /Khangchendzonga Sacred Summit./ Gangtok, Kathmandu: Pema Wangchuk, 2007. ch 1,3 + one other at least.
+*** Further Reading
+- Denjongpa, Anna Balikci. “[[https://www.repository.cam.ac.uk/bitstream/handle/1810/242513/bot_2002_02_01.pdf?sequence=1.][Kangchendzonga: Secular and Buddhist Perceptions of the Mountain Deity of Sikkim among the Lhopos]],” 2002.
+- Scheid, Claire S. “[[https://cora.ucc.ie/handle/10468/1868.][Hidden Land and Changing Landscape: Narratives about Mount Khangchendzonga among the Lepcha and the Lhopo]].” Journal of the Irish Society for the Academic Study of Religions 1, no. 1 (2014): 66–89.
+- /Cultural Attributes of the Khangchendzonga National Park./ Gangtok, Sikkim, India: Namgyal Institute of Tibetology, 2015.
+*** Lab {{{n(l)}}}: Getting Started with Wordpress
+
+** {{{ts}}} (Week {{{n(w)}}})  Sikkim, India, and Tourism
+Sikkim was an independent kingdom until 1975; the annexation or "merger" of Sikkim into India ushered in a a new era in which tourism became one of the most important components of the local economy
+*** Readings:
+- Rai, Bishwas Mani. “[[http://14.139.206.50:8080/jspui/bitstream/1/4729/1/Bishwas%20Mani%20Rai-MPhil-Pol%20Sc.pdf.][Merger of Sikkim and Politics of Development]].” Masters of Arts, Sikkim University, 2017.
+*** Further Readings:
+- Datta-Ray, Sunanda K. /Smash and Grab: Annexation of Sikkim./ Vikas New Delhi, 1984. 
+*** Lab {{{n(l)}}}: Wordpress Themes and Templates
+*STA 03 Handed out*
+
+** {{{ts}}} (Week {{{n(w)}}})  Spatial History
+Thinking about the visual presentation of information, especially in map form
+*** Readings
+- Knowles, A. K. “GIS and History.” [[file:readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
+- Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
+- Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012.
+*** Lab {{{n(l)}}}: Spatial History with Google Maps
+*STA 02 due, STA 04 Handed Out*
+
+** {{{ts}}} (Week {{{n(w)}}}) NO CLASSES  (break)
+** {{{ts}}} (Week {{{n(w)}}})  Mountains in History and Imagination
+The KCC's activities are organized around Mt. Khangchendzonga. This week's readings place that peak in a broader context.
+*** Readings
+- Robert Macfarlane, "Altitude" and "Everest" in /Mountains of the Mind/
+- Stewart Weaver, "Surveying the Himalaya" in Philip Parker, /Himalaya/
+*** Lab {{{n(l)}}}: Design exercise (Personas & Wireframes)
+*STA 03 Due*
+
+** {{{ts}}} (Week {{{n(w)}}}) UNESCO, Nature, and Culture
+The region around Khangchendzonga, including Yuksam, has recently been declared a UNESCO World Heritage site.What does this mean and what dynamics does it entail?
+*** Readings TBA
+*** Lab {{{n(l)}}}: From CSS To SASS!
+*STA 04 due*
+
+** {{{ts}}} (Week {{{n(w)}}})  Mountains and the Indian National Project
+The slopes of Mt. Khangchendzonga house the training grounds for the Himalayan Mountaineering Institute, a division of the Indian Department of Defense founded directly after the first ascento f Everest. We'll explore the relationship between Himalayan mountains and nation-building in India.
+*** Readings TBA
+*** Lab{{{n(l)}}}: Project work Session
+
+** {{{ts}}} (Week {{{n(w)}}})  Proposal Presentation
+The final class session will be a detailed presentation and constructive critique of your project proposal. See assignment for details
+** COMMENT {{{ts}}} (Week {{{n(w)}}}) Search and Filter (Information Abundance)
+#+ATTR_HTML: :class insert
+[[file:Images/info_overload.png]]
+In the past, /access/ to information was one of the historian's most fundamental challenges.  today, it is more often a problem of /filtering/ information.  
+*** Readings:
+- Carr, Nicholas. “[[http://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/6868/][Is Google Making Us Stupid?]]” The Atlantic, August 2008.
+- William J Turkel, n.d. [[http://williamjturkel.net/2011/03/15/going-digital/.][Going Digital]]
+- William J. Turkel, “[[http://williamjturkel.net/2011/03/02/research-24-7/.][Research 24/7]].”
+- - Sharma, Patrick. "[[http://www.historians.org/perspectives/issues/2012/1204/Oral-History-Information-Abundance-and-Scarcity.cfm][Oral History, Policy History, and Information Abundance and Scarcity]]". /Perspectives on History/ April 2012
+** COMMENT {{{ts}}} (Week {{{n(w)}}})  Piracy, Plagiarism, Citation
+#+ATTR_HTML: :class insert
+[[file:Images/tpb.jpg]]
+Ethical, Legal, and Technical Questions around Copyright
+*** Readings
+- Christopher M. Kelty “[[http://kelty.org/or/papers/KELTY-Contexts_of_invention-Final_prepub_2010.doc][Inventing Copyleft]],” in /Contexts of Invention/, ed. Mario Biagioli, Peter Jaszi, and Martha Woodmansee, Chicago: University of Chicago, 2010.
+- Richard Stallman, "[[http://www.gnu.org/gnu/manifesto.html][The GNU Manifesto]]" and "[[http://www.gnu.org/philosophy/free-sw.html][The Free Software Definition]]"
+- Creative Commons Licences: http://creativecommons.org/licenses/
+- Dan Cohen, "[[http://www.dancohen.org/2009/05/12/idealism-and-pragmatism-in-the-free-culture-movement/][Idealism and Pragmatism in the Free Culture Movement]]"
+* COMMENT Old Outline, to discard
+** <2017-09-12 Tue> (Week {{{n}}}) Hacking History in the Himalaya
 #+ATTR_HTML: :class org-upload pull-left
+#+ATTR_HTML: :class insert
 [[file:Images/wpid-future-history-small.jpg]]
 Why we should write history, why everyone should do it, and why that means we need the Web.  Hacker cultures, collaborative learning, knowledge sharing, non-expert culture. And a few words about the world's third-tallest mountain.  
 *** Background: 
@@ -123,8 +261,9 @@ Why we should write history, why everyone should do it, and why that means we ne
 - HTML and Markdown
 - Some Tools: Github, Dropbox, Atom Text Editor
 - About Our Partners
-** <2017-09-19 Tue> Language of the Web
+** <2017-09-19 Tue> (Week {{{n}}}) Language of the Web
 #+ATTR_HTML: :class org-upload pull-left
+#+ATTR_HTML: :class insert
 [[file:Images/wpid-Bush-Memex-lg1.jpg]]
 The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
 *** Readings
@@ -135,8 +274,9 @@ The Web is written in a language called HTML, with some help from other lanugage
 *** Lab 02: Understanding HTML
 *Resources:* [[http://jsbin.com/#html,live][JSBin online HTML/Javascript editor]]; [[http://codeacademy.net][codeacademy courses]]; [[http://en.wikipedia.org/wiki/HTML][on Wikipedia]]; [[http://www.w3.org/MarkUp/Guide/][w3 guide]]; also cf. Zotero Bibliography
 
-** <2017-09-26 Tue> The Crowd and the Public
+** <2017-09-26 Tue> (Week {{{n}}}) The Crowd and the Public
 #+ATTR_HTML: :class org-upload pull-left
+#+ATTR_HTML: :class insert
 [[file:Images/220px-Wikipedia_Logo_1.0.png]]
 The new kinds of collaboration that the web makes possible, and the intellectual challenges they create.
 *** Readings:
@@ -149,23 +289,26 @@ The new kinds of collaboration that the web makes possible, and the intellectual
 - Carr, Graham. [[http://muse.jhu.edu.myaccess.library.utoronto.ca/journals/canadian_historical_review/v086/86.2carr.pdf][Rules of Engagement: Public History and the Drama of Legitimation]].” The Canadian Historical Review 86, no. 2 (2005): 317–354.
 - Madsen-Brooks, Leslie. “‘[[http://writinghistory.trincoll.edu/crowdsourcing/madsen-brooks-2012-sprin][I nevertheless am a historian’]].” Writing History in the Digital Age, March 12, 2012.
 *** Lab 03: CSS and Web Styles
-** ACTION <2017-10-03 Tue> Mountains in History and Imagination
-
-*** Readings
-- 
-*** Lab 04: Javascript Basics
-** ACTION <2017-10-10 Tue> Khangchendzonga in Sikkim
+** ACTION  (Week {{{n}}}) India, Imperium, Nature
+- nature, culture, empire or whatever
+- can jo scharma visit?
+** ACTION <2017-10-10 Tue> (Week {{{n}}}) Khangchendzonga in Sikkim
 
 *** Readings:
 - Pema Wangchuk and Mita Zulca. /Khangchendzonga Sacred Summit./ Gangtok, Kathmandu: Pema Wangchuk, 2007. ch 1,3,4 at least.
+- 
+
+*** Further Reading
 - Denjongpa, Anna Balikci. “[[https://www.repository.cam.ac.uk/bitstream/handle/1810/242513/bot_2002_02_01.pdf?sequence=1.][Kangchendzonga: Secular and Buddhist Perceptions of the Mountain Deity of Sikkim among the Lhopos]],” 2002.
 - Scheid, Claire S. “[[https://cora.ucc.ie/handle/10468/1868.][Hidden Land and Changing Landscape: Narratives about Mount Khangchendzonga among the Lepcha and the Lhopo]].” Journal of the Irish Society for the Academic Study of Religions 1, no. 1 (2014): 66–89. 
 *** Lab 05: Introducing Github
 
-** ACTION <2017-10-17 Tue> Sikkim's Annexation and the Rise of Tourism
-- 
-** <2017-10-24 Tue> Search and Filter (Information Abundance)
+** ACTION <2017-10-17 Tue> (Week {{{n}}}) Sikkim's Annexation and the Rise of Tourism
+- Rai, Bishwas Mani. “[[http://14.139.206.50:8080/jspui/bitstream/1/4729/1/Bishwas%20Mani%20Rai-MPhil-Pol%20Sc.pdf.][Merger of Sikkim and Politics of Development]].” Masters of Arts, Sikkim University, 2017. 
+
+** <2017-10-24 Tue> (Week {{{n}}}) Search and Filter (Information Abundance)
 #+ATTR_HTML: :class org-upload pull-left
+#+ATTR_HTML: :class insert
 [[file:Images/info_overload.png]]
 In the past, /access/ to information was one of the historian's most fundamental challenges.  today, it is more often a problem of /filtering/ information.  
 *** Readings:
@@ -174,10 +317,10 @@ In the past, /access/ to information was one of the historian's most fundamental
 - William J. Turkel, “[[http://williamjturkel.net/2011/03/02/research-24-7/.][Research 24/7]].”
 - - Sharma, Patrick. "[[http://www.historians.org/perspectives/issues/2012/1204/Oral-History-Information-Abundance-and-Scarcity.cfm][Oral History, Policy History, and Information Abundance and Scarcity]]". /Perspectives on History/ April 2012
 *** Lab 10: From CSS to SASS!
-** NO CLASS 11/8 (break)
+** NO C(Week {{{n}}}) LASS 11/8 (break)
 *** Lab 09: From CSS to SASS!
 
-** <2017-10-24 Tue> Spatial History
+** <2017-10-24 Tue> (Week {{{n}}}) Spatial History
 Thinking about the visual presentation of information, especially in map form
 *** Readings
 + Knowles, A. K. “GIS and History.” [[file:readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
@@ -186,16 +329,31 @@ Thinking about the visual presentation of information, especially in map form
 *** Lab 06: Spatial History with Google Maps
 
 *** Lab 07: Getting Started with Wordpress
-** <2017-11-14 Tue> Oral History, and Working with Communities
+** <2017-11-14 Tue> (Week {{{n}}}) Oral History, and Working with Communities
 #+ATTR_HTML: :class org-upload pull-left
+#+ATTR_HTML: :class insert
 [[file:Images/mike.jpeg]]
 One remarkable possibility opened up by the web is abundant oral history.
 *** Readings: 
 - "The Voice of the Past", "What Makes Oral History Different" and "Learning to Listen in /The Oral History Reader/
 - Graham, Shawn, Guy Masie, and Nadine Feuerherm. “[[http://writinghistory.trincoll.edu/public-history/graham-etal-2012-spring/][HeritageCrowd Project: A Case Study in Crowdourcing Public History]].” Writing History in the Digital Age, March 19, 2012. 
 *** Lab 09: Art of the Interview
-** <2017-11-28 Tue> Piracy, Plagiarism, Citation
+
+
+** ACTION <2017-10-03 Tue> (Week {{{n}}}) Mountains in History and Imagination
+- sacred/hidden lands in Himalayan picture books
+- macfarlane? but maybe not
+- 
+*** Readings
+- 
+*** Lab 04: Javascript Basics
+
+** ACTION (Week {{{n}}}) Mountains in India
+
+** ACTION "Heritage" for UNESCO
+** <2017-11-28 Tue> (Week {{{n}}}) Piracy, Plagiarism, Citation
 #+ATTR_HTML: :class org-upload pull-left
+#+ATTR_HTML: :class insert
 [[file:Images/tpb.jpg]]
 Ethical, Legal, and Technical Questions around Copyright
 *** Readings
@@ -204,7 +362,7 @@ Ethical, Legal, and Technical Questions around Copyright
 - Creative Commons Licences: http://creativecommons.org/licenses/
 - Dan Cohen, "[[http://www.dancohen.org/2009/05/12/idealism-and-pragmatism-in-the-free-culture-movement/][Idealism and Pragmatism in the Free Culture Movement]]"
 *** Lab 11: SASS and the Foundation Framework
-** <2017-12-05 Tue> Proposal Presentations
+** <2017-12-05 Tue> (Week {{{n}}}) Proposal Presentations
 This is your chance to wow the class with your final proposals. Good luck!
 *** No Readings!
 *** Lab 12: Wordpress Templates (if we feel like it)
@@ -218,18 +376,15 @@ A crash course in website design
 *** Assignments: STA3 Due
 * 'Outline' for  Semester 2
 In the second semester, we will meet mostly to discuss your progress on the project and to address specific issues you are encountering as you work.  You will be working pretty intensively on research, design, and writing/creating, so we will usually /not/ have class readings, except in cases where a background reading will obvously be of assistance to most of the class in addressing some issue.  The particular topics we take on will be defined by your needs, but some potential ones include:
-- Designing digital Projects
-- Immersive History (games & Simulations)
 - Refining your project goals
-- Social Media in a community website (Twitter, Facebook, Google Plus, etc)
-- Data Capture and Metadata
-- How Databases Work
 - The Digital Divide: Design Implications
 - Copyright Issues
 - Accessibility
-- Wordpress Content Types
 - New HTML5 tags (canvas, audio/video, microformats)
 - Video on the Web: HTML5 & dynamic events
+- Social Media in a community website (Twitter, Facebook, Google Plus, etc)
+- How Databases Work
+- Designing digital Projects
 - Semantic Web Technologies
 - Audio Post-Processing
 - Website look and Feel
