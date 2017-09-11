@@ -1,9 +1,18 @@
+#+STARTUP: customtime
+#+OPTIONS: toc:nil H:3 num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil 
+#+HUGO_BASE_DIR: ./hugoplayground/
+#+HUGO_SECTION: other
+#+HUGO_STATIC_IMAGES: images
+#+HUGO_MENU: :menu main :weight 80 :parent other
+#+MACRO: ts (eval (get-ts+7))
+#+TITLE: Wild Water I
 
 * Tools for Hacking History
 :PROPERTIES:
 :ID:       o2b:49b150d9-e9f3-47ae-9a09-e2b003fe5ef4
 :POST_DATE: [2015-09-11 Fri 07:07]
 :POSTID:   77
+:EXPORT_FILE_NAME: tools
 :END:
 As we go through the year, you'll need to learn about some or all of these tools.  Explore them when you have a chance
 ** A laptop
@@ -85,4 +94,94 @@ Matt Price is the world's most powerful telepath.
 
 
 To learn more about the course, please contact the instructor by [[mailto:matt.pricd@utoronto.ca][email]]. If you have a project idea and are interested in a[[http:./partners][ community partnership]], please fill out the contact form below and we’ll get back to you soon!
+* COMMENT Partners
+
+We work together with partner organizations in the Toronto area to create digital historical objects -- websites, exhibits, and archives.  Community partnerships are the heart of our course, and we are always on the lookout for new partners with a historically-themed project that could use the expert assistance of a 1-4 students, 4-6 hours/week, for about 12 weeks.  If you think you might be interested in working with us, please fill in our [[http:../partners/contact.html][contact form]] and  we'll get back to you as soon as we can.  Please look at our [[http:../partners/guidelines.html][guidelines]]
+page for further information.  And thanks!
+
+* COMMENT Guidelines for Community Partners
+- Institution: University of Toronto – St. George Campus
+- Department: History
+- Instructor:  Matt Price
+
+** COURSE TITLE: Hacking History
+On behalf of the Department of History at the St. George campus of the University of Toronto, we would like to invite you to participate as a partner for a fourth-year undergraduate course, “Hacking History”  during the 2010-11 academic year.  
+** About “Hacking History”
+“Hacking History” is an experiment in digital community, in which students spend their first semester learning how to tell stories and convey historical information through digital media, and then apply that knowledge in the second semester through collaboration with a community organization.  Students will learn about the history of the world-wide web and how it has changed the way that knowledge is produced and accessed.  They will also learn basic techniques of digital and multimedia storytelling, including topics such as web design and oral history.  The service-learning placement in the second semester is crucial to the objectives of the class, as students will use their new skills to build a substantial historical website or exhibit.  The course has as one of its primary objectives to help build bridges between the University and community organizations, making the history Department's expertise available to a wider public, while at the same time making the public's own knowledge and experience more accessible to students and teachers at U of T.  
+
+** Service-Learning Placements
+Our students are history majors with well-developed research, writing, and design skills.  They can offer you, the community partners, assistance in conceptualizing and bringing to fruition projects of a historical nature that can both serve your community and raise your organization's profile on the world-wide web.  Ideally, organizations will find our students capable and enthusiastic partners in the exploration of your community's history.  Our students will take this opportunity to hone their skills and work on a project of enduring value.  They will be evaluated both on the final collaborative product and on their regularly-produced reflections on the experience.  The objective of the placement is to give students real-world experience in the application of the skills they have learned in class and in the course of their undergraduate training, while at the same time encouraging them to find ways to participate in civic society and self-education for the rest of their lives.
+** The Students
+The course enrols a maximum of 16 students who can be assigned individual or group placements.  Students are expected to complete at least 4-6 hours of service work – mostly research and development of the final product – starting January 3 and ending April 8, but will begin planning their projects much earlier, certainly by the end of October.  Students can work individually or in groups of 2-4 persons.  Community partners are invited to contact us with their ideas at the addresses below and/or fill out our web contact form.  We welcome any and all ideas, with the sole restriction that organizations must have the financial resources to support projects once they are completed (by hosting websites, staging exhibitions, etc), and the enthusiasm to offer thematic guidance to students as they work.  
+** Contact Information
+Matt Price
+History Department, University of Toronto
+matt.price@utoronto.ca
+416-978-2014 (only intermittently!)
+
+** Sample Project Ideas
++ Your organization serves an immigrant community with a wealth of stories about the migration experience.  Hacking History students can help you collect those stories, place them in the context of changing political and economic conditions in Canada and the country of origin, and build an oral history website to make all of this information accessible to your community and the broader public.
++ Your organization serves a neighbourhood of Toronto.  Hacking History students can research the neighbourhood's history and build a 'locative' web exhibit that links map locations to important events in the neighbourhood's formation. 
++ Your organization itself has a long and storied past.  Our students can help research that history and make it available on the web.
++ You are already working on a large-scale historical documentary or other project.  Our students can help you with research, scripting, and an accompanying website.
+
+*** Example: Neighbourhood Under a Microscope
+Last year, three students worked together to create "[[http://microscope.hackinghistory.ca][Neighbourhood under the Microscope]]", a website to acocmpany the highly successful Tornto Archives program of the same name.  Working closely with the archivists, they created a resource which is moree than just a guide to this fantastic archival experience; it also explores the history of [[http://microscope.hackinghistory.ca/other-communities/][The Ward]], Toronto's vanished downtown community, home to many immigrant groups over the last 150 years.  Historical photos are placed [[http://microscope.hackinghistory.ca/?post_type%3Dhistorical-images&p%3D225][in geographical context]], helping modern viewers understand their relation to the past.  All of this was done at thee initiative of our students.  Ask  the archivists how much they love the site!  This is the sort of project we want to do more of here at Hacking History.
+
+
+* COMMENT DEPRECATED: 2010 Guidelines
+
+On behalf of the Department of History at the St. George campus of the University of Toronto, we would like to invite you to participate as a partner for a fourth-year undergraduate course, “Hacking History”  during the 2010-11 academic year.  
+** About “Hacking History”
+“Hacking History” is an experiment in digital community, in which students spend their first semester learning how to tell stories and convey historical information through digital media, and then apply that knowledge in the second semester through collaboration with a community organization.  Students will learn about the history of the world-wide web and how it has changed the way that knowledge is produced and accessed.  They will also learn basic techniques of digital and multimedia storytelling, including topics such as web design and oral history.  The service-learning placement in the second semester is crucial to the objectives of the class, as students will use their new skills to build a substantial historical website or exhibit.  The course has as one of its primary objectives to help build bridges between the University and community organizations, making the history Department's expertise available to a wider public, while at the same time making the public's own knowledge and experience more accessible to students and teachers at U of T.  
+** Service-Learning Placements
+Our students are history majors with well-developed research, writing, and design skills.  They can offer you, the community partners, assistance in conceptualizing and bringing to fruition projects of a historical nature that can both serve your community and raise your organization's profile on the world-wide web.  Ideally, organizations will find our students capable and enthusiastic partners in the exploration of your community's history.  Our students will take this opportunity to hone their skills and work on a project of enduring value.  They will be evaluated both on the final collaborative product and on their regularly-produced reflections on the experience.  The objective of the placement is to give students real-world experience in the application of the skills they have learned in class and in the course of their undergraduate training, while at the same time encouraging them to find ways to participate in civic society and self-education for the rest of their lives.
+** The Students
+The course enrols a maximum of 16 students who can be assigned individual or group placements.  Students are expected to complete at least 4-6 hours of service work – mostly research and development of the final product – starting January 3 and ending April 8, but will begin planning their projects much earlier, certainly by the end of October.  Students can work individually or in groups of 2-4 persons.  Community partners are invited to contact us with their ideas at the addresses below and/or fill out our [[http://www.hackinghistory.ca/contact/][contact form]]. We welcome any and all ideas, with the sole restriction that organizations must have the financial resources to support projects once they are completed (by hosting websites, staging exhibitions, etc), and the enthusiasm to offer thematic guidance to students as they work.  
+
+** Contact Information
+Prof. Matt Price
+History Department, University of Toronto
+matt.price@utoronto.ca
+416-516-8194
+
+** Sample Project Ideas
+Your organization serves an immigrant community with a wealth of stories about the migration experience.  Hacking History students can help you collect those stories, place them in the context of changing political and economic conditions in Canada and the country of origin, and build an oral history website to make all of this information accessible to your community and the broader public.
+Your organization serves a neighbourhood of Toronto.  Hacking History students can research the neighbourhood's history and build a 'locative' web exhibit that links map locations to important events in the neighbourhood's formation. 
+Your organization itself has a long and storied past.  Our students can help research that history and make it available on the web.
+You are already working on a large-scale historical documentary or other project.  Our students can help you with research, scripting, and an accompanying website.
+
+* COMMENT DEPRECATED: Old Listo f possible partner organizations
+
+Listed below are some ideas for possible projects, suggested by community organizations.
+
+*** [[http://www.mhso.ca/][Multicultural History Society of Ontario]] 
+
+Contact: [[mailto:britt.braaten@mhso.ca][Britt Braaten]]
+
+Since 2004, the MHSO has operated an [[http://www.mhso.ca/museum.html][Oral History Museum]] (OHM), which features 4 computer-based modules with text, video, audio and image components. At present, the OHM is only accessible by visiting the MHSO's office in the Columbus Centre (901 Lawrence Ave. West). 
+
+The proposed project would involve creating an online version of the OHM, adapting the existing modules where appropriate, and creating new content as desired. The resulting site would feature digitized materials in the MHSO collection in a way that supports our goal of promoting the positive aspects of living in a multicultural province.
+
+*** [[http://www.toronto.ca/archives/][Toronto Archives]] "The Ward"
+
+Contact: [[mailto:jehrenw@toronto.ca][Jessica Ehrenworth]]
+
+The Toronto Archives runs a successful program for high school students in which the students learn about the history of "[[http://en.wikipedia.org/wiki/The_Ward,_Toronto][The Ward]]" through maps, photographs, and other archival sources. Students working on this project would supplement that realspace program with a website, whose shape and precise function is still to be determined.  The Archive will not be able to act as a formal sponsor of the research, but we can host the project on our server, at least in the medium term. The archive's collection can be [[https://gencat4.eloquent-systems.com/webcat/request/DoMenuRequest?SystemName=City+of+Toronto+Archives&UserName=wa+public&Password=&TemplateProcessID=6000_1580_11104&bCachable=1&MenuName=City+of+Toronto+Archives&eloquentref=toronto][searched online]], and there is also the [[http://www.flickr.com/photos/torontohistory/][flickr stream]], but neither mentions the Ward collection prominently. 
+
+*** Marcus Garvey Anniversary Project
+
+A loose group of intellectuals has expressed interest in a site to commemorate marcus Garvey's 125th anniversary, esp. in regards to his Toronto presence; this is of great interest to me but I'm still awaiting further details.
+
+*** Mississauga Heritage
+
+James -- More info on this? 
+
+
+
+
+
+
+
+
 
