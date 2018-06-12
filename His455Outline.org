@@ -88,7 +88,7 @@ with the balance of 20% for on- and off-line participation, which includes leadi
 
 See the [[http://www.hackinghistory.ca/assignments/class-project-overview/][Project Guidelines]] for more detailed discussion & marking breakdown, though that document does not yet reflect this year's direction.
 
-**Your Devlog* is a collection of thoughtful pieces, about 400 words in length, detailing your progress on the class project. Details will be posted in late October; it's expected that you maintain your devlog on Github (preferred) or in a Wordpress blog (if you want the practice with Wordpress). Posts are due Mondays at noon, and you're expected to read your classmates' devlogs and comment either in GH isuses, via Wordpress commnts, or in class. See the [[../../assignment/devlog/][assignment page (when it goes up!)]] for more details. 
+**Your Devlog* is a collection of thoughtful pieces, about 400 words in length, detailing your progress on the class project. Details will be posted in late October; it's expected that you maintain your devlog on Github (preferred) or in a Wordpress blog (if you want the practice with Wordpress). Posts are due Mondays at noon, and you're expected to read your classmates' devlogs and comment either in GH isuses, via Wordpress comments, or in class. See the [[../../assignment/devlog/][assignment page (when it goes up!)]] for more details. 
 ** Late Policy
 *STA's:* no late papers! STA's are pass/fail, hand them in on time please.  
 
@@ -137,7 +137,7 @@ Why we should write history, why everyone should do it, and why that means we ne
 The Web is written in a language called HTML, with some help from other lanugages called CSS and Javascript. The nonlinear and interactive properties of these languages afford new possibilities for storytelling. We explore how the Internet works, and what that means for historical narrative.
 *** Readings
 - Vannevar Bush, "[[http://www.theatlantic.com/magazine/archive/1969/12/as-we-may-think/3881/][As We May Think]]"
-- Tim Berners-Lee, /Weaving the Web/ [[file:readings/berners-lee-weaving-web.pdf][Ch. 2,4]].
+- Tim Berners-Lee, /Weaving the Web/ [[../../readings/berners-lee-weaving-web.pdf][Ch. 2,4]].
 - Edward L. Ayers, "[[http://www.vcdh.virginia.edu/Ayers.OAH.html][History in Hypertext]]"
 - Rus Shuler, "[[http://www.theshulers.com/whitepapers/internet_whitepaper/index.html][How Does the Internet Work?]]"
 *** Lab {{{n(l)}}}: Understanding HTML
@@ -202,7 +202,7 @@ Sikkim was an independent kingdom until 1975; the annexation or "merger" of Sikk
 ** {{{ts}}} (Week {{{n(w)}}})  Spatial History
 Thinking about the visual presentation of information, especially in map form
 *** Readings
-- Knowles, A. K. “GIS and History.” [[file:readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
+- Knowles, A. K. “GIS and History.” [[/readings/placing-history_ocr-rotated180.pdf][/Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/]]  (2008): 1–13.
 - Bondenhamer, David J. “History and GIS: Implications for the Discipline.” /Placing History: How Maps, Spatial Data, and GIS Are Changing Historical Scholarship/ (2008): 219-234.
 - Theibault, John. “[[http://writinghistory.trincoll.edu/evidence/theibault-2012-spring/][Visualizations and Historical Arguments]].” Writing History in the Digital Age, March 23, 2012.
 *** Lab {{{n(l)}}}: Spatial History with Google Maps
@@ -422,3 +422,4 @@ Our final meeting will be a Project Open House in which you share the final prod
 # ./PartneringOrganizations.html http://2015.hackinghistory.ca/wp-content/uploads/2015/09/wpid-PartneringOrganizations.html
 
 # readings/placing-history_ocr-rotated180.pdf http://2016.hackinghistory.ca/wp-content/uploads/2016/10/placing-history_ocr-rotated180.pdf
+

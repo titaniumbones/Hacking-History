@@ -1,0 +1,46 @@
+baseURL = "https://2017.hackinghistory.ca/"
+languageCode = "en-us"
+title = "Hacking History 2017"
+
+[blackfriday]
+  smartypants = true
+  fractions = false
+[[menu.main]]
+  name = "Labs"
+  identifier = "Labs"
+  url = "/lab/"
+
+[[menu.main]]
+  name = "Assignments"
+  identifier = "Assignments"
+  url = "/assignment/assignments/"
+
+
+[[menu.main]]
+  name = "Miscellaneous"
+  identifier = "other"
+  url = "/other/"
+
+[outputs]
+    home = [ "HTML", "JSON"]
+    page = [ "HTML"]
+
+[params]
+description = "An experiment in digital community"
+subtitle = "Khangchendzonga Edition"
+author = "Matt Price"
+ghAddress = "https://github.com/titaniumbones/Hacking-History"
+twitterAddress = "https://twitter.com/uoftoutdoors"
+buttons = [{name = "Syllabus", url = "/article/syllabus", class = "btn-primary", icon = "idea"},
+        {name = "Class Project", url = "/assignment/class-project-overview/", class = "btn-success", icon = "arrow-down"},
+        {name = "Labs", url = "/lab/labs-and-notes/", class = "btn-info", icon = "beaker"},
+        {name = "GitHub", url = "https://github.com/titaniumbones/Hacking-History/tree/2017", class = "btn-repo", icon = "octocat"}]
+
+
+# buttons = [["Syllabus", "/article/syllabus/", "btn-primary"], ["Assignments" "/assignment/", "btn-success"],
+#         ["Labs", "/lab/", "btn-info"]]
+# [params.sylbutton]
+# text : "hello there"
+
+        
+

@@ -10,7 +10,7 @@
 #+HUGO_SECTION: assignment
 #+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :parent Assignments
-
+#+HUGO_AUTO_SET_LASTMOD: t
 
 #+BEGIN_SRC emacs-lisp
   (defun org-hugo--collect-table-metadata (info )
@@ -75,9 +75,13 @@ I will comment on individual blog posts as much as possible, but will give out m
 :EXPORT_FILE_NAME: participation
 :EXPORT_HUGO_MENU_OVERRIDE: :weight 20
 :END:
-Your participation mark is quite substantial (20%) and reflects the collaborative nature of the seminar. The mark reflects your participation in class discussions and /also/ in offline discussions on Slack. So, approximately, to get an A you will:
+Your participation mark is quite substantial (20%) and reflects the collaborative nature of the seminar. The mark reflects your participation in class discussions and /also/ in offline discussions on Slack. Here are some hints about what constitutes excellent participation in this class. In a few places I have added links -- please follow them and read the more substantive discussions you'll find there. 
 
-- [ ] craft *excellent* 
+- [[http://wcm1.web.rice.edu/howtoread.html][Do the readings *carefully* every week]]
+- [[http://wcm1.web.rice.edu/howtodiscuss.html][Craft *excellent* discussion questions before class]]
+- [[http://ggia.berkeley.edu/practice/active_listening][Listen *attentively* to your classmates]]
+- Intervene *respectfully* when you have something to say
+- Take an active role in moving the class and the group assignments forward.
 
 ** How to create a discussion question
 
@@ -89,21 +93,12 @@ The following are characteristics of a good discussion question:
 
 1. A discussion question cannot be answered yes or no.
 2. A discussion question cannot be answered with a fact.
-3. A discussion question should not require a personal opinion outside
-   the reading.
-4. A discussion questions should redirect the discussion to the reading
-   itself.
-5. A discussion question should ask the discussants to explain the
-   author's meaning and not simply quote the author or authors.
-6. A discussion question should indicate that the person who posed the
-   question is actually curious about the answer.
-7. A discussion question should be answerable with evidence from the
-   reading and common information that has preceded it in the course.
-8. A discussion question should permit several interpretations. In other
-   words, it should be rich enough to offer several possible directions
-   in its answers.
-
-
+3. A discussion question should not require a personal opinion outside the reading.
+4. A discussion questions should redirect the discussion to the reading itself.
+5. A discussion question should ask the discussants to explain the author's meaning and not simply quote the author or authors.
+6. A discussion question should indicate that the person who posed the question is actually curious about the answer.
+7. A discussion question should be answerable with evidence from the reading and common information that has preceded it in the course.
+8. A discussion question should permit several interpretations. In other words, it should be rich enough to offer several possible directions in its answers.
 
 * Class Project Overview
 :PROPERTIES:
@@ -115,7 +110,7 @@ The following are characteristics of a good discussion question:
 :END:
 The class project, which will occupy most of the class's second semester and some of the first, is always a substantial collaboration between some or all of the students in the course, and a community organization. In most years, we work with one or more local history groups.  This year we will be working exclusively with the [[https://www.facebook.com/kcc.sikkim/][Khangchendzonga Conservation Committee (KCC)]], a local NGO in the Indian Himalayan State of Sikkim.  This is a very exciting change for Hacking History, and also represents the first phase of a broad collaborative project involving a number of other scholars. The project is an opportunity to offer a substantial service to an incredible organization, while rapidly learning about an enormously interesting and diverse region, rich in cultural and ecological heritage.
 
-Unusually for this class, some of the parameters for this class have already been laid out in a [[./static/docs/kcc-mou.docx][Memorandum of Understanding]] between the KCC and the leaders of the broader project.  Here are some highlights of that document, plus some further constraints:
+Unusually for this class, some of the parameters for this class have already been laid out in a [[../../docs/kcc-mou.docx][Memorandum of Understanding]] between the KCC and the leaders of the broader project.  Here are some highlights of that document, plus some further constraints:
 - The website we're building will serve two functions:
   - a general purpose website to serve as the KCC's public presence (their current website dates from 2004 and has very little information)
   - a historical section which will provide context for the KCC's current work and an archive of some of their most important documents, e.g. the training manuals from their education programs
@@ -152,7 +147,7 @@ Our project will make use of interviews conducted under a protocol approved by t
 ** Grading
 
 The final project will be evaluated based on its success in meeting the goals outlined in the proposal, on the integrity of historical analysis, on the aesthetics of the presentation, and on the satisfaction of the community partners with your work.  
-| Component               | Due Date         | Group/Indiv | % of Course Grade |
+| Component               | Due Date | Group/Indiv | % of Course Grade |
 | Proposal & Presentation | <2017-12-05 Tue> | Group       |                10 |
 | Interim Report          | <2017-02-07 Tue> | Group       |                10 |
 | Final Product           | <2017-04-04 Tue> | Group       |                20 |
@@ -214,7 +209,7 @@ The proposal is a complicated document that walks a fine line: it should present
 
 ** The Main Proposal: defining your project
 
-This is a substantial document (2000 words?) which the group should produce together (so, divide up the work – see below). Here's what it should cover:
+This is a substantial document (3000 words or more) which the group should produce together (so, divide up the work – see below). Here's what it should cover:
 
 - Scope/Introduction :: What is the topic of your website, and what kinds of information will it provide? Why is it useful/important/interesting? Who is the partner, and how does it benefit them? What topics/tasks are out of scope? this latter question, which is sometimes hard to answer, is an important one to think about – setting yourselves limits is an important part of making the project feasible. Your partner will be reading this, so emphasize that you wil lbe uilding a website based onteh Wordpress framework, with light modifications & additional plugins.
 - Audience :: who wants to visit this site, and what will they do there?
@@ -232,6 +227,10 @@ In addition to the main proposal, you should include mockups of some of the main
 
 I recommend using the 960 grid paper we used in our mockup class, or [[http://www.geekchix.org/blog/2010/01/03/a-collection-of-printable-sketch-templates-and-sketch-books-for-wireframing/#web][this one]], or [[http://www.smashingmagazine.com/2010/03/29/free-printable-sketching-wireframing-and-note-taking-pdf-templates/][one of these]], or [[http://sneakpeekit.com/browser-sketchsheets/#tab-32-5][one of these]], or [[http://quicklinkr.com/creativeintersection/public/2155][one of these]], or, especially for rough brainstorming, [[http://zurb.com/playground/responsive-sketchsheets][ZURB's own sketchsheets for responsive design]] or [[http://www.sparetype.com/wp-content/uploads/2012/01/responsive_sketch_paper_INTERFACE.pdf][this nice little collection]].  Refer back to your excellent reading – your mockups will work best if they indicate some (but not all) of the interactions you expect people to have with the site.
 
+** User Personas
+Include a representative sample of User Personas like the ones we did in class (but more professional). Add sections explaining how the user will likely navigate through the site. 
+
+We'll use these documents to create simple "user stories" that help us add features later on in the project.
 ** Bibliography
 
 You wil lbe required to use Zotero and the [[https://www.zotero.org/groups/1658543/kcc-project][class bibliography]] in all your work from this point on.
@@ -316,8 +315,35 @@ Your tutorial should include a ~README.md~ that explains the function of this HT
 You can learn more about git and Github [[https://try.github.io/levels/1/challenges/1][here]].  This information will come in handy later, so it's well worth your time now.  
 
 
-* COMMENT STA 02: Oral History
-Choose one of 3 or 4 files.  Plug it into a github template (don't worry about JS, probably). Write a markdown page or so, with a set of questions and reflections.  write more about this soon.
+* STA 02: Oral History
+:PROPERTIES:
+:EXPORT_FILE_NAME: sta-02-oral-history
+:END:
+
+The documents we inherit from the KCC include a number of oral history interviews conducted by a researcher over the summer.  They describe the work and development of the KCC. In this assignment, you will choose one oral history file and write a short essay about it. The "technical" part: you will write this assignment in markdown, in a separate file which will be loaded into a one-page website and displayed as HTML.  Your text should reference the oral history and, in particular, should point readers to specific passages in the interview by the use of time-code links (the assignment repository describes in detail how to do this). 
+
+** Content of your Assignment
+Your written assignment should be approximately 400 words in length, and should identify 
+- *issues of interest to you, and to the team project, which arise in the interview*
+- *reflections on the use of oral history sources*, e.g.:
+  - what additional information do you get from listening to the original oral history source?
+  - what is missing? what do you wish the interviewer had done differently? will you treat this source any differently from the way you would treat a written source?
+In both cases, please make references to specific passages in the interview. Since this is a web-based project, you may want to include a few pictures as well, and perhaps make changes to the CSS and HTML of the appropriate files. Depending on the pace of our data-processing project, we may be able to provide you with PDFs of supporting texts as well.  
+
++I'll provide you with a choice of files shortly.+
+
+** Choosing an Interview
+We have a small selection of oral history interviews for you to choose from. All of these were conducted by a student research assistant in Yuksom in July and August of 2017, with founding members of the KCC.  You may find that you have to sneak ahead to the next couple of weeks of reading in order to make sense of the context for the interviews. It's all information you'll need to know eventually; and if you have questions that are difficult to resolve, Slack is a good place to ask them. 
+
+- [[/audio/chewang-bhutia-founding.mp3][Chewang Bhutia, Aug 9, 2017]] :: Chewang Bhutia is a guide and one of the earliest founders of the KCC. The discusses the early days.
+- [[/audio/pema-history-kcc.mp3][Pema Bhutia, June 29, 2017]] :: Brief, but rich discussion on the origination of the KCC by its President, Pema Bhutia, one of the founding members. Pema describes the situations in West Sikkim which inspired the establishment of the organization: un-regulated tourism practices (non-eco) -- the extraction and depletion of Rhododendron wood for fires and medicinal plants in the KNP, garbage accumulations, poaching of wild animals, etc. Pema also discusses the Sikkim Biodiversity and Ecotoursim Project and the first KCC projects: taking volunteers to clean the trail; tour guide, pack-animal operator and lodge operator training projects and manuals; the formation of ESPAY; early finances; festivals; cultural programs; the PRA; KCC moving forward.   
+- [[/audio/pema-uden-sacred-landscapes-unesco.mp3][Pema Bhutia & Tsering Uden Bhutia]] (undated, summer 2017) ::  A discussion with Pema Bhutia and another founder, the current director Tsering Uden Bhutia, about the establishment of a UNESCO World Heritage Site at the Khangchendzonga National Park. Particular emphasis of the designation of the area as a natural *and cultural* site (these mixed designations are very new).
+- [[/audio/uden-bhutia-ecotourism.mp3][Uden Bhutia on ecotourism, June 28, 2017]] :: Uden Bhutia discusses the KCC's concept of ecotourism and its relevance to local development.
+- [[/audio/uden-tsering-porters.mp3][Uden Bhutia on Porters, June 28, 2017]] :: Uden Bhutia discusses porter training and its relevance to the overall goals of the KCC.  
+** Getting the assignment and handing it in  
+To start work on the assignment, follow the instructions in the [[https://github.com/titaniumbones/oral-history-template/tree/remarkable-2017][README]] on Github. To hand in, [[https://github.com/titaniumbones/oral-history-template/tree/remarkable-2017#handing-this-assignment-in][submit a pull request]] as outlined on the same page.
+
+*Due Date is Oct. 24*
 * COMMENT STA 02: Javascript
 :PROPERTIES:
 :ID:       o2b:5136bc02-9c0c-4a85-bff7-601fc3ce0f77
@@ -335,14 +361,40 @@ The debugging on Codeacademy is somewhat unsatisfactory, and syntax errors can b
 
 After you're done, send me (another!) email with a link to your CodeAcademy profile page.
 
-* COMMENT ACTION STA 03: Wordpress Themes 
+* ACTION STA 03: Wordpress Sites
 :PROPERTIES:
 :PARENT:   16
 :EXPORT_FILE_NAME: sta-05-wordpress-themes
 :EXPORT_HUGO_MENU_OVERRIDE: :weight 90
 :END:
 
-[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
+[[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner. In this assignment you will set up a very simple website to explore some of the possibilities for your course project. There are many parts to this PHP "engine", but one of the most important, and easiest to manipulate, is called a [[http://codex.wordpress.org/Using_Themes][theme]].  Wordpress themes are potentially very powerful, but they can also be quite simple.  You have already explored some of the sophisticated themes available to you in the Wordpress theme repository. We will now go backwards -- *far, far backwards* -- and use a trivially simple theme, one so simple that you can easily edit it yourself. The [[https://github.com/titaniumbones/wordpress-learning-theme][Wordpress Learning Theme]] is already installed on all your sites. *[Note <2017-10-31 Tue>: please wait a day or two before hacking directly on the theme as I hope to make some updates in the next couple of days]*. In this assignment you will:
+
+- activate the Wordpress learning theme via the Wordpress dashboard
+- make changes directly to the theme via Atom
+- deploy your changes to your Wordpress site *[details coming soon!]*
+- Add sample content to your site, testing some of the structures that might be useful to the class project
+- Update menus to reflect the added content
+
+** Requirements
+You should make at least the following changes:
+- Add minimum 4 top-level menu items
+- Add at least 5 sub-menu items
+- Make at least 5 style changes to ~style.css~
+- modify at least 2 templates
+
+Your website should also reflect some of the main themes that you think are likely to be important to the project website. [[http://2017.hackinghistory.ca/docs/kcc-mou.docx][consult the KCC-UofT Memorandum of Understanding]] for guidance.
+
+Stretch goals
+- learn about the Wordpress Template Hierarchy and create an additional category template
+- learn about Worpdress Content types and create a new type. Think about what purpose such a type would serve
+
+** Theme Development
+For details see the Lab page (soon as I get it running!).
+
+   In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
+
+
 
 * COMMENT STA 04: Make a Map
 :PROPERTIES:

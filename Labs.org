@@ -11,6 +11,7 @@
 #+HUGO_BASE_DIR: ./hugoplayground
 #+HUGO_SECTION: lab
 #+HUGO_MENU:  :menu main :weight 50 :parent Labs 
+#+HUGO_AUTO_SET_LASTMOD: t
 
 #+BEGIN_SRC emacs-lisp
   (org-map-entries
@@ -51,28 +52,32 @@ Welcome to /Hacking History/.
 
 In today's lab we learn (or recall) a little bit about some of the tools we'll be using during the class.  They are:
 
+- Zotero
+- Slack
 - Markdown
 - Github
-- Zotero
 
 Next week we will start learning about HTML, but for today it's all just fun. 
 
-** Mountain-Please
+** Slack and Zotero
+We use Slack for communicating, and Zotero for managing our bibliography. Both are described [[http://2017.hackinghistory.ca/other/tools/][on the Tools page]]; I justwant you to be sure to have signed up for and tried out both of them.  
+
+** Mountains-Please
 :PROPERTIES:
 :END:
 This is a fun excercise to introduce everyone to the practice of hacking. It will also get you used to using Github, one of the fundamental tools of open-source software development.  
 
 My friend [[https://twitter.com/k88hudson?lang=en][Kate Hudson]] created a simple github training exercise two years ago for some of my other students.  It was really fun, so I modified it for us (twice):
 1. [[https://github.com/join][Sign Up for a Github Account]] (or sign in if you already have an account)
-2. Navigate to [[https://github.com/titaniumbones/mountain-please][my mountain-please repository]]
+2. Navigate to [[https://github.com/titaniumbones/mountain-please][my mountains-please repository]]
 3. Take a quick look at the [[https://github.com/titaniumbones/heroes-please/blob/master/README.md][README]].  Can you understand it? Maybe we need to add some extra instructions (like, what does ~npm install -g~ mean? And where do those [[http://www.emoji-cheat-sheet.com/][emoji]] come from?) What does the program do, and (if you can get this far) how does it work?
-4. Have you found where the Heroes live?
-5. Add a new hero *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
-   - Be sure to name the file "some-persons-name.md" so that everyone knows it's written in Markdown
+4. Have you found where the Mountains live?
+5. Add a new mountain *from inside Github itself(!)* simply by navigating to the right spot and clicking the ~+~ button.  (see the picture below)
+   - Be sure to name the file "some-mountain-name.md" so that everyone knows it's written in Markdown
    - follow markdown syntax in writing your recipe (see [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet][this cheatsheet]], especially the sections on Headings, Lists, and Links)
    - When you save the file, Github will *automatically create a forked repository under your account!* Magic.
    [[./Images/github-add-file.png]]
-6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/heroes-please/~) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
+6. File a pull request with me by navigating back to the main page of your repository (~github.com/your-user-name/mountains-please/) and hitting the Github pull request button: [[./Images/github-pull-request.png]]
 
 ** HTML Preview
 :PROPERTIES:
@@ -175,8 +180,6 @@ Some of the features of this "authentic public sphere" would be
 - a space free from political repression
 - a space accessible to all members of society
 - a form of discourse in which ideas are evaluated on their own merits exclusively, and not arbitrated based on some set of characteristics of the speaker
-
-
 #+END_QUOTE
 
 with the HTML code that generates what you would see on your screen if you went to the website from that year: 
@@ -290,13 +293,13 @@ When you look at a CSS file, you will see it is divided into a bunch of stanzas,
 They all follow the same pattern: 
 - first, a *selector* that identifies the elements to which these instructions will apply
 - then *an open brace* "{" which marks the start of the actual instructions
-- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
+- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property statement, there is *always* a semi-colon, and that the property and value are separated by a colon!  
 - finally, *a closing brace* that ends the selector declaration.
 
 *** Selector types
 Though simple in principle, CSS selectors can be confusing.  Here are some basic selector types:
-- *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  they apply to all elements of this type.
-- *Class* selectors:  these give the name of a class attribute that an HTML element may have.  This selector will always begin with a period (".").  So for instance:
+- *Element* selectors:  these just give the element (like h1, p, div, span, etc.).  They apply to all elements of this type.
+- *Class* selectors:  these give the name of a class attribute that an HTML element may have.  These selectors will always begin with a period (".").  So for instance:
 #+BEGIN_SRC html
 <p class="coolpara">Some Content</p>
 #+END_SRC
@@ -674,19 +677,19 @@ As an expression:
 #+END_SRC
 
 Functions in Javascript are "first-order objects" and can be used in mind-bending ways.  You don't need to worry about those for a little while yet.  
-* COMMENT Lab 06: Wordpress & Wordpress Themes
+* Lab 06: Wordpress & Wordpress Themes
 :PROPERTIES:
 :ID:       o2b:00873ce5-90ca-4c97-aa2b-d58be4609329
 :PARENT:   10
 :POST_DATE: [2016-11-29 Tue 09:53]
 :POSTID:   239
-:EXPORT_FILE_NAME: lab-wordpress-&-wordpress-themes
+:EXPORT_FILE_NAME: lab-wordpress-and-wordpress-themes
 :END:
 [[http://wordpress.org][Wordpress]] is a sophisticated [[http://en.wikipedia.org/wiki/Content_management_system]["Content Management System]]" that uses a database to store your content, and a set of short programs written in the [[http://php.net][PHP]] programming language to present that content in a consistent manner.  THere are many parts to this PHP "engine", including especially [[http://codex.wordpress.org/Using_Themes][themes]] and [[http://codex.wordpress.org/Plugins][plugins]].  In this exercise you will start to set up your own wordpress site, and begin to get familiar    Wordpress themes are potentially very powerful, but they can also be quite simple.  In this exercise we will start modify a very, very simple theme, changing the colour scheme and layout of your website's presentation.  
 
 ** Getting Started
 In your personal wordpress installation -- available at http://yourname.hackinghistory.ca -- you will have access to a completely breakable sandbox environment. Go wild!
-*k* Content Management Systems
+*** Content Management Systems
 - a [[http://en.wikipedia.org/wiki/Web_content_management_system][CMS]] is a system that allows web pages, and structured sets of pages, to be constructed from existing documents and text/HTML entered by users who may have little knowledge of HTML or the other underlying technologies that display those pages. There are hundreds of CMS's in existence today, some Free/Open Source, others distributed under non-free licenses.  
 ** What is Wordpress?
 Take a look at this chart:
@@ -994,7 +997,7 @@ Add this code to your template file:
 
 #+END_VERSE
 
-This is the main "loop" that grunterie uses for pages.  Where should it go in your file? And what happens when you use it? 
+This is the main "loop" that the theme uses for pages.  Where should it go in your file? And what happens when you use it? 
 
 ** Template Tags
 So, templates are combination of /static/ HTML layout, and /dynamic/ PHP-generated content.  The PHP functions we use in templates are called ~template tags~.  There are hundreds of them, and most are [[http://codex.wordpress.org/Template_Tags][listed here]].  We have already seen three of them in some detail:  ~get_header()~, ~get_footer()~, and ~get_sidebar()~.  What do they do, and how do you think they work?  
@@ -1014,7 +1017,7 @@ You should be now have ideas for your layouts.  We will spend the rest of class 
 
 
 -----
-* COMMENT Lab 07: Theming with Wordpress
+* COMMENT Lab 07: Theming with Wordpress [DEPRECATED -- See Wordpress, above]
 :PROPERTIES:
 :ID:       o2b:771ddc0e-fbdc-45cf-be28-54113248bc2e
 :POST_DATE: [2015-09-14 Mon 16:08]
@@ -1263,7 +1266,7 @@ markdown, /also/ magically loads the incredible [[http://getbootstrap.com/][boot
 :END:
 Today we are making an imaginary website.  Here's our brief, noting please that it is /imaginary/.  
 
-** Commemorating Vimy Ridge
+** COMMENT Commemorating Vimy Ridge
 :PROPERTIES:
 :EXPORT_FILE_NAME:
 :END:

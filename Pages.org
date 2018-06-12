@@ -5,7 +5,14 @@
 #+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :weight 80 :parent other
 #+MACRO: ts (eval (get-ts+7))
-#+TITLE: Wild Water I
+
+* About This Site
+:PROPERTIES:
+:EXPORT_FILE_NAME: about
+:END:
+This website is built with two technical tools: the [[https://gohugo.io/][Hugo static website generator]] and the [[https://github.com/kaushalmodi/ox-hugo/][org-mode exporter for Hugo]]. The site content is (mostly!) written in the [[http://orgmode.org/org.html#Introduction][org-mode]] syntax, using the [[https://www.gnu.org/software/emacs/][Emacs text editor]]. When I need to make changes, I change the source code, export to Hugo, and then sync the changed web pages to a webserver.  This sounds complicated but actually it's extremely easy.  
+
+The source text and some initial documentation are [[https://github.com/titaniumbones/Hacking-History/][online at Github]]. Please feel free to file any questions about the course as [[https://github.com/titaniumbones/wildwaters/issues][issues]] (unless you're a student in the course, in which case please ask me through the official channels!). 
 
 * Tools for Hacking History
 :PROPERTIES:
@@ -27,7 +34,20 @@ You will be editing code in this class, and for that you need a text editor. If 
 
 Later, you will also want the "linter" and "linter-jshint" packages; you might as well install them now. You will also need "remote-edit" for your class project, in the second semester.  
 ** Github
-Almost all of my course materials are shared on Github, and we'll be learning how to use the underlying git protocol over the course of the semester.  If you want to make things easier on yourself, you can try using the [[https://desktop.github.com/][Github desktop Client]].  
+Almost all of my course materials are [[https://github.com/titaniumbones?utf8=%E2%9C%93&tab=repositories&q=syllabus%20OR%20course-materials%20OR%20coursework%20OR%20in-class-activity&type=&language=][shared on Github]], and we'll be learning how to use the underlying git system over the course of the semester.  If you want to make things easier on yourself, you can try using the [[https://desktop.github.com/][Github desktop Client]].  
+** Slack
+Rather than the enormously frustrating Blackboard discussion forums, we use the [[https://slack.com/][Slack]] platform for two-way communication. You can [[https://join.slack.com/t/hackinghistory/signup][sign up for the Hacking History Slack team here]] -- you will need to use your utoronto.ca address to register.  Signup is open for the first two weeks of the semester, after which I'll close it down, so please register as soon as possible. 
+
+As the course is organized around a collaborative project, these conversations end up being fairly important, so it's worth installing the [[https://slack.com/downloads][Slack Desktop client]] and perhaps the iPhone or Android apps (I personally have removed Slack from my phone for now, despite finding it incredibly useful for about a year). 
+
+As you get more proficient at using Slack, you'll appreciate the medium more and more. consider starting out by [[https://get.slack.help/hc/en-us/articles/115004071768][reading the official "What is Slack?" guide]]. Once you get the basic idea -- what a channel is, how to tag people with @ or refer to channels with #, etc. -- keep these basic tips in mind:
+- Remember that it's easy to create and destroy channels, so feel free to create your own when you have a conversation that doesn't necessarily concern the whole group, and will likely persist for a while.
+- Get used to the Slack syntax, which is similar to that used in other chat protocols, but includes extra features like [[https://get.slack.help/hc/en-us/articles/202288908-Format-your-messages#code-blocks][code blocks]].  For longer code examples, it's usually better to [[https://get.slack.help/hc/en-us/articles/204145658-Creating-a-Snippet][create a snippet instead]].
+- Work effectively -- don't flip back and forth to slack as a way to procrastinate.
+- Be sparing in your use of ~@here~ and ~@channel~ -- those are the equivalent of yelling in a public square. Sometimes you need to do it, but you shouldn't be yelling all the time.
+- Use direct messages when you have to, but for the most part we'll want to cultivate a habit of working in the open.
+- Remember that this team is an extension of the classroom. Treat each other (and me!) with respect and compassion.  The [[http://civictech.ca/about-us/][Civic Tech Code of conduct]] is a helpful reminder of how to act in this kind of environment.
+
 ** FTP and/or SSH clients
 You'll need a way to move files between your laptop and the server.  Atom will do much of this, but an [[https://en.wikipedia.org/wiki/Category:SFTP_clients][SFTP client]] may be of use on certain rare occasions.  I personally use the command line, sort of [[http://stackoverflow.com/questions/11822192/ssh-scp-local-file-to-remote-in-terminal-mac-os-x][like this]]. 
 ** Zotero
@@ -53,7 +73,23 @@ Most of the technical skills you'll learn in this class you can teach yourself (
 :POST_DATE: [2016-09-11 Sun 09:58]
 :POSTID:   31
 :END:
-This year-long course examines the relationships among academic history, digital media, and community formation using a variety of texts and methods; it culminates in an intensive semester-long digital storytelling project focused on community engagement. The intellectual focus of the first semester is two-fold: first, on the history of the public sphere and second, on the politics of “engaged” scholarship. At the same time, students will be exposed to techniques of multimedia and nonlinear storytelling. The second semester revolves around a group project undertaken in concert with a community organization. Working closely with their community partners, students will build a digital archive or storytelling framework using multimedia and/or social networking technologies. The fundamental aim of the course is to expand the reach of historical scholarship outside of the academy, and to develop modes of historical research compatible with community engagement. 
+
+Ad attempt
+
+Engaged History... Himalayan Edition
+
+Join a fourth-year seminar working together with a small NGO in the Indian Himalaya...
+
+HIS455: Hacking History 
+
+
+This year-long course examines the relationships among academic history, digital media, and community formation using a variety of texts and methods; it culminates in an intensive semester-long group project, undertaken in collaboration with a community organization. Students learn basic web development skills and construct a website on behalf of the organization, after writing term papers on related topics. 
+
+Our partner this year is the Khangchendzonga Conservation Committee (KCC), a community organization in the village of Yuksom, in the Indian state of Sikkim. Situated in the shadow the world's third-highest mountain, the KCC leads a variety of environmental and economic development projects in the region, and has received international recognition for its work. We will explore the historical roots of their movement, a story which blends the environment, political machinations on a grand scale, ethic movements across the Himalayan range, and a wide variety of cultural and spiritual practices. Readings in the class explore a all these topics and more, while assignments develop both technical and analytical skills. 
+
+There is still space in this seminar, which is unlikely to be repeated in this form. Don't let this opportunity slip away!
+
+
 
 Registration for the class takes place through [[https://www.rosi.utoronto.ca/main.html][ROSI]].  
 
